@@ -6,7 +6,7 @@ Answer what is still open. Skip the rest. Manuals win on how; these answers only
 
 **Already locked (do not re-ask):**
 
-- Altitude kit P/N **22 1000 33 22 00** + heater **H-Kit** — confirmed; kit is in the garage → install/wire before high camps.
+- Altitude kit P/N **22 1000 33 22 00** + heater **H-Kit** — confirmed; kit is in the garage → land at HOLD 4 with the EasyStart harness.
 - Paneltronics **WATER HEATER** — empty; reserved for Isotemp 750 W.
 - Master switch — in the garage; mount next to EasyStart at HOLD 4.
 
@@ -37,7 +37,7 @@ Answer what is still open. Skip the rest. Manuals win on how; these answers only
 | <span id="q-012">Q-012</span> | Exact heater mounting height vs WFT and nearby lines? | Self-vent height; fuel-line clearance. | Owner / measurement | Partial | **Verify while mounting.** WFT still in garage; planned rear bench ~20–30 in above floor (DEC-005). |
 | <span id="q-013">Q-013</span> | Is heater 12 V wiring (EasyStart, pump, altitude) finished? | What’s left before first fire. | Owner | Partial | **2026-09-19:** EasyStart **mounted** on wood panel; not fully wired. Altitude kit in garage. Pump/heater 12 V landing still open (HOLD 4). |
 | <span id="q-014">Q-014</span> | Is exhaust/combustion-air routing actually compliant? | HAZ-002 CO. | Owner / physical inspection | No | **Owner believes correct.** Re-check vs SRC-009 at HOLD 2 before commissioning. |
-| <span id="q-015">Q-015</span> | Is altitude kit on the van and wired? | DEC-006 high camps. | Owner / SRC-002 / SRC-039 | Yes (high camps) | **Kit part number and heater H-Kit marking confirmed by owner: 22 1000 33 22 00 / H-Kit. Kit location confirmed: garage.** Still open: move it to the van, mount the sensor, wire it from SRC-002/SRC-003, and complete the functional/service check. Fuel reduction begins around 1400 m (~9%/1000 m); no high camps until verified. |
+| <span id="q-015">Q-015</span> | Is altitude kit on the van and wired? | DEC-006 high camps; do at HOLD 4. | Owner / SRC-002 / SRC-039 | Yes (high camps); preferred at HOLD 4 | **Kit P/N and H-Kit confirmed: 22 1000 33 22 00 / H-Kit. Location: garage.** Land at HOLD 4 while the EasyStart harness is open—do not defer just because a low-elevation first fire can run without it. Still open: mount, wire per SRC-002, functional check. |
 | <span id="q-016">Q-016</span> | Does a 12 V panel position control the Paneltronics element circuit? | 12 V must never feed 750 W. | Owner / DEC-020 | Partial | **Raised 2026-09-19 (DEC-020):** panel is **AC-only**. Element → **WATER HEATER** branch. 12 V is never the load path. |
 | <span id="q-017">Q-017</span> | Is the Isotemp coil always in the circulating loop? | Buffer only works if coil sees flow. | Owner | No | **Resolved 2026-09-19 (DEC-010):** always in series; no summer bypass. |
 | <span id="q-018">Q-018</span> | What mixing valve is on the Duda hot outlet? | Scald control. | Owner / SRC-036 | No | **Resolved 2026-09-19 (DEC-008 / SRC-024 / SRC-036):** AM100-1LF. Set ~120°F: loosen → lift handwheel → turn → lock; confirm at faucet; label. |

@@ -1,16 +1,16 @@
-# Current status report
+# Current Status {#current-status-report}
 
-Read this chapter after the [User’s guide](#users-guide) and before the [Builder’s guide](#builders-guide). This is an honest inventory as of September 2026. Part names match [The parts](#the-parts). The HOLD checklists in the Builder’s guide still govern the work.
+Read this chapter after the [User’s Guide](#users-guide) and before the [Builder’s Guide](#builders-guide). This is an honest inventory as of September 2026. Part names match [The Parts](#the-parts). The HOLD checklists in the Builder’s Guide still govern the work.
 
-Jump: [Project phases](#project-phases-overview) · [Builder](#builders-guide) · [Questions](#questions-for-you-in-order)
+Jump: [Project Phases](#project-phases-overview) · [Builder’s Guide](#builders-guide) · [Questions for You](#questions-for-you-in-order)
 
 ## Next action
 
 ::: {.next}
-**Phase B — this weekend.** Mount the WFT 5 L expansion/header tank at the highest circulating point, and mount the Isotemp Slim Square 4.2 gal heat battery empty under the sofa. Land EasyStart Timer and heater 12 V, plus the master switch. Route the Isotemp element cable to Paneltronics **WATER HEATER** and leave that cable dead.
+**Next — Phase A, then B.** First walk fuel ([HOLD 1](#hold-1-fuel)) and exhaust ([HOLD 2](#hold-2-exhaust)) against [SRC-009](#src-009)—those are on the van but not fully checked. Then Phase B: mount the WFT and Isotemp, land EasyStart / heater 12 V and the master switch, install the altitude kit while the harness is open, and route the Isotemp element cable to Paneltronics **WATER HEATER** (leave that cable dead).
 :::
 
-Ask once per part: if the part is already on the van, inspect and finish the remaining work; if the part is still in the garage, bring the part in for Phase B.
+Ask once per part: if the part is already on the van, inspect and finish the remaining work; if the part is still in the garage, bring the part in for Phase B after Phase A passes.
 
 ## Already on the van
 
@@ -30,7 +30,7 @@ Ask once per part: if the part is already on the van, inspect and finish the rem
 |---|---|
 | WFT 5 L expansion/header tank | Highest circulating point; tee on return; free path from tee to pump |
 | Isotemp Slim Square 4.2 gal heat battery | Mount empty under sofa; mixer capped; element → **WATER HEATER** (dead) |
-| Altitude kit 22 1000 33 22 00 | Identity confirmed; install and wire before high camps ([SRC-002](#src-002)) |
+| Altitude kit 22 1000 33 22 00 | Install and wire at HOLD 4 while the EasyStart harness is open ([SRC-002](#src-002)) |
 | Master switch | Mount next to EasyStart; Off cuts three 12 V branches |
 | Hose, clamps, Prestone LowTox AF555 glycol | Reinforced hose; stainless clamps; ≤50% PG ([DEC-017](#dec-017)) |
 | SC1600B thermostat, Noctua fans, speed dial | Mount and wire; auto call waits on [Q-022](#q-022) |
@@ -50,6 +50,6 @@ Ask once per part: if the part is already on the van, inspect and finish the rem
 - [Q-022](#q-022) — SC1600 relay and approved wake landing; use EasyStart only until then  
 - [Q-009](#q-009) — upstream GFCI/ELCI and element route before HOLD 9  
 - [Q-015](#q-015) — altitude kit install and wire (identity is confirmed)  
-- [Questions for you](#questions-for-you-in-order) — bay spots, relay, fans, GFCI, mountain timing  
+- [Questions for You](#questions-for-you-in-order) — bay spots, relay, fans, GFCI, mountain timing  
 
-→ [Builder’s guide](#builders-guide).
+→ [Builder’s Guide](#builders-guide).

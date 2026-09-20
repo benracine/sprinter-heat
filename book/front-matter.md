@@ -76,7 +76,7 @@ The heater itself holds only ~0.18 L. The Isotemp mass damps cycling.
 | Hose / clamps / Prestone LowTox AF555 | ≤50% PG for this loop (DEC-017) |
 | SC1600B / Noctua fans / speed dial | Auto call waits on Q-022 |
 
-Part-one inventory with finish-at HOLDs: [Current status](#current-status-report).
+Part-one inventory with finish-at HOLDs: [Current Status](#current-status-report).
 
 ## Hold points before first fire
 

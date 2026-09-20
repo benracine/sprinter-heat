@@ -1,8 +1,8 @@
-# User's guide
+# User's Guide {#users-guide}
 
 **Stage 2 — Use.** Read this chapter after [System Design](#system-design) and before [Make it](#builders-guide). After [Acceptance](#acceptance), use this chapter as the day-to-day manual. Until Acceptance, treat the tables below as the operating target—not as permission to light the heater.
 
-Jump: [Architecture](#system-design) · [Status](#current-status-report) · [Make it](#builders-guide) · [Numbers](#the-numbers-that-matter)
+Jump: [System Design](#system-design) · [Current Status](#current-status-report) · [Builder’s Guide](#builders-guide) · [The Numbers](#the-numbers-that-matter)
 
 ## Quick start (after Acceptance)
 
@@ -48,7 +48,7 @@ A heat call wakes the heater and starts its pump. The burner fires only if coola
 3. Before you restart, check for fuel wetness or smell, exhaust into the cabin, a glycol leak, a low cool WFT, battery outside 10.5–16 V, or a lukewarm core while the burner runs (air or a kink). → [Hazards](#hazard-register)  
 4. After an overheat, wait until coolant is below about 70°C (158°F).  
 
-Normal Power / High / Low staging is not a fault—see [The numbers](#the-numbers-that-matter).
+Normal Power / High / Low staging is not a fault—see [The Numbers](#the-numbers-that-matter).
 
 ## Occasional checks
 

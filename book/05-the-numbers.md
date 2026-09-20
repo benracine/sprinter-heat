@@ -1,8 +1,8 @@
-# The numbers that matter
+# The Numbers {#the-numbers-that-matter}
 
 These figures come from the Hydronic D5S diesel heater manual ([SRC-009](#src-009)) unless noted. If you swap the heater, rewrite this page from that heater’s manual first.
 
-Jump: [System Design](#system-design) · [User’s guide](#users-guide) · [Builder’s guide](#builders-guide) · [Source Register](#source-register)
+Jump: [System Design](#system-design) · [User’s Guide](#users-guide) · [Builder’s Guide](#builders-guide) · [Source Register](#source-register)
 
 | | |
 |---|---|

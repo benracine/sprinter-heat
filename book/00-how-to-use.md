@@ -1,57 +1,54 @@
-# How to use this book
+# How to Use This Book
 
-This book has three stages. First comes how the heating system is designed. Next comes how you operate the system once the build is finished—parked, in winter, and in summer. Last comes how to build the system from the parts already on the van and the parts still in the garage.
+Three stages: how the system is designed, how you operate the finished system, and how to build the system from parts on the van and in the garage.
 
 | Stage | Go here | You leave knowing… |
 | --- | --- | --- |
 | **1. Architecture** | [System Design](#system-design) | What the system is, how heat moves, and what is forbidden |
-| **2. Use** | [User’s guide](#users-guide) | How to operate the system day to day |
-| **3. Make it** | [Builder’s guide](#builders-guide) | Numbered steps and HOLD checklists |
+| **2. Use** | [User’s Guide](#users-guide) | How to operate the system day to day |
+| **3. Make it** | [Builder’s Guide](#builders-guide) | Numbered steps and HOLD checklists |
 
 ### Start here
 
-**First reading — follow the printed order:** Safety, System Design, User’s guide, Current status, Builder’s guide. That sequence is deliberate: rules, architecture, how you will live with the system, what is actually on the van, then the build.
+Read in order: [Safety](#safety), [System Design](#system-design), [User’s Guide](#users-guide), [Current Status](#current-status-report), [Builder’s Guide](#builders-guide). While you build, jump back to Safety and System Design (especially [Controls](#controls) and [The Parts](#the-parts)) when a HOLD says so. The User’s Guide is how the finished system should work—do not light the heater from that chapter until Acceptance; after Acceptance, use the User’s Guide day to day.
 
-While you build, you will need to flip back. Return to Safety and to System Design (especially Controls and The parts) whenever a HOLD points there. Use the lookup list below for numbers and citations. Part two is reference material, not a second cover-to-cover path.
+### Lookups
 
-The User’s guide describes how the finished system should work. Do not light the heater from that chapter until you have passed Acceptance. After Acceptance, the User’s guide is your day-to-day manual.
+Numbers and citations: [The Numbers](#the-numbers-that-matter) · [Sources](#source-register) · [Decisions](#decision-log) · [Questions for You](#questions-for-you-in-order) · [Open Questions](#open-questions) · [Hazards](#hazard-register). Part two is reference, not the work order. Codes such as [SRC-009](#src-009) jump to the source register. DANGER, CAUTION, and MUST boxes override the surrounding text.
 
-### When you need a lookup
+Part names are defined once in [The Parts](#the-parts). On-van vs garage inventory is in [Current Status](#current-status-report).
 
-For a number, citation, or open question, use [The numbers](#the-numbers-that-matter), [Sources](#source-register), [Decisions](#decision-log), [Questions for you](#questions-for-you-in-order), [Open Questions](#open-questions), and [Hazards](#hazard-register).
+## Four Project Phases {#project-phases-overview}
 
-Part two holds citations. Codes such as [SRC-009](#src-009) jump to their row in the source register. DANGER, CAUTION, and MUST boxes override the surrounding text.
+Four phases, not twenty tasks. Finish one phase before the next. Inside a phase, finish each HOLD before you move on. Steps live in the [Builder’s Guide](#project-phases).
 
-Official part names appear once in [The parts](#the-parts) under System Design. Use those names everywhere else. What is already on the van versus still in the garage is listed in [Current status](#current-status-report).
-
-## The install in four project phases {#project-phases-overview}
-
-The build breaks into **four project phases**, not twenty disconnected tasks. Finish one phase before you begin the next. Inside a phase, finish each HOLD before you move on. The numbered steps live in the [Builder’s guide](#project-phases).
-
-| Phase | Goal | Steps | You now |
+| Phase | What you finish | Steps | Now |
 | --- | --- | --- | --- |
-| **A. Safe under the van** | Fuel and exhaust will not hurt you | 1–2 | Mostly **inspect** (hardware already on) |
-| **B. Hardware in place** | Tanks mounted; wires landed dry | 3–4 | **← next real build work** |
-| **C. Loops closed dry** | Glycol and drinking water plumbed, still empty | 5–6 | Later |
-| **D. Fill, fire, live** | Water test → glycol → first fire → AC optional | 7–8 (+9) | Last |
+| **A. Fuel and exhaust** | Underbody fuel and exhaust checked safe | 1–2 | **← do this next** (on van; HOLD 1–2 still open) |
+| **B. Mount and wire** | WFT and Isotemp mounted; EasyStart / heater 12 V and altitude kit landed; Isotemp AC cable routed but dead | 3–4 | After A |
+| **C. Dry plumbing** | Glycol and freshwater hoses connected, still empty | 5–6 | Later |
+| **D. Fill and first fire** | Water-first loop check → glycol loop + Isotemp chamber → first fire | 7–8 (+9) | Last |
 
 ::: {.tip}
-**You are in Phase B.** Mount the expansion/header tank and the heat battery. Land the dry 12 V wiring, and route the heat-battery element cable to the Paneltronics **WATER HEATER** breaker—leave that cable dead. Plumbing, fill, and first fire come later. AC (step 9) is optional.
+**Next — Phase A.** Fuel pickup and exhaust are already on the van. Finish HOLD 1 and HOLD 2 against [SRC-009](#src-009) before you open Phase B.
 :::
 
 ### What can wait until after first fire
 
-These items do not block a low-elevation first fire. Full names are in [The parts](#the-parts); status detail is in [Current status](#current-status-report):
+Only these stay open after a low-elevation diesel first fire that gives cabin heat and hot water at the Duda:
 
-- Altitude kit ([Q-015](#q-015)) — needed only for high camps  
-- Cabin thermostat auto-call ([Q-022](#q-022)) — the EasyStart Timer already starts heat without the thermostat  
-- Heat-battery AC and upstream GFCI ([Q-009](#q-009)) — step 9 only  
+- Cabin thermostat auto-call ([Q-022](#q-022)) — start heat from the EasyStart Timer  
+- Isotemp AC and upstream GFCI ([Q-009](#q-009)) — [HOLD 9](#hold-9) only  
+
+Everything else on the HOLD path through step 8 is required for that first fire — including a filled glycol loop, a filled static Isotemp chamber, EasyStart / heater 12 V, the master switch, and cabin fans.
+
+The altitude kit does **not** block a low camp first fire, but it is **not** on this wait list. Land it at HOLD 4 while the EasyStart harness is open ([Q-015](#q-015) / [DEC-006](#dec-006)); you need it before high camps anyway.
 
 ## When sources disagree
 
 1. [SRC-009](#src-009) — Hydronic D5S: fuel, exhaust, wiring, and first fire  
 2. [SRC-019](#src-019) — hose practice, header height, bleed, and water-first leak check  
 3. This book — locked van layout ([DEC-009](#dec-009) · [DEC-010](#dec-010) · [DEC-004](#dec-004) / [DEC-013](#dec-013) / [DEC-020](#dec-020))  
-4. OPEN items — do not invent an answer. Prefer [Questions for you](#questions-for-you-in-order)
+4. OPEN items — do not invent; prefer [Questions for You](#questions-for-you-in-order)
 
-Diagrams are not to scale. [Controls](#controls) explains the wiring in plain English. Pin tables and AWG sizes are in [Electrical and Controls](#electrical-and-controls). Land every terminal from [SRC-009](#src-009), [SRC-003](#src-003), and [SRC-002](#src-002) on the bench.
+Diagrams are not to scale. Land every terminal from [SRC-009](#src-009), [SRC-003](#src-003), and [SRC-002](#src-002) on the bench.

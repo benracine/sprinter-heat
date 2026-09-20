@@ -1,12 +1,12 @@
 ::: {.install-guide}
 
-# Builder's guide
+# Builder's Guide {#builders-guide}
 
-**Stage 3 — Make it.** Begin only after [System Design](#system-design), the [User’s guide](#users-guide), and a skim of [Current status](#current-status-report).
+**Stage 3 — Make it.** Begin only after [System Design](#system-design), the [User’s Guide](#users-guide), and a skim of [Current Status](#current-status-report).
 
-Jump: [Project phases](#project-phases) · [HOLD 0](#hold-0) · [1 Fuel](#hold-1-fuel) · [2 Exhaust](#hold-2-exhaust) · [3 Mounts](#hold-3-mounts) · [4 Wiring](#hold-4-electrical) · [5 Glycol](#hold-5-glycol) · [6 Fresh](#hold-6-freshwater) · [7 Fill](#hold-7-fill) · [8 First fire](#hold-8-first-fire) · [9 AC](#hold-9) · [Acceptance](#acceptance)
+Jump: [Project Phases](#project-phases) · [HOLD 0](#hold-0) · [1 Fuel](#hold-1-fuel) · [2 Exhaust](#hold-2-exhaust) · [3 Mounts](#hold-3-mounts) · [4 Wiring](#hold-4-electrical) · [5 Glycol](#hold-5-glycol) · [6 Fresh](#hold-6-freshwater) · [7 Fill](#hold-7-fill) · [8 First fire](#hold-8-first-fire) · [9 AC](#hold-9) · [Acceptance](#acceptance)
 
-Work in a simple loop: assemble, inspect, pass the HOLD, then continue. Do not skip a HOLD. If a part, port, or wire is unclear, stop. After Acceptance, use the [User’s guide](#users-guide) as the day-to-day manual.
+Work in a simple loop: assemble, inspect, pass the HOLD, then continue. Do not skip a HOLD. If a part, port, or wire is unclear, stop. After Acceptance, use the [User’s Guide](#users-guide) as the day-to-day manual.
 
 **Authority.** [SRC-009](#src-009) governs the heater. [SRC-002](#src-002) and [SRC-003](#src-003) govern the altitude kit and EasyStart. [SRC-019](#src-019) governs hose, header, and bleed craft. [System Design](#system-design) governs this van’s locked layout.
 
@@ -18,20 +18,20 @@ Use reinforced heater hose, stainless clamps, and brass, copper, or stainless ba
 
 Cabin heat and diesel hot water pass [Acceptance](#acceptance). [HOLD 9](#hold-9) for Isotemp AC can wait.
 
-## Four project phases {#project-phases}
+## Four Project Phases {#project-phases}
 
-This is the same map as [How to use](#project-phases-overview). You are in **Phase B**.
+This is the same map as [How to Use This Book](#project-phases-overview). You are in **Phase A — Fuel and exhaust** until HOLD 1 and HOLD 2 pass.
 
 ::: {.next}
-**Start here.** Complete Phase B mounts (WFT and Isotemp), then dry wiring (steps 3–4). Do not fill or fire yet.
+**Start here.** Walk fuel and exhaust (steps 1–2). Then Phase B: mount the WFT and Isotemp, land dry wiring including the altitude kit, and leave the Isotemp AC cable dead. Do not fill or fire yet.
 :::
 
 | Phase | Steps | Now |
 |---|---|---|
-| **A.** Safe under the van | 1–2 | Inspect |
-| **B.** Hardware in place | 3–4 | **Do this next** |
-| **C.** Loops closed dry | 5–6 | After B |
-| **D.** Fill, fire, live | 7–8 (+9) | Last |
+| **A. Fuel and exhaust** | 1–2 | **Do this next** |
+| **B. Mount and wire** | 3–4 | After A |
+| **C. Dry plumbing** | 5–6 | After B |
+| **D. Fill and first fire** | 7–8 (+9) | Last |
 
 | Step | Work on | Do not do yet | Done when |
 |---|---|---|---|
@@ -58,8 +58,8 @@ This is the same map as [How to use](#project-phases-overview). You are in **Pha
 ### HOLD 0 — ready {#hold-0}
 
 - [ ] [System Design](#system-design) check done  
-- [ ] [User’s guide](#users-guide) read  
-- [ ] [Current status](#current-status-report) skimmed — next action is Phase B  
+- [ ] [User’s Guide](#users-guide) read  
+- [ ] [Current Status](#current-status-report) skimmed — next action is Phase A (Fuel and exhaust walk)  
 - [ ] Engine off, heater off, no flame/smoking  
 - [ ] Manuals on hand  
 - [ ] Underside walk done  
@@ -327,7 +327,7 @@ EasyStart is **already mounted** on the wood panel. Landing is unfinished.
 
 1. Mate the 10-pin connector per the pin table in [Electrical and Controls](#electrical-and-controls) ([SRC-003](#src-003)).
 2. Land the heater connector: water pump pins **8–9**, metering pump **4** / **10**, battery **1–2**, wake **7**.
-3. Yellow wake: EasyStart pin **6** → harness → heater pin **7** (altitude kit in line only if installing now — [SRC-002](#src-002)).
+3. Yellow wake: EasyStart pin **6** → harness → heater pin **7**, with the altitude kit in line on that harness ([SRC-002](#src-002)).
 4. Tape off heater pin **3** and the kit blower-relay leads. Seal empty chambers.
 5. Put the **5 A** fuse in **last**. Battery must sit in the heater window (~10.5–16 V).
 
@@ -339,21 +339,22 @@ EasyStart is **already mounted** on the wood panel. Landing is unfinished.
 
 ### Altitude kit 22 1000 33 22 00
 
-**When:** overnight camps above ~5,000 ft. Optional for a low-elevation first fire.
+**When:** land at HOLD 4 with the EasyStart harness. Required for overnight camps above ~5,000 ft; do not leave the kit in the garage just because a low-elevation first fire can run without it.
 
 **What:** indoor air-pressure sensor that trims fuel. From ~4,600 ft the heater starts cutting capacity (~9% per 3,300 ft). Kit manual max ~20,000 ft ([SRC-002](#src-002)).
 
 1. Confirm box P/N **22 1000 33 22 00** and heater **H-Kit** sticker.
 2. Mount indoors: plug facing **down**, not airtight, away from vents.
 3. Plug the adapter into the control harness per the Hydronic diagram in [SRC-002](#src-002) (including the S+ / yellow path). Insulate unused leads.
-4. Check: start → metering pump runs → shut off → wait for after-run. Full factory proof needs EDiTH — without it, mark **installed, not service-verified**.
+4. Check: start → metering pump runs → shut off → wait for after-run. Full factory proof needs EDiTH — without that tool, mark **installed, not service-verified**.
 
 **HOLD 4A — altitude kit**
 
 - [ ] Correct P/N and H-Kit recorded
 - [ ] Sensor mounted (down plug, not airtight, away from vents)
-- [ ] Adapter landed per [SRC-002](#src-002), or high camps deferred
+- [ ] Adapter landed per [SRC-002](#src-002)
 - [ ] Unused leads insulated
+- [ ] Functional check done (or marked installed, not service-verified)
 
 ### Isotemp AC cable (route now; live at [HOLD 9](#hold-9))
 
@@ -380,10 +381,10 @@ Isotemp 750 W is a Paneltronics AC load. It heats the static chamber only. It do
 - [ ] Master Off kills EasyStart / thermostat path / fans
 - [ ] EasyStart landed; 5 A fuse inserted last
 - [ ] Heater harness landed; blower leads taped off
-- [ ] Yellow wake EasyStart pin 6 → heater pin 7 (altitude kit or deferred)
+- [ ] Yellow wake EasyStart pin 6 → heater pin 7 via altitude kit
 - [ ] Fan dial Low/Med/High confirmed (Low still spins)
 - [ ] Isotemp cable to **WATER HEATER**, labeled, locked out
-- [ ] Altitude kit done or high camps deferred ([HOLD 4A](#hold-4-electrical))
+- [ ] Altitude kit HOLD 4A complete
 - [ ] [Q-022](#q-022) still OPEN unless closed against the manuals
 
 ---
@@ -615,10 +616,12 @@ Do not energize the 750 W / 115 VAC element on an empty chamber. Do not land it 
 - [ ] First commissioning run completed without unexplained wetness or smell
 - [ ] Whole-system inspection after install, before day-to-day use
 
-**Still allowed to defer (does not block a low-elevation first diesel fire)**
+**May stay open after a successful low-elevation first fire**
 
-- Altitude kit 22 1000 33 22 00 — required before high camps, not before a low-elevation first fire
-- Sure Marine cabin heater final cosmetic mount spot — but it must be plumbed, level, and bled before relying on cabin air
-- [HOLD 9](#hold-9) / Isotemp AC first energize — required before using the element; not required for diesel cabin heat / diesel hot water at the Duda plate
+- [Q-022](#q-022) — SC1600B auto call (start heat from EasyStart Timer until closed)
+- [HOLD 9](#hold-9) / Isotemp AC first energize — required before using the element; not for diesel cabin heat or diesel hot water at the Duda
+- Sure Marine cabin heater final cosmetic mount — must still be plumbed, level, and bled before relying on cabin air
+
+**Altitude kit 22 1000 33 22 00** — does not block a low-elevation first fire, but land at HOLD 4 while the EasyStart harness is open; required before high camps ([Q-015](#q-015) / [DEC-006](#dec-006)).
 
 :::

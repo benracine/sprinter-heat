@@ -1,8 +1,8 @@
 # System Design
 
-**Stage 1 — Architecture.** Finish this chapter before the [User’s guide](#users-guide) or the [Builder’s guide](#builders-guide). For each part, know what the part does, what the part must not do, and which way glycol flows.
+**Stage 1 — Architecture.** Finish this chapter before the [User’s Guide](#users-guide) or the [Builder’s Guide](#builders-guide). For each part, know what the part does, what the part must not do, and which way glycol flows.
 
-Jump: [Safety](#safety) · [Use](#users-guide) · [Status](#current-status-report) · [Project phases](#project-phases-overview) · [Make it](#builders-guide) · [Numbers](#the-numbers-that-matter)
+Jump: [Safety](#safety) · [User’s Guide](#users-guide) · [Current Status](#current-status-report) · [Project Phases](#project-phases-overview) · [Builder’s Guide](#builders-guide) · [The Numbers](#the-numbers-that-matter)
 
 ## Purpose
 
@@ -31,13 +31,13 @@ The Isotemp Slim Square 4.2 gal heat battery stores leftover loop heat in a **st
 
 ![Glycol loop](diagrams/glycol-loop.svg)
 
-## The parts {#the-parts}
+## The Parts {#the-parts}
 
 Meet each part once. Use only these official names everywhere else in the book.
 
 | Part | Photo | Does | Does not |
 |---|---|---|---|
-| Hydronic D5S diesel heater | ![Hydronic D5S heater](assets/parts/hydronic-d5s.jpg){.part-photo} | Burns diesel; own pump moves the loop; stages on coolant temperature ([The numbers](#the-numbers-that-matter); [SRC-009](#src-009)) | Connect to the engine |
+| Hydronic D5S diesel heater | ![Hydronic D5S heater](assets/parts/hydronic-d5s.jpg){.part-photo} | Burns diesel; own pump moves the loop; stages on coolant temperature ([The Numbers](#the-numbers-that-matter); [SRC-009](#src-009)) | Connect to the engine |
 | Sure Marine cabin heater | ![Sure Marine cabin heater](assets/parts/sure-marine-cabin.jpg){.part-photo} | Glycol → cabin air; two fans + one Low/Med/High dial ([DEC-015](#dec-015)); target both Noctua NF-F12 | Pull combustion air into the cabin |
 | Duda B3-12DW-20 plate heat exchanger | ![Duda plate heat exchanger](assets/parts/duda-plate.jpg){.part-photo} | Glycol → freshwater across a double wall | Mix the two fluids |
 | AM100-1LF thermostatic mixing valve | ![AM100-1LF mixing valve on Duda](assets/parts/am100-1lf.jpg){.part-photo} | Limits shower/sink temperature (~120°F) | Sit on a glycol fitting |
@@ -59,7 +59,7 @@ Meet each part once. Use only these official names everywhere else in the book.
 
 **Fuel.** Fuel runs from the factory pickup through the metering pump to the heater. Use ordinary diesel EN 590 (up to 20% FAME is acceptable; pure biodiesel is not). Prefer a metering-pump angle of 15°–35°. Keep the fuel line rising continuously, and never rest it on the exhaust ([SRC-009](#src-009)). Prime with the hand bulb immediately before first fire ([HOLD 8](#hold-8-first-fire)), then remove it.
 
-**Exhaust and combustion air.** These are two separate paths to outside air; neither enters the cabin. Kit limits are in [The numbers](#the-numbers-that-matter) and [Builder §2](#hold-2-exhaust).
+**Exhaust and combustion air.** These are two separate paths to outside air; neither enters the cabin. Kit limits are in [The Numbers](#the-numbers-that-matter) and [Builder §2](#hold-2-exhaust).
 
 ![Fuel system](diagrams/fuel-system.svg)
 
@@ -79,7 +79,7 @@ Land every pin from the printed manuals ([SRC-009](#src-009) / [SRC-003](#src-00
 
 **Enough for first fire.** Turn the master On, start heat on the EasyStart Timer, and set the fan dial.
 
-**Can wait.** The altitude kit ([Q-015](#q-015)), SC1600 auto ([Q-022](#q-022)), and Isotemp AC with upstream GFCI ([Q-009](#q-009)).
+**Can wait.** SC1600 auto ([Q-022](#q-022)), and Isotemp AC with upstream GFCI ([Q-009](#q-009)). Land the altitude kit at HOLD 4 while the harness is open ([Q-015](#q-015)).
 
 ### The heater’s own power (always fused)
 
@@ -116,7 +116,7 @@ Think of two jobs on the timer:
 
 No extra relay sits in that path for a normal timer start. Once the heater sees S+, the heater decides whether to pump, glow, and fire.
 
-**Altitude kit** (still in the garage). You need the altitude kit for overnight camps above roughly 5,000 ft. The kit plugs into the control harness as a whole adapter; do not snip only the yellow wire. Skip the altitude kit for a low-elevation first fire ([Q-015](#q-015)).
+**Altitude kit** (still in the garage). Required for overnight camps above roughly 5,000 ft. The kit plugs into the control harness as a whole adapter; do not snip only the yellow wire. Land the kit at HOLD 4 while the EasyStart harness is open ([Q-015](#q-015) / [DEC-006](#dec-006)).
 
 ### What the heater does after the heater wakes
 

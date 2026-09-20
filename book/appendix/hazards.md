@@ -1,6 +1,6 @@
 # Hazard Register
 
-Detailed hazard register for the practical guidance in System Design, User's guide, and Builder's guide. Manufacturer rules outrank blogs.
+Detailed hazard register for the practical guidance in System Design, User's Guide, and Builder's Guide. Manufacturer rules outrank blogs.
 
 | ID | Hazard | Cause | Consequence | Prevention/mitigation | Verification | Status |
 |---|---|---|---|---|---|---|
