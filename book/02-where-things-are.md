@@ -61,14 +61,14 @@ Diesel-only Acceptance can finish without HOLD 9. Complete system Acceptance nee
 
 | Item | Do this |
 |---|---|
-| Water Flow Tank (WFT) 5 L expansion/header | **Highest** circulating glycol point (rear bench / high wall / other—not under bed unless that bay wins on height); tee on return; free path from tee to pump |
+| Water Flow Tank (WFT) 5 L expansion/header | **Sofa-bed backrest (high)**; Isotemp under bench (low); tee on return; free path from tee to pump |
 | Isotemp Slim Square 4.2 gal heat battery | Mount empty **driver side under new sofa/bed**; mixer capped; element → **WATER HEATER** (dead) |
 | Altitude kit 22 1000 33 22 00 | Install and wire at HOLD 4 while the EasyStart harness is open ([SRC-002](#src-002)) |
 | Master switch | Mount next to EasyStart; Off cuts three 12 V branches (upstream of EasyStart) |
 | Hose, clamps, Prestone LowTox AF555 glycol | Reinforced hose; stainless clamps; ≤50% PG ([DEC-017](#dec-017)) |
 | SC1600B thermostat, Noctua fans, speed dial | Mount and wire; auto call waits on [Q-022](#q-022) |
 
-**Sofa/bed (discovery):** current bed **coming out**. Rebuild hybrid per [DEC-021](#dec-021): wood side boxes, aluminum Isotemp cradle, light plywood lift-out. Owner priorities: **ease of access** and **ease of construction** ([Working design understanding](#working-design-understanding)). Day layout trade still OPEN (full-length remove vs rear forward-facing bench).
+**Sofa/bed (discovery):** current bed **coming out**. Rebuild hybrid per [DEC-021](#dec-021): wood side boxes, aluminum Isotemp cradle, light plywood **full-length** lift-out (day = side seats + aisle). Water Flow Tank in **backrest**; Isotemp under bench. Sure Marine under fridge; Duda under sink. Details: [Working design understanding](#working-design-understanding). Effort: [Effort estimate](#effort-estimate).
 
 ## Do not change the design into these
 

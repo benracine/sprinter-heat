@@ -93,11 +93,13 @@ The altitude kit does not block a low-camp first fire. It is still not on the wa
 
 ## Sofa/bed platform decision
 
-The current bed is **coming out**. Rebuild as a sofa/bed with a removable center for day use. It must carry the Isotemp Slim Square 4.2 gal heat battery on the **driver side**, preserve service access, and leave the Water Flow Tank (WFT) 5 L expansion/header as the highest glycol point in the loop (exact high mount still OPEN).
+The current bed is **coming out**. Rebuild as a sofa/bed with a **full-length** removable center for day use (side seats + aisle). It must carry the Isotemp Slim Square 4.2 gal heat battery on the **driver side under the bench (low)**, put the Water Flow Tank in the **backrest (high)**, preserve service access, and keep the Water Flow Tank top as the highest circulating glycol point.
 
-**Owner priorities:** ease of access and ease of construction. Prefer the simpler package that still reaches the Isotemp element (~30 cm), coil fittings, and straps—do not force a complex “hidden void” if it fights those priorities ([Working design understanding](#working-design-understanding)).
+**Owner priorities:** ease of access and ease of construction. Prefer the simpler package that still reaches the Isotemp element (~30 cm), coil fittings, and straps ([Working design understanding](#working-design-understanding)).
 
-**Locked method ([DEC-021](#dec-021)):** hybrid — wood furniture shell + aluminum Isotemp cradle + light plywood lift-out center. Weighted score beat all-wood, all-extrusion, and steel (see [Working design understanding](#working-design-understanding)). Day layout trade still OPEN: full-length removable center vs leaving a rear forward-facing bench.
+**Locked method ([DEC-021](#dec-021)):** hybrid — wood furniture shell + aluminum Isotemp cradle + light plywood lift-out center.
+
+**Remaining effort:** see [Effort estimate](#effort-estimate) (~110–120 h typical through diesel first fire; sofa is the largest block).
 
 ### Requirements before cutting
 

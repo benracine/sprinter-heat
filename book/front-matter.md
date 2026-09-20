@@ -21,6 +21,8 @@ Hand this file with the PDFs in `sources/hydronic-install/` and `sources/coolant
 
 **Two finish lines.** Diesel cabin heat / diesel hot water can pass before HOLD 9. Complete system (Isotemp AC) needs HOLD 9. After a low-elevation diesel first fire, only Q-022 and Q-009 may still wait; land the altitude kit at HOLD 4.
 
+**Remaining effort (ASSUMPTION).** About **110–120 person-hours** typical through diesel first fire (sofa rebuild is the largest block); about **120–130 h** with HOLD 9 and light thermostat auto. Breakdown: [Effort estimate](#effort-estimate).
+
 **Where to read.** Part one: [System Design](#system-design) → [Numbers](#the-numbers-that-matter) → [User’s Guide](#users-guide) → [Status](#current-status-report) → [Builder](#builders-guide). Part two: this appendix, starting at the [Technical appendix](#technical-appendix) map.
 
 ## Vehicle and heater

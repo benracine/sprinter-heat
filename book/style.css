@@ -429,6 +429,32 @@ table:has(th:first-child) tr:hover td {
   font-weight: 500;
 }
 
+/* ---------- Decision-study summary ---------- */
+
+.study-tldr {
+  margin: 1.5em 0 1.8em;
+  padding: 1em 1.15em 0.75em;
+  border: 1.5px solid color-mix(in srgb, var(--accent) 30%, var(--rule));
+  border-left: 5px solid var(--accent);
+  background: var(--accent-soft);
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.study-tldr h2 {
+  margin-top: 0;
+  color: var(--accent);
+}
+
+.study-tldr table {
+  margin-bottom: 0.8em;
+}
+
+table {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
 /* ---------- Install guide ---------- */
 
 .install-guide {
@@ -777,6 +803,16 @@ table:has(th:first-child) tr:hover td {
     box-shadow: 0 1px 0 rgba(28, 25, 23, 0.03);
   }
 
+  .study-tldr {
+    padding: 1.1rem 1.2rem 0.85rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 0 rgba(28, 25, 23, 0.03);
+  }
+
+  .study-tldr h2 {
+    margin-top: 0;
+  }
+
   th, td {
     padding: 0.7em 0.95em;
     vertical-align: top;
@@ -993,6 +1029,15 @@ table:has(th:first-child) tr:hover td {
 
   table {
     font-variant-numeric: tabular-nums;
+  }
+
+  table {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
   }
 
   img {
