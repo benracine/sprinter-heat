@@ -37,8 +37,9 @@ Permissible tilt angles: SRC-009 p. 16. Heater horizontal→vertical range per d
 
 - Coil connections should sit below the WFT 5 L expansion/header tank level so the coil self-vents. If the tank is above that level, add a bleeder at the high point (SRC-022 §2).
 - Horizontal, vertical, or other Slim Square positions in the manual are allowed; **drain / safety valve must be the lowest point**.
+- **This van (owner):** mount **driver side under the new sofa/bed** (current bed coming out). Prefer ease of access and ease of construction over a complex hidden void.
 - Keep hydronic hoses to the coil short. Leave ~30 cm (1 ft) in front for element/thermostat service.
-- Tank full of water is extra mass (~16 L potable plus the unit; empty weight ~35 lb per SRC-022 §8.3). Mount to a shelf or bulkhead rated for that.
+- Tank full of fluid is extra mass (~16 L static glycol plus the unit; empty weight ~35 lb per SRC-022 §8.3). Mount to a shelf or bulkhead rated for that.
 - Envelope about 22-1/4 × 7-3/16 × 15-3/4 in (SRC-022 / National Luna Slim Square 16 L table). `[MEASURE]` against the actual bay.
 
 ### WFT 5 L expansion/header tank `[DEC-005, SRC-019]`
@@ -46,6 +47,7 @@ Permissible tilt angles: SRC-009 p. 16. Heater horizontal→vertical range per d
 - Highest circulating-loop point. Acts as expansion volume and air “burp” tank (SRC-019 p. 26–27).
 - Teed on the return in this build (DEC-010) — not in series, not off the Isotemp coil.
 - Unrestricted return path from that tee back to the Hydronic D5S diesel heater’s own pump.
+- **This van (owner):** exact mount OPEN (rear bench / high wall / other). Under-bed only if that bay is actually the highest glycol point.
 
 ### Factory Sprinter sketch `[NOT THIS BUILD]`
 

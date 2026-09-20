@@ -26,11 +26,12 @@ Ask once per part: if it is already on the van, inspect and finish the remaining
 | Hydronic D5S diesel heater | Mounted; **25 2526** / **H-Kit** | Confirm tilt ([SRC-009](#src-009)) |
 | Fuel pickup (factory aux tap) | Installed | [HOLD 1](#hold-1-fuel); prime at [HOLD 8](#hold-8-first-fire) |
 | Exhaust / combustion air | On van; re-check before fire | [HOLD 2](#hold-2-exhaust) checklist |
-| Duda B3-12DW-20 + AM100-1LF mixer | Mixer on; one hose on | Glycol port; mixed and cold to taps; set ~120°F |
-| Sure Marine cabin heater | REAL **16401**; **IN bottom / OUT top**; fans taped | Level, bleeder, fan power — [HOLD 3](#hold-3-mounts) / 4 |
+| Duda B3-12DW-20 + AM100-1LF mixer | Mixer on; one hose on; intended near jump seat / sink-fridge zone | Glycol port; mixed and cold to taps; set ~120°F; confirm fit with cabin heater |
+| Sure Marine cabin heater | REAL **16401**; **IN bottom / OUT top**; fans taped; intended near jump seat / sink-fridge | Level, bleeder, fan power — [HOLD 3](#hold-3-mounts) / 4 |
 | EasyStart Timer | On wood panel (with LinkPRO / PROwatt SW) | Land per [SRC-003](#src-003) / [SRC-009](#src-009) — [HOLD 4](#hold-4-electrical) |
-| Xantrex LinkPRO + PROwatt SW | On wood panel with EasyStart | House monitor + inverter for Paneltronics AC ([SRC-040](#src-040) / [SRC-041](#src-041)) |
-| Paneltronics AC panel | **72313** / **9972313B**: MAIN 30 A · BATTERY CHARGER · **WATER HEATER** (empty, reserved) · OUTLETS | Element cable + upstream GFCI at [HOLD 9](#hold-9) |
+| Xantrex LinkPRO + PROwatt SW | On wood panel with EasyStart; PROwatt face has dual GFCI outlets | House monitor + inverter; Paneltronics **WATER HEATER** path still HOLD 9 |
+| Blue Sea 12 V distribution block | On van (owner) | Confirm fuse positions feeding master / EasyStart / fans at HOLD 4 |
+| Paneltronics AC panel | **72313** / **9972313B**: MAIN 30 A · BATTERY CHARGER · **WATER HEATER** (empty, reserved) · OUTLETS | Element cable + document protection at [HOLD 9](#hold-9) |
 
 Diesel-only Acceptance can finish without HOLD 9. Complete system Acceptance needs HOLD 9. After diesel first fire, only [Q-022](#q-022) and [Q-009](#q-009) may still wait; land the altitude kit at HOLD 4.
 
@@ -38,12 +39,14 @@ Diesel-only Acceptance can finish without HOLD 9. Complete system Acceptance nee
 
 | Item | Do this |
 |---|---|
-| WFT 5 L expansion/header tank | Highest circulating point; tee on return; free path from tee to pump |
-| Isotemp Slim Square 4.2 gal heat battery | Mount empty under sofa; mixer capped; element → **WATER HEATER** (dead) |
+| Water Flow Tank (WFT) 5 L expansion/header | **Highest** circulating glycol point (rear bench / high wall / other—not under bed unless that bay wins on height); tee on return; free path from tee to pump |
+| Isotemp Slim Square 4.2 gal heat battery | Mount empty **driver side under new sofa/bed**; mixer capped; element → **WATER HEATER** (dead) |
 | Altitude kit 22 1000 33 22 00 | Install and wire at HOLD 4 while the EasyStart harness is open ([SRC-002](#src-002)) |
-| Master switch | Mount next to EasyStart; Off cuts three 12 V branches |
+| Master switch | Mount next to EasyStart; Off cuts three 12 V branches (upstream of EasyStart) |
 | Hose, clamps, Prestone LowTox AF555 glycol | Reinforced hose; stainless clamps; ≤50% PG ([DEC-017](#dec-017)) |
 | SC1600B thermostat, Noctua fans, speed dial | Mount and wire; auto call waits on [Q-022](#q-022) |
+
+**Sofa/bed (discovery):** current bed **coming out**. Rebuild hybrid per [DEC-021](#dec-021): wood side boxes, aluminum Isotemp cradle, light plywood lift-out. Owner priorities: **ease of access** and **ease of construction** ([Working design understanding](#working-design-understanding)). Day layout trade still OPEN (full-length remove vs rear forward-facing bench).
 
 ## Do not change the design into these
 
@@ -68,6 +71,7 @@ Diesel-only Acceptance can finish without HOLD 9. Complete system Acceptance nee
 
 **Owner placement / electrical answers**
 
-- [Questions for You](#questions-for-you-in-order) — bay spots, relay, fans, GFCI, house electrical snapshot ([Q-025](#q-025)), mountain timing  
+- [Working design understanding](#working-design-understanding) — live discovery (sofa, layout, 12 V story)  
+- [Questions for You](#questions-for-you-in-order) — remaining placement / GFCI / house snapshot ([Q-025](#q-025))  
 
 → [Builder’s Guide](#builders-guide).

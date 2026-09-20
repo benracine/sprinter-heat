@@ -74,7 +74,7 @@ Adapted from [USU Engineering Writing Center — Technical Writing Standards](ht
 ## Names, abbreviations, and numbers
 
 12. **Controlled names.** [The Parts](#the-parts) is the glossary of record. Meet each part once there (full official name + what it does / does not). Everywhere else, use only those official names or the short forms listed there. Do not invent aliases (buffer, Bosch, Espar, “the tank,” “the core,” “the plate”).
-13. **Abbreviations.** Full term first, then short form: Altitude kit 22 1000 33 22 00 (altitude kit). Well-known acronyms (GPS, AC, DC, AWG) need no expansion.
+13. **Abbreviations.** Full term first, then short form: Altitude kit 22 1000 33 22 00 (altitude kit). Owner prefers few bare acronyms—spell out on first use and when writing for Tyrah. **WFT** is the product brand **Water Flow Tank** (5 L expansion/header), not a cryptic code. Well-known acronyms (GPS, AC, DC, AWG) need no expansion.
 14. **Same words for the same thing.** Loop order, propylene glycol vs drinking water, and Paneltronics **WATER HEATER** stay identical across chapters.
 15. **Numbers with units.** Every figure carries a unit. Prefer the governing manual’s unit; add a familiar conversion only when it helps.
 

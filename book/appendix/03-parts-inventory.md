@@ -31,8 +31,8 @@ No full on-vehicle inventory has been performed. Floor insulation is out of scop
 | Sure Marine cabin heater | On van | REAL SN **16401**; IN bottom / OUT top; fans unfinished |
 | EasyStart Timer | On van | Mounted on wood panel; not fully wired |
 | Paneltronics AC | On van | **72313** / 9972313B; **WATER HEATER** empty for Isotemp |
-| Isotemp Slim Square 4.2 gal heat battery | Garage | Mount empty under sofa |
-| WFT 5 L expansion/header tank | Garage | Highest circulating point |
+| Isotemp Slim Square 4.2 gal heat battery | Garage | Mount empty **driver side under new sofa/bed** |
+| WFT 5 L expansion/header tank | Garage | **Highest** circulating point (exact mount OPEN) |
 | Altitude kit 22 1000 33 22 00 | Garage | P/N + H-Kit confirmed; install/wire before high camps |
 | Master switch | Garage | Mount next to EasyStart at HOLD 4 |
 | Glycol, hose, clamps | On hand | Prestone LowTox AF555 ≤50% (DEC-017); 3/4 in hose on Duda |

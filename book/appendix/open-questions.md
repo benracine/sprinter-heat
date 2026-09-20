@@ -19,14 +19,16 @@ The altitude kit is **not** on that wait list.
 
 **Still useful:**
 
-1. **Isotemp** — Exact under-sofa bay (left/right)? Any hose path you already hate?
-2. **WFT** — Exact rear-bench spot so it stays the highest glycol point?
+1. **Water Flow Tank** — Exact high mount (rear bench / wall / other) that stays the highest glycol point and is easy to fill/bleed?
+2. **Day sofa** — Full-length removable center, or leave a rear forward-facing bench (partial remove)?
 3. **SC1600 fans** — Own a 12 V relay already, or book says “buy one”?
 4. **Cabin fans** — Both Noctua NF-F12, or keep the mixed pair on the Sure Marine cabin heater?
-5. **Shore / inverter GFCI** — GFCI or ELCI already upstream of Paneltronics? ([Q-009](#q-009))
-6. **House electrical snapshot** — Does [SRC-040](#src-040) still match the van (battery Ah, solar W, shore charger, how PROwatt and shore meet Paneltronics)? FarOutRide ([SRC-041](#src-041)) is the class of system only.
-7. **Mountains** — First high camp roughly when? (altitude kit timing only)
+5. **Shore / inverter GFCI** — Document protection on the Paneltronics **WATER HEATER** path for HOLD 9 ([Q-009](#q-009))
+6. **House electrical snapshot** — Does [SRC-040](#src-040) still match the van ([Q-025](#q-025))?
+7. **Mountains** — First high camp roughly when?
 8. **Hot water** — Mostly sinks, or long showers? (mixer wording only)
+
+Live layout/sofa discovery: [Working design understanding](#working-design-understanding).
 
 ---
 
@@ -42,7 +44,7 @@ The altitude kit is **not** on that wait list.
 | <span id="q-009">Q-009</span> | Final Paneltronics breaker, GFCI/grounding, cable route, and element control? | 750 W ≈ 6.5 A at 115 V; never on empty chamber. | Owner / SRC-038 / SRC-040 | Yes (HOLD 9 only) | **2026-09-19 face:** Paneltronics **72313** / **9972313B** — MAIN · BATTERY CHARGER · **WATER HEATER** · OUTLETS. **WATER HEATER** empty for Isotemp. **2026-09-20:** PROwatt SW + LinkPRO on wood panel; PROwatt SW face has **dual GFCI outlets** (manufacturer). Paneltronics itself has no GFCI. HOLD 9 still needs documented cable/grounding/first energize. |
 | <span id="q-010">Q-010</span> | Is the fuel tank tap-in installed correctly? | Fuel leak / fire risk before further work. | Owner / physical inspection | Yes | **Partially resolved 2026-09-19:** factory aux connection used (preferred). Still walk routing/clamps vs SRC-009 before fire (HOLD 1). |
 | <span id="q-011">Q-011</span> | Glycol loop plumbing order? | Hose runs, bleed points. | Owner | No | **Resolved 2026-09-19 (DEC-010):** pump → heater → Sure Marine cabin heater → Duda → Isotemp coil → return; WFT teed on return high point. |
-| <span id="q-012">Q-012</span> | Exact heater mounting height vs WFT and nearby lines? | Self-vent height; fuel-line clearance. | Owner / measurement | Partial | **Verify while mounting.** WFT still in garage; planned rear bench ~20–30 in above floor (DEC-005). |
+| <span id="q-012">Q-012</span> | Exact heater mounting height vs Water Flow Tank and nearby lines? | Self-vent height; fuel-line clearance. | Owner / measurement | Partial | **Verify while mounting.** Water Flow Tank still in garage; must be highest glycol point (DEC-005)—exact mount OPEN. |
 | <span id="q-013">Q-013</span> | Is heater 12 V wiring (EasyStart, pump, altitude) finished? | What’s left before first fire. | Owner | Partial | **2026-09-19:** EasyStart **mounted** on wood panel; not fully wired. Altitude kit in garage. Pump/heater 12 V landing still open (HOLD 4). |
 | <span id="q-014">Q-014</span> | Is exhaust/combustion-air routing actually compliant? | HAZ-002 CO. | Owner / physical inspection | No | **Owner believes correct.** Re-check vs SRC-009 at HOLD 2 before commissioning. |
 | <span id="q-015">Q-015</span> | Is altitude kit on the van and wired? | DEC-006 high camps; do at HOLD 4. | Owner / SRC-002 / SRC-039 | Yes (high camps); preferred at HOLD 4 | **Kit P/N and H-Kit confirmed: 22 1000 33 22 00 / H-Kit. Location: garage.** Land at HOLD 4 while the EasyStart harness is open—do not defer just because a low-elevation first fire can run without it. Still open: mount, wire per SRC-002, functional check. |

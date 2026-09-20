@@ -48,13 +48,14 @@ WFT 5 L expansion/header tank tees at the return high point of the circulating l
 
 | Piece | Job | Where |
 | --- | --- | --- |
-| **Isotemp Slim Square 4.2 gal heat battery** | Circulating glycol in the coil. Static glycol in the chamber. Not DHW. Factory mixer unused. | Garage → under sofa |
-| **[Duda B3-12DW-20 plate heat exchanger](https://www.dudadiesel.com/choose_item.php?id=HX3220DW)** | Freshwater heat exchanger. | On van |
+| **Isotemp Slim Square 4.2 gal heat battery** | Circulating glycol in the coil. Static glycol in the chamber. Not DHW. Factory mixer unused. | Garage → **driver side under new sofa/bed** |
+| **[Duda B3-12DW-20 plate heat exchanger](https://www.dudadiesel.com/choose_item.php?id=HX3220DW)** | Freshwater heat exchanger. | On van; intended near jump seat / sink-fridge |
 | **AM100-1LF thermostatic mixing valve** | On Duda hot outlet. Scald control. Tap hoses not run. | On van |
-| **[Sure Marine cabin heater](http://www.suremarineservice.com/RL643X.aspx)** | Only cabin heat. REAL SN **16401**; IN bottom / OUT top. | On van |
-| **[WFT 5 L expansion/header tank](https://www.butlertechnik.com/installation-accessories-c63/marine-accessories-c115/eberspacher-or-webasto-expansion-header-tank-5l-2-outlet-292100017742-17742-p1723)** | Expansion / bleed high point. | Garage → rear bench |
+| **[Sure Marine cabin heater](http://www.suremarineservice.com/RL643X.aspx)** | Only cabin heat. REAL SN **16401**; IN bottom / OUT top. | On van; intended near jump seat / sink-fridge |
+| **[Water Flow Tank (WFT) 5 L expansion/header](https://www.butlertechnik.com/installation-accessories-c63/marine-accessories-c115/eberspacher-or-webasto-expansion-header-tank-5l-2-outlet-292100017742-17742-p1723)** | Expansion / bleed high point. | Garage → **highest** glycol point (exact mount OPEN) |
 | **[Altitude kit 22 1000 33 22 00](https://www.melloronline.co.uk/Heater_Installation_Accessories_/5147/EBERSPACHER_AIR/WATER_HEATER_HIGH_ALTITUDE_KIT_%7C_221000332200.html)** | Required for high camps. P/N + H-Kit confirmed. | Garage → wire per SRC-002 |
 | **EasyStart Timer** | Schedule / start-stop. | Mounted on wood panel; not fully wired |
+| **Blue Sea 12 V distribution** | House 12 V fuse block | On van — confirm hydronic feeds at HOLD 4 |
 | **Paneltronics AC (72313 / 9972313B)** | MAIN 30 A · BATTERY CHARGER · **WATER HEATER** (empty, for Isotemp) · OUTLETS | On van |
 
 The heater itself holds only ~0.18 L. The Isotemp mass damps cycling.
@@ -77,8 +78,8 @@ The heater itself holds only ~0.18 L. The Isotemp mass damps cycling.
 
 | Item | Status |
 | --- | --- |
-| WFT 5 L expansion/header tank | → rear bench (highest circulating point) |
-| Isotemp Slim Square 4.2 gal heat battery | → under sofa |
+| Water Flow Tank (WFT) 5 L expansion/header | → **highest** glycol point (exact mount OPEN) |
+| Isotemp Slim Square 4.2 gal heat battery | → **driver side under new sofa/bed** |
 | Altitude kit 22 1000 33 22 00 | Wire per SRC-002 before high camps |
 | Master switch | Mount next to EasyStart at HOLD 4 |
 | Hose / clamps / Prestone LowTox AF555 | ≤50% PG for this loop (DEC-017) |
@@ -91,7 +92,7 @@ Part-one inventory with finish-at HOLDs: [Current Status](#current-status-report
 1. Fuel walk at HOLD 1 (HAZ-001).
 2. EasyStart / heater 12 V landed enough to start and stop (HOLD 4 / Q-013). Land the altitude kit at HOLD 4 while the harness is open (Q-015 / DEC-006) — required before high camps; prefer not to defer it past HOLD 4.
 3. Fill and bleed circulating glycol including the Isotemp coil; fill chamber separately (static). Heater and coil below WFT.
-4. Route Isotemp element to Paneltronics **WATER HEATER**; upstream GFCI/ELCI before energize (HOLD 9).
+4. Route Isotemp element to Paneltronics **WATER HEATER**; document protection on that path before energize (HOLD 9 / [Q-009](#q-009)).
 5. AM100-1LF set ~120°F and tap hoses landed before anyone showers.
 
 Where leftover comparison material mentions Hydronic II C or D5WS, treat it as **ruled out** (DEC-000). Blog SRC-004/005 is design history, not current BOM or loop order.

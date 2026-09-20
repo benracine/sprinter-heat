@@ -25,7 +25,7 @@ Meet each part once here. After this table, use only these official names—or t
 | **Duda B3-12DW-20 plate heat exchanger**<br>*Short: Duda; Duda plate* | ![Duda plate heat exchanger](assets/parts/duda-plate.jpg){.part-photo} | Glycol → freshwater across a double wall | Mix the two fluids |
 | **AM100-1LF thermostatic mixing valve**<br>*Short: AM100-1LF; the mixer* | ![AM100-1LF mixing valve on Duda](assets/parts/am100-1lf.jpg){.part-photo} | Limits shower/sink temperature (~120°F) | Connect to a glycol fitting |
 | **Isotemp Slim Square 4.2 gal heat battery**<br>*Short: Isotemp; Isotemp coil; Isotemp chamber* | ![Isotemp heat battery](assets/parts/isotemp-slim-square.jpg){.part-photo} | Softens cycling via coil ↔ static chamber; planned AC on **WATER HEATER** | Hold drinking water; replace the Duda; circulate glycol with the element |
-| **WFT 5 L expansion/header tank**<br>*Short: WFT* | ![WFT expansion tank](assets/parts/wft-tank.jpg){.part-photo} | Expansion + air bleed at the high point (~1.2 bar cap) | Use the Isotemp potable PRV as a glycol setting |
+| **Water Flow Tank (WFT) 5 L expansion/header tank**<br>*Short: Water Flow Tank; WFT (brand name, not a cryptic code)* | ![WFT expansion tank](assets/parts/wft-tank.jpg){.part-photo} | Expansion + air bleed at the high point (~1.2 bar cap) | Use the Isotemp potable PRV as a glycol setting |
 | **EasyStart Timer**<br>*Short: EasyStart* | ![EasyStart Timer on wood panel](../photos/van-stuff/20260919_165557.jpg){.part-photo} | Schedule / target / start-stop ([SRC-003](#src-003)); bottom unit on the wood panel (under LinkPRO / PROwatt) | Replace the master lockout |
 | **Master switch**<br>*Representative Sure Marine W005-378K* | ![Sure Marine System Heat Switch W005-378K](assets/parts/sure-marine-master-switch.jpg){.part-photo} | Off cuts 12 V to EasyStart, SC1600B, and cabin fans ([DEC-012](#dec-012)); garage unit not photographed yet | Control Isotemp AC |
 | **SC1600B thermostat**<br>*Short: SC1600B* | ![SC1600B thermostat](assets/parts/sc1600b.jpg){.part-photo} | Heat **signal** only (R–W; no fan output — [SRC-033](#src-033)); needs relay ([Q-022](#q-022)) | Fan power; hot water; trusted auto until landing verified |
@@ -43,12 +43,15 @@ Meet each part once here. After this table, use only these official names—or t
 | | Locked rule |
 |---|---|
 | Loop order | Return → heater pump → Hydronic D5S → Sure Marine cabin heater → Duda (glycol) → Isotemp coil → return ([DEC-010](#dec-010)) |
-| Header | WFT tees into the **return** at the highest circulating point — not in series, not off the Isotemp coil |
+| Header | Water Flow Tank (WFT) tees into the **return** at the highest circulating point — not in series, not off the Isotemp coil |
 | Why that order | Cabin heat first (daily priority); Duda next (hottest fluid for showers); Isotemp last (stores leftovers — see [Isotemp value study](#isotemp-value-study)) |
 | Drinking water | Duda only; AM100-1LF on hot out; set ~120°F; taps from mixed outlet only ([DEC-003](#dec-003) / [DEC-008](#dec-008)) |
 | Isotemp | Coil circulating; chamber static same mix; factory mixer capped; 750 W on Paneltronics **WATER HEATER** only |
-| Cabin air | Living-space air across the Sure Marine cabin heater (on van, SN 16401); combustion stays outside |
-| Heights | WFT highest; everything else below it; cabin heater level, bottom-in/top-out, outlet bleeder; fill/drain at lowest point; unrestricted path from WFT tee back to the pump |
+| Heights | Water Flow Tank highest; everything else below it; cabin heater level, bottom-in/top-out, outlet bleeder; fill/drain at lowest point; unrestricted path from Water Flow Tank tee back to the pump |
+| Cabin air | Living-space air across the Sure Marine cabin heater (on van, SN 16401; intended near jump seat / sink-fridge); combustion stays outside |
+| Isotemp mount (owner) | **Driver side under new sofa/bed** — current bed coming out ([Working design understanding](#working-design-understanding)) |
+| Build priority (owner) | **Ease of access** and **ease of construction** rank high for sofa/Isotemp packaging |
+| Sofa/bed materials ([DEC-021](#dec-021)) | **Hybrid:** wood side boxes + aluminum Isotemp cradle + light plywood lift-out center — not all-extrusion furniture |
 
 ![Glycol loop](diagrams/glycol-loop.svg)
 
@@ -81,16 +84,17 @@ This book does not rebuild the whole van electrical system. House charging and d
 
 **What is already visible on this van**
 
-- Wood panel (with EasyStart): Xantrex **LinkPRO** battery monitor and Xantrex **PROwatt SW** inverter face.  
+- Wood panel (with EasyStart): Xantrex **LinkPRO** battery monitor and Xantrex **PROwatt SW** inverter face (dual GFCI outlets on the inverter face).  
+- **Blue Sea** 12 V distribution block (on van)—likely feed point for hydronic master / EasyStart / fans; confirm fuse positions at HOLD 4.  
 - Paneltronics AC face **72313** / sheet **9972313B**: **MAIN 30 A** · **BATTERY CHARGER** · **WATER HEATER** (empty, reserved for Isotemp) · **OUTLETS** ([DEC-020](#dec-020)).
 
 **How heat uses that house system**
 
 | Path | Feeds | Notes |
 |---|---|---|
-| House battery → heater 20 A fuse | Hydronic D5S brain + pump | Always fused; not through the hydronic master switch |
-| House battery → master → EasyStart / fans / thermostat path | Heat call and cabin air | Master Off is the parked lockout for 12 V heat controls |
-| Shore and/or PROwatt SW → (GFCI/ELCI still OPEN) → Paneltronics MAIN → **WATER HEATER** | Isotemp 750 W element | ~6.5 A; never on the 12 V panel; master Off does **not** cut this |
+| House battery → heater 20 A fuse | Hydronic D5S brain + pump | Always fused; **not** through the hydronic master switch |
+| House battery → Blue Sea (typical) → **master** → EasyStart / fans / thermostat path | Heat call and cabin air | Master is **upstream of the EasyStart Timer**; Master Off is the parked lockout for 12 V heat controls |
+| Shore and/or PROwatt SW → Paneltronics MAIN → **WATER HEATER** | Isotemp 750 W element | ~6.5 A; never on the 12 V panel; master Off does **not** cut this; HOLD 9 documents protection |
 
 FarOutRide-style systems often keep a **shore battery charger** and an **inverter** as separate devices ([SRC-041](#src-041)). That matches a Paneltronics face with both **BATTERY CHARGER** and AC load branches. Exact charger amps, battery Ah, solar watts, and whether shore and inverter share a transfer path remain **ASSUMPTION** until confirmed against [SRC-040](#src-040) and the van ([Q-025](#q-025)).
 

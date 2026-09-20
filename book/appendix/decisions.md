@@ -54,11 +54,11 @@
 
 - **Date:** 2026-09-19
 - **Status:** Accepted
-- **Decision:** The independent glycol loop's expansion vessel is a WFT 5 L expansion/header tank (heatso.com, MPN 65288A; retrofit-compatible with Webasto/Eberspächer 29 2100 01 77 41), owner already has it on hand. **Not yet mounted.** Planned location is the rear bench, with the top of the tank ~20–30 in above the van floor, but this is a plan, not an as-built fact.
-- **Reason:** Owner already purchased this part.
-- **Alternatives considered:** None evaluated; part already on hand.
-- **Supporting sources:** heatso.com product page (retrieved 2026-09-19); owner-stated planned mounting location (not yet installed)
-- **Affected documents:** `05-mechanical-layout.md`, `06-coolant-loop.md`, `04-bom-and-missing-parts.md`, `open-questions.md`
+- **Decision:** The independent glycol loop's expansion vessel is a WFT 5 L expansion/header tank — Water Flow Tank brand (heatso.com, MPN 65288A; retrofit-compatible with Webasto/Eberspächer 29 2100 01 77 41), owner already has it on hand. **Not yet mounted.** The top of the tank must be the **highest circulating glycol point**. Exact mount is OPEN (rear bench / high wall / other; under-bed only if that bay actually wins on height). Planned elevation order of magnitude ~20–30 in above the van floor is a starting guess, not an as-built fact.
+- **Reason:** Owner already purchased this part; owner confirmed high-mount rule 2026-09-20.
+- **Alternatives considered:** None evaluated for the part itself; location options remain open pending height + fill/bleed access.
+- **Supporting sources:** heatso.com product page (retrieved 2026-09-19); owner layout discovery 2026-09-20
+- **Affected documents:** `05-mechanical-layout.md`, `06-coolant-loop.md`, `04-bom-and-missing-parts.md`, `open-questions.md`, `house-electrical-understanding.md`
 
 ## DEC-006 — High-elevation use is a design requirement {#dec-006}
 
@@ -200,3 +200,13 @@
 - **Alternatives considered:** Assuming GFCI is built into the panel (rejected); feeding element from 12 V (rejected — DEC-004); inventing a free unlabeled branch (rejected — WATER HEATER is labeled).
 - **Supporting sources:** Face photo; SRC-038, SRC-035; DEC-004; Q-009 / Q-016
 - **Affected documents:** `book/install-in-this-order.md`, `book/02-where-things-are.md`, `open-questions.md`
+
+## DEC-021 — Sofa/bed: hybrid wood shell + aluminum Isotemp cradle {#dec-021}
+
+- **Date:** 2026-09-20
+- **Status:** Accepted
+- **Decision:** Rebuild the sofa/bed as a **hybrid**: fixed wood side boxes (plywood + dimensional lumber), a short **aluminum** Isotemp cradle/restraint bolted to floor structure, and a **light plywood** removable center on pins or aluminum ledgers. Do **not** build the whole furniture in T-slot extrusion; do **not** rely on all-wood alone for Isotemp crash restraint.
+- **Reason:** Weighted against easy-to-work (**35%**), strength (**25%**), light (**20%**), cost (**20%**) — hybrid scored **4.55 / 5** vs all-wood 4.15, all-extrusion 3.30, steel 2.75. Matches owner priority (access + construction ease). Field check: full aluminum bed frames save only ~7 lb over wood at ~3× frame cost; plywood deck dominates mass either way.
+- **Alternatives considered:** All wood (rejected for tank restraint / revise); all 80/20 furniture (rejected — cost, rattle, slow first build); steel tube (rejected — weight / revise); Baltic birch everywhere (optional for visible faces only, not required as structure).
+- **Supporting sources:** Owner priorities 2026-09-20; FarOutRide bed-platform cost/weight comparison; [Working design understanding](#working-design-understanding)
+- **Affected documents:** `book/install-in-this-order.md` HOLD S; `book/01-what-this-system-does.md`; `book/research/house-electrical-understanding.md`
