@@ -21,6 +21,10 @@ Jump: [System Design](#system-design) · [User’s Guide](#users-guide) · [Buil
 :::
 
 ::: {.caution}
+**Unattended Isotemp AC.** Paneltronics **WATER HEATER** is not cut by the master switch. Do not leave the inverter and **WATER HEATER** on for long unattended periods unless you intend a deliberate chamber top-off on shore or abundant solar, the chamber is full, and the GFCI path is verified ([HOLD 9](#hold-9)). → [HAZ-006](#haz-006) · [User’s Guide — AC chamber](#ac-chamber-and-dishes)
+:::
+
+::: {.caution}
 **Hot glycol and steam.** Keep the loop full and bled. The heater limit is 2.5 bar; the WFT cap relieves near 1.2 bar. Never run the pump dry. Check the WFT only when cool. Treat running hoses as burn-hot. A lukewarm cabin heater while the burner runs usually means air or a kink (minimum flow about 250 L/h). → [HAZ-003](#haz-003)
 :::
 

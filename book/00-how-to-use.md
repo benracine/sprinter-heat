@@ -18,11 +18,11 @@ The install map (four phases, what can wait) lives at the top of the [Builder’
 
 ### Lookups
 
-For numbers and citations: [The Numbers](#the-numbers-that-matter) · [Sources](#source-register) · [Decisions](#decision-log) · [Questions for You](#questions-for-you-in-order) · [Open Questions](#open-questions) · [Hazards](#hazard-register).
+For numbers and citations: [The Numbers](#the-numbers-that-matter) · [Isotemp value study](#isotemp-value-study) · [Sources](#source-register) · [Decisions](#decision-log) · [Questions for You](#questions-for-you-in-order) · [Open Questions](#open-questions) · [Hazards](#hazard-register).
 
 Part two is reference, not the work order. A code such as [SRC-009](#src-009) jumps to the source register. DANGER, CAUTION, and MUST boxes override whatever sits around them.
 
-Part names appear once in [The Parts](#the-parts)—that table is the glossary of record. What is already on the van versus still in the garage is in [Current Status](#current-status-report).
+Part names appear once in [The Parts](#the-parts)—that table is the glossary of record. What is already on the van versus still in the garage is in [Current Status](#current-status-report). After Acceptance, live from the [User’s Guide](#users-guide), including [AC chamber and dishes](#ac-chamber-and-dishes).
 
 ## When sources disagree
 

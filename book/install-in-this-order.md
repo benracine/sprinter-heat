@@ -266,9 +266,9 @@ Still in the garage. Planned under the sofa/bed. Envelope about 22-1/4 × 7-3/16
 3. Coil fittings below the WFT 5 L expansion/header tank. If not, add a bleeder at the high point of those hoses.
 4. Keep coil hoses short (heater minimum flow is 250 l/h — every restriction counts).
 5. Bench-fit and label the chamber connections outside the van if that makes the port identities clear. Mount the tank empty under the sofa/bed. Do not fill the main chamber until the tank is secured, the coil is connected, and the water-only circulating-loop leak check in section 7 is complete.
-6. During chamber fill (section 7B), use the tank’s main-chamber fill and vent ports from the Isotemp installation diagram, **not** the hydronic coil fittings. Add the **same** propylene glycol mix as the loop until the chamber is full and air is expelled, then cap. Leave this volume sitting still. It is never drinking water.
+6. During chamber fill (section 7B), use the Isotemp main-chamber fill and vent ports from the Isotemp installation diagram, **not** the hydronic coil fittings. Add the **same** propylene glycol mix as the loop until the chamber is full and air is expelled, then cap. Leave this volume sitting still. It is never drinking water.
 7. Do not pipe this tank’s “fresh water” ports to the shower. Cap the little mixer on the tank. It has nothing to do here.
-8. Route the tank’s electric-element cable to the Paneltronics **WATER HEATER** breaker. Do not connect it to the 12 V panel or energize it before the chamber and AC safety checks pass ([HOLD 9](#hold-9)).
+8. Route the Isotemp electric-element cable to the Paneltronics **WATER HEATER** breaker. Do not connect it to the 12 V panel or energize it before the chamber and AC safety checks pass ([HOLD 9](#hold-9)).
 
 ### Duda B3-12DW-20 plate heat exchanger (already in the van)
 
@@ -526,7 +526,7 @@ The WFT cap relieves at about 1.2 bar (below the heater’s 2.5 bar limit). Do n
 
 Do this after the tank is mounted, coil connections are complete, and the water-only circulating-loop leak check above has passed, and before first fire.
 
-1. Use the tank’s main-chamber fill and vent ports from the Isotemp installation diagram, not the hydronic coil fittings.
+1. Use the Isotemp main-chamber fill and vent ports from the Isotemp installation diagram, not the hydronic coil fittings.
 2. Add the **same** propylene glycol mix as the circulating loop until the chamber is full and air is expelled.
 3. Cap the ports. Leave the volume sitting still.
 4. Keep the safety-valve drain aimed somewhere a spill is acceptable.
