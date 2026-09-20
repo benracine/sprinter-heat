@@ -966,6 +966,8 @@ checks</a></li>
 <li><a href="#current-status-report" id="toc-current-status-report">Current Status</a>
 <ul>
 <li><a href="#next-action" id="toc-next-action">Next action</a></li>
+<li><a href="#effort-estimate" id="toc-effort-estimate">Effort estimate
+(remaining)</a></li>
 <li><a href="#already-on-the-van" id="toc-already-on-the-van">Already on
 the van</a></li>
 <li><a href="#still-in-the-garage" id="toc-still-in-the-garage">Still in
@@ -2712,6 +2714,119 @@ the remaining work; if it is still in the garage, bring it in for Phase
 B after Phase A passes. After diesel Acceptance, live from the <a href="#users-guide">User’s Guide</a>. Keep-or-sell numbers for the
 Isotemp are in the <a href="#isotemp-value-study">Isotemp value
 study</a>.</p>
+<h2 id="effort-estimate">Effort estimate (remaining)</h2>
+<p><strong>ASSUMPTION</strong> — one person, DIY pace, parts already on
+hand. Not a quote. Heater underbody mount, fuel tap, exhaust rough-in,
+Duda/Sure Marine placement, EasyStart mount, and house AC/DC backbone
+are treated as <strong>already spent</strong> and are not in these
+totals.</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Block</th>
+<th>Low</th>
+<th>Typical</th>
+<th>High</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phase A — fuel + exhaust walk (HOLD 1–2)</td>
+<td>2 h</td>
+<td>3 h</td>
+<td>6 h</td>
+<td>Mostly inspect/fix vs <a href="#src-009">SRC-009</a></td>
+</tr>
+<tr>
+<td>Sofa/bed rip + hybrid rebuild (HOLD S)</td>
+<td>40 h</td>
+<td><strong>55 h</strong></td>
+<td>80 h</td>
+<td>Largest block: frame, cradle, backrest Water Flow Tank, lift-out,
+hatches</td>
+</tr>
+<tr>
+<td>Phase B — mounts + 12 V / altitude / cable (HOLD 3–4)</td>
+<td>10 h</td>
+<td>16 h</td>
+<td>24 h</td>
+<td>Overlaps sofa if done in the same build days</td>
+</tr>
+<tr>
+<td>Phase C — glycol + freshwater hose (HOLD 5–6)</td>
+<td>10 h</td>
+<td>16 h</td>
+<td>28 h</td>
+<td>Clamps, bleeders, labels; rework if a run fights furniture</td>
+</tr>
+<tr>
+<td>Phase D — fill, bleed, first fire (HOLD 7–8)</td>
+<td>6 h</td>
+<td>10 h</td>
+<td>16 h</td>
+<td>Water-first then glycol; watchful first fire</td>
+</tr>
+<tr>
+<td>HOLD 9 — Isotemp AC first energize</td>
+<td>2 h</td>
+<td>3 h</td>
+<td>6 h</td>
+<td>After chamber full; ground-fault story still open</td>
+</tr>
+<tr>
+<td>Q-022 later — thermostat relay + wake</td>
+<td>2 h</td>
+<td>4 h</td>
+<td>8 h</td>
+<td>After diesel heat works</td>
+</tr>
+<tr>
+<td>Contingency / fetch / rework (~20%)</td>
+<td>14 h</td>
+<td>20 h</td>
+<td>30 h</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Finish line</th>
+<th>Typical remaining</th>
+<th>Calendar (weekends / evenings)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Diesel cabin heat + diesel hot water</strong> (through HOLD
+8)</td>
+<td><strong>~110–120 h</strong></td>
+<td>~4–8 weeks part-time</td>
+</tr>
+<tr>
+<td><strong>Complete system</strong> (+ HOLD 9 + light Q-022)</td>
+<td><strong>~120–130 h</strong></td>
+<td>add a few sessions</td>
+</tr>
+</tbody>
+</table>
+<p>If two people share furniture and hose work, wall-clock time drops
+faster than man-hours (often ~0.7× calendar for the sofa and hose
+phases).</p>
 <h2 id="already-on-the-van">Already on the van</h2>
 <table>
 <colgroup>
@@ -2803,9 +2918,8 @@ land the altitude kit at HOLD 4.</p>
 <tbody>
 <tr>
 <td>Water Flow Tank (WFT) 5 L expansion/header</td>
-<td><strong>Highest</strong> circulating glycol point (rear bench / high
-wall / other—not under bed unless that bay wins on height); tee on
-return; free path from tee to pump</td>
+<td><strong>Sofa-bed backrest (high)</strong>; Isotemp under bench
+(low); tee on return; free path from tee to pump</td>
 </tr>
 <tr>
 <td>Isotemp Slim Square 4.2 gal heat battery</td>
@@ -8610,18 +8724,21 @@ understanding</a>).</li>
 removable center; day = side seats + aisle (no fixed rear forward
 bench). See <a href="#working-design-understanding">Working design
 understanding</a>.</li>
-<li><strong>SC1600 fans</strong> — Own a 12 V relay already, or book
-says “buy one”?</li>
+<li><strong>SC1600 fans</strong> — Reference relay: TE
+<strong>V23134-A3052-X540</strong> (or any ISO mini 12 V / ≥10 A) — <a href="https://www.digikey.com/en/products/detail/te-connectivity-potter-brumfield-relays/V23134-A3052-X540/6234681">DigiKey</a>.
+Match on shelf or buy.</li>
 <li><strong>Cabin fans</strong> — Both Noctua NF-F12, or keep the mixed
 pair on the Sure Marine cabin heater?</li>
-<li><strong>Shore / inverter GFCI</strong> — Document protection on the
-Paneltronics <strong>WATER HEATER</strong> path for HOLD 9 (<a href="#q-009">Q-009</a>)</li>
-<li><strong>House electrical snapshot</strong> — Two transfer switches
-locked (panel source + Mean Well source). Still confirm Ah / solar /
-Mean Well model vs <a href="#src-040">SRC-040</a> (<a href="#q-025">Q-025</a>).</li>
+<li><strong>Shore / inverter ground fault</strong> — Inverter
+<em>might</em>; shore unknown; Paneltronics has no GFCI. Leave for HOLD
+9.</li>
+<li><strong>House electrical snapshot</strong> — <strong>200 Ah</strong>
+/ <strong>650 W</strong> solar / Mean Well RPB-1600-12 /
+<strong>Sterling 60 A</strong> B2B / PROwatt SW 2000. Still compare to
+<a href="#src-040">SRC-040</a> text when readable (<a href="#q-025">Q-025</a>).</li>
 <li><strong>Mountains</strong> — First high camp roughly when?</li>
-<li><strong>Hot water</strong> — Mostly sinks, or long showers? (mixer
-wording only)</li>
+<li><strong>Hot water</strong> — ~80% sinks; showers minority — mention
+showers, don’t center on them.</li>
 </ol>
 <p>Live layout/sofa discovery: <a href="#working-design-understanding">Working design
 understanding</a>.</p>
@@ -8725,11 +8842,11 @@ control?</td>
 <td>Owner / SRC-038 / SRC-040 /
 <code>photos/ac-electrical.jpg</code></td>
 <td>Yes (HOLD 9 only)</td>
-<td><strong>2026-09-20 diagram:</strong> Isotemp = AC panel “Coolant /
-water heater 120v.” Auto transfer feeds panel from shore or Xantrex.
-<strong>No GFCI/ELCI drawn</strong> on heater branch. Paneltronics face
-has no GFCI. HOLD 9 still needs intended ground-fault story +
-cable/first energize.</td>
+<td><strong>2026-09-20:</strong> Inverter <em>might</em> cut on ground
+fault (unverified). Shore side: <strong>owner does not know.</strong>
+Paneltronics has <strong>no</strong> GFCI (owner doubt matches DEC-020).
+HOLD 9: verify inverter hardwire, decide shore story, cable/first
+energize.</td>
 </tr>
 <tr>
 <td><span id="q-010">Q-010</span></td>
@@ -8888,12 +9005,11 @@ forbidden.</td>
 <td>Owner / SRC-040 / SRC-041 /
 <code>photos/ac-electrical.jpg</code></td>
 <td>Partial (HOLD 9)</td>
-<td><strong>2026-09-20 diagram:</strong> Blue Sea <strong>9009</strong>
-→ Mean Well <strong>RPB-1600-12</strong> (J1772 or 120 V shore);
-<strong>automatic transfer</strong> → Paneltronics (shore or Xantrex).
-Confirm inverter model (<strong>SW2000</strong> on drawing vs
-<strong>PROwatt SW</strong> on wood panel), battery Ah, solar W vs
-SRC-040.</td>
+<td><strong>2026-09-20:</strong> Topology from diagram; inverter
+<strong>PROwatt SW 2000</strong>; Mean Well <strong>RPB-1600-12</strong>
+via Blue Sea <strong>9009</strong>; owner <strong>200 Ah</strong> /
+<strong>650 W</strong> solar / <strong>Sterling 60 A</strong> B2B. Still
+compare to SRC-040 text when readable; HOLD 9 ground-fault open.</td>
 </tr>
 </tbody>
 </table>
@@ -8957,7 +9073,7 @@ Xantrex inverter (L1/N) ───────────────┘        
 <tr>
 <td>Automatic</td>
 <td>(unnamed on drawing)</td>
-<td>120 V RV shore ↔︎ <strong>Xantrex</strong> inverter</td>
+<td>120 V RV shore ↔︎ <strong>Xantrex PROwatt SW 2000</strong></td>
 <td><strong>Paneltronics</strong> MAIN → WATER HEATER + OUTLETS</td>
 </tr>
 </tbody>
@@ -8967,16 +9083,21 @@ Paneltronics <strong>BATTERY CHARGER</strong> breaker — it is fed only
 through the Blue Sea 9009.</p>
 <p><strong>Isotemp</strong> = diagram’s “Coolant / water heater 120v”
 off the AC panel (<strong>WATER HEATER</strong> branch).</p>
-<p><strong>GFCI:</strong> drawing shows no separate GFCI/ELCI on the
-heater branch. PROwatt face GFCI outlets (if that is the inverter on the
-wood panel) still only protect loads plugged into those receptacles.
-HOLD 9: name any upstream ELCI/GFCI that exists in the van but is
-omitted from this sketch, or document “panel breaker + chamber-full” as
-the intended protection.</p>
-<p><strong>Name check still open:</strong> diagram labels inverter
-<strong>Xantrex SW2000</strong>; wood-panel face evidence has been
-<strong>PROwatt SW</strong>. Confirm which unit is actually
-installed.</p>
+<p><strong>GFCI (owner 2026-09-20):</strong> “The inverter might be
+capable of that.” Treat as <strong>unverified</strong>. PROwatt SW 2000
+face has dual GFCI receptacles; whether the <strong>hardwired</strong>
+feed into the automatic transfer switch / Paneltronics is also
+ground-fault protected is a manual + as-built check — do not assume face
+GFCI covers Isotemp. When the panel is on <strong>shore</strong> (not
+inverter), that inverter GFCI story does not apply anyway. HOLD 9:
+confirm inverter hardwire behavior, then state shore-side protection
+separately (or “breaker + chamber full” if none).</p>
+<p><strong>House DC snapshot (owner):</strong> <strong>200 Ah</strong>
+battery bank; <strong>650 W</strong> rated solar on roof. Chargers:
+<strong>Mean Well RPB-1600-12</strong> (shore / J1772 via Blue Sea 9009)
+and <strong>Sterling 60 A battery-to-battery</strong> (alternator /
+vehicle charge path). PROwatt SW 2000 inverts for the AC panel when
+selected.</p>
 <hr />
 <h2 id="v-heat-wiring-plain">12 V heat wiring (plain)</h2>
 <p>Two separate feeds from the house battery side (often via the
@@ -9458,6 +9579,19 @@ Automatic transfer switch selects <strong>120 V RV shore</strong> or
 9009</strong> (J1772 240 V ↔︎ 120 V shore). <strong>Not</strong> through
 Paneltronics <strong>BATTERY CHARGER</strong>.</td>
 </tr>
+<tr>
+<td>14</td>
+<td>Fan relay for SC1600B</td>
+<td><strong>Book reference (buy or match on shelf):</strong> ISO mini /
+Bosch-style <strong>12 V</strong> coil, <strong>SPDT or
+SPST-NO</strong>, contacts ≥<strong>10 A</strong> @ 12 V (fans only
+~0.28 A). Coil ~<strong>130–180 mA</strong> (under SC1600 <strong>1
+A</strong>/terminal limit, SRC-033). Named part: TE Connectivity
+<strong>V23134-A3052-X540</strong> (12 V / 40 A SPDT) — <a href="https://www.digikey.com/en/products/detail/te-connectivity-potter-brumfield-relays/V23134-A3052-X540/6234681">DigiKey</a>.
+Any equivalent ISO mini with those ratings is fine. Prefer a
+<strong>socket</strong> for swap. Thermostat R–W switches <strong>coil
+only</strong>; contacts switch fused 12 V to the fan dial.</td>
+</tr>
 </tbody>
 </table>
 <h2 id="v-heat-wiring-plain-1">12 V heat wiring (plain)</h2>
@@ -9506,15 +9640,17 @@ Paneltronics: <strong>automatic transfer</strong>
 <strong>Blue Sea 9009</strong> (J1772 ↔︎ 120 V shore) —
 <strong>not</strong> Paneltronics BATTERY CHARGER<br />
 </label></p></li>
-<li><p><label><input type="checkbox"></input>Confirm inverter identity:
-diagram <strong>SW2000</strong> vs wood-panel <strong>PROwatt
-SW</strong><br />
+<li><p><label><input type="checkbox" checked></input>Inverter:
+<strong>Xantrex PROwatt SW 2000</strong> (806-1220 / B002LGEMOQ) —
+diagram SW2000 = PROwatt SW<br />
 </label></p></li>
-<li><p><label><input type="checkbox"></input>Q-009: GFCI/ELCI on <strong>WATER
-HEATER</strong> path (none drawn on
-<code>ac-electrical.jpg</code>)<br />
+<li><p><label><input type="checkbox" checked></input>Hot water use:
+~<strong>80% sinks</strong>; showers minority — book mentions showers
+lightly<br />
 </label></p></li>
-<li><p><label><input type="checkbox"></input>Q-025: battery Ah / solar W vs <a href="#src-040">SRC-040</a></label></p></li>
+<li><p><label><input type="checkbox"></input>Q-009: ground-fault on Isotemp —
+inverter maybe; shore unknown; Paneltronics has <strong>no</strong> GFCI
+(owner agrees / DEC-020)</label></p></li>
 </ul>
 <h2 id="scratch-notes">Scratch notes</h2>
 <p>_</p>
