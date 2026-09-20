@@ -208,6 +208,7 @@ Exact Sprinter floor/wall hard-point map: still **OPEN**—measure before drilli
 | 23 | Isotemp factory mixer | **Unused forever.** Cap only; AM100-1LF is the tap mixer. |
 | 24 | Day panels | **Owner 2026-09-20:** Prefer **outboard → seat back**, **inboard → seat butt** (details still open). Night = panels flat as sleep deck. Not carry-out. Hinge/slide hardware TBD to serve that geometry. |
 | 25 | Transfer switches as-built | **Both rotary Blue Sea; both believed 9009.** One → Mean Well; one → Paneltronics. Diagram draft’s “automatic” path is obsolete. |
+| 26 | Paneltronics 9009 use / labeling | **Owner:** throw **by hand**; switch is **poorly labelled** — hard to remember which position is shore vs inverter. May recover from an old Google photo. Book: add a clear face label at HOLD 4/9 (e.g. SHORE / INVERTER). |
 
 ## 12 V heat wiring (plain)
 
@@ -260,7 +261,8 @@ Shelf check: look for **W002-911** / **W002-912** / **W002-914** on the bag, or 
 - [ ] Blue Sea fuse positions for master / EasyStart / fans  
 - [x] Shore vs inverter into Paneltronics: **Blue Sea 9009 rotary** (as-built; diagram draft said automatic)
 - [x] Mean Well via its own **Blue Sea 9009** (J1772 ↔ 120 V shore) — **not** Paneltronics BATTERY CHARGER
-- [ ] Confirm both faceplates are **9009** (owner belief)
+- [ ] Label both **9009** faces clearly (Paneltronics: SHORE / INVERTER; Mean Well: SHORE / J1772) — owner: Paneltronics one is poorly labelled today  
+- [ ] Optional: recover position meaning from old Google photo
 - [x] Inverter: **Xantrex PROwatt SW 2000** (806-1220 / B002LGEMOQ) — diagram SW2000 = PROwatt SW  
 - [x] Master Off ≠ Isotemp AC — owner OK they are separate controls  
 - [x] Isotemp factory mixer — **unused forever** (cap only; AM100-1LF for taps)  

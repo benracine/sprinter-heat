@@ -615,7 +615,7 @@ Do this only after HOLD 7 (chamber full) and after you have closed [Q-009](#q-00
 
 1. Confirm the Isotemp chamber is full of the same propylene glycol mix; element never runs dry ([SRC-022](#src-022)).
 2. Confirm the element cable lands only on the Paneltronics AC panel — never the 12 V panel.
-3. Verify breaker rating, GFCI or equivalent ground-fault protection, grounding/bonding, polarity, strain relief, and any enable switch.
+3. Verify breaker rating, GFCI or equivalent ground-fault protection, grounding/bonding, polarity, strain relief, and any enable switch. Confirm which **Blue Sea 9009** feeds Paneltronics; label its face **SHORE** / **INVERTER** (owner: poorly labelled today).
 4. Read the Isotemp operating instructions for element use and overheat reset.
 5. Energize briefly while present. Confirm the chamber warms; confirm no smell, trip, or hot cable.
 6. Shut AC off. To move stored heat toward the taps later: EasyStart Timer call so the Hydronic D5S diesel heater’s pump runs, then open a tap through the AM100-1LF thermostatic mixing valve.
@@ -628,6 +628,7 @@ Do not energize the 750 W / 115 VAC element on an empty chamber. Do not land it 
 
 - [ ] Chamber full
 - [ ] Paneltronics breaker / GFCI / grounding / cable documented ([Q-009](#q-009) / [Q-016](#q-016) closed or explicitly deferred with circuit locked out)
+- [ ] Paneltronics **9009** face labeled **SHORE** / **INVERTER** (Mean Well **9009**: **SHORE** / **J1772**)
 - [ ] First AC run watched; no fault
 - [ ] Element left off when unattended unless you deliberately want an AC charge
 
