@@ -1306,8 +1306,11 @@ plan</a></li>
 </ul></li>
 <li><a href="#hot-water-on-hand" id="toc-hot-water-on-hand">Hot water on
 hand</a></li>
-<li><a href="#ac-preheating" id="toc-ac-preheating">AC
-preheating</a></li>
+<li><a href="#ac-preheating" id="toc-ac-preheating">AC preheating</a>
+<ul>
+<li><a href="#dishes-after-an-ac-charge-what-to-expect" id="toc-dishes-after-an-ac-charge-what-to-expect">Dishes after an AC
+charge — what to expect</a></li>
+</ul></li>
 <li><a href="#convenience-and-complexity-tradeoff" id="toc-convenience-and-complexity-tradeoff">Convenience and complexity
 tradeoff</a>
 <ul>
@@ -6979,14 +6982,83 @@ losses. Raising the full 16 L chamber by approximately 30°C would
 require about 0.53 kWh in the idealized calculation, or about 40–45
 minutes at 750 W if all element power entered the chamber. Real heating
 time will be longer because of thermostat behavior, heat loss, glycol
-properties, and the chamber’s actual usable temperature range.</p>
+properties, and the chamber’s actual usable temperature range. The
+working thermostat cuts the element near <strong>75°C /
+167°F</strong>.</p>
 <p>AC preheating is most useful when the van already has permitted AC
-power and the user wants to reduce the next diesel run. AC preheating is
-less compelling when the inverter must supply the element from the house
-battery. A 750 W load is substantial for an inverter and battery system;
-conversion losses increase the required battery energy. The exact
-battery penalty depends on inverter efficiency and battery voltage,
-which are not yet measured in this build.</p>
+power (shore or solar) and the user wants a short dish rinse or a
+shorter next diesel run. AC preheating is less compelling when the
+inverter must supply the element from the house battery. A 750 W load is
+substantial for an inverter and battery system; conversion losses
+increase the required battery energy. The exact battery penalty depends
+on inverter efficiency and battery voltage, which are not yet measured
+in this build.</p>
+<h3 id="dishes-after-an-ac-charge-what-to-expect">Dishes after an AC
+charge — what to expect</h3>
+<p>Two clocks matter: how long until the sink is hot after EasyStart,
+and how long the diesel <strong>flame</strong> can stay off.</p>
+<p><strong>Charge time (cool chamber → ~75°C):</strong> often about
+<strong>40–60 min</strong> at 750 W. Taps stay cold during the
+charge.</p>
+<p><strong>Wait for hot dish water after EasyStart</strong> (chamber
+already hot):</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Starting glycol loop</th>
+<th>What the D5S does</th>
+<th>Wait after EasyStart</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Still warm from recent heat</td>
+<td>Pump on; flame often <strong>off</strong></td>
+<td>About <strong>30–60 s</strong> of circulation, then open the
+tap</td>
+</tr>
+<tr>
+<td>Cold</td>
+<td>D5S senses cold coolant → flame <strong>on</strong></td>
+<td>About <strong>2–5 min</strong> to useful dish heat. Chamber shortens
+the run; it does <strong>not</strong> skip the flame</td>
+</tr>
+</tbody>
+</table>
+<p><strong>How long until the burner fires</strong> (flame-off dishes
+only):</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Condition</th>
+<th>Useful dish water before flame (or lukewarm)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Loop warm enough that EasyStart starts pump with no flame</td>
+<td>About <strong>2–5 min</strong> of rinse water (~<strong>3–6
+L</strong> warmed ~20°C from ~0.1–0.2 kWh)</td>
+</tr>
+<tr>
+<td>Loop cold</td>
+<td>Flame starts with the call — this row does not apply</td>
+</tr>
+</tbody>
+</table>
+<p>Practical takeaway: solar/AC means “preheat the chamber, then a short
+EasyStart for dishes.” It is not “open the tap with zero diesel
+involvement.” Skipping the <strong>flame</strong> requires a glycol loop
+that is already warm.</p>
 <h2 id="convenience-and-complexity-tradeoff">Convenience and complexity
 tradeoff</h2>
 <h3 id="convenience-gained">Convenience gained</h3>
@@ -7114,21 +7186,53 @@ Planning = about <strong>40%</strong> of the chamber participates
 kW), not hours.</li>
 <li><strong>AC / solar and dishes:</strong>
 <ol type="1">
-<li>Shore or solar → <strong>WATER HEATER</strong> on → element charges
-the <strong>chamber</strong> to ~<strong>75°C</strong>. Taps stay cold
-until step 2.</li>
-<li>Master <strong>On</strong> → short <strong>EasyStart</strong> start
-→ D5S <strong>pump</strong> runs (required). Heat leaves the chamber
-through the <strong>coil</strong> → <strong>Duda</strong> → mixer →
-sink.</li>
-<li><strong>Burner fire is separate</strong> from the pump. Warm
-chamber/loop → dishes with <strong>pump on, flame off</strong>. Cold
-loop or long draw → <strong>flame on</strong>. AC never runs the pump by
-itself.</li>
-<li><strong>How much water:</strong> about <strong>3–6 L</strong> warmed
-~20°C from ~0.1–0.2 kWh stored — a <strong>dish rinse</strong>, not a
-shower.</li>
+<li>Charge chamber to ~<strong>75°C</strong> (often <strong>~40–60
+min</strong> at 750 W). Taps stay cold.</li>
+<li>Master <strong>On</strong> → short <strong>EasyStart</strong> →
+<strong>pump</strong> on → coil → Duda → sink.</li>
 </ol></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Starting loop</th>
+<th>Flame</th>
+<th>Wait for hot sink after EasyStart</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Warm</td>
+<td>Often off</td>
+<td><strong>~30–60 s</strong></td>
+</tr>
+<tr>
+<td>Cold</td>
+<td>On</td>
+<td><strong>~2–5 min</strong> (chamber helps; does not skip flame)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Flame-off dishes?</th>
+<th>How long</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Only if loop was already warm</td>
+<td><strong>~2–5 min</strong> rinse (~<strong>3–6 L</strong> / ~20°C
+from ~0.1–0.2 kWh), then flame or lukewarm</td>
+</tr>
+</tbody>
+</table>
+<ul>
 <li><strong>Decision:</strong> keep if logs show fewer starts / steadier
 cabin / useful AC preheat for short draws; sell if those numbers do not
 show up.</li>
