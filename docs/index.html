@@ -901,11 +901,6 @@ Use This Book</a>
 <ul>
 <li><a href="#start-here" id="toc-start-here">Start here</a></li>
 <li><a href="#lookups" id="toc-lookups">Lookups</a></li>
-<li><a href="#project-phases-overview" id="toc-project-phases-overview">Four Project Phases</a>
-<ul>
-<li><a href="#what-can-wait-until-after-first-fire" id="toc-what-can-wait-until-after-first-fire">What can wait until after
-first fire</a></li>
-</ul></li>
 <li><a href="#when-sources-disagree" id="toc-when-sources-disagree">When
 sources disagree</a></li>
 </ul></li>
@@ -936,6 +931,7 @@ yet</a></li>
 <li><a href="#fluids" id="toc-fluids">Fluids</a></li>
 <li><a href="#architecture-check" id="toc-architecture-check">Architecture check</a></li>
 </ul></li>
+<li><a href="#the-numbers-that-matter" id="toc-the-numbers-that-matter">The Numbers</a></li>
 <li><a href="#users-guide" id="toc-users-guide">User’s Guide</a>
 <ul>
 <li><a href="#quick-start-after-acceptance" id="toc-quick-start-after-acceptance">Quick start (after
@@ -966,7 +962,11 @@ Guide</a>
 <li><a href="#what-done-means" id="toc-what-done-means">What “done”
 means</a></li>
 <li><a href="#project-phases" id="toc-project-phases">Four Project
-Phases</a></li>
+Phases</a>
+<ul>
+<li><a href="#what-can-wait-until-after-first-fire" id="toc-what-can-wait-until-after-first-fire">What can wait until after
+first fire</a></li>
+</ul></li>
 <li><a href="#before-you-start" id="toc-before-you-start">Before you
 start</a>
 <ul>
@@ -1043,7 +1043,6 @@ Isotemp AC element (HOLD 9)</a></li>
 </ul></li>
 <li><a href="#technical-appendix" id="toc-technical-appendix">Technical
 appendix</a></li>
-<li><a href="#the-numbers-that-matter" id="toc-the-numbers-that-matter">The Numbers</a></li>
 <li><a href="#spec-and-sources" id="toc-spec-and-sources">Spec and
 sources</a>
 <ul>
@@ -1378,12 +1377,16 @@ map</a></li>
 </tbody>
 </table>
 <h3 id="start-here">Start here</h3>
-<p>Read in this order: <a href="#safety">Safety</a>, <a href="#system-design">System Design</a>, <a href="#users-guide">User’s
-Guide</a>, <a href="#current-status-report">Current Status</a>, <a href="#builders-guide">Builder’s Guide</a>.</p>
-<p>While you build, return to Safety and System Design—especially <a href="#controls">Controls</a> and <a href="#the-parts">The
-Parts</a>—whenever a HOLD points you there. The User’s Guide describes
-the finished system. Do not light the heater from that chapter until
-Acceptance. After Acceptance, that guide is your day-to-day manual.</p>
+<p>Read in this order: <a href="#safety">Safety</a> → <a href="#system-design">System Design</a> → <a href="#the-numbers-that-matter">The Numbers</a> → <a href="#users-guide">User’s Guide</a> → <a href="#current-status-report">Current Status</a> → <a href="#builders-guide">Builder’s Guide</a>.</p>
+<p><a href="#the-numbers-that-matter">The Numbers</a> is a short card
+after the design—skim it, then keep going. While you build, return to
+Safety and System Design—especially <a href="#controls">Controls</a> and
+<a href="#the-parts">The Parts</a>—whenever a HOLD points you there. The
+User’s Guide describes the finished system. Do not light the heater from
+that chapter until Acceptance. After Acceptance, that guide is your
+day-to-day manual.</p>
+<p>The install map (four phases, what can wait) lives at the top of the
+<a href="#builders-guide">Builder’s Guide</a>.</p>
 <h3 id="lookups">Lookups</h3>
 <p>For numbers and citations: <a href="#the-numbers-that-matter">The
 Numbers</a> · <a href="#source-register">Sources</a> · <a href="#decision-log">Decisions</a> · <a href="#questions-for-you-in-order">Questions for You</a> · <a href="#open-questions">Open Questions</a> · <a href="#hazard-register">Hazards</a>.</p>
@@ -1391,76 +1394,6 @@ Numbers</a> · <a href="#source-register">Sources</a> · <a href="#decision-log"
 CAUTION, and MUST boxes override whatever sits around them.</p>
 <p>Part names appear once in <a href="#the-parts">The Parts</a>. What is
 already on the van versus still in the garage is in <a href="#current-status-report">Current Status</a>.</p>
-<h2 id="project-phases-overview">Four Project Phases</h2>
-<p>Treat the install as four phases, not twenty loose tasks. Finish one
-phase before the next. Inside a phase, finish each HOLD before you move
-on. The steps live in the <a href="#project-phases">Builder’s
-Guide</a>.</p>
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<thead>
-<tr>
-<th>Phase</th>
-<th>What you finish</th>
-<th>Steps</th>
-<th>Now</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>A. Fuel and exhaust</strong></td>
-<td>Underbody fuel and exhaust checked safe</td>
-<td>1–2</td>
-<td><strong>← do this next</strong> (on van; HOLD 1–2 still open)</td>
-</tr>
-<tr>
-<td><strong>B. Mount and wire</strong></td>
-<td>WFT and Isotemp mounted; EasyStart / heater 12 V and altitude kit
-landed; Isotemp AC cable routed but dead</td>
-<td>3–4</td>
-<td>After A</td>
-</tr>
-<tr>
-<td><strong>C. Dry plumbing</strong></td>
-<td>Glycol and freshwater hoses connected, still empty</td>
-<td>5–6</td>
-<td>Later</td>
-</tr>
-<tr>
-<td><strong>D. Fill and first fire</strong></td>
-<td>Water-first loop check → glycol loop + Isotemp chamber → first
-fire</td>
-<td>7–8 (+9)</td>
-<td>Last</td>
-</tr>
-</tbody>
-</table>
-<div class="tip">
-<p><strong>Next — Phase A.</strong> Fuel pickup and exhaust are already
-on the van. Finish HOLD 1 and HOLD 2 against <a href="#src-009">SRC-009</a> before you open Phase B.</p>
-</div>
-<h3 id="what-can-wait-until-after-first-fire">What can wait until after
-first fire</h3>
-<p>After a low-elevation diesel first fire that delivers cabin heat and
-hot water at the Duda, only two items may still be open:</p>
-<ul>
-<li>Cabin thermostat auto-call (<a href="#q-022">Q-022</a>) — start heat
-from the EasyStart Timer<br />
-</li>
-<li>Isotemp AC and upstream GFCI (<a href="#q-009">Q-009</a>) — <a href="#hold-9">HOLD 9</a> only</li>
-</ul>
-<p>Everything else through step 8 is required for that first fire: a
-filled glycol loop, a filled static Isotemp chamber, EasyStart and
-heater 12 V, the master switch, and the cabin fans.</p>
-<p>The altitude kit does not block a low-camp first fire. It is still
-not on the wait list. Land it at HOLD 4 while the EasyStart harness is
-open (<a href="#q-015">Q-015</a> / <a href="#dec-006">DEC-006</a>). You
-will need it before high camps.</p>
 <h2 id="when-sources-disagree">When sources disagree</h2>
 <ol type="1">
 <li><a href="#src-009">SRC-009</a> — Hydronic D5S: fuel, exhaust,
@@ -1528,9 +1461,10 @@ Altitude kit 22 1000 33 22 00 (<a href="#dec-006">DEC-006</a>). → <a href="#ha
 <h1 id="system-design">System Design</h1>
 <p><strong>Stage 1 — Architecture.</strong> Finish this chapter before
 the <a href="#users-guide">User’s Guide</a> or the <a href="#builders-guide">Builder’s Guide</a>. For each part, know what the
-part does, what the part must not do, and which way glycol flows.</p>
-<p>Jump: <a href="#safety">Safety</a> · <a href="#users-guide">User’s
-Guide</a> · <a href="#current-status-report">Current Status</a> · <a href="#project-phases-overview">Project Phases</a> · <a href="#builders-guide">Builder’s Guide</a> · <a href="#the-numbers-that-matter">The Numbers</a></p>
+part does, what the part must not do, and which way glycol flows. Next:
+skim <a href="#the-numbers-that-matter">The Numbers</a>, then the User’s
+Guide.</p>
+<p>Jump: <a href="#safety">Safety</a> · <a href="#the-numbers-that-matter">The Numbers</a> · <a href="#users-guide">User’s Guide</a> · <a href="#current-status-report">Current Status</a> · <a href="#builders-guide">Builder’s Guide</a></p>
 <h2 id="purpose">Purpose</h2>
 <p>One Hydronic D5S diesel heater under the van does two jobs:</p>
 <ol type="1">
@@ -1934,12 +1868,119 @@ through the Duda plate<br />
 splice, no summer bypass, no second pump, no 12 V to the
 element</label></li>
 </ul>
-<p>→ <a href="#users-guide">Use</a>.</p>
+<p>→ <a href="#the-numbers-that-matter">The Numbers</a>, then the <a href="#users-guide">User’s Guide</a>.</p>
+<h1 id="the-numbers-that-matter">The Numbers</h1>
+<p>A short card after <a href="#system-design">System Design</a>. Skim
+it, then continue to the <a href="#users-guide">User’s Guide</a>.
+Figures come from the Hydronic D5S diesel heater manual (<a href="#src-009">SRC-009</a>) unless noted. If you swap the heater,
+rewrite this page from that heater’s manual first.</p>
+<p>Jump: <a href="#system-design">System Design</a> · <a href="#users-guide">User’s Guide</a> · <a href="#builders-guide">Builder’s Guide</a> · <a href="#source-register">Source Register</a></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr>
+<td>Heat output (Power / High / Low)</td>
+<td>5.2 / 5.0 / 2.1 kW</td>
+</tr>
+<tr>
+<td>Fuel use at those settings</td>
+<td>0.64 / 0.61 / 0.26 L/h</td>
+</tr>
+<tr>
+<td>Coolant staging (approx.)</td>
+<td>Power → High ~65°C · High → Low ~80°C · pause ~85°C · restart
+~75°C</td>
+</tr>
+<tr>
+<td>Overheat restart</td>
+<td>Coolant below 70°C (158°F)</td>
+</tr>
+<tr>
+<td>Fluid in the heater itself</td>
+<td>~0.18 L (the loop and Isotemp hold the rest)</td>
+</tr>
+<tr>
+<td>Minimum flow through the heater</td>
+<td>250 L/h</td>
+</tr>
+<tr>
+<td>Heater pump (reference)</td>
+<td>~680 L/h @ 0.1 bar; under ~12 W</td>
+</tr>
+<tr>
+<td>Max propylene glycol overpressure</td>
+<td>2.5 bar</td>
+</tr>
+<tr>
+<td>WFT 5 L expansion/header tank relief</td>
+<td>~1.2 bar (below heater limit)</td>
+</tr>
+<tr>
+<td>Isotemp potable PRV (not a glycol setting)</td>
+<td>~5.5 bar / 80 psi — do not size the loop to this</td>
+</tr>
+<tr>
+<td>Mix</td>
+<td>≤50% Prestone LowTox AF555 only (<a href="#dec-017">DEC-017</a>; <a href="#src-029">SRC-029</a>)</td>
+</tr>
+<tr>
+<td>Voltage window</td>
+<td>10.5–16 V</td>
+</tr>
+<tr>
+<td>Electrical start / run (without pump)</td>
+<td>~120 W start; ~40 / 37 / 12 W Power / High / Low</td>
+</tr>
+<tr>
+<td>Fuel</td>
+<td>Diesel EN 590; ≤20% FAME OK; pure biodiesel not</td>
+</tr>
+<tr>
+<td>Metering pump angle</td>
+<td>15°–90°; prefer 15°–35°; flat 0°–15° forbidden</td>
+</tr>
+<tr>
+<td>Metering pump heads</td>
+<td>Pressure tank→pump max 3000 mm; suction pressureless max 1000 mm;
+suction with 0.03 bar cap max 400 mm</td>
+</tr>
+<tr>
+<td>Exhaust</td>
+<td>24 mm ID; ~0.2–2 m; downslope; ~5 mm drain</td>
+</tr>
+<tr>
+<td>Combustion air</td>
+<td>20 mm ID; kit hose max ~0.76 m; cool outside air</td>
+</tr>
+<tr>
+<td>Altitude</td>
+<td>Unlimited to ~5,000 ft without kit; kit <a href="#dec-006">22 1000
+33 22 00</a> for sustained 5,000–10,000 ft. Fuel delivery starts
+reducing ~1400 m (~9% / 1000 m) with kit (<a href="#src-002">SRC-002</a>)</td>
+</tr>
+<tr>
+<td>AM100-1LF thermostatic mixing valve</td>
+<td>70–145°F range; set ~120°F, lock handwheel, label (<a href="#dec-008">DEC-008</a>; <a href="#src-036">SRC-036</a>)</td>
+</tr>
+<tr>
+<td>Diesel start lockout</td>
+<td>Miss may retry ~70 s; lock after two further fails; ≤2 off/on into a
+fault</td>
+</tr>
+</tbody>
+</table>
+<p>The Isotemp chamber holds about 4.2 gal of static glycol. The coil is
+charged by the heater pump. The 750 W element on Paneltronics
+<strong>WATER HEATER</strong> (face <strong>72313</strong> / sheet
+<strong>9972313B</strong>) heats the chamber only (<a href="#dec-004">DEC-004</a> / <a href="#dec-007">DEC-007</a> / <a href="#dec-020">DEC-020</a>).</p>
 <h1 id="users-guide">User’s Guide</h1>
-<p><strong>Stage 2 — Use.</strong> Read this chapter after <a href="#system-design">System Design</a> and before <a href="#builders-guide">Make it</a>. After <a href="#acceptance">Acceptance</a>, use this chapter as the day-to-day
+<p><strong>Stage 2 — Use.</strong> Read this after <a href="#system-design">System Design</a> and <a href="#the-numbers-that-matter">The Numbers</a>, and before <a href="#current-status-report">Current Status</a> and the <a href="#builders-guide">Builder’s Guide</a>. After <a href="#acceptance">Acceptance</a>, use this chapter as the day-to-day
 manual. Until Acceptance, treat the tables below as the operating
 target—not as permission to light the heater.</p>
-<p>Jump: <a href="#system-design">System Design</a> · <a href="#current-status-report">Current Status</a> · <a href="#builders-guide">Builder’s Guide</a> · <a href="#the-numbers-that-matter">The Numbers</a></p>
+<p>Jump: <a href="#system-design">System Design</a> · <a href="#the-numbers-that-matter">The Numbers</a> · <a href="#current-status-report">Current Status</a> · <a href="#builders-guide">Builder’s Guide</a></p>
 <h2 id="quick-start-after-acceptance">Quick start (after
 Acceptance)</h2>
 <table>
@@ -2133,22 +2174,19 @@ rule are clear</label></li>
 </ul>
 <p>→ <a href="#current-status-report">Status</a>, then <a href="#builders-guide">Make it</a>.</p>
 <h1 id="current-status-report">Current Status</h1>
-<p>Read this chapter after the <a href="#users-guide">User’s Guide</a>
-and before the <a href="#builders-guide">Builder’s Guide</a>. This is an
-honest inventory as of September 2026. Part names match <a href="#the-parts">The Parts</a>. The HOLD checklists in the Builder’s
-Guide still govern the work.</p>
-<p>Jump: <a href="#project-phases-overview">Project Phases</a> · <a href="#builders-guide">Builder’s Guide</a> · <a href="#questions-for-you-in-order">Questions for You</a></p>
+<p>Read this after the <a href="#users-guide">User’s Guide</a> and
+before the <a href="#builders-guide">Builder’s Guide</a>. Honest
+inventory as of September 2026. Part names match <a href="#the-parts">The Parts</a>. The HOLD checklists still govern the
+work.</p>
+<p>Jump: <a href="#project-phases">Project Phases</a> · <a href="#builders-guide">Builder’s Guide</a> · <a href="#questions-for-you-in-order">Questions for You</a></p>
 <h2 id="next-action">Next action</h2>
 <div class="next">
-<p><strong>Next — Phase A, then B.</strong> First walk fuel (<a href="#hold-1-fuel">HOLD 1</a>) and exhaust (<a href="#hold-2-exhaust">HOLD 2</a>) against <a href="#src-009">SRC-009</a>—those are on the van but not fully checked.
-Then Phase B: mount the WFT and Isotemp, land EasyStart / heater 12 V
-and the master switch, install the altitude kit while the harness is
-open, and route the Isotemp element cable to Paneltronics <strong>WATER
-HEATER</strong> (leave that cable dead).</p>
+<p><strong>Next — Phase A.</strong> Fuel pickup and exhaust are already
+on the van. Finish HOLD 1 and HOLD 2 against <a href="#src-009">SRC-009</a> before you open Phase B.</p>
 </div>
-<p>Ask once per part: if the part is already on the van, inspect and
-finish the remaining work; if the part is still in the garage, bring the
-part in for Phase B after Phase A passes.</p>
+<p>Ask once per part: if it is already on the van, inspect and finish
+the remaining work; if it is still in the garage, bring it in for Phase
+B after Phase A passes.</p>
 <h2 id="already-on-the-van">Already on the van</h2>
 <table>
 <colgroup>
@@ -2172,7 +2210,7 @@ part in for Phase B after Phase A passes.</p>
 <tr>
 <td>Fuel pickup (factory aux tap)</td>
 <td>Installed</td>
-<td><a href="#hold-1-fuel">HOLD 1</a> walk; prime at <a href="#hold-8-first-fire">HOLD 8</a></td>
+<td><a href="#hold-1-fuel">HOLD 1</a>; prime at <a href="#hold-8-first-fire">HOLD 8</a></td>
 </tr>
 <tr>
 <td>Exhaust / combustion air</td>
@@ -2295,7 +2333,7 @@ spots, relay, fans, GFCI, mountain timing</li>
 <p>→ <a href="#builders-guide">Builder’s Guide</a>.</p>
 <section id="builders-guide" class="install-guide">
 <h1>Builder’s Guide</h1>
-<p><strong>Stage 3 — Make it.</strong> Begin only after <a href="#system-design">System Design</a>, the <a href="#users-guide">User’s Guide</a>, and a skim of <a href="#current-status-report">Current Status</a>.</p>
+<p><strong>Stage 3 — Make it.</strong> Begin only after <a href="#system-design">System Design</a>, a skim of <a href="#the-numbers-that-matter">The Numbers</a>, the <a href="#users-guide">User’s Guide</a>, and <a href="#current-status-report">Current Status</a>.</p>
 <p>Jump: <a href="#project-phases">Project Phases</a> · <a href="#hold-0">HOLD 0</a> · <a href="#hold-1-fuel">1 Fuel</a> · <a href="#hold-2-exhaust">2 Exhaust</a> · <a href="#hold-3-mounts">3
 Mounts</a> · <a href="#hold-4-electrical">4 Wiring</a> · <a href="#hold-5-glycol">5 Glycol</a> · <a href="#hold-6-freshwater">6
 Fresh</a> · <a href="#hold-7-fill">7 Fill</a> · <a href="#hold-8-first-fire">8 First fire</a> · <a href="#hold-9">9 AC</a>
@@ -2316,19 +2354,20 @@ under hydronic heat.</p>
 <p>Cabin heat and diesel hot water pass <a href="#acceptance">Acceptance</a>. <a href="#hold-9">HOLD 9</a> for
 Isotemp AC can wait.</p>
 <h2 id="project-phases">Four Project Phases</h2>
-<p>This is the same map as <a href="#project-phases-overview">How to Use
-This Book</a>. You are in <strong>Phase A — Fuel and exhaust</strong>
-until HOLD 1 and HOLD 2 pass.</p>
-<div class="next">
-<p><strong>Start here.</strong> Walk fuel and exhaust (steps 1–2). Then
-Phase B: mount the WFT and Isotemp, land dry wiring including the
-altitude kit, and leave the Isotemp AC cable dead. Do not fill or fire
-yet.</p>
-</div>
+<p>Treat the install as four phases, not twenty loose tasks. Finish one
+phase before the next. Inside a phase, finish each HOLD before you move
+on.</p>
 <table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
 <thead>
 <tr>
 <th>Phase</th>
+<th>What you finish</th>
 <th>Steps</th>
 <th>Now</th>
 </tr>
@@ -2336,26 +2375,54 @@ yet.</p>
 <tbody>
 <tr>
 <td><strong>A. Fuel and exhaust</strong></td>
+<td>Underbody fuel and exhaust checked safe</td>
 <td>1–2</td>
-<td><strong>Do this next</strong></td>
+<td><strong>← do this next</strong> (on van; HOLD 1–2 still open)</td>
 </tr>
 <tr>
 <td><strong>B. Mount and wire</strong></td>
+<td>WFT and Isotemp mounted; EasyStart / heater 12 V and altitude kit
+landed; Isotemp AC cable routed but dead</td>
 <td>3–4</td>
 <td>After A</td>
 </tr>
 <tr>
 <td><strong>C. Dry plumbing</strong></td>
+<td>Glycol and freshwater hoses connected, still empty</td>
 <td>5–6</td>
-<td>After B</td>
+<td>Later</td>
 </tr>
 <tr>
 <td><strong>D. Fill and first fire</strong></td>
+<td>Water-first loop check → glycol loop + Isotemp chamber → first
+fire</td>
 <td>7–8 (+9)</td>
 <td>Last</td>
 </tr>
 </tbody>
 </table>
+<div class="next">
+<p><strong>Next — Phase A.</strong> Fuel pickup and exhaust are already
+on the van. Finish HOLD 1 and HOLD 2 against <a href="#src-009">SRC-009</a> before you open Phase B. Do not fill or fire
+yet.</p>
+</div>
+<h3 id="what-can-wait-until-after-first-fire">What can wait until after
+first fire</h3>
+<p>After a low-elevation diesel first fire that delivers cabin heat and
+hot water at the Duda, only two items may still be open:</p>
+<ul>
+<li>Cabin thermostat auto-call (<a href="#q-022">Q-022</a>) — start heat
+from the EasyStart Timer<br />
+</li>
+<li>Isotemp AC and upstream GFCI (<a href="#q-009">Q-009</a>) — <a href="#hold-9">HOLD 9</a> only</li>
+</ul>
+<p>Everything else through step 8 is required for that first fire: a
+filled glycol loop, a filled static Isotemp chamber, EasyStart and
+heater 12 V, the master switch, and the cabin fans.</p>
+<p>The altitude kit does not block a low-camp first fire. It is still
+not on the wait list. Land it at HOLD 4 while the EasyStart harness is
+open (<a href="#q-015">Q-015</a> / <a href="#dec-006">DEC-006</a>). You
+will need it before high camps.</p>
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -2399,7 +2466,7 @@ yet.</p>
 <tr>
 <td>4. Electrical</td>
 <td>EasyStart / heater 12 V; master; fans; cable to <strong>WATER
-HEATER</strong> dead; altitude if mountains soon</td>
+HEATER</strong> dead; altitude kit</td>
 <td>Heat call; energize element</td>
 <td><a href="#hold-4-electrical">HOLD 4</a></td>
 </tr>
@@ -3564,111 +3631,6 @@ is open; required before high camps (<a href="#q-015">Q-015</a> / <a href="#dec-
 specifications, sources, hazards, decisions, open questions, and
 verification. It is not a second installation sequence: the practical
 order is in the Builder’s Guide.</p>
-<h1 id="the-numbers-that-matter">The Numbers</h1>
-<p>These figures come from the Hydronic D5S diesel heater manual (<a href="#src-009">SRC-009</a>) unless noted. If you swap the heater,
-rewrite this page from that heater’s manual first.</p>
-<p>Jump: <a href="#system-design">System Design</a> · <a href="#users-guide">User’s Guide</a> · <a href="#builders-guide">Builder’s Guide</a> · <a href="#source-register">Source Register</a></p>
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr>
-<td>Heat output (Power / High / Low)</td>
-<td>5.2 / 5.0 / 2.1 kW</td>
-</tr>
-<tr>
-<td>Fuel use at those settings</td>
-<td>0.64 / 0.61 / 0.26 L/h</td>
-</tr>
-<tr>
-<td>Coolant staging (approx.)</td>
-<td>Power → High ~65°C · High → Low ~80°C · pause ~85°C · restart
-~75°C</td>
-</tr>
-<tr>
-<td>Overheat restart</td>
-<td>Coolant below 70°C (158°F)</td>
-</tr>
-<tr>
-<td>Fluid in the heater itself</td>
-<td>~0.18 L (the loop and Isotemp hold the rest)</td>
-</tr>
-<tr>
-<td>Minimum flow through the heater</td>
-<td>250 L/h</td>
-</tr>
-<tr>
-<td>Heater pump (reference)</td>
-<td>~680 L/h @ 0.1 bar; under ~12 W</td>
-</tr>
-<tr>
-<td>Max propylene glycol overpressure</td>
-<td>2.5 bar</td>
-</tr>
-<tr>
-<td>WFT 5 L expansion/header tank relief</td>
-<td>~1.2 bar (below heater limit)</td>
-</tr>
-<tr>
-<td>Isotemp potable PRV (not a glycol setting)</td>
-<td>~5.5 bar / 80 psi — do not size the loop to this</td>
-</tr>
-<tr>
-<td>Mix</td>
-<td>≤50% Prestone LowTox AF555 only (<a href="#dec-017">DEC-017</a>; <a href="#src-029">SRC-029</a>)</td>
-</tr>
-<tr>
-<td>Voltage window</td>
-<td>10.5–16 V</td>
-</tr>
-<tr>
-<td>Electrical start / run (without pump)</td>
-<td>~120 W start; ~40 / 37 / 12 W Power / High / Low</td>
-</tr>
-<tr>
-<td>Fuel</td>
-<td>Diesel EN 590; ≤20% FAME OK; pure biodiesel not</td>
-</tr>
-<tr>
-<td>Metering pump angle</td>
-<td>15°–90°; prefer 15°–35°; flat 0°–15° forbidden</td>
-</tr>
-<tr>
-<td>Metering pump heads</td>
-<td>Pressure tank→pump max 3000 mm; suction pressureless max 1000 mm;
-suction with 0.03 bar cap max 400 mm</td>
-</tr>
-<tr>
-<td>Exhaust</td>
-<td>24 mm ID; ~0.2–2 m; downslope; ~5 mm drain</td>
-</tr>
-<tr>
-<td>Combustion air</td>
-<td>20 mm ID; kit hose max ~0.76 m; cool outside air</td>
-</tr>
-<tr>
-<td>Altitude</td>
-<td>Unlimited to ~5,000 ft without kit; kit <a href="#dec-006">22 1000
-33 22 00</a> for sustained 5,000–10,000 ft. Fuel delivery starts
-reducing ~1400 m (~9% / 1000 m) with kit (<a href="#src-002">SRC-002</a>)</td>
-</tr>
-<tr>
-<td>AM100-1LF thermostatic mixing valve</td>
-<td>70–145°F range; set ~120°F, lock handwheel, label (<a href="#dec-008">DEC-008</a>; <a href="#src-036">SRC-036</a>)</td>
-</tr>
-<tr>
-<td>Diesel start lockout</td>
-<td>Miss may retry ~70 s; lock after two further fails; ≤2 off/on into a
-fault</td>
-</tr>
-</tbody>
-</table>
-<p>The Isotemp chamber holds about 4.2 gal of static glycol. The coil is
-charged by the heater pump. The 750 W element on Paneltronics
-<strong>WATER HEATER</strong> (face <strong>72313</strong> / sheet
-<strong>9972313B</strong>) heats the chamber only (<a href="#dec-004">DEC-004</a> / <a href="#dec-007">DEC-007</a> / <a href="#dec-020">DEC-020</a>).</p>
 <h1 id="spec-and-sources">Spec and sources</h1>
 <p>This section is part of the technical appendix. Use it for the build
 snapshot, architecture, sources, and hold points. It is not the order of
