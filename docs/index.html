@@ -937,6 +937,8 @@ yet</a></li>
 <ul>
 <li><a href="#quick-start-after-acceptance" id="toc-quick-start-after-acceptance">Quick start (after
 Acceptance)</a></li>
+<li><a href="#a-normal-heat-day-after-acceptance" id="toc-a-normal-heat-day-after-acceptance">A normal heat day (after
+Acceptance)</a></li>
 <li><a href="#hard-rules" id="toc-hard-rules">Hard rules</a></li>
 <li><a href="#what-the-isotemp-does-for-you-day-to-day" id="toc-what-the-isotemp-does-for-you-day-to-day">What the Isotemp does
 for you day to day</a></li>
@@ -1053,7 +1055,13 @@ element (HOLD 9)</a></li>
 <li><a href="#acceptance" id="toc-acceptance">Acceptance</a></li>
 </ul></li>
 <li><a href="#technical-appendix" id="toc-technical-appendix">Technical
-appendix</a></li>
+appendix</a>
+<ul>
+<li><a href="#how-this-appendix-maps-to-part-one" id="toc-how-this-appendix-maps-to-part-one">How this appendix maps to
+part one</a></li>
+<li><a href="#finish-lines-same-as-part-one" id="toc-finish-lines-same-as-part-one">Finish lines (same as part
+one)</a></li>
+</ul></li>
 <li><a href="#spec-and-sources" id="toc-spec-and-sources">Spec and
 sources</a>
 <ul>
@@ -1507,7 +1515,8 @@ upstream GFCI/ELCI and cable route before first use (<a href="#hold-9">HOLD 9</a
 HEATER</strong> is not cut by the master switch. Do not leave the
 inverter and <strong>WATER HEATER</strong> on for long unattended
 periods unless you intend a deliberate chamber top-off on shore or
-abundant solar, the chamber is full, and the GFCI path is verified (<a href="#hold-9">HOLD 9</a>). → <a href="#haz-006">HAZ-006</a> · <a href="#ac-chamber-and-dishes">User’s Guide — AC chamber</a></p>
+abundant solar, the chamber is full, and the GFCI path is verified (<a href="#hold-9">HOLD 9</a>). → <a href="#haz-006">HAZ-006</a> · <a href="#haz-012">HAZ-012</a> · <a href="#ac-chamber-and-dishes">User’s
+Guide — AC chamber</a></p>
 </div>
 <div class="caution">
 <p><strong>Hot glycol and steam.</strong> Keep the loop full and bled.
@@ -1547,6 +1556,15 @@ That loop never mixes with drinking water, never connects to the engine
 750 W / 115 VAC element warms that chamber from the Paneltronics AC
 panel—it does not pump the loop, and it alone does not put hot water at
 the taps.</p>
+<p><strong>How heat moves on a working day.</strong> EasyStart calls the
+Hydronic D5S. The heater’s own pump moves glycol through the Sure Marine
+cabin heater (cabin air), then the Duda (tap water across the double
+wall), then the Isotemp coil (leftover heat into or out of the static
+chamber), then back. When the loop is warm enough, the burner may pause
+while the pump keeps circulating—that is when the chamber can smooth
+short cycles. Living with that pattern is in the <a href="#users-guide">User’s Guide</a>; predicted starts and keep-or-sell
+numbers are in the <a href="#isotemp-value-study">Isotemp value
+study</a>.</p>
 <p><strong>Stop and reject</strong> any proposal that would splice into
 the engine, tee glycol into drinking water, bypass cabin heat, add a
 second glycol pump, or land the 750 W element on the 12 V panel.</p>
@@ -2067,7 +2085,12 @@ charged by the heater pump. The 750 W element on Paneltronics
 <p><strong>Stage 2 — Use.</strong> Read this after <a href="#system-design">System Design</a> and <a href="#the-numbers-that-matter">The Numbers</a>, and before <a href="#current-status-report">Current Status</a> and the <a href="#builders-guide">Builder’s Guide</a>. After <a href="#acceptance">Acceptance</a>, use this chapter as the day-to-day
 manual. Until Acceptance, treat the tables below as the operating
 target—not as permission to light the heater.</p>
-<p>Jump: <a href="#system-design">System Design</a> · <a href="#the-numbers-that-matter">The Numbers</a> · <a href="#current-status-report">Current Status</a> · <a href="#builders-guide">Builder’s Guide</a> · <a href="#isotemp-value-study">Isotemp value study</a></p>
+<p>There are two finish lines. <strong>Diesel cabin heat and diesel hot
+water</strong> at the Duda can pass before <a href="#hold-9">HOLD 9</a>.
+<strong>Complete system</strong> (Isotemp AC included) needs HOLD 9.
+After that, this chapter is the living manual; keep-or-sell numbers stay
+in the <a href="#isotemp-value-study">Isotemp value study</a>.</p>
+<p>Jump: <a href="#system-design">System Design</a> · <a href="#the-numbers-that-matter">The Numbers</a> · <a href="#current-status-report">Current Status</a> · <a href="#builders-guide">Builder’s Guide</a> · <a href="#acceptance">Acceptance</a> · <a href="#isotemp-value-study">Isotemp value study</a></p>
 <h2 id="quick-start-after-acceptance">Quick start (after
 Acceptance)</h2>
 <table>
@@ -2127,8 +2150,57 @@ needed. No more than two off/on cycles into a fault</td>
 EasyStart Timer, not from the SC1600B.</p>
 <p>A heat call wakes the Hydronic D5S and starts its
 <strong>pump</strong>. The <strong>burner</strong> fires only if coolant
-is cool enough. Cool cabin air for the first minute or two is
-normal.</p>
+is cool enough. Cool cabin air for the first minute or two is normal.
+When the loop is warm enough, the heater may pause the flame near
+<strong>85°C</strong> and restart near <strong>75°C</strong>; the pump
+usually keeps circulating during that pause (<a href="#the-numbers-that-matter">The Numbers</a>). That is when leftover
+heat can move into or out of the Isotemp chamber.</p>
+<h2 id="a-normal-heat-day-after-acceptance">A normal heat day (after
+Acceptance)</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Moment</th>
+<th>What usually happens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Park and leave</td>
+<td>Master <strong>Off</strong>. <strong>WATER HEATER</strong> off
+unless you chose a deliberate shore/solar chamber top-off</td>
+</tr>
+<tr>
+<td>Cold morning, want cabin heat</td>
+<td>Master <strong>On</strong> → EasyStart start → fan dial → wait a few
+minutes for warm air</td>
+</tr>
+<tr>
+<td>Mild night, Low oversized</td>
+<td>Burner may pause and restart; chamber softens some of those short
+cycles</td>
+</tr>
+<tr>
+<td>Shower</td>
+<td>EasyStart running; draw only through AM100-1LF; expect the diesel to
+work</td>
+</tr>
+<tr>
+<td>Shore day, dishes later</td>
+<td>Charge chamber on <strong>WATER HEATER</strong>, then short
+EasyStart so the <strong>pump</strong> moves heat to the Duda (<a href="#ac-chamber-and-dishes">AC chamber and dishes</a>)</td>
+</tr>
+<tr>
+<td>High camp</td>
+<td>Altitude kit already landed at HOLD 4; do not overnight above ~5,000
+ft without it</td>
+</tr>
+</tbody>
+</table>
 <h2 id="hard-rules">Hard rules</h2>
 <ol type="1">
 <li>Turn the master Off when the van is parked or unattended.</li>
@@ -2378,6 +2450,12 @@ taps still need the pump<br />
 <li><label><input type="checkbox"></input>Dish rinse timing (warm loop vs cold
 loop) is clear<br />
 </label></li>
+<li><label><input type="checkbox"></input>Pump-continues-in-pause and
+burner-may-stay-off are clear<br />
+</label></li>
+<li><label><input type="checkbox"></input>Diesel-only vs complete Acceptance
+(HOLD 9) is clear<br />
+</label></li>
 <li><label><input type="checkbox"></input>Emergency stop and the two off/on
 rule are clear</label></li>
 </ul>
@@ -2455,6 +2533,9 @@ OUTLETS</td>
 </tr>
 </tbody>
 </table>
+<p>Diesel-only Acceptance can finish without HOLD 9. Complete system
+Acceptance needs HOLD 9. After diesel first fire, only <a href="#q-022">Q-022</a> and <a href="#q-009">Q-009</a> may still wait;
+land the altitude kit at HOLD 4.</p>
 <h2 id="still-in-the-garage">Still in the garage</h2>
 <table>
 <colgroup>
@@ -3240,7 +3321,7 @@ the mixer cold inlet.</li>
 </ol>
 <h3 id="sure-marine-cabin-heater-already-on-the-van">Sure Marine cabin
 heater (already on the van)</h3>
-<p>REAL core, SN <strong>16401</strong>. Label: <strong>IN — bottom
+<p>REAL unit, SN <strong>16401</strong>. Label: <strong>IN — bottom
 fitting · OUT — top fitting</strong>. Fan power leads are taped, not
 finished. Final cosmetic spot may still move — plumbing rules below do
 not.</p>
@@ -3851,11 +3932,87 @@ is open; required before high camps (<a href="#q-015">Q-015</a> / <a href="#dec-
 <p>This is the controlled reference record for the build:
 specifications, sources, hazards, decisions, open questions, and
 verification. It is not a second installation sequence. The practical
-order is in the Builder’s Guide. Day-to-day operation is in the User’s
-Guide.</p>
+order is in the <a href="#builders-guide">Builder’s Guide</a>.
+Day-to-day operation is in the <a href="#users-guide">User’s Guide</a>.
+Architecture for Tyrah is in <a href="#system-design">System
+Design</a>.</p>
+<h2 id="how-this-appendix-maps-to-part-one">How this appendix maps to
+part one</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>If you need…</th>
+<th>Start here</th>
+<th>Then</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Locked loop, forbidden designs, part glossary</td>
+<td><a href="#system-design">System Design</a> / <a href="#the-parts">The Parts</a></td>
+<td><a href="#system-architecture">System Architecture</a> · <a href="#decision-log">Decision Log</a></td>
+</tr>
+<tr>
+<td>Staging, fuel, altitude, mixer numbers</td>
+<td><a href="#the-numbers-that-matter">The Numbers</a></td>
+<td><a href="#verified-requirements">Verified Requirements</a> · <a href="#source-register">Source Register</a></td>
+</tr>
+<tr>
+<td>Living with cabin heat, dishes, AC</td>
+<td><a href="#users-guide">User’s Guide</a></td>
+<td><a href="#isotemp-value-study">Isotemp value study</a></td>
+</tr>
+<tr>
+<td>What is on the van vs garage</td>
+<td><a href="#current-status-report">Current Status</a></td>
+<td><a href="#parts-inventory">Parts Inventory</a> · <a href="#bom-and-missing-parts">BOM</a></td>
+</tr>
+<tr>
+<td>Serial install HOLDs</td>
+<td><a href="#builders-guide">Builder’s Guide</a></td>
+<td><a href="#installation-procedure">Installation</a> · <a href="#commissioning-procedure">Commissioning</a></td>
+</tr>
+<tr>
+<td>Dual finish lines (diesel vs complete)</td>
+<td><a href="#how-to-use-this-book">How to Use</a> · <a href="#acceptance">Acceptance</a></td>
+<td><a href="#hold-9">HOLD 9</a> · <a href="#q-009">Q-009</a></td>
+</tr>
+<tr>
+<td>Keep-or-sell Isotemp numbers</td>
+<td><a href="#isotemp-value-study">Isotemp value study</a></td>
+<td><a href="#coolant-loop">Coolant Loop</a> · <a href="#dec-007">DEC-007</a></td>
+</tr>
+<tr>
+<td>Owner answers still open</td>
+<td><a href="#questions-for-you-in-order">Questions for You</a></td>
+<td>full <a href="#open-questions">Open Questions</a> table</td>
+</tr>
+<tr>
+<td>Stop rules</td>
+<td><a href="#safety">Safety</a></td>
+<td><a href="#hazard-register">Hazard Register</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="finish-lines-same-as-part-one">Finish lines (same as part
+one)</h2>
+<ul>
+<li><strong>Diesel cabin heat and diesel hot water at the Duda</strong>
+can pass after first fire without <a href="#hold-9">HOLD 9</a>.</li>
+<li><strong>Complete system</strong> (including Isotemp AC) requires
+HOLD 9.</li>
+<li>After a low-elevation diesel first fire, only <a href="#q-022">Q-022</a> and <a href="#q-009">Q-009</a> / HOLD 9 may
+still wait. The altitude kit is <strong>not</strong> on that wait
+list—land it at HOLD 4 (<a href="#q-015">Q-015</a> / <a href="#dec-006">DEC-006</a>).</li>
+</ul>
 <p>The <a href="#isotemp-value-study">Isotemp value study</a> is the
-keep-or-sell and cycling analysis for the Slim Square buffer. Read it
-when you need the numbers behind the User’s Guide.</p>
+keep-or-sell and cycling analysis for the Slim Square. Read it when you
+need the numbers behind the User’s Guide.</p>
 <h1 id="spec-and-sources">Spec and sources</h1>
 <p>This section is part of the technical appendix. Use it for the build
 snapshot, architecture, sources, and hold points. It is not the order of
@@ -3894,6 +4051,16 @@ stay OPEN — do not invent pinouts or hose routes.</p>
 </tbody>
 </table>
 <h2 id="snapshot">Snapshot</h2>
+<p><strong>One loop.</strong> Hydronic D5S → Sure Marine cabin heater →
+Duda → Isotemp coil → return. No engine. No second pump. Isotemp chamber
+= static glycol; factory mixer unused. Drinking water only through the
+Duda + AM100-1LF.</p>
+<p><strong>Two finish lines.</strong> Diesel cabin heat / diesel hot
+water can pass before HOLD 9. Complete system (Isotemp AC) needs HOLD 9.
+After a low-elevation diesel first fire, only Q-022 and Q-009 may still
+wait; land the altitude kit at HOLD 4.</p>
+<p><strong>Where to read.</strong> Part one: <a href="#system-design">System Design</a> → <a href="#the-numbers-that-matter">Numbers</a> → <a href="#users-guide">User’s Guide</a> → <a href="#current-status-report">Status</a> → <a href="#builders-guide">Builder</a>. Part two: this appendix, starting at
+the <a href="#technical-appendix">Technical appendix</a> map.</p>
 <h2 id="vehicle-and-heater">Vehicle and heater</h2>
 <table>
 <colgroup>
@@ -4262,9 +4429,23 @@ off/on cycles; EasyStart Timer diagnostics (SRC-009 p. 32)</td>
 <td>Sustained use above ~1500 m without air-pressure sensor</td>
 <td>Poor combustion / faults</td>
 <td>Kit <strong>22 1000 33 22 00</strong> wired per SRC-002; H-Kit on
-nameplate (DEC-006 / SRC-009 p. 32)</td>
-<td>Install from garage before high camps (Q-015)</td>
+nameplate (DEC-006 / SRC-009 p. 32). Prefer land at HOLD 4 while
+EasyStart harness is open</td>
+<td>Install from garage at HOLD 4; required before high camps
+(Q-015)</td>
 <td>OPEN — kit in garage (identity confirmed)</td>
+</tr>
+<tr>
+<td><span id="haz-012">HAZ-012</span></td>
+<td>Unattended Isotemp AC</td>
+<td>Inverter + Paneltronics <strong>WATER HEATER</strong> left on;
+master Off does not cut AC</td>
+<td>Battery drain; shock/fire if path unfinished</td>
+<td>Kill <strong>WATER HEATER</strong> / inverter separately unless
+deliberate shore/solar top-off with full chamber and verified GFCI (HOLD
+9)</td>
+<td>User’s Guide AC chamber; HOLD 9</td>
+<td>OPEN until HOLD 9</td>
 </tr>
 </tbody>
 </table>
@@ -4425,8 +4606,10 @@ performance — Hydronic D5S diesel heater (SRC-009 p. 13)</h3>
 </tbody>
 </table>
 <p>Tolerances ±10% at rated voltage / Esslingen reference altitude.
-Staging ~65 / 80 / 85 / 75 °C; overheat restart &lt;70 °C (SRC-009
-p. 31–32).</p>
+Staging ~65 / 80 / 85 / 75 °C; during pause the circulating pump
+continues; overheat restart &lt;70 °C (SRC-009 p. 31–32). Plain-language
+card: <a href="#the-numbers-that-matter">The Numbers</a>. Cycling
+estimates: <a href="#isotemp-value-study">Isotemp value study</a>.</p>
 <h3 id="hard-constraints">Hard constraints</h3>
 <ul>
 <li>Coolant: water + propylene glycol, <strong>≤50%</strong> coolant; ≤
@@ -4436,7 +4619,8 @@ p. 31–32).</p>
 <li>Exhaust and combustion air outside the cabin (SRC-009
 p. 24–25).</li>
 <li>Sustained use above ~1500 m needs Altitude kit 22 1000 33 22 00
-(DEC-006).</li>
+(DEC-006). Prefer land at HOLD 4 while the EasyStart harness is open
+(Q-015).</li>
 <li>Underbody mount allowed if install rules are met (SRC-009 p. 15) —
 this van: driver-side / fuel-fill area.</li>
 </ul>
@@ -4466,10 +4650,11 @@ fuel-line routing inspection before first fire</label></li>
 <li><label><input type="checkbox"></input><strong>OPEN:</strong> Q-013
 EasyStart Timer wiring finish</label></li>
 <li><label><input type="checkbox"></input><strong>OPEN:</strong> Q-015
-Altitude kit 22 1000 33 22 00 find / wire (high camps)</label></li>
+Altitude kit 22 1000 33 22 00 land at HOLD 4 (required before high
+camps; preferred with harness open)</label></li>
 <li><label><input type="checkbox"></input><strong>OPEN:</strong> Q-009 / Q-016
-element AC path (required for complete build; diesel-only first fire may
-precede final energization)</label></li>
+element AC path (required for <strong>complete</strong> system
+acceptance; diesel-only first fire may precede HOLD 9)</label></li>
 <li><label><input type="checkbox"></input><strong>OPEN:</strong> Q-019 / Q-021
 brand pick and Sure Marine cabin heater switch model</label></li>
 </ul>
@@ -4557,14 +4742,15 @@ exchanger → Sure Marine cabin heater → Bosch buffer → expansion, with a
 planned summer valve to bypass the Sure Marine cabin heater, and engine
 connection deferred. <strong>Do not install that order.</strong></p>
 <p><strong>Locked now:</strong></p>
-<p>Espar / Hydronic D5S diesel heater internal pump → Hydronic D5S
-diesel heater (EasyStart Timer + Altitude kit 22 1000 33 22 00) → Sure
-Marine cabin heater → <strong>Duda B3-12DW-20 plate heat exchanger
-(glycol side)</strong> → <strong>coil in the Isotemp Slim Square 4.2 gal
-heat battery (buffer)</strong> → WFT 5 L expansion/header tank on the
-return high point. No auxiliary glycol pump. The Isotemp 750 W / 115 VAC
+<p>Hydronic D5S diesel heater circulating pump → Hydronic D5S diesel
+heater (EasyStart Timer + Altitude kit 22 1000 33 22 00) → Sure Marine
+cabin heater → <strong>Duda B3-12DW-20 plate heat exchanger (glycol
+side)</strong> → <strong>coil in the Isotemp Slim Square 4.2 gal heat
+battery</strong> → return; WFT 5 L expansion/header tank on the return
+high point. No auxiliary glycol pump. The Isotemp 750 W / 115 VAC
 element is a separate Paneltronics AC-panel load; it does not create a
-second circulating loop.</p>
+second circulating loop. During control pause the burner is off and the
+circulating pump keeps running (<a href="#src-009">SRC-009</a>; <a href="#the-numbers-that-matter">The Numbers</a>).</p>
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -4588,7 +4774,7 @@ protection/control verification remains open</td>
 </tr>
 <tr>
 <td>Space heat out</td>
-<td>Sure Marine cabin heater (Sure Marine cabin heater)</td>
+<td>Sure Marine cabin heater</td>
 </tr>
 <tr>
 <td>DHW out</td>
@@ -5498,7 +5684,11 @@ p. 13)</h3>
 <p>Overheat / low-flow is a lockout condition: coolant must drop below
 70 °C before restart after overheat (SRC-009 p. 32). Normal staging
 (SRC-009 p. 31): Power → High ~65 °C; High → Low ~80 °C; Low → Off/pause
-~85 °C; restart from pause ~75 °C.</p>
+~85 °C; restart from pause ~75 °C. <strong>During pause the circulating
+pump keeps running</strong> so the Isotemp coil can still exchange heat
+with the static chamber (<a href="#the-numbers-that-matter">The
+Numbers</a>; <a href="#isotemp-value-study">Isotemp value
+study</a>).</p>
 <p>Hydronic II C and D5WS tables are <strong>not</strong> this heater
 (DEC-000) — do not use their min-flow or wattage columns.</p>
 <h3 id="on-hand-fluid-q-019">On-hand fluid <code>[Q-019]</code></h3>
@@ -6255,8 +6445,9 @@ Fan dial Low/Med/High without hard Off (DEC-018). Until Q-022 closes:
 EasyStart Timer calls only.</p>
 <h2 id="altitude-kit-22-1000-33-22-00-1">Altitude kit 22 1000 33 22
 00</h2>
-<p>Adapter on the control harness (SRC-002). High camps only
-(Q-015).</p>
+<p>Adapter on the control harness (SRC-002). Land at HOLD 4 while the
+EasyStart harness is open (Q-015 / DEC-006). Required before high camps;
+not on the post–first-fire wait list with Q-022 / Q-009.</p>
 <h2 id="isotemp-element-dec-004-dec-020">Isotemp element (DEC-004 /
 DEC-020)</h2>
 <p>115 VAC / 750 W ≈ 6.5 A on Paneltronics <strong>WATER
@@ -6552,18 +6743,25 @@ Altitude kit 22 1000 33 22 00 P/N and H-Kit mark before high camps
 2 kW, D4 ≈ 4 kW). This build uses a <strong>Hydronic D5S</strong> whose
 lowest documented stage is still <strong>2.1 kW</strong>, plus a marine
 calorifier (Isotemp Slim Square) as <strong>static glycol
-buffer</strong>—not as a potable tank. Owner and installer forums have
+mass</strong>—not as a potable tank. Owner and installer forums have
 long said hydronic loops without enough mass
 <strong>short-cycle</strong> badly; the 2018 design notes for this van
-called for roughly <strong>8.5 gal</strong> of buffer (<a href="#src-004">SRC-004</a>). This build kept the idea and changed the
+called for roughly <strong>8.5 gal</strong> of thermal mass (<a href="#src-004">SRC-004</a>). This build kept the idea and changed the
 hardware to a <strong>4.2 gal</strong> Isotemp with the chamber on
 glycol (<a href="#dec-007">DEC-007</a>).</p>
-<p>This note estimates whether that smaller buffer still earns its
+<p>This note estimates whether that smaller chamber still earns its
 complexity: van heat-loss bands, stored energy, predicted starts per
 hour with and without the chamber, a coil-coupling factor, and what AC
-preheat can (and cannot) do for dish water. Day-to-day operating
-language lives in the <a href="#users-guide">User’s Guide</a>.
-Manufacturer truth remains <a href="#src-009">SRC-009</a> and <a href="#src-022">SRC-022</a>.</p>
+preheat can (and cannot) do for dish water.</p>
+<p><strong>Where this sits in the book.</strong> Day-to-day language: <a href="#users-guide">User’s Guide</a> (especially <a href="#ac-chamber-and-dishes">AC chamber and dishes</a>). Staging and
+pause/pump: <a href="#the-numbers-that-matter">The Numbers</a>.
+Architecture and finish lines: <a href="#system-design">System
+Design</a> · <a href="#acceptance">Acceptance</a>. Manufacturer truth:
+<a href="#src-009">SRC-009</a> and <a href="#src-022">SRC-022</a>.
+Isotemp coil guidance for engine-calorifier service suggests roughly
+<strong>0.5 gal/min</strong> through the coil for efficient transfer (<a href="#src-022">SRC-022</a> family manuals); this loop’s heater pump is
+sized for the D5S minimum <strong>250 L/h</strong>, so treat coil UA as
+a measured unknown—hence the planning coupling factor below.</p>
 <h2 id="question">Question</h2>
 <p>Does the Isotemp Slim Square 4.2 gal heat battery improve this build
 enough to justify keeping it, or would selling it simplify the system
@@ -7507,16 +7705,22 @@ installed)</li>
 <h2 id="dec-006">DEC-006 — High-elevation use is a design
 requirement</h2>
 <ul>
-<li><strong>Date:</strong> 2026-09-19</li>
+<li><strong>Date:</strong> 2026-09-19 (timing note 2026-09-20)</li>
 <li><strong>Status:</strong> Accepted</li>
 <li><strong>Decision:</strong> The van will be used at high elevation
 early and often. Sustained heating above ~1500 m is in scope. Hydronic
 D5S diesel heater therefore requires the air-pressure / Altitude kit 22
 1000 33 22 00 (also written 22.1000.33.2200) per SRC-009 p. 32. Short
-mountain-pass use without the kit is not the operating profile.</li>
-<li><strong>Reason:</strong> Owner-confirmed 2026-09-19.</li>
+mountain-pass use without the kit is not the operating profile.
+<strong>Install and wire the kit at HOLD 4</strong> while the EasyStart
+harness is open (<a href="#q-015">Q-015</a>). A low-elevation first fire
+can run without it, but the kit is <strong>not</strong> on the
+post–first-fire wait list with <a href="#q-022">Q-022</a> / <a href="#q-009">Q-009</a>.</li>
+<li><strong>Reason:</strong> Owner-confirmed 2026-09-19; harness-open
+install preferred 2026-09-20.</li>
 <li><strong>Alternatives considered:</strong> Sea-level / below-1500 m
-use only (not selected).</li>
+use only (not selected); defer kit until after first fire (rejected as
+preferred practice).</li>
 <li><strong>Supporting sources:</strong> Owner; SRC-009 p. 32;
 SRC-002</li>
 <li><strong>Affected documents:</strong>
@@ -7525,8 +7729,9 @@ SRC-002</li>
 <code>04-bom-and-missing-parts.md</code>,
 <code>09-electrical-and-controls.md</code>,
 <code>open-questions.md</code>,
-<code>research/verified-requirements.md</code>,
-<code>hazards.md</code></li>
+<code>research/verified-requirements.md</code>, <code>hazards.md</code>,
+<code>book/install-in-this-order.md</code>,
+<code>book/front-matter.md</code></li>
 </ul>
 <h2 id="dec-007">DEC-007 — Isotemp Slim Square 4.2 gal heat battery is
 the thermal mass, glycol on both sides</h2>
@@ -7924,6 +8129,15 @@ Isotemp 750 W.</li>
 <li>Master switch — in the garage; mount next to EasyStart at HOLD
 4.</li>
 </ul>
+<p><strong>May wait after a low-elevation diesel first fire (only
+these):</strong></p>
+<ul>
+<li><a href="#q-022">Q-022</a> — SC1600B auto call (use EasyStart until
+closed)</li>
+<li><a href="#q-009">Q-009</a> / <a href="#hold-9">HOLD 9</a> — Isotemp
+AC path (required for complete system acceptance)</li>
+</ul>
+<p>The altitude kit is <strong>not</strong> on that wait list.</p>
 <p><strong>Still useful:</strong></p>
 <ol type="1">
 <li><strong>Isotemp</strong> — Exact under-sofa bay (left/right)? Any
@@ -7933,7 +8147,7 @@ glycol point?</li>
 <li><strong>SC1600 fans</strong> — Own a 12 V relay already, or book
 says “buy one”?</li>
 <li><strong>Cabin fans</strong> — Both Noctua NF-F12, or keep the mixed
-pair on the REAL core?</li>
+pair on the Sure Marine cabin heater?</li>
 <li><strong>Shore / inverter</strong> — GFCI or ELCI already upstream of
 Paneltronics?</li>
 <li><strong>Mountains</strong> — First high camp roughly when? (altitude
@@ -7993,8 +8207,8 @@ connection.</strong></td>
 <td>Owner</td>
 <td>No</td>
 <td><strong>Resolved 2026-09-19 (DEC-003 / DEC-008 / SRC-024 /
-SRC-026):</strong> Duda B3-12DW-20 plate + AM100-1LF. Isotemp is buffer
-only (DEC-007).</td>
+SRC-026):</strong> Duda B3-12DW-20 plate + AM100-1LF. Isotemp is static
+glycol mass only (DEC-007).</td>
 </tr>
 <tr>
 <td><span id="q-004">Q-004</span></td>
@@ -8314,11 +8528,12 @@ clean cut</td>
 <tr>
 <td>REQ-011</td>
 <td>Sustained heat above ~1500 m needs kit <strong>22 1000 33 22
-00</strong> + EasyStart Timer; H-Kit on heater</td>
+00</strong> + EasyStart Timer; H-Kit on heater. Prefer install at HOLD 4
+while harness open</td>
 <td>Controls</td>
-<td>SRC-009 p. 32; SRC-002; DEC-006</td>
+<td>SRC-009 p. 32; SRC-002; DEC-006; Q-015</td>
 <td>OPEN (kit in garage)</td>
-<td>Find box; wire (Q-015)</td>
+<td>Land at HOLD 4; required before high camps</td>
 </tr>
 <tr>
 <td>REQ-012</td>
@@ -8429,7 +8644,8 @@ Paneltronics AC load</td>
 <tr>
 <td>REQ-023</td>
 <td>Staging ~65 / 80 / 85 / 75 °C (Power→High→Low→pause→restart);
-overheat restart &lt;70 °C; ≤2 off/on into fault</td>
+<strong>pump continues in pause</strong>; overheat restart &lt;70 °C; ≤2
+off/on into fault</td>
 <td>Controls</td>
 <td>SRC-009 p. 31–32; Q-020 resolved</td>
 <td>VERIFIED (spec)</td>
@@ -8460,8 +8676,10 @@ fire</td>
 <p>Fuel-line inspection (REQ-007 / REQ-025), exhaust confirm (REQ-008),
 fill/bleed (REQ-002–005, REQ-017), EasyStart Timer landing (REQ-018).
 Altitude kit 22 1000 33 22 00 (REQ-011) blocks high camps, not a
-low-elevation first fire. Paneltronics element circuit (REQ-015 /
-REQ-019 / REQ-022) remains open until Q-009 / Q-016 are resolved.</p>
+low-elevation first fire—but land it at HOLD 4 while the harness is
+open. Paneltronics element circuit (REQ-015 / REQ-019 / REQ-022) is
+required for <strong>complete</strong> system acceptance (<a href="#hold-9">HOLD 9</a>), not for diesel-only cabin heat / diesel hot
+water at the Duda.</p>
 <h1 id="source-register">Source Register</h1>
 <p>Manufacturer documentation outranks OEM vehicle sheets, marine
 installer guides, blogs, vendor listings, and photo albums. The
