@@ -26,7 +26,7 @@ Do not create or maintain any other report, guide PDF, or HTML alias.
 
 **Method:** think of the **finished** HTML+PDF holistically. Default to wide, ambitious passes that sync Design → Numbers → Use → Status → Build → appendix. Narrow single-file edits only when explicitly scoped that way.
 
-Writing standards follow [USU Engineering Writing Center technical writing standards](https://engineering.usu.edu/students/engineering-writing-center/writing-resources/technical-writing-standards), adapted in `.cursor/rules/tyrah-gift-book.mdc` (plus controlled part names for this van).
+Writing standards follow [USU Engineering Writing Center technical writing standards](https://engineering.usu.edu/students/engineering-writing-center/writing-resources/technical-writing-standards), adapted in `.cursor/rules/tyrah-gift-book.mdc` (controlled part names + **lean/precise/complete-sentence ethos** under Voice).
 
 1. **Breadth first** — part one readable end-to-end: [The Parts](book/01-what-this-system-does.md) vocabulary locked, one loop story, honest status, no contradictions. Rebuild and skim.
 2. **Depth second** — deepen one *theme* across files; keep install serial; sync facts into the appendix.

@@ -50,7 +50,20 @@ That is the only report. Both formats are intentional. Do not create parallel gu
 
 Calm, precise, accessible briefing for a smart general audience. No fairy-tale sequencing (“First comes…”). No corporate filler. No open-question tables or leftover heater-family comparisons in part one.
 
-**Lean means orthogonal, not telegraphic.** Prefer fewer facts said once over the same fact padded three ways. Still write **complete sentences** and normal technical prose. Do not compress into fragments, label-colon dumps, or arrow chains where a short sentence is clearer.
+## Lean, precise, still prose (owner ethos)
+
+Inaccuracies and shoddy writing usually come from **verbosity**—the same fact restated three ways, hedges piled on hedges, status folklore mixed into architecture. Prefer **orthogonal** structure: one fact, one place, said as precisely as possible.
+
+That is **not** a license to wreck the language. Part one stays **complete sentences** and normal technical prose. Do not compress into fragments, label-colon dumps (“Where. Sure Marine under…”), or arrow chains where a short sentence is clearer. Lean means cut fat; it does not mean telegram style.
+
+| Do | Do not |
+|---|---|
+| One loop story in one section; link elsewhere | Retell the full circuit in Purpose, loop, jobs, and Controls |
+| Short complete sentences with a clear subject | “Order only:” / “Fuel. Pickup → pump → …” as body prose |
+| Concrete numbers and locked names | “usually,” “owner thinks,” “something like” when a DEC/SRC exists |
+| Tables for lookups; prose for explanation | Tables that restate the paragraph above them |
+
+Writing standards below still apply. When “short” and “complete sentence” conflict, keep the complete sentence.
 
 # Technical writing standards (part one)
 

@@ -38,7 +38,7 @@ The Water Flow Tank tees into the **return** at the highest circulating point. I
 
 ### Cabin air
 
-Living-space air crosses the Sure Marine cabin heater. Two Noctua fans and one dial move that air. Combustion air and exhaust stay outside.
+Living-space air crosses the Sure Marine cabin heater under the fridge. Two Noctua fans and one dial are on that unit. Combustion air and exhaust stay outside.
 
 ::: {.media-pair}
 ![Cabin air](diagrams/cabin-air.svg)
