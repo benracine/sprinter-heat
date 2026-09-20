@@ -13,8 +13,9 @@ This is the controlled reference record for the build: specifications, sources, 
 | Serial install HOLDs | [Builder’s Guide](#builders-guide) | [Installation](#installation-procedure) · [Commissioning](#commissioning-procedure) |
 | Dual finish lines (diesel vs complete) | [How to Use](#how-to-use-this-book) · [Acceptance](#acceptance) | [HOLD 9](#hold-9) · [Q-009](#q-009) |
 | Keep-or-sell Isotemp numbers | [Isotemp value study](#isotemp-value-study) | [Coolant Loop](#coolant-loop) · [DEC-007](#dec-007) |
-| House / sofa working draft | [Working design understanding](#working-design-understanding) | Promote into [Controls](#controls) · HOLD S · [Q-009](#q-009) |
+| Locked facts (contradiction hunt) | [Locked facts checklist](#locked-facts-checklist) | Fix Design → Status → Build → appendix in one pass |
 | Photo knowledge extracts | [electrical](#photo-extract-electrical) · [heater](#photo-extract-heater) · [insulation](#photo-extract-insulation) | Cross-check [Q-025](#q-025) · HOLD 4 fuse breakout · HOLD S hatches |
+| House / sofa working draft | [Working design understanding](#working-design-understanding) | Promote into [Controls](#controls) · HOLD S · [Q-009](#q-009) |
 | Owner answers still open | [Questions for You](#questions-for-you-in-order) | full [Open Questions](#open-questions) table |
 | Stop rules | [Safety](#safety) | [Hazard Register](#hazard-register) |
 

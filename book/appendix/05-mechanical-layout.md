@@ -32,12 +32,14 @@ Permissible tilt angles: SRC-009 p. 16. Heater horizontal→vertical range per d
 - Propylene glycol **in bottom, out top** unless the unit’s plate says otherwise. Plan an outlet-side bleeder.
 - Keep the Sure Marine cabin heater below the WFT 5 L expansion/header tank fluid level.
 - Cabin air only — draw living-space (or outside) air across the Sure Marine cabin heater; do not pull from a fume-laden bay.
+- **This van (owner / Tyrah):** **under the fridge** (fits). SN **16401**.
 
 ### Isotemp Slim Square 4.2 gal heat battery `[DEC-001, SRC-022]`
 
 - Coil connections should sit below the WFT 5 L expansion/header tank level so the coil self-vents. If the tank is above that level, add a bleeder at the high point (SRC-022 §2).
 - Horizontal, vertical, or other Slim Square positions in the manual are allowed; **drain / safety valve must be the lowest point**.
-- **This van (owner):** mount **driver side under the new sofa/bed** (current bed coming out). Prefer ease of access and ease of construction over a complex hidden void.
+- **This van (owner):** mount **driver side under the new sofa/bed (low)**; Water Flow Tank in **sofa-bed backrest (high)**. Prefer ease of access and ease of construction over a complex hidden void.
+- Cap the **factory mixer forever** — AM100-1LF is the only tap mixer ([DEC-008](#dec-008)).
 - Keep hydronic hoses to the coil short. Leave ~30 cm (1 ft) in front for element/thermostat service.
 - Tank full of fluid is extra mass (~16 L static glycol plus the unit; empty weight ~35 lb per SRC-022 §8.3). Mount to a shelf or bulkhead rated for that.
 - Envelope about 22-1/4 × 7-3/16 × 15-3/4 in (SRC-022 / National Luna Slim Square 16 L table). `[MEASURE]` against the actual bay.

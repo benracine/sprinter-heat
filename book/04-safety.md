@@ -13,7 +13,7 @@ Jump: [System Design](#system-design) · [User’s Guide](#users-guide) · [Buil
 :::
 
 ::: {.danger}
-**Scalding.** Tap water can track glycol temperatures of about 150–185°F. Use only the AM100-1LF thermostatic mixing valve on the Duda B3-12DW-20 plate heat exchanger, set near 120°F and labeled. Draw taps from the mixed outlet only ([DEC-008](#dec-008)). → [HAZ-005](#haz-005)
+**Scalding.** Tap water can track glycol temperatures of about 150–185°F. Use only the AM100-1LF thermostatic mixing valve on the Duda B3-12DW-20 plate heat exchanger, set near 120°F and labeled. Draw taps from the mixed outlet only. The Isotemp factory mixer stays capped forever — never for taps ([DEC-008](#dec-008)). → [HAZ-005](#haz-005)
 :::
 
 ::: {.danger}

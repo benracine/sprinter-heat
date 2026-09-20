@@ -4,11 +4,14 @@
 
 Answer what is still open. Skip the rest. Manuals win on how; these answers only place parts and set preferences.
 
-**Already locked (do not re-ask):**
+**Already locked (do not re-ask) — see also [Locked facts checklist](#locked-facts-checklist):**
 
 - Altitude kit P/N **22 1000 33 22 00** + heater **H-Kit** — confirmed; kit is in the garage → land at HOLD 4 with the EasyStart harness.
-- Paneltronics **WATER HEATER** — empty; reserved for Isotemp 750 W.
-- Master switch — in the garage; mount next to EasyStart at HOLD 4.
+- Paneltronics **WATER HEATER** — empty; reserved for Isotemp 750 W; factory Isotemp mixer unused forever.
+- Master switch — in the garage; mount next to EasyStart at HOLD 4 (does not cut Isotemp AC).
+- Locations: Sure Marine **under fridge**; Duda **under sink**; WFT → **backrest (high)**; Isotemp → **under bench (low)**; day sofa **outboard → seat back** / **inboard → seat butt**.
+- AC: two **Blue Sea 9009** rotaries (not automatic); SmartPlug + DUOSIDA J1772; Mean Well not via Paneltronics BATTERY CHARGER.
+- 12 V: blade block may need a **second breakout** for hydronic master / EasyStart / fans.
 
 **May wait after a low-elevation diesel first fire (only these):**
 

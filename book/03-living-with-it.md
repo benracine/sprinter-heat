@@ -14,7 +14,7 @@ Jump: [System Design](#system-design) · [The Numbers](#the-numbers-that-matter)
 | Cabin heat | Master **On** → EasyStart Timer start → fan dial Low/Med/High → wait a few minutes |
 | Shower / lots of hot water | Master **On** → EasyStart start → draw only through the AM100-1LF. Expect the diesel to run |
 | Dish rinse with chamber already hot | Master **On**, short EasyStart start, then follow [AC chamber and dishes](#ac-chamber-and-dishes). Draw through the AM100-1LF only. |
-| Charge chamber from shore/solar | After [HOLD 9](#hold-9) → **WATER HEATER** on (chamber must be full). Taps stay cold until you run EasyStart |
+| Charge chamber from shore/solar | After [HOLD 9](#hold-9): set Paneltronics **9009** to shore or inverter as needed → **WATER HEATER** on (chamber must be full). Taps stay cold until you run EasyStart |
 | Pre-heat later | Master **On** → set an EasyStart schedule |
 | Mountains overnight | Altitude kit already landed at HOLD 4 ([DEC-006](#dec-006) / [Q-015](#q-015)); do not overnight above ~5,000 ft without it |
 | Emergency stop | EasyStart off → master Off → Isotemp AC off → fuse or battery if needed. No more than two off/on cycles into a fault |
@@ -43,6 +43,8 @@ A heat call wakes the Hydronic D5S and starts its **pump**. The **burner** fires
 5. Check the WFT level only when the system is cool.
 6. Hot water at the taps needs circulating glycol from the diesel **pump** through the Duda. Isotemp AC only heats the static chamber. Running the element alone will not give you a shower or dish water.
 7. The Isotemp 750 W element lands on Paneltronics **WATER HEATER** only—never on 12 V ([DEC-004](#dec-004) / [DEC-020](#dec-020)). Never energize an empty chamber.
+8. Do not use the Isotemp factory mixer — it stays capped forever. All tap mixing is the AM100-1LF ([DEC-008](#dec-008)).
+9. Before relying on shore vs inverter for the AC panel, confirm the Paneltronics **9009** face labels (**SHORE** / **INVERTER**) — that rotary is poorly labelled today.
 
 ## What the Isotemp does for you day to day
 

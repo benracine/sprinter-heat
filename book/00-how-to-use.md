@@ -18,7 +18,7 @@ Two finish lines matter later: **diesel cabin heat and diesel hot water** can pa
 
 ### Lookups
 
-For numbers and citations: [The Numbers](#the-numbers-that-matter) · [Isotemp value study](#isotemp-value-study) · [Sources](#source-register) · [Decisions](#decision-log) · [Questions for You](#questions-for-you-in-order) · [Open Questions](#open-questions) · [Hazards](#hazard-register).
+For numbers and citations: [The Numbers](#the-numbers-that-matter) · [Isotemp value study](#isotemp-value-study) · [Sources](#source-register) · [Decisions](#decision-log) · [Questions for You](#questions-for-you-in-order) · [Open Questions](#open-questions) · [Hazards](#hazard-register) · [Locked facts checklist](#locked-facts-checklist).
 
 Part two is reference, not the work order. A code such as [SRC-009](#src-009) jumps to the source register. DANGER, CAUTION, and MUST boxes override whatever sits around them.
 

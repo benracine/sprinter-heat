@@ -285,7 +285,7 @@ Still in the garage. **Driver side under the new sofa/bed** (owner). Envelope ab
 4. Keep coil hoses short (heater minimum flow is 250 l/h — every restriction counts).
 5. Bench-fit and label the chamber connections outside the van if that makes the port identities clear. Mount the Isotemp empty on the **driver side under the new sofa/bed**. Do not fill the main chamber until the Isotemp is secured, the coil is connected, and the water-only circulating-loop leak check in section 7 is complete.
 6. During chamber fill (section 7B), use the Isotemp main-chamber fill and vent ports from the Isotemp installation diagram, **not** the hydronic coil fittings. Add the **same** propylene glycol mix as the loop until the chamber is full and air is expelled, then cap. Leave this volume sitting still. It is never drinking water.
-7. Do not pipe the Isotemp “fresh water” ports to the shower. Cap the factory mixer on the Isotemp. It has nothing to do here.
+7. Do not pipe the Isotemp “fresh water” ports to the shower. Cap the factory mixer on the Isotemp **forever**. AM100-1LF is the only tap mixer ([DEC-008](#dec-008)).
 8. Route the Isotemp electric-element cable to the Paneltronics **WATER HEATER** breaker. Do not connect it to the 12 V panel or energize it before the chamber and AC safety checks pass ([HOLD 9](#hold-9)).
 
 ### Duda B3-12DW-20 plate heat exchanger (already in the van)
@@ -324,7 +324,7 @@ REAL unit, SN **16401**. Label: **IN — bottom fitting · OUT — top fitting**
 **HOLD 3 — mounts**
 
 - [ ] WFT is the highest circulating point; relief has a catch path ([DEC-019](#dec-019))
-- [ ] Isotemp mounted empty; coil below WFT or bled; mixer capped; element cable toward **WATER HEATER** (dead)
+- [ ] Isotemp mounted empty; coil below WFT or bled; factory mixer capped forever; element cable toward **WATER HEATER** (dead)
 - [ ] Duda plate ports identified; mixer still on freshwater hot only
 - [ ] Sure Marine cabin heater level, bottom-in/top-out, outlet bleeder fitted or planned
 - [ ] Two fans + one speed dial installed (confirm both Noctua NF-F12); PWM/tach unused
