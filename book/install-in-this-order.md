@@ -97,13 +97,13 @@ The sofa/bed spans both sides of the van and has a removable center. Treat it as
 
 ### Requirements before choosing a building method
 
-- Support the Isotemp empty and full. The tank is about 35 lb empty and adds about 16 L of static glycol when full.
+- Support the Isotemp empty and full. Empty mass is about 35 lb; a full chamber adds about 16 L of static glycol.
 - Leave about 30 cm of service space in front of the Isotemp element/thermostat side.
 - Keep the Isotemp coil fittings and hoses below the WFT, or provide a bleeder at the hose high point.
-- Make the center section removable without draining the loop or disconnecting the tank.
-- Protect the tank, hoses, element cable, and Paneltronics route from luggage, screws, sharp edges, and movement.
+- Make the center section removable without draining the loop or disconnecting the Isotemp.
+- Protect the Isotemp, hoses, element cable, and Paneltronics route from luggage, screws, sharp edges, and movement.
 - Leave access to the Isotemp fill/vent ports, safety valve, coil fittings, and electrical connection.
-- Provide positive mechanical restraint. The tank must not rely on hose connections or furniture weight alone.
+- Provide positive mechanical restraint. The Isotemp must not rely on hose connections or furniture weight alone.
 
 ### Construction methods
 
@@ -112,22 +112,22 @@ The sofa/bed spans both sides of the van and has a removable center. Treat it as
 | 80/20 aluminum extrusion | High and predictable when properly bracketed | Adjustable, removable, clean service access, easy to revise | Cost, many brackets/fasteners, must isolate edges and prevent rattles | Strong candidate for a structural base and removable center |
 | EZTube or similar slot extrusion | High and adjustable | Similar serviceability to 80/20; may use simpler connectors | Confirm actual load ratings, connector strength, and available accessories | Candidate if the exact system and hardware are already on hand |
 | Wood | High when properly framed and fastened | Lowest cost, easy to cut, quiet, familiar | Can trap access, absorb moisture, hide leaks, and make future changes harder | Good for the furniture shell; needs a deliberate removable service panel |
-| Hybrid: wood furniture plus aluminum tank cradle | High where it matters | Keeps wood simplicity while giving the tank a defined restraint and service bay | Requires one interface between cradle and furniture | Recommended starting point for this van |
+| Hybrid: wood furniture plus aluminum Isotemp cradle | High where it matters | Keeps wood simplicity while giving the Isotemp a defined restraint and service bay | Requires one interface between cradle and furniture | Recommended starting point for this van |
 | Other | Unknown until specified | May use existing materials or a ready-made bed system | Cannot approve without load, restraint, service, and fire/heat review | Do not choose until those facts are documented |
 
 ### Decision procedure
 
 1. Measure the sofa/bed opening, both side bays, the removable center, and the Isotemp envelope.
-2. Mark the tank envelope on the floor with tape. Test both possible side bays.
+2. Mark the Isotemp envelope on the floor with tape. Test both possible side bays.
 3. Choose the side that gives the shortest practical coil-hose route, keeps the coil below the WFT, leaves element/thermostat service access, and protects the Paneltronics cable route.
-4. Build the tank restraint first. Do not finalize cushions, drawer fronts, or the removable center until the tank can be removed without disturbing plumbing.
+4. Build the Isotemp restraint first. Do not finalize cushions, drawer fronts, or the removable center until the Isotemp can be removed without disturbing plumbing.
 5. Choose the construction method using the table above. Record the choice and fastening method before cutting material.
 
 **HOLD S — sofa/bed platform**
 
 - [ ] Side bay selected using measured hose route and service access
 - [ ] Isotemp full-load weight and restraint method documented
-- [ ] Removable center clears the tank, hoses, element cable, and service access
+- [ ] Removable center clears the Isotemp, hoses, element cable, and service access
 - [ ] WFT location remains the highest circulating point
 - [ ] Selected construction method and fastening details recorded
 
@@ -252,8 +252,8 @@ Work inside the van. Re-check the positioning table before you drill.
 
 Not mounted yet. Planned for the rear bench.
 
-1. Mount so the **top** of the tank is the highest propylene glycol point in the whole loop. Plan was about 20–30 inches above the floor. Verify nothing else will sit higher once hose is run.
-2. Later you bleed air here. You fill from the lowest drain until this tank takes fluid.
+1. Mount so the **top** of the WFT is the highest propylene glycol point in the whole loop. Plan was about 20–30 inches above the floor. Verify nothing else will sit higher once hose is run.
+2. Later you bleed air here. You fill from the lowest drain until this WFT takes fluid.
 3. Cap is the ~1.2 bar relief. Do not substitute a different cap without confirming relief pressure stays below the heater’s 2.5 bar limit.
 4. Arrange relief discharge into a **catch bottle**, drip pan, or hose to a safe path — never onto bedding or wiring ([DEC-019](#dec-019)).
 
@@ -261,13 +261,13 @@ Not mounted yet. Planned for the rear bench.
 
 Still in the garage. Planned under the sofa/bed. Envelope about 22-1/4 × 7-3/16 × 15-3/4 in; empty weight about 35 lb; full chamber adds about 16 L of fluid mass — mount to structure rated for that.
 
-1. Mount so its drain / safety valve is the lowest point on that tank.
+1. Mount so its drain / safety valve is the lowest point on the Isotemp.
 2. Leave service access in front (~**30 cm**).
 3. Coil fittings below the WFT 5 L expansion/header tank. If not, add a bleeder at the high point of those hoses.
 4. Keep coil hoses short (heater minimum flow is 250 l/h — every restriction counts).
-5. Bench-fit and label the chamber connections outside the van if that makes the port identities clear. Mount the tank empty under the sofa/bed. Do not fill the main chamber until the tank is secured, the coil is connected, and the water-only circulating-loop leak check in section 7 is complete.
+5. Bench-fit and label the chamber connections outside the van if that makes the port identities clear. Mount the Isotemp empty under the sofa/bed. Do not fill the main chamber until the Isotemp is secured, the coil is connected, and the water-only circulating-loop leak check in section 7 is complete.
 6. During chamber fill (section 7B), use the Isotemp main-chamber fill and vent ports from the Isotemp installation diagram, **not** the hydronic coil fittings. Add the **same** propylene glycol mix as the loop until the chamber is full and air is expelled, then cap. Leave this volume sitting still. It is never drinking water.
-7. Do not pipe this tank’s “fresh water” ports to the shower. Cap the little mixer on the tank. It has nothing to do here.
+7. Do not pipe the Isotemp “fresh water” ports to the shower. Cap the factory mixer on the Isotemp. It has nothing to do here.
 8. Route the Isotemp electric-element cable to the Paneltronics **WATER HEATER** breaker. Do not connect it to the 12 V panel or energize it before the chamber and AC safety checks pass ([HOLD 9](#hold-9)).
 
 ### Duda B3-12DW-20 plate heat exchanger (already in the van)
@@ -278,8 +278,8 @@ AM100-1LF thermostatic mixing valve already on the hot-water outlet (top). Cold 
 
 | Label | Meaning |
 |---|---|
-| FRESH IN | Cold freshwater into the plate (already through cabinet) |
-| HOT TO MIXER | Plate hot out into the AM100-1LF thermostatic mixing valve (already) |
+| FRESH IN | Cold freshwater into the Duda (already through cabinet) |
+| HOT TO MIXER | Duda hot out into the AM100-1LF thermostatic mixing valve (already) |
 | MIXED HOT | From mixer to sink/shower (still to run) |
 | COLD TO MIXER | Cold into the mixer’s cold inlet (still to run) |
 | GLYCOL A / GLYCOL B | The two propylene glycol ports only — never the mixer, never the freshwater inlet |
@@ -294,10 +294,10 @@ AM100-1LF thermostatic mixing valve already on the hot-water outlet (top). Cold 
 REAL core, SN **16401**. Label: **IN — bottom fitting · OUT — top fitting**. Fan power leads are taped, not finished. Final cosmetic spot may still move — plumbing rules below do not.
 
 1. Confirm it sits **level**. An angled mount traps air away from the bleeder.
-2. Glycol **bottom in, top out** (matches the plate). Keep that orientation if you reverse the core for fit ([SRC-032](#src-032)).
+2. Glycol **bottom in, top out** (matches the Duda orientation). Keep that orientation if you reverse the cabin heater for fit ([SRC-032](#src-032)).
 3. Use the outlet bleeder (or add one on the outlet / high side). Bleed later until a steady stream ([SRC-019](#src-019)).
-4. Keep the core below the WFT once the WFT is mounted.
-5. Cabin air only across the core — not from a fume-laden bay. Not ignition-protected for gasoline engine bays (ABYC note on the plate) — fine in this living-space install.
+4. Keep the Sure Marine cabin heater below the WFT once the WFT is mounted.
+5. Cabin air only across the Sure Marine cabin heater — not from a fume-laden bay. Not ignition-protected for gasoline engine bays (ABYC note on the nameplate) — fine in this living-space install.
 6. Finish **two** fans on the outlets ([DEC-015](#dec-015)). Target: both Noctua NF-F12 PWM (a mixed pair is on the unit today — replace or confirm intent). Wire fans **in parallel** to **one** inline **12 V** Low/Med/High dial on the shared positive ([DEC-018](#dec-018)). Power leads only; PWM/tach unused. No NA-FC1.
 7. Dial is Low/Med/High **without** hard Off. Heat on/off is master + EasyStart (SC1600 only after [Q-022](#q-022)).
 
@@ -524,7 +524,7 @@ The WFT cap relieves at about 1.2 bar (below the heater’s 2.5 bar limit). Do n
 
 ### B. Isotemp Slim Square 4.2 gal heat battery chamber (static)
 
-Do this after the tank is mounted, coil connections are complete, and the water-only circulating-loop leak check above has passed, and before first fire.
+Do this after the Isotemp is mounted, coil connections are complete, and the water-only circulating-loop leak check above has passed, and before first fire.
 
 1. Use the Isotemp main-chamber fill and vent ports from the Isotemp installation diagram, not the hydronic coil fittings.
 2. Add the **same** propylene glycol mix as the circulating loop until the chamber is full and air is expelled.

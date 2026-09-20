@@ -33,19 +33,19 @@ A heat call wakes the Hydronic D5S and starts its **pump**. The **burner** fires
 
 ## What the Isotemp does for you day to day
 
-The Isotemp Slim Square is a **buffer**, not a faucet tank. Planning numbers and keep/sell analysis live in the [Isotemp value study](#isotemp-value-study).
+The Isotemp Slim Square softens heater cycling and can hold leftover heat for later. It is not a faucet tank. Planning numbers and keep/sell analysis live in the [Isotemp value study](#isotemp-value-study).
 
-**Cabin heat.** The D5S Low stage is about **2.1 kW**. On mild or moderate nights a well-insulated van often needs less than that, so Low has surplus heat. The static chamber can soak up some of that surplus through the coil and give it back while the burner pauses. Expect **fewer short cycles** in shoulder weather—not a promise of zero starts, and little help when it is so cold that the van already wants more than 2.1 kW.
+**Cabin heat.** The D5S Low stage is about **2.1 kW**. On mild or moderate nights a well-insulated van often needs less than that, so Low has surplus heat. The static chamber can soak up some of that surplus through the coil and give it back while the burner pauses (the pump usually keeps circulating during that pause—[The Numbers](#the-numbers-that-matter)). Expect **fewer short cycles** in shoulder weather—not a promise of zero starts, and little help when it is so cold that the van already wants more than 2.1 kW.
 
 **Rough scale (planning only):**
 
-| Outside air (cabin ~70°F) | What to expect from the buffer |
+| Outside air (cabin ~70°F) | What to expect from the Isotemp |
 |---|---|
 | Around **40°F**, decent insulation | Clearest cycling benefit; Low often oversized |
 | Around **20°F** | Some benefit; diesel does more of the work |
 | Around **0°F** and colder | Little cycling help; treat the diesel as the heat source |
 
-Stored energy in the chamber is **tens of minutes** of buffer at Low output, not hours.
+Stored energy in the chamber is **tens of minutes** of holdover at Low output, not hours.
 
 **Hot water.** Heat at the sink or shower always means: EasyStart → pump → Duda → AM100-1LF. The chamber can shorten a diesel run or feed a short dish rinse after an AC charge. It cannot replace the pump.
 

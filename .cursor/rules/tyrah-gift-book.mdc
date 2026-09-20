@@ -1,7 +1,20 @@
 ---
-description: One document (HTML+PDF); breadth-then-depth; Tyrah reads part one
+description: One document (HTML+PDF); holistic masterpiece default; Tyrah part one
 alwaysApply: true
 ---
+
+# Default stance — think of the finished book
+
+This is one gift/report, not a pile of patches. **Default to a wide, ambitious, holistic scope** more often than a narrow edit.
+
+When improving anything:
+
+1. Ask what the **whole** HTML+PDF needs to feel complete for Tyrah (part one) and for the builder/appendix (part two).
+2. Trace the same fact across Design → Numbers → Use → Status → Build → appendix. Fix contradictions in one pass, not one file.
+3. Prefer rich cross-links, controlled names, and end-to-end narrative over local wordsmithing.
+4. Narrow single-file edits only when the user explicitly scopes them that way.
+
+Breadth-then-depth still applies for *ordering* work. Holistic thinking applies for *how large* each pass should be.
 
 # One document, two formats
 
@@ -21,17 +34,17 @@ That is the only report. Both formats are intentional. Do not create parallel gu
 
 ## Phase A — Breadth
 
-1. Walk part one end-to-end.
+1. Walk part one end-to-end as one reader path.
 2. Official names everywhere (Hydronic D5S diesel heater, Sure Marine cabin heater, Duda B3-12DW-20 plate heat exchanger, Isotemp Slim Square 4.2 gal heat battery, WFT 5 L expansion/header tank, EasyStart Timer, AM100-1LF thermostatic mixing valve, Altitude kit 22 1000 33 22 00).
 3. One loop story: diesel heater → cabin heater → plate → heat-battery coil → back. No engine connection. Heat-battery chamber is static glycol; factory mixer unused.
 4. Rebuild; skim HTML and PDF. Fix contradictions before deepening.
 
 ## Phase B — Depth
 
-1. Deepen one section at a time.
+1. Deepen one *theme* at a time (e.g. Isotemp living + study + Numbers + Acceptance), not one orphan paragraph.
 2. Keep install serial — no mid-step design essays.
 3. Put verified facts in plain language in part one; cite SRC/DEC in part two.
-4. Rebuild both formats after each pass.
+4. Rebuild both formats after each ambitious pass.
 
 # Voice (part one)
 

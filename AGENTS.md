@@ -23,9 +23,11 @@ Do not create or maintain any other report, guide PDF, or HTML alias.
 
 `.cursorignore` keeps `photos/`, PDFs, zips, `book/out/`, and `book/vendor/` out of agent context. Prefer opening one markdown file at a time over repo-wide globs.
 
-**Method:** breadth then depth. Writing standards follow [USU Engineering Writing Center technical writing standards](https://engineering.usu.edu/students/engineering-writing-center/writing-resources/technical-writing-standards), adapted in `.cursor/rules/tyrah-gift-book.mdc` (plus controlled part names for this van).
+**Method:** think of the **finished** HTML+PDF holistically. Default to wide, ambitious passes that sync Design → Numbers → Use → Status → Build → appendix. Narrow single-file edits only when explicitly scoped that way.
+
+Writing standards follow [USU Engineering Writing Center technical writing standards](https://engineering.usu.edu/students/engineering-writing-center/writing-resources/technical-writing-standards), adapted in `.cursor/rules/tyrah-gift-book.mdc` (plus controlled part names for this van).
 
 1. **Breadth first** — part one readable end-to-end: [The Parts](book/01-what-this-system-does.md) vocabulary locked, one loop story, honest status, no contradictions. Rebuild and skim.
-2. **Depth second** — deepen one section at a time; keep install serial; sync facts into the appendix.
+2. **Depth second** — deepen one *theme* across files; keep install serial; sync facts into the appendix.
 
 Do not split into a separate “gift only” vs “full only” build. Do not drop HTML or PDF.
