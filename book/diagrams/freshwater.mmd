@@ -1,12 +1,15 @@
 %%{init: {'theme':'base','themeVariables': {'background':'#fafaf9','primaryColor':'#f5f5f4','primaryTextColor':'#1c1917','primaryBorderColor':'#57534e','lineColor':'#44403c','secondaryColor':'#e7e5e4','tertiaryColor':'#eeeeec','fontFamily':'Avenir Next, Avenir, Helvetica Neue, sans-serif','fontSize':'22px','textColor':'#1c1917','mainBkg':'#f5f5f4','clusterBkg':'#eeeeec','clusterBorder':'#78716c','edgeLabelBackground':'#fafaf9'}}}%%
 flowchart TD
-    WT[Freshwater tank] --> STR[Strainer]
-    STR --> P[Van water pump]
-    P --> CV[Check valves]
-    CV --> D[Duda B3-12DW-20 plate heat exchanger<br/>freshwater side]
-    D --> MIX[AM100-1LF thermostatic mixing valve]
-    COLD[Cold feed] --> MIX
-    MIX --> TAP[Sink / shower]
+  WT["Freshwater tank<br/>passenger rear wheel well"] --> STR[Strainer]
+  STR --> P[Van water pump]
+  P --> CV[Check valves]
+  CV --> D["Duda · under sink<br/>freshwater side"]
+  D --> MIX["AM100-1LF · only tap mixer"]
+  COLD[Cold feed] --> MIX
+  MIX --> TAP[Sink / shower]
+  X["Isotemp chamber not on this path<br/>factory mixer unused forever"]
 
-    classDef normal fill:#f5f5f4,stroke:#57534e,stroke-width:1px,color:#1c1917;
-    class WT,STR,P,CV,D,MIX,COLD,TAP normal;
+  classDef normal fill:#f5f5f4,stroke:#57534e,stroke-width:1px,color:#1c1917;
+  classDef note fill:#eeeeec,stroke:#78716c,stroke-width:1px,stroke-dasharray:4 3,color:#1c1917;
+  class WT,STR,P,CV,D,MIX,COLD,TAP normal;
+  class X note;

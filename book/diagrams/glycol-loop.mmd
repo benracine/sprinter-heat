@@ -1,12 +1,16 @@
 %%{init: {'theme':'base','themeVariables': {'background':'#fafaf9','primaryColor':'#f5f5f4','primaryTextColor':'#1c1917','primaryBorderColor':'#57534e','lineColor':'#44403c','secondaryColor':'#e7e5e4','tertiaryColor':'#eeeeec','fontFamily':'Avenir Next, Avenir, Helvetica Neue, sans-serif','fontSize':'22px','textColor':'#1c1917','mainBkg':'#f5f5f4','clusterBkg':'#eeeeec','clusterBorder':'#78716c','edgeLabelBackground':'#fafaf9'}}}%%
 flowchart TD
-    R["Return line<br/>(highest point of the loop)"] --> HP["D5S's own circulating pump<br/>(pump discharge feeds heater inlet)"]
-    HP --> H[Hydronic D5S diesel heater]
-    H --> F[Sure Marine cabin heater]
-    F --> D[Duda B3-12DW-20 plate heat exchanger]
-    D --> I[coil in Isotemp Slim Square 4.2 gal heat battery]
-    I --> R
-    R --- E["WFT 5 L expansion/header tank<br/>teed on the return, not on the Isotemp Slim Square 4.2 gal heat battery coil"]
+  R[Return] --> HP["D5S own circulating pump"]
+  HP --> H[Hydronic D5S]
+  H --> F["Sure Marine · under fridge"]
+  F --> D["Duda · under sink"]
+  D --> I["Isotemp coil · under bench low"]
+  I --> R
+  WFT["WFT 5 L · sofa-bed backrest high<br/>teed on return · highest glycol"]
+  R --- WFT
+  NOTE["Chamber = static glycol<br/>factory mixer capped forever"]
 
-    classDef normal fill:#f5f5f4,stroke:#57534e,stroke-width:1px,color:#1c1917;
-    class H,HP,F,D,I,R,E normal;
+  classDef normal fill:#f5f5f4,stroke:#57534e,stroke-width:1px,color:#1c1917;
+  classDef note fill:#eeeeec,stroke:#78716c,stroke-width:1px,stroke-dasharray:4 3,color:#1c1917;
+  class R,HP,H,F,D,I,WFT normal;
+  class NOTE note;

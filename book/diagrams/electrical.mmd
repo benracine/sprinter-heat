@@ -1,14 +1,15 @@
-%%{init: {'theme':'base','themeVariables': {'background':'#fafaf9','primaryColor':'#f5f5f4','primaryTextColor':'#1c1917','primaryBorderColor':'#57534e','lineColor':'#44403c','secondaryColor':'#e7e5e4','tertiaryColor':'#eeeeec','fontFamily':'Avenir Next, Avenir, Helvetica Neue, sans-serif','fontSize':'28px','textColor':'#1c1917','mainBkg':'#f5f5f4','clusterBkg':'#eeeeec','clusterBorder':'#78716c','edgeLabelBackground':'#fafaf9'}}}%%
+%%{init: {'theme':'base','themeVariables': {'background':'#fafaf9','primaryColor':'#f5f5f4','primaryTextColor':'#1c1917','primaryBorderColor':'#57534e','lineColor':'#44403c','secondaryColor':'#e7e5e4','tertiaryColor':'#eeeeec','fontFamily':'Avenir Next, Avenir, Helvetica Neue, sans-serif','fontSize':'24px','textColor':'#1c1917','mainBkg':'#f5f5f4','clusterBkg':'#eeeeec','clusterBorder':'#78716c','edgeLabelBackground':'#fafaf9'}}}%%
 flowchart TB
-  BAT["House battery"]
-  BAT --> H["Heater power<br/>12 AWG · 20 A · always fused"]
-  BAT --> M["Master Off / On"]
-  M --> ES["EasyStart Timer<br/>starts diesel heat"]
-  M --> FAN["Fan dial<br/>speed only"]
-  ES -->|"yellow wake"| H2["Heater wakes<br/>runs its own pump"]
-  AC["Paneltronics WATER HEATER<br/>Isotemp element — AC only · dead for now"]
+  BAT["House battery 200 Ah"]
+  BAT -->|"12 AWG · 20 A · always fused"| HEAT["Hydronic D5S pins 1–2<br/>brain + pump stay powered"]
+  BAT --> BS["Blue Sea ST Blade<br/>+ second breakout if full"]
+  BS --> M["Master Off / On"]
+  M --> ES["EasyStart Timer"]
+  M --> FAN["Fan dial · speed only"]
+  ES -->|"yellow wake"| RUN["Heater wakes · own pump runs"]
+  AC["Isotemp 750 W AC<br/>Paneltronics WATER HEATER<br/>via Blue Sea 9009 · not via master"]
 
   classDef solid fill:#f5f5f4,stroke:#57534e,stroke-width:1px,color:#1c1917;
   classDef open fill:#eeeeec,stroke:#78716c,stroke-width:2px,stroke-dasharray:4 3,color:#1c1917;
-  class BAT,H,M,ES,FAN,H2 solid;
+  class BAT,HEAT,BS,M,ES,FAN,RUN solid;
   class AC open;

@@ -1,13 +1,29 @@
-%%{init: {'theme':'base','themeVariables': {'background':'#fafaf9','primaryColor':'#f5f5f4','primaryTextColor':'#1c1917','primaryBorderColor':'#57534e','lineColor':'#44403c','secondaryColor':'#e7e5e4','tertiaryColor':'#eeeeec','fontFamily':'Avenir Next, Avenir, Helvetica Neue, sans-serif','fontSize':'28px','textColor':'#1c1917','mainBkg':'#f5f5f4','clusterBkg':'#eeeeec','clusterBorder':'#78716c','edgeLabelBackground':'#fafaf9'}}}%%
-flowchart LR
-  SRC["Shore or inverter"]
-  GFCI["GFCI upstream<br/>not on this panel"]
-  MAIN["Panel MAIN 30 A"]
-  WH["WATER HEATER breaker"]
-  EL["Isotemp element 750 W"]
-  SRC --> GFCI --> MAIN --> WH --> EL
+%%{init: {'theme':'base','themeVariables': {'background':'#fafaf9','primaryColor':'#f5f5f4','primaryTextColor':'#1c1917','primaryBorderColor':'#57534e','lineColor':'#44403c','secondaryColor':'#e7e5e4','tertiaryColor':'#eeeeec','fontFamily':'Avenir Next, Avenir, Helvetica Neue, sans-serif','fontSize':'22px','textColor':'#1c1917','mainBkg':'#f5f5f4','clusterBkg':'#eeeeec','clusterBorder':'#78716c','edgeLabelBackground':'#fafaf9'}}}%%
+flowchart TB
+  SP["SmartPlug · 120 V shore"]
+  J1772["DUOSIDA J1772 · 32 A / 240 V"]
+  INV["PROwatt SW 2000"]
+
+  SW1["Blue Sea 9009<br/>SHORE ↔ INVERTER<br/>label face"]
+  SW2["Blue Sea 9009<br/>SHORE ↔ J1772<br/>label face"]
+
+  PANEL["Paneltronics MAIN"]
+  MW["Mean Well RPB-1600-12<br/>not via BATTERY CHARGER"]
+  WH["WATER HEATER → Isotemp 750 W"]
+  OUT["Outlets"]
+  GFCI["Hardwire GFCI · OPEN Q-009"]
+
+  SP --> SW1
+  INV --> SW1
+  SW1 --> GFCI --> PANEL
+  PANEL --> WH
+  PANEL --> OUT
+
+  SP --> SW2
+  J1772 --> SW2
+  SW2 --> MW
 
   classDef solid fill:#f5f5f4,stroke:#57534e,stroke-width:1px,color:#1c1917;
   classDef open fill:#eeeeec,stroke:#78716c,stroke-width:2px,stroke-dasharray:4 3,color:#1c1917;
-  class SRC,MAIN,WH,EL solid;
+  class SP,J1772,INV,SW1,SW2,PANEL,MW,WH,OUT solid;
   class GFCI open;

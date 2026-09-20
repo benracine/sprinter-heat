@@ -1,11 +1,12 @@
 %%{init: {'theme':'base','themeVariables': {'background':'#fafaf9','primaryColor':'#f5f5f4','primaryTextColor':'#1c1917','primaryBorderColor':'#57534e','lineColor':'#44403c','secondaryColor':'#e7e5e4','tertiaryColor':'#eeeeec','fontFamily':'Avenir Next, Avenir, Helvetica Neue, sans-serif','fontSize':'22px','textColor':'#1c1917','mainBkg':'#f5f5f4','clusterBkg':'#eeeeec','clusterBorder':'#78716c','edgeLabelBackground':'#fafaf9'}}}%%
 flowchart TD
-    T[Vehicle fuel tank] --> P[Factory pickup]
-    P --> M[Metering pump]
-    M --> B[Fuel line]
-    B --> H[Hydronic D5S diesel heater]
+  T[Vehicle fuel tank] --> P[Factory aux pickup]
+  P --> M["Metering pump · under van<br/>confirm before first fire"]
+  M --> B[Fuel hose]
+  B --> H[Hydronic D5S]
+  S[Hand primer] -. prime at HOLD 8 .-> B
 
-    S[Primer / bleed] -. prime before first fire .-> B
-
-    classDef normal fill:#f5f5f4,stroke:#57534e,stroke-width:1px,color:#1c1917;
-    class T,P,M,B,H,S normal;
+  classDef normal fill:#f5f5f4,stroke:#57534e,stroke-width:1px,color:#1c1917;
+  classDef open fill:#eeeeec,stroke:#78716c,stroke-width:2px,stroke-dasharray:4 3,color:#1c1917;
+  class T,P,B,H,S normal;
+  class M open;

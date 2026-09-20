@@ -1,18 +1,13 @@
-%%{init: {'theme':'base','themeVariables': {'background':'#fafaf9','primaryColor':'#f5f5f4','primaryTextColor':'#1c1917','primaryBorderColor':'#57534e','lineColor':'#44403c','secondaryColor':'#e7e5e4','tertiaryColor':'#eeeeec','fontFamily':'Avenir Next, Avenir, Helvetica Neue, sans-serif','fontSize':'28px','textColor':'#1c1917','mainBkg':'#f5f5f4','clusterBkg':'#eeeeec','clusterBorder':'#78716c','edgeLabelBackground':'#fafaf9'}}}%%
+%%{init: {'theme':'base','themeVariables': {'background':'#fafaf9','primaryColor':'#f5f5f4','primaryTextColor':'#1c1917','primaryBorderColor':'#57534e','lineColor':'#44403c','secondaryColor':'#e7e5e4','tertiaryColor':'#eeeeec','fontFamily':'Avenir Next, Avenir, Helvetica Neue, sans-serif','fontSize':'26px','textColor':'#1c1917','mainBkg':'#f5f5f4','clusterBkg':'#eeeeec','clusterBorder':'#78716c','edgeLabelBackground':'#fafaf9'}}}%%
 flowchart TB
   F5["5 A fuse · Branch A"]
-  ES["EasyStart Timer<br/>powered on pins 1 + and 3 −"]
-  YE["Yellow wake out · pin 6"]
-  ALT["Altitude kit adapter<br/>only if mountains"]
+  ES["EasyStart Timer"]
+  YE["Yellow wake · pin 6"]
+  ALT["Altitude kit 22 1000 33 22 00<br/>land at HOLD 4"]
   S7["Heater pin 7 · wake in"]
-  ECU["Heater decides pump / fire"]
+  ECU["Heater brain · pump / fire"]
 
-  F5 --> ES --> YE
-  YE -->|"with kit"| ALT --> S7
-  YE -->|"without kit"| S7
-  S7 --> ECU
+  F5 --> ES --> YE --> ALT --> S7 --> ECU
 
   classDef solid fill:#f5f5f4,stroke:#57534e,stroke-width:1px,color:#1c1917;
-  classDef open fill:#eeeeec,stroke:#78716c,stroke-width:2px,stroke-dasharray:4 3,color:#1c1917;
-  class F5,ES,YE,S7,ECU solid;
-  class ALT open;
+  class F5,ES,YE,ALT,S7,ECU solid;
