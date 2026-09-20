@@ -27,7 +27,7 @@ Heater identity is locked (DEC-000): Hydronic D5S diesel heater, **25 2526 05 00
 | REQ-021 | Master Off/On is intended to gate EasyStart Timer + SC1600B + Sure Marine cabin heater power; SC1600B is intended to call heat/Sure Marine cabin heater; dial is speed only | Controls | DEC-012; DEC-014 | PARTIAL (design intent; Q-022 interface and switch verification open) | Wire per DEC-012/014; Q-021; Q-022 |
 | REQ-022 | No separate solar/shore auxiliary glycol pump; hot water through the Duda loop remains diesel-loop dependent; Isotemp element is a separate Paneltronics AC load | Coolant / electrical | DEC-004; DEC-013 | VERIFIED (architecture); AC details OPEN | Leave CM10P7 out; resolve Q-009 |
 | REQ-023 | Staging ~65 / 80 / 85 / 75 °C (Power→High→Low→pause→restart); **pump continues in pause**; overheat restart <70 °C; ≤2 off/on into fault | Controls | SRC-009 p. 31–32; Q-020 resolved | VERIFIED (spec) | Observe first fire / diagnostics |
-| REQ-024 | WFT 5 L expansion/header tank at high point (exact mount OPEN); not yet mounted | Coolant / layout | DEC-005 | VERIFIED (part); mount OPEN | Mount top = highest loop point |
+| REQ-024 | WFT 5 L expansion/header tank at high point — **sofa-bed backrest (high)** planned; not yet mounted; confirm top wins after framing | Coolant / layout | DEC-005 | VERIFIED (part); height check OPEN | Mount top = highest loop point |
 | REQ-025 | Fuel takeoff uses factory aux connection; still inspect line before fire | Fuel | Q-010; HAZ-008 | PARTIAL | Photo routing/clamps |
 
 ## Still blocking first fire (summary)

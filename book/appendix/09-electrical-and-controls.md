@@ -90,21 +90,26 @@ SC1600B: battery-powered; R–W dry contact ≤1 A. Fans need a relay. Fan dial 
 
 Adapter on the control harness (SRC-002). Land at HOLD 4 while the EasyStart harness is open (Q-015 / DEC-006). Required before high camps; not on the post–first-fire wait list with Q-022 / Q-009.
 
-## House electrical context (SRC-040 / SRC-041)
+## House electrical context (SRC-040 / SRC-041 / photo extract)
 
-Hydronic 12 V loads take power from the **house battery**. Hydronic AC (Isotemp 750 W) takes power from **Paneltronics**, which is fed by shore and/or the **PROwatt SW** inverter. This appendix does not size the house bank, solar, B2B, or shore charger.
+Hydronic 12 V loads take power from the **house battery**. Hydronic AC (Isotemp 750 W) takes power from **Paneltronics**, fed by shore or the **PROwatt SW** via a **Blue Sea 9009** rotary (as-built; not automatic). Mean Well shore/J1772 charge uses a **second 9009**. This appendix does not size the house bank, solar, B2B, or shore charger.
 
-| Observed on van | Role for hydronic |
+| Observed on van / build photos | Role for hydronic |
 |---|---|
 | Xantrex LinkPRO (wood panel) | Battery monitor — watch voltage before long inverter + **WATER HEATER** runs |
-| Xantrex PROwatt SW (wood panel) | Inverter face — must be on for off-grid AC to Paneltronics |
+| Xantrex PROwatt SW 2000 (wood panel) | Inverter — select via Paneltronics **9009** for off-grid AC |
 | Paneltronics 72313 / 9972313B | AC distribution: MAIN · BATTERY CHARGER · **WATER HEATER** · OUTLETS |
+| Blue Sea ST Blade (~12 circuit) + ML-RBS | House DC distribution / disconnect — hydronic master / EasyStart / fans land here **or** on a **second breakout** if slots are full |
+| SmartPlug (120 V) + DUOSIDA J1772 32 A | Shore / Level-2 inlets feeding the two 9009 paths |
+| Victron SmartSolar MPPT 100\|50 (photos) | Solar charge — confirm still installed |
+| Sterling B2B 60 A | Alternator → house |
+| Mean Well RPB-1600-12 | Shore/J1772 → house (early photos: IOTA DLS-55 — confirm removed) |
 
-Owner intent: [SRC-040](#src-040). Same *class* of architecture: [SRC-041](#src-041). Confirm amps / Ah / solar / shore path on the van ([Q-025](#q-025)). Do not copy FarOutRide parts lists into this BOM.
+Owner intent: [SRC-040](#src-040). Same *class* of architecture: [SRC-041](#src-041). Photo dump: [photo-extract-electrical](#photo-extract-electrical). Confirm path on the van ([Q-025](#q-025)). Do not copy FarOutRide parts lists into this BOM.
 
 ## Isotemp element (DEC-004 / DEC-020)
 
-115 VAC / 750 W ≈ 6.5 A on Paneltronics **WATER HEATER**. Upstream GFCI/ELCI required (Q-009). Fill chamber before HOLD 9. Path: shore and/or PROwatt SW → GFCI/ELCI → Paneltronics MAIN → **WATER HEATER** → element.
+115 VAC / 750 W ≈ 6.5 A on Paneltronics **WATER HEATER**. Upstream GFCI/ELCI required (Q-009). Fill chamber before HOLD 9. Path: shore or PROwatt SW (via **9009**) → GFCI/ELCI if present → Paneltronics MAIN → **WATER HEATER** → element. Label the Paneltronics **9009** face **SHORE** / **INVERTER**.
 
 ## Verification
 
@@ -112,10 +117,12 @@ Owner intent: [SRC-040](#src-040). Same *class* of architecture: [SRC-041](#src-
 - [ ] Blower leads taped off
 - [ ] Master Off kills three cabin branches
 - [ ] 5 A fuse inserted last
+- [ ] Blade block has free slots **or** second breakout installed for hydronic branches
 - [ ] Q-022 documented before claiming SC1600 auto
 
 ## Open
 
 - [ ] Q-009, Q-015, Q-022
 - [ ] Fan-branch and branch-B fuse amp ratings
+- [ ] Free fuse slots vs second breakout choice
 - [ ] Approved SC1600 → heater wake landing (do not invent)

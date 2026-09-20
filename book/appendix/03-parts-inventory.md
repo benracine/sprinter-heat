@@ -27,12 +27,12 @@ No full on-vehicle inventory has been performed. Floor insulation is out of scop
 | Hydronic D5S diesel heater | On van, underbody | 25 2526 / H-Kit confirmed |
 | Fuel pickup / metering pump | On van | Factory aux; inspect at HOLD 1 |
 | Exhaust / combustion air | On van | Verify at HOLD 2 |
-| Duda B3-12DW-20 + AM100-1LF | On van | Mixer on; one 3/4 in hose; taps + other glycol barb open |
-| Sure Marine cabin heater | On van | REAL SN **16401**; IN bottom / OUT top; fans unfinished |
+| Duda B3-12DW-20 + AM100-1LF | On van | **Under the sink**; mixer on; one 3/4 in hose; taps + other glycol barb open |
+| Sure Marine cabin heater | On van | REAL SN **16401**; **under the fridge**; IN bottom / OUT top; fans unfinished |
 | EasyStart Timer | On van | Mounted on wood panel; not fully wired |
 | Paneltronics AC | On van | **72313** / 9972313B; **WATER HEATER** empty for Isotemp |
-| Isotemp Slim Square 4.2 gal heat battery | Garage | Mount empty **driver side under new sofa/bed** |
-| WFT 5 L expansion/header tank | Garage | **Highest** circulating point (exact mount OPEN) |
+| Isotemp Slim Square 4.2 gal heat battery | Garage | Mount empty **driver side under new sofa/bed (low)** |
+| WFT 5 L expansion/header tank | Garage | → **sofa-bed backrest (high)**; confirm top wins height after framing |
 | Altitude kit 22 1000 33 22 00 | Garage | P/N + H-Kit confirmed; install/wire before high camps |
 | Master switch | Garage | Mount next to EasyStart at HOLD 4 |
 | Glycol, hose, clamps | On hand | Prestone LowTox AF555 ≤50% (DEC-017); 3/4 in hose on Duda |
@@ -43,10 +43,10 @@ No full on-vehicle inventory has been performed. Floor insulation is out of scop
 | Item | Source | Notes |
 |---|---|---|
 | Isotemp Slim Square 4.2 gal heat battery, 115 V / 750 W | SRC-021 / SRC-022; DEC-001 / DEC-004 / DEC-007 | Coil = circulating; chamber = static. Element → Paneltronics **WATER HEATER**. Garage. |
-| Duda B3-12DW-20 plate heat exchanger | SRC-004; SRC-024; DEC-003 | On van. |
+| Duda B3-12DW-20 plate heat exchanger | SRC-004; SRC-024; DEC-003 | On van **under the sink**. |
 | AM100-1LF thermostatic mixing valve | DEC-008; SRC-024 | On Duda hot outlet. |
-| Sure Marine cabin heater | SRC-004; photos 2026-09-19, S/N 16401 | **On van.** |
-| WFT 5 L expansion/header tank | DEC-005 | Garage. |
+| Sure Marine cabin heater | SRC-004; photos 2026-09-19, S/N 16401 | **On van under the fridge.** |
+| WFT 5 L expansion/header tank | DEC-005 | Garage → **sofa-bed backrest (high)**. |
 | Altitude kit 22 1000 33 22 00 | SRC-002; DEC-006 | Garage; P/N confirmed; wire per SRC-002 (Q-015). |
 | Paneltronics 9972313B / face 72313 | DEC-020; SRC-038 | **WATER HEATER** reserved for Isotemp. |
 | Glycol, hose, clamps | Owner 2026-09-19 | Prestone LowTox AF555 ≤50%. |

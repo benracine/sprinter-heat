@@ -26,7 +26,7 @@ Ask once per part: if it is already on the van, inspect and finish the remaining
 | Block | Low | Typical | High | Notes |
 | --- | --- | --- | --- | --- |
 | Phase A — fuel + exhaust walk (HOLD 1–2) | 2 h | 3 h | 6 h | Mostly inspect/fix vs [SRC-009](#src-009) |
-| Sofa/bed rip + hybrid rebuild (HOLD S) | 40 h | **55 h** | 80 h | Largest block: frame, cradle, backrest Water Flow Tank, hinging/sliding panels, hatches |
+| Sofa/bed rip + hybrid rebuild (HOLD S) | 40 h | **55 h** | 80 h | Largest block: frame, cradle, backrest Water Flow Tank, seat-back / seat-butt panels, hatches |
 | Phase B — mounts + 12 V / altitude / cable (HOLD 3–4) | 10 h | 16 h | 24 h | Overlaps sofa if done in the same build days |
 | Phase C — glycol + freshwater hose (HOLD 5–6) | 10 h | 16 h | 28 h | Clamps, bleeders, labels; rework if a run fights furniture |
 | Phase D — fill, bleed, first fire (HOLD 7–8) | 6 h | 10 h | 16 h | Water-first then glycol; watchful first fire |
@@ -48,11 +48,12 @@ If two people share furniture and hose work, wall-clock time drops faster than m
 | Hydronic D5S diesel heater | Mounted; **25 2526** / **H-Kit** | Confirm tilt ([SRC-009](#src-009)) |
 | Exhaust / combustion air | Owner thinks OK | Quick [HOLD 2](#hold-2-exhaust) look before fire |
 | Fuel pickup + pump | Tap OK; hose likely run; **pump check = future work** under van | [HOLD 1](#hold-1-fuel); prime at [HOLD 8](#hold-8-first-fire) |
-| Duda B3-12DW-20 + AM100-1LF mixer | Mixer on; one hose on; intended near jump seat / sink-fridge zone | Glycol port; mixed and cold to taps; set ~120°F; confirm fit with cabin heater |
+| Duda B3-12DW-20 + AM100-1LF mixer | Mixer on; one hose on; **under the sink** (as-built) | Glycol port; mixed and cold to taps; set ~120°F |
 | Sure Marine cabin heater | REAL **16401**; **IN bottom / OUT top**; fans taped; **under the fridge** | Level, bleeder, fan power — [HOLD 3](#hold-3-mounts) / 4 |
 | EasyStart Timer | On wood panel (with LinkPRO / PROwatt SW) | Land per [SRC-003](#src-003) / [SRC-009](#src-009) — [HOLD 4](#hold-4-electrical) |
 | Xantrex LinkPRO + PROwatt SW | On wood panel with EasyStart; PROwatt face has dual GFCI outlets | House monitor + inverter; Paneltronics **WATER HEATER** path still HOLD 9 |
-| Blue Sea 12 V distribution block | On van (owner) | Confirm fuse positions feeding master / EasyStart / fans at HOLD 4 |
+| Blue Sea 12 V distribution block | On van (ST Blade + ML-RBS class) | Free slots **or** second breakout for master / EasyStart / fans — [HOLD 4](#hold-4-electrical) |
+| Blue Sea 9009 rotaries (×2) | On van; Paneltronics path poorly labelled | Label SHORE/INVERTER and SHORE/J1772 at HOLD 4/9 |
 | Paneltronics AC panel | **72313** / **9972313B**: MAIN 30 A · BATTERY CHARGER · **WATER HEATER** (empty, reserved) · OUTLETS | Element cable + document protection at [HOLD 9](#hold-9) |
 
 Diesel-only Acceptance can finish without HOLD 9. Complete system Acceptance needs HOLD 9. After diesel first fire, only [Q-022](#q-022) and [Q-009](#q-009) may still wait; land the altitude kit at HOLD 4.
@@ -62,11 +63,11 @@ Diesel-only Acceptance can finish without HOLD 9. Complete system Acceptance nee
 | Item | Do this |
 |---|---|
 | Water Flow Tank (WFT) 5 L expansion/header | **Sofa-bed backrest (high)**; Isotemp under bench (low); tee on return; free path from tee to pump |
-| Isotemp Slim Square 4.2 gal heat battery | Mount empty **driver side under new sofa/bed**; mixer capped; element → **WATER HEATER** (dead) |
+| Isotemp Slim Square 4.2 gal heat battery | Mount empty **driver side under new sofa/bed (low)**; **factory mixer capped forever**; element → **WATER HEATER** (dead) |
 | Altitude kit 22 1000 33 22 00 | Install and wire at HOLD 4 while the EasyStart harness is open ([SRC-002](#src-002)) |
-| Master switch | Mount next to EasyStart; Off cuts three 12 V branches (upstream of EasyStart) |
+| Master switch | Mount next to EasyStart; Off cuts three 12 V branches (upstream of EasyStart); does **not** cut Isotemp AC |
 | Hose, clamps, Prestone LowTox AF555 glycol | Reinforced hose; stainless clamps; ≤50% PG ([DEC-017](#dec-017)) |
-| SC1600B thermostat, Noctua fans, speed dial | Mount and wire; auto call waits on [Q-022](#q-022) |
+| SC1600B thermostat, Noctua fans, speed dial (W002-912 pick) | Mount and wire; auto call waits on [Q-022](#q-022) |
 
 **Sofa/bed (discovery):** current bed **coming out**. Rebuild hybrid per [DEC-021](#dec-021): wood side boxes, aluminum Isotemp cradle, day panels with **outboard → seat back** / **inboard → seat butt**. Water Flow Tank in **backrest**; Isotemp under bench. Sure Marine under fridge; Duda under sink. House DC: Blue Sea blade block may need a **second breakout** for hydronic fuses. Envelope: Rattle Trap + Thinsulate-class behind panels. Details: [Working design understanding](#working-design-understanding) · photo extracts [electrical](#photo-extract-electrical) · [heater](#photo-extract-heater) · [insulation](#photo-extract-insulation). Effort: [Effort estimate](#effort-estimate).
 

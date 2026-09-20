@@ -132,9 +132,9 @@ Weights: easy to work with / revise **35%**, strength **25%**, light **20%**, co
 
 1. Measure the sofa/bed opening, driver-side bay, day-panel swing/slide clearance, and the Isotemp envelope.
 2. Mark the Isotemp envelope on the **driver-side** floor with tape.
-3. Confirm shortest practical coil-hose route to the jump-seat / sink-fridge zone (Duda + Sure Marine), keep the coil below the Water Flow Tank, leave element/thermostat service access, and protect the Paneltronics cable route.
+3. Confirm shortest practical coil-hose route to **Duda under the sink** and **Sure Marine under the fridge**, keep the coil below the Water Flow Tank, leave element/thermostat service access, and protect the Paneltronics cable route.
 4. Build the Isotemp restraint first. Do not finalize cushions, drawer fronts, or day-panel hardware until the Isotemp can be serviced without disturbing plumbing.
-5. Record fastening details (floor bolts, cradle straps, hinges/tracks) before cutting. Method is already locked: hybrid.
+5. Record fastening details (floor bolts, cradle straps, hinges/tracks) before cutting. Method is already locked: hybrid. Day geometry locked in intent: **outboard → seat back**, **inboard → seat butt**.
 
 **HOLD S — sofa/bed platform**
 

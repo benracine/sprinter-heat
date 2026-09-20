@@ -56,10 +56,12 @@ WFT 5 L expansion/header tank tees at the return high point of the circulating l
 | **[Water Flow Tank (WFT) 5 L expansion/header](https://www.butlertechnik.com/installation-accessories-c63/marine-accessories-c115/eberspacher-or-webasto-expansion-header-tank-5l-2-outlet-292100017742-17742-p1723)** | Expansion / bleed high point. | Garage → **sofa-bed backrest (high)** |
 | **[Altitude kit 22 1000 33 22 00](https://www.melloronline.co.uk/Heater_Installation_Accessories_/5147/EBERSPACHER_AIR/WATER_HEATER_HIGH_ALTITUDE_KIT_%7C_221000332200.html)** | Required for high camps (**ASAP**). P/N + H-Kit confirmed. | Garage → wire per SRC-002 at HOLD 4 |
 | **EasyStart Timer** | Schedule / start-stop. | Mounted on wood panel; not fully wired |
-| **Blue Sea 12 V distribution** | House 12 V fuse block | On van — confirm hydronic feeds at HOLD 4 |
-| **Xantrex PROwatt SW 2000** | Inverter for Paneltronics when selected | Wood panel; P/N 806-1220 |
+| **Blue Sea 12 V distribution** | House ST Blade fuse block (+ ML-RBS in build photos) | On van — hydronic may need a **second breakout** at HOLD 4 |
+| **Blue Sea 9009 (×2)** | Rotary transfers: Paneltronics (shore/inverter); Mean Well (shore/J1772) | On van — label faces; Paneltronics one poorly labelled |
+| **SmartPlug + DUOSIDA J1772** | 120 V shore inlet + 32 A / 240 V Level-2 inlet | On van (build photos) |
+| **Xantrex PROwatt SW 2000** | Inverter for Paneltronics when 9009 selects it | Wood panel; P/N 806-1220 |
 | **Paneltronics AC (72313 / 9972313B)** | MAIN 30 A · BATTERY CHARGER · **WATER HEATER** (empty, for Isotemp) · OUTLETS | On van |
-| **Isotemp Slim Square 4.2 gal heat battery** | Circulating glycol in the coil. Static glycol in the chamber. Not DHW. Factory mixer unused. | Garage → **driver side under bench (low)** |
+| **Isotemp Slim Square 4.2 gal heat battery** | Circulating glycol in the coil. Static glycol in the chamber. Not DHW. Factory mixer unused forever. | Garage → **driver side under bench (low)** |
 The heater itself holds only ~0.18 L. The Isotemp mass damps cycling.
 
 **Vendor pages and manuals:** [Hydronic D5S](http://www.heatso.com/eberspacher-hydronic-ii-d5s-12v-heater/) · [D5S manual (PDF)](https://www.butlertechnik.com/downloads/Hydronic_II_Technical,_installation_%26_operating_manual.pdf) · [EasyStart Timer (PDF)](https://www.butlertechnik.com/downloads/Eberspacher_Easy_Start_7_day_Timer_Installation_instructions_221000341500.pdf) · [Altitude kit (PDF)](https://www.butlertechnik.com/downloads/High_Altitude_Kit_221000332200_-_Installation_Instruction_Manual.pdf).
@@ -71,7 +73,7 @@ The heater itself holds only ~0.18 L. The Isotemp mass damps cycling.
 | Hydronic D5S diesel heater (underbody) | Done; 25 2526 / H-Kit |
 | Fuel pickup (factory aux) | Inspect at HOLD 1 |
 | Exhaust / combustion air | On van; re-check at HOLD 2 |
-| Duda B3-12DW-20 + AM100-1LF | On van; taps + one glycol barb still open |
+| Duda B3-12DW-20 + AM100-1LF | On van **under the sink**; taps + one glycol barb still open; factory Isotemp mixer unused forever |
 | Sure Marine cabin heater | On van **under the fridge**; SN 16401; fans unfinished |
 | EasyStart Timer | Mounted; landing unfinished |
 | Paneltronics AC (72313 / 9972313B) | Face known; **WATER HEATER** empty for Isotemp |

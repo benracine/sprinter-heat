@@ -47,7 +47,7 @@ Permissible tilt angles: SRC-009 p. 16. Heater horizontal→vertical range per d
 - Highest circulating-loop point. Acts as expansion volume and air “burp” tank (SRC-019 p. 26–27).
 - Teed on the return in this build (DEC-010) — not in series, not off the Isotemp coil.
 - Unrestricted return path from that tee back to the Hydronic D5S diesel heater’s own pump.
-- **This van (owner):** exact mount OPEN (rear bench / high wall / other). Under-bed only if that bay is actually the highest glycol point.
+- **This van (owner):** mount in the **sofa-bed backrest (high)**; Isotemp stays **under the bench (low)**. Confirm the WFT top still wins after framing; raise the backrest cradle or fall back to a higher wall mount only if it loses the height check.
 
 ### Factory Sprinter sketch `[NOT THIS BUILD]`
 
