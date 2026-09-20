@@ -1,6 +1,6 @@
 # How to Use This Book
 
-Three stages: design, day-to-day use, then the build.
+Three stages: design, day-to-day use, then the build. Read them as **one** story—architecture that matches living with it, that matches how you install it. When something changes in one stage, check the other two.
 
 | Stage | Go here | You leave knowing… |
 | --- | --- | --- |
@@ -14,7 +14,7 @@ Read in this order: [Safety](#safety) → [System Design](#system-design) → [T
 
 [The Numbers](#the-numbers-that-matter) is a short card after the design—skim it, then keep going. While you build, return to Safety and System Design—especially [Controls](#controls) and [The Parts](#the-parts)—whenever a HOLD points you there. The User’s Guide describes the finished system. Do not light the heater from that chapter until Acceptance. After Acceptance, that guide is your day-to-day manual.
 
-The install map (four phases, what can wait) lives at the top of the [Builder’s Guide](#builders-guide).
+Two finish lines matter later: **diesel cabin heat and diesel hot water** can pass before [HOLD 9](#hold-9); **complete system** (including Isotemp AC) needs HOLD 9. The install map (four phases, what can wait) lives at the top of the [Builder’s Guide](#builders-guide).
 
 ### Lookups
 
@@ -22,7 +22,7 @@ For numbers and citations: [The Numbers](#the-numbers-that-matter) · [Isotemp v
 
 Part two is reference, not the work order. A code such as [SRC-009](#src-009) jumps to the source register. DANGER, CAUTION, and MUST boxes override whatever sits around them.
 
-Part names appear once in [The Parts](#the-parts)—that table is the glossary of record. What is already on the van versus still in the garage is in [Current Status](#current-status-report). After Acceptance, live from the [User’s Guide](#users-guide), including [AC chamber and dishes](#ac-chamber-and-dishes).
+Part names appear once in [The Parts](#the-parts)—that table is the glossary of record. What is already on the van versus still in the garage is in [Current Status](#current-status-report). After Acceptance, live from the [User’s Guide](#users-guide), including [AC chamber and dishes](#ac-chamber-and-dishes). Keep-or-sell numbers for the Isotemp live in the [Isotemp value study](#isotemp-value-study).
 
 ## When sources disagree
 

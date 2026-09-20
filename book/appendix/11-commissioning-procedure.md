@@ -24,7 +24,7 @@ Isotemp Slim Square 4.2 gal heat battery commissioning (DEC-007). Eberspächer f
 - [ ] Heater, pumps, and coil in the Isotemp Slim Square 4.2 gal heat battery below fluid level in WFT 5 L expansion/header tank
 - [ ] Mix ≤50% coolant; one brand only
 - [ ] AM100-1LF thermostatic mixing valve on the Duda B3-12DW-20 plate heat exchanger set (~120°F target); tap hoses from mixed outlet only before anyone showers
-- [ ] EasyStart Timer can command the heater; Altitude kit 22 1000 33 22 00 deferred only if no high camps yet
+- [ ] EasyStart Timer can command the heater; Altitude kit 22 1000 33 22 00 preferred at HOLD 4 while the harness is open (required before high camps; [DEC-006](#dec-006))
 - [ ] Fuel-prime adapter sizes and access joint confirmed on the actual van; no dry-start experiment used
 - [ ] Q-022 automatic thermostat mode either verified and documented, or explicitly deferred; manual EasyStart Timer operation available
 - [ ] Sure Marine cabin heater mounted level, bottom-in / top-out, with outlet bleeder reachable (SRC-019)

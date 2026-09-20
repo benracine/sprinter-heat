@@ -2,7 +2,7 @@
 
 Read this chapter before any procedure. Anyone helping needs to read it too.
 
-Jump: [System Design](#system-design) · [User’s Guide](#users-guide) · [Builder’s Guide](#builders-guide) · [Hazards](#hazard-register) · [The Numbers](#the-numbers-that-matter)
+Jump: [System Design](#system-design) · [User’s Guide](#users-guide) · [Builder’s Guide](#builders-guide) · [Hazards](#hazard-register) · [The Numbers](#the-numbers-that-matter) · [Isotemp value study](#isotemp-value-study)
 
 ::: {.danger}
 **Carbon monoxide.** The exhaust must end in open air, away from the combustion-air intake and from cabin openings. Stop work if exhaust can reach breathing air. Never run the Hydronic D5S diesel heater in a closed garage. → [HAZ-002](#haz-002)
