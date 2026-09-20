@@ -1316,7 +1316,6 @@ tradeoff</a>
 <li><a href="#decision-record" id="toc-decision-record">Decision
 record</a></li>
 <li><a href="#tldr" id="toc-tldr">TL;DR</a></li>
-<li><a href="#tldr-1" id="toc-tldr-1">TL;DR</a></li>
 </ul></li>
 <li><a href="#decision-log" id="toc-decision-log">Decision Log</a>
 <ul>
@@ -6916,33 +6915,52 @@ time;</li>
 </ul>
 <h2 id="tldr">TL;DR</h2>
 <ul>
-<li><strong>Keep it through first fire</strong> if mounting and AC
-safety stay reasonable. Decide keep-or-sell from logs, not from this
-memo alone.</li>
-<li><strong>What it is good for:</strong> softens D5S short-cycling when
-cabin load is <strong>below</strong> the 2.1 kW low stage (roughly mild
-/ ~40°F nights on a decent build); optional AC preheat of the static
-chamber (element cuts at ~75°C).</li>
-<li><strong>What it is not:</strong> a hot-water tank. Taps still need
-the D5S pump through the Duda. No guaranteed fuel save.</li>
-<li><strong>Scale:</strong> ~16 L chamber is tens of minutes of buffer
-at most, not hours. Idealized full coupling cuts starts a lot; real coil
-coupling is weaker (expect maybe 30–70% fewer starts in mild weather,
-little help near or above 2.1 kW load / hard cold).</li>
-<li><strong>Sell later if:</strong> no measured cycling or comfort gain,
-AC cannot be protected properly, or the mount/fill/freeze burden is not
-worth it.</li>
+<li><strong>Why a buffer helps:</strong> D5S Low is <strong>2.1
+kW</strong>. A well-insulated van often needs <strong>less than 2
+kW</strong> in mild/moderate cold, so Low has surplus heat to
+store.</li>
+<li><strong>Predicted starts/hour</strong> (10°C band, fully coupled
+upper bound — real coil coupling will be weaker):</li>
 </ul>
-<h2 id="tldr-1">TL;DR</h2>
-<p>The Isotemp is most useful as a buffer because the D5S produces about
-2.1 kW even at low output, while a well-insulated van often needs less
-than 2 kW. The buffer can turn short cycles into longer runs and pauses,
-especially in mild and moderate cold. The buffer does not create hot
-water by itself: the D5S pump must circulate glycol through the coil and
-the Duda plate. Keep the Isotemp if commissioning shows fewer starts,
-steadier cabin temperatures, useful AC preheating, or worthwhile
-short-term hot-water support. Sell the Isotemp if those benefits do not
-appear after measuring the installed system.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Load</th>
+<th>Rough outdoor (cabin 70°F)</th>
+<th style="text-align: right;">Without Isotemp</th>
+<th style="text-align: right;">With Isotemp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1.0 kW</td>
+<td>~40°F (better insulation)</td>
+<td style="text-align: right;"><strong>9.1</strong></td>
+<td style="text-align: right;"><strong>2.1</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;">1.5 kW</td>
+<td>~40–20°F</td>
+<td style="text-align: right;"><strong>7.7</strong></td>
+<td style="text-align: right;"><strong>1.8</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;">2.0 kW</td>
+<td>~20°F (or leaky near 40°F)</td>
+<td style="text-align: right;"><strong>1.7</strong></td>
+<td style="text-align: right;"><strong>0.4</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Storage scale:</strong> 16 L chamber, ~10–40°C swing → about
+<strong>0.18–0.71 kWh</strong> (roughly <strong>5–20 min</strong> at 2.1
+kW), not hours.</li>
+<li><strong>Not a water heater:</strong> taps still need the D5S pump
+through the Duda. AC element stops at ~<strong>75°C</strong>.</li>
+<li><strong>Decision:</strong> keep if logs show fewer starts / steadier
+cabin / useful AC preheat; sell if those numbers do not show up.</li>
+</ul>
 <h1 id="decision-log">Decision Log</h1>
 <h2 id="dec-000">DEC-000 — Heater identity confirmed: Hydronic D5S
 diesel heater</h2>
