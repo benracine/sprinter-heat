@@ -304,122 +304,87 @@ REAL core, SN **16401**. Label: **IN — bottom fitting · OUT — top fitting**
 
 ## 4. Wiring and controls {#hold-4-electrical}
 
-Pin colours, mm², and fuse values live in [Controls](#controls). Land each connector from [SRC-009](#src-009) / [SRC-003](#src-003) / [SRC-002](#src-002) on the bench — kit pins need the Eberspächer-style crimper.
+Story and diagrams: [Controls](#controls). Pin colours and AWG sizes: [Electrical and Controls](#electrical-and-controls). Land every connector from [SRC-009](#src-009) / [SRC-003](#src-003) on the bench — kit pins need the Eberspächer-style crimper.
 
-### Battery feed and master {#hold-4-power}
+### Heater battery feed and master {#hold-4-power}
 
 1. Disconnect house-battery positive before cutting heater power leads.
-2. Heater battery **+** (red) and **−** (brown) at **4 mm²** if plus+minus ≤ **6 m** total ([SRC-009](#src-009) p. 33). Longer → upsize so drop ≤ 0.5 V.
-3. Land **main fuse 20 A** (kit item 2.7) on that positive → heater **S1 chambers 1–2**. This feed does **not** go through the master.
-4. From the battery (switched + only), land the **master Off/On** (garage → next to EasyStart). Fuse three **parallel** branches after the master:
+2. Heater battery **+** (red) and **−** (brown) at **12 AWG** if the round trip is **20 ft / 6 m** or less ([SRC-009](#src-009) p. 33 — manual says 4 mm²). Longer → go up one AWG size so drop stays ≤ 0.5 V.
+3. Land the **20 A** main fuse on that positive → heater pins **1–2**. This feed does **not** go through the master.
+4. From the battery (switched + only), mount the **master Off/On** next to EasyStart. After the master, three fused branches:
 
-| Branch | Fuse | Lands on |
+| Branch | Fuse | Goes to |
 |---|---|---|
-| A — EasyStart / wake | **5 A** activation (item 2.7.1) — insert **last** | EasyStart pin 1 red (Terminal 30) |
-| B — SC1600B | Small (size OPEN) | Thermostat R–W signal path |
-| C — Cabin fans | Sized for two Noctua NF-F12 (OPEN) | Fan dial → both fans’ power leads |
+| A — EasyStart | **5 A** — insert **last** | EasyStart pin 1 red |
+| B — thermostat path | Small (size OPEN) | Later relay / SC1600 signal |
+| C — cabin fans | Sized for two Noctuas (OPEN) | Fan dial → both fans |
 
-Meter-prove master **Off** kills A, B, and C. Heater S1 1–2 may still be hot through the 20 A — that is expected; without EasyStart there is no S+. Emergency: EasyStart off → master Off → pull fuse → battery. ≤ two off/on cycles into a fault.
+Meter-prove master **Off** kills A, B, and C. Heater pins 1–2 may still be hot through the 20 A — that is expected. Emergency: EasyStart off → master Off → pull fuse → battery. ≤ two off/on cycles into a fault.
 
-### EasyStart Timer and heater S1 harness
+### EasyStart Timer and heater harness
 
-EasyStart Timer is **already mounted** on the wood panel (with LinkPRO / PROwatt SW). Under-van cable toward the rear exists. Landing is unfinished.
+EasyStart is **already mounted** on the wood panel. Landing is unfinished.
 
-1. Mate EasyStart **−XS10 / −XB10** per the [10-pin table](#controls) ([SRC-003](#src-003) pp. 8–9, circuit p. 17). Diagnosis pin 4 (blue/white) cabin-reachable.
-2. Land heater connector **S1** per the [S1 table](#controls) ([SRC-009](#src-009) p. 33): water pump chambers **8** violet + / **9** brown −; metering pump **4** / **10**.
-3. **S+ wake:** EasyStart pin **6** yellow through the control↔heater harness (altitude kit **in line** on that harness if installed — [SRC-002](#src-002)) into S1 chamber **7** yellow.
-4. Insulate: S1 chamber **3** (vehicle fan), blower-relay leads **B / C / 22 / 23**, unused EasyStart pins. Seal empty chambers with filler plugs.
-5. Shorten long kit leads carefully. Battery in heater window (~10.5–16 V).
+1. Mate the 10-pin connector per the pin table in [Electrical and Controls](#electrical-and-controls) ([SRC-003](#src-003)).
+2. Land the heater connector: water pump pins **8–9**, metering pump **4** / **10**, battery **1–2**, wake **7**.
+3. Yellow wake: EasyStart pin **6** → harness → heater pin **7** (altitude kit in line only if installing now — [SRC-002](#src-002)).
+4. Tape off heater pin **3** and the kit blower-relay leads. Seal empty chambers.
+5. Put the **5 A** fuse in **last**. Battery must sit in the heater window (~10.5–16 V).
 
-### SC1600B and fans (auto heat waits on Q-022)
+### Fans and SC1600 (auto waits)
 
-1. Mount SC1600B out of sun, vents, footwells. No mercury thermostat ([SRC-032](#src-032)).
-2. **R–W** heat **signal** only ([SRC-033](#src-033)) — no fan output. Fans need a **relay** on branch C; heater wake needs an approved EasyStart/Hydronic input.
-3. Until [Q-022](#q-022): heat from EasyStart Timer only. Fan dial Low/Med/High **without** hard Off ([DEC-018](#dec-018)); meter that Low still spins.
+1. Mount SC1600B out of sun, vents, footwells. No mercury thermostat.
+2. Wire fans: dial → both Noctuas on power leads only. Low/Med/High **without** hard Off. Meter that Low still spins.
+3. Until [Q-022](#q-022): start heat from EasyStart only. Do not splice SC1600 into EasyStart pins 9–10.
 
 ### Altitude kit 22 1000 33 22 00
 
-**When you need it:** sustained camps above ~1,500 m / 5,000 ft ([SRC-009](#src-009)). Below that it is optional. You may do a **low-elevation** first fire without it. You may not overnight in the mountains without it.
+**When:** overnight camps above ~5,000 ft. Optional for a low-elevation first fire.
 
-**What it does:** indoor air-pressure sensor. From ~**1400 m** the heater cuts fuel (~**9% capacity per 1000 m**). Max on the kit manual ~**6000 m** ([SRC-002](#src-002)).
+**What:** indoor air-pressure sensor that trims fuel. From ~4,600 ft the heater starts cutting capacity (~9% per 3,300 ft). Kit manual max ~20,000 ft ([SRC-002](#src-002)).
 
-Manual: [SRC-002](#src-002) (pp. 3–5; Hydronic diagrams pp. 8–10 — including the path via On signal **S+ / yellow**).
-
-**Find the kit**
-
-1. Heater sticker: Hydronic II · D5S · 12 V · **25 2526** · **H-Kit** (already confirmed).
-2. Box is in the garage — P/N **22 1000 33 22 00** (22.1000.33.2200). Not 33 23 00.
-3. In the box: sensor, adapter cable, housings, screws, fuse ([SRC-002](#src-002) p. 3). Photo labels before you cut.
-
-**Mount and wire**
-
-1. Inside the cabin: clean and dry; plug facing **down**; not next to a vent or fan motor; space **not** airtight ([SRC-002](#src-002) p. 4).
-2. Assemble the adapter exactly as that page shows (12-pin into cover → sensor until lever locks → 4-pin housings → fuse).
-3. Land the control-unit end on the **Hydronic** diagram that matches this harness (direct or via **S+ / YE**). Insulate unused leads.
-4. The SC1600B does **not** replace this sensor. Do not splice it into the altitude harness unless EasyStart docs say so ([Q-022](#q-022)).
-
-**Check**
-
-1. One controlled start with the sensor connected: metering pump starts → heater off → wait for after-run ([SRC-002](#src-002) p. 5).
-2. Full factory check needs EDiTH / ISO adapter. Without that, mark the kit **installed, not service-verified** — do not claim high-camp ready from a lit screen alone.
+1. Confirm box P/N **22 1000 33 22 00** and heater **H-Kit** sticker.
+2. Mount indoors: plug facing **down**, not airtight, away from vents.
+3. Plug the adapter into the control harness per the Hydronic diagram in [SRC-002](#src-002) (including the S+ / yellow path). Insulate unused leads.
+4. Check: start → metering pump runs → shut off → wait for after-run. Full factory proof needs EDiTH — without it, mark **installed, not service-verified**.
 
 **HOLD 4A — altitude kit**
 
-- [ ] Correct P/N and H-Kit note recorded
+- [ ] Correct P/N and H-Kit recorded
 - [ ] Sensor mounted (down plug, not airtight, away from vents)
-- [ ] Adapter + fuse + control landing per [SRC-002](#src-002) (S+ path into S1 chamber 7)
+- [ ] Adapter landed per [SRC-002](#src-002), or high camps deferred
 - [ ] Unused leads insulated
-- [ ] Check done, or high camps explicitly deferred
 
-### Paneltronics AC panel and Isotemp element (route now; live only at [HOLD 9](#hold-9))
+### Isotemp AC cable (route now; live at [HOLD 9](#hold-9))
 
-Separate from 12 V. End of this step: cable **routed, labeled, dead**.
-
-**This van’s panel** (face photo): Paneltronics **120 V AC**, mark **72313** / sheet **9972313B**. Breakers: **MAIN 30 A** · **BATTERY CHARGER** · **WATER HEATER** · **OUTLETS** · reverse-polarity LED. **No GFCI on the panel** — need shore/inverter ELCI or GFCI upstream ([DEC-020](#dec-020)).
-
-1. Bench-label the Isotemp 750 W element cable.
-2. Route it to **WATER HEATER** only — never the 12 V panel ([Q-016](#q-016)).
+1. Label the Isotemp 750 W element cable.
+2. Route it to Paneltronics **WATER HEATER** only — never the 12 V panel.
 3. Cap / lock out until [HOLD 9](#hold-9).
-4. Element heats the **static** chamber only. It does not circulate glycol.
+4. Element heats the static chamber only. Circulating glycol still runs through the coil when the diesel pump is on.
 
-### Dry electrical check before plumbing
+### Dry check before plumbing
 
-With the heater disabled and pump/fan loads disconnected where practical:
-
-1. Master switch **Off** removes 12 V from EasyStart Timer, SC1600B, and fan-power branch (meter each).
-2. Master switch **On** restores those three branches without a blown fuse, hot wire, or unexpected current draw.
-3. Fuse polarity, grounds, connector locks, strain relief, and accessible diagnosis wiring are correct.
-4. Fan speed controller: with master On and a temporary enable on the fan branch if needed, confirm Low/Med/High change fan speed and that the lowest setting still spins ([Q-021](#q-021)). Do not rely on this as a heat call.
-5. Do not issue a heat call or run the Hydronic D5S diesel heater until fuel and coolant are filled, bled, and ready for first fire (section 8).
-6. Do not energize the Isotemp AC element yet.
+1. Master **Off** kills EasyStart, thermostat path, and fans (meter each).
+2. Master **On** restores those three without a blown fuse or hot wire.
+3. Fan dial: Low/Med/High change speed; Low still spins.
+4. Do not call for heat until fuel and coolant are ready (section 8).
+5. Do not energize the Isotemp element yet.
 
 ::: {.must}
-The Isotemp Slim Square 4.2 gal heat battery’s 750 W / 115 VAC element is a Paneltronics AC-panel load. It heats the static chamber only. It does not circulate glycol and does not put hot water at the Duda B3-12DW-20 plate heat exchanger by itself. Do not land it on the 12 V panel. Do not energize until [HOLD 9](#hold-9): chamber full; Paneltronics breaker, GFCI/grounding, cable route, strain relief, and tank controls verified.
+Isotemp 750 W is a Paneltronics AC load. It heats the static chamber only. It does not pump the loop. Circulating glycol still runs through the coil when the diesel pump runs. Do not land it on 12 V. Do not energize until [HOLD 9](#hold-9).
 :::
-
-![Controls map](diagrams/electrical.svg)
-
-![Power feed](diagrams/electrical-power.svg)
-
-![Wake path](diagrams/electrical-wake.svg)
-
-![Heater loads](diagrams/electrical-heater.svg)
-
-![Fans and relay](diagrams/electrical-fans.svg)
-
-![Isotemp AC](diagrams/electrical-ac.svg)
 
 **HOLD 4 — 12 V electrical (AC element stays dead)**
 
-- [ ] Battery feed 4 mm² (≤6 m) and main fuse 20 A landed
-- [ ] Master switch meter-proves three Off cuts (EasyStart / SC1600 / fans)
-- [ ] EasyStart −XS10/−XB10 landed; 5 A activation fuse inserted last
-- [ ] Heater S1 landed; chamber 3 and blower leads insulated
-- [ ] S+ path EasyStart pin 6 → S1 chamber 7 (via altitude kit or deferred)
+- [ ] Heater feed 12 AWG (≤20 ft round trip) and 20 A fuse landed
+- [ ] Master Off kills EasyStart / thermostat path / fans
+- [ ] EasyStart landed; 5 A fuse inserted last
+- [ ] Heater harness landed; blower leads taped off
+- [ ] Yellow wake EasyStart pin 6 → heater pin 7 (altitude kit or deferred)
 - [ ] Fan dial Low/Med/High confirmed (Low still spins)
-- [ ] Isotemp element cable routed to Paneltronics **WATER HEATER**, labeled, locked out
-- [ ] Altitude kit wired, or high camps explicitly deferred ([HOLD 4A](#hold-4-electrical))
-- [ ] [Q-022](#q-022) still OPEN unless closed against [SRC-003](#src-003) / [SRC-009](#src-009) and documented
+- [ ] Isotemp cable to **WATER HEATER**, labeled, locked out
+- [ ] Altitude kit done or high camps deferred ([HOLD 4A](#hold-4-electrical))
+- [ ] [Q-022](#q-022) still OPEN unless closed against the manuals
 
 ---
 

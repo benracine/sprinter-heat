@@ -57,15 +57,26 @@ The heater itself holds only ~0.18 L. The Isotemp mass damps cycling.
 
 | Item | Status |
 | --- | --- |
-| Heater underbody | Done; 25 2526 / H-Kit |
-| Fuel pickup | Factory aux; inspect at HOLD 1 |
+| Hydronic D5S diesel heater (underbody) | Done; 25 2526 / H-Kit |
+| Fuel pickup (factory aux) | Inspect at HOLD 1 |
 | Exhaust / combustion air | Believed complete; verify at HOLD 2 |
-| Duda + AM100-1LF | On van; taps + one glycol barb still open |
+| Duda B3-12DW-20 + AM100-1LF | On van; taps + one glycol barb still open |
 | Sure Marine cabin heater | On van; SN 16401; fans unfinished |
 | EasyStart Timer | Mounted; landing unfinished |
-| Paneltronics | Face known; **WATER HEATER** empty for Isotemp |
-| Isotemp / WFT / altitude kit / master switch | **Garage** |
-| Glycol | Prestone LowTox AF555 only for this loop (DEC-017); ≤50% |
+| Paneltronics AC (72313 / 9972313B) | Face known; **WATER HEATER** empty for Isotemp |
+
+## Still in the garage
+
+| Item | Status |
+| --- | --- |
+| WFT 5 L expansion/header tank | → rear bench (highest circulating point) |
+| Isotemp Slim Square 4.2 gal heat battery | → under sofa |
+| Altitude kit 22 1000 33 22 00 | Wire per SRC-002 before high camps |
+| Master switch | Mount next to EasyStart at HOLD 4 |
+| Hose / clamps / Prestone LowTox AF555 | ≤50% PG for this loop (DEC-017) |
+| SC1600B / Noctua fans / speed dial | Auto call waits on Q-022 |
+
+Part-one inventory with finish-at HOLDs: [Current status](#current-status-report).
 
 ## Hold points before first fire
 

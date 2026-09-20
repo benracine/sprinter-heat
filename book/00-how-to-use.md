@@ -14,6 +14,8 @@ Lookups: [The numbers](#the-numbers-that-matter) · [Sources](#source-register) 
 
 Part two is citations — not the work order. Codes like [SRC-009](#src-009) jump to their row. DANGER / CAUTION / MUST boxes win over surrounding text.
 
+Official part names live in one place: [The parts](#the-parts) in System Design. Learn them there first. What is already on the van vs still in the garage is in [Current status](#current-status-report).
+
 ## The install in four buckets {#four-buckets-overview}
 
 Think of it as **four buckets**, not twenty tasks. Finish a bucket before opening the next. Inside a bucket, finish each HOLD before the next. Phase detail lives in the [Builder’s guide](#four-buckets).
@@ -25,19 +27,17 @@ Think of it as **four buckets**, not twenty tasks. Finish a bucket before openin
 | **C. Loops closed dry** | Glycol + drinking water plumbed, empty | 5–6 | Later |
 | **D. Fill, fire, live** | Water test → glycol → first fire → AC optional | 7–8 (+9) | Last |
 
-**Already on the van:** heater, fuel tap, exhaust, Duda/mixer, cabin heater, EasyStart, Paneltronics.
-
-**Still in the garage:** WFT, Isotemp, altitude kit, master switch, hose/clamps, glycol, fans/SC1600.
-
 ::: {.tip}
-**Current bucket B status:** WFT + Isotemp remain the next hardware tasks, with 12 V dry work and the Isotemp cable routed to **WATER HEATER** left dead until the panel branch is final. The loop, fill, and first-fire work follow after that. AC (phase 9) remains optional and separate.
+**Current bucket B:** mount the expansion/header tank and the heat battery, land dry 12 V, and route the heat-battery element cable to the Paneltronics **WATER HEATER** breaker — leave that cable dead. Loop, fill, and first fire come after. AC (phase 9) stays optional.
 :::
 
 ### What does *not* block diesel heat
 
+These wait without blocking a low-elevation first fire — full names in [The parts](#the-parts); detail in [Current status](#current-status-report):
+
 - Altitude kit ([Q-015](#q-015)) — high camps only  
-- SC1600 auto ([Q-022](#q-022)) — EasyStart Timer works without it  
-- Isotemp AC / GFCI ([Q-009](#q-009)) — phase 9 only  
+- Cabin thermostat auto-call ([Q-022](#q-022)) — the mounted timer still starts heat without it  
+- Heat-battery AC / upstream GFCI ([Q-009](#q-009)) — phase 9 only  
 
 ## Who wins when sources conflict
 
@@ -46,6 +46,4 @@ Think of it as **four buckets**, not twenty tasks. Finish a bucket before openin
 3. This book — locked van layout ([DEC-009](#dec-009) · [DEC-010](#dec-010) · [DEC-004](#dec-004) / [DEC-013](#dec-013) / [DEC-020](#dec-020))  
 4. OPEN items → stop inventing. Prefer [Questions for you](#questions-for-you-in-order)
 
-Diagrams are not to scale. [Controls](#controls) now carries fuse sizes, wire mm², and connector pin tables from the manuals — still land every terminal from [SRC-009](#src-009) / [SRC-003](#src-003) / [SRC-002](#src-002) on the bench.
-
-Official part names live in one place: [The parts](#the-parts) in System Design. Use those names everywhere.
+Diagrams are not to scale. [Controls](#controls) is the plain-English wiring story. Pin tables and AWG sizes live in [Electrical and Controls](#electrical-and-controls) — still land every terminal from [SRC-009](#src-009) / [SRC-003](#src-003) / [SRC-002](#src-002) on the bench.

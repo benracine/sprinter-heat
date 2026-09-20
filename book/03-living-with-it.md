@@ -27,7 +27,7 @@ A heat call wakes the heater and starts its pump; the burner fires only if coola
 3. No overnight heat above ~5,000 ft without Altitude kit 22 1000 33 22 00 ([DEC-006](#dec-006)).
 4. ≤2 EasyStart off/on cycles into a fault ([SRC-009](#src-009)). Clear locks with diagnostics, not power thrashing.
 5. Check WFT level only when cool.
-6. Tap heat needs circulating glycol (diesel pump). Isotemp AC heats the chamber only — not a shower by itself.
+6. Tap heat needs circulating glycol (diesel pump through the Duda). Isotemp AC heats the static chamber only; the coil still sees loop flow when the pump runs — AC alone is not a shower.
 7. Isotemp 750 W lands on Paneltronics **WATER HEATER** only — never 12 V ([DEC-004](#dec-004) / [DEC-020](#dec-020)).
 
 ## Controls at a glance

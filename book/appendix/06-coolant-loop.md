@@ -64,7 +64,7 @@ Independent living loop (DEC-009) does not use these engine valves; it still mus
 
 Glycol through the corrugated 316 SS coil (circulating loop). The ~4.2 gal / 16 L chamber holds the **same mix, sitting static** — not freshwater, not loop flow. That static mass is the Isotemp Slim Square 4.2 gal heat battery. Factory design was coil + potable water; this build keeps that split and puts glycol on both sides because the tank has no DHW job left. Bosch is gone.
 
-The coil is charged only by the Hydronic D5S diesel heater's own circulating pump (DEC-013 removed the separate auxiliary glycol pump). The static chamber can also be heated by the tank's 750 W / 115 VAC element from the Paneltronics AC panel, but that element does not circulate glycol or replace the D5S pump. Hot water through the Duda plate still depends on the circulating glycol loop.
+The coil always sees circulating glycol from the Hydronic D5S diesel heater's own pump (DEC-013 removed any separate auxiliary glycol pump). The static chamber can also be heated by the tank's 750 W / 115 VAC element from the Paneltronics AC panel, but that element does not pump the loop or replace the D5S pump. Hot water through the Duda plate still depends on circulating glycol.
 
 The WFT 5 L expansion/header tank (DEC-005) is the **circulating** glycol header. It does not replace the static 4 gal mass.
 
