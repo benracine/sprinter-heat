@@ -34,9 +34,17 @@ Meet each part once here. After this table, use only these official names—or t
 | **Altitude kit 22 1000 33 22 00**<br>*Short: altitude kit* | ![Altitude kit](assets/parts/altitude-kit.jpg){.part-photo} | Cuts fuel delivery at altitude ([SRC-002](#src-002); [DEC-006](#dec-006)) | Replace EasyStart; needed only for high camps |
 | **Paneltronics AC panel**<br>*Branch label always **WATER HEATER*** | ![Paneltronics panel](assets/parts/paneltronics.jpg){.part-photo} | **WATER HEATER** branch feeds Isotemp 750 W ([DEC-020](#dec-020)) | 12 V heater control |
 
+::: {.media-pair}
 ![Cabin air](diagrams/cabin-air.svg)
 
+![Sure Marine cabin heater on van](assets/parts/sure-marine-on-van.jpg)
+:::
+
+::: {.media-pair}
 ![Fresh water system](diagrams/freshwater.svg)
+
+![Freshwater layout](assets/parts/freshwater.png)
+:::
 
 ## Locked architecture
 
@@ -44,22 +52,23 @@ Meet each part once here. After this table, use only these official names—or t
 |---|---|
 | Loop order | Return → heater pump → Hydronic D5S → Sure Marine cabin heater → Duda (glycol) → Isotemp coil → return ([DEC-010](#dec-010)) |
 | Header | Water Flow Tank (WFT) tees into the **return** at the highest circulating point — not in series, not off the Isotemp coil |
-| Why that order | Cabin heat first (daily priority); Duda next (hottest fluid for showers); Isotemp last (stores leftovers — see [Isotemp value study](#isotemp-value-study)) |
+| Why that order | Cabin heat first (daily priority); Duda next (hottest fluid for sinks / occasional showers); Isotemp last (stores leftovers — see [Isotemp value study](#isotemp-value-study)) |
 | Drinking water | Duda only; AM100-1LF on hot out; set ~120°F; taps from mixed outlet only ([DEC-003](#dec-003) / [DEC-008](#dec-008)) |
 | Isotemp | Coil circulating; chamber static same mix; factory mixer capped; 750 W on Paneltronics **WATER HEATER** only |
 | Heights | Water Flow Tank highest; everything else below it; cabin heater level, bottom-in/top-out, outlet bleeder; fill/drain at lowest point; unrestricted path from Water Flow Tank tee back to the pump |
-| Cabin air | Living-space air across the Sure Marine cabin heater (on van, SN 16401; intended near jump seat / sink-fridge); combustion stays outside |
-| Isotemp mount (owner) | **Driver side under new sofa/bed** — current bed coming out ([Working design understanding](#working-design-understanding)) |
+| Isotemp mount (owner) | **Driver side under bench/bed (low)**; Water Flow Tank in **sofa-bed backrest (high)**; full-length lift-out day sofa ([Working design understanding](#working-design-understanding)) |
+| Cabin air | Living-space air across the Sure Marine cabin heater (**under the fridge**, SN 16401); Duda **under the sink**; combustion stays outside |
 | Build priority (owner) | **Ease of access** and **ease of construction** rank high for sofa/Isotemp packaging |
-| Sofa/bed materials ([DEC-021](#dec-021)) | **Hybrid:** wood side boxes + aluminum Isotemp cradle + light plywood lift-out center — not all-extrusion furniture |
+| Sofa/bed materials ([DEC-021](#dec-021)) | **Hybrid:** wood side boxes + aluminum Isotemp cradle + light plywood **full-length** lift-out — not all-extrusion furniture |
+| Hot water use (owner) | ~**80% sinks**; showers minority — mention showers, do not center the narrative on them |
 
 ![Glycol loop](diagrams/glycol-loop.svg)
 
 ## Fuel, air, exhaust (architecture only)
 
-**Fuel.** Fuel runs from the factory pickup through the metering pump to the heater. Use ordinary diesel EN 590 (up to 20% FAME is acceptable; pure biodiesel is not). Prefer a metering-pump angle of 15°–35°. Keep the fuel line rising continuously, and never rest it on the exhaust ([SRC-009](#src-009)). Prime with the hand bulb immediately before first fire ([HOLD 8](#hold-8-first-fire)), then remove it.
+**Fuel.** Fuel runs from the factory aux pickup through the metering pump to the heater. Owner is confident of the tap; believes the hose was run; **needs priming** before first fire. **Fuel pump** under van is **future work** before fire (look with the manual open). Prefer a metering-pump angle of 15°–35°. Keep the fuel line rising continuously, and never rest it on the exhaust ([SRC-009](#src-009)). Prime with the hand bulb immediately before first fire ([HOLD 8](#hold-8-first-fire)), then remove it.
 
-**Exhaust and combustion air.** These are two separate paths to outside air; neither enters the cabin. Kit limits are in [The Numbers](#the-numbers-that-matter) and [Builder §2](#hold-2-exhaust).
+**Exhaust and combustion air.** Owner thinks exhaust is OK; still a quick [HOLD 2](#hold-2-exhaust) look before fire. These are two separate paths to outside air; neither enters the cabin. Kit limits are in [The Numbers](#the-numbers-that-matter) and [Builder §2](#hold-2-exhaust).
 
 ![Fuel system](diagrams/fuel-system.svg)
 
@@ -84,9 +93,10 @@ This book does not rebuild the whole van electrical system. House charging and d
 
 **What is already visible on this van**
 
-- Wood panel (with EasyStart): Xantrex **LinkPRO** battery monitor and Xantrex **PROwatt SW** inverter face (dual GFCI outlets on the inverter face).  
+- Wood panel (with EasyStart): Xantrex **LinkPRO** battery monitor and Xantrex **PROwatt SW 2000** inverter (P/N **806-1220**; dual GFCI outlets on the face only).  
 - **Blue Sea** 12 V distribution block (on van)—likely feed point for hydronic master / EasyStart / fans; confirm fuse positions at HOLD 4.  
-- Paneltronics AC face **72313** / sheet **9972313B**: **MAIN 30 A** · **BATTERY CHARGER** · **WATER HEATER** (empty, reserved for Isotemp) · **OUTLETS** ([DEC-020](#dec-020)).
+- Paneltronics AC face **72313** / sheet **9972313B**: **MAIN 30 A** · **BATTERY CHARGER** · **WATER HEATER** (empty, reserved for Isotemp) · **OUTLETS** ([DEC-020](#dec-020)).  
+- House bank (owner): **200 Ah** battery; **650 W** rated solar; **Sterling 60 A** battery-to-battery charger; **Mean Well RPB-1600-12** for shore / J1772 charge.
 
 **How heat uses that house system**
 
@@ -94,9 +104,10 @@ This book does not rebuild the whole van electrical system. House charging and d
 |---|---|---|
 | House battery → heater 20 A fuse | Hydronic D5S brain + pump | Always fused; **not** through the hydronic master switch |
 | House battery → Blue Sea (typical) → **master** → EasyStart / fans / thermostat path | Heat call and cabin air | Master is **upstream of the EasyStart Timer**; Master Off is the parked lockout for 12 V heat controls |
-| Shore and/or PROwatt SW → Paneltronics MAIN → **WATER HEATER** | Isotemp 750 W element | ~6.5 A; never on the 12 V panel; master Off does **not** cut this; HOLD 9 documents protection |
+| Automatic transfer → Paneltronics MAIN → **WATER HEATER** | Isotemp 750 W element | Source is **120 V RV shore** or **PROwatt SW 2000** ([`photos/ac-electrical.jpg`](../photos/ac-electrical.jpg)); ~6.5 A; master Off does **not** cut this |
+| Blue Sea **9009** rotary → Mean Well RPB-1600-12 | House battery charge from shore or J1772 | **Not** through Paneltronics **BATTERY CHARGER** |
 
-FarOutRide-style systems often keep a **shore battery charger** and an **inverter** as separate devices ([SRC-041](#src-041)). That matches a Paneltronics face with both **BATTERY CHARGER** and AC load branches. Exact charger amps, battery Ah, solar watts, and whether shore and inverter share a transfer path remain **ASSUMPTION** until confirmed against [SRC-040](#src-040) and the van ([Q-025](#q-025)).
+**AC topology (owner diagram).** Two independent transfer paths: (1) automatic transfer feeds the Paneltronics panel from shore or the PROwatt SW 2000; (2) Blue Sea 9009 feeds only the Mean Well from shore or 240 V J1772. See [Working design understanding](#working-design-understanding). Ground-fault cutout on the hardwired Isotemp branch is still OPEN for HOLD 9 (inverter *might*; shore unknown; Paneltronics has none).
 
 Land every hydronic pin from the printed manuals ([SRC-009](#src-009) / [SRC-003](#src-003)). Wire sizes in this chapter are **AWG**; the manuals print mm² for the same conductors. Full pin tables live in [Electrical and Controls](#electrical-and-controls).
 
@@ -173,7 +184,7 @@ The SC1600B uses **AA batteries** of its own. The **R** and **W** terminals are 
 
 **Do not** land that switch on EasyStart pins **9–10**. Those pins are for Eberspächer’s optional temperature *sensor*, not a dry-contact thermostat ([SRC-003](#src-003)).
 
-Until [Q-022](#q-022) names an approved way to wake the heater from that switch, start heat only from the EasyStart Timer.
+Until [Q-022](#q-022) names an approved way to wake the heater from that switch, start heat only from the EasyStart Timer. Book reference relay for the fan path: TE Connectivity **V23134-A3052-X540** (or any ISO mini 12 V coil / ≥10 A contacts) — [DigiKey](https://www.digikey.com/en/products/detail/te-connectivity-potter-brumfield-relays/V23134-A3052-X540/6234681).
 
 ### Isotemp element on AC
 
@@ -181,7 +192,7 @@ Until [Q-022](#q-022) names an approved way to wake the heater from that switch,
 
 The Isotemp element circuit is **not** on the 12 V panel.
 
-Power runs from shore and/or the PROwatt SW inverter through an upstream **GFCI/ELCI** (still OPEN — [Q-009](#q-009)), then the Paneltronics main breaker, then the breaker labeled **WATER HEATER**, then the Isotemp 750 W element. House-electrical intent: [SRC-040](#src-040) / [SRC-041](#src-041).
+Power runs from **120 V RV shore** or the **PROwatt SW 2000** through the **automatic transfer switch** into Paneltronics MAIN, then the breaker labeled **WATER HEATER**, then the Isotemp 750 W element ([`photos/ac-electrical.jpg`](../photos/ac-electrical.jpg)). Ground-fault protection on that hardwired branch is still OPEN ([Q-009](#q-009)): inverter *might*; shore unknown; Paneltronics has none. Face GFCI outlets on the inverter protect only loads plugged into them.
 
 The element only warms the Isotemp **static** chamber. Circulating glycol still goes through the Isotemp **coil** whenever the diesel pump runs. Running the element alone will not give you a hot shower.
 

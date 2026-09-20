@@ -481,7 +481,11 @@ A diesel boiler can produce very hot domestic water. An anti-scald valve is mand
 5. Do not use the little mixer on the Isotemp Slim Square 4.2 gal heat battery for the shower.
 6. Cap anything you are not holding. Keep propylene glycol fittings and water fittings obviously different while you work.
 
+::: {.media-pair}
 ![Fresh water system](diagrams/freshwater.svg)
+
+![Freshwater layout](assets/parts/freshwater.png)
+:::
 
 **HOLD 6 — freshwater**
 

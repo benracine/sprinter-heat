@@ -264,6 +264,41 @@ figcaption {
   max-width: 36em;
 }
 
+/* Diagram + photo side by side (cabin air, freshwater, …) */
+.media-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.9rem 1.1rem;
+  align-items: start;
+  margin: 1.2em 0 1.6em;
+}
+
+.media-pair > p {
+  margin: 0;
+}
+
+.media-pair img {
+  margin: 0;
+  width: 100%;
+  max-width: none;
+  max-height: 22em;
+  object-fit: contain;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: var(--panel);
+}
+
+.media-pair img[src^="data:image/svg"] {
+  max-width: 100%;
+  max-height: 22em;
+}
+
+@media (max-width: 700px) {
+  .media-pair {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ---------- Tables ---------- */
 
 table {

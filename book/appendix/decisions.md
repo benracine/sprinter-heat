@@ -65,7 +65,7 @@
 - **Date:** 2026-09-19 (timing note 2026-09-20)
 - **Status:** Accepted
 - **Decision:** The van will be used at high elevation early and often. Sustained heating above ~1500 m is in scope. Hydronic D5S diesel heater therefore requires the air-pressure / Altitude kit 22 1000 33 22 00 (also written 22.1000.33.2200) per SRC-009 p. 32. Short mountain-pass use without the kit is not the operating profile. **Install and wire the kit at HOLD 4** while the EasyStart harness is open ([Q-015](#q-015)). A low-elevation first fire can run without it, but the kit is **not** on the post–first-fire wait list with [Q-022](#q-022) / [Q-009](#q-009).
-- **Reason:** Owner-confirmed 2026-09-19; harness-open install preferred 2026-09-20.
+- **Reason:** Owner-confirmed 2026-09-19; harness-open install preferred 2026-09-20; first high camp timing **ASAP** (owner 2026-09-20).
 - **Alternatives considered:** Sea-level / below-1500 m use only (not selected); defer kit until after first fire (rejected as preferred practice).
 - **Supporting sources:** Owner; SRC-009 p. 32; SRC-002
 - **Affected documents:** `01-system-requirements.md`, `03-parts-inventory.md`, `04-bom-and-missing-parts.md`, `09-electrical-and-controls.md`, `open-questions.md`, `research/verified-requirements.md`, `hazards.md`, `book/install-in-this-order.md`, `book/front-matter.md`

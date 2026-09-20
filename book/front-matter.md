@@ -17,7 +17,7 @@ Hand this file with the PDFs in `sources/hydronic-install/` and `sources/coolant
 
 **One loop.** Hydronic D5S → Sure Marine cabin heater → Duda → Isotemp coil → return. No engine. No second pump. Isotemp chamber = static glycol; factory mixer unused. Drinking water only through the Duda + AM100-1LF.
 
-**House electrical (context only).** Hydronic 12 V from the house battery; Isotemp 750 W from Paneltronics **WATER HEATER**, fed by shore and/or PROwatt SW. Intent: owner electrical post ([SRC-040](#src-040)); FarOutRide-class reference ([SRC-041](#src-041)). Confirm snapshot ([Q-025](#q-025)).
+**House electrical (context only).** Hydronic 12 V from the **200 Ah** house battery (**650 W** solar; Sterling 60 A B2B; Mean Well RPB-1600-12). Isotemp 750 W from Paneltronics **WATER HEATER**, fed by shore or **PROwatt SW 2000** via automatic transfer ([`photos/ac-electrical.jpg`](../photos/ac-electrical.jpg)). Mean Well charge path is separate (Blue Sea 9009). Ground-fault on Isotemp still OPEN ([Q-009](#q-009)).
 
 **Two finish lines.** Diesel cabin heat / diesel hot water can pass before HOLD 9. Complete system (Isotemp AC) needs HOLD 9. After a low-elevation diesel first fire, only Q-022 and Q-009 may still wait; land the altitude kit at HOLD 4.
 
@@ -50,16 +50,16 @@ WFT 5 L expansion/header tank tees at the return high point of the circulating l
 
 | Piece | Job | Where |
 | --- | --- | --- |
-| **Isotemp Slim Square 4.2 gal heat battery** | Circulating glycol in the coil. Static glycol in the chamber. Not DHW. Factory mixer unused. | Garage → **driver side under new sofa/bed** |
-| **[Duda B3-12DW-20 plate heat exchanger](https://www.dudadiesel.com/choose_item.php?id=HX3220DW)** | Freshwater heat exchanger. | On van; intended near jump seat / sink-fridge |
+| **[Duda B3-12DW-20 plate heat exchanger](https://www.dudadiesel.com/choose_item.php?id=HX3220DW)** | Freshwater heat exchanger. | On van — **under the sink** |
 | **AM100-1LF thermostatic mixing valve** | On Duda hot outlet. Scald control. Tap hoses not run. | On van |
-| **[Sure Marine cabin heater](http://www.suremarineservice.com/RL643X.aspx)** | Only cabin heat. REAL SN **16401**; IN bottom / OUT top. | On van; intended near jump seat / sink-fridge |
-| **[Water Flow Tank (WFT) 5 L expansion/header](https://www.butlertechnik.com/installation-accessories-c63/marine-accessories-c115/eberspacher-or-webasto-expansion-header-tank-5l-2-outlet-292100017742-17742-p1723)** | Expansion / bleed high point. | Garage → **highest** glycol point (exact mount OPEN) |
-| **[Altitude kit 22 1000 33 22 00](https://www.melloronline.co.uk/Heater_Installation_Accessories_/5147/EBERSPACHER_AIR/WATER_HEATER_HIGH_ALTITUDE_KIT_%7C_221000332200.html)** | Required for high camps. P/N + H-Kit confirmed. | Garage → wire per SRC-002 |
+| **[Sure Marine cabin heater](http://www.suremarineservice.com/RL643X.aspx)** | Only cabin heat. REAL SN **16401**; IN bottom / OUT top. | On van — **under the fridge** |
+| **[Water Flow Tank (WFT) 5 L expansion/header](https://www.butlertechnik.com/installation-accessories-c63/marine-accessories-c115/eberspacher-or-webasto-expansion-header-tank-5l-2-outlet-292100017742-17742-p1723)** | Expansion / bleed high point. | Garage → **sofa-bed backrest (high)** |
+| **[Altitude kit 22 1000 33 22 00](https://www.melloronline.co.uk/Heater_Installation_Accessories_/5147/EBERSPACHER_AIR/WATER_HEATER_HIGH_ALTITUDE_KIT_%7C_221000332200.html)** | Required for high camps (**ASAP**). P/N + H-Kit confirmed. | Garage → wire per SRC-002 at HOLD 4 |
 | **EasyStart Timer** | Schedule / start-stop. | Mounted on wood panel; not fully wired |
 | **Blue Sea 12 V distribution** | House 12 V fuse block | On van — confirm hydronic feeds at HOLD 4 |
+| **Xantrex PROwatt SW 2000** | Inverter for Paneltronics when selected | Wood panel; P/N 806-1220 |
 | **Paneltronics AC (72313 / 9972313B)** | MAIN 30 A · BATTERY CHARGER · **WATER HEATER** (empty, for Isotemp) · OUTLETS | On van |
-
+| **Isotemp Slim Square 4.2 gal heat battery** | Circulating glycol in the coil. Static glycol in the chamber. Not DHW. Factory mixer unused. | Garage → **driver side under bench (low)** |
 The heater itself holds only ~0.18 L. The Isotemp mass damps cycling.
 
 **Vendor pages and manuals:** [Hydronic D5S](http://www.heatso.com/eberspacher-hydronic-ii-d5s-12v-heater/) · [D5S manual (PDF)](https://www.butlertechnik.com/downloads/Hydronic_II_Technical,_installation_%26_operating_manual.pdf) · [EasyStart Timer (PDF)](https://www.butlertechnik.com/downloads/Eberspacher_Easy_Start_7_day_Timer_Installation_instructions_221000341500.pdf) · [Altitude kit (PDF)](https://www.butlertechnik.com/downloads/High_Altitude_Kit_221000332200_-_Installation_Instruction_Manual.pdf).
@@ -80,12 +80,12 @@ The heater itself holds only ~0.18 L. The Isotemp mass damps cycling.
 
 | Item | Status |
 | --- | --- |
-| Water Flow Tank (WFT) 5 L expansion/header | → **highest** glycol point (exact mount OPEN) |
-| Isotemp Slim Square 4.2 gal heat battery | → **driver side under new sofa/bed** |
-| Altitude kit 22 1000 33 22 00 | Wire per SRC-002 before high camps |
+| Water Flow Tank (WFT) 5 L expansion/header | → **sofa-bed backrest (high)**; confirm top wins height after framing |
+| Isotemp Slim Square 4.2 gal heat battery | → **driver side under bench (low)** |
+| Altitude kit 22 1000 33 22 00 | Wire per SRC-002 at HOLD 4 — first high camp **ASAP** |
 | Master switch | Mount next to EasyStart at HOLD 4 |
 | Hose / clamps / Prestone LowTox AF555 | ≤50% PG for this loop (DEC-017) |
-| SC1600B / Noctua fans / speed dial | Auto call waits on Q-022 |
+| SC1600B / Noctua fans / speed dial / fan relay | Both Noctua; voltage dial; relay TE V23134-A3052-X540 or equiv.; auto waits on Q-022 |
 
 Part-one inventory with finish-at HOLDs: [Current Status](#current-status-report).
 

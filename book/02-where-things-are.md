@@ -7,7 +7,7 @@ Jump: [Project Phases](#project-phases) · [Builder’s Guide](#builders-guide) 
 ## Next action
 
 ::: {.next}
-**Next — Phase A.** Fuel pickup and exhaust are already on the van. Finish HOLD 1 and HOLD 2 against [SRC-009](#src-009) before you open Phase B.
+**Next — Phase A.** Fuel pickup and exhaust are already on the van. Finish HOLD 1 and HOLD 2 against [SRC-009](#src-009) before you open Phase B. **Future work before first fire:** get under the van and confirm the **fuel pump** (owner not yet confident); then prime at HOLD 8.
 :::
 
 | Phase | Status |
@@ -46,8 +46,8 @@ If two people share furniture and hose work, wall-clock time drops faster than m
 | Item | Now | Finish at |
 |---|---|---|
 | Hydronic D5S diesel heater | Mounted; **25 2526** / **H-Kit** | Confirm tilt ([SRC-009](#src-009)) |
-| Fuel pickup (factory aux tap) | Installed | [HOLD 1](#hold-1-fuel); prime at [HOLD 8](#hold-8-first-fire) |
-| Exhaust / combustion air | On van; re-check before fire | [HOLD 2](#hold-2-exhaust) checklist |
+| Exhaust / combustion air | Owner thinks OK | Quick [HOLD 2](#hold-2-exhaust) look before fire |
+| Fuel pickup + pump | Tap OK; hose likely run; **pump check = future work** under van | [HOLD 1](#hold-1-fuel); prime at [HOLD 8](#hold-8-first-fire) |
 | Duda B3-12DW-20 + AM100-1LF mixer | Mixer on; one hose on; intended near jump seat / sink-fridge zone | Glycol port; mixed and cold to taps; set ~120°F; confirm fit with cabin heater |
 | Sure Marine cabin heater | REAL **16401**; **IN bottom / OUT top**; fans taped; intended near jump seat / sink-fridge | Level, bleeder, fan power — [HOLD 3](#hold-3-mounts) / 4 |
 | EasyStart Timer | On wood panel (with LinkPRO / PROwatt SW) | Land per [SRC-003](#src-003) / [SRC-009](#src-009) — [HOLD 4](#hold-4-electrical) |
