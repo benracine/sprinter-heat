@@ -1,0 +1,41 @@
+%%{init: {'theme':'base','themeVariables': {'background':'#fafaf9','primaryColor':'#f5f5f4','primaryTextColor':'#1c1917','primaryBorderColor':'#57534e','lineColor':'#44403c','secondaryColor':'#e7e5e4','tertiaryColor':'#eeeeec','fontFamily':'Avenir Next, Avenir, Helvetica Neue, sans-serif','fontSize':'28px','textColor':'#1c1917','mainBkg':'#f5f5f4','clusterBkg':'#eeeeec','clusterBorder':'#78716c','edgeLabelBackground':'#fafaf9'}}}%%
+flowchart TB
+  subgraph now["Works today — EasyStart heat, fans manual"]
+    direction TB
+    MC["Master On"]
+    FC["Branch C fuse"]
+    DIAL["Speed dial<br/>SERIES on shared +"]
+    N1["Noctua #1"]
+    N2["Noctua #2"]
+    MC --> FC --> DIAL
+    DIAL -->|"PARALLEL"| N1
+    DIAL -->|"PARALLEL"| N2
+  end
+
+  subgraph later["After Q-022 — intended auto"]
+    direction TB
+    MB["Master On"]
+    FB["Branch B fuse"]
+    TS["SC1600B<br/>R–W dry contact"]
+    COIL["Relay COIL<br/>SERIES with R–W"]
+    CONT["Relay CONTACTS<br/>SERIES in Branch C +"]
+    WAKE["Approved heater wake<br/>SERIES into S+ path<br/>pin TBD — Q-022"]
+
+    MB --> FB --> TS
+    TS -->|"Heat: contact closes"| COIL
+    TS -.->|"same closure"| WAKE
+    CONT -->|"opens/closes fan power"| DIAL2["→ dial → parallel fans"]
+  end
+
+  subgraph topo["Where the relay sits"]
+    direction TB
+    R1["Relay coil = SERIES with SC1600 R–W<br/>(low current signal loop)"]
+    R2["Relay contacts = SERIES in Branch C positive<br/>(carry fan current)"]
+    R3["Two Noctuas = PARALLEL after the dial"]
+    R4["Vehicle blower relay in the Espar kit = NOT used"]
+  end
+
+  classDef solid fill:#f5f5f4,stroke:#57534e,stroke-width:1px,color:#1c1917;
+  classDef open fill:#eeeeec,stroke:#78716c,stroke-width:2px,stroke-dasharray:4 3,color:#1c1917;
+  class MC,FC,DIAL,N1,N2 solid;
+  class MB,FB,TS,COIL,CONT,WAKE,DIAL2 open;

@@ -1,0 +1,30 @@
+%%{init: {'theme':'base','themeVariables': {'background':'#fafaf9','primaryColor':'#f5f5f4','primaryTextColor':'#1c1917','primaryBorderColor':'#57534e','lineColor':'#44403c','secondaryColor':'#e7e5e4','tertiaryColor':'#eeeeec','fontFamily':'Avenir Next, Avenir, Helvetica Neue, sans-serif','fontSize':'28px','textColor':'#1c1917','mainBkg':'#f5f5f4','clusterBkg':'#eeeeec','clusterBorder':'#78716c','edgeLabelBackground':'#fafaf9'}}}%%
+flowchart LR
+  S1["Heater harness S1<br/>(after battery + / − landed)"]
+
+  S1 -->|"ch 1–2 SERIES<br/>battery feed"| ECU["Control box"]
+  S1 -->|"ch 7 SERIES<br/>S+ wake in"| ECU
+
+  ECU -->|"drives"| P8["ch 8–9<br/>water pump"]
+  ECU -->|"drives"| P4["ch 4–10<br/>metering pump"]
+  ECU -->|"drives"| IN["Glow / flame /<br/>overheat sensors"]
+
+  subgraph unused["Insulate — not in circuit"]
+    direction TB
+    U3["ch 3 vehicle fan"]
+    U6["ch 6 aux criterion<br/>(unless you add it)"]
+    UB["Kit blower relay<br/>B C 22 23 · E F"]
+    U25["25 A blower fuse"]
+  end
+
+  subgraph topo["Topology"]
+    direction TB
+    T1["Battery feed and S+ into ECU = SERIES paths"]
+    T2["Pump, metering pump, burner loads = PARALLEL<br/>from the ECU (ECU switches each)"]
+    T3["No second glycol pump · no vehicle blower"]
+  end
+
+  classDef solid fill:#f5f5f4,stroke:#57534e,stroke-width:1px,color:#1c1917;
+  classDef skip fill:#fafaf9,stroke:#a8a29e,stroke-width:1px,stroke-dasharray:2 2,color:#78716c;
+  class S1,ECU,P8,P4,IN solid;
+  class U3,U6,UB,U25 skip;

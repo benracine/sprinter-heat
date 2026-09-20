@@ -1,0 +1,11 @@
+%%{init: {'theme':'base','themeVariables': {'background':'#fafaf9','primaryColor':'#f5f5f4','primaryTextColor':'#1c1917','primaryBorderColor':'#57534e','lineColor':'#44403c','secondaryColor':'#e7e5e4','tertiaryColor':'#eeeeec','fontFamily':'Avenir Next, Avenir, Helvetica Neue, sans-serif','fontSize':'28px','textColor':'#1c1917','mainBkg':'#f5f5f4','clusterBkg':'#eeeeec','clusterBorder':'#78716c','edgeLabelBackground':'#fafaf9'}}}%%
+flowchart TB
+  MAP["Controls map — five circuits"]
+  MAP --> P["1 · Power feed<br/>battery → fuses → master → A B C"]
+  MAP --> W["2 · Wake path<br/>EasyStart → S+ → altitude → ECU"]
+  MAP --> H["3 · Heater loads<br/>pump + metering from ECU"]
+  MAP --> F["4 · Fans + relay<br/>parallel Noctuas · one relay"]
+  MAP --> A["5 · Isotemp AC<br/>separate 120 V string"]
+
+  classDef solid fill:#f5f5f4,stroke:#57534e,stroke-width:1px,color:#1c1917;
+  class MAP,P,W,H,F,A solid;

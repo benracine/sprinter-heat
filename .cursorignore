@@ -1,0 +1,25 @@
+# Built report (regenerate with ./book/build.sh)
+book/out/
+
+# Vendored tooling
+book/vendor/
+
+# Binary / bulk evidence — cite paths in markdown; do not load into chat
+photos/
+sources/**/*.pdf
+sources/**/*.PDF
+**/*.zip
+**/*.JPG
+**/*.jpg
+**/*.jpeg
+**/*.png
+**/*.gif
+**/*.webp
+**/*.heic
+
+# OS / editor noise
+.DS_Store
+**/.DS_Store
+*.tmp
+*.swp
+~$*

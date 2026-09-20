@@ -1,0 +1,15 @@
+.DS_Store
+**/.DS_Store
+*.tmp
+*.swp
+~$*
+
+# Built report
+book/out/
+
+# Vendored pandoc (optional local binary)
+book/vendor/
+
+# Accidental downloads / scrapes
+**/Photo in *Google Photos*
+**/*Google Photos_files/

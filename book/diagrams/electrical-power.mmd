@@ -1,0 +1,21 @@
+%%{init: {'theme':'base','themeVariables': {'background':'#fafaf9','primaryColor':'#f5f5f4','primaryTextColor':'#1c1917','primaryBorderColor':'#57534e','lineColor':'#44403c','secondaryColor':'#e7e5e4','tertiaryColor':'#eeeeec','fontFamily':'Avenir Next, Avenir, Helvetica Neue, sans-serif','fontSize':'28px','textColor':'#1c1917','mainBkg':'#f5f5f4','clusterBkg':'#eeeeec','clusterBorder':'#78716c','edgeLabelBackground':'#fafaf9'}}}%%
+flowchart LR
+  BAT["12 V house<br/>battery"]
+  F20["Main fuse<br/>20 A · series"]
+  SW["Master Off/On<br/>series lockout"]
+
+  BAT -->|"4 mm² + and −<br/>≤6 m total"| F20
+  F20 --> SW
+
+  SW -->|"Branch A<br/>switched +"| FA["5 A activation<br/>→ EasyStart / wake"]
+  SW -->|"Branch B<br/>switched +"| FB["Small fuse<br/>→ SC1600B"]
+  SW -->|"Branch C<br/>switched +"| FC["Fan fuse<br/>→ dial + Noctuas"]
+
+  subgraph note["Topology"]
+    direction TB
+    N1["Battery → 20 A → master = SERIES"]
+    N2["A / B / C after master = PARALLEL<br/>(each can draw while others idle)"]
+  end
+
+  classDef solid fill:#f5f5f4,stroke:#57534e,stroke-width:1px,color:#1c1917;
+  class BAT,F20,SW,FA,FB,FC solid;

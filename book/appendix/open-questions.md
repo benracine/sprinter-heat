@@ -1,0 +1,49 @@
+# Open Questions
+
+## Questions for you, in order {#questions-for-you-in-order}
+
+Answer what is still open. Skip the rest. Manuals win on how; these answers only place parts and set preferences.
+
+**Already locked (do not re-ask):**
+
+- Altitude kit P/N **22 1000 33 22 00** + heater **H-Kit** — confirmed; kit is in the garage → install/wire before high camps.
+- Paneltronics **WATER HEATER** — empty; reserved for Isotemp 750 W.
+- Master switch — in the garage; mount next to EasyStart at HOLD 4.
+
+**Still useful:**
+
+1. **Isotemp** — Exact under-sofa bay (left/right)? Any hose path you already hate?
+2. **WFT** — Exact rear-bench spot so it stays the highest glycol point?
+3. **SC1600 fans** — Own a 12 V relay already, or book says “buy one”?
+4. **Cabin fans** — Both Noctua NF-F12, or keep the mixed pair on the REAL core?
+5. **Shore / inverter** — GFCI or ELCI already upstream of Paneltronics?
+6. **Mountains** — First high camp roughly when? (altitude kit timing only)
+7. **Hot water** — Mostly sinks, or long showers? (mixer wording only)
+
+---
+
+| ID | Question | Why it matters | Source/owner | Blocks work? | Resolution |
+|---|---|---|---|---|---|
+| <span id="q-001">Q-001</span> | What heater is actually on this vehicle? | Heat flow, min coolant flow, voltage limits, wiring, and fault codes differ. | SRC-023; nameplate photo | No | **Resolved 2026-09-19 (DEC-000):** Eberspächer Hydronic D5S diesel heater, order no. **25 2526 05 00 00** (invoice SKU 252526050000), with Installation Kit for D4S/D5S and EasyStart Timer. Nameplate photo reads Hydronic II / D5S / 25 2526 / 5.2 kW / 12 V diesel / max 2.5 bar. Use **SRC-009** only. |
+| <span id="q-002">Q-002</span> | Independent living-space hydronic loop or splice into engine coolant? | Architecture, BOM, and combination-valve use all change. | Owner | No | **Resolved 2026-09-19 (DEC-009):** Independent living-space glycol loop only. **No engine connection.** |
+| <span id="q-003">Q-003</span> | Domestic hot water path | DHW plumbing, mixing valve, PRV | Owner | No | **Resolved 2026-09-19 (DEC-003 / DEC-008 / SRC-024 / SRC-026):** Duda B3-12DW-20 plate + AM100-1LF. Isotemp is buffer only (DEC-007). |
+| <span id="q-004">Q-004</span> | Cabin control: EasyStart Timer only, Heatmiser, or both? | Harness, relays, and thermostat location. | Owner / parts on hand | Partial | **Resolved 2026-09-19 (DEC-002):** EasyStart Timer only (as primary). SC1600 is optional auto call once [Q-022](#q-022) closes. |
+| <span id="q-005">Q-005</span> | Vehicle platform and year? | OEM sheets apply only to those factory layouts. | Owner | Partial | **Resolved 2026-09-19:** 2017 Mercedes Sprinter 4x4, 170 wheelbase. |
+| <span id="q-007">Q-007</span> | Confirm 6-port combination valve part stamp. | SRC-008 is a dealer listing. | Physical part | No | **N/A (DEC-009):** no engine splice; combination valve not in this build. |
+| <span id="q-008">Q-008</span> | Is the Duda plate still in the loop, or does the Isotemp coil replace it for DHW? | Two DHW exchangers vs omitting the plate. | Owner | No | **Resolved 2026-09-19 (DEC-003 / DEC-007):** Duda is the freshwater exchanger; Isotemp chamber is static glycol mass. |
+| <span id="q-009">Q-009</span> | Final Paneltronics breaker, GFCI/grounding, cable route, and element control? | 750 W ≈ 6.5 A at 115 V; never on empty chamber. | Owner / SRC-038 | Yes (HOLD 9 only) | **2026-09-19 face photo + owner confirmation:** Paneltronics **72313** / **9972313B** — MAIN 30 A + **BATTERY CHARGER** / **WATER HEATER** / **OUTLETS**; reverse-polarity LED. The **WATER HEATER** branch is empty and reserved for the Isotemp element. Still open: upstream GFCI/ELCI, grounding, cable route, strain relief, and final test. |
+| <span id="q-010">Q-010</span> | Is the fuel tank tap-in installed correctly? | Fuel leak / fire risk before further work. | Owner / physical inspection | Yes | **Partially resolved 2026-09-19:** factory aux connection used (preferred). Still walk routing/clamps vs SRC-009 before fire (HOLD 1). |
+| <span id="q-011">Q-011</span> | Glycol loop plumbing order? | Hose runs, bleed points. | Owner | No | **Resolved 2026-09-19 (DEC-010):** pump → heater → Sure Marine cabin heater → Duda → Isotemp coil → return; WFT teed on return high point. |
+| <span id="q-012">Q-012</span> | Exact heater mounting height vs WFT and nearby lines? | Self-vent height; fuel-line clearance. | Owner / measurement | Partial | **Verify while mounting.** WFT still in garage; planned rear bench ~20–30 in above floor (DEC-005). |
+| <span id="q-013">Q-013</span> | Is heater 12 V wiring (EasyStart, pump, altitude) finished? | What’s left before first fire. | Owner | Partial | **2026-09-19:** EasyStart **mounted** on wood panel; not fully wired. Altitude kit in garage. Pump/heater 12 V landing still open (HOLD 4). |
+| <span id="q-014">Q-014</span> | Is exhaust/combustion-air routing actually compliant? | HAZ-002 CO. | Owner / physical inspection | No | **Owner believes correct.** Re-check vs SRC-009 at HOLD 2 before commissioning. |
+| <span id="q-015">Q-015</span> | Is altitude kit on the van and wired? | DEC-006 high camps. | Owner / SRC-002 / SRC-039 | Yes (high camps) | **Kit part number and heater H-Kit marking confirmed by owner: 22 1000 33 22 00 / H-Kit. Kit location confirmed: garage.** Still open: move it to the van, mount the sensor, wire it from SRC-002/SRC-003, and complete the functional/service check. Fuel reduction begins around 1400 m (~9%/1000 m); no high camps until verified. |
+| <span id="q-016">Q-016</span> | Does a 12 V panel position control the Paneltronics element circuit? | 12 V must never feed 750 W. | Owner / DEC-020 | Partial | **Raised 2026-09-19 (DEC-020):** panel is **AC-only**. Element → **WATER HEATER** branch. 12 V is never the load path. |
+| <span id="q-017">Q-017</span> | Is the Isotemp coil always in the circulating loop? | Buffer only works if coil sees flow. | Owner | No | **Resolved 2026-09-19 (DEC-010):** always in series; no summer bypass. |
+| <span id="q-018">Q-018</span> | What mixing valve is on the Duda hot outlet? | Scald control. | Owner / SRC-036 | No | **Resolved 2026-09-19 (DEC-008 / SRC-024 / SRC-036):** AM100-1LF. Set ~120°F: loosen → lift handwheel → turn → lock; confirm at faucet; label. |
+| <span id="q-019">Q-019</span> | Glycol brand, concentrate vs premix, mix %? | SRC-009 ≤50%; no brand mix. | Owner / SDS | No | **Resolved 2026-09-19 (DEC-017):** Prestone LowTox AF555 concentrate only, ≤50%. Cap Star brite Bio-Safe for this loop. |
+| <span id="q-020">Q-020</span> | Hydronic D5S Power/High/Low staging temperatures? | Cycling estimates. | SRC-009 p. 31 | No | **Resolved 2026-09-19:** Power→High ~65°C; High→Low ~80°C; pause ~85°C; restart ~75°C; overheat restart <70°C. |
+| <span id="q-021">Q-021</span> | Does the fan dial’s lowest setting still spin (no hard Off)? | Owner’s guide wording; DEC-015. | DEC-018 | No | **Resolved 2026-09-19 (DEC-018):** voltage Low/Med/High **without** hard Off; NA-FC1 rejected. HOLD 4 meters that Low still spins. |
+| <span id="q-022">Q-022</span> | How does SC1600B interface with cabin heater and/or D5S — fan-only, heat call, or both? | Automatic cabin heat wiring. | SRC-019 / SRC-033 / SRC-003 | No | **Architecture clear; landing open.** Face photo: Off / Heat + ROOM display. Signal-only R/W; fans need **relay**; heater wake needs approved EasyStart/Hydronic input. Until tested: EasyStart Timer only. |
+| <span id="q-023">Q-023</span> | What controls the withdrawn auxiliary glycol-pump circuit? | Must not reappear accidentally. | Owner | No | **N/A 2026-09-19 (DEC-013):** no auxiliary glycol pump. |
+| <span id="q-024">Q-024</span> | Does the WFT ~1.2 bar relief need a drip pan / routed drain? | Hot glycol under pressure. | DEC-019 | No | **Resolved 2026-09-19 (DEC-019):** yes — catch bottle, drip pan, or hose to a safe path. Free drip over living space forbidden. |

@@ -1,0 +1,30 @@
+%%{init: {'theme':'base','themeVariables': {'background':'#fafaf9','primaryColor':'#f5f5f4','primaryTextColor':'#1c1917','primaryBorderColor':'#57534e','lineColor':'#44403c','secondaryColor':'#e7e5e4','tertiaryColor':'#eeeeec','fontFamily':'Avenir Next, Avenir, Helvetica Neue, sans-serif','fontSize':'28px','textColor':'#1c1917','mainBkg':'#f5f5f4','clusterBkg':'#eeeeec','clusterBorder':'#78716c','edgeLabelBackground':'#fafaf9'}}}%%
+flowchart LR
+  SHORE["Shore / inverter<br/>120 V AC"]
+  GFCI["Upstream GFCI / ELCI<br/>SERIES · not on panel"]
+  MAIN["Paneltronics MAIN<br/>30 A"]
+  WH["WATER HEATER<br/>breaker 15 A class"]
+  EL["Isotemp 750 W<br/>~6.5 A element"]
+
+  SHORE --> GFCI --> MAIN --> WH --> EL
+
+  subgraph other["Same panel · PARALLEL branches"]
+    direction TB
+    BC["BATTERY CHARGER"]
+    OUT["OUTLETS"]
+  end
+
+  MAIN --> BC
+  MAIN --> OUT
+
+  subgraph topo["Topology"]
+    direction TB
+    T1["Entire AC feed to element = SERIES:<br/>source → GFCI → MAIN → WATER HEATER → element"]
+    T2["WATER HEATER / CHARGER / OUTLETS = PARALLEL<br/>after MAIN"]
+    T3["No shared wire with 12 V heater control"]
+  end
+
+  classDef solid fill:#f5f5f4,stroke:#57534e,stroke-width:1px,color:#1c1917;
+  classDef open fill:#eeeeec,stroke:#78716c,stroke-width:2px,stroke-dasharray:4 3,color:#1c1917;
+  class SHORE,MAIN,WH,EL,BC,OUT solid;
+  class GFCI open;

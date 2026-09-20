@@ -1,0 +1,1009 @@
+/* Heat & hot water — calm paper book. Print-first; screen mirrors paper. */
+
+:root {
+  --ink: #1c1917;
+  --muted: #57534e;
+  --faint: #78716c;
+  --rule: #e7e5e4;
+  --paper: #fafaf9;
+  --card: #ffffff;
+  --accent: #0f766e;
+  --accent-soft: #ecfdf8;
+  --stop-bg: #fafaf9;
+  --stop-edge: #b91c1c;
+  --tip-edge: #0f766e;
+  --tip-bg: #f0fdfa;
+  --next-edge: #0f766e;
+  --next-bg: #ecfdf8;
+}
+
+@page {
+  size: letter;
+  margin: 16mm 17mm 18mm 17mm;
+
+  @bottom-center {
+    content: counter(page);
+    font-family: "Avenir Next", "Avenir", "Helvetica Neue", sans-serif;
+    font-size: 9pt;
+    color: var(--faint);
+  }
+}
+
+@page :first {
+  @bottom-center { content: none; }
+}
+
+html {
+  font-size: 11.5pt;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--ink);
+  background: white;
+  font-family: "Avenir Next", "Avenir", "Helvetica Neue", sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Title page ---------- */
+
+header#title-block-header {
+  box-sizing: border-box;
+  min-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 4mm 26mm 0;
+  border-bottom: none;
+  break-after: page;
+  page-break-after: always;
+}
+
+header#title-block-header::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: var(--accent);
+  margin-bottom: 26pt;
+  border-radius: 2px;
+}
+
+header#title-block-header p {
+  margin: 0;
+}
+
+header#title-block-header .title {
+  font-weight: 600;
+  font-size: 40pt;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  margin: 0 0 12pt;
+  max-width: 16pc;
+}
+
+header#title-block-header .subtitle {
+  font-weight: 400;
+  font-size: 14pt;
+  color: var(--muted);
+  max-width: 28pc;
+  margin: 0 0 32pt;
+  line-height: 1.45;
+}
+
+header#title-block-header .author,
+header#title-block-header .date {
+  font-size: 10.5pt;
+  color: var(--faint);
+  letter-spacing: 0.02em;
+}
+
+header#title-block-header .author {
+  margin-bottom: 3pt;
+}
+
+/* ---------- TOC ---------- */
+
+#TOC {
+  break-after: page;
+  page-break-after: always;
+  max-width: 24em;
+}
+
+#TOC::after {
+  content: "Part one: safety → design → living with it → install. Part two is the technical record.";
+  display: block;
+  margin-top: 2.2em;
+  font-size: 10.5pt;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+#TOC > ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1.4em;
+}
+
+#TOC > ul > li {
+  margin: 0.75em 0;
+  font-size: 12.5pt;
+  font-weight: 500;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.5em;
+}
+
+#TOC ul ul {
+  margin: 0.15em 0 0.55em;
+  padding-left: 1.1em;
+}
+
+#TOC ul ul ul {
+  margin-top: 0.08em;
+  padding-left: 1.1em;
+}
+
+#TOC li:has(> a[id^="toc-scope"]),
+#TOC li:has(> a[id^="toc-inputs-and-sources"]),
+#TOC li:has(> a[id^="toc-verification"]),
+#TOC li:has(> a[id^="toc-open-items"]) {
+  display: none;
+}
+
+#TOC li:has(> a[id^="toc-content"]) {
+  display: contents;
+}
+
+#TOC li:has(> a[id^="toc-content"]) > a {
+  display: none;
+}
+
+#TOC a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---------- Type ---------- */
+
+h1, h2, h3 {
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--ink);
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h1 {
+  font-size: 22pt;
+  letter-spacing: -0.025em;
+  margin: 1.5em 0 0.5em;
+  padding-bottom: 0;
+}
+
+h1:first-of-type {
+  margin-top: 0.15em;
+}
+
+h2 {
+  font-size: 13.5pt;
+  margin: 1.4em 0 0.4em;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 11.5pt;
+  margin: 1.1em 0 0.28em;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+p {
+  margin: 0.65em 0;
+  max-width: 38em;
+}
+
+p, li {
+  orphans: 3;
+  widows: 3;
+}
+
+strong {
+  font-weight: 600;
+}
+
+a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--accent) 45%, var(--rule));
+  text-underline-offset: 2px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 1.7em 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.1em auto;
+}
+
+.part-photo {
+  width: 100%;
+  max-width: 7.5rem;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: var(--panel);
+}
+
+/* Pandoc --embed-resources turns diagrams into data: SVGs — size those, not path selectors */
+img[src^="data:image/svg"] {
+  width: auto;
+  max-width: min(100%, 42em);
+  max-height: 36em;
+  object-fit: contain;
+}
+
+figure {
+  margin: 1.2em 0 1.5em;
+}
+
+figcaption {
+  font-size: 9.5pt;
+  color: var(--muted);
+  margin-top: 0.4em;
+  max-width: 36em;
+}
+
+/* ---------- Tables ---------- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10.5pt;
+  margin: 0.9em 0 1.25em;
+  line-height: 1.4;
+}
+
+th, td {
+  border-bottom: 1px solid var(--rule);
+  padding: 0.5em 0.65em 0.5em 0;
+  vertical-align: top;
+  text-align: left;
+}
+
+th {
+  font-size: 8.5pt;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--faint);
+  font-weight: 600;
+  border-bottom: 1.5px solid color-mix(in srgb, var(--ink) 18%, var(--rule));
+}
+
+td:first-child {
+  font-weight: 500;
+}
+
+/* Bucket / stage tables — breathe a little */
+table:has(th:first-child) tr:hover td {
+  /* print ignores hover; screen uses this later */
+}
+
+/* ---------- Callouts ---------- */
+
+.next,
+.tip,
+.stop,
+.danger,
+.caution,
+.must {
+  margin: 1.1em 0 1.3em;
+  padding: 0.9em 1.05em;
+  max-width: 36em;
+  break-inside: avoid;
+  page-break-inside: avoid;
+  border-radius: 2px;
+}
+
+.next {
+  border: 1.5px solid color-mix(in srgb, var(--next-edge) 35%, var(--rule));
+  border-left: 5px solid var(--next-edge);
+  background: var(--next-bg);
+}
+
+.tip {
+  border: 1.5px solid color-mix(in srgb, var(--tip-edge) 28%, var(--rule));
+  border-left: 5px solid var(--tip-edge);
+  background: var(--tip-bg);
+}
+
+.next::before,
+.tip::before {
+  display: block;
+  font-size: 8.5pt;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  margin-bottom: 0.4em;
+}
+
+.next::before {
+  content: "NEXT";
+  color: var(--next-edge);
+}
+
+.tip::before {
+  content: "TIP";
+  color: var(--tip-edge);
+}
+
+.next p,
+.tip p {
+  margin: 0.3em 0 0;
+  font-weight: 500;
+}
+
+.next > p:first-child,
+.tip > p:first-child {
+  margin-top: 0;
+}
+
+.stop {
+  border-left: 3px solid var(--stop-edge);
+  background: var(--stop-bg);
+}
+
+.stop p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.danger,
+.caution,
+.must {
+  padding: 0.95em 1.05em;
+}
+
+.danger {
+  border: 1.5px solid #7f1d1d;
+  border-left-width: 5px;
+  background: #fef2f2;
+}
+
+.caution {
+  border: 1.5px solid #92400e;
+  border-left-width: 5px;
+  background: #fffbeb;
+}
+
+.must {
+  border: 1.5px solid #1c1917;
+  border-left-width: 5px;
+  background: #f5f5f4;
+}
+
+.danger > p:first-child,
+.caution > p:first-child,
+.must > p:first-child {
+  margin-top: 0;
+}
+
+.danger::before,
+.caution::before,
+.must::before {
+  display: block;
+  font-size: 8.5pt;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  margin-bottom: 0.4em;
+}
+
+.danger::before {
+  content: "DANGER";
+  color: #7f1d1d;
+}
+
+.caution::before {
+  content: "CAUTION";
+  color: #92400e;
+}
+
+.must::before {
+  content: "MUST";
+  color: #1c1917;
+}
+
+.danger p,
+.caution p,
+.must p {
+  margin: 0.3em 0 0;
+  font-weight: 500;
+}
+
+/* ---------- Install guide ---------- */
+
+.install-guide {
+  font-size: 11.75pt;
+  line-height: 1.58;
+}
+
+.install-guide h1 {
+  font-size: 24pt;
+  margin-top: 0.1em;
+}
+
+.install-guide h2 {
+  font-size: 14.5pt;
+  margin-top: 1.55em;
+  padding-top: 0.4em;
+  border-top: 1px solid var(--rule);
+}
+
+.install-guide h3 {
+  font-size: 12pt;
+  margin-top: 1.2em;
+  color: var(--ink);
+}
+
+.install-guide ol,
+.install-guide ul {
+  padding-left: 1.2em;
+  margin: 0.4em 0 0.95em;
+  max-width: 38em;
+}
+
+.install-guide li {
+  margin: 0.35em 0;
+}
+
+.install-guide hr {
+  margin: 1.8em 0;
+  border-top-color: var(--ink);
+  opacity: 0.1;
+}
+
+.capacity {
+  font-size: 10pt;
+}
+
+.capacity th {
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+
+/* ------------------------------------------------------------------ */
+/* Screen — light paper reading (same soul as print)                  */
+/* ------------------------------------------------------------------ */
+@media screen {
+  :root {
+    --toc-w: 280px;
+    --menu-h: 52px;
+    --prose: 720px;
+    --content-side: max(1.25rem, calc((100vw - var(--toc-w) - var(--prose)) / 2));
+    --screen-bg: #f3f1ee;
+    --screen-panel: #fafaf8;
+    --screen-card: #ffffff;
+    --screen-ink: #292524;
+    --screen-heading: #1c1917;
+    --screen-muted: #78716c;
+    --screen-rule: #e7e5e4;
+    --screen-link: #0f766e;
+    --screen-accent: #0f766e;
+  }
+
+  html {
+    font-size: 17px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--screen-bg);
+    color: var(--screen-ink);
+    font-family: "Avenir Next", "Avenir", "Nunito Sans", "Segoe UI", sans-serif;
+    line-height: 1.55;
+    max-width: none;
+    width: 100%;
+    overflow-x: clip;
+  }
+
+  body::before {
+    content: "Heat & hot water";
+    position: fixed;
+    top: 0;
+    left: var(--toc-w);
+    right: 0;
+    z-index: 25;
+    height: var(--menu-h);
+    box-sizing: border-box;
+    padding: 0 1.25rem;
+    background: color-mix(in srgb, var(--screen-card) 92%, var(--screen-bg));
+    border-bottom: 1px solid var(--screen-rule);
+    color: var(--screen-muted);
+    font-size: 0.88rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: var(--menu-h);
+    text-align: left;
+    pointer-events: none;
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100vh;
+    background: var(--screen-accent);
+    z-index: 40;
+    pointer-events: none;
+  }
+
+  #TOC {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: var(--toc-w);
+    z-index: 30;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 0.85rem 0 2.5rem;
+    background: var(--screen-panel);
+    border-right: 1px solid var(--screen-rule);
+    float: none;
+    height: auto;
+    max-width: none;
+    break-after: auto;
+    page-break-after: auto;
+    color: var(--screen-muted);
+    font-size: 0.84rem;
+    line-height: 1.55;
+  }
+
+  #TOC::after {
+    display: none;
+  }
+
+  #TOC #toc-title,
+  #TOC > h2 {
+    margin: 0;
+    padding: 0.9rem 1.2rem 0.75rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--screen-accent);
+    border: 0;
+  }
+
+  #TOC > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.2rem 0 0;
+  }
+
+  #TOC > ul > li {
+    margin: 0.45rem 0 0;
+    padding-top: 0.4rem;
+    border-top: 1px solid var(--screen-rule);
+    font-size: 0.92rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  #TOC > ul > li:first-child {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+  }
+
+  #TOC > ul > li > a {
+    display: block;
+    padding: 0.25rem 1rem 0.25rem 1.15rem;
+    color: var(--screen-heading);
+    font-weight: 600;
+    border-radius: 0 6px 6px 0;
+  }
+
+  #TOC ul ul {
+    display: block !important;
+    list-style: none;
+    margin: 0.12rem 0 0.35rem;
+    padding: 0;
+    font-size: 0.84rem;
+    font-weight: 400;
+  }
+
+  #TOC ul ul > li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: 400;
+  }
+
+  #TOC ul ul a {
+    display: block;
+    padding: 0.18rem 0.75rem 0.18rem 1.75rem;
+    color: var(--screen-muted);
+    border-radius: 0 6px 6px 0;
+  }
+
+  #TOC ul ul ul a {
+    padding-left: 2.45rem;
+    font-size: 0.92em;
+  }
+
+  #TOC a {
+    text-decoration: none;
+  }
+
+  #TOC a:hover {
+    color: var(--screen-accent);
+    background: color-mix(in srgb, var(--screen-accent) 8%, transparent);
+  }
+
+  body > *:not(#TOC) {
+    box-sizing: border-box;
+    width: min(var(--prose), calc(100vw - var(--toc-w) - 2.5rem));
+    max-width: var(--prose);
+    margin-left: calc(var(--toc-w) + var(--content-side));
+    margin-right: var(--content-side);
+    padding-top: 0;
+  }
+
+  /* Soft content card feel for long prose blocks via background only */
+  body > header#title-block-header {
+    padding-top: calc(var(--menu-h) + 1.75rem);
+  }
+
+  header#title-block-header {
+    min-height: auto;
+    padding: calc(var(--menu-h) + 2.25rem) 0 1.5rem;
+    break-after: auto;
+    page-break-after: auto;
+    display: block;
+  }
+
+  header#title-block-header::before {
+    width: 36px;
+    height: 4px;
+    background: var(--screen-accent);
+    margin-bottom: 1.25rem;
+  }
+
+  header#title-block-header .title {
+    font-size: 2.35rem;
+    font-weight: 600;
+    line-height: 1.15;
+    max-width: 12em;
+    margin: 0 0 0.55em;
+    color: var(--screen-heading);
+    letter-spacing: -0.03em;
+  }
+
+  header#title-block-header .subtitle {
+    font-size: 1.12rem;
+    max-width: 28em;
+    margin: 0 0 1em;
+    color: var(--screen-muted);
+    line-height: 1.45;
+  }
+
+  header#title-block-header .author,
+  header#title-block-header .date {
+    color: var(--screen-muted);
+    font-size: 0.92rem;
+  }
+
+  h1, h2, h3 {
+    color: var(--screen-heading);
+    font-weight: 600;
+    border: 0;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+    line-height: 1.25;
+    margin: 2em 0 0.55em;
+    letter-spacing: -0.02em;
+  }
+
+  h1:first-of-type {
+    margin-top: calc(var(--menu-h) * 0.15);
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin: 1.55em 0 0.4em;
+  }
+
+  h3 {
+    font-size: 1.02rem;
+    color: var(--screen-muted);
+    margin: 1.25em 0 0.3em;
+  }
+
+  p, li {
+    color: var(--screen-ink);
+    max-width: none;
+  }
+
+  p {
+    margin: 0.8em 0;
+  }
+
+  a {
+    color: var(--screen-link);
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid var(--screen-rule);
+    margin: 2em 0;
+  }
+
+  table {
+    width: 100%;
+    background: var(--screen-card);
+    border: 1px solid var(--screen-rule);
+    border-radius: 10px;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    font-size: 0.92rem;
+    line-height: 1.45;
+    margin: 1.15em 0 1.5em;
+    box-shadow: 0 1px 0 rgba(28, 25, 23, 0.03);
+  }
+
+  th, td {
+    padding: 0.7em 0.95em;
+    vertical-align: top;
+    border-bottom: 1px solid var(--screen-rule);
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+
+  th {
+    background: color-mix(in srgb, var(--screen-bg) 65%, var(--screen-card));
+    color: var(--screen-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.72rem;
+    font-weight: 700;
+  }
+
+  td:first-child {
+    font-weight: 600;
+    color: var(--screen-heading);
+  }
+
+  img {
+    height: auto;
+    max-width: min(100%, 28em);
+    width: auto;
+    object-fit: contain;
+    filter: none;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 1.1em auto;
+    box-shadow: none;
+    display: block;
+  }
+
+  img[src^="data:image/svg"] {
+    max-width: min(100%, 48em);
+    max-height: 70vh;
+    width: auto;
+    height: auto;
+    margin: 1.2em auto;
+    padding: 0.5rem 0.65rem;
+    background: var(--screen-card);
+    border: 1px solid var(--screen-rule);
+    border-radius: 8px;
+  }
+
+  pre, code {
+    font-family: "SF Mono", "Source Code Pro", Menlo, Consolas, monospace;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+  }
+
+  code {
+    color: #0f766e;
+    background: color-mix(in srgb, var(--screen-accent) 8%, var(--screen-card));
+    padding: 0.1em 0.35em;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+
+  .install-guide {
+    font-size: 1.02rem;
+    line-height: 1.55;
+  }
+
+  .install-guide h1 {
+    font-size: 1.85rem;
+  }
+
+  .install-guide h2 {
+    font-size: 1.25rem;
+    border-top: 1px solid var(--screen-rule);
+    padding-top: 0.85em;
+  }
+
+  .install-guide ol,
+  .install-guide ul {
+    max-width: none;
+    padding-left: 1.35em;
+  }
+
+  .next,
+  .tip,
+  .stop,
+  .danger,
+  .caution,
+  .must {
+    max-width: none;
+    border-radius: 10px;
+    box-shadow: 0 1px 0 rgba(28, 25, 23, 0.03);
+  }
+
+  .next {
+    background: #ecfdf8;
+    border-color: color-mix(in srgb, #0f766e 30%, var(--screen-rule));
+  }
+
+  .tip {
+    background: #f0fdfa;
+    border-color: color-mix(in srgb, #0f766e 22%, var(--screen-rule));
+  }
+
+  .stop {
+    background: #fff;
+    border-left: 4px solid #b91c1c;
+  }
+
+  .danger {
+    background: #fef2f2;
+    border-color: #7f1d1d;
+  }
+
+  .caution {
+    background: #fffbeb;
+    border-color: #92400e;
+  }
+
+  .must {
+    background: #f5f5f4;
+    border-color: #44403c;
+  }
+
+  .next p,
+  .tip p,
+  .stop p,
+  .danger p,
+  .caution p,
+  .must p {
+    color: var(--screen-heading);
+    max-width: none;
+  }
+
+  /* Mobile: collapse sidebar */
+  @media (max-width: 900px) {
+    :root {
+      --toc-w: 0px;
+    }
+
+    body::before {
+      left: 0;
+      text-align: center;
+    }
+
+    body::after {
+      display: none;
+    }
+
+    #TOC {
+      display: none;
+    }
+
+    body > *:not(#TOC) {
+      width: min(100% - 2rem, var(--prose));
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+@media print {
+  body::before,
+  body::after {
+    display: none !important;
+    content: none !important;
+  }
+
+  #TOC ul ul {
+    display: none;
+  }
+
+  header#title-block-header {
+    min-height: 88vh;
+  }
+
+  header#title-block-header .title {
+    max-width: 16pc;
+  }
+
+  .install-guide h2 {
+    page-break-before: avoid;
+  }
+
+  h1, h2, h3 {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  p,
+  .install-guide ol,
+  .install-guide ul {
+    max-width: none;
+  }
+
+  .next,
+  .tip,
+  .stop,
+  .danger,
+  .caution,
+  .must {
+    max-width: 36em;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  th, td {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  table {
+    font-variant-numeric: tabular-nums;
+  }
+
+  img {
+    max-width: 100%;
+    page-break-inside: avoid;
+    filter: none;
+  }
+
+  img[src^="data:image/svg"] {
+    max-width: 6.2in;
+    max-height: 7.5in;
+    width: auto;
+    height: auto;
+    margin: 0.8em auto;
+  }
+}
