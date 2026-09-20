@@ -899,14 +899,13 @@ use this book</a>
 <ul>
 <li><a href="#start-here" id="toc-start-here">Start here</a></li>
 <li><a href="#when-you-need-a-lookup" id="toc-when-you-need-a-lookup">When you need a lookup</a></li>
-<li><a href="#four-buckets-overview" id="toc-four-buckets-overview">The
-install in four buckets</a>
+<li><a href="#project-phases-overview" id="toc-project-phases-overview">The install in four project phases</a>
 <ul>
-<li><a href="#what-does-not-block-diesel-heat" id="toc-what-does-not-block-diesel-heat">What does <em>not</em> block
-diesel heat</a></li>
+<li><a href="#what-can-wait-until-after-first-fire" id="toc-what-can-wait-until-after-first-fire">What can wait until after
+first fire</a></li>
 </ul></li>
-<li><a href="#who-wins-when-sources-conflict" id="toc-who-wins-when-sources-conflict">Who wins when sources
-conflict</a></li>
+<li><a href="#when-sources-disagree" id="toc-when-sources-disagree">When
+sources disagree</a></li>
 </ul></li>
 <li><a href="#safety" id="toc-safety">Safety</a></li>
 <li><a href="#system-design" id="toc-system-design">System Design</a>
@@ -925,13 +924,12 @@ architecture</a></li>
 lockout)</a></li>
 <li><a href="#how-the-easystart-starts-the-heater" id="toc-how-the-easystart-starts-the-heater">How the EasyStart starts
 the heater</a></li>
-<li><a href="#what-the-heater-does-after-it-wakes" id="toc-what-the-heater-does-after-it-wakes">What the heater does after
-it wakes</a></li>
+<li><a href="#what-the-heater-does-after-the-heater-wakes" id="toc-what-the-heater-does-after-the-heater-wakes">What the heater
+does after the heater wakes</a></li>
 <li><a href="#cabin-fans" id="toc-cabin-fans">Cabin fans</a></li>
 <li><a href="#thermostat-auto-not-ready-yet" id="toc-thermostat-auto-not-ready-yet">Thermostat auto — not ready
 yet</a></li>
-<li><a href="#isotemp-element-different-world-ac" id="toc-isotemp-element-different-world-ac">Isotemp element — different
-world (AC)</a></li>
+<li><a href="#isotemp-element-on-ac" id="toc-isotemp-element-on-ac">Isotemp element on AC</a></li>
 </ul></li>
 <li><a href="#fluids" id="toc-fluids">Fluids</a></li>
 <li><a href="#architecture-check" id="toc-architecture-check">Architecture check</a></li>
@@ -955,17 +953,18 @@ checks</a></li>
 the van</a></li>
 <li><a href="#still-in-the-garage" id="toc-still-in-the-garage">Still in
 the garage</a></li>
-<li><a href="#forbidden-do-not-improve-into-these" id="toc-forbidden-do-not-improve-into-these">Forbidden (do not “improve”
-into these)</a></li>
-<li><a href="#still-open-manuals-first-do-not-invent" id="toc-still-open-manuals-first-do-not-invent">Still open (manuals
-first — do not invent)</a></li>
+<li><a href="#do-not-change-the-design-into-these" id="toc-do-not-change-the-design-into-these">Do not change the design
+into these</a></li>
+<li><a href="#still-open-check-the-manuals-first" id="toc-still-open-check-the-manuals-first">Still open (check the
+manuals first)</a></li>
 </ul></li>
 <li><a href="#builders-guide" id="toc-builders-guide">Builder’s
 guide</a>
 <ul>
-<li><a href="#done-looks-like" id="toc-done-looks-like">Done looks
-like</a></li>
-<li><a href="#four-buckets" id="toc-four-buckets">Four buckets</a></li>
+<li><a href="#what-done-means" id="toc-what-done-means">What “done”
+means</a></li>
+<li><a href="#project-phases" id="toc-project-phases">Four project
+phases</a></li>
 <li><a href="#before-you-start" id="toc-before-you-start">Before you
 start</a>
 <ul>
@@ -1344,11 +1343,11 @@ map</a></li>
 </ul>
 </nav>
 <h1 id="how-to-use-this-book">How to use this book</h1>
-<p>This book follows three stages. First it explains how the heating
-system is designed. Next it explains how you live with the system once
-it works—parked, in winter, and in summer. Last it walks through
-building the system from the parts already on the van and the parts
-still in the garage.</p>
+<p>This book has three stages. First comes how the heating system is
+designed. Next comes how you operate the system once the build is
+finished—parked, in winter, and in summer. Last comes how to build the
+system from the parts already on the van and the parts still in the
+garage.</p>
 <table>
 <colgroup>
 <col style="width: 33%" />
@@ -1366,12 +1365,12 @@ still in the garage.</p>
 <tr>
 <td><strong>1. Architecture</strong></td>
 <td><a href="#system-design">System Design</a></td>
-<td>What it is, how heat moves, what is forbidden</td>
+<td>What the system is, how heat moves, and what is forbidden</td>
 </tr>
 <tr>
 <td><strong>2. Use</strong></td>
 <td><a href="#users-guide">User’s guide</a></td>
-<td>How to operate and control the system day to day</td>
+<td>How to operate the system day to day</td>
 </tr>
 <tr>
 <td><strong>3. Make it</strong></td>
@@ -1381,28 +1380,29 @@ still in the garage.</p>
 </tbody>
 </table>
 <h3 id="start-here">Start here</h3>
-<p><strong>First pass — read in order:</strong> Safety, System Design,
-User’s guide, Current status, Builder’s guide. That order is
-intentional: learn the rules, learn the architecture, learn the
-day-to-day target, see what is actually on the van, then build.</p>
-<p>The chapters depend on each other after that. While you build, jump
-back to Safety and to System Design (especially Controls and The parts)
-whenever a HOLD names them. Use the lookup list below for numbers and
-citations. Part two is not a second reading path.</p>
-<p>Until Acceptance, the User’s guide is the target life—not permission
-to fire. After Acceptance, live from the User’s guide.</p>
+<p><strong>First reading — follow the printed order:</strong> Safety,
+System Design, User’s guide, Current status, Builder’s guide. That
+sequence is deliberate: rules, architecture, how you will live with the
+system, what is actually on the van, then the build.</p>
+<p>While you build, you will need to flip back. Return to Safety and to
+System Design (especially Controls and The parts) whenever a HOLD points
+there. Use the lookup list below for numbers and citations. Part two is
+reference material, not a second cover-to-cover path.</p>
+<p>The User’s guide describes how the finished system should work. Do
+not light the heater from that chapter until you have passed Acceptance.
+After Acceptance, the User’s guide is your day-to-day manual.</p>
 <h3 id="when-you-need-a-lookup">When you need a lookup</h3>
 <p>For a number, citation, or open question, use <a href="#the-numbers-that-matter">The numbers</a>, <a href="#source-register">Sources</a>, <a href="#decision-log">Decisions</a>, <a href="#questions-for-you-in-order">Questions for you</a>, <a href="#open-questions">Open Questions</a>, and <a href="#hazard-register">Hazards</a>.</p>
-<p>Part two is citations, not the work order. Codes such as <a href="#src-009">SRC-009</a> jump to their row in the source register.
+<p>Part two holds citations. Codes such as <a href="#src-009">SRC-009</a> jump to their row in the source register.
 DANGER, CAUTION, and MUST boxes override the surrounding text.</p>
-<p>Official part names live in one place: <a href="#the-parts">The
-parts</a> in System Design. Learn those names there first. What is
-already on the van versus still in the garage is listed in <a href="#current-status-report">Current status</a>.</p>
-<h2 id="four-buckets-overview">The install in four buckets</h2>
-<p>Think of the total installation as <strong>four buckets</strong>, not
-twenty scattered tasks. Finish one bucket before you open the next.
-Inside a bucket, finish each HOLD before you move on. Phase detail lives
-in the <a href="#four-buckets">Builder’s guide</a>.</p>
+<p>Official part names appear once in <a href="#the-parts">The parts</a>
+under System Design. Use those names everywhere else. What is already on
+the van versus still in the garage is listed in <a href="#current-status-report">Current status</a>.</p>
+<h2 id="project-phases-overview">The install in four project phases</h2>
+<p>The build breaks into <strong>four project phases</strong>, not
+twenty disconnected tasks. Finish one phase before you begin the next.
+Inside a phase, finish each HOLD before you move on. The numbered steps
+live in the <a href="#project-phases">Builder’s guide</a>.</p>
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -1412,9 +1412,9 @@ in the <a href="#four-buckets">Builder’s guide</a>.</p>
 </colgroup>
 <thead>
 <tr>
-<th>Bucket</th>
-<th>What it is</th>
-<th>Phases</th>
+<th>Phase</th>
+<th>Goal</th>
+<th>Steps</th>
 <th>You now</th>
 </tr>
 </thead>
@@ -1446,27 +1446,27 @@ in the <a href="#four-buckets">Builder’s guide</a>.</p>
 </tbody>
 </table>
 <div class="tip">
-<p><strong>Current bucket B.</strong> Mount the expansion/header tank
-and the heat battery. Land dry 12 V wiring, and route the heat-battery
-element cable to the Paneltronics <strong>WATER HEATER</strong>
-breaker—leave that cable dead. Loop, fill, and first fire come after. AC
-(phase 9) stays optional.</p>
+<p><strong>You are in Phase B.</strong> Mount the expansion/header tank
+and the heat battery. Land the dry 12 V wiring, and route the
+heat-battery element cable to the Paneltronics <strong>WATER
+HEATER</strong> breaker—leave that cable dead. Plumbing, fill, and first
+fire come later. AC (step 9) is optional.</p>
 </div>
-<h3 id="what-does-not-block-diesel-heat">What does <em>not</em> block
-diesel heat</h3>
-<p>These items can wait without blocking a low-elevation first fire.
-Full names appear in <a href="#the-parts">The parts</a>; detail is in <a href="#current-status-report">Current status</a>:</p>
+<h3 id="what-can-wait-until-after-first-fire">What can wait until after
+first fire</h3>
+<p>These items do not block a low-elevation first fire. Full names are
+in <a href="#the-parts">The parts</a>; status detail is in <a href="#current-status-report">Current status</a>:</p>
 <ul>
-<li>Altitude kit (<a href="#q-015">Q-015</a>) — high camps only<br />
+<li>Altitude kit (<a href="#q-015">Q-015</a>) — needed only for high
+camps<br />
 </li>
 <li>Cabin thermostat auto-call (<a href="#q-022">Q-022</a>) — the
-mounted timer still starts heat without it<br />
+EasyStart Timer already starts heat without the thermostat<br />
 </li>
 <li>Heat-battery AC and upstream GFCI (<a href="#q-009">Q-009</a>) —
-phase 9 only</li>
+step 9 only</li>
 </ul>
-<h2 id="who-wins-when-sources-conflict">Who wins when sources
-conflict</h2>
+<h2 id="when-sources-disagree">When sources disagree</h2>
 <ol type="1">
 <li><a href="#src-009">SRC-009</a> — Hydronic D5S: fuel, exhaust,
 wiring, and first fire<br />
@@ -1476,11 +1476,11 @@ bleed, and water-first leak check<br />
 </li>
 <li>This book — locked van layout (<a href="#dec-009">DEC-009</a> · <a href="#dec-010">DEC-010</a> · <a href="#dec-004">DEC-004</a> / <a href="#dec-013">DEC-013</a> / <a href="#dec-020">DEC-020</a>)<br />
 </li>
-<li>OPEN items — stop inventing. Prefer <a href="#questions-for-you-in-order">Questions for you</a></li>
+<li>OPEN items — do not invent an answer. Prefer <a href="#questions-for-you-in-order">Questions for you</a></li>
 </ol>
-<p>Diagrams are not to scale. <a href="#controls">Controls</a> is the
-plain-English wiring story. Pin tables and AWG sizes live in <a href="#electrical-and-controls">Electrical and Controls</a>. Still land
-every terminal from <a href="#src-009">SRC-009</a>, <a href="#src-003">SRC-003</a>, and <a href="#src-002">SRC-002</a> on the
+<p>Diagrams are not to scale. <a href="#controls">Controls</a> explains
+the wiring in plain English. Pin tables and AWG sizes are in <a href="#electrical-and-controls">Electrical and Controls</a>. Land every
+terminal from <a href="#src-009">SRC-009</a>, <a href="#src-003">SRC-003</a>, and <a href="#src-002">SRC-002</a> on the
 bench.</p>
 <h1 id="safety">Safety</h1>
 <p>Read this chapter before any procedure. Anyone helping you needs to
@@ -1522,8 +1522,8 @@ air or a kink (minimum flow about 250 L/h). → <a href="#haz-003">HAZ-003</a></
 hose, avoid forced kinks, and put bleeders at high points. Do not thrash
 the EasyStart Timer off and on more than twice into a fault; clear locks
 with diagnostics (<a href="#src-009">SRC-009</a>). After an overheat,
-wait until coolant is below about 70°C. Work on the exhaust only when it
-is cold. → <a href="#haz-010">HAZ-010</a></p>
+wait until coolant is below about 70°C. Work on the exhaust only when
+the exhaust is cold. → <a href="#haz-010">HAZ-010</a></p>
 </div>
 <div class="must">
 <p>Keep glycol and drinking water apart; heat crosses only at the Duda
@@ -1535,11 +1535,10 @@ Altitude kit 22 1000 33 22 00 (<a href="#dec-006">DEC-006</a>). → <a href="#ha
 <p>→ <a href="#system-design">System Design</a>.</p>
 <h1 id="system-design">System Design</h1>
 <p><strong>Stage 1 — Architecture.</strong> Finish this chapter before
-<a href="#users-guide">Use</a> or <a href="#builders-guide">Make it</a>.
-For each part, know what it does, what it must not do, and which way
-glycol flows.</p>
+the <a href="#users-guide">User’s guide</a> or the <a href="#builders-guide">Builder’s guide</a>. For each part, know what the
+part does, what the part must not do, and which way glycol flows.</p>
 <p>Jump: <a href="#safety">Safety</a> · <a href="#users-guide">Use</a> ·
-<a href="#current-status-report">Status</a> · <a href="#four-buckets-overview">Four buckets</a> · <a href="#builders-guide">Make it</a> · <a href="#the-numbers-that-matter">Numbers</a></p>
+<a href="#current-status-report">Status</a> · <a href="#project-phases-overview">Project phases</a> · <a href="#builders-guide">Make it</a> · <a href="#the-numbers-that-matter">Numbers</a></p>
 <h2 id="purpose">Purpose</h2>
 <p>One Hydronic D5S diesel heater under the van does two jobs:</p>
 <ol type="1">
@@ -1551,14 +1550,14 @@ the AM100-1LF thermostatic mixing valve.</li>
 mixes with drinking water, never connects to the engine (<a href="#dec-009">DEC-009</a>), and has no second pump (<a href="#dec-013">DEC-013</a>).</p>
 <p>The Isotemp Slim Square 4.2 gal heat battery stores leftover loop
 heat in a <strong>static</strong> chamber. Circulating glycol always
-runs through its <strong>coil</strong> (<a href="#dec-007">DEC-007</a> /
-<a href="#dec-010">DEC-010</a>). The 750 W / 115 VAC element is a
-Paneltronics AC load that heats the <strong>static chamber only</strong>
-(<a href="#dec-004">DEC-004</a>). The element does not pump the loop,
-and it does not put hot water at the Duda plate by itself. Tap heat
-still needs the Hydronic D5S diesel heater’s pump.</p>
-<p><strong>Reject and stop</strong> if a proposal would splice into the
-engine, tee glycol into drinking water, bypass the Sure Marine cabin
+runs through the Isotemp <strong>coil</strong> (<a href="#dec-007">DEC-007</a> / <a href="#dec-010">DEC-010</a>). The 750 W
+/ 115 VAC element is a Paneltronics AC load that heats the
+<strong>static chamber only</strong> (<a href="#dec-004">DEC-004</a>).
+The element does not pump the loop, and the element alone does not put
+hot water at the Duda plate. Tap heat still needs the Hydronic D5S
+diesel heater’s pump.</p>
+<p><strong>Stop and reject</strong> any proposal that would splice into
+the engine, tee glycol into drinking water, bypass the Sure Marine cabin
 heater, add a second glycol pump, or land the Isotemp 750 W element on
 the 12 V panel.</p>
 <h2 id="locked-architecture">Locked architecture</h2>
@@ -1751,8 +1750,7 @@ paths to outside air; neither enters the cabin. Kit limits are in <a href="#the-
 <figcaption aria-hidden="true">Combustion air and exhaust</figcaption>
 </figure>
 <h2 id="controls">Controls</h2>
-<p>Electrical work on this van is three separate stories. Do not mix
-them.</p>
+<p>The van has three electrical jobs. Keep the jobs separate.</p>
 <ol type="1">
 <li><strong>12 V diesel heat</strong> — the house battery feeds the
 heater and the EasyStart Timer.<br />
@@ -1761,7 +1759,7 @@ heater and the EasyStart Timer.<br />
 the Sure Marine core.<br />
 </li>
 <li><strong>120 V Isotemp element</strong> — that load lives on
-Paneltronics only, and it stays dead until <a href="#hold-9">HOLD
+Paneltronics only, and stays dead until <a href="#hold-9">HOLD
 9</a>.</li>
 </ol>
 <p>Land every pin from the printed manuals (<a href="#src-009">SRC-009</a> / <a href="#src-003">SRC-003</a>). Wire
@@ -1771,10 +1769,10 @@ for the same conductors. Full pin tables live in <a href="#electrical-and-contro
 <img role="img" aria-label="Day-one electrical" src="data:image/svg+xml;base64,PHN2ZyBhcmlhLXJvbGVkZXNjcmlwdGlvbj0iZmxvd2NoYXJ0LXYyIiByb2xlPSJncmFwaGljcy1kb2N1bWVudCBkb2N1bWVudCIgdmlld0JveD0iMCAwIDcyOC4zMDg1OTM3NSA5NTgiIHN0eWxlPSJtYXgtd2lkdGg6IDcyOC4zMDlweDsgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7IiBjbGFzcz0iZmxvd2NoYXJ0IiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaWQ9Im15LXN2ZyI+PHN0eWxlPiNteS1zdmd7Zm9udC1zaXplOjI4cHg7ZmlsbDojMWMxOTE3O31Aa2V5ZnJhbWVzIGVkZ2UtYW5pbWF0aW9uLWZyYW1le2Zyb217c3Ryb2tlLWRhc2hvZmZzZXQ6MDt9fUBrZXlmcmFtZXMgZGFzaHt0b3tzdHJva2UtZGFzaG9mZnNldDowO319I215LXN2ZyAuZWRnZS1hbmltYXRpb24tc2xvd3tzdHJva2UtZGFzaGFycmF5OjksNSFpbXBvcnRhbnQ7c3Ryb2tlLWRhc2hvZmZzZXQ6OTAwO2FuaW1hdGlvbjpkYXNoIDUwcyBsaW5lYXIgaW5maW5pdGU7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7fSNteS1zdmcgLmVkZ2UtYW5pbWF0aW9uLWZhc3R7c3Ryb2tlLWRhc2hhcnJheTo5LDUhaW1wb3J0YW50O3N0cm9rZS1kYXNob2Zmc2V0OjkwMDthbmltYXRpb246ZGFzaCAyMHMgbGluZWFyIGluZmluaXRlO3N0cm9rZS1saW5lY2FwOnJvdW5kO30jbXktc3ZnIC5lcnJvci1pY29ue2ZpbGw6I2VlZWVlYzt9I215LXN2ZyAuZXJyb3ItdGV4dHtmaWxsOiMxMTExMTM7c3Ryb2tlOiMxMTExMTM7fSNteS1zdmcgLmVkZ2UtdGhpY2tuZXNzLW5vcm1hbHtzdHJva2Utd2lkdGg6MXB4O30jbXktc3ZnIC5lZGdlLXRoaWNrbmVzcy10aGlja3tzdHJva2Utd2lkdGg6My41cHg7fSNteS1zdmcgLmVkZ2UtcGF0dGVybi1zb2xpZHtzdHJva2UtZGFzaGFycmF5OjA7fSNteS1zdmcgLmVkZ2UtdGhpY2tuZXNzLWludmlzaWJsZXtzdHJva2Utd2lkdGg6MDtmaWxsOm5vbmU7fSNteS1zdmcgLmVkZ2UtcGF0dGVybi1kYXNoZWR7c3Ryb2tlLWRhc2hhcnJheTozO30jbXktc3ZnIC5lZGdlLXBhdHRlcm4tZG90dGVke3N0cm9rZS1kYXNoYXJyYXk6Mjt9I215LXN2ZyAubWFya2Vye2ZpbGw6IzQ0NDAzYztzdHJva2U6IzQ0NDAzYzt9I215LXN2ZyAubWFya2VyLmNyb3Nze3N0cm9rZTojNDQ0MDNjO30jbXktc3ZnIHN2Z3tmb250LXNpemU6MjhweDt9I215LXN2ZyBwe21hcmdpbjowO30jbXktc3ZnIC5sYWJlbHtjb2xvcjojMWMxOTE3O30jbXktc3ZnIC5jbHVzdGVyLWxhYmVsIHRleHR7ZmlsbDojMTExMTEzO30jbXktc3ZnIC5jbHVzdGVyLWxhYmVsIHNwYW57Y29sb3I6IzExMTExMzt9I215LXN2ZyAuY2x1c3Rlci1sYWJlbCBzcGFuIHB7YmFja2dyb3VuZC1jb2xvcjp0cmFuc3BhcmVudDt9I215LXN2ZyAubGFiZWwgdGV4dCwjbXktc3ZnIHNwYW57ZmlsbDojMWMxOTE3O2NvbG9yOiMxYzE5MTc7fSNteS1zdmcgLm5vZGUgcmVjdCwjbXktc3ZnIC5ub2RlIGNpcmNsZSwjbXktc3ZnIC5ub2RlIGVsbGlwc2UsI215LXN2ZyAubm9kZSBwb2x5Z29uLCNteS1zdmcgLm5vZGUgcGF0aHtmaWxsOiNmNWY1ZjQ7c3Ryb2tlOiM1NzUzNGU7c3Ryb2tlLXdpZHRoOjFweDt9I215LXN2ZyAucm91Z2gtbm9kZSAubGFiZWwgdGV4dCwjbXktc3ZnIC5ub2RlIC5sYWJlbCB0ZXh0LCNteS1zdmcgLmltYWdlLXNoYXBlIC5sYWJlbCwjbXktc3ZnIC5pY29uLXNoYXBlIC5sYWJlbHt0ZXh0LWFuY2hvcjptaWRkbGU7fSNteS1zdmcgLm5vZGUgLmthdGV4IHBhdGh7ZmlsbDojMDAwO3N0cm9rZTojMDAwO3N0cm9rZS13aWR0aDoxcHg7fSNteS1zdmcgLnJvdWdoLW5vZGUgLmxhYmVsLCNteS1zdmcgLm5vZGUgLmxhYmVsLCNteS1zdmcgLmltYWdlLXNoYXBlIC5sYWJlbCwjbXktc3ZnIC5pY29uLXNoYXBlIC5sYWJlbHt0ZXh0LWFsaWduOmNlbnRlcjt9I215LXN2ZyAubm9kZS5jbGlja2FibGV7Y3Vyc29yOnBvaW50ZXI7fSNteS1zdmcgLnJvb3QgLmFuY2hvciBwYXRoe2ZpbGw6IzQ0NDAzYyFpbXBvcnRhbnQ7c3Ryb2tlLXdpZHRoOjA7c3Ryb2tlOiM0NDQwM2M7fSNteS1zdmcgLmFycm93aGVhZFBhdGh7ZmlsbDojMDUwNTA2O30jbXktc3ZnIC5lZGdlUGF0aCAucGF0aHtzdHJva2U6IzQ0NDAzYztzdHJva2Utd2lkdGg6Mi4wcHg7fSNteS1zdmcgLmZsb3djaGFydC1saW5re3N0cm9rZTojNDQ0MDNjO2ZpbGw6bm9uZTt9I215LXN2ZyAuZWRnZUxhYmVse2JhY2tncm91bmQtY29sb3I6I2ZhZmFmOTt0ZXh0LWFsaWduOmNlbnRlcjt9I215LXN2ZyAuZWRnZUxhYmVsIHB7YmFja2dyb3VuZC1jb2xvcjojZmFmYWY5O30jbXktc3ZnIC5lZGdlTGFiZWwgcmVjdHtvcGFjaXR5OjAuNTtiYWNrZ3JvdW5kLWNvbG9yOiNmYWZhZjk7ZmlsbDojZmFmYWY5O30jbXktc3ZnIC5sYWJlbEJrZ3tiYWNrZ3JvdW5kLWNvbG9yOnJnYmEoMjUwLCAyNTAsIDI0OSwgMC41KTt9I215LXN2ZyAuY2x1c3RlciByZWN0e2ZpbGw6I2VlZWVlYztzdHJva2U6Izc4NzE2YztzdHJva2Utd2lkdGg6MXB4O30jbXktc3ZnIC5jbHVzdGVyIHRleHR7ZmlsbDojMTExMTEzO30jbXktc3ZnIC5jbHVzdGVyIHNwYW57Y29sb3I6IzExMTExMzt9I215LXN2ZyBkaXYubWVybWFpZFRvb2x0aXB7cG9zaXRpb246YWJzb2x1dGU7dGV4dC1hbGlnbjpjZW50ZXI7bWF4LXdpZHRoOjIwMHB4O3BhZGRpbmc6MnB4O2ZvbnQtc2l6ZToxMnB4O2JhY2tncm91bmQ6I2VlZWVlYztib3JkZXI6MXB4IHNvbGlkIGhzbCg2MCwgMCUsIDgyLjk0MTE3NjQ3MDYlKTtib3JkZXItcmFkaXVzOjJweDtwb2ludGVyLWV2ZW50czpub25lO3otaW5kZXg6MTAwO30jbXktc3ZnIC5mbG93Y2hhcnRUaXRsZVRleHR7dGV4dC1hbmNob3I6bWlkZGxlO2ZvbnQtc2l6ZToxOHB4O2ZpbGw6IzFjMTkxNzt9I215LXN2ZyByZWN0LnRleHR7ZmlsbDpub25lO3N0cm9rZS13aWR0aDowO30jbXktc3ZnIC5pY29uLXNoYXBlLCNteS1zdmcgLmltYWdlLXNoYXBle2JhY2tncm91bmQtY29sb3I6I2ZhZmFmOTt0ZXh0LWFsaWduOmNlbnRlcjt9I215LXN2ZyAuaWNvbi1zaGFwZSBwLCNteS1zdmcgLmltYWdlLXNoYXBlIHB7YmFja2dyb3VuZC1jb2xvcjojZmFmYWY5O3BhZGRpbmc6MnB4O30jbXktc3ZnIC5pY29uLXNoYXBlIHJlY3QsI215LXN2ZyAuaW1hZ2Utc2hhcGUgcmVjdHtvcGFjaXR5OjAuNTtiYWNrZ3JvdW5kLWNvbG9yOiNmYWZhZjk7ZmlsbDojZmFmYWY5O30jbXktc3ZnIDpyb290ey0tbWVybWFpZC1mb250LWZhbWlseToidHJlYnVjaGV0IG1zIix2ZXJkYW5hLGFyaWFsLHNhbnMtc2VyaWY7fSNteS1zdmcgLnNvbGlkJmd0Oyp7ZmlsbDojZjVmNWY0IWltcG9ydGFudDtzdHJva2U6IzU3NTM0ZSFpbXBvcnRhbnQ7c3Ryb2tlLXdpZHRoOjFweCFpbXBvcnRhbnQ7Y29sb3I6IzFjMTkxNyFpbXBvcnRhbnQ7fSNteS1zdmcgLnNvbGlkIHNwYW57ZmlsbDojZjVmNWY0IWltcG9ydGFudDtzdHJva2U6IzU3NTM0ZSFpbXBvcnRhbnQ7c3Ryb2tlLXdpZHRoOjFweCFpbXBvcnRhbnQ7Y29sb3I6IzFjMTkxNyFpbXBvcnRhbnQ7fSNteS1zdmcgLnNvbGlkIHRzcGFue2ZpbGw6IzFjMTkxNyFpbXBvcnRhbnQ7fSNteS1zdmcgLm9wZW4mZ3Q7KntmaWxsOiNlZWVlZWMhaW1wb3J0YW50O3N0cm9rZTojNzg3MTZjIWltcG9ydGFudDtzdHJva2Utd2lkdGg6MnB4IWltcG9ydGFudDtzdHJva2UtZGFzaGFycmF5OjQgMyFpbXBvcnRhbnQ7Y29sb3I6IzFjMTkxNyFpbXBvcnRhbnQ7fSNteS1zdmcgLm9wZW4gc3BhbntmaWxsOiNlZWVlZWMhaW1wb3J0YW50O3N0cm9rZTojNzg3MTZjIWltcG9ydGFudDtzdHJva2Utd2lkdGg6MnB4IWltcG9ydGFudDtzdHJva2UtZGFzaGFycmF5OjQgMyFpbXBvcnRhbnQ7Y29sb3I6IzFjMTkxNyFpbXBvcnRhbnQ7fSNteS1zdmcgLm9wZW4gdHNwYW57ZmlsbDojMWMxOTE3IWltcG9ydGFudDt9PC9zdHlsZT48Zz48bWFya2VyIG9yaWVudD0iYXV0byIgbWFya2VySGVpZ2h0PSI4IiBtYXJrZXJXaWR0aD0iOCIgbWFya2VyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiByZWZZPSI1IiByZWZYPSI1IiB2aWV3Qm94PSIwIDAgMTAgMTAiIGNsYXNzPSJtYXJrZXIgZmxvd2NoYXJ0LXYyIiBpZD0ibXktc3ZnX2Zsb3djaGFydC12Mi1wb2ludEVuZCI+PHBhdGggc3R5bGU9InN0cm9rZS13aWR0aDogMTsgc3Ryb2tlLWRhc2hhcnJheTogMSwgMDsiIGNsYXNzPSJhcnJvd01hcmtlclBhdGgiIGQ9Ik0gMCAwIEwgMTAgNSBMIDAgMTAgeiIvPjwvbWFya2VyPjxtYXJrZXIgb3JpZW50PSJhdXRvIiBtYXJrZXJIZWlnaHQ9IjgiIG1hcmtlcldpZHRoPSI4IiBtYXJrZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIHJlZlk9IjUiIHJlZlg9IjQuNSIgdmlld0JveD0iMCAwIDEwIDEwIiBjbGFzcz0ibWFya2VyIGZsb3djaGFydC12MiIgaWQ9Im15LXN2Z19mbG93Y2hhcnQtdjItcG9pbnRTdGFydCI+PHBhdGggc3R5bGU9InN0cm9rZS13aWR0aDogMTsgc3Ryb2tlLWRhc2hhcnJheTogMSwgMDsiIGNsYXNzPSJhcnJvd01hcmtlclBhdGgiIGQ9Ik0gMCA1IEwgMTAgMTAgTCAxMCAwIHoiLz48L21hcmtlcj48bWFya2VyIG9yaWVudD0iYXV0byIgbWFya2VySGVpZ2h0PSIxMSIgbWFya2VyV2lkdGg9IjExIiBtYXJrZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIHJlZlk9IjUiIHJlZlg9IjExIiB2aWV3Qm94PSIwIDAgMTAgMTAiIGNsYXNzPSJtYXJrZXIgZmxvd2NoYXJ0LXYyIiBpZD0ibXktc3ZnX2Zsb3djaGFydC12Mi1jaXJjbGVFbmQiPjxjaXJjbGUgc3R5bGU9InN0cm9rZS13aWR0aDogMTsgc3Ryb2tlLWRhc2hhcnJheTogMSwgMDsiIGNsYXNzPSJhcnJvd01hcmtlclBhdGgiIHI9IjUiIGN5PSI1IiBjeD0iNSIvPjwvbWFya2VyPjxtYXJrZXIgb3JpZW50PSJhdXRvIiBtYXJrZXJIZWlnaHQ9IjExIiBtYXJrZXJXaWR0aD0iMTEiIG1hcmtlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgcmVmWT0iNSIgcmVmWD0iLTEiIHZpZXdCb3g9IjAgMCAxMCAxMCIgY2xhc3M9Im1hcmtlciBmbG93Y2hhcnQtdjIiIGlkPSJteS1zdmdfZmxvd2NoYXJ0LXYyLWNpcmNsZVN0YXJ0Ij48Y2lyY2xlIHN0eWxlPSJzdHJva2Utd2lkdGg6IDE7IHN0cm9rZS1kYXNoYXJyYXk6IDEsIDA7IiBjbGFzcz0iYXJyb3dNYXJrZXJQYXRoIiByPSI1IiBjeT0iNSIgY3g9IjUiLz48L21hcmtlcj48bWFya2VyIG9yaWVudD0iYXV0byIgbWFya2VySGVpZ2h0PSIxMSIgbWFya2VyV2lkdGg9IjExIiBtYXJrZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIHJlZlk9IjUuMiIgcmVmWD0iMTIiIHZpZXdCb3g9IjAgMCAxMSAxMSIgY2xhc3M9Im1hcmtlciBjcm9zcyBmbG93Y2hhcnQtdjIiIGlkPSJteS1zdmdfZmxvd2NoYXJ0LXYyLWNyb3NzRW5kIj48cGF0aCBzdHlsZT0ic3Ryb2tlLXdpZHRoOiAyOyBzdHJva2UtZGFzaGFycmF5OiAxLCAwOyIgY2xhc3M9ImFycm93TWFya2VyUGF0aCIgZD0iTSAxLDEgbCA5LDkgTSAxMCwxIGwgLTksOSIvPjwvbWFya2VyPjxtYXJrZXIgb3JpZW50PSJhdXRvIiBtYXJrZXJIZWlnaHQ9IjExIiBtYXJrZXJXaWR0aD0iMTEiIG1hcmtlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgcmVmWT0iNS4yIiByZWZYPSItMSIgdmlld0JveD0iMCAwIDExIDExIiBjbGFzcz0ibWFya2VyIGNyb3NzIGZsb3djaGFydC12MiIgaWQ9Im15LXN2Z19mbG93Y2hhcnQtdjItY3Jvc3NTdGFydCI+PHBhdGggc3R5bGU9InN0cm9rZS13aWR0aDogMjsgc3Ryb2tlLWRhc2hhcnJheTogMSwgMDsiIGNsYXNzPSJhcnJvd01hcmtlclBhdGgiIGQ9Ik0gMSwxIGwgOSw5IE0gMTAsMSBsIC05LDkiLz48L21hcmtlcj48ZyBjbGFzcz0icm9vdCI+PGcgY2xhc3M9ImNsdXN0ZXJzIi8+PGcgY2xhc3M9ImVkZ2VQYXRocyI+PHBhdGggbWFya2VyLWVuZD0idXJsKCNteS1zdmdfZmxvd2NoYXJ0LXYyLXBvaW50RW5kKSIgc3R5bGU9IiIgY2xhc3M9ImVkZ2UtdGhpY2tuZXNzLW5vcm1hbCBlZGdlLXBhdHRlcm4tc29saWQgZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBmbG93Y2hhcnQtbGluayIgaWQ9IkxfQkFUX0hfMCIgZD0iTTI1OC43NzcsMTg1TDIzOC42NDcsMjA2LjY2N0MyMTguNTE4LDIyOC4zMzMsMTc4LjI1OSwyNzEuNjY3LDE1OC4xMjksMjk2LjgzM0MxMzgsMzIyLDEzOCwzMjksMTM4LDMzMi41TDEzOCwzMzYiLz48cGF0aCBtYXJrZXItZW5kPSJ1cmwoI215LXN2Z19mbG93Y2hhcnQtdjItcG9pbnRFbmQpIiBzdHlsZT0iIiBjbGFzcz0iZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBlZGdlLXRoaWNrbmVzcy1ub3JtYWwgZWRnZS1wYXR0ZXJuLXNvbGlkIGZsb3djaGFydC1saW5rIiBpZD0iTF9CQVRfTV8wIiBkPSJNMzI1LjY2OSwxODVMMzQ1Ljc5OCwyMDYuNjY3QzM2NS45MjcsMjI4LjMzMyw0MDYuMTg2LDI3MS42NjcsNDI2LjMxNiwzMDMuODMzQzQ0Ni40NDUsMzM2LDQ0Ni40NDUsMzU3LDQ0Ni40NDUsMzY3LjVMNDQ2LjQ0NSwzNzgiLz48cGF0aCBtYXJrZXItZW5kPSJ1cmwoI215LXN2Z19mbG93Y2hhcnQtdjItcG9pbnRFbmQpIiBzdHlsZT0iIiBjbGFzcz0iZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBlZGdlLXRoaWNrbmVzcy1ub3JtYWwgZWRnZS1wYXR0ZXJuLXNvbGlkIGZsb3djaGFydC1saW5rIiBpZD0iTF9NX0VTXzAiIGQ9Ik0zOTguMDQ2LDQ1NEwzODMuMDMzLDQ2NS4xNjdDMzY4LjAyLDQ3Ni4zMzMsMzM3Ljk5NCw0OTguNjY3LDMyMi45ODIsNTEzLjMzM0MzMDcuOTY5LDUyOCwzMDcuOTY5LDUzNSwzMDcuOTY5LDUzOC41TDMwNy45NjksNTQyIi8+PHBhdGggbWFya2VyLWVuZD0idXJsKCNteS1zdmdfZmxvd2NoYXJ0LXYyLXBvaW50RW5kKSIgc3R5bGU9IiIgY2xhc3M9ImVkZ2UtdGhpY2tuZXNzLW5vcm1hbCBlZGdlLXBhdHRlcm4tc29saWQgZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBmbG93Y2hhcnQtbGluayIgaWQ9IkxfTV9GQU5fMCIgZD0iTTQ5NC44NDUsNDU0TDUwOS44NTgsNDY1LjE2N0M1MjQuODcxLDQ3Ni4zMzMsNTU0Ljg5Niw0OTguNjY3LDU2OS45MDksNTE2LjgzM0M1ODQuOTIyLDUzNSw1ODQuOTIyLDU0OSw1ODQuOTIyLDU1Nkw1ODQuOTIyLDU2MyIvPjxwYXRoIG1hcmtlci1lbmQ9InVybCgjbXktc3ZnX2Zsb3djaGFydC12Mi1wb2ludEVuZCkiIHN0eWxlPSIiIGNsYXNzPSJlZGdlLXRoaWNrbmVzcy1ub3JtYWwgZWRnZS1wYXR0ZXJuLXNvbGlkIGVkZ2UtdGhpY2tuZXNzLW5vcm1hbCBlZGdlLXBhdHRlcm4tc29saWQgZmxvd2NoYXJ0LWxpbmsiIGlkPSJMX0VTX0gyXzAiIGQ9Ik0zMDcuOTY5LDcwMkwzMDcuOTY5LDcwOS42NjdDMzA3Ljk2OSw3MTcuMzMzLDMwNy45NjksNzMyLjY2NywzMDcuOTY5LDc0Ny4zMzNDMzA3Ljk2OSw3NjIsMzA3Ljk2OSw3NzYsMzA3Ljk2OSw3ODNMMzA3Ljk2OSw3OTAiLz48L2c+PGcgY2xhc3M9ImVkZ2VMYWJlbHMiPjxnIGNsYXNzPSJlZGdlTGFiZWwiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsIDApIiBjbGFzcz0ibGFiZWwiPjxmb3JlaWduT2JqZWN0IGhlaWdodD0iMCIgd2lkdGg9IjAiPjxkaXYgc3R5bGU9ImRpc3BsYXk6IHRhYmxlLWNlbGw7IHdoaXRlLXNwYWNlOiBub3dyYXA7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsiIGNsYXNzPSJsYWJlbEJrZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiPjxzcGFuIGNsYXNzPSJlZGdlTGFiZWwiPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48ZyBjbGFzcz0iZWRnZUxhYmVsIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLCAwKSIgY2xhc3M9ImxhYmVsIj48Zm9yZWlnbk9iamVjdCBoZWlnaHQ9IjAiIHdpZHRoPSIwIj48ZGl2IHN0eWxlPSJkaXNwbGF5OiB0YWJsZS1jZWxsOyB3aGl0ZS1zcGFjZTogbm93cmFwOyBsaW5lLWhlaWdodDogMS41OyBtYXgtd2lkdGg6IDIwMHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7IiBjbGFzcz0ibGFiZWxCa2ciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIj48c3BhbiBjbGFzcz0iZWRnZUxhYmVsIj48L3NwYW4+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PGcgY2xhc3M9ImVkZ2VMYWJlbCI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwgMCkiIGNsYXNzPSJsYWJlbCI+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSIwIiB3aWR0aD0iMCI+PGRpdiBzdHlsZT0iZGlzcGxheTogdGFibGUtY2VsbDsgd2hpdGUtc3BhY2U6IG5vd3JhcDsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyIgY2xhc3M9ImxhYmVsQmtnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCI+PHNwYW4gY2xhc3M9ImVkZ2VMYWJlbCI+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjxnIGNsYXNzPSJlZGdlTGFiZWwiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsIDApIiBjbGFzcz0ibGFiZWwiPjxmb3JlaWduT2JqZWN0IGhlaWdodD0iMCIgd2lkdGg9IjAiPjxkaXYgc3R5bGU9ImRpc3BsYXk6IHRhYmxlLWNlbGw7IHdoaXRlLXNwYWNlOiBub3dyYXA7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsiIGNsYXNzPSJsYWJlbEJrZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiPjxzcGFuIGNsYXNzPSJlZGdlTGFiZWwiPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMDcuOTY4NzUsIDc0OCkiIGNsYXNzPSJlZGdlTGFiZWwiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03Ny40MjE4NzUsIC0yMSkiIGNsYXNzPSJsYWJlbCI+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSI0MiIgd2lkdGg9IjE1NC44NDM3NSI+PGRpdiBzdHlsZT0iZGlzcGxheTogdGFibGUtY2VsbDsgd2hpdGUtc3BhY2U6IG5vd3JhcDsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyIgY2xhc3M9ImxhYmVsQmtnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCI+PHNwYW4gY2xhc3M9ImVkZ2VMYWJlbCI+PHA+eWVsbG93IHdha2U8L3A+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjwvZz48ZyBjbGFzcz0ibm9kZXMiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI5Mi4yMjI2NTYyNSwgMTQ5KSIgaWQ9ImZsb3djaGFydC1CQVQtMCIgY2xhc3M9Im5vZGUgZGVmYXVsdCBzb2xpZCI+PHJlY3QgaGVpZ2h0PSI3MiIgd2lkdGg9IjIzNi4xNzE4NzUiIHk9Ii0zNiIgeD0iLTExOC4wODU5Mzc1IiBzdHlsZT0iZmlsbDojZjVmNWY0ICFpbXBvcnRhbnQ7c3Ryb2tlOiM1NzUzNGUgIWltcG9ydGFudDtzdHJva2Utd2lkdGg6MXB4ICFpbXBvcnRhbnQiIGNsYXNzPSJiYXNpYyBsYWJlbC1jb250YWluZXIiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtODguMDg1OTM3NSwgLTIxKSIgc3R5bGU9ImNvbG9yOiMxYzE5MTcgIWltcG9ydGFudCIgY2xhc3M9ImxhYmVsIj48cmVjdC8+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSI0MiIgd2lkdGg9IjE3Ni4xNzE4NzUiPjxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJjb2xvcjogcmdiKDI4LCAyNSwgMjMpICFpbXBvcnRhbnQ7IGRpc3BsYXk6IHRhYmxlLWNlbGw7IHdoaXRlLXNwYWNlOiBub3dyYXA7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsiPjxzcGFuIGNsYXNzPSJub2RlTGFiZWwiIHN0eWxlPSJjb2xvcjojMWMxOTE3ICFpbXBvcnRhbnQiPjxwPkhvdXNlIGJhdHRlcnk8L3A+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEzOCwgNDE4KSIgaWQ9ImZsb3djaGFydC1ILTIiIGNsYXNzPSJub2RlIGRlZmF1bHQgc29saWQiPjxyZWN0IGhlaWdodD0iMTU2IiB3aWR0aD0iMjYwIiB5PSItNzgiIHg9Ii0xMzAiIHN0eWxlPSJmaWxsOiNmNWY1ZjQgIWltcG9ydGFudDtzdHJva2U6IzU3NTM0ZSAhaW1wb3J0YW50O3N0cm9rZS13aWR0aDoxcHggIWltcG9ydGFudCIgY2xhc3M9ImJhc2ljIGxhYmVsLWNvbnRhaW5lciIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMDAsIC02MykiIHN0eWxlPSJjb2xvcjojMWMxOTE3ICFpbXBvcnRhbnQiIGNsYXNzPSJsYWJlbCI+PHJlY3QvPjxmb3JlaWduT2JqZWN0IGhlaWdodD0iMTI2IiB3aWR0aD0iMjAwIj48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iY29sb3I6IHJnYigyOCwgMjUsIDIzKSAhaW1wb3J0YW50OyBkaXNwbGF5OiB0YWJsZTsgd2hpdGUtc3BhY2U6IGJyZWFrLXNwYWNlczsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyB3aWR0aDogMjAwcHg7Ij48c3BhbiBjbGFzcz0ibm9kZUxhYmVsIiBzdHlsZT0iY29sb3I6IzFjMTkxNyAhaW1wb3J0YW50Ij48cD5IZWF0ZXIgcG93ZXI8YnIgLz4xMiBBV0cgwrcgMjAgQSDCtyBhbHdheXMgZnVzZWQ8L3A+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ0Ni40NDUzMTI1LCA0MTgpIiBpZD0iZmxvd2NoYXJ0LU0tNCIgY2xhc3M9Im5vZGUgZGVmYXVsdCBzb2xpZCI+PHJlY3QgaGVpZ2h0PSI3MiIgd2lkdGg9IjI1Ni44OTA2MjUiIHk9Ii0zNiIgeD0iLTEyOC40NDUzMTI1IiBzdHlsZT0iZmlsbDojZjVmNWY0ICFpbXBvcnRhbnQ7c3Ryb2tlOiM1NzUzNGUgIWltcG9ydGFudDtzdHJva2Utd2lkdGg6MXB4ICFpbXBvcnRhbnQiIGNsYXNzPSJiYXNpYyBsYWJlbC1jb250YWluZXIiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtOTguNDQ1MzEyNSwgLTIxKSIgc3R5bGU9ImNvbG9yOiMxYzE5MTcgIWltcG9ydGFudCIgY2xhc3M9ImxhYmVsIj48cmVjdC8+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSI0MiIgd2lkdGg9IjE5Ni44OTA2MjUiPjxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJjb2xvcjogcmdiKDI4LCAyNSwgMjMpICFpbXBvcnRhbnQ7IGRpc3BsYXk6IHRhYmxlLWNlbGw7IHdoaXRlLXNwYWNlOiBub3dyYXA7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsiPjxzcGFuIGNsYXNzPSJub2RlTGFiZWwiIHN0eWxlPSJjb2xvcjojMWMxOTE3ICFpbXBvcnRhbnQiPjxwPk1hc3RlciBPZmYgLyBPbjwvcD48L3NwYW4+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzA3Ljk2ODc1LCA2MjQpIiBpZD0iZmxvd2NoYXJ0LUVTLTYiIGNsYXNzPSJub2RlIGRlZmF1bHQgc29saWQiPjxyZWN0IGhlaWdodD0iMTU2IiB3aWR0aD0iMjYwIiB5PSItNzgiIHg9Ii0xMzAiIHN0eWxlPSJmaWxsOiNmNWY1ZjQgIWltcG9ydGFudDtzdHJva2U6IzU3NTM0ZSAhaW1wb3J0YW50O3N0cm9rZS13aWR0aDoxcHggIWltcG9ydGFudCIgY2xhc3M9ImJhc2ljIGxhYmVsLWNvbnRhaW5lciIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMDAsIC02MykiIHN0eWxlPSJjb2xvcjojMWMxOTE3ICFpbXBvcnRhbnQiIGNsYXNzPSJsYWJlbCI+PHJlY3QvPjxmb3JlaWduT2JqZWN0IGhlaWdodD0iMTI2IiB3aWR0aD0iMjAwIj48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iY29sb3I6IHJnYigyOCwgMjUsIDIzKSAhaW1wb3J0YW50OyBkaXNwbGF5OiB0YWJsZTsgd2hpdGUtc3BhY2U6IGJyZWFrLXNwYWNlczsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyB3aWR0aDogMjAwcHg7Ij48c3BhbiBjbGFzcz0ibm9kZUxhYmVsIiBzdHlsZT0iY29sb3I6IzFjMTkxNyAhaW1wb3J0YW50Ij48cD5FYXN5U3RhcnQgVGltZXI8YnIgLz5zdGFydHMgZGllc2VsIGhlYXQ8L3A+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU4NC45MjE4NzUsIDYyNCkiIGlkPSJmbG93Y2hhcnQtRkFOLTgiIGNsYXNzPSJub2RlIGRlZmF1bHQgc29saWQiPjxyZWN0IGhlaWdodD0iMTE0IiB3aWR0aD0iMTkzLjkwNjI1IiB5PSItNTciIHg9Ii05Ni45NTMxMjUiIHN0eWxlPSJmaWxsOiNmNWY1ZjQgIWltcG9ydGFudDtzdHJva2U6IzU3NTM0ZSAhaW1wb3J0YW50O3N0cm9rZS13aWR0aDoxcHggIWltcG9ydGFudCIgY2xhc3M9ImJhc2ljIGxhYmVsLWNvbnRhaW5lciIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02Ni45NTMxMjUsIC00MikiIHN0eWxlPSJjb2xvcjojMWMxOTE3ICFpbXBvcnRhbnQiIGNsYXNzPSJsYWJlbCI+PHJlY3QvPjxmb3JlaWduT2JqZWN0IGhlaWdodD0iODQiIHdpZHRoPSIxMzMuOTA2MjUiPjxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJjb2xvcjogcmdiKDI4LCAyNSwgMjMpICFpbXBvcnRhbnQ7IGRpc3BsYXk6IHRhYmxlLWNlbGw7IHdoaXRlLXNwYWNlOiBub3dyYXA7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsiPjxzcGFuIGNsYXNzPSJub2RlTGFiZWwiIHN0eWxlPSJjb2xvcjojMWMxOTE3ICFpbXBvcnRhbnQiPjxwPkZhbiBkaWFsPGJyIC8+c3BlZWQgb25seTwvcD48L3NwYW4+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzA3Ljk2ODc1LCA4NzIpIiBpZD0iZmxvd2NoYXJ0LUgyLTEwIiBjbGFzcz0ibm9kZSBkZWZhdWx0IHNvbGlkIj48cmVjdCBoZWlnaHQ9IjE1NiIgd2lkdGg9IjI2MCIgeT0iLTc4IiB4PSItMTMwIiBzdHlsZT0iZmlsbDojZjVmNWY0ICFpbXBvcnRhbnQ7c3Ryb2tlOiM1NzUzNGUgIWltcG9ydGFudDtzdHJva2Utd2lkdGg6MXB4ICFpbXBvcnRhbnQiIGNsYXNzPSJiYXNpYyBsYWJlbC1jb250YWluZXIiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTAwLCAtNjMpIiBzdHlsZT0iY29sb3I6IzFjMTkxNyAhaW1wb3J0YW50IiBjbGFzcz0ibGFiZWwiPjxyZWN0Lz48Zm9yZWlnbk9iamVjdCBoZWlnaHQ9IjEyNiIgd2lkdGg9IjIwMCI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImNvbG9yOiByZ2IoMjgsIDI1LCAyMykgIWltcG9ydGFudDsgZGlzcGxheTogdGFibGU7IHdoaXRlLXNwYWNlOiBicmVhay1zcGFjZXM7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsgd2lkdGg6IDIwMHB4OyI+PHNwYW4gY2xhc3M9Im5vZGVMYWJlbCIgc3R5bGU9ImNvbG9yOiMxYzE5MTcgIWltcG9ydGFudCI+PHA+SGVhdGVyIHdha2VzPGJyIC8+cnVucyBpdHMgb3duIHB1bXA8L3A+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU5MC4zMDg1OTM3NSwgMTQ5KSIgaWQ9ImZsb3djaGFydC1BQy0xMSIgY2xhc3M9Im5vZGUgZGVmYXVsdCBvcGVuIj48cmVjdCBoZWlnaHQ9IjI4MiIgd2lkdGg9IjI2MCIgeT0iLTE0MSIgeD0iLTEzMCIgc3R5bGU9ImZpbGw6I2VlZWVlYyAhaW1wb3J0YW50O3N0cm9rZTojNzg3MTZjICFpbXBvcnRhbnQ7c3Ryb2tlLXdpZHRoOjJweCAhaW1wb3J0YW50O3N0cm9rZS1kYXNoYXJyYXk6NCAzICFpbXBvcnRhbnQiIGNsYXNzPSJiYXNpYyBsYWJlbC1jb250YWluZXIiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTAwLCAtMTI2KSIgc3R5bGU9ImNvbG9yOiMxYzE5MTcgIWltcG9ydGFudCIgY2xhc3M9ImxhYmVsIj48cmVjdC8+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSIyNTIiIHdpZHRoPSIyMDAiPjxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJjb2xvcjogcmdiKDI4LCAyNSwgMjMpICFpbXBvcnRhbnQ7IGRpc3BsYXk6IHRhYmxlOyB3aGl0ZS1zcGFjZTogYnJlYWstc3BhY2VzOyBsaW5lLWhlaWdodDogMS41OyBtYXgtd2lkdGg6IDIwMHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7IHdpZHRoOiAyMDBweDsiPjxzcGFuIGNsYXNzPSJub2RlTGFiZWwiIHN0eWxlPSJjb2xvcjojMWMxOTE3ICFpbXBvcnRhbnQiPjxwPlBhbmVsdHJvbmljcyBXQVRFUiBIRUFURVI8YnIgLz5Jc290ZW1wIGVsZW1lbnQg4oCUIEFDIG9ubHkgwrcgZGVhZCBmb3Igbm93PC9wPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48L2c+PC9nPjwvZz48L3N2Zz4=" alt="Day-one electrical" />
 <figcaption aria-hidden="true">Day-one electrical</figcaption>
 </figure>
-<p><strong>What works for first fire.</strong> Turn the master On, start
-heat on the EasyStart Timer, and set the fan dial. That is enough.</p>
-<p><strong>What can wait.</strong> The altitude kit (<a href="#q-015">Q-015</a>), SC1600 auto (<a href="#q-022">Q-022</a>), and
-Isotemp AC with upstream GFCI (<a href="#q-009">Q-009</a>) can wait.</p>
+<p><strong>Enough for first fire.</strong> Turn the master On, start
+heat on the EasyStart Timer, and set the fan dial.</p>
+<p><strong>Can wait.</strong> The altitude kit (<a href="#q-015">Q-015</a>), SC1600 auto (<a href="#q-022">Q-022</a>), and
+Isotemp AC with upstream GFCI (<a href="#q-009">Q-009</a>).</p>
 <h3 id="the-heaters-own-power-always-fused">The heater’s own power
 (always fused)</h3>
 <figure>
@@ -1787,13 +1785,13 @@ m</strong> or less, through a <strong>20 A</strong> fuse on the
 positive, into heater connector pins <strong>1</strong> (red +) and
 <strong>2</strong> (brown −).</p>
 <p>This feed does <strong>not</strong> go through the master switch. The
-heater brain stays powered so it can finish an after-run and remember
-faults. Master Off still stops heat, because it kills the EasyStart
-Timer—and without the timer there is no wake signal.</p>
+heater brain stays powered so the heater can finish an after-run and
+remember faults. Master Off still stops heat, because Master Off kills
+the EasyStart Timer—and without the timer there is no wake signal.</p>
 <h3 id="the-master-switch-cabin-lockout">The master switch (cabin
 lockout)</h3>
-<p>Mount one Off/On switch next to the EasyStart. It switches
-<strong>positive only</strong> to three small circuits:</p>
+<p>Mount one Off/On switch next to the EasyStart. The master switch
+switches <strong>positive only</strong> to three small circuits:</p>
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -1821,13 +1819,13 @@ lockout)</h3>
 </tr>
 </tbody>
 </table>
-<p>Master On does <strong>not</strong> start the heater. It only unlocks
-those circuits so the EasyStart (and later the thermostat) can call for
-heat.</p>
-<p>When the van is parked or you are leaving it, turn the master
+<p>Master On does <strong>not</strong> start the heater. Master On only
+unlocks those circuits so the EasyStart (and later the thermostat) can
+call for heat.</p>
+<p>When the van is parked or you are leaving the van, turn the master
 <strong>Off</strong>.</p>
 <p>For an emergency stop, turn EasyStart off, then master Off, then pull
-the 20 A if you must, and disconnect the battery last. Do not thrash off
+the 20 A if you must, and disconnect the battery last. Do not cycle off
 and on more than twice into a fault (<a href="#src-009">SRC-009</a>).</p>
 <h3 id="how-the-easystart-starts-the-heater">How the EasyStart starts
 the heater</h3>
@@ -1846,13 +1844,13 @@ heater at pin <strong>7</strong>. Eberspächer calls that signal
 <strong>S+</strong>—“switch on.”</li>
 </ol>
 <p>No extra relay sits in that path for a normal timer start. Once the
-heater sees S+, it decides whether to pump, glow, and fire.</p>
-<p><strong>Altitude kit</strong> (still in the garage). You need it for
-overnight camps above roughly 5,000 ft. It plugs into the control
-harness as a whole adapter; you do not snip only the yellow wire. Skip
-it for a low-elevation first fire (<a href="#q-015">Q-015</a>).</p>
-<h3 id="what-the-heater-does-after-it-wakes">What the heater does after
-it wakes</h3>
+heater sees S+, the heater decides whether to pump, glow, and fire.</p>
+<p><strong>Altitude kit</strong> (still in the garage). You need the
+altitude kit for overnight camps above roughly 5,000 ft. The kit plugs
+into the control harness as a whole adapter; do not snip only the yellow
+wire. Skip the altitude kit for a low-elevation first fire (<a href="#q-015">Q-015</a>).</p>
+<h3 id="what-the-heater-does-after-the-heater-wakes">What the heater
+does after the heater wakes</h3>
 <figure>
 <img role="img" aria-label="Heater" src="data:image/svg+xml;base64,PHN2ZyBhcmlhLXJvbGVkZXNjcmlwdGlvbj0iZmxvd2NoYXJ0LXYyIiByb2xlPSJncmFwaGljcy1kb2N1bWVudCBkb2N1bWVudCIgdmlld0JveD0iMCAwIDg5NiA1NDIiIHN0eWxlPSJtYXgtd2lkdGg6IDg5NnB4OyBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDsiIGNsYXNzPSJmbG93Y2hhcnQiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBpZD0ibXktc3ZnIj48c3R5bGU+I215LXN2Z3tmb250LXNpemU6MjhweDtmaWxsOiMxYzE5MTc7fUBrZXlmcmFtZXMgZWRnZS1hbmltYXRpb24tZnJhbWV7ZnJvbXtzdHJva2UtZGFzaG9mZnNldDowO319QGtleWZyYW1lcyBkYXNoe3Rve3N0cm9rZS1kYXNob2Zmc2V0OjA7fX0jbXktc3ZnIC5lZGdlLWFuaW1hdGlvbi1zbG93e3N0cm9rZS1kYXNoYXJyYXk6OSw1IWltcG9ydGFudDtzdHJva2UtZGFzaG9mZnNldDo5MDA7YW5pbWF0aW9uOmRhc2ggNTBzIGxpbmVhciBpbmZpbml0ZTtzdHJva2UtbGluZWNhcDpyb3VuZDt9I215LXN2ZyAuZWRnZS1hbmltYXRpb24tZmFzdHtzdHJva2UtZGFzaGFycmF5OjksNSFpbXBvcnRhbnQ7c3Ryb2tlLWRhc2hvZmZzZXQ6OTAwO2FuaW1hdGlvbjpkYXNoIDIwcyBsaW5lYXIgaW5maW5pdGU7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7fSNteS1zdmcgLmVycm9yLWljb257ZmlsbDojZWVlZWVjO30jbXktc3ZnIC5lcnJvci10ZXh0e2ZpbGw6IzExMTExMztzdHJva2U6IzExMTExMzt9I215LXN2ZyAuZWRnZS10aGlja25lc3Mtbm9ybWFse3N0cm9rZS13aWR0aDoxcHg7fSNteS1zdmcgLmVkZ2UtdGhpY2tuZXNzLXRoaWNre3N0cm9rZS13aWR0aDozLjVweDt9I215LXN2ZyAuZWRnZS1wYXR0ZXJuLXNvbGlke3N0cm9rZS1kYXNoYXJyYXk6MDt9I215LXN2ZyAuZWRnZS10aGlja25lc3MtaW52aXNpYmxle3N0cm9rZS13aWR0aDowO2ZpbGw6bm9uZTt9I215LXN2ZyAuZWRnZS1wYXR0ZXJuLWRhc2hlZHtzdHJva2UtZGFzaGFycmF5OjM7fSNteS1zdmcgLmVkZ2UtcGF0dGVybi1kb3R0ZWR7c3Ryb2tlLWRhc2hhcnJheToyO30jbXktc3ZnIC5tYXJrZXJ7ZmlsbDojNDQ0MDNjO3N0cm9rZTojNDQ0MDNjO30jbXktc3ZnIC5tYXJrZXIuY3Jvc3N7c3Ryb2tlOiM0NDQwM2M7fSNteS1zdmcgc3Zne2ZvbnQtc2l6ZToyOHB4O30jbXktc3ZnIHB7bWFyZ2luOjA7fSNteS1zdmcgLmxhYmVse2NvbG9yOiMxYzE5MTc7fSNteS1zdmcgLmNsdXN0ZXItbGFiZWwgdGV4dHtmaWxsOiMxMTExMTM7fSNteS1zdmcgLmNsdXN0ZXItbGFiZWwgc3Bhbntjb2xvcjojMTExMTEzO30jbXktc3ZnIC5jbHVzdGVyLWxhYmVsIHNwYW4gcHtiYWNrZ3JvdW5kLWNvbG9yOnRyYW5zcGFyZW50O30jbXktc3ZnIC5sYWJlbCB0ZXh0LCNteS1zdmcgc3BhbntmaWxsOiMxYzE5MTc7Y29sb3I6IzFjMTkxNzt9I215LXN2ZyAubm9kZSByZWN0LCNteS1zdmcgLm5vZGUgY2lyY2xlLCNteS1zdmcgLm5vZGUgZWxsaXBzZSwjbXktc3ZnIC5ub2RlIHBvbHlnb24sI215LXN2ZyAubm9kZSBwYXRoe2ZpbGw6I2Y1ZjVmNDtzdHJva2U6IzU3NTM0ZTtzdHJva2Utd2lkdGg6MXB4O30jbXktc3ZnIC5yb3VnaC1ub2RlIC5sYWJlbCB0ZXh0LCNteS1zdmcgLm5vZGUgLmxhYmVsIHRleHQsI215LXN2ZyAuaW1hZ2Utc2hhcGUgLmxhYmVsLCNteS1zdmcgLmljb24tc2hhcGUgLmxhYmVse3RleHQtYW5jaG9yOm1pZGRsZTt9I215LXN2ZyAubm9kZSAua2F0ZXggcGF0aHtmaWxsOiMwMDA7c3Ryb2tlOiMwMDA7c3Ryb2tlLXdpZHRoOjFweDt9I215LXN2ZyAucm91Z2gtbm9kZSAubGFiZWwsI215LXN2ZyAubm9kZSAubGFiZWwsI215LXN2ZyAuaW1hZ2Utc2hhcGUgLmxhYmVsLCNteS1zdmcgLmljb24tc2hhcGUgLmxhYmVse3RleHQtYWxpZ246Y2VudGVyO30jbXktc3ZnIC5ub2RlLmNsaWNrYWJsZXtjdXJzb3I6cG9pbnRlcjt9I215LXN2ZyAucm9vdCAuYW5jaG9yIHBhdGh7ZmlsbDojNDQ0MDNjIWltcG9ydGFudDtzdHJva2Utd2lkdGg6MDtzdHJva2U6IzQ0NDAzYzt9I215LXN2ZyAuYXJyb3doZWFkUGF0aHtmaWxsOiMwNTA1MDY7fSNteS1zdmcgLmVkZ2VQYXRoIC5wYXRoe3N0cm9rZTojNDQ0MDNjO3N0cm9rZS13aWR0aDoyLjBweDt9I215LXN2ZyAuZmxvd2NoYXJ0LWxpbmt7c3Ryb2tlOiM0NDQwM2M7ZmlsbDpub25lO30jbXktc3ZnIC5lZGdlTGFiZWx7YmFja2dyb3VuZC1jb2xvcjojZmFmYWY5O3RleHQtYWxpZ246Y2VudGVyO30jbXktc3ZnIC5lZGdlTGFiZWwgcHtiYWNrZ3JvdW5kLWNvbG9yOiNmYWZhZjk7fSNteS1zdmcgLmVkZ2VMYWJlbCByZWN0e29wYWNpdHk6MC41O2JhY2tncm91bmQtY29sb3I6I2ZhZmFmOTtmaWxsOiNmYWZhZjk7fSNteS1zdmcgLmxhYmVsQmtne2JhY2tncm91bmQtY29sb3I6cmdiYSgyNTAsIDI1MCwgMjQ5LCAwLjUpO30jbXktc3ZnIC5jbHVzdGVyIHJlY3R7ZmlsbDojZWVlZWVjO3N0cm9rZTojNzg3MTZjO3N0cm9rZS13aWR0aDoxcHg7fSNteS1zdmcgLmNsdXN0ZXIgdGV4dHtmaWxsOiMxMTExMTM7fSNteS1zdmcgLmNsdXN0ZXIgc3Bhbntjb2xvcjojMTExMTEzO30jbXktc3ZnIGRpdi5tZXJtYWlkVG9vbHRpcHtwb3NpdGlvbjphYnNvbHV0ZTt0ZXh0LWFsaWduOmNlbnRlcjttYXgtd2lkdGg6MjAwcHg7cGFkZGluZzoycHg7Zm9udC1zaXplOjEycHg7YmFja2dyb3VuZDojZWVlZWVjO2JvcmRlcjoxcHggc29saWQgaHNsKDYwLCAwJSwgODIuOTQxMTc2NDcwNiUpO2JvcmRlci1yYWRpdXM6MnB4O3BvaW50ZXItZXZlbnRzOm5vbmU7ei1pbmRleDoxMDA7fSNteS1zdmcgLmZsb3djaGFydFRpdGxlVGV4dHt0ZXh0LWFuY2hvcjptaWRkbGU7Zm9udC1zaXplOjE4cHg7ZmlsbDojMWMxOTE3O30jbXktc3ZnIHJlY3QudGV4dHtmaWxsOm5vbmU7c3Ryb2tlLXdpZHRoOjA7fSNteS1zdmcgLmljb24tc2hhcGUsI215LXN2ZyAuaW1hZ2Utc2hhcGV7YmFja2dyb3VuZC1jb2xvcjojZmFmYWY5O3RleHQtYWxpZ246Y2VudGVyO30jbXktc3ZnIC5pY29uLXNoYXBlIHAsI215LXN2ZyAuaW1hZ2Utc2hhcGUgcHtiYWNrZ3JvdW5kLWNvbG9yOiNmYWZhZjk7cGFkZGluZzoycHg7fSNteS1zdmcgLmljb24tc2hhcGUgcmVjdCwjbXktc3ZnIC5pbWFnZS1zaGFwZSByZWN0e29wYWNpdHk6MC41O2JhY2tncm91bmQtY29sb3I6I2ZhZmFmOTtmaWxsOiNmYWZhZjk7fSNteS1zdmcgOnJvb3R7LS1tZXJtYWlkLWZvbnQtZmFtaWx5OiJ0cmVidWNoZXQgbXMiLHZlcmRhbmEsYXJpYWwsc2Fucy1zZXJpZjt9I215LXN2ZyAuc29saWQmZ3Q7KntmaWxsOiNmNWY1ZjQhaW1wb3J0YW50O3N0cm9rZTojNTc1MzRlIWltcG9ydGFudDtzdHJva2Utd2lkdGg6MXB4IWltcG9ydGFudDtjb2xvcjojMWMxOTE3IWltcG9ydGFudDt9I215LXN2ZyAuc29saWQgc3BhbntmaWxsOiNmNWY1ZjQhaW1wb3J0YW50O3N0cm9rZTojNTc1MzRlIWltcG9ydGFudDtzdHJva2Utd2lkdGg6MXB4IWltcG9ydGFudDtjb2xvcjojMWMxOTE3IWltcG9ydGFudDt9I215LXN2ZyAuc29saWQgdHNwYW57ZmlsbDojMWMxOTE3IWltcG9ydGFudDt9I215LXN2ZyAuc2tpcCZndDsqe2ZpbGw6I2ZhZmFmOSFpbXBvcnRhbnQ7c3Ryb2tlOiNhOGEyOWUhaW1wb3J0YW50O3N0cm9rZS13aWR0aDoxcHghaW1wb3J0YW50O3N0cm9rZS1kYXNoYXJyYXk6MiAyIWltcG9ydGFudDtjb2xvcjojNzg3MTZjIWltcG9ydGFudDt9I215LXN2ZyAuc2tpcCBzcGFue2ZpbGw6I2ZhZmFmOSFpbXBvcnRhbnQ7c3Ryb2tlOiNhOGEyOWUhaW1wb3J0YW50O3N0cm9rZS13aWR0aDoxcHghaW1wb3J0YW50O3N0cm9rZS1kYXNoYXJyYXk6MiAyIWltcG9ydGFudDtjb2xvcjojNzg3MTZjIWltcG9ydGFudDt9I215LXN2ZyAuc2tpcCB0c3BhbntmaWxsOiM3ODcxNmMhaW1wb3J0YW50O308L3N0eWxlPjxnPjxtYXJrZXIgb3JpZW50PSJhdXRvIiBtYXJrZXJIZWlnaHQ9IjgiIG1hcmtlcldpZHRoPSI4IiBtYXJrZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIHJlZlk9IjUiIHJlZlg9IjUiIHZpZXdCb3g9IjAgMCAxMCAxMCIgY2xhc3M9Im1hcmtlciBmbG93Y2hhcnQtdjIiIGlkPSJteS1zdmdfZmxvd2NoYXJ0LXYyLXBvaW50RW5kIj48cGF0aCBzdHlsZT0ic3Ryb2tlLXdpZHRoOiAxOyBzdHJva2UtZGFzaGFycmF5OiAxLCAwOyIgY2xhc3M9ImFycm93TWFya2VyUGF0aCIgZD0iTSAwIDAgTCAxMCA1IEwgMCAxMCB6Ii8+PC9tYXJrZXI+PG1hcmtlciBvcmllbnQ9ImF1dG8iIG1hcmtlckhlaWdodD0iOCIgbWFya2VyV2lkdGg9IjgiIG1hcmtlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgcmVmWT0iNSIgcmVmWD0iNC41IiB2aWV3Qm94PSIwIDAgMTAgMTAiIGNsYXNzPSJtYXJrZXIgZmxvd2NoYXJ0LXYyIiBpZD0ibXktc3ZnX2Zsb3djaGFydC12Mi1wb2ludFN0YXJ0Ij48cGF0aCBzdHlsZT0ic3Ryb2tlLXdpZHRoOiAxOyBzdHJva2UtZGFzaGFycmF5OiAxLCAwOyIgY2xhc3M9ImFycm93TWFya2VyUGF0aCIgZD0iTSAwIDUgTCAxMCAxMCBMIDEwIDAgeiIvPjwvbWFya2VyPjxtYXJrZXIgb3JpZW50PSJhdXRvIiBtYXJrZXJIZWlnaHQ9IjExIiBtYXJrZXJXaWR0aD0iMTEiIG1hcmtlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgcmVmWT0iNSIgcmVmWD0iMTEiIHZpZXdCb3g9IjAgMCAxMCAxMCIgY2xhc3M9Im1hcmtlciBmbG93Y2hhcnQtdjIiIGlkPSJteS1zdmdfZmxvd2NoYXJ0LXYyLWNpcmNsZUVuZCI+PGNpcmNsZSBzdHlsZT0ic3Ryb2tlLXdpZHRoOiAxOyBzdHJva2UtZGFzaGFycmF5OiAxLCAwOyIgY2xhc3M9ImFycm93TWFya2VyUGF0aCIgcj0iNSIgY3k9IjUiIGN4PSI1Ii8+PC9tYXJrZXI+PG1hcmtlciBvcmllbnQ9ImF1dG8iIG1hcmtlckhlaWdodD0iMTEiIG1hcmtlcldpZHRoPSIxMSIgbWFya2VyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiByZWZZPSI1IiByZWZYPSItMSIgdmlld0JveD0iMCAwIDEwIDEwIiBjbGFzcz0ibWFya2VyIGZsb3djaGFydC12MiIgaWQ9Im15LXN2Z19mbG93Y2hhcnQtdjItY2lyY2xlU3RhcnQiPjxjaXJjbGUgc3R5bGU9InN0cm9rZS13aWR0aDogMTsgc3Ryb2tlLWRhc2hhcnJheTogMSwgMDsiIGNsYXNzPSJhcnJvd01hcmtlclBhdGgiIHI9IjUiIGN5PSI1IiBjeD0iNSIvPjwvbWFya2VyPjxtYXJrZXIgb3JpZW50PSJhdXRvIiBtYXJrZXJIZWlnaHQ9IjExIiBtYXJrZXJXaWR0aD0iMTEiIG1hcmtlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgcmVmWT0iNS4yIiByZWZYPSIxMiIgdmlld0JveD0iMCAwIDExIDExIiBjbGFzcz0ibWFya2VyIGNyb3NzIGZsb3djaGFydC12MiIgaWQ9Im15LXN2Z19mbG93Y2hhcnQtdjItY3Jvc3NFbmQiPjxwYXRoIHN0eWxlPSJzdHJva2Utd2lkdGg6IDI7IHN0cm9rZS1kYXNoYXJyYXk6IDEsIDA7IiBjbGFzcz0iYXJyb3dNYXJrZXJQYXRoIiBkPSJNIDEsMSBsIDksOSBNIDEwLDEgbCAtOSw5Ii8+PC9tYXJrZXI+PG1hcmtlciBvcmllbnQ9ImF1dG8iIG1hcmtlckhlaWdodD0iMTEiIG1hcmtlcldpZHRoPSIxMSIgbWFya2VyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiByZWZZPSI1LjIiIHJlZlg9Ii0xIiB2aWV3Qm94PSIwIDAgMTEgMTEiIGNsYXNzPSJtYXJrZXIgY3Jvc3MgZmxvd2NoYXJ0LXYyIiBpZD0ibXktc3ZnX2Zsb3djaGFydC12Mi1jcm9zc1N0YXJ0Ij48cGF0aCBzdHlsZT0ic3Ryb2tlLXdpZHRoOiAyOyBzdHJva2UtZGFzaGFycmF5OiAxLCAwOyIgY2xhc3M9ImFycm93TWFya2VyUGF0aCIgZD0iTSAxLDEgbCA5LDkgTSAxMCwxIGwgLTksOSIvPjwvbWFya2VyPjxnIGNsYXNzPSJyb290Ij48ZyBjbGFzcz0iY2x1c3RlcnMiLz48ZyBjbGFzcz0iZWRnZVBhdGhzIj48cGF0aCBtYXJrZXItZW5kPSJ1cmwoI215LXN2Z19mbG93Y2hhcnQtdjItcG9pbnRFbmQpIiBzdHlsZT0iIiBjbGFzcz0iZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBlZGdlLXRoaWNrbmVzcy1ub3JtYWwgZWRnZS1wYXR0ZXJuLXNvbGlkIGZsb3djaGFydC1saW5rIiBpZD0iTF9QV1JfRUNVXzAiIGQ9Ik0xMzgsMTg1TDEzOCwxOTkuNjY3QzEzOCwyMTQuMzMzLDEzOCwyNDMuNjY3LDE3MC44MDYsMjY0Ljc4OUMyMDMuNjExLDI4NS45MTEsMjY5LjIyMiwyOTguODIxLDMwMi4wMjgsMzA1LjI3NkwzMzQuODMzLDMxMS43MzIiLz48cGF0aCBtYXJrZXItZW5kPSJ1cmwoI215LXN2Z19mbG93Y2hhcnQtdjItcG9pbnRFbmQpIiBzdHlsZT0iIiBjbGFzcz0iZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBlZGdlLXRoaWNrbmVzcy1ub3JtYWwgZWRnZS1wYXR0ZXJuLXNvbGlkIGZsb3djaGFydC1saW5rIiBpZD0iTF9XQUtFX0VDVV8wIiBkPSJNNDQ4LDE4NUw0NDgsMTk5LjY2N0M0NDgsMjE0LjMzMyw0NDgsMjQzLjY2Nyw0NDgsMjYxLjgzM0M0NDgsMjgwLDQ0OCwyODcsNDQ4LDI5MC41TDQ0OCwyOTQiLz48cGF0aCBtYXJrZXItZW5kPSJ1cmwoI215LXN2Z19mbG93Y2hhcnQtdjItcG9pbnRFbmQpIiBzdHlsZT0iIiBjbGFzcz0iZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBlZGdlLXRoaWNrbmVzcy1ub3JtYWwgZWRnZS1wYXR0ZXJuLXNvbGlkIGZsb3djaGFydC1saW5rIiBpZD0iTF9FQ1VfUFVNUF8wIiBkPSJNMzM4Ljc1OCwzNTUuNDk2TDMwNS4yOTgsMzYyLjA4QzI3MS44MzksMzY4LjY2NCwyMDQuOTE5LDM4MS44MzIsMTcxLjQ2LDM5MS45MTZDMTM4LDQwMiwxMzgsNDA5LDEzOCw0MTIuNUwxMzgsNDE2Ii8+PHBhdGggbWFya2VyLWVuZD0idXJsKCNteS1zdmdfZmxvd2NoYXJ0LXYyLXBvaW50RW5kKSIgc3R5bGU9IiIgY2xhc3M9ImVkZ2UtdGhpY2tuZXNzLW5vcm1hbCBlZGdlLXBhdHRlcm4tc29saWQgZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBmbG93Y2hhcnQtbGluayIgaWQ9IkxfRUNVX0ZVRUxfMCIgZD0iTTQ0OCwzNzBMNDQ4LDM3NC4xNjdDNDQ4LDM3OC4zMzMsNDQ4LDM4Ni42NjcsNDQ4LDM5NC4zMzNDNDQ4LDQwMiw0NDgsNDA5LDQ0OCw0MTIuNUw0NDgsNDE2Ii8+PHBhdGggbWFya2VyLWVuZD0idXJsKCNteS1zdmdfZmxvd2NoYXJ0LXYyLXBvaW50RW5kKSIgc3R5bGU9IiIgY2xhc3M9ImVkZ2UtdGhpY2tuZXNzLW5vcm1hbCBlZGdlLXBhdHRlcm4tc29saWQgZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBmbG93Y2hhcnQtbGluayIgaWQ9IkxfRUNVX0JVUk5fMCIgZD0iTTU1Ny4yNDIsMzU1LjQ5Nkw1OTAuNzAyLDM2Mi4wOEM2MjQuMTYxLDM2OC42NjQsNjkxLjA4MSwzODEuODMyLDcyNC41NCwzOTEuOTE2Qzc1OCw0MDIsNzU4LDQwOSw3NTgsNDEyLjVMNzU4LDQxNiIvPjwvZz48ZyBjbGFzcz0iZWRnZUxhYmVscyI+PGcgY2xhc3M9ImVkZ2VMYWJlbCI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwgMCkiIGNsYXNzPSJsYWJlbCI+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSIwIiB3aWR0aD0iMCI+PGRpdiBzdHlsZT0iZGlzcGxheTogdGFibGUtY2VsbDsgd2hpdGUtc3BhY2U6IG5vd3JhcDsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyIgY2xhc3M9ImxhYmVsQmtnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCI+PHNwYW4gY2xhc3M9ImVkZ2VMYWJlbCI+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjxnIGNsYXNzPSJlZGdlTGFiZWwiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsIDApIiBjbGFzcz0ibGFiZWwiPjxmb3JlaWduT2JqZWN0IGhlaWdodD0iMCIgd2lkdGg9IjAiPjxkaXYgc3R5bGU9ImRpc3BsYXk6IHRhYmxlLWNlbGw7IHdoaXRlLXNwYWNlOiBub3dyYXA7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsiIGNsYXNzPSJsYWJlbEJrZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiPjxzcGFuIGNsYXNzPSJlZGdlTGFiZWwiPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48ZyBjbGFzcz0iZWRnZUxhYmVsIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLCAwKSIgY2xhc3M9ImxhYmVsIj48Zm9yZWlnbk9iamVjdCBoZWlnaHQ9IjAiIHdpZHRoPSIwIj48ZGl2IHN0eWxlPSJkaXNwbGF5OiB0YWJsZS1jZWxsOyB3aGl0ZS1zcGFjZTogbm93cmFwOyBsaW5lLWhlaWdodDogMS41OyBtYXgtd2lkdGg6IDIwMHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7IiBjbGFzcz0ibGFiZWxCa2ciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIj48c3BhbiBjbGFzcz0iZWRnZUxhYmVsIj48L3NwYW4+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PGcgY2xhc3M9ImVkZ2VMYWJlbCI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwgMCkiIGNsYXNzPSJsYWJlbCI+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSIwIiB3aWR0aD0iMCI+PGRpdiBzdHlsZT0iZGlzcGxheTogdGFibGUtY2VsbDsgd2hpdGUtc3BhY2U6IG5vd3JhcDsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyIgY2xhc3M9ImxhYmVsQmtnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCI+PHNwYW4gY2xhc3M9ImVkZ2VMYWJlbCI+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjxnIGNsYXNzPSJlZGdlTGFiZWwiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsIDApIiBjbGFzcz0ibGFiZWwiPjxmb3JlaWduT2JqZWN0IGhlaWdodD0iMCIgd2lkdGg9IjAiPjxkaXYgc3R5bGU9ImRpc3BsYXk6IHRhYmxlLWNlbGw7IHdoaXRlLXNwYWNlOiBub3dyYXA7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsiIGNsYXNzPSJsYWJlbEJrZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiPjxzcGFuIGNsYXNzPSJlZGdlTGFiZWwiPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48L2c+PGcgY2xhc3M9Im5vZGVzIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMzgsIDEyOCkiIGlkPSJmbG93Y2hhcnQtUFdSLTAiIGNsYXNzPSJub2RlIGRlZmF1bHQgc29saWQiPjxyZWN0IGhlaWdodD0iMTE0IiB3aWR0aD0iMjYwIiB5PSItNTciIHg9Ii0xMzAiIHN0eWxlPSJmaWxsOiNmNWY1ZjQgIWltcG9ydGFudDtzdHJva2U6IzU3NTM0ZSAhaW1wb3J0YW50O3N0cm9rZS13aWR0aDoxcHggIWltcG9ydGFudCIgY2xhc3M9ImJhc2ljIGxhYmVsLWNvbnRhaW5lciIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMDAsIC00MikiIHN0eWxlPSJjb2xvcjojMWMxOTE3ICFpbXBvcnRhbnQiIGNsYXNzPSJsYWJlbCI+PHJlY3QvPjxmb3JlaWduT2JqZWN0IGhlaWdodD0iODQiIHdpZHRoPSIyMDAiPjxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJjb2xvcjogcmdiKDI4LCAyNSwgMjMpICFpbXBvcnRhbnQ7IGRpc3BsYXk6IHRhYmxlOyB3aGl0ZS1zcGFjZTogYnJlYWstc3BhY2VzOyBsaW5lLWhlaWdodDogMS41OyBtYXgtd2lkdGg6IDIwMHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7IHdpZHRoOiAyMDBweDsiPjxzcGFuIGNsYXNzPSJub2RlTGFiZWwiIHN0eWxlPSJjb2xvcjojMWMxOTE3ICFpbXBvcnRhbnQiPjxwPkJhdHRlcnkgaW4gwrcgcGlucyAx4oCTMjwvcD48L3NwYW4+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDQ4LCAxMjgpIiBpZD0iZmxvd2NoYXJ0LVdBS0UtMSIgY2xhc3M9Im5vZGUgZGVmYXVsdCBzb2xpZCI+PHJlY3QgaGVpZ2h0PSIxMTQiIHdpZHRoPSIyNjAiIHk9Ii01NyIgeD0iLTEzMCIgc3R5bGU9ImZpbGw6I2Y1ZjVmNCAhaW1wb3J0YW50O3N0cm9rZTojNTc1MzRlICFpbXBvcnRhbnQ7c3Ryb2tlLXdpZHRoOjFweCAhaW1wb3J0YW50IiBjbGFzcz0iYmFzaWMgbGFiZWwtY29udGFpbmVyIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEwMCwgLTQyKSIgc3R5bGU9ImNvbG9yOiMxYzE5MTcgIWltcG9ydGFudCIgY2xhc3M9ImxhYmVsIj48cmVjdC8+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSI4NCIgd2lkdGg9IjIwMCI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImNvbG9yOiByZ2IoMjgsIDI1LCAyMykgIWltcG9ydGFudDsgZGlzcGxheTogdGFibGU7IHdoaXRlLXNwYWNlOiBicmVhay1zcGFjZXM7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsgd2lkdGg6IDIwMHB4OyI+PHNwYW4gY2xhc3M9Im5vZGVMYWJlbCIgc3R5bGU9ImNvbG9yOiMxYzE5MTcgIWltcG9ydGFudCI+PHA+V2FrZSBpbiDCtyBwaW4gNyB5ZWxsb3c8L3A+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ0OCwgMzM0KSIgaWQ9ImZsb3djaGFydC1FQ1UtMiIgY2xhc3M9Im5vZGUgZGVmYXVsdCBzb2xpZCI+PHJlY3QgaGVpZ2h0PSI3MiIgd2lkdGg9IjIxOC40ODQzNzUiIHk9Ii0zNiIgeD0iLTEwOS4yNDIxODc1IiBzdHlsZT0iZmlsbDojZjVmNWY0ICFpbXBvcnRhbnQ7c3Ryb2tlOiM1NzUzNGUgIWltcG9ydGFudDtzdHJva2Utd2lkdGg6MXB4ICFpbXBvcnRhbnQiIGNsYXNzPSJiYXNpYyBsYWJlbC1jb250YWluZXIiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzkuMjQyMTg3NSwgLTIxKSIgc3R5bGU9ImNvbG9yOiMxYzE5MTcgIWltcG9ydGFudCIgY2xhc3M9ImxhYmVsIj48cmVjdC8+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSI0MiIgd2lkdGg9IjE1OC40ODQzNzUiPjxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJjb2xvcjogcmdiKDI4LCAyNSwgMjMpICFpbXBvcnRhbnQ7IGRpc3BsYXk6IHRhYmxlLWNlbGw7IHdoaXRlLXNwYWNlOiBub3dyYXA7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsiPjxzcGFuIGNsYXNzPSJub2RlTGFiZWwiIHN0eWxlPSJjb2xvcjojMWMxOTE3ICFpbXBvcnRhbnQiPjxwPkhlYXRlciBicmFpbjwvcD48L3NwYW4+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTM4LCA0NzcpIiBpZD0iZmxvd2NoYXJ0LVBVTVAtOCIgY2xhc3M9Im5vZGUgZGVmYXVsdCBzb2xpZCI+PHJlY3QgaGVpZ2h0PSIxMTQiIHdpZHRoPSIyNjAiIHk9Ii01NyIgeD0iLTEzMCIgc3R5bGU9ImZpbGw6I2Y1ZjVmNCAhaW1wb3J0YW50O3N0cm9rZTojNTc1MzRlICFpbXBvcnRhbnQ7c3Ryb2tlLXdpZHRoOjFweCAhaW1wb3J0YW50IiBjbGFzcz0iYmFzaWMgbGFiZWwtY29udGFpbmVyIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEwMCwgLTQyKSIgc3R5bGU9ImNvbG9yOiMxYzE5MTcgIWltcG9ydGFudCIgY2xhc3M9ImxhYmVsIj48cmVjdC8+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSI4NCIgd2lkdGg9IjIwMCI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImNvbG9yOiByZ2IoMjgsIDI1LCAyMykgIWltcG9ydGFudDsgZGlzcGxheTogdGFibGU7IHdoaXRlLXNwYWNlOiBicmVhay1zcGFjZXM7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsgd2lkdGg6IDIwMHB4OyI+PHNwYW4gY2xhc3M9Im5vZGVMYWJlbCIgc3R5bGU9ImNvbG9yOiMxYzE5MTcgIWltcG9ydGFudCI+PHA+V2F0ZXIgcHVtcCDCtyBwaW5zIDjigJM5PC9wPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NDgsIDQ3NykiIGlkPSJmbG93Y2hhcnQtRlVFTC0xMCIgY2xhc3M9Im5vZGUgZGVmYXVsdCBzb2xpZCI+PHJlY3QgaGVpZ2h0PSIxMTQiIHdpZHRoPSIyNjAiIHk9Ii01NyIgeD0iLTEzMCIgc3R5bGU9ImZpbGw6I2Y1ZjVmNCAhaW1wb3J0YW50O3N0cm9rZTojNTc1MzRlICFpbXBvcnRhbnQ7c3Ryb2tlLXdpZHRoOjFweCAhaW1wb3J0YW50IiBjbGFzcz0iYmFzaWMgbGFiZWwtY29udGFpbmVyIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEwMCwgLTQyKSIgc3R5bGU9ImNvbG9yOiMxYzE5MTcgIWltcG9ydGFudCIgY2xhc3M9ImxhYmVsIj48cmVjdC8+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSI4NCIgd2lkdGg9IjIwMCI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImNvbG9yOiByZ2IoMjgsIDI1LCAyMykgIWltcG9ydGFudDsgZGlzcGxheTogdGFibGU7IHdoaXRlLXNwYWNlOiBicmVhay1zcGFjZXM7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsgd2lkdGg6IDIwMHB4OyI+PHNwYW4gY2xhc3M9Im5vZGVMYWJlbCIgc3R5bGU9ImNvbG9yOiMxYzE5MTcgIWltcG9ydGFudCI+PHA+RnVlbCBwdW1wIMK3IHBpbnMgNCArIDEwPC9wPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3NTgsIDQ3NykiIGlkPSJmbG93Y2hhcnQtQlVSTi0xMiIgY2xhc3M9Im5vZGUgZGVmYXVsdCBzb2xpZCI+PHJlY3QgaGVpZ2h0PSIxMTQiIHdpZHRoPSIyNjAiIHk9Ii01NyIgeD0iLTEzMCIgc3R5bGU9ImZpbGw6I2Y1ZjVmNCAhaW1wb3J0YW50O3N0cm9rZTojNTc1MzRlICFpbXBvcnRhbnQ7c3Ryb2tlLXdpZHRoOjFweCAhaW1wb3J0YW50IiBjbGFzcz0iYmFzaWMgbGFiZWwtY29udGFpbmVyIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEwMCwgLTQyKSIgc3R5bGU9ImNvbG9yOiMxYzE5MTcgIWltcG9ydGFudCIgY2xhc3M9ImxhYmVsIj48cmVjdC8+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSI4NCIgd2lkdGg9IjIwMCI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImNvbG9yOiByZ2IoMjgsIDI1LCAyMykgIWltcG9ydGFudDsgZGlzcGxheTogdGFibGU7IHdoaXRlLXNwYWNlOiBicmVhay1zcGFjZXM7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsgd2lkdGg6IDIwMHB4OyI+PHNwYW4gY2xhc3M9Im5vZGVMYWJlbCIgc3R5bGU9ImNvbG9yOiMxYzE5MTcgIWltcG9ydGFudCI+PHA+R2xvdyAvIGZsYW1lIC8gc2FmZXR5PC9wPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3NTgsIDEyOCkiIGlkPSJmbG93Y2hhcnQtWC0xMyIgY2xhc3M9Im5vZGUgZGVmYXVsdCBza2lwIj48cmVjdCBoZWlnaHQ9IjI0MCIgd2lkdGg9IjI2MCIgeT0iLTEyMCIgeD0iLTEzMCIgc3R5bGU9ImZpbGw6I2ZhZmFmOSAhaW1wb3J0YW50O3N0cm9rZTojYThhMjllICFpbXBvcnRhbnQ7c3Ryb2tlLXdpZHRoOjFweCAhaW1wb3J0YW50O3N0cm9rZS1kYXNoYXJyYXk6MiAyICFpbXBvcnRhbnQiIGNsYXNzPSJiYXNpYyBsYWJlbC1jb250YWluZXIiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTAwLCAtMTA1KSIgc3R5bGU9ImNvbG9yOiM3ODcxNmMgIWltcG9ydGFudCIgY2xhc3M9ImxhYmVsIj48cmVjdC8+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSIyMTAiIHdpZHRoPSIyMDAiPjxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJjb2xvcjogcmdiKDEyMCwgMTEzLCAxMDgpICFpbXBvcnRhbnQ7IGRpc3BsYXk6IHRhYmxlOyB3aGl0ZS1zcGFjZTogYnJlYWstc3BhY2VzOyBsaW5lLWhlaWdodDogMS41OyBtYXgtd2lkdGg6IDIwMHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7IHdpZHRoOiAyMDBweDsiPjxzcGFuIGNsYXNzPSJub2RlTGFiZWwiIHN0eWxlPSJjb2xvcjojNzg3MTZjICFpbXBvcnRhbnQiPjxwPlRhcGUgb2ZmOiB2ZWhpY2xlIGJsb3dlciBwaW4gMzxiciAvPmFuZCBraXQgYmxvd2VyIHJlbGF5PC9wPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48L2c+PC9nPjwvZz48L3N2Zz4=" alt="Heater" />
 <figcaption aria-hidden="true">Heater</figcaption>
@@ -1860,36 +1858,37 @@ it wakes</h3>
 <p>With battery on pins 1–2 and the yellow wake on pin 7, the heater
 runs:</p>
 <ul>
-<li>its water pump (pins <strong>8</strong> and <strong>9</strong>),
-which moves glycol around the van<br />
+<li>the heater water pump (pins <strong>8</strong> and
+<strong>9</strong>), which moves glycol around the van<br />
 </li>
-<li>its fuel metering pump (pins <strong>4</strong> and
+<li>the fuel metering pump (pins <strong>4</strong> and
 <strong>10</strong>)<br />
 </li>
 <li>glow plug and flame sensing inside</li>
 </ul>
-<p>You do <strong>not</strong> add a second glycol pump.</p>
+<p>Do <strong>not</strong> add a second glycol pump.</p>
 <p>Ignore the kit’s vehicle-blower wiring (pin <strong>3</strong>,
 blower relay leads, and the 25 A blower fuse). That wiring is for a car
-heater core, not this cabin heater. Tape it off and plug unused
+heater core, not this cabin heater. Tape those leads off and plug unused
 chambers.</p>
 <h3 id="cabin-fans">Cabin fans</h3>
 <figure>
 <img role="img" aria-label="Fans" src="data:image/svg+xml;base64,PHN2ZyBhcmlhLXJvbGVkZXNjcmlwdGlvbj0iZmxvd2NoYXJ0LXYyIiByb2xlPSJncmFwaGljcy1kb2N1bWVudCBkb2N1bWVudCIgdmlld0JveD0iMCAwIDcwMC43OTY4NzUgNTg0IiBzdHlsZT0ibWF4LXdpZHRoOiA3MDAuNzk3cHg7IGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50OyIgY2xhc3M9ImZsb3djaGFydCIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGlkPSJteS1zdmciPjxzdHlsZT4jbXktc3Zne2ZvbnQtc2l6ZToyOHB4O2ZpbGw6IzFjMTkxNzt9QGtleWZyYW1lcyBlZGdlLWFuaW1hdGlvbi1mcmFtZXtmcm9te3N0cm9rZS1kYXNob2Zmc2V0OjA7fX1Aa2V5ZnJhbWVzIGRhc2h7dG97c3Ryb2tlLWRhc2hvZmZzZXQ6MDt9fSNteS1zdmcgLmVkZ2UtYW5pbWF0aW9uLXNsb3d7c3Ryb2tlLWRhc2hhcnJheTo5LDUhaW1wb3J0YW50O3N0cm9rZS1kYXNob2Zmc2V0OjkwMDthbmltYXRpb246ZGFzaCA1MHMgbGluZWFyIGluZmluaXRlO3N0cm9rZS1saW5lY2FwOnJvdW5kO30jbXktc3ZnIC5lZGdlLWFuaW1hdGlvbi1mYXN0e3N0cm9rZS1kYXNoYXJyYXk6OSw1IWltcG9ydGFudDtzdHJva2UtZGFzaG9mZnNldDo5MDA7YW5pbWF0aW9uOmRhc2ggMjBzIGxpbmVhciBpbmZpbml0ZTtzdHJva2UtbGluZWNhcDpyb3VuZDt9I215LXN2ZyAuZXJyb3ItaWNvbntmaWxsOiNlZWVlZWM7fSNteS1zdmcgLmVycm9yLXRleHR7ZmlsbDojMTExMTEzO3N0cm9rZTojMTExMTEzO30jbXktc3ZnIC5lZGdlLXRoaWNrbmVzcy1ub3JtYWx7c3Ryb2tlLXdpZHRoOjFweDt9I215LXN2ZyAuZWRnZS10aGlja25lc3MtdGhpY2t7c3Ryb2tlLXdpZHRoOjMuNXB4O30jbXktc3ZnIC5lZGdlLXBhdHRlcm4tc29saWR7c3Ryb2tlLWRhc2hhcnJheTowO30jbXktc3ZnIC5lZGdlLXRoaWNrbmVzcy1pbnZpc2libGV7c3Ryb2tlLXdpZHRoOjA7ZmlsbDpub25lO30jbXktc3ZnIC5lZGdlLXBhdHRlcm4tZGFzaGVke3N0cm9rZS1kYXNoYXJyYXk6Mzt9I215LXN2ZyAuZWRnZS1wYXR0ZXJuLWRvdHRlZHtzdHJva2UtZGFzaGFycmF5OjI7fSNteS1zdmcgLm1hcmtlcntmaWxsOiM0NDQwM2M7c3Ryb2tlOiM0NDQwM2M7fSNteS1zdmcgLm1hcmtlci5jcm9zc3tzdHJva2U6IzQ0NDAzYzt9I215LXN2ZyBzdmd7Zm9udC1zaXplOjI4cHg7fSNteS1zdmcgcHttYXJnaW46MDt9I215LXN2ZyAubGFiZWx7Y29sb3I6IzFjMTkxNzt9I215LXN2ZyAuY2x1c3Rlci1sYWJlbCB0ZXh0e2ZpbGw6IzExMTExMzt9I215LXN2ZyAuY2x1c3Rlci1sYWJlbCBzcGFue2NvbG9yOiMxMTExMTM7fSNteS1zdmcgLmNsdXN0ZXItbGFiZWwgc3BhbiBwe2JhY2tncm91bmQtY29sb3I6dHJhbnNwYXJlbnQ7fSNteS1zdmcgLmxhYmVsIHRleHQsI215LXN2ZyBzcGFue2ZpbGw6IzFjMTkxNztjb2xvcjojMWMxOTE3O30jbXktc3ZnIC5ub2RlIHJlY3QsI215LXN2ZyAubm9kZSBjaXJjbGUsI215LXN2ZyAubm9kZSBlbGxpcHNlLCNteS1zdmcgLm5vZGUgcG9seWdvbiwjbXktc3ZnIC5ub2RlIHBhdGh7ZmlsbDojZjVmNWY0O3N0cm9rZTojNTc1MzRlO3N0cm9rZS13aWR0aDoxcHg7fSNteS1zdmcgLnJvdWdoLW5vZGUgLmxhYmVsIHRleHQsI215LXN2ZyAubm9kZSAubGFiZWwgdGV4dCwjbXktc3ZnIC5pbWFnZS1zaGFwZSAubGFiZWwsI215LXN2ZyAuaWNvbi1zaGFwZSAubGFiZWx7dGV4dC1hbmNob3I6bWlkZGxlO30jbXktc3ZnIC5ub2RlIC5rYXRleCBwYXRoe2ZpbGw6IzAwMDtzdHJva2U6IzAwMDtzdHJva2Utd2lkdGg6MXB4O30jbXktc3ZnIC5yb3VnaC1ub2RlIC5sYWJlbCwjbXktc3ZnIC5ub2RlIC5sYWJlbCwjbXktc3ZnIC5pbWFnZS1zaGFwZSAubGFiZWwsI215LXN2ZyAuaWNvbi1zaGFwZSAubGFiZWx7dGV4dC1hbGlnbjpjZW50ZXI7fSNteS1zdmcgLm5vZGUuY2xpY2thYmxle2N1cnNvcjpwb2ludGVyO30jbXktc3ZnIC5yb290IC5hbmNob3IgcGF0aHtmaWxsOiM0NDQwM2MhaW1wb3J0YW50O3N0cm9rZS13aWR0aDowO3N0cm9rZTojNDQ0MDNjO30jbXktc3ZnIC5hcnJvd2hlYWRQYXRoe2ZpbGw6IzA1MDUwNjt9I215LXN2ZyAuZWRnZVBhdGggLnBhdGh7c3Ryb2tlOiM0NDQwM2M7c3Ryb2tlLXdpZHRoOjIuMHB4O30jbXktc3ZnIC5mbG93Y2hhcnQtbGlua3tzdHJva2U6IzQ0NDAzYztmaWxsOm5vbmU7fSNteS1zdmcgLmVkZ2VMYWJlbHtiYWNrZ3JvdW5kLWNvbG9yOiNmYWZhZjk7dGV4dC1hbGlnbjpjZW50ZXI7fSNteS1zdmcgLmVkZ2VMYWJlbCBwe2JhY2tncm91bmQtY29sb3I6I2ZhZmFmOTt9I215LXN2ZyAuZWRnZUxhYmVsIHJlY3R7b3BhY2l0eTowLjU7YmFja2dyb3VuZC1jb2xvcjojZmFmYWY5O2ZpbGw6I2ZhZmFmOTt9I215LXN2ZyAubGFiZWxCa2d7YmFja2dyb3VuZC1jb2xvcjpyZ2JhKDI1MCwgMjUwLCAyNDksIDAuNSk7fSNteS1zdmcgLmNsdXN0ZXIgcmVjdHtmaWxsOiNlZWVlZWM7c3Ryb2tlOiM3ODcxNmM7c3Ryb2tlLXdpZHRoOjFweDt9I215LXN2ZyAuY2x1c3RlciB0ZXh0e2ZpbGw6IzExMTExMzt9I215LXN2ZyAuY2x1c3RlciBzcGFue2NvbG9yOiMxMTExMTM7fSNteS1zdmcgZGl2Lm1lcm1haWRUb29sdGlwe3Bvc2l0aW9uOmFic29sdXRlO3RleHQtYWxpZ246Y2VudGVyO21heC13aWR0aDoyMDBweDtwYWRkaW5nOjJweDtmb250LXNpemU6MTJweDtiYWNrZ3JvdW5kOiNlZWVlZWM7Ym9yZGVyOjFweCBzb2xpZCBoc2woNjAsIDAlLCA4Mi45NDExNzY0NzA2JSk7Ym9yZGVyLXJhZGl1czoycHg7cG9pbnRlci1ldmVudHM6bm9uZTt6LWluZGV4OjEwMDt9I215LXN2ZyAuZmxvd2NoYXJ0VGl0bGVUZXh0e3RleHQtYW5jaG9yOm1pZGRsZTtmb250LXNpemU6MThweDtmaWxsOiMxYzE5MTc7fSNteS1zdmcgcmVjdC50ZXh0e2ZpbGw6bm9uZTtzdHJva2Utd2lkdGg6MDt9I215LXN2ZyAuaWNvbi1zaGFwZSwjbXktc3ZnIC5pbWFnZS1zaGFwZXtiYWNrZ3JvdW5kLWNvbG9yOiNmYWZhZjk7dGV4dC1hbGlnbjpjZW50ZXI7fSNteS1zdmcgLmljb24tc2hhcGUgcCwjbXktc3ZnIC5pbWFnZS1zaGFwZSBwe2JhY2tncm91bmQtY29sb3I6I2ZhZmFmOTtwYWRkaW5nOjJweDt9I215LXN2ZyAuaWNvbi1zaGFwZSByZWN0LCNteS1zdmcgLmltYWdlLXNoYXBlIHJlY3R7b3BhY2l0eTowLjU7YmFja2dyb3VuZC1jb2xvcjojZmFmYWY5O2ZpbGw6I2ZhZmFmOTt9I215LXN2ZyA6cm9vdHstLW1lcm1haWQtZm9udC1mYW1pbHk6InRyZWJ1Y2hldCBtcyIsdmVyZGFuYSxhcmlhbCxzYW5zLXNlcmlmO30jbXktc3ZnIC5zb2xpZCZndDsqe2ZpbGw6I2Y1ZjVmNCFpbXBvcnRhbnQ7c3Ryb2tlOiM1NzUzNGUhaW1wb3J0YW50O3N0cm9rZS13aWR0aDoxcHghaW1wb3J0YW50O2NvbG9yOiMxYzE5MTchaW1wb3J0YW50O30jbXktc3ZnIC5zb2xpZCBzcGFue2ZpbGw6I2Y1ZjVmNCFpbXBvcnRhbnQ7c3Ryb2tlOiM1NzUzNGUhaW1wb3J0YW50O3N0cm9rZS13aWR0aDoxcHghaW1wb3J0YW50O2NvbG9yOiMxYzE5MTchaW1wb3J0YW50O30jbXktc3ZnIC5zb2xpZCB0c3BhbntmaWxsOiMxYzE5MTchaW1wb3J0YW50O308L3N0eWxlPjxnPjxtYXJrZXIgb3JpZW50PSJhdXRvIiBtYXJrZXJIZWlnaHQ9IjgiIG1hcmtlcldpZHRoPSI4IiBtYXJrZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIHJlZlk9IjUiIHJlZlg9IjUiIHZpZXdCb3g9IjAgMCAxMCAxMCIgY2xhc3M9Im1hcmtlciBmbG93Y2hhcnQtdjIiIGlkPSJteS1zdmdfZmxvd2NoYXJ0LXYyLXBvaW50RW5kIj48cGF0aCBzdHlsZT0ic3Ryb2tlLXdpZHRoOiAxOyBzdHJva2UtZGFzaGFycmF5OiAxLCAwOyIgY2xhc3M9ImFycm93TWFya2VyUGF0aCIgZD0iTSAwIDAgTCAxMCA1IEwgMCAxMCB6Ii8+PC9tYXJrZXI+PG1hcmtlciBvcmllbnQ9ImF1dG8iIG1hcmtlckhlaWdodD0iOCIgbWFya2VyV2lkdGg9IjgiIG1hcmtlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgcmVmWT0iNSIgcmVmWD0iNC41IiB2aWV3Qm94PSIwIDAgMTAgMTAiIGNsYXNzPSJtYXJrZXIgZmxvd2NoYXJ0LXYyIiBpZD0ibXktc3ZnX2Zsb3djaGFydC12Mi1wb2ludFN0YXJ0Ij48cGF0aCBzdHlsZT0ic3Ryb2tlLXdpZHRoOiAxOyBzdHJva2UtZGFzaGFycmF5OiAxLCAwOyIgY2xhc3M9ImFycm93TWFya2VyUGF0aCIgZD0iTSAwIDUgTCAxMCAxMCBMIDEwIDAgeiIvPjwvbWFya2VyPjxtYXJrZXIgb3JpZW50PSJhdXRvIiBtYXJrZXJIZWlnaHQ9IjExIiBtYXJrZXJXaWR0aD0iMTEiIG1hcmtlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgcmVmWT0iNSIgcmVmWD0iMTEiIHZpZXdCb3g9IjAgMCAxMCAxMCIgY2xhc3M9Im1hcmtlciBmbG93Y2hhcnQtdjIiIGlkPSJteS1zdmdfZmxvd2NoYXJ0LXYyLWNpcmNsZUVuZCI+PGNpcmNsZSBzdHlsZT0ic3Ryb2tlLXdpZHRoOiAxOyBzdHJva2UtZGFzaGFycmF5OiAxLCAwOyIgY2xhc3M9ImFycm93TWFya2VyUGF0aCIgcj0iNSIgY3k9IjUiIGN4PSI1Ii8+PC9tYXJrZXI+PG1hcmtlciBvcmllbnQ9ImF1dG8iIG1hcmtlckhlaWdodD0iMTEiIG1hcmtlcldpZHRoPSIxMSIgbWFya2VyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiByZWZZPSI1IiByZWZYPSItMSIgdmlld0JveD0iMCAwIDEwIDEwIiBjbGFzcz0ibWFya2VyIGZsb3djaGFydC12MiIgaWQ9Im15LXN2Z19mbG93Y2hhcnQtdjItY2lyY2xlU3RhcnQiPjxjaXJjbGUgc3R5bGU9InN0cm9rZS13aWR0aDogMTsgc3Ryb2tlLWRhc2hhcnJheTogMSwgMDsiIGNsYXNzPSJhcnJvd01hcmtlclBhdGgiIHI9IjUiIGN5PSI1IiBjeD0iNSIvPjwvbWFya2VyPjxtYXJrZXIgb3JpZW50PSJhdXRvIiBtYXJrZXJIZWlnaHQ9IjExIiBtYXJrZXJXaWR0aD0iMTEiIG1hcmtlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgcmVmWT0iNS4yIiByZWZYPSIxMiIgdmlld0JveD0iMCAwIDExIDExIiBjbGFzcz0ibWFya2VyIGNyb3NzIGZsb3djaGFydC12MiIgaWQ9Im15LXN2Z19mbG93Y2hhcnQtdjItY3Jvc3NFbmQiPjxwYXRoIHN0eWxlPSJzdHJva2Utd2lkdGg6IDI7IHN0cm9rZS1kYXNoYXJyYXk6IDEsIDA7IiBjbGFzcz0iYXJyb3dNYXJrZXJQYXRoIiBkPSJNIDEsMSBsIDksOSBNIDEwLDEgbCAtOSw5Ii8+PC9tYXJrZXI+PG1hcmtlciBvcmllbnQ9ImF1dG8iIG1hcmtlckhlaWdodD0iMTEiIG1hcmtlcldpZHRoPSIxMSIgbWFya2VyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiByZWZZPSI1LjIiIHJlZlg9Ii0xIiB2aWV3Qm94PSIwIDAgMTEgMTEiIGNsYXNzPSJtYXJrZXIgY3Jvc3MgZmxvd2NoYXJ0LXYyIiBpZD0ibXktc3ZnX2Zsb3djaGFydC12Mi1jcm9zc1N0YXJ0Ij48cGF0aCBzdHlsZT0ic3Ryb2tlLXdpZHRoOiAyOyBzdHJva2UtZGFzaGFycmF5OiAxLCAwOyIgY2xhc3M9ImFycm93TWFya2VyUGF0aCIgZD0iTSAxLDEgbCA5LDkgTSAxMCwxIGwgLTksOSIvPjwvbWFya2VyPjxnIGNsYXNzPSJyb290Ij48ZyBjbGFzcz0iY2x1c3RlcnMiLz48ZyBjbGFzcz0iZWRnZVBhdGhzIj48cGF0aCBtYXJrZXItZW5kPSJ1cmwoI215LXN2Z19mbG93Y2hhcnQtdjItcG9pbnRFbmQpIiBzdHlsZT0iIiBjbGFzcz0iZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBlZGdlLXRoaWNrbmVzcy1ub3JtYWwgZWRnZS1wYXR0ZXJuLXNvbGlkIGZsb3djaGFydC1saW5rIiBpZD0iTF9DX0RfMCIgZD0iTTI1Mi43OTcsMTY0TDI1Mi43OTcsMTc1LjE2N0MyNTIuNzk3LDE4Ni4zMzMsMjUyLjc5NywyMDguNjY3LDI1Mi43OTcsMjIzLjMzM0MyNTIuNzk3LDIzOCwyNTIuNzk3LDI0NSwyNTIuNzk3LDI0OC41TDI1Mi43OTcsMjUyIi8+PHBhdGggbWFya2VyLWVuZD0idXJsKCNteS1zdmdfZmxvd2NoYXJ0LXYyLXBvaW50RW5kKSIgc3R5bGU9IiIgY2xhc3M9ImVkZ2UtdGhpY2tuZXNzLW5vcm1hbCBlZGdlLXBhdHRlcm4tc29saWQgZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBmbG93Y2hhcnQtbGluayIgaWQ9IkxfRF9GMV8wIiBkPSJNMTQ1LjA5Niw0NTRMMTQwLjU2Myw0NTguMTY3QzEzNi4wMyw0NjIuMzMzLDEyNi45NjQsNDcwLjY2NywxMjIuNDMxLDQ3OC4zMzNDMTE3Ljg5OCw0ODYsMTE3Ljg5OCw0OTMsMTE3Ljg5OCw0OTYuNUwxMTcuODk4LDUwMCIvPjxwYXRoIG1hcmtlci1lbmQ9InVybCgjbXktc3ZnX2Zsb3djaGFydC12Mi1wb2ludEVuZCkiIHN0eWxlPSIiIGNsYXNzPSJlZGdlLXRoaWNrbmVzcy1ub3JtYWwgZWRnZS1wYXR0ZXJuLXNvbGlkIGVkZ2UtdGhpY2tuZXNzLW5vcm1hbCBlZGdlLXBhdHRlcm4tc29saWQgZmxvd2NoYXJ0LWxpbmsiIGlkPSJMX0RfRjJfMCIgZD0iTTM2MC40OTgsNDU0TDM2NS4wMzEsNDU4LjE2N0MzNjkuNTY0LDQ2Mi4zMzMsMzc4LjYzLDQ3MC42NjcsMzgzLjE2Miw0NzguMzMzQzM4Ny42OTUsNDg2LDM4Ny42OTUsNDkzLDM4Ny42OTUsNDk2LjVMMzg3LjY5NSw1MDAiLz48L2c+PGcgY2xhc3M9ImVkZ2VMYWJlbHMiPjxnIGNsYXNzPSJlZGdlTGFiZWwiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsIDApIiBjbGFzcz0ibGFiZWwiPjxmb3JlaWduT2JqZWN0IGhlaWdodD0iMCIgd2lkdGg9IjAiPjxkaXYgc3R5bGU9ImRpc3BsYXk6IHRhYmxlLWNlbGw7IHdoaXRlLXNwYWNlOiBub3dyYXA7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsiIGNsYXNzPSJsYWJlbEJrZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiPjxzcGFuIGNsYXNzPSJlZGdlTGFiZWwiPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48ZyBjbGFzcz0iZWRnZUxhYmVsIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLCAwKSIgY2xhc3M9ImxhYmVsIj48Zm9yZWlnbk9iamVjdCBoZWlnaHQ9IjAiIHdpZHRoPSIwIj48ZGl2IHN0eWxlPSJkaXNwbGF5OiB0YWJsZS1jZWxsOyB3aGl0ZS1zcGFjZTogbm93cmFwOyBsaW5lLWhlaWdodDogMS41OyBtYXgtd2lkdGg6IDIwMHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7IiBjbGFzcz0ibGFiZWxCa2ciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIj48c3BhbiBjbGFzcz0iZWRnZUxhYmVsIj48L3NwYW4+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PGcgY2xhc3M9ImVkZ2VMYWJlbCI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwgMCkiIGNsYXNzPSJsYWJlbCI+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSIwIiB3aWR0aD0iMCI+PGRpdiBzdHlsZT0iZGlzcGxheTogdGFibGUtY2VsbDsgd2hpdGUtc3BhY2U6IG5vd3JhcDsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyIgY2xhc3M9ImxhYmVsQmtnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCI+PHNwYW4gY2xhc3M9ImVkZ2VMYWJlbCI+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjwvZz48ZyBjbGFzcz0ibm9kZXMiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI1Mi43OTY4NzUsIDEwNykiIGlkPSJmbG93Y2hhcnQtQy0wIiBjbGFzcz0ibm9kZSBkZWZhdWx0IHNvbGlkIj48cmVjdCBoZWlnaHQ9IjExNCIgd2lkdGg9IjI2MCIgeT0iLTU3IiB4PSItMTMwIiBzdHlsZT0iZmlsbDojZjVmNWY0ICFpbXBvcnRhbnQ7c3Ryb2tlOiM1NzUzNGUgIWltcG9ydGFudDtzdHJva2Utd2lkdGg6MXB4ICFpbXBvcnRhbnQiIGNsYXNzPSJiYXNpYyBsYWJlbC1jb250YWluZXIiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTAwLCAtNDIpIiBzdHlsZT0iY29sb3I6IzFjMTkxNyAhaW1wb3J0YW50IiBjbGFzcz0ibGFiZWwiPjxyZWN0Lz48Zm9yZWlnbk9iamVjdCBoZWlnaHQ9Ijg0IiB3aWR0aD0iMjAwIj48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iY29sb3I6IHJnYigyOCwgMjUsIDIzKSAhaW1wb3J0YW50OyBkaXNwbGF5OiB0YWJsZTsgd2hpdGUtc3BhY2U6IGJyZWFrLXNwYWNlczsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyB3aWR0aDogMjAwcHg7Ij48c3BhbiBjbGFzcz0ibm9kZUxhYmVsIiBzdHlsZT0iY29sb3I6IzFjMTkxNyAhaW1wb3J0YW50Ij48cD5NYXN0ZXIgT24gwrcgQnJhbmNoIEM8L3A+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI1Mi43OTY4NzUsIDM1NSkiIGlkPSJmbG93Y2hhcnQtRC0xIiBjbGFzcz0ibm9kZSBkZWZhdWx0IHNvbGlkIj48cmVjdCBoZWlnaHQ9IjE5OCIgd2lkdGg9IjI2MCIgeT0iLTk5IiB4PSItMTMwIiBzdHlsZT0iZmlsbDojZjVmNWY0ICFpbXBvcnRhbnQ7c3Ryb2tlOiM1NzUzNGUgIWltcG9ydGFudDtzdHJva2Utd2lkdGg6MXB4ICFpbXBvcnRhbnQiIGNsYXNzPSJiYXNpYyBsYWJlbC1jb250YWluZXIiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTAwLCAtODQpIiBzdHlsZT0iY29sb3I6IzFjMTkxNyAhaW1wb3J0YW50IiBjbGFzcz0ibGFiZWwiPjxyZWN0Lz48Zm9yZWlnbk9iamVjdCBoZWlnaHQ9IjE2OCIgd2lkdGg9IjIwMCI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImNvbG9yOiByZ2IoMjgsIDI1LCAyMykgIWltcG9ydGFudDsgZGlzcGxheTogdGFibGU7IHdoaXRlLXNwYWNlOiBicmVhay1zcGFjZXM7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsgd2lkdGg6IDIwMHB4OyI+PHNwYW4gY2xhc3M9Im5vZGVMYWJlbCIgc3R5bGU9ImNvbG9yOiMxYzE5MTcgIWltcG9ydGFudCI+PHA+RmFuIGRpYWwgTG93IC8gTWVkIC8gSGlnaDxiciAvPm5vIE9mZiDCtyBub3QgTkEtRkMxPC9wPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMTcuODk4NDM3NSwgNTQwKSIgaWQ9ImZsb3djaGFydC1GMS0yIiBjbGFzcz0ibm9kZSBkZWZhdWx0IHNvbGlkIj48cmVjdCBoZWlnaHQ9IjcyIiB3aWR0aD0iMjE5Ljc5Njg3NSIgeT0iLTM2IiB4PSItMTA5Ljg5ODQzNzUiIHN0eWxlPSJmaWxsOiNmNWY1ZjQgIWltcG9ydGFudDtzdHJva2U6IzU3NTM0ZSAhaW1wb3J0YW50O3N0cm9rZS13aWR0aDoxcHggIWltcG9ydGFudCIgY2xhc3M9ImJhc2ljIGxhYmVsLWNvbnRhaW5lciIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03OS44OTg0Mzc1LCAtMjEpIiBzdHlsZT0iY29sb3I6IzFjMTkxNyAhaW1wb3J0YW50IiBjbGFzcz0ibGFiZWwiPjxyZWN0Lz48Zm9yZWlnbk9iamVjdCBoZWlnaHQ9IjQyIiB3aWR0aD0iMTU5Ljc5Njg3NSI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImNvbG9yOiByZ2IoMjgsIDI1LCAyMykgIWltcG9ydGFudDsgZGlzcGxheTogdGFibGUtY2VsbDsgd2hpdGUtc3BhY2U6IG5vd3JhcDsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyI+PHNwYW4gY2xhc3M9Im5vZGVMYWJlbCIgc3R5bGU9ImNvbG9yOiMxYzE5MTcgIWltcG9ydGFudCI+PHA+Tm9jdHVhIGZhbiAxPC9wPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzODcuNjk1MzEyNSwgNTQwKSIgaWQ9ImZsb3djaGFydC1GMi0zIiBjbGFzcz0ibm9kZSBkZWZhdWx0IHNvbGlkIj48cmVjdCBoZWlnaHQ9IjcyIiB3aWR0aD0iMjE5Ljc5Njg3NSIgeT0iLTM2IiB4PSItMTA5Ljg5ODQzNzUiIHN0eWxlPSJmaWxsOiNmNWY1ZjQgIWltcG9ydGFudDtzdHJva2U6IzU3NTM0ZSAhaW1wb3J0YW50O3N0cm9rZS13aWR0aDoxcHggIWltcG9ydGFudCIgY2xhc3M9ImJhc2ljIGxhYmVsLWNvbnRhaW5lciIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03OS44OTg0Mzc1LCAtMjEpIiBzdHlsZT0iY29sb3I6IzFjMTkxNyAhaW1wb3J0YW50IiBjbGFzcz0ibGFiZWwiPjxyZWN0Lz48Zm9yZWlnbk9iamVjdCBoZWlnaHQ9IjQyIiB3aWR0aD0iMTU5Ljc5Njg3NSI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImNvbG9yOiByZ2IoMjgsIDI1LCAyMykgIWltcG9ydGFudDsgZGlzcGxheTogdGFibGUtY2VsbDsgd2hpdGUtc3BhY2U6IG5vd3JhcDsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyI+PHNwYW4gY2xhc3M9Im5vZGVMYWJlbCIgc3R5bGU9ImNvbG9yOiMxYzE5MTcgIWltcG9ydGFudCI+PHA+Tm9jdHVhIGZhbiAyPC9wPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1NjIuNzk2ODc1LCAxMDcpIiBpZD0iZmxvd2NoYXJ0LU4tMTAiIGNsYXNzPSJub2RlIGRlZmF1bHQgc29saWQiPjxyZWN0IGhlaWdodD0iMTk4IiB3aWR0aD0iMjYwIiB5PSItOTkiIHg9Ii0xMzAiIHN0eWxlPSJmaWxsOiNmNWY1ZjQgIWltcG9ydGFudDtzdHJva2U6IzU3NTM0ZSAhaW1wb3J0YW50O3N0cm9rZS13aWR0aDoxcHggIWltcG9ydGFudCIgY2xhc3M9ImJhc2ljIGxhYmVsLWNvbnRhaW5lciIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMDAsIC04NCkiIHN0eWxlPSJjb2xvcjojMWMxOTE3ICFpbXBvcnRhbnQiIGNsYXNzPSJsYWJlbCI+PHJlY3QvPjxmb3JlaWduT2JqZWN0IGhlaWdodD0iMTY4IiB3aWR0aD0iMjAwIj48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iY29sb3I6IHJnYigyOCwgMjUsIDIzKSAhaW1wb3J0YW50OyBkaXNwbGF5OiB0YWJsZTsgd2hpdGUtc3BhY2U6IGJyZWFrLXNwYWNlczsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyB3aWR0aDogMjAwcHg7Ij48c3BhbiBjbGFzcz0ibm9kZUxhYmVsIiBzdHlsZT0iY29sb3I6IzFjMTkxNyAhaW1wb3J0YW50Ij48cD5EaWFsID0gc3BlZWQgb25seTxiciAvPmRvZXMgbm90IHN0YXJ0IHRoZSBoZWF0ZXI8L3A+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjwvZz48L2c+PC9nPjwvc3ZnPg==" alt="Fans" />
 <figcaption aria-hidden="true">Fans</figcaption>
 </figure>
-<p>Branch C feeds one Low/Med/High dial. The SKU is not chosen yet; it
-must have <strong>no hard Off</strong>, and it must <strong>not</strong>
-be a Noctua NA-FC1. After the dial, both Noctua fans share that power on
-their red and black leads only. Leave the PWM and tach wires unused.</p>
-<p>The dial only sets <strong>how hard</strong> the fans blow. It never
-starts the diesel heater.</p>
+<p>Branch C feeds one Low/Med/High dial. The SKU is not chosen yet; the
+dial must have <strong>no hard Off</strong>, and the dial must
+<strong>not</strong> be a Noctua NA-FC1. After the dial, both Noctua
+fans share that power on their red and black leads only. Leave the PWM
+and tach wires unused.</p>
+<p>The dial only sets <strong>how hard</strong> the fans blow. The dial
+never starts the diesel heater.</p>
 <p>Until the thermostat auto path is finished (<a href="#q-022">Q-022</a>), with master On the fans run whenever the dial
 is up—even if the heater is idle. Turn the dial down or flip the master
 Off to stop them.</p>
 <h3 id="thermostat-auto-not-ready-yet">Thermostat auto — not ready
 yet</h3>
-<p>The SC1600B uses its own <strong>AA batteries</strong>. Its
+<p>The SC1600B uses <strong>AA batteries</strong> of its own. The
 <strong>R</strong> and <strong>W</strong> terminals are a small switch
 that closes when the cabin is cold. That switch cannot power the fans by
 itself; Sure Marine expects a <strong>relay</strong> for fan current (<a href="#src-019">SRC-019</a> / <a href="#src-033">SRC-033</a>).</p>
@@ -1898,23 +1897,23 @@ itself; Sure Marine expects a <strong>relay</strong> for fan current (<a href="#
 temperature <em>sensor</em>, not a dry-contact thermostat (<a href="#src-003">SRC-003</a>).</p>
 <p>Until <a href="#q-022">Q-022</a> names an approved way to wake the
 heater from that switch, start heat only from the EasyStart Timer.</p>
-<h3 id="isotemp-element-different-world-ac">Isotemp element — different
-world (AC)</h3>
+<h3 id="isotemp-element-on-ac">Isotemp element on AC</h3>
 <figure>
 <img role="img" aria-label="AC" src="data:image/svg+xml;base64,PHN2ZyBhcmlhLXJvbGVkZXNjcmlwdGlvbj0iZmxvd2NoYXJ0LXYyIiByb2xlPSJncmFwaGljcy1kb2N1bWVudCBkb2N1bWVudCIgdmlld0JveD0iMCAwIDE1MTUuNTMxMjUgMTcyIiBzdHlsZT0ibWF4LXdpZHRoOiAxNTE1LjUzcHg7IGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50OyIgY2xhc3M9ImZsb3djaGFydCIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGlkPSJteS1zdmciPjxzdHlsZT4jbXktc3Zne2ZvbnQtc2l6ZToyOHB4O2ZpbGw6IzFjMTkxNzt9QGtleWZyYW1lcyBlZGdlLWFuaW1hdGlvbi1mcmFtZXtmcm9te3N0cm9rZS1kYXNob2Zmc2V0OjA7fX1Aa2V5ZnJhbWVzIGRhc2h7dG97c3Ryb2tlLWRhc2hvZmZzZXQ6MDt9fSNteS1zdmcgLmVkZ2UtYW5pbWF0aW9uLXNsb3d7c3Ryb2tlLWRhc2hhcnJheTo5LDUhaW1wb3J0YW50O3N0cm9rZS1kYXNob2Zmc2V0OjkwMDthbmltYXRpb246ZGFzaCA1MHMgbGluZWFyIGluZmluaXRlO3N0cm9rZS1saW5lY2FwOnJvdW5kO30jbXktc3ZnIC5lZGdlLWFuaW1hdGlvbi1mYXN0e3N0cm9rZS1kYXNoYXJyYXk6OSw1IWltcG9ydGFudDtzdHJva2UtZGFzaG9mZnNldDo5MDA7YW5pbWF0aW9uOmRhc2ggMjBzIGxpbmVhciBpbmZpbml0ZTtzdHJva2UtbGluZWNhcDpyb3VuZDt9I215LXN2ZyAuZXJyb3ItaWNvbntmaWxsOiNlZWVlZWM7fSNteS1zdmcgLmVycm9yLXRleHR7ZmlsbDojMTExMTEzO3N0cm9rZTojMTExMTEzO30jbXktc3ZnIC5lZGdlLXRoaWNrbmVzcy1ub3JtYWx7c3Ryb2tlLXdpZHRoOjFweDt9I215LXN2ZyAuZWRnZS10aGlja25lc3MtdGhpY2t7c3Ryb2tlLXdpZHRoOjMuNXB4O30jbXktc3ZnIC5lZGdlLXBhdHRlcm4tc29saWR7c3Ryb2tlLWRhc2hhcnJheTowO30jbXktc3ZnIC5lZGdlLXRoaWNrbmVzcy1pbnZpc2libGV7c3Ryb2tlLXdpZHRoOjA7ZmlsbDpub25lO30jbXktc3ZnIC5lZGdlLXBhdHRlcm4tZGFzaGVke3N0cm9rZS1kYXNoYXJyYXk6Mzt9I215LXN2ZyAuZWRnZS1wYXR0ZXJuLWRvdHRlZHtzdHJva2UtZGFzaGFycmF5OjI7fSNteS1zdmcgLm1hcmtlcntmaWxsOiM0NDQwM2M7c3Ryb2tlOiM0NDQwM2M7fSNteS1zdmcgLm1hcmtlci5jcm9zc3tzdHJva2U6IzQ0NDAzYzt9I215LXN2ZyBzdmd7Zm9udC1zaXplOjI4cHg7fSNteS1zdmcgcHttYXJnaW46MDt9I215LXN2ZyAubGFiZWx7Y29sb3I6IzFjMTkxNzt9I215LXN2ZyAuY2x1c3Rlci1sYWJlbCB0ZXh0e2ZpbGw6IzExMTExMzt9I215LXN2ZyAuY2x1c3Rlci1sYWJlbCBzcGFue2NvbG9yOiMxMTExMTM7fSNteS1zdmcgLmNsdXN0ZXItbGFiZWwgc3BhbiBwe2JhY2tncm91bmQtY29sb3I6dHJhbnNwYXJlbnQ7fSNteS1zdmcgLmxhYmVsIHRleHQsI215LXN2ZyBzcGFue2ZpbGw6IzFjMTkxNztjb2xvcjojMWMxOTE3O30jbXktc3ZnIC5ub2RlIHJlY3QsI215LXN2ZyAubm9kZSBjaXJjbGUsI215LXN2ZyAubm9kZSBlbGxpcHNlLCNteS1zdmcgLm5vZGUgcG9seWdvbiwjbXktc3ZnIC5ub2RlIHBhdGh7ZmlsbDojZjVmNWY0O3N0cm9rZTojNTc1MzRlO3N0cm9rZS13aWR0aDoxcHg7fSNteS1zdmcgLnJvdWdoLW5vZGUgLmxhYmVsIHRleHQsI215LXN2ZyAubm9kZSAubGFiZWwgdGV4dCwjbXktc3ZnIC5pbWFnZS1zaGFwZSAubGFiZWwsI215LXN2ZyAuaWNvbi1zaGFwZSAubGFiZWx7dGV4dC1hbmNob3I6bWlkZGxlO30jbXktc3ZnIC5ub2RlIC5rYXRleCBwYXRoe2ZpbGw6IzAwMDtzdHJva2U6IzAwMDtzdHJva2Utd2lkdGg6MXB4O30jbXktc3ZnIC5yb3VnaC1ub2RlIC5sYWJlbCwjbXktc3ZnIC5ub2RlIC5sYWJlbCwjbXktc3ZnIC5pbWFnZS1zaGFwZSAubGFiZWwsI215LXN2ZyAuaWNvbi1zaGFwZSAubGFiZWx7dGV4dC1hbGlnbjpjZW50ZXI7fSNteS1zdmcgLm5vZGUuY2xpY2thYmxle2N1cnNvcjpwb2ludGVyO30jbXktc3ZnIC5yb290IC5hbmNob3IgcGF0aHtmaWxsOiM0NDQwM2MhaW1wb3J0YW50O3N0cm9rZS13aWR0aDowO3N0cm9rZTojNDQ0MDNjO30jbXktc3ZnIC5hcnJvd2hlYWRQYXRoe2ZpbGw6IzA1MDUwNjt9I215LXN2ZyAuZWRnZVBhdGggLnBhdGh7c3Ryb2tlOiM0NDQwM2M7c3Ryb2tlLXdpZHRoOjIuMHB4O30jbXktc3ZnIC5mbG93Y2hhcnQtbGlua3tzdHJva2U6IzQ0NDAzYztmaWxsOm5vbmU7fSNteS1zdmcgLmVkZ2VMYWJlbHtiYWNrZ3JvdW5kLWNvbG9yOiNmYWZhZjk7dGV4dC1hbGlnbjpjZW50ZXI7fSNteS1zdmcgLmVkZ2VMYWJlbCBwe2JhY2tncm91bmQtY29sb3I6I2ZhZmFmOTt9I215LXN2ZyAuZWRnZUxhYmVsIHJlY3R7b3BhY2l0eTowLjU7YmFja2dyb3VuZC1jb2xvcjojZmFmYWY5O2ZpbGw6I2ZhZmFmOTt9I215LXN2ZyAubGFiZWxCa2d7YmFja2dyb3VuZC1jb2xvcjpyZ2JhKDI1MCwgMjUwLCAyNDksIDAuNSk7fSNteS1zdmcgLmNsdXN0ZXIgcmVjdHtmaWxsOiNlZWVlZWM7c3Ryb2tlOiM3ODcxNmM7c3Ryb2tlLXdpZHRoOjFweDt9I215LXN2ZyAuY2x1c3RlciB0ZXh0e2ZpbGw6IzExMTExMzt9I215LXN2ZyAuY2x1c3RlciBzcGFue2NvbG9yOiMxMTExMTM7fSNteS1zdmcgZGl2Lm1lcm1haWRUb29sdGlwe3Bvc2l0aW9uOmFic29sdXRlO3RleHQtYWxpZ246Y2VudGVyO21heC13aWR0aDoyMDBweDtwYWRkaW5nOjJweDtmb250LXNpemU6MTJweDtiYWNrZ3JvdW5kOiNlZWVlZWM7Ym9yZGVyOjFweCBzb2xpZCBoc2woNjAsIDAlLCA4Mi45NDExNzY0NzA2JSk7Ym9yZGVyLXJhZGl1czoycHg7cG9pbnRlci1ldmVudHM6bm9uZTt6LWluZGV4OjEwMDt9I215LXN2ZyAuZmxvd2NoYXJ0VGl0bGVUZXh0e3RleHQtYW5jaG9yOm1pZGRsZTtmb250LXNpemU6MThweDtmaWxsOiMxYzE5MTc7fSNteS1zdmcgcmVjdC50ZXh0e2ZpbGw6bm9uZTtzdHJva2Utd2lkdGg6MDt9I215LXN2ZyAuaWNvbi1zaGFwZSwjbXktc3ZnIC5pbWFnZS1zaGFwZXtiYWNrZ3JvdW5kLWNvbG9yOiNmYWZhZjk7dGV4dC1hbGlnbjpjZW50ZXI7fSNteS1zdmcgLmljb24tc2hhcGUgcCwjbXktc3ZnIC5pbWFnZS1zaGFwZSBwe2JhY2tncm91bmQtY29sb3I6I2ZhZmFmOTtwYWRkaW5nOjJweDt9I215LXN2ZyAuaWNvbi1zaGFwZSByZWN0LCNteS1zdmcgLmltYWdlLXNoYXBlIHJlY3R7b3BhY2l0eTowLjU7YmFja2dyb3VuZC1jb2xvcjojZmFmYWY5O2ZpbGw6I2ZhZmFmOTt9I215LXN2ZyA6cm9vdHstLW1lcm1haWQtZm9udC1mYW1pbHk6InRyZWJ1Y2hldCBtcyIsdmVyZGFuYSxhcmlhbCxzYW5zLXNlcmlmO30jbXktc3ZnIC5zb2xpZCZndDsqe2ZpbGw6I2Y1ZjVmNCFpbXBvcnRhbnQ7c3Ryb2tlOiM1NzUzNGUhaW1wb3J0YW50O3N0cm9rZS13aWR0aDoxcHghaW1wb3J0YW50O2NvbG9yOiMxYzE5MTchaW1wb3J0YW50O30jbXktc3ZnIC5zb2xpZCBzcGFue2ZpbGw6I2Y1ZjVmNCFpbXBvcnRhbnQ7c3Ryb2tlOiM1NzUzNGUhaW1wb3J0YW50O3N0cm9rZS13aWR0aDoxcHghaW1wb3J0YW50O2NvbG9yOiMxYzE5MTchaW1wb3J0YW50O30jbXktc3ZnIC5zb2xpZCB0c3BhbntmaWxsOiMxYzE5MTchaW1wb3J0YW50O30jbXktc3ZnIC5vcGVuJmd0Oyp7ZmlsbDojZWVlZWVjIWltcG9ydGFudDtzdHJva2U6Izc4NzE2YyFpbXBvcnRhbnQ7c3Ryb2tlLXdpZHRoOjJweCFpbXBvcnRhbnQ7c3Ryb2tlLWRhc2hhcnJheTo0IDMhaW1wb3J0YW50O2NvbG9yOiMxYzE5MTchaW1wb3J0YW50O30jbXktc3ZnIC5vcGVuIHNwYW57ZmlsbDojZWVlZWVjIWltcG9ydGFudDtzdHJva2U6Izc4NzE2YyFpbXBvcnRhbnQ7c3Ryb2tlLXdpZHRoOjJweCFpbXBvcnRhbnQ7c3Ryb2tlLWRhc2hhcnJheTo0IDMhaW1wb3J0YW50O2NvbG9yOiMxYzE5MTchaW1wb3J0YW50O30jbXktc3ZnIC5vcGVuIHRzcGFue2ZpbGw6IzFjMTkxNyFpbXBvcnRhbnQ7fTwvc3R5bGU+PGc+PG1hcmtlciBvcmllbnQ9ImF1dG8iIG1hcmtlckhlaWdodD0iOCIgbWFya2VyV2lkdGg9IjgiIG1hcmtlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgcmVmWT0iNSIgcmVmWD0iNSIgdmlld0JveD0iMCAwIDEwIDEwIiBjbGFzcz0ibWFya2VyIGZsb3djaGFydC12MiIgaWQ9Im15LXN2Z19mbG93Y2hhcnQtdjItcG9pbnRFbmQiPjxwYXRoIHN0eWxlPSJzdHJva2Utd2lkdGg6IDE7IHN0cm9rZS1kYXNoYXJyYXk6IDEsIDA7IiBjbGFzcz0iYXJyb3dNYXJrZXJQYXRoIiBkPSJNIDAgMCBMIDEwIDUgTCAwIDEwIHoiLz48L21hcmtlcj48bWFya2VyIG9yaWVudD0iYXV0byIgbWFya2VySGVpZ2h0PSI4IiBtYXJrZXJXaWR0aD0iOCIgbWFya2VyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiByZWZZPSI1IiByZWZYPSI0LjUiIHZpZXdCb3g9IjAgMCAxMCAxMCIgY2xhc3M9Im1hcmtlciBmbG93Y2hhcnQtdjIiIGlkPSJteS1zdmdfZmxvd2NoYXJ0LXYyLXBvaW50U3RhcnQiPjxwYXRoIHN0eWxlPSJzdHJva2Utd2lkdGg6IDE7IHN0cm9rZS1kYXNoYXJyYXk6IDEsIDA7IiBjbGFzcz0iYXJyb3dNYXJrZXJQYXRoIiBkPSJNIDAgNSBMIDEwIDEwIEwgMTAgMCB6Ii8+PC9tYXJrZXI+PG1hcmtlciBvcmllbnQ9ImF1dG8iIG1hcmtlckhlaWdodD0iMTEiIG1hcmtlcldpZHRoPSIxMSIgbWFya2VyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiByZWZZPSI1IiByZWZYPSIxMSIgdmlld0JveD0iMCAwIDEwIDEwIiBjbGFzcz0ibWFya2VyIGZsb3djaGFydC12MiIgaWQ9Im15LXN2Z19mbG93Y2hhcnQtdjItY2lyY2xlRW5kIj48Y2lyY2xlIHN0eWxlPSJzdHJva2Utd2lkdGg6IDE7IHN0cm9rZS1kYXNoYXJyYXk6IDEsIDA7IiBjbGFzcz0iYXJyb3dNYXJrZXJQYXRoIiByPSI1IiBjeT0iNSIgY3g9IjUiLz48L21hcmtlcj48bWFya2VyIG9yaWVudD0iYXV0byIgbWFya2VySGVpZ2h0PSIxMSIgbWFya2VyV2lkdGg9IjExIiBtYXJrZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIHJlZlk9IjUiIHJlZlg9Ii0xIiB2aWV3Qm94PSIwIDAgMTAgMTAiIGNsYXNzPSJtYXJrZXIgZmxvd2NoYXJ0LXYyIiBpZD0ibXktc3ZnX2Zsb3djaGFydC12Mi1jaXJjbGVTdGFydCI+PGNpcmNsZSBzdHlsZT0ic3Ryb2tlLXdpZHRoOiAxOyBzdHJva2UtZGFzaGFycmF5OiAxLCAwOyIgY2xhc3M9ImFycm93TWFya2VyUGF0aCIgcj0iNSIgY3k9IjUiIGN4PSI1Ii8+PC9tYXJrZXI+PG1hcmtlciBvcmllbnQ9ImF1dG8iIG1hcmtlckhlaWdodD0iMTEiIG1hcmtlcldpZHRoPSIxMSIgbWFya2VyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiByZWZZPSI1LjIiIHJlZlg9IjEyIiB2aWV3Qm94PSIwIDAgMTEgMTEiIGNsYXNzPSJtYXJrZXIgY3Jvc3MgZmxvd2NoYXJ0LXYyIiBpZD0ibXktc3ZnX2Zsb3djaGFydC12Mi1jcm9zc0VuZCI+PHBhdGggc3R5bGU9InN0cm9rZS13aWR0aDogMjsgc3Ryb2tlLWRhc2hhcnJheTogMSwgMDsiIGNsYXNzPSJhcnJvd01hcmtlclBhdGgiIGQ9Ik0gMSwxIGwgOSw5IE0gMTAsMSBsIC05LDkiLz48L21hcmtlcj48bWFya2VyIG9yaWVudD0iYXV0byIgbWFya2VySGVpZ2h0PSIxMSIgbWFya2VyV2lkdGg9IjExIiBtYXJrZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIHJlZlk9IjUuMiIgcmVmWD0iLTEiIHZpZXdCb3g9IjAgMCAxMSAxMSIgY2xhc3M9Im1hcmtlciBjcm9zcyBmbG93Y2hhcnQtdjIiIGlkPSJteS1zdmdfZmxvd2NoYXJ0LXYyLWNyb3NzU3RhcnQiPjxwYXRoIHN0eWxlPSJzdHJva2Utd2lkdGg6IDI7IHN0cm9rZS1kYXNoYXJyYXk6IDEsIDA7IiBjbGFzcz0iYXJyb3dNYXJrZXJQYXRoIiBkPSJNIDEsMSBsIDksOSBNIDEwLDEgbCAtOSw5Ii8+PC9tYXJrZXI+PGcgY2xhc3M9InJvb3QiPjxnIGNsYXNzPSJjbHVzdGVycyIvPjxnIGNsYXNzPSJlZGdlUGF0aHMiPjxwYXRoIG1hcmtlci1lbmQ9InVybCgjbXktc3ZnX2Zsb3djaGFydC12Mi1wb2ludEVuZCkiIHN0eWxlPSIiIGNsYXNzPSJlZGdlLXRoaWNrbmVzcy1ub3JtYWwgZWRnZS1wYXR0ZXJuLXNvbGlkIGVkZ2UtdGhpY2tuZXNzLW5vcm1hbCBlZGdlLXBhdHRlcm4tc29saWQgZmxvd2NoYXJ0LWxpbmsiIGlkPSJMX1NSQ19HRkNJXzAiIGQ9Ik0yNjgsODZMMjcyLjE2Nyw4NkMyNzYuMzMzLDg2LDI4NC42NjcsODYsMjkyLjMzMyw4NkMzMDAsODYsMzA3LDg2LDMxMC41LDg2TDMxNCw4NiIvPjxwYXRoIG1hcmtlci1lbmQ9InVybCgjbXktc3ZnX2Zsb3djaGFydC12Mi1wb2ludEVuZCkiIHN0eWxlPSIiIGNsYXNzPSJlZGdlLXRoaWNrbmVzcy1ub3JtYWwgZWRnZS1wYXR0ZXJuLXNvbGlkIGVkZ2UtdGhpY2tuZXNzLW5vcm1hbCBlZGdlLXBhdHRlcm4tc29saWQgZmxvd2NoYXJ0LWxpbmsiIGlkPSJMX0dGQ0lfTUFJTl8wIiBkPSJNNTc4LDg2TDU4Mi4xNjcsODZDNTg2LjMzMyw4Niw1OTQuNjY3LDg2LDYwMi4zMzMsODZDNjEwLDg2LDYxNyw4Niw2MjAuNSw4Nkw2MjQsODYiLz48cGF0aCBtYXJrZXItZW5kPSJ1cmwoI215LXN2Z19mbG93Y2hhcnQtdjItcG9pbnRFbmQpIiBzdHlsZT0iIiBjbGFzcz0iZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBlZGdlLXRoaWNrbmVzcy1ub3JtYWwgZWRnZS1wYXR0ZXJuLXNvbGlkIGZsb3djaGFydC1saW5rIiBpZD0iTF9NQUlOX1dIXzAiIGQ9Ik04ODcuNTMxLDg2TDg5MS42OTgsODZDODk1Ljg2NSw4Niw5MDQuMTk4LDg2LDkxMS44NjUsODZDOTE5LjUzMSw4Niw5MjYuNTMxLDg2LDkzMC4wMzEsODZMOTMzLjUzMSw4NiIvPjxwYXRoIG1hcmtlci1lbmQ9InVybCgjbXktc3ZnX2Zsb3djaGFydC12Mi1wb2ludEVuZCkiIHN0eWxlPSIiIGNsYXNzPSJlZGdlLXRoaWNrbmVzcy1ub3JtYWwgZWRnZS1wYXR0ZXJuLXNvbGlkIGVkZ2UtdGhpY2tuZXNzLW5vcm1hbCBlZGdlLXBhdHRlcm4tc29saWQgZmxvd2NoYXJ0LWxpbmsiIGlkPSJMX1dIX0VMXzAiIGQ9Ik0xMTk3LjUzMSw4NkwxMjAxLjY5OCw4NkMxMjA1Ljg2NSw4NiwxMjE0LjE5OCw4NiwxMjIxLjg2NSw4NkMxMjI5LjUzMSw4NiwxMjM2LjUzMSw4NiwxMjQwLjAzMSw4NkwxMjQzLjUzMSw4NiIvPjwvZz48ZyBjbGFzcz0iZWRnZUxhYmVscyI+PGcgY2xhc3M9ImVkZ2VMYWJlbCI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwgMCkiIGNsYXNzPSJsYWJlbCI+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSIwIiB3aWR0aD0iMCI+PGRpdiBzdHlsZT0iZGlzcGxheTogdGFibGUtY2VsbDsgd2hpdGUtc3BhY2U6IG5vd3JhcDsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyIgY2xhc3M9ImxhYmVsQmtnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCI+PHNwYW4gY2xhc3M9ImVkZ2VMYWJlbCI+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjxnIGNsYXNzPSJlZGdlTGFiZWwiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsIDApIiBjbGFzcz0ibGFiZWwiPjxmb3JlaWduT2JqZWN0IGhlaWdodD0iMCIgd2lkdGg9IjAiPjxkaXYgc3R5bGU9ImRpc3BsYXk6IHRhYmxlLWNlbGw7IHdoaXRlLXNwYWNlOiBub3dyYXA7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsiIGNsYXNzPSJsYWJlbEJrZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiPjxzcGFuIGNsYXNzPSJlZGdlTGFiZWwiPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48ZyBjbGFzcz0iZWRnZUxhYmVsIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLCAwKSIgY2xhc3M9ImxhYmVsIj48Zm9yZWlnbk9iamVjdCBoZWlnaHQ9IjAiIHdpZHRoPSIwIj48ZGl2IHN0eWxlPSJkaXNwbGF5OiB0YWJsZS1jZWxsOyB3aGl0ZS1zcGFjZTogbm93cmFwOyBsaW5lLWhlaWdodDogMS41OyBtYXgtd2lkdGg6IDIwMHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7IiBjbGFzcz0ibGFiZWxCa2ciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIj48c3BhbiBjbGFzcz0iZWRnZUxhYmVsIj48L3NwYW4+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PGcgY2xhc3M9ImVkZ2VMYWJlbCI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwgMCkiIGNsYXNzPSJsYWJlbCI+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSIwIiB3aWR0aD0iMCI+PGRpdiBzdHlsZT0iZGlzcGxheTogdGFibGUtY2VsbDsgd2hpdGUtc3BhY2U6IG5vd3JhcDsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyIgY2xhc3M9ImxhYmVsQmtnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCI+PHNwYW4gY2xhc3M9ImVkZ2VMYWJlbCI+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjwvZz48ZyBjbGFzcz0ibm9kZXMiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEzOCwgODYpIiBpZD0iZmxvd2NoYXJ0LVNSQy0wIiBjbGFzcz0ibm9kZSBkZWZhdWx0IHNvbGlkIj48cmVjdCBoZWlnaHQ9IjExNCIgd2lkdGg9IjI2MCIgeT0iLTU3IiB4PSItMTMwIiBzdHlsZT0iZmlsbDojZjVmNWY0ICFpbXBvcnRhbnQ7c3Ryb2tlOiM1NzUzNGUgIWltcG9ydGFudDtzdHJva2Utd2lkdGg6MXB4ICFpbXBvcnRhbnQiIGNsYXNzPSJiYXNpYyBsYWJlbC1jb250YWluZXIiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTAwLCAtNDIpIiBzdHlsZT0iY29sb3I6IzFjMTkxNyAhaW1wb3J0YW50IiBjbGFzcz0ibGFiZWwiPjxyZWN0Lz48Zm9yZWlnbk9iamVjdCBoZWlnaHQ9Ijg0IiB3aWR0aD0iMjAwIj48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iY29sb3I6IHJnYigyOCwgMjUsIDIzKSAhaW1wb3J0YW50OyBkaXNwbGF5OiB0YWJsZTsgd2hpdGUtc3BhY2U6IGJyZWFrLXNwYWNlczsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyB3aWR0aDogMjAwcHg7Ij48c3BhbiBjbGFzcz0ibm9kZUxhYmVsIiBzdHlsZT0iY29sb3I6IzFjMTkxNyAhaW1wb3J0YW50Ij48cD5TaG9yZSBvciBpbnZlcnRlcjwvcD48L3NwYW4+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDQ4LCA4NikiIGlkPSJmbG93Y2hhcnQtR0ZDSS0xIiBjbGFzcz0ibm9kZSBkZWZhdWx0IG9wZW4iPjxyZWN0IGhlaWdodD0iMTU2IiB3aWR0aD0iMjYwIiB5PSItNzgiIHg9Ii0xMzAiIHN0eWxlPSJmaWxsOiNlZWVlZWMgIWltcG9ydGFudDtzdHJva2U6Izc4NzE2YyAhaW1wb3J0YW50O3N0cm9rZS13aWR0aDoycHggIWltcG9ydGFudDtzdHJva2UtZGFzaGFycmF5OjQgMyAhaW1wb3J0YW50IiBjbGFzcz0iYmFzaWMgbGFiZWwtY29udGFpbmVyIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEwMCwgLTYzKSIgc3R5bGU9ImNvbG9yOiMxYzE5MTcgIWltcG9ydGFudCIgY2xhc3M9ImxhYmVsIj48cmVjdC8+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSIxMjYiIHdpZHRoPSIyMDAiPjxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJjb2xvcjogcmdiKDI4LCAyNSwgMjMpICFpbXBvcnRhbnQ7IGRpc3BsYXk6IHRhYmxlOyB3aGl0ZS1zcGFjZTogYnJlYWstc3BhY2VzOyBsaW5lLWhlaWdodDogMS41OyBtYXgtd2lkdGg6IDIwMHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7IHdpZHRoOiAyMDBweDsiPjxzcGFuIGNsYXNzPSJub2RlTGFiZWwiIHN0eWxlPSJjb2xvcjojMWMxOTE3ICFpbXBvcnRhbnQiPjxwPkdGQ0kgdXBzdHJlYW08YnIgLz5ub3Qgb24gdGhpcyBwYW5lbDwvcD48L3NwYW4+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzU3Ljc2NTYyNSwgODYpIiBpZD0iZmxvd2NoYXJ0LU1BSU4tMiIgY2xhc3M9Im5vZGUgZGVmYXVsdCBzb2xpZCI+PHJlY3QgaGVpZ2h0PSI3MiIgd2lkdGg9IjI1OS41MzEyNSIgeT0iLTM2IiB4PSItMTI5Ljc2NTYyNSIgc3R5bGU9ImZpbGw6I2Y1ZjVmNCAhaW1wb3J0YW50O3N0cm9rZTojNTc1MzRlICFpbXBvcnRhbnQ7c3Ryb2tlLXdpZHRoOjFweCAhaW1wb3J0YW50IiBjbGFzcz0iYmFzaWMgbGFiZWwtY29udGFpbmVyIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTk5Ljc2NTYyNSwgLTIxKSIgc3R5bGU9ImNvbG9yOiMxYzE5MTcgIWltcG9ydGFudCIgY2xhc3M9ImxhYmVsIj48cmVjdC8+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSI0MiIgd2lkdGg9IjE5OS41MzEyNSI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImNvbG9yOiByZ2IoMjgsIDI1LCAyMykgIWltcG9ydGFudDsgZGlzcGxheTogdGFibGUtY2VsbDsgd2hpdGUtc3BhY2U6IG5vd3JhcDsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyI+PHNwYW4gY2xhc3M9Im5vZGVMYWJlbCIgc3R5bGU9ImNvbG9yOiMxYzE5MTcgIWltcG9ydGFudCI+PHA+UGFuZWwgTUFJTiAzMCBBPC9wPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDY3LjUzMTI1LCA4NikiIGlkPSJmbG93Y2hhcnQtV0gtMyIgY2xhc3M9Im5vZGUgZGVmYXVsdCBzb2xpZCI+PHJlY3QgaGVpZ2h0PSIxMTQiIHdpZHRoPSIyNjAiIHk9Ii01NyIgeD0iLTEzMCIgc3R5bGU9ImZpbGw6I2Y1ZjVmNCAhaW1wb3J0YW50O3N0cm9rZTojNTc1MzRlICFpbXBvcnRhbnQ7c3Ryb2tlLXdpZHRoOjFweCAhaW1wb3J0YW50IiBjbGFzcz0iYmFzaWMgbGFiZWwtY29udGFpbmVyIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEwMCwgLTQyKSIgc3R5bGU9ImNvbG9yOiMxYzE5MTcgIWltcG9ydGFudCIgY2xhc3M9ImxhYmVsIj48cmVjdC8+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSI4NCIgd2lkdGg9IjIwMCI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImNvbG9yOiByZ2IoMjgsIDI1LCAyMykgIWltcG9ydGFudDsgZGlzcGxheTogdGFibGU7IHdoaXRlLXNwYWNlOiBicmVhay1zcGFjZXM7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsgd2lkdGg6IDIwMHB4OyI+PHNwYW4gY2xhc3M9Im5vZGVMYWJlbCIgc3R5bGU9ImNvbG9yOiMxYzE5MTcgIWltcG9ydGFudCI+PHA+V0FURVIgSEVBVEVSIGJyZWFrZXI8L3A+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEzNzcuNTMxMjUsIDg2KSIgaWQ9ImZsb3djaGFydC1FTC00IiBjbGFzcz0ibm9kZSBkZWZhdWx0IHNvbGlkIj48cmVjdCBoZWlnaHQ9IjExNCIgd2lkdGg9IjI2MCIgeT0iLTU3IiB4PSItMTMwIiBzdHlsZT0iZmlsbDojZjVmNWY0ICFpbXBvcnRhbnQ7c3Ryb2tlOiM1NzUzNGUgIWltcG9ydGFudDtzdHJva2Utd2lkdGg6MXB4ICFpbXBvcnRhbnQiIGNsYXNzPSJiYXNpYyBsYWJlbC1jb250YWluZXIiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTAwLCAtNDIpIiBzdHlsZT0iY29sb3I6IzFjMTkxNyAhaW1wb3J0YW50IiBjbGFzcz0ibGFiZWwiPjxyZWN0Lz48Zm9yZWlnbk9iamVjdCBoZWlnaHQ9Ijg0IiB3aWR0aD0iMjAwIj48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iY29sb3I6IHJnYigyOCwgMjUsIDIzKSAhaW1wb3J0YW50OyBkaXNwbGF5OiB0YWJsZTsgd2hpdGUtc3BhY2U6IGJyZWFrLXNwYWNlczsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyB3aWR0aDogMjAwcHg7Ij48c3BhbiBjbGFzcz0ibm9kZUxhYmVsIiBzdHlsZT0iY29sb3I6IzFjMTkxNyAhaW1wb3J0YW50Ij48cD5Jc290ZW1wIGVsZW1lbnQgNzUwIFc8L3A+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjwvZz48L2c+PC9nPjwvc3ZnPg==" alt="AC" />
 <figcaption aria-hidden="true">AC</figcaption>
 </figure>
-<p>This circuit is <strong>not</strong> on the 12 V panel.</p>
+<p>The Isotemp element circuit is <strong>not</strong> on the 12 V
+panel.</p>
 <p>Power runs from shore or inverter through an upstream
 <strong>GFCI/ELCI</strong> (still OPEN — <a href="#q-009">Q-009</a>),
 then the Paneltronics main breaker, then the breaker labeled
-<strong>WATER HEATER</strong>, then the Isotemp’s 750 W element.</p>
-<p>That element only warms the tank’s <strong>static</strong> chamber.
+<strong>WATER HEATER</strong>, then the Isotemp 750 W element.</p>
+<p>The element only warms the tank’s <strong>static</strong> chamber.
 Circulating glycol still goes through the tank’s <strong>coil</strong>
-whenever the diesel pump runs. AC alone does not give you a hot
-shower.</p>
-<p>Route the cable at HOLD 4. Leave the breaker <strong>off</strong>
-until <a href="#hold-9">HOLD 9</a>.</p>
+whenever the diesel pump runs. Running the element alone will not give
+you a hot shower.</p>
+<p>Route the element cable at HOLD 4. Leave the <strong>WATER
+HEATER</strong> breaker <strong>off</strong> until <a href="#hold-9">HOLD 9</a>.</p>
 <h2 id="fluids">Fluids</h2>
 <p><strong>Circulating loop and Isotemp chamber.</strong> Fill with
 water plus propylene glycol at <strong>most 50%</strong> glycol (<a href="#src-009">SRC-009</a>), <strong>one brand only</strong> (both
@@ -1944,9 +1943,9 @@ element</label></li>
 </ul>
 <p>→ <a href="#users-guide">Use</a>.</p>
 <h1 id="users-guide">User’s guide</h1>
-<p><strong>Stage 2 — Use.</strong> Read this after <a href="#system-design">Architecture</a> and before <a href="#builders-guide">Make it</a>. After <a href="#acceptance">Acceptance</a>, this chapter is day-to-day life with
-the system. Until Acceptance, it is not permission to fire the
-heater.</p>
+<p><strong>Stage 2 — Use.</strong> Read this chapter after <a href="#system-design">System Design</a> and before <a href="#builders-guide">Make it</a>. After <a href="#acceptance">Acceptance</a>, use this chapter as the day-to-day
+manual. Until Acceptance, treat the tables below as the operating
+target—not as permission to light the heater.</p>
 <p>Jump: <a href="#system-design">Architecture</a> · <a href="#current-status-report">Status</a> · <a href="#builders-guide">Make it</a> · <a href="#the-numbers-that-matter">Numbers</a></p>
 <h2 id="quick-start-after-acceptance">Quick start (after
 Acceptance)</h2>
@@ -2011,13 +2010,14 @@ Unmixed plate water can run about 150–185°F. To set the valve: loosen
 the handwheel screw, lift, turn, lock, and check at the faucet (<a href="#src-036">SRC-036</a>).</li>
 <li>Do not run overnight heat above about 5,000 ft without Altitude kit
 22 1000 33 22 00 (<a href="#dec-006">DEC-006</a>).</li>
-<li>Do not thrash the EasyStart more than two off/on cycles into a fault
-(<a href="#src-009">SRC-009</a>). Clear locks with diagnostics, not
+<li>Do not cycle the EasyStart off and on more than twice into a fault
+(<a href="#src-009">SRC-009</a>). Clear locks with diagnostics, not by
 power cycling.</li>
 <li>Check the WFT level only when the system is cool.</li>
-<li>Tap heat needs circulating glycol from the diesel pump through the
-Duda. Isotemp AC heats the static chamber only; the coil still sees loop
-flow when the pump runs. AC alone is not a shower.</li>
+<li>Hot water at the taps needs circulating glycol from the diesel pump
+through the Duda. Isotemp AC only heats the static chamber; the coil
+still sees loop flow when the pump runs. Running the element alone will
+not give you a shower.</li>
 <li>The Isotemp 750 W element lands on Paneltronics <strong>WATER
 HEATER</strong> only—never on 12 V (<a href="#dec-004">DEC-004</a> / <a href="#dec-020">DEC-020</a>).</li>
 </ol>
@@ -2140,22 +2140,23 @@ rule are clear</label></li>
 </ul>
 <p>→ <a href="#current-status-report">Status</a>, then <a href="#builders-guide">Make it</a>.</p>
 <h1 id="current-status-report">Current status report</h1>
-<p><strong>Bridge.</strong> Read this after <a href="#users-guide">Use</a> and before <a href="#builders-guide">Make
-it</a>. It is an honest inventory as of September 2026. It does not
-replace the HOLD checklists. Part names match <a href="#the-parts">The
-parts</a>.</p>
-<p>Jump: <a href="#four-buckets-overview">Four buckets</a> · <a href="#builders-guide">Builder</a> · <a href="#questions-for-you-in-order">Questions</a></p>
+<p>Read this chapter after the <a href="#users-guide">User’s guide</a>
+and before the <a href="#builders-guide">Builder’s guide</a>. This is an
+honest inventory as of September 2026. Part names match <a href="#the-parts">The parts</a>. The HOLD checklists in the Builder’s
+guide still govern the work.</p>
+<p>Jump: <a href="#project-phases-overview">Project phases</a> · <a href="#builders-guide">Builder</a> · <a href="#questions-for-you-in-order">Questions</a></p>
 <h2 id="next-action">Next action</h2>
 <div class="next">
-<p><strong>Bucket B — this weekend.</strong> Mount the WFT 5 L
+<p><strong>Phase B — this weekend.</strong> Mount the WFT 5 L
 expansion/header tank at the highest circulating point, and mount the
 Isotemp Slim Square 4.2 gal heat battery empty under the sofa. Land
 EasyStart Timer and heater 12 V, plus the master switch. Route the
 Isotemp element cable to Paneltronics <strong>WATER HEATER</strong> and
-leave it dead.</p>
+leave that cable dead.</p>
 </div>
-<p>Ask once per part: if it is already on the van, inspect and finish
-it; if it is still in the garage, bring it in.</p>
+<p>Ask once per part: if the part is already on the van, inspect and
+finish the remaining work; if the part is still in the garage, bring the
+part in for Phase B.</p>
 <h2 id="already-on-the-van">Already on the van</h2>
 <table>
 <colgroup>
@@ -2254,9 +2255,13 @@ HEATER</strong> (dead)</td>
 </tr>
 </tbody>
 </table>
-<h2 id="forbidden-do-not-improve-into-these">Forbidden (do not “improve”
-into these)</h2>
+<h2 id="do-not-change-the-design-into-these">Do not change the design
+into these</h2>
 <table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
 <tbody>
 <tr>
 <td>Second glycol pump</td>
@@ -2276,21 +2281,21 @@ into these)</h2>
 </tr>
 <tr>
 <td>Hot taps without the diesel pump</td>
-<td>Chamber heat is not Duda heat</td>
+<td>Heat in the Isotemp chamber is not heat at the Duda</td>
 </tr>
 </tbody>
 </table>
-<h2 id="still-open-manuals-first-do-not-invent">Still open (manuals
-first — do not invent)</h2>
+<h2 id="still-open-check-the-manuals-first">Still open (check the
+manuals first)</h2>
 <ul>
 <li><a href="#q-022">Q-022</a> — SC1600 relay and approved wake landing;
-EasyStart only until then<br />
+use EasyStart only until then<br />
 </li>
 <li><a href="#q-009">Q-009</a> — upstream GFCI/ELCI and element route
 before HOLD 9<br />
 </li>
-<li><a href="#q-015">Q-015</a> — altitude kit <strong>install and
-wire</strong> (identity is done)<br />
+<li><a href="#q-015">Q-015</a> — altitude kit install and wire (identity
+is confirmed)<br />
 </li>
 <li><a href="#questions-for-you-in-order">Questions for you</a> — bay
 spots, relay, fans, GFCI, mountain timing</li>
@@ -2298,38 +2303,38 @@ spots, relay, fans, GFCI, mountain timing</li>
 <p>→ <a href="#builders-guide">Builder’s guide</a>.</p>
 <section id="builders-guide" class="install-guide">
 <h1>Builder’s guide</h1>
-<p><strong>Stage 3 — Make it.</strong> Begin only after <a href="#system-design">System Design</a> and the <a href="#users-guide">User’s guide</a>, and after a skim of <a href="#current-status-report">Current status</a>.</p>
-<p>Jump: <a href="#four-buckets">Four buckets</a> · <a href="#hold-0">HOLD 0</a> · <a href="#hold-1-fuel">1 Fuel</a> · <a href="#hold-2-exhaust">2 Exhaust</a> · <a href="#hold-3-mounts">3
+<p><strong>Stage 3 — Make it.</strong> Begin only after <a href="#system-design">System Design</a>, the <a href="#users-guide">User’s guide</a>, and a skim of <a href="#current-status-report">Current status</a>.</p>
+<p>Jump: <a href="#project-phases">Project phases</a> · <a href="#hold-0">HOLD 0</a> · <a href="#hold-1-fuel">1 Fuel</a> · <a href="#hold-2-exhaust">2 Exhaust</a> · <a href="#hold-3-mounts">3
 Mounts</a> · <a href="#hold-4-electrical">4 Wiring</a> · <a href="#hold-5-glycol">5 Glycol</a> · <a href="#hold-6-freshwater">6
 Fresh</a> · <a href="#hold-7-fill">7 Fill</a> · <a href="#hold-8-first-fire">8 First fire</a> · <a href="#hold-9">9 AC</a>
 · <a href="#acceptance">Acceptance</a></p>
-<p><strong>Rhythm.</strong> Assemble, inspect, pass the HOLD, then
-continue. Do not cross a HOLD. If a part, port, or wire is unclear,
-stop. After Acceptance, live from the <a href="#users-guide">User’s
-guide</a>.</p>
-<p><strong>Who wins.</strong> <a href="#src-009">SRC-009</a> governs the
-heater. <a href="#src-002">SRC-002</a> and <a href="#src-003">SRC-003</a> govern the altitude kit and EasyStart. <a href="#src-019">SRC-019</a> governs hose, header, and bleed craft. <a href="#system-design">System Design</a> governs this van’s locked
+<p>Work in a simple loop: assemble, inspect, pass the HOLD, then
+continue. Do not skip a HOLD. If a part, port, or wire is unclear, stop.
+After Acceptance, use the <a href="#users-guide">User’s guide</a> as the
+day-to-day manual.</p>
+<p><strong>Authority.</strong> <a href="#src-009">SRC-009</a> governs
+the heater. <a href="#src-002">SRC-002</a> and <a href="#src-003">SRC-003</a> govern the altitude kit and EasyStart. <a href="#src-019">SRC-019</a> governs hose, header, and bleed craft. <a href="#system-design">System Design</a> governs this van’s locked
 layout.</p>
 <div class="must">
 <p>Use reinforced heater hose, stainless clamps, and brass, copper, or
 stainless barbs (section 5). Garden hose and ordinary radiator hose fail
 under hydronic heat.</p>
 </div>
-<h2 id="done-looks-like">Done looks like</h2>
+<h2 id="what-done-means">What “done” means</h2>
 <p>Cabin heat and diesel hot water pass <a href="#acceptance">Acceptance</a>. <a href="#hold-9">HOLD 9</a> for
 Isotemp AC can wait.</p>
-<h2 id="four-buckets">Four buckets</h2>
-<p>This is the same map as <a href="#four-buckets-overview">How to
-use</a>. You are in <strong>bucket B</strong>.</p>
+<h2 id="project-phases">Four project phases</h2>
+<p>This is the same map as <a href="#project-phases-overview">How to
+use</a>. You are in <strong>Phase B</strong>.</p>
 <div class="next">
-<p><strong>Start here.</strong> Complete Phase 3 mounts (WFT and
-Isotemp), then Phase 4 dry wiring. Do not fill or fire yet.</p>
+<p><strong>Start here.</strong> Complete Phase B mounts (WFT and
+Isotemp), then dry wiring (steps 3–4). Do not fill or fire yet.</p>
 </div>
 <table>
 <thead>
 <tr>
-<th>Bucket</th>
-<th>Phases</th>
+<th>Phase</th>
+<th>Steps</th>
 <th>Now</th>
 </tr>
 </thead>
@@ -2365,7 +2370,7 @@ Isotemp), then Phase 4 dry wiring. Do not fill or fire yet.</p>
 </colgroup>
 <thead>
 <tr>
-<th>Phase</th>
+<th>Step</th>
 <th>Work on</th>
 <th>Do not do yet</th>
 <th>Done when</th>
@@ -2463,7 +2468,7 @@ Design</a> check done<br />
 guide</a> read<br />
 </label></li>
 <li><label><input type="checkbox"></input><a href="#current-status-report">Current status</a> skimmed — next action
-is bucket B<br />
+is Phase B<br />
 </label></li>
 <li><label><input type="checkbox"></input>Engine off, heater off, no
 flame/smoking<br />

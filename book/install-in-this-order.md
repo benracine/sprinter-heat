@@ -2,38 +2,38 @@
 
 # Builder's guide
 
-**Stage 3 — Make it.** Only after [System Design](#system-design) and [User’s guide](#users-guide), and a skim of [Current status](#current-status-report).
+**Stage 3 — Make it.** Begin only after [System Design](#system-design), the [User’s guide](#users-guide), and a skim of [Current status](#current-status-report).
 
-Jump: [Four buckets](#four-buckets) · [HOLD 0](#hold-0) · [1 Fuel](#hold-1-fuel) · [2 Exhaust](#hold-2-exhaust) · [3 Mounts](#hold-3-mounts) · [4 Wiring](#hold-4-electrical) · [5 Glycol](#hold-5-glycol) · [6 Fresh](#hold-6-freshwater) · [7 Fill](#hold-7-fill) · [8 First fire](#hold-8-first-fire) · [9 AC](#hold-9) · [Acceptance](#acceptance)
+Jump: [Project phases](#project-phases) · [HOLD 0](#hold-0) · [1 Fuel](#hold-1-fuel) · [2 Exhaust](#hold-2-exhaust) · [3 Mounts](#hold-3-mounts) · [4 Wiring](#hold-4-electrical) · [5 Glycol](#hold-5-glycol) · [6 Fresh](#hold-6-freshwater) · [7 Fill](#hold-7-fill) · [8 First fire](#hold-8-first-fire) · [9 AC](#hold-9) · [Acceptance](#acceptance)
 
-**Rhythm:** assemble → inspect → HOLD → continue. Do not cross a HOLD. Unclear part/port/wire → stop. After Acceptance, live from the [User’s guide](#users-guide).
+Work in a simple loop: assemble, inspect, pass the HOLD, then continue. Do not skip a HOLD. If a part, port, or wire is unclear, stop. After Acceptance, use the [User’s guide](#users-guide) as the day-to-day manual.
 
-Who wins: [SRC-009](#src-009) on the heater · [SRC-002](#src-002) / [SRC-003](#src-003) on altitude / EasyStart · [SRC-019](#src-019) on hose/header/bleed · [System Design](#system-design) on this van’s layout.
+**Authority.** [SRC-009](#src-009) governs the heater. [SRC-002](#src-002) and [SRC-003](#src-003) govern the altitude kit and EasyStart. [SRC-019](#src-019) governs hose, header, and bleed craft. [System Design](#system-design) governs this van’s locked layout.
 
 ::: {.must}
-Use reinforced heater hose, stainless clamps, and brass/copper/stainless barbs (section 5). Garden hose and ordinary radiator hose fail under hydronic heat.
+Use reinforced heater hose, stainless clamps, and brass, copper, or stainless barbs (section 5). Garden hose and ordinary radiator hose fail under hydronic heat.
 :::
 
-## Done looks like
+## What “done” means
 
-Cabin heat and diesel hot water pass [Acceptance](#acceptance). [HOLD 9](#hold-9) (Isotemp AC) can wait.
+Cabin heat and diesel hot water pass [Acceptance](#acceptance). [HOLD 9](#hold-9) for Isotemp AC can wait.
 
-## Four buckets {#four-buckets}
+## Four project phases {#project-phases}
 
-Same map as [How to use](#four-buckets-overview). You are in **B**.
+This is the same map as [How to use](#project-phases-overview). You are in **Phase B**.
 
 ::: {.next}
-**Start here:** Phase 3 mounts (WFT + Isotemp), then Phase 4 dry wiring. Do not fill or fire yet.
+**Start here.** Complete Phase B mounts (WFT and Isotemp), then dry wiring (steps 3–4). Do not fill or fire yet.
 :::
 
-| Bucket | Phases | Now |
+| Phase | Steps | Now |
 |---|---|---|
 | **A.** Safe under the van | 1–2 | Inspect |
 | **B.** Hardware in place | 3–4 | **Do this next** |
 | **C.** Loops closed dry | 5–6 | After B |
 | **D.** Fill, fire, live | 7–8 (+9) | Last |
 
-| Phase | Work on | Do not do yet | Done when |
+| Step | Work on | Do not do yet | Done when |
 |---|---|---|---|
 | 0. Prepare | Design, status, manuals, parts | Cut hose / power “to see” | [HOLD 0](#hold-0) |
 | 1. Fuel | Inspect pickup, pump angle, clamps, rise | Dry start | [HOLD 1](#hold-1-fuel) |
@@ -48,18 +48,18 @@ Same map as [How to use](#four-buckets-overview). You are in **B**.
 
 ## Before you start
 
-1. Engine off. Heater off. No smoking. No open flame.  
-2. [SRC-009](#src-009), [SRC-003](#src-003), and [SRC-002](#src-002) within reach.  
-3. Read every DANGER / CAUTION / MUST before the work it governs.  
-4. Flashlight walk under the van.  
-5. No glycol fill, Isotemp AC, or fire except at their HOLDs.  
+1. Keep the engine off, the heater off, and no smoking or open flame.  
+2. Keep [SRC-009](#src-009), [SRC-003](#src-003), and [SRC-002](#src-002) within reach.  
+3. Read every DANGER, CAUTION, and MUST box before the work it governs.  
+4. Walk under the van with a flashlight.  
+5. Do not fill with glycol, energize Isotemp AC, or fire the heater except at their HOLDs.  
 6. **Label before you connect.** Tape every open port.
 
 ### HOLD 0 — ready {#hold-0}
 
 - [ ] [System Design](#system-design) check done  
 - [ ] [User’s guide](#users-guide) read  
-- [ ] [Current status](#current-status-report) skimmed — next action is bucket B  
+- [ ] [Current status](#current-status-report) skimmed — next action is Phase B  
 - [ ] Engine off, heater off, no flame/smoking  
 - [ ] Manuals on hand  
 - [ ] Underside walk done  

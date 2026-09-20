@@ -294,7 +294,7 @@ td:first-child {
   font-weight: 500;
 }
 
-/* Bucket / stage tables — breathe a little */
+/* Project-phase / stage tables — breathe a little */
 table:has(th:first-child) tr:hover td {
   /* print ignores hover; screen uses this later */
 }

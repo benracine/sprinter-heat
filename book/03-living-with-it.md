@@ -1,6 +1,6 @@
 # User's guide
 
-**Stage 2 — Use.** After [Architecture](#system-design), before [Make it](#builders-guide). After [Acceptance](#acceptance), this is day-to-day. Until then, not permission to fire.
+**Stage 2 — Use.** Read this chapter after [System Design](#system-design) and before [Make it](#builders-guide). After [Acceptance](#acceptance), use this chapter as the day-to-day manual. Until Acceptance, treat the tables below as the operating target—not as permission to light the heater.
 
 Jump: [Architecture](#system-design) · [Status](#current-status-report) · [Make it](#builders-guide) · [Numbers](#the-numbers-that-matter)
 
@@ -8,47 +8,47 @@ Jump: [Architecture](#system-design) · [Status](#current-status-report) · [Mak
 
 | You want… | Do this |
 |---|---|
-| Parked | Master **Off**; Isotemp AC (**WATER HEATER**) off |
+| Parked | Turn the master **Off**, and leave Isotemp AC (**WATER HEATER**) off |
 | Cabin heat | Master **On** → EasyStart Timer start → fan dial Low/Med/High → wait a few minutes |
-| Hot water | Master **On** → short EasyStart start → tap through AM100-1LF only |
-| Pre-heat later | Master **On** → EasyStart schedule |
-| Optional AC chamber charge | After [HOLD 9](#hold-9) → **WATER HEATER** on → EasyStart later if you want that heat at the taps |
-| Mountains overnight | Altitude kit installed first ([DEC-006](#dec-006)) |
-| Emergency stop | EasyStart off → master Off → Isotemp AC off → fuse/battery if needed. ≤2 off/on into a fault |
+| Hot water | Master **On** → short EasyStart start → draw the tap through the AM100-1LF only |
+| Pre-heat later | Master **On** → set an EasyStart schedule |
+| Optional AC chamber charge | After [HOLD 9](#hold-9) → turn **WATER HEATER** on → use EasyStart later if you want that stored heat at the taps |
+| Mountains overnight | Install the altitude kit first ([DEC-006](#dec-006)) |
+| Emergency stop | EasyStart off → master Off → Isotemp AC off → fuse or battery if needed. No more than two off/on cycles into a fault |
 
-Until [Q-022](#q-022) closes: always start heat from the EasyStart Timer (not the SC1600B).
+Until [Q-022](#q-022) closes, always start heat from the EasyStart Timer, not from the SC1600B.
 
-A heat call wakes the heater and starts its pump; the burner fires only if coolant is cool enough. Cool cabin air for the first minute or two is normal.
+A heat call wakes the heater and starts its pump. The burner fires only if coolant is cool enough. Cool cabin air for the first minute or two is normal.
 
 ## Hard rules
 
-1. Master Off when parked or unattended.
-2. Showers only through the AM100-1LF (~120°F, labeled). Unmixed plate water can be ~150–185°F. Setpoint: loosen handwheel screw → lift → turn → lock; check at the faucet ([SRC-036](#src-036)).
-3. No overnight heat above ~5,000 ft without Altitude kit 22 1000 33 22 00 ([DEC-006](#dec-006)).
-4. ≤2 EasyStart off/on cycles into a fault ([SRC-009](#src-009)). Clear locks with diagnostics, not power thrashing.
-5. Check WFT level only when cool.
-6. Tap heat needs circulating glycol (diesel pump through the Duda). Isotemp AC heats the static chamber only; the coil still sees loop flow when the pump runs — AC alone is not a shower.
-7. Isotemp 750 W lands on Paneltronics **WATER HEATER** only — never 12 V ([DEC-004](#dec-004) / [DEC-020](#dec-020)).
+1. Turn the master Off when the van is parked or unattended.
+2. Take showers only through the AM100-1LF (about 120°F, labeled). Unmixed plate water can run about 150–185°F. To set the valve: loosen the handwheel screw, lift, turn, lock, and check at the faucet ([SRC-036](#src-036)).
+3. Do not run overnight heat above about 5,000 ft without Altitude kit 22 1000 33 22 00 ([DEC-006](#dec-006)).
+4. Do not cycle the EasyStart off and on more than twice into a fault ([SRC-009](#src-009)). Clear locks with diagnostics, not by power cycling.
+5. Check the WFT level only when the system is cool.
+6. Hot water at the taps needs circulating glycol from the diesel pump through the Duda. Isotemp AC only heats the static chamber; the coil still sees loop flow when the pump runs. Running the element alone will not give you a shower.
+7. The Isotemp 750 W element lands on Paneltronics **WATER HEATER** only—never on 12 V ([DEC-004](#dec-004) / [DEC-020](#dec-020)).
 
 ## Controls at a glance
 
 | Control | Does | Does not |
 |---|---|---|
-| Master switch | Cuts 12 V to EasyStart, SC1600B, and cabin fans | Set temperatures; run Isotemp AC |
-| EasyStart Timer | Start/stop, schedule, target ([SRC-003](#src-003)) | Replace master Off |
-| SC1600B | Low-current heat **signal** only ([SRC-033](#src-033)); needs relay for fans | Fan power; trusted auto until [Q-022](#q-022) |
-| Fan dial | Low/Med/High — no hard Off ([DEC-018](#dec-018)) | Heat call |
-| AM100-1LF | Safe tap temperature | Glycol valve; Isotemp factory mixer |
-| Paneltronics **WATER HEATER** | Optional chamber charge after [HOLD 9](#hold-9) | Circulate glycol alone |
+| Master switch | Cuts 12 V to EasyStart, the SC1600B path, and cabin fans | Set temperatures; run Isotemp AC |
+| EasyStart Timer | Start, stop, schedule, and target ([SRC-003](#src-003)) | Replace master Off |
+| SC1600B | Low-current heat **signal** only ([SRC-033](#src-033)); needs a relay for fans | Fan power; trusted auto until [Q-022](#q-022) |
+| Fan dial | Low/Med/High — no hard Off ([DEC-018](#dec-018)) | Call for heat |
+| AM100-1LF | Safe tap temperature | Act as a glycol valve or the Isotemp factory mixer |
+| Paneltronics **WATER HEATER** | Optional chamber charge after [HOLD 9](#hold-9) | Circulate glycol by itself |
 
 ## If something is wrong
 
-1. EasyStart off → master Off → Isotemp AC off.  
-2. Fuse or battery if needed (counts toward ≤2 off/on).  
-3. Before restart: fuel wetness/smell, exhaust into cabin, glycol leak, cool WFT low, battery outside 10.5–16 V, lukewarm core while burner runs (air/kink). → [Hazards](#hazard-register)  
-4. After overheat: wait until coolant is below ~70°C (158°F).  
+1. Turn EasyStart off, then master Off, then Isotemp AC off.  
+2. Pull the fuse or disconnect the battery if needed (that counts toward the two off/on limit).  
+3. Before you restart, check for fuel wetness or smell, exhaust into the cabin, a glycol leak, a low cool WFT, battery outside 10.5–16 V, or a lukewarm core while the burner runs (air or a kink). → [Hazards](#hazard-register)  
+4. After an overheat, wait until coolant is below about 70°C (158°F).  
 
-Normal Power/High/Low staging is not a fault — see [The numbers](#the-numbers-that-matter).
+Normal Power / High / Low staging is not a fault—see [The numbers](#the-numbers-that-matter).
 
 ## Occasional checks
 
@@ -56,17 +56,17 @@ Normal Power/High/Low staging is not a fault — see [The numbers](#the-numbers-
 |---|---|
 | After loop work | Cool WFT level; same mix (Prestone LowTox AF555 ≤50%) |
 | Before high camps | Altitude kit installed and checked |
-| Early fires | Fuel/exhaust: wetness, rub, smell |
+| Early fires | Fuel and exhaust for wetness, rub, or smell |
 | Before a heat call | Battery 10.5–16 V |
-| Before Isotemp AC | Chamber full; **WATER HEATER** + upstream GFCI/ELCI |
+| Before Isotemp AC | Chamber full; **WATER HEATER** plus upstream GFCI/ELCI |
 | Long storage | Master Off; Isotemp AC off |
 
 ## Use check
 
-- [ ] Parked = master Off  
-- [ ] Heat/hot water from EasyStart until thermostat verified  
-- [ ] Showers only through AM100-1LF ~120°F  
-- [ ] Isotemp AC ≠ shower  
-- [ ] Emergency stop + ≤2 off/on rule  
+- [ ] Parked means master Off  
+- [ ] Heat and hot water come from EasyStart until the thermostat is verified  
+- [ ] Showers only through AM100-1LF at about 120°F  
+- [ ] Isotemp AC is not a shower  
+- [ ] Emergency stop and the two off/on rule are clear  
 
 → [Status](#current-status-report), then [Make it](#builders-guide).
