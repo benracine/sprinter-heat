@@ -890,7 +890,8 @@ margin: 0.8em auto;
 <body>
 <header id="title-block-header">
 <h1 class="title">Heat &amp; hot water</h1>
-<p class="subtitle">Sprinter install</p>
+<p class="subtitle">Sprinter hydronic heat and hot water — design,
+living with it, and install</p>
 <p class="date">September 2026</p>
 </header>
 <nav id="TOC" role="doc-toc">
@@ -1531,7 +1532,7 @@ the <a href="#users-guide">User’s Guide</a> or the <a href="#builders-guide">B
 part does, what the part must not do, and which way glycol flows. Next:
 skim <a href="#the-numbers-that-matter">The Numbers</a>, then the User’s
 Guide.</p>
-<p>Jump: <a href="#safety">Safety</a> · <a href="#the-numbers-that-matter">The Numbers</a> · <a href="#users-guide">User’s Guide</a> · <a href="#current-status-report">Current Status</a> · <a href="#builders-guide">Builder’s Guide</a></p>
+<p>Jump: <a href="#safety">Safety</a> · <a href="#the-numbers-that-matter">The Numbers</a> · <a href="#users-guide">User’s Guide</a> · <a href="#isotemp-value-study">Isotemp value study</a> · <a href="#current-status-report">Current Status</a> · <a href="#builders-guide">Builder’s Guide</a></p>
 <h2 id="purpose">Purpose</h2>
 <p>One diesel hydronic loop under the van does two jobs: warm cabin air,
 and heat tap water. Both jobs share one closed propylene glycol loop.
@@ -1694,7 +1695,7 @@ point — not in series, not off the Isotemp coil</td>
 <tr>
 <td>Why that order</td>
 <td>Cabin heat first (daily priority); Duda next (hottest fluid for
-showers); Isotemp last (stores leftovers)</td>
+showers); Isotemp last (stores leftovers — see <a href="#isotemp-value-study">Isotemp value study</a>)</td>
 </tr>
 <tr>
 <td>Drinking water</td>
@@ -1762,8 +1763,10 @@ for the same conductors. Full pin tables live in <a href="#electrical-and-contro
 <img role="img" aria-label="Day-one electrical" src="data:image/svg+xml;base64,PHN2ZyBhcmlhLXJvbGVkZXNjcmlwdGlvbj0iZmxvd2NoYXJ0LXYyIiByb2xlPSJncmFwaGljcy1kb2N1bWVudCBkb2N1bWVudCIgdmlld0JveD0iMCAwIDcyOC4zMDg1OTM3NSA5NTgiIHN0eWxlPSJtYXgtd2lkdGg6IDcyOC4zMDlweDsgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7IiBjbGFzcz0iZmxvd2NoYXJ0IiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaWQ9Im15LXN2ZyI+PHN0eWxlPiNteS1zdmd7Zm9udC1zaXplOjI4cHg7ZmlsbDojMWMxOTE3O31Aa2V5ZnJhbWVzIGVkZ2UtYW5pbWF0aW9uLWZyYW1le2Zyb217c3Ryb2tlLWRhc2hvZmZzZXQ6MDt9fUBrZXlmcmFtZXMgZGFzaHt0b3tzdHJva2UtZGFzaG9mZnNldDowO319I215LXN2ZyAuZWRnZS1hbmltYXRpb24tc2xvd3tzdHJva2UtZGFzaGFycmF5OjksNSFpbXBvcnRhbnQ7c3Ryb2tlLWRhc2hvZmZzZXQ6OTAwO2FuaW1hdGlvbjpkYXNoIDUwcyBsaW5lYXIgaW5maW5pdGU7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7fSNteS1zdmcgLmVkZ2UtYW5pbWF0aW9uLWZhc3R7c3Ryb2tlLWRhc2hhcnJheTo5LDUhaW1wb3J0YW50O3N0cm9rZS1kYXNob2Zmc2V0OjkwMDthbmltYXRpb246ZGFzaCAyMHMgbGluZWFyIGluZmluaXRlO3N0cm9rZS1saW5lY2FwOnJvdW5kO30jbXktc3ZnIC5lcnJvci1pY29ue2ZpbGw6I2VlZWVlYzt9I215LXN2ZyAuZXJyb3ItdGV4dHtmaWxsOiMxMTExMTM7c3Ryb2tlOiMxMTExMTM7fSNteS1zdmcgLmVkZ2UtdGhpY2tuZXNzLW5vcm1hbHtzdHJva2Utd2lkdGg6MXB4O30jbXktc3ZnIC5lZGdlLXRoaWNrbmVzcy10aGlja3tzdHJva2Utd2lkdGg6My41cHg7fSNteS1zdmcgLmVkZ2UtcGF0dGVybi1zb2xpZHtzdHJva2UtZGFzaGFycmF5OjA7fSNteS1zdmcgLmVkZ2UtdGhpY2tuZXNzLWludmlzaWJsZXtzdHJva2Utd2lkdGg6MDtmaWxsOm5vbmU7fSNteS1zdmcgLmVkZ2UtcGF0dGVybi1kYXNoZWR7c3Ryb2tlLWRhc2hhcnJheTozO30jbXktc3ZnIC5lZGdlLXBhdHRlcm4tZG90dGVke3N0cm9rZS1kYXNoYXJyYXk6Mjt9I215LXN2ZyAubWFya2Vye2ZpbGw6IzQ0NDAzYztzdHJva2U6IzQ0NDAzYzt9I215LXN2ZyAubWFya2VyLmNyb3Nze3N0cm9rZTojNDQ0MDNjO30jbXktc3ZnIHN2Z3tmb250LXNpemU6MjhweDt9I215LXN2ZyBwe21hcmdpbjowO30jbXktc3ZnIC5sYWJlbHtjb2xvcjojMWMxOTE3O30jbXktc3ZnIC5jbHVzdGVyLWxhYmVsIHRleHR7ZmlsbDojMTExMTEzO30jbXktc3ZnIC5jbHVzdGVyLWxhYmVsIHNwYW57Y29sb3I6IzExMTExMzt9I215LXN2ZyAuY2x1c3Rlci1sYWJlbCBzcGFuIHB7YmFja2dyb3VuZC1jb2xvcjp0cmFuc3BhcmVudDt9I215LXN2ZyAubGFiZWwgdGV4dCwjbXktc3ZnIHNwYW57ZmlsbDojMWMxOTE3O2NvbG9yOiMxYzE5MTc7fSNteS1zdmcgLm5vZGUgcmVjdCwjbXktc3ZnIC5ub2RlIGNpcmNsZSwjbXktc3ZnIC5ub2RlIGVsbGlwc2UsI215LXN2ZyAubm9kZSBwb2x5Z29uLCNteS1zdmcgLm5vZGUgcGF0aHtmaWxsOiNmNWY1ZjQ7c3Ryb2tlOiM1NzUzNGU7c3Ryb2tlLXdpZHRoOjFweDt9I215LXN2ZyAucm91Z2gtbm9kZSAubGFiZWwgdGV4dCwjbXktc3ZnIC5ub2RlIC5sYWJlbCB0ZXh0LCNteS1zdmcgLmltYWdlLXNoYXBlIC5sYWJlbCwjbXktc3ZnIC5pY29uLXNoYXBlIC5sYWJlbHt0ZXh0LWFuY2hvcjptaWRkbGU7fSNteS1zdmcgLm5vZGUgLmthdGV4IHBhdGh7ZmlsbDojMDAwO3N0cm9rZTojMDAwO3N0cm9rZS13aWR0aDoxcHg7fSNteS1zdmcgLnJvdWdoLW5vZGUgLmxhYmVsLCNteS1zdmcgLm5vZGUgLmxhYmVsLCNteS1zdmcgLmltYWdlLXNoYXBlIC5sYWJlbCwjbXktc3ZnIC5pY29uLXNoYXBlIC5sYWJlbHt0ZXh0LWFsaWduOmNlbnRlcjt9I215LXN2ZyAubm9kZS5jbGlja2FibGV7Y3Vyc29yOnBvaW50ZXI7fSNteS1zdmcgLnJvb3QgLmFuY2hvciBwYXRoe2ZpbGw6IzQ0NDAzYyFpbXBvcnRhbnQ7c3Ryb2tlLXdpZHRoOjA7c3Ryb2tlOiM0NDQwM2M7fSNteS1zdmcgLmFycm93aGVhZFBhdGh7ZmlsbDojMDUwNTA2O30jbXktc3ZnIC5lZGdlUGF0aCAucGF0aHtzdHJva2U6IzQ0NDAzYztzdHJva2Utd2lkdGg6Mi4wcHg7fSNteS1zdmcgLmZsb3djaGFydC1saW5re3N0cm9rZTojNDQ0MDNjO2ZpbGw6bm9uZTt9I215LXN2ZyAuZWRnZUxhYmVse2JhY2tncm91bmQtY29sb3I6I2ZhZmFmOTt0ZXh0LWFsaWduOmNlbnRlcjt9I215LXN2ZyAuZWRnZUxhYmVsIHB7YmFja2dyb3VuZC1jb2xvcjojZmFmYWY5O30jbXktc3ZnIC5lZGdlTGFiZWwgcmVjdHtvcGFjaXR5OjAuNTtiYWNrZ3JvdW5kLWNvbG9yOiNmYWZhZjk7ZmlsbDojZmFmYWY5O30jbXktc3ZnIC5sYWJlbEJrZ3tiYWNrZ3JvdW5kLWNvbG9yOnJnYmEoMjUwLCAyNTAsIDI0OSwgMC41KTt9I215LXN2ZyAuY2x1c3RlciByZWN0e2ZpbGw6I2VlZWVlYztzdHJva2U6Izc4NzE2YztzdHJva2Utd2lkdGg6MXB4O30jbXktc3ZnIC5jbHVzdGVyIHRleHR7ZmlsbDojMTExMTEzO30jbXktc3ZnIC5jbHVzdGVyIHNwYW57Y29sb3I6IzExMTExMzt9I215LXN2ZyBkaXYubWVybWFpZFRvb2x0aXB7cG9zaXRpb246YWJzb2x1dGU7dGV4dC1hbGlnbjpjZW50ZXI7bWF4LXdpZHRoOjIwMHB4O3BhZGRpbmc6MnB4O2ZvbnQtc2l6ZToxMnB4O2JhY2tncm91bmQ6I2VlZWVlYztib3JkZXI6MXB4IHNvbGlkIGhzbCg2MCwgMCUsIDgyLjk0MTE3NjQ3MDYlKTtib3JkZXItcmFkaXVzOjJweDtwb2ludGVyLWV2ZW50czpub25lO3otaW5kZXg6MTAwO30jbXktc3ZnIC5mbG93Y2hhcnRUaXRsZVRleHR7dGV4dC1hbmNob3I6bWlkZGxlO2ZvbnQtc2l6ZToxOHB4O2ZpbGw6IzFjMTkxNzt9I215LXN2ZyByZWN0LnRleHR7ZmlsbDpub25lO3N0cm9rZS13aWR0aDowO30jbXktc3ZnIC5pY29uLXNoYXBlLCNteS1zdmcgLmltYWdlLXNoYXBle2JhY2tncm91bmQtY29sb3I6I2ZhZmFmOTt0ZXh0LWFsaWduOmNlbnRlcjt9I215LXN2ZyAuaWNvbi1zaGFwZSBwLCNteS1zdmcgLmltYWdlLXNoYXBlIHB7YmFja2dyb3VuZC1jb2xvcjojZmFmYWY5O3BhZGRpbmc6MnB4O30jbXktc3ZnIC5pY29uLXNoYXBlIHJlY3QsI215LXN2ZyAuaW1hZ2Utc2hhcGUgcmVjdHtvcGFjaXR5OjAuNTtiYWNrZ3JvdW5kLWNvbG9yOiNmYWZhZjk7ZmlsbDojZmFmYWY5O30jbXktc3ZnIDpyb290ey0tbWVybWFpZC1mb250LWZhbWlseToidHJlYnVjaGV0IG1zIix2ZXJkYW5hLGFyaWFsLHNhbnMtc2VyaWY7fSNteS1zdmcgLnNvbGlkJmd0Oyp7ZmlsbDojZjVmNWY0IWltcG9ydGFudDtzdHJva2U6IzU3NTM0ZSFpbXBvcnRhbnQ7c3Ryb2tlLXdpZHRoOjFweCFpbXBvcnRhbnQ7Y29sb3I6IzFjMTkxNyFpbXBvcnRhbnQ7fSNteS1zdmcgLnNvbGlkIHNwYW57ZmlsbDojZjVmNWY0IWltcG9ydGFudDtzdHJva2U6IzU3NTM0ZSFpbXBvcnRhbnQ7c3Ryb2tlLXdpZHRoOjFweCFpbXBvcnRhbnQ7Y29sb3I6IzFjMTkxNyFpbXBvcnRhbnQ7fSNteS1zdmcgLnNvbGlkIHRzcGFue2ZpbGw6IzFjMTkxNyFpbXBvcnRhbnQ7fSNteS1zdmcgLm9wZW4mZ3Q7KntmaWxsOiNlZWVlZWMhaW1wb3J0YW50O3N0cm9rZTojNzg3MTZjIWltcG9ydGFudDtzdHJva2Utd2lkdGg6MnB4IWltcG9ydGFudDtzdHJva2UtZGFzaGFycmF5OjQgMyFpbXBvcnRhbnQ7Y29sb3I6IzFjMTkxNyFpbXBvcnRhbnQ7fSNteS1zdmcgLm9wZW4gc3BhbntmaWxsOiNlZWVlZWMhaW1wb3J0YW50O3N0cm9rZTojNzg3MTZjIWltcG9ydGFudDtzdHJva2Utd2lkdGg6MnB4IWltcG9ydGFudDtzdHJva2UtZGFzaGFycmF5OjQgMyFpbXBvcnRhbnQ7Y29sb3I6IzFjMTkxNyFpbXBvcnRhbnQ7fSNteS1zdmcgLm9wZW4gdHNwYW57ZmlsbDojMWMxOTE3IWltcG9ydGFudDt9PC9zdHlsZT48Zz48bWFya2VyIG9yaWVudD0iYXV0byIgbWFya2VySGVpZ2h0PSI4IiBtYXJrZXJXaWR0aD0iOCIgbWFya2VyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiByZWZZPSI1IiByZWZYPSI1IiB2aWV3Qm94PSIwIDAgMTAgMTAiIGNsYXNzPSJtYXJrZXIgZmxvd2NoYXJ0LXYyIiBpZD0ibXktc3ZnX2Zsb3djaGFydC12Mi1wb2ludEVuZCI+PHBhdGggc3R5bGU9InN0cm9rZS13aWR0aDogMTsgc3Ryb2tlLWRhc2hhcnJheTogMSwgMDsiIGNsYXNzPSJhcnJvd01hcmtlclBhdGgiIGQ9Ik0gMCAwIEwgMTAgNSBMIDAgMTAgeiIvPjwvbWFya2VyPjxtYXJrZXIgb3JpZW50PSJhdXRvIiBtYXJrZXJIZWlnaHQ9IjgiIG1hcmtlcldpZHRoPSI4IiBtYXJrZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIHJlZlk9IjUiIHJlZlg9IjQuNSIgdmlld0JveD0iMCAwIDEwIDEwIiBjbGFzcz0ibWFya2VyIGZsb3djaGFydC12MiIgaWQ9Im15LXN2Z19mbG93Y2hhcnQtdjItcG9pbnRTdGFydCI+PHBhdGggc3R5bGU9InN0cm9rZS13aWR0aDogMTsgc3Ryb2tlLWRhc2hhcnJheTogMSwgMDsiIGNsYXNzPSJhcnJvd01hcmtlclBhdGgiIGQ9Ik0gMCA1IEwgMTAgMTAgTCAxMCAwIHoiLz48L21hcmtlcj48bWFya2VyIG9yaWVudD0iYXV0byIgbWFya2VySGVpZ2h0PSIxMSIgbWFya2VyV2lkdGg9IjExIiBtYXJrZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIHJlZlk9IjUiIHJlZlg9IjExIiB2aWV3Qm94PSIwIDAgMTAgMTAiIGNsYXNzPSJtYXJrZXIgZmxvd2NoYXJ0LXYyIiBpZD0ibXktc3ZnX2Zsb3djaGFydC12Mi1jaXJjbGVFbmQiPjxjaXJjbGUgc3R5bGU9InN0cm9rZS13aWR0aDogMTsgc3Ryb2tlLWRhc2hhcnJheTogMSwgMDsiIGNsYXNzPSJhcnJvd01hcmtlclBhdGgiIHI9IjUiIGN5PSI1IiBjeD0iNSIvPjwvbWFya2VyPjxtYXJrZXIgb3JpZW50PSJhdXRvIiBtYXJrZXJIZWlnaHQ9IjExIiBtYXJrZXJXaWR0aD0iMTEiIG1hcmtlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgcmVmWT0iNSIgcmVmWD0iLTEiIHZpZXdCb3g9IjAgMCAxMCAxMCIgY2xhc3M9Im1hcmtlciBmbG93Y2hhcnQtdjIiIGlkPSJteS1zdmdfZmxvd2NoYXJ0LXYyLWNpcmNsZVN0YXJ0Ij48Y2lyY2xlIHN0eWxlPSJzdHJva2Utd2lkdGg6IDE7IHN0cm9rZS1kYXNoYXJyYXk6IDEsIDA7IiBjbGFzcz0iYXJyb3dNYXJrZXJQYXRoIiByPSI1IiBjeT0iNSIgY3g9IjUiLz48L21hcmtlcj48bWFya2VyIG9yaWVudD0iYXV0byIgbWFya2VySGVpZ2h0PSIxMSIgbWFya2VyV2lkdGg9IjExIiBtYXJrZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIHJlZlk9IjUuMiIgcmVmWD0iMTIiIHZpZXdCb3g9IjAgMCAxMSAxMSIgY2xhc3M9Im1hcmtlciBjcm9zcyBmbG93Y2hhcnQtdjIiIGlkPSJteS1zdmdfZmxvd2NoYXJ0LXYyLWNyb3NzRW5kIj48cGF0aCBzdHlsZT0ic3Ryb2tlLXdpZHRoOiAyOyBzdHJva2UtZGFzaGFycmF5OiAxLCAwOyIgY2xhc3M9ImFycm93TWFya2VyUGF0aCIgZD0iTSAxLDEgbCA5LDkgTSAxMCwxIGwgLTksOSIvPjwvbWFya2VyPjxtYXJrZXIgb3JpZW50PSJhdXRvIiBtYXJrZXJIZWlnaHQ9IjExIiBtYXJrZXJXaWR0aD0iMTEiIG1hcmtlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgcmVmWT0iNS4yIiByZWZYPSItMSIgdmlld0JveD0iMCAwIDExIDExIiBjbGFzcz0ibWFya2VyIGNyb3NzIGZsb3djaGFydC12MiIgaWQ9Im15LXN2Z19mbG93Y2hhcnQtdjItY3Jvc3NTdGFydCI+PHBhdGggc3R5bGU9InN0cm9rZS13aWR0aDogMjsgc3Ryb2tlLWRhc2hhcnJheTogMSwgMDsiIGNsYXNzPSJhcnJvd01hcmtlclBhdGgiIGQ9Ik0gMSwxIGwgOSw5IE0gMTAsMSBsIC05LDkiLz48L21hcmtlcj48ZyBjbGFzcz0icm9vdCI+PGcgY2xhc3M9ImNsdXN0ZXJzIi8+PGcgY2xhc3M9ImVkZ2VQYXRocyI+PHBhdGggbWFya2VyLWVuZD0idXJsKCNteS1zdmdfZmxvd2NoYXJ0LXYyLXBvaW50RW5kKSIgc3R5bGU9IiIgY2xhc3M9ImVkZ2UtdGhpY2tuZXNzLW5vcm1hbCBlZGdlLXBhdHRlcm4tc29saWQgZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBmbG93Y2hhcnQtbGluayIgaWQ9IkxfQkFUX0hfMCIgZD0iTTI1OC43NzcsMTg1TDIzOC42NDcsMjA2LjY2N0MyMTguNTE4LDIyOC4zMzMsMTc4LjI1OSwyNzEuNjY3LDE1OC4xMjksMjk2LjgzM0MxMzgsMzIyLDEzOCwzMjksMTM4LDMzMi41TDEzOCwzMzYiLz48cGF0aCBtYXJrZXItZW5kPSJ1cmwoI215LXN2Z19mbG93Y2hhcnQtdjItcG9pbnRFbmQpIiBzdHlsZT0iIiBjbGFzcz0iZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBlZGdlLXRoaWNrbmVzcy1ub3JtYWwgZWRnZS1wYXR0ZXJuLXNvbGlkIGZsb3djaGFydC1saW5rIiBpZD0iTF9CQVRfTV8wIiBkPSJNMzI1LjY2OSwxODVMMzQ1Ljc5OCwyMDYuNjY3QzM2NS45MjcsMjI4LjMzMyw0MDYuMTg2LDI3MS42NjcsNDI2LjMxNiwzMDMuODMzQzQ0Ni40NDUsMzM2LDQ0Ni40NDUsMzU3LDQ0Ni40NDUsMzY3LjVMNDQ2LjQ0NSwzNzgiLz48cGF0aCBtYXJrZXItZW5kPSJ1cmwoI215LXN2Z19mbG93Y2hhcnQtdjItcG9pbnRFbmQpIiBzdHlsZT0iIiBjbGFzcz0iZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBlZGdlLXRoaWNrbmVzcy1ub3JtYWwgZWRnZS1wYXR0ZXJuLXNvbGlkIGZsb3djaGFydC1saW5rIiBpZD0iTF9NX0VTXzAiIGQ9Ik0zOTguMDQ2LDQ1NEwzODMuMDMzLDQ2NS4xNjdDMzY4LjAyLDQ3Ni4zMzMsMzM3Ljk5NCw0OTguNjY3LDMyMi45ODIsNTEzLjMzM0MzMDcuOTY5LDUyOCwzMDcuOTY5LDUzNSwzMDcuOTY5LDUzOC41TDMwNy45NjksNTQyIi8+PHBhdGggbWFya2VyLWVuZD0idXJsKCNteS1zdmdfZmxvd2NoYXJ0LXYyLXBvaW50RW5kKSIgc3R5bGU9IiIgY2xhc3M9ImVkZ2UtdGhpY2tuZXNzLW5vcm1hbCBlZGdlLXBhdHRlcm4tc29saWQgZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBmbG93Y2hhcnQtbGluayIgaWQ9IkxfTV9GQU5fMCIgZD0iTTQ5NC44NDUsNDU0TDUwOS44NTgsNDY1LjE2N0M1MjQuODcxLDQ3Ni4zMzMsNTU0Ljg5Niw0OTguNjY3LDU2OS45MDksNTE2LjgzM0M1ODQuOTIyLDUzNSw1ODQuOTIyLDU0OSw1ODQuOTIyLDU1Nkw1ODQuOTIyLDU2MyIvPjxwYXRoIG1hcmtlci1lbmQ9InVybCgjbXktc3ZnX2Zsb3djaGFydC12Mi1wb2ludEVuZCkiIHN0eWxlPSIiIGNsYXNzPSJlZGdlLXRoaWNrbmVzcy1ub3JtYWwgZWRnZS1wYXR0ZXJuLXNvbGlkIGVkZ2UtdGhpY2tuZXNzLW5vcm1hbCBlZGdlLXBhdHRlcm4tc29saWQgZmxvd2NoYXJ0LWxpbmsiIGlkPSJMX0VTX0gyXzAiIGQ9Ik0zMDcuOTY5LDcwMkwzMDcuOTY5LDcwOS42NjdDMzA3Ljk2OSw3MTcuMzMzLDMwNy45NjksNzMyLjY2NywzMDcuOTY5LDc0Ny4zMzNDMzA3Ljk2OSw3NjIsMzA3Ljk2OSw3NzYsMzA3Ljk2OSw3ODNMMzA3Ljk2OSw3OTAiLz48L2c+PGcgY2xhc3M9ImVkZ2VMYWJlbHMiPjxnIGNsYXNzPSJlZGdlTGFiZWwiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsIDApIiBjbGFzcz0ibGFiZWwiPjxmb3JlaWduT2JqZWN0IGhlaWdodD0iMCIgd2lkdGg9IjAiPjxkaXYgc3R5bGU9ImRpc3BsYXk6IHRhYmxlLWNlbGw7IHdoaXRlLXNwYWNlOiBub3dyYXA7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsiIGNsYXNzPSJsYWJlbEJrZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiPjxzcGFuIGNsYXNzPSJlZGdlTGFiZWwiPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48ZyBjbGFzcz0iZWRnZUxhYmVsIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLCAwKSIgY2xhc3M9ImxhYmVsIj48Zm9yZWlnbk9iamVjdCBoZWlnaHQ9IjAiIHdpZHRoPSIwIj48ZGl2IHN0eWxlPSJkaXNwbGF5OiB0YWJsZS1jZWxsOyB3aGl0ZS1zcGFjZTogbm93cmFwOyBsaW5lLWhlaWdodDogMS41OyBtYXgtd2lkdGg6IDIwMHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7IiBjbGFzcz0ibGFiZWxCa2ciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIj48c3BhbiBjbGFzcz0iZWRnZUxhYmVsIj48L3NwYW4+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PGcgY2xhc3M9ImVkZ2VMYWJlbCI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwgMCkiIGNsYXNzPSJsYWJlbCI+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSIwIiB3aWR0aD0iMCI+PGRpdiBzdHlsZT0iZGlzcGxheTogdGFibGUtY2VsbDsgd2hpdGUtc3BhY2U6IG5vd3JhcDsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyIgY2xhc3M9ImxhYmVsQmtnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCI+PHNwYW4gY2xhc3M9ImVkZ2VMYWJlbCI+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjxnIGNsYXNzPSJlZGdlTGFiZWwiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsIDApIiBjbGFzcz0ibGFiZWwiPjxmb3JlaWduT2JqZWN0IGhlaWdodD0iMCIgd2lkdGg9IjAiPjxkaXYgc3R5bGU9ImRpc3BsYXk6IHRhYmxlLWNlbGw7IHdoaXRlLXNwYWNlOiBub3dyYXA7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsiIGNsYXNzPSJsYWJlbEJrZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiPjxzcGFuIGNsYXNzPSJlZGdlTGFiZWwiPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMDcuOTY4NzUsIDc0OCkiIGNsYXNzPSJlZGdlTGFiZWwiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03Ny40MjE4NzUsIC0yMSkiIGNsYXNzPSJsYWJlbCI+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSI0MiIgd2lkdGg9IjE1NC44NDM3NSI+PGRpdiBzdHlsZT0iZGlzcGxheTogdGFibGUtY2VsbDsgd2hpdGUtc3BhY2U6IG5vd3JhcDsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyIgY2xhc3M9ImxhYmVsQmtnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCI+PHNwYW4gY2xhc3M9ImVkZ2VMYWJlbCI+PHA+eWVsbG93IHdha2U8L3A+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjwvZz48ZyBjbGFzcz0ibm9kZXMiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI5Mi4yMjI2NTYyNSwgMTQ5KSIgaWQ9ImZsb3djaGFydC1CQVQtMCIgY2xhc3M9Im5vZGUgZGVmYXVsdCBzb2xpZCI+PHJlY3QgaGVpZ2h0PSI3MiIgd2lkdGg9IjIzNi4xNzE4NzUiIHk9Ii0zNiIgeD0iLTExOC4wODU5Mzc1IiBzdHlsZT0iZmlsbDojZjVmNWY0ICFpbXBvcnRhbnQ7c3Ryb2tlOiM1NzUzNGUgIWltcG9ydGFudDtzdHJva2Utd2lkdGg6MXB4ICFpbXBvcnRhbnQiIGNsYXNzPSJiYXNpYyBsYWJlbC1jb250YWluZXIiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtODguMDg1OTM3NSwgLTIxKSIgc3R5bGU9ImNvbG9yOiMxYzE5MTcgIWltcG9ydGFudCIgY2xhc3M9ImxhYmVsIj48cmVjdC8+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSI0MiIgd2lkdGg9IjE3Ni4xNzE4NzUiPjxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJjb2xvcjogcmdiKDI4LCAyNSwgMjMpICFpbXBvcnRhbnQ7IGRpc3BsYXk6IHRhYmxlLWNlbGw7IHdoaXRlLXNwYWNlOiBub3dyYXA7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsiPjxzcGFuIGNsYXNzPSJub2RlTGFiZWwiIHN0eWxlPSJjb2xvcjojMWMxOTE3ICFpbXBvcnRhbnQiPjxwPkhvdXNlIGJhdHRlcnk8L3A+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEzOCwgNDE4KSIgaWQ9ImZsb3djaGFydC1ILTIiIGNsYXNzPSJub2RlIGRlZmF1bHQgc29saWQiPjxyZWN0IGhlaWdodD0iMTU2IiB3aWR0aD0iMjYwIiB5PSItNzgiIHg9Ii0xMzAiIHN0eWxlPSJmaWxsOiNmNWY1ZjQgIWltcG9ydGFudDtzdHJva2U6IzU3NTM0ZSAhaW1wb3J0YW50O3N0cm9rZS13aWR0aDoxcHggIWltcG9ydGFudCIgY2xhc3M9ImJhc2ljIGxhYmVsLWNvbnRhaW5lciIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMDAsIC02MykiIHN0eWxlPSJjb2xvcjojMWMxOTE3ICFpbXBvcnRhbnQiIGNsYXNzPSJsYWJlbCI+PHJlY3QvPjxmb3JlaWduT2JqZWN0IGhlaWdodD0iMTI2IiB3aWR0aD0iMjAwIj48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iY29sb3I6IHJnYigyOCwgMjUsIDIzKSAhaW1wb3J0YW50OyBkaXNwbGF5OiB0YWJsZTsgd2hpdGUtc3BhY2U6IGJyZWFrLXNwYWNlczsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyB3aWR0aDogMjAwcHg7Ij48c3BhbiBjbGFzcz0ibm9kZUxhYmVsIiBzdHlsZT0iY29sb3I6IzFjMTkxNyAhaW1wb3J0YW50Ij48cD5IZWF0ZXIgcG93ZXI8YnIgLz4xMiBBV0cgwrcgMjAgQSDCtyBhbHdheXMgZnVzZWQ8L3A+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ0Ni40NDUzMTI1LCA0MTgpIiBpZD0iZmxvd2NoYXJ0LU0tNCIgY2xhc3M9Im5vZGUgZGVmYXVsdCBzb2xpZCI+PHJlY3QgaGVpZ2h0PSI3MiIgd2lkdGg9IjI1Ni44OTA2MjUiIHk9Ii0zNiIgeD0iLTEyOC40NDUzMTI1IiBzdHlsZT0iZmlsbDojZjVmNWY0ICFpbXBvcnRhbnQ7c3Ryb2tlOiM1NzUzNGUgIWltcG9ydGFudDtzdHJva2Utd2lkdGg6MXB4ICFpbXBvcnRhbnQiIGNsYXNzPSJiYXNpYyBsYWJlbC1jb250YWluZXIiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtOTguNDQ1MzEyNSwgLTIxKSIgc3R5bGU9ImNvbG9yOiMxYzE5MTcgIWltcG9ydGFudCIgY2xhc3M9ImxhYmVsIj48cmVjdC8+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSI0MiIgd2lkdGg9IjE5Ni44OTA2MjUiPjxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJjb2xvcjogcmdiKDI4LCAyNSwgMjMpICFpbXBvcnRhbnQ7IGRpc3BsYXk6IHRhYmxlLWNlbGw7IHdoaXRlLXNwYWNlOiBub3dyYXA7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsiPjxzcGFuIGNsYXNzPSJub2RlTGFiZWwiIHN0eWxlPSJjb2xvcjojMWMxOTE3ICFpbXBvcnRhbnQiPjxwPk1hc3RlciBPZmYgLyBPbjwvcD48L3NwYW4+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzA3Ljk2ODc1LCA2MjQpIiBpZD0iZmxvd2NoYXJ0LUVTLTYiIGNsYXNzPSJub2RlIGRlZmF1bHQgc29saWQiPjxyZWN0IGhlaWdodD0iMTU2IiB3aWR0aD0iMjYwIiB5PSItNzgiIHg9Ii0xMzAiIHN0eWxlPSJmaWxsOiNmNWY1ZjQgIWltcG9ydGFudDtzdHJva2U6IzU3NTM0ZSAhaW1wb3J0YW50O3N0cm9rZS13aWR0aDoxcHggIWltcG9ydGFudCIgY2xhc3M9ImJhc2ljIGxhYmVsLWNvbnRhaW5lciIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMDAsIC02MykiIHN0eWxlPSJjb2xvcjojMWMxOTE3ICFpbXBvcnRhbnQiIGNsYXNzPSJsYWJlbCI+PHJlY3QvPjxmb3JlaWduT2JqZWN0IGhlaWdodD0iMTI2IiB3aWR0aD0iMjAwIj48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iY29sb3I6IHJnYigyOCwgMjUsIDIzKSAhaW1wb3J0YW50OyBkaXNwbGF5OiB0YWJsZTsgd2hpdGUtc3BhY2U6IGJyZWFrLXNwYWNlczsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyB3aWR0aDogMjAwcHg7Ij48c3BhbiBjbGFzcz0ibm9kZUxhYmVsIiBzdHlsZT0iY29sb3I6IzFjMTkxNyAhaW1wb3J0YW50Ij48cD5FYXN5U3RhcnQgVGltZXI8YnIgLz5zdGFydHMgZGllc2VsIGhlYXQ8L3A+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU4NC45MjE4NzUsIDYyNCkiIGlkPSJmbG93Y2hhcnQtRkFOLTgiIGNsYXNzPSJub2RlIGRlZmF1bHQgc29saWQiPjxyZWN0IGhlaWdodD0iMTE0IiB3aWR0aD0iMTkzLjkwNjI1IiB5PSItNTciIHg9Ii05Ni45NTMxMjUiIHN0eWxlPSJmaWxsOiNmNWY1ZjQgIWltcG9ydGFudDtzdHJva2U6IzU3NTM0ZSAhaW1wb3J0YW50O3N0cm9rZS13aWR0aDoxcHggIWltcG9ydGFudCIgY2xhc3M9ImJhc2ljIGxhYmVsLWNvbnRhaW5lciIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02Ni45NTMxMjUsIC00MikiIHN0eWxlPSJjb2xvcjojMWMxOTE3ICFpbXBvcnRhbnQiIGNsYXNzPSJsYWJlbCI+PHJlY3QvPjxmb3JlaWduT2JqZWN0IGhlaWdodD0iODQiIHdpZHRoPSIxMzMuOTA2MjUiPjxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJjb2xvcjogcmdiKDI4LCAyNSwgMjMpICFpbXBvcnRhbnQ7IGRpc3BsYXk6IHRhYmxlLWNlbGw7IHdoaXRlLXNwYWNlOiBub3dyYXA7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsiPjxzcGFuIGNsYXNzPSJub2RlTGFiZWwiIHN0eWxlPSJjb2xvcjojMWMxOTE3ICFpbXBvcnRhbnQiPjxwPkZhbiBkaWFsPGJyIC8+c3BlZWQgb25seTwvcD48L3NwYW4+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzA3Ljk2ODc1LCA4NzIpIiBpZD0iZmxvd2NoYXJ0LUgyLTEwIiBjbGFzcz0ibm9kZSBkZWZhdWx0IHNvbGlkIj48cmVjdCBoZWlnaHQ9IjE1NiIgd2lkdGg9IjI2MCIgeT0iLTc4IiB4PSItMTMwIiBzdHlsZT0iZmlsbDojZjVmNWY0ICFpbXBvcnRhbnQ7c3Ryb2tlOiM1NzUzNGUgIWltcG9ydGFudDtzdHJva2Utd2lkdGg6MXB4ICFpbXBvcnRhbnQiIGNsYXNzPSJiYXNpYyBsYWJlbC1jb250YWluZXIiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTAwLCAtNjMpIiBzdHlsZT0iY29sb3I6IzFjMTkxNyAhaW1wb3J0YW50IiBjbGFzcz0ibGFiZWwiPjxyZWN0Lz48Zm9yZWlnbk9iamVjdCBoZWlnaHQ9IjEyNiIgd2lkdGg9IjIwMCI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImNvbG9yOiByZ2IoMjgsIDI1LCAyMykgIWltcG9ydGFudDsgZGlzcGxheTogdGFibGU7IHdoaXRlLXNwYWNlOiBicmVhay1zcGFjZXM7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsgd2lkdGg6IDIwMHB4OyI+PHNwYW4gY2xhc3M9Im5vZGVMYWJlbCIgc3R5bGU9ImNvbG9yOiMxYzE5MTcgIWltcG9ydGFudCI+PHA+SGVhdGVyIHdha2VzPGJyIC8+cnVucyBpdHMgb3duIHB1bXA8L3A+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU5MC4zMDg1OTM3NSwgMTQ5KSIgaWQ9ImZsb3djaGFydC1BQy0xMSIgY2xhc3M9Im5vZGUgZGVmYXVsdCBvcGVuIj48cmVjdCBoZWlnaHQ9IjI4MiIgd2lkdGg9IjI2MCIgeT0iLTE0MSIgeD0iLTEzMCIgc3R5bGU9ImZpbGw6I2VlZWVlYyAhaW1wb3J0YW50O3N0cm9rZTojNzg3MTZjICFpbXBvcnRhbnQ7c3Ryb2tlLXdpZHRoOjJweCAhaW1wb3J0YW50O3N0cm9rZS1kYXNoYXJyYXk6NCAzICFpbXBvcnRhbnQiIGNsYXNzPSJiYXNpYyBsYWJlbC1jb250YWluZXIiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTAwLCAtMTI2KSIgc3R5bGU9ImNvbG9yOiMxYzE5MTcgIWltcG9ydGFudCIgY2xhc3M9ImxhYmVsIj48cmVjdC8+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSIyNTIiIHdpZHRoPSIyMDAiPjxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJjb2xvcjogcmdiKDI4LCAyNSwgMjMpICFpbXBvcnRhbnQ7IGRpc3BsYXk6IHRhYmxlOyB3aGl0ZS1zcGFjZTogYnJlYWstc3BhY2VzOyBsaW5lLWhlaWdodDogMS41OyBtYXgtd2lkdGg6IDIwMHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7IHdpZHRoOiAyMDBweDsiPjxzcGFuIGNsYXNzPSJub2RlTGFiZWwiIHN0eWxlPSJjb2xvcjojMWMxOTE3ICFpbXBvcnRhbnQiPjxwPlBhbmVsdHJvbmljcyBXQVRFUiBIRUFURVI8YnIgLz5Jc290ZW1wIGVsZW1lbnQg4oCUIEFDIG9ubHkgwrcgZGVhZCBmb3Igbm93PC9wPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48L2c+PC9nPjwvZz48L3N2Zz4=" alt="Day-one electrical" />
 <figcaption aria-hidden="true">Day-one electrical</figcaption>
 </figure>
-<p><strong>Enough for first fire.</strong> Turn the master On, start
-heat on the EasyStart Timer, and set the fan dial.</p>
+<p><strong>Enough for diesel first fire.</strong> Turn the master On,
+start heat on the EasyStart Timer, and set the fan dial. Living with the
+Isotemp buffer and AC dish rinses is in the <a href="#users-guide">User’s Guide</a>. The numbers behind keep-or-sell
+are in the <a href="#isotemp-value-study">Isotemp value study</a>.</p>
 <p><strong>Still being completed.</strong> SC1600 auto (<a href="#q-022">Q-022</a>) and the Isotemp AC circuit with upstream GFCI
 (<a href="#q-009">Q-009</a>). Land the altitude kit at HOLD 4 while the
 harness is open (<a href="#q-015">Q-015</a>).</p>
@@ -1940,8 +1943,10 @@ element</label></li>
 <p>A short card after <a href="#system-design">System Design</a>. Skim
 it, then continue to the <a href="#users-guide">User’s Guide</a>.
 Figures come from the Hydronic D5S diesel heater manual (<a href="#src-009">SRC-009</a>) unless noted. If you swap the heater,
-rewrite this page from that heater’s manual first.</p>
-<p>Jump: <a href="#system-design">System Design</a> · <a href="#users-guide">User’s Guide</a> · <a href="#builders-guide">Builder’s Guide</a> · <a href="#source-register">Source Register</a></p>
+rewrite this page from that heater’s manual first. Buffer sizing and
+predicted starts live in the <a href="#isotemp-value-study">Isotemp
+value study</a>.</p>
+<p>Jump: <a href="#system-design">System Design</a> · <a href="#users-guide">User’s Guide</a> · <a href="#isotemp-value-study">Isotemp value study</a> · <a href="#builders-guide">Builder’s Guide</a> · <a href="#source-register">Source Register</a></p>
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -1950,7 +1955,7 @@ rewrite this page from that heater’s manual first.</p>
 <tbody>
 <tr>
 <td>Heat output (Power / High / Low)</td>
-<td>5.2 / 5.0 / 2.1 kW</td>
+<td>5.2 / 5.0 / 2.1 kW (~17,740 / 17,060 / 7,165 Btu/h)</td>
 </tr>
 <tr>
 <td>Fuel use at those settings</td>
@@ -1960,6 +1965,10 @@ rewrite this page from that heater’s manual first.</p>
 <td>Coolant staging (approx.)</td>
 <td>Power → High ~65°C · High → Low ~80°C · pause ~85°C · restart
 ~75°C</td>
+</tr>
+<tr>
+<td>During control pause</td>
+<td>Burner off; <strong>circulating pump keeps running</strong> (<a href="#src-009">SRC-009</a>)</td>
 </tr>
 <tr>
 <td>Overheat restart</td>
@@ -1988,6 +1997,11 @@ rewrite this page from that heater’s manual first.</p>
 <tr>
 <td>Isotemp potable PRV (not a glycol setting)</td>
 <td>~5.5 bar / 80 psi — do not size the loop to this</td>
+</tr>
+<tr>
+<td>Isotemp AC working thermostat</td>
+<td>Cuts near <strong>75°C / 167°F</strong>; overheat cut-out ~95°C,
+manual reset (<a href="#src-022">SRC-022</a>)</td>
 </tr>
 <tr>
 <td>Mix</td>
@@ -2042,7 +2056,8 @@ fault</td>
 <p>The Isotemp chamber holds about 4.2 gal of static glycol. The coil is
 charged by the heater pump. The 750 W element on Paneltronics
 <strong>WATER HEATER</strong> (face <strong>72313</strong> / sheet
-<strong>9972313B</strong>) heats the chamber only (<a href="#dec-004">DEC-004</a> / <a href="#dec-007">DEC-007</a> / <a href="#dec-020">DEC-020</a>).</p>
+<strong>9972313B</strong>) heats the chamber only (<a href="#dec-004">DEC-004</a> / <a href="#dec-007">DEC-007</a> / <a href="#dec-020">DEC-020</a>). How to live with that buffer day to day:
+<a href="#users-guide">User’s Guide</a>.</p>
 <h1 id="users-guide">User’s Guide</h1>
 <p><strong>Stage 2 — Use.</strong> Read this after <a href="#system-design">System Design</a> and <a href="#the-numbers-that-matter">The Numbers</a>, and before <a href="#current-status-report">Current Status</a> and the <a href="#builders-guide">Builder’s Guide</a>. After <a href="#acceptance">Acceptance</a>, use this chapter as the day-to-day
 manual. Until Acceptance, treat the tables below as the operating
@@ -2364,7 +2379,7 @@ rule are clear</label></li>
 before the <a href="#builders-guide">Builder’s Guide</a>. Honest
 inventory as of September 2026. Part names match <a href="#the-parts">The Parts</a>. The HOLD checklists still govern the
 work.</p>
-<p>Jump: <a href="#project-phases">Project Phases</a> · <a href="#builders-guide">Builder’s Guide</a> · <a href="#questions-for-you-in-order">Questions for You</a></p>
+<p>Jump: <a href="#project-phases">Project Phases</a> · <a href="#builders-guide">Builder’s Guide</a> · <a href="#questions-for-you-in-order">Questions for You</a> · <a href="#isotemp-value-study">Isotemp value study</a></p>
 <h2 id="next-action">Next action</h2>
 <div class="next">
 <p><strong>Next — Phase A.</strong> Fuel pickup and exhaust are already
@@ -2372,7 +2387,9 @@ on the van. Finish HOLD 1 and HOLD 2 against <a href="#src-009">SRC-009</a> befo
 </div>
 <p>Ask once per part: if it is already on the van, inspect and finish
 the remaining work; if it is still in the garage, bring it in for Phase
-B after Phase A passes.</p>
+B after Phase A passes. After diesel Acceptance, live from the <a href="#users-guide">User’s Guide</a>. Keep-or-sell numbers for the
+Isotemp are in the <a href="#isotemp-value-study">Isotemp value
+study</a>.</p>
 <h2 id="already-on-the-van">Already on the van</h2>
 <table>
 <colgroup>
@@ -3768,10 +3785,11 @@ unless you deliberately want an AC charge</label></li>
 </ul>
 <hr />
 <h2 id="acceptance">Acceptance</h2>
-<p><strong>Safe to park and use for cabin heat / diesel hot water when
-all of these are true</strong></p>
+<p>There are two finish lines. Do not confuse them.</p>
+<p><strong>Diesel cabin heat and diesel hot water at the Duda</strong> —
+safe to park and use when all of these are true:</p>
 <ul class="task-list">
-<li><label><input type="checkbox"></input>Fuel line walked and dry; primed
+<li><label><input type="checkbox"></input>Fuel line inspected and dry; primed
 before first fire</label></li>
 <li><label><input type="checkbox"></input>Exhaust ends outside, away from the
 intake and cabin openings; slope and drain present</label></li>
@@ -3798,16 +3816,20 @@ it complete on assumption</label></li>
 <li><label><input type="checkbox"></input>First commissioning run completed
 without unexplained wetness or smell</label></li>
 <li><label><input type="checkbox"></input>Whole-system inspection after
-install, before day-to-day use</label></li>
+install, before day-to-day diesel use</label></li>
 </ul>
-<p><strong>May stay open after a successful low-elevation first
+<p><strong>Complete system (diesel plus Isotemp AC)</strong> — also
+requires <a href="#hold-9">HOLD 9</a>: chamber full, GFCI/ELCI and
+Paneltronics <strong>WATER HEATER</strong> path verified, first AC
+energize watched. After that, live from the <a href="#users-guide">User’s Guide</a>, including <a href="#ac-chamber-and-dishes">AC chamber and dishes</a>.</p>
+<p><strong>May stay open after a successful low-elevation diesel first
 fire</strong></p>
 <ul>
 <li><a href="#q-022">Q-022</a> — SC1600B auto call (start heat from
 EasyStart Timer until closed)</li>
-<li><a href="#hold-9">HOLD 9</a> / Isotemp AC first energize — required
-for complete system acceptance and before using the element; a
-diesel-only first fire may precede HOLD 9</li>
+<li><a href="#hold-9">HOLD 9</a> — required before using the element and
+before calling the build fully complete; not required for diesel cabin
+heat or diesel hot water at the Duda</li>
 <li>Sure Marine cabin heater final cosmetic mount — must still be
 plumbed, level, and bled before relying on cabin air</li>
 </ul>
@@ -4076,8 +4098,9 @@ fire</h2>
 <ol type="1">
 <li>Fuel walk at HOLD 1 (HAZ-001).</li>
 <li>EasyStart / heater 12 V landed enough to start and stop (HOLD 4 /
-Q-013). Altitude kit install before high camps (Q-015) — not before a
-low-elevation first fire.</li>
+Q-013). Land the altitude kit at HOLD 4 while the harness is open (Q-015
+/ DEC-006) — required before high camps; prefer not to defer it past
+HOLD 4.</li>
 <li>Fill and bleed circulating glycol including the Isotemp coil; fill
 chamber separately (static). Heater and coil below WFT.</li>
 <li>Route Isotemp element to Paneltronics <strong>WATER HEATER</strong>;
@@ -6519,11 +6542,17 @@ Altitude kit 22 1000 33 22 00 P/N and H-Kit mark before high camps
 2 kW, D4 ≈ 4 kW). This build uses a <strong>Hydronic D5S</strong> whose
 lowest documented stage is still <strong>2.1 kW</strong>, plus a marine
 calorifier (Isotemp Slim Square) as <strong>static glycol
-buffer</strong>—not as a potable tank. This note estimates whether that
-buffer earns its complexity: heat-loss bands, stored energy, predicted
-starts per hour with and without the chamber, a coil-coupling factor,
-and what AC preheat can (and cannot) do for dish water. Day-to-day
-operating language lives in the <a href="#users-guide">User’s Guide</a>.
+buffer</strong>—not as a potable tank. Owner and installer forums have
+long said hydronic loops without enough mass
+<strong>short-cycle</strong> badly; the 2018 design notes for this van
+called for roughly <strong>8.5 gal</strong> of buffer (<a href="#src-004">SRC-004</a>). This build kept the idea and changed the
+hardware to a <strong>4.2 gal</strong> Isotemp with the chamber on
+glycol (<a href="#dec-007">DEC-007</a>).</p>
+<p>This note estimates whether that smaller buffer still earns its
+complexity: van heat-loss bands, stored energy, predicted starts per
+hour with and without the chamber, a coil-coupling factor, and what AC
+preheat can (and cannot) do for dish water. Day-to-day operating
+language lives in the <a href="#users-guide">User’s Guide</a>.
 Manufacturer truth remains <a href="#src-009">SRC-009</a> and <a href="#src-022">SRC-022</a>.</p>
 <h2 id="question">Question</h2>
 <p>Does the Isotemp Slim Square 4.2 gal heat battery improve this build
@@ -6711,9 +6740,11 @@ bound</h2>
 first-order estimate, treat 16 L as 16 kg. The tables below use a
 specific heat near <strong>4 kJ/kg·K</strong> (water-like) so the
 arithmetic stays transparent. A ≤50% propylene glycol mix is closer to
-about <strong>3.5–3.7 kJ/kg·K</strong>, which lowers stored energy by
-roughly <strong>10–15%</strong>. Treat every kWh figure as slightly
-optimistic until measured.</p>
+about <strong>3.5–3.6 kJ/kg·K</strong> near room temperature and rises
+toward roughly <strong>3.6–3.8 kJ/kg·K</strong> in the 60–80°C band (<a href="https://www.engineeringtoolbox.com/propylene-glycol-d_363.html">Engineering
+Toolbox</a> and related glycol property tables). That lowers stored
+energy by roughly <strong>10–15%</strong> versus the water-like tables.
+Treat every kWh figure as slightly optimistic until measured.</p>
 <table>
 <colgroup>
 <col style="width: 27%" />
@@ -6798,7 +6829,14 @@ it gives a useful scale for the expected effect.</p>
 initial Power and High stages.</li>
 <li>The D5S pauses near 85°C and restarts near 75°C, giving an
 approximately 10°C control band (<a href="#the-numbers-that-matter">The
-Numbers</a>; <a href="#src-009">SRC-009</a>).</li>
+Numbers</a>; <a href="#src-009">SRC-009</a>). During control pause the
+<strong>burner is off</strong> and the <strong>circulating pump keeps
+running</strong>, so the coil can still exchange heat with the chamber
+while the flame is out.</li>
+<li>Loop order puts the Isotemp <strong>last</strong> (after cabin
+heater and Duda). Surplus heat hits the cabin first. The chamber mostly
+stores leftovers. That is intentional for daily comfort; it also caps
+how strongly the buffer can fight short cycling.</li>
 <li>The circulating loop without the Isotemp contains approximately 4–6
 L in the heater, cabin heater, plate, hoses, and fittings. Use 5 L as
 the midpoint.</li>
