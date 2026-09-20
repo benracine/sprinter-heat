@@ -1,8 +1,8 @@
 # User's Guide {#users-guide}
 
-**Stage 2 — Use.** Read this chapter after [System Design](#system-design) and before [Make it](#builders-guide). After [Acceptance](#acceptance), use this chapter as the day-to-day manual. Until Acceptance, treat the tables below as the operating target—not as permission to light the heater.
+**Stage 2 — Use.** Read this after [System Design](#system-design) and [The Numbers](#the-numbers-that-matter), and before [Current Status](#current-status-report) and the [Builder’s Guide](#builders-guide). After [Acceptance](#acceptance), use this chapter as the day-to-day manual. Until Acceptance, treat the tables below as the operating target—not as permission to light the heater.
 
-Jump: [System Design](#system-design) · [Current Status](#current-status-report) · [Builder’s Guide](#builders-guide) · [The Numbers](#the-numbers-that-matter)
+Jump: [System Design](#system-design) · [The Numbers](#the-numbers-that-matter) · [Current Status](#current-status-report) · [Builder’s Guide](#builders-guide)
 
 ## Quick start (after Acceptance)
 

@@ -1,8 +1,8 @@
 # System Design
 
-**Stage 1 — Architecture.** Finish this chapter before the [User’s Guide](#users-guide) or the [Builder’s Guide](#builders-guide). For each part, know what the part does, what the part must not do, and which way glycol flows.
+**Stage 1 — Architecture.** Finish this chapter before the [User’s Guide](#users-guide) or the [Builder’s Guide](#builders-guide). For each part, know what the part does, what the part must not do, and which way glycol flows. Next: skim [The Numbers](#the-numbers-that-matter), then the User’s Guide.
 
-Jump: [Safety](#safety) · [User’s Guide](#users-guide) · [Current Status](#current-status-report) · [Project Phases](#project-phases-overview) · [Builder’s Guide](#builders-guide) · [The Numbers](#the-numbers-that-matter)
+Jump: [Safety](#safety) · [The Numbers](#the-numbers-that-matter) · [User’s Guide](#users-guide) · [Current Status](#current-status-report) · [Builder’s Guide](#builders-guide)
 
 ## Purpose
 
@@ -176,4 +176,4 @@ Route the element cable at HOLD 4. Leave the **WATER HEATER** breaker **off** un
 - [ ] Tap hot water needs the diesel pump through the Duda plate  
 - [ ] Forbidden list is clear: no engine splice, no summer bypass, no second pump, no 12 V to the element  
 
-→ [Use](#users-guide).
+→ [The Numbers](#the-numbers-that-matter), then the [User’s Guide](#users-guide).

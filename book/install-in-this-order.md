@@ -2,7 +2,7 @@
 
 # Builder's Guide {#builders-guide}
 
-**Stage 3 — Make it.** Begin only after [System Design](#system-design), the [User’s Guide](#users-guide), and a skim of [Current Status](#current-status-report).
+**Stage 3 — Make it.** Begin only after [System Design](#system-design), a skim of [The Numbers](#the-numbers-that-matter), the [User’s Guide](#users-guide), and [Current Status](#current-status-report).
 
 Jump: [Project Phases](#project-phases) · [HOLD 0](#hold-0) · [1 Fuel](#hold-1-fuel) · [2 Exhaust](#hold-2-exhaust) · [3 Mounts](#hold-3-mounts) · [4 Wiring](#hold-4-electrical) · [5 Glycol](#hold-5-glycol) · [6 Fresh](#hold-6-freshwater) · [7 Fill](#hold-7-fill) · [8 First fire](#hold-8-first-fire) · [9 AC](#hold-9) · [Acceptance](#acceptance)
 
@@ -20,18 +20,29 @@ Cabin heat and diesel hot water pass [Acceptance](#acceptance). [HOLD 9](#hold-9
 
 ## Four Project Phases {#project-phases}
 
-This is the same map as [How to Use This Book](#project-phases-overview). You are in **Phase A — Fuel and exhaust** until HOLD 1 and HOLD 2 pass.
+Treat the install as four phases, not twenty loose tasks. Finish one phase before the next. Inside a phase, finish each HOLD before you move on.
+
+| Phase | What you finish | Steps | Now |
+| --- | --- | --- | --- |
+| **A. Fuel and exhaust** | Underbody fuel and exhaust checked safe | 1–2 | **← do this next** (on van; HOLD 1–2 still open) |
+| **B. Mount and wire** | WFT and Isotemp mounted; EasyStart / heater 12 V and altitude kit landed; Isotemp AC cable routed but dead | 3–4 | After A |
+| **C. Dry plumbing** | Glycol and freshwater hoses connected, still empty | 5–6 | Later |
+| **D. Fill and first fire** | Water-first loop check → glycol loop + Isotemp chamber → first fire | 7–8 (+9) | Last |
 
 ::: {.next}
-**Start here.** Walk fuel and exhaust (steps 1–2). Then Phase B: mount the WFT and Isotemp, land dry wiring including the altitude kit, and leave the Isotemp AC cable dead. Do not fill or fire yet.
+**Next — Phase A.** Fuel pickup and exhaust are already on the van. Finish HOLD 1 and HOLD 2 against [SRC-009](#src-009) before you open Phase B. Do not fill or fire yet.
 :::
 
-| Phase | Steps | Now |
-|---|---|---|
-| **A. Fuel and exhaust** | 1–2 | **Do this next** |
-| **B. Mount and wire** | 3–4 | After A |
-| **C. Dry plumbing** | 5–6 | After B |
-| **D. Fill and first fire** | 7–8 (+9) | Last |
+### What can wait until after first fire
+
+After a low-elevation diesel first fire that delivers cabin heat and hot water at the Duda, only two items may still be open:
+
+- Cabin thermostat auto-call ([Q-022](#q-022)) — start heat from the EasyStart Timer  
+- Isotemp AC and upstream GFCI ([Q-009](#q-009)) — [HOLD 9](#hold-9) only  
+
+Everything else through step 8 is required for that first fire: a filled glycol loop, a filled static Isotemp chamber, EasyStart and heater 12 V, the master switch, and the cabin fans.
+
+The altitude kit does not block a low-camp first fire. It is still not on the wait list. Land it at HOLD 4 while the EasyStart harness is open ([Q-015](#q-015) / [DEC-006](#dec-006)). You will need it before high camps.
 
 | Step | Work on | Do not do yet | Done when |
 |---|---|---|---|
@@ -39,7 +50,7 @@ This is the same map as [How to Use This Book](#project-phases-overview). You ar
 | 1. Fuel | Inspect pickup, pump angle, clamps, rise | Dry start | [HOLD 1](#hold-1-fuel) |
 | 2. Exhaust / intake | Outlet, drain, supports, separation | Run heater | [HOLD 2](#hold-2-exhaust) |
 | 3. Mount | WFT highest; Isotemp empty; cabin heater level; label ports | Fill | [HOLD 3](#hold-3-mounts) |
-| 4. Electrical | EasyStart / heater 12 V; master; fans; cable to **WATER HEATER** dead; altitude if mountains soon | Heat call; energize element | [HOLD 4](#hold-4-electrical) |
+| 4. Electrical | EasyStart / heater 12 V; master; fans; cable to **WATER HEATER** dead; altitude kit | Heat call; energize element | [HOLD 4](#hold-4-electrical) |
 | 5. Glycol hose | Locked loop order; bleeders; lowest drain | Add glycol | [HOLD 5](#hold-5-glycol) |
 | 6. Freshwater | Tank → pump → Duda → mixer → taps | Trust hot temp yet | [HOLD 6](#hold-6-freshwater) |
 | 7. Fill / bleed | Water-first → drain → ≤50% PG → bleed → static Isotemp fill | Fire; AC | [HOLD 7](#hold-7-fill) |

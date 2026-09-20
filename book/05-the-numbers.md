@@ -1,6 +1,6 @@
 # The Numbers {#the-numbers-that-matter}
 
-These figures come from the Hydronic D5S diesel heater manual ([SRC-009](#src-009)) unless noted. If you swap the heater, rewrite this page from that heater’s manual first.
+A short card after [System Design](#system-design). Skim it, then continue to the [User’s Guide](#users-guide). Figures come from the Hydronic D5S diesel heater manual ([SRC-009](#src-009)) unless noted. If you swap the heater, rewrite this page from that heater’s manual first.
 
 Jump: [System Design](#system-design) · [User’s Guide](#users-guide) · [Builder’s Guide](#builders-guide) · [Source Register](#source-register)
 
