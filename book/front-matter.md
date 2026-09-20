@@ -65,7 +65,7 @@ The heater itself holds only ~0.18 L. The Isotemp mass damps cycling.
 | --- | --- |
 | Hydronic D5S diesel heater (underbody) | Done; 25 2526 / H-Kit |
 | Fuel pickup (factory aux) | Inspect at HOLD 1 |
-| Exhaust / combustion air | Believed complete; verify at HOLD 2 |
+| Exhaust / combustion air | On van; re-check at HOLD 2 |
 | Duda B3-12DW-20 + AM100-1LF | On van; taps + one glycol barb still open |
 | Sure Marine cabin heater | On van; SN 16401; fans unfinished |
 | EasyStart Timer | Mounted; landing unfinished |

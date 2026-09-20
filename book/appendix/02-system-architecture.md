@@ -89,4 +89,4 @@ The Isotemp Slim Square 4.2 gal heat battery has a 316 SS hydronic coil on the c
 
 ## Open items
 
-- [ ] **OPEN:** (loop order locked DEC-010; remaining electrical Q-009 / Q-016)
+- [ ] **OPEN:** (loop order locked DEC-010; remaining electrical Q-009 for HOLD 9)

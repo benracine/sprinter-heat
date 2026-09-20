@@ -1,6 +1,6 @@
 # The Numbers {#the-numbers-that-matter}
 
-A short card after [System Design](#system-design). Skim it, then continue to the [User’s Guide](#users-guide). Figures come from the Hydronic D5S diesel heater manual ([SRC-009](#src-009)) unless noted. If you swap the heater, rewrite this page from that heater’s manual first. Buffer sizing and predicted starts live in the [Isotemp value study](#isotemp-value-study).
+A short card after [System Design](#system-design). Skim it, then continue to the [User’s Guide](#users-guide). Figures come from the Hydronic D5S diesel heater manual ([SRC-009](#src-009)) unless noted. If you swap the heater, rewrite this page from that heater’s manual first. Isotemp chamber sizing and predicted starts live in the [Isotemp value study](#isotemp-value-study).
 
 Jump: [System Design](#system-design) · [User’s Guide](#users-guide) · [Isotemp value study](#isotemp-value-study) · [Builder’s Guide](#builders-guide) · [Source Register](#source-register)
 
@@ -30,4 +30,15 @@ Jump: [System Design](#system-design) · [User’s Guide](#users-guide) · [Isot
 | AM100-1LF thermostatic mixing valve | 70–145°F range; set ~120°F, lock handwheel, label ([DEC-008](#dec-008); [SRC-036](#src-036)) |
 | Diesel start lockout | Miss may retry ~70 s; lock after two further fails; ≤2 off/on into a fault |
 
-The Isotemp chamber holds about 4.2 gal of static glycol. The coil is charged by the heater pump. The 750 W element on Paneltronics **WATER HEATER** (face **72313** / sheet **9972313B**) heats the chamber only ([DEC-004](#dec-004) / [DEC-007](#dec-007) / [DEC-020](#dec-020)). How to live with that buffer day to day: [User’s Guide](#users-guide).
+The Isotemp chamber holds about 4.2 gal of static glycol. The coil is charged by the heater pump. The 750 W element on Paneltronics **WATER HEATER** (face **72313** / sheet **9972313B**) heats the chamber only ([DEC-004](#dec-004) / [DEC-007](#dec-007) / [DEC-020](#dec-020)).
+
+### Live with it (planning scale)
+
+| | |
+|---|---|
+| Chamber charge on AC (cool → ~75°C) | About **40–60 min** at 750 W; taps stay cold until the diesel pump runs |
+| Holdover at Low (2.1 kW) | **Tens of minutes**, not hours — see [Isotemp value study](#isotemp-value-study) |
+| Dish rinse after AC charge, warm loop | Pump on; flame often stays off; hot water in ~**30–60 s**; ~**2–5 min** of rinse |
+| Dish rinse after AC charge, cold loop | Pump on; flame usually lights; useful hot water in ~**2–5 min** |
+| Day-to-day steps | [User’s Guide](#users-guide) · [AC chamber and dishes](#ac-chamber-and-dishes) |
+| Keep-or-sell numbers | [Isotemp value study](#isotemp-value-study) |

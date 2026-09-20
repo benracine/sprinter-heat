@@ -74,7 +74,7 @@ Land every pin from the printed manuals ([SRC-009](#src-009) / [SRC-003](#src-00
 
 ![Day-one electrical](diagrams/electrical.svg)
 
-**Enough for diesel first fire.** Turn the master On, start heat on the EasyStart Timer, and set the fan dial. Living with the Isotemp buffer and AC dish rinses is in the [User’s Guide](#users-guide). The numbers behind keep-or-sell are in the [Isotemp value study](#isotemp-value-study).
+**Enough for diesel first fire.** Turn the master On, start heat on the EasyStart Timer, and set the fan dial. Living with the Isotemp chamber and AC dish rinses is in the [User’s Guide](#users-guide). The numbers behind keep-or-sell are in the [Isotemp value study](#isotemp-value-study).
 
 **Still being completed.** SC1600 auto ([Q-022](#q-022)) and the Isotemp AC circuit with upstream GFCI ([Q-009](#q-009)). Land the altitude kit at HOLD 4 while the harness is open ([Q-015](#q-015)).
 
@@ -106,7 +106,7 @@ For an emergency stop, turn EasyStart off, then master Off, then pull the 20 A i
 
 ![Wake](diagrams/electrical-wake.svg)
 
-Think of two jobs on the timer:
+The EasyStart Timer does two jobs:
 
 1. **Feed the timer.** Branch A powers EasyStart pin **1** (red +) and pin **3** (brown −).
 2. **Wake the heater.** When you press start (or a schedule hits), the timer puts positive on pin **6** (yellow). That yellow wire runs through the control harness into the heater at pin **7**. Eberspächer calls that signal **S+**—“switch on.”
@@ -127,7 +127,7 @@ With battery on pins 1–2 and the yellow wake on pin 7, the heater runs:
 
 Do **not** add a second glycol pump.
 
-Ignore the kit’s vehicle-blower wiring (pin **3**, blower relay leads, and the 25 A blower fuse). That wiring is for a car heater core, not this cabin heater. Tape those leads off and plug unused chambers.
+Ignore the kit’s vehicle-blower wiring (pin **3**, blower relay leads, and the 25 A blower fuse). That wiring is for a car heater matrix, not this Sure Marine cabin heater. Tape those leads off and plug unused chambers.
 
 ### Cabin fans
 

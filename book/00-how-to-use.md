@@ -14,7 +14,7 @@ Read in this order: [Safety](#safety) → [System Design](#system-design) → [T
 
 [The Numbers](#the-numbers-that-matter) is a short card after the design—skim it, then keep going. While you build, return to Safety and System Design—especially [Controls](#controls) and [The Parts](#the-parts)—whenever a HOLD points you there. The User’s Guide describes the finished system. Do not light the heater from that chapter until Acceptance. After Acceptance, that guide is your day-to-day manual.
 
-Two finish lines matter later: **diesel cabin heat and diesel hot water** can pass before [HOLD 9](#hold-9); **complete system** (including Isotemp AC) needs HOLD 9. The install map (four phases, what can wait) lives at the top of the [Builder’s Guide](#builders-guide).
+Two finish lines matter later: **diesel cabin heat and diesel hot water** can pass before [HOLD 9](#hold-9) (Isotemp still plumbed and chamber full—only the AC element waits); **complete system** (including Isotemp AC) needs HOLD 9. The install map (four phases, what can wait) lives at the top of the [Builder’s Guide](#builders-guide).
 
 ### Lookups
 

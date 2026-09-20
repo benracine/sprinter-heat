@@ -86,7 +86,7 @@ SC1600B: battery-powered; R–W dry contact ≤1 A. Fans need a relay. Fan dial 
 
 ## Altitude kit 22 1000 33 22 00
 
-Adapter on the control harness (SRC-002). High camps only (Q-015).
+Adapter on the control harness (SRC-002). Land at HOLD 4 while the EasyStart harness is open (Q-015 / DEC-006). Required before high camps; not on the post–first-fire wait list with Q-022 / Q-009.
 
 ## Isotemp element (DEC-004 / DEC-020)
 

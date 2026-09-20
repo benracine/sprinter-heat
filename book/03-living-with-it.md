@@ -16,7 +16,7 @@ Jump: [System Design](#system-design) · [The Numbers](#the-numbers-that-matter)
 | Dish rinse with chamber already hot | Master **On**, short EasyStart start, then follow [AC chamber and dishes](#ac-chamber-and-dishes). Draw through the AM100-1LF only. |
 | Charge chamber from shore/solar | After [HOLD 9](#hold-9) → **WATER HEATER** on (chamber must be full). Taps stay cold until you run EasyStart |
 | Pre-heat later | Master **On** → set an EasyStart schedule |
-| Mountains overnight | Install the altitude kit first ([DEC-006](#dec-006)) |
+| Mountains overnight | Altitude kit already landed at HOLD 4 ([DEC-006](#dec-006) / [Q-015](#q-015)); do not overnight above ~5,000 ft without it |
 | Emergency stop | EasyStart off → master Off → Isotemp AC off → fuse or battery if needed. No more than two off/on cycles into a fault |
 
 Until [Q-022](#q-022) closes, always start heat from the EasyStart Timer, not from the SC1600B.
@@ -92,7 +92,7 @@ The pump and the burner are different. EasyStart always starts the pump. The bur
 
 If the glycol loop is still warm from recent heat, the flame often stays off. Wait about half a minute to a minute, then open the tap. You get about two to five minutes of dish-rinse water (a few liters). After that the water softens or the burner lights.
 
-If the glycol loop is cold, the flame almost always comes on. The D5S feels cold coolant, not the hot chamber. Wait about two to five minutes for useful hot water at the sink. The chamber helps the diesel finish the job faster. It does not skip the flame.
+If the glycol loop is cold, the flame almost always comes on. The D5S senses cold coolant at the heater, not the hot chamber. Wait about two to five minutes for useful hot water at the sink. The chamber helps the diesel finish the job faster. It does not skip the flame.
 
 This is a dish rinse, not a shower. For a shower, run EasyStart and expect the diesel to work.
 
@@ -111,21 +111,22 @@ This is a dish rinse, not a shower. For a shower, run EasyStart and expect the d
 
 1. Turn EasyStart off, then master Off, then Isotemp AC off.  
 2. Pull the fuse or disconnect the battery if needed (that counts toward the two off/on limit).  
-3. Before you restart, check for fuel wetness or smell, exhaust into the cabin, a glycol leak, a low cool WFT, battery outside 10.5–16 V, or a lukewarm core while the burner runs (air or a kink). → [Hazards](#hazard-register)  
+3. Before you restart, check for fuel wetness or smell, exhaust into the cabin, a glycol leak, a low cool WFT, battery outside 10.5–16 V, or a lukewarm Sure Marine cabin heater while the burner runs (air or a kink). → [Hazards](#hazard-register)  
 4. After an overheat, wait until coolant is below about 70°C (158°F).  
 
 Normal Power / High / Low staging is not a fault—see [The Numbers](#the-numbers-that-matter).
 
-## Occasional checks
+## Occasional checks {#occasional-checks}
 
 | When | Check |
 |---|---|
 | After loop work | Cool WFT level; same mix (Prestone LowTox AF555 ≤50%) |
-| Before high camps | Altitude kit installed and checked |
+| Before high camps | Altitude kit installed and checked (landed at HOLD 4) |
 | Early fires | Fuel and exhaust for wetness, rub, or smell |
 | Before a heat call | Battery 10.5–16 V |
 | Before Isotemp AC | Chamber full; **WATER HEATER** plus upstream GFCI/ELCI |
 | Long storage | Master Off; Isotemp AC off |
+| After first fire / after HOLD 9 | Log starts/hour, pause length, dish rinse, AC charge minutes — [Isotemp commissioning log](#isotemp-commissioning-log) |
 
 ## Use check
 
@@ -134,6 +135,8 @@ Normal Power / High / Low staging is not a fault—see [The Numbers](#the-number
 - [ ] Showers only through AM100-1LF at about 120°F  
 - [ ] Isotemp AC charges the chamber only; taps still need the pump  
 - [ ] Dish rinse timing (warm loop vs cold loop) is clear  
+- [ ] Pump-continues-in-pause and burner-may-stay-off are clear  
+- [ ] Diesel-only vs complete Acceptance (HOLD 9) is clear  
 - [ ] Emergency stop and the two off/on rule are clear  
 
 → [Status](#current-status-report), then [Make it](#builders-guide).

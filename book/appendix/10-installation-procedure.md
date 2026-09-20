@@ -39,4 +39,4 @@ Eberspächer mounting, fuel, exhaust, EasyStart Timer wiring, Altitude kit 22 10
 ## Open items
 
 - [ ] **OPEN:** Owner fuel-priming tool procedure (07-fuel-system.md)
-- [ ] **OPEN:** Q-009 / Q-016 — Paneltronics breaker, GFCI/grounding, cable route, and control/enable details
+- [ ] **OPEN:** Q-009 — Paneltronics breaker, GFCI/grounding, cable route, and control/enable details (HOLD 9). Q-016 architecture closed (AC-only panel).

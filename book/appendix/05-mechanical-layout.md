@@ -30,8 +30,8 @@ Permissible tilt angles: SRC-009 p. 16. Heater horizontal→vertical range per d
 
 - Mount **level** on a flat surface. Angled mounts trap air away from the bleeder (SRC-019 p. 25).
 - Propylene glycol **in bottom, out top** unless the unit’s plate says otherwise. Plan an outlet-side bleeder.
-- Keep the core below the WFT 5 L expansion/header tank fluid level.
-- Cabin air only — draw living-space (or outside) air across the core; do not pull from a fume-laden bay.
+- Keep the Sure Marine cabin heater below the WFT 5 L expansion/header tank fluid level.
+- Cabin air only — draw living-space (or outside) air across the Sure Marine cabin heater; do not pull from a fume-laden bay.
 
 ### Isotemp Slim Square 4.2 gal heat battery `[DEC-001, SRC-022]`
 

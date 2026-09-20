@@ -54,7 +54,7 @@ Isotemp Slim Square 4.2 gal heat battery commissioning (DEC-007). Eberspächer f
 - [ ] Optional: supply-to-return ΔT near ~10°F while running; much larger suggests low flow (SRC-019 hint; confirm vs SRC-009 250 l/h)
 - [ ] AM100-1LF thermostatic mixing valve setpoint confirmed before any shower
 - [ ] Master switch Off verified as lockout
-- [ ] Altitude kit 22 1000 33 22 00 still OPEN only if no high camps planned yet (Q-015)
+- [ ] Altitude kit 22 1000 33 22 00 landed at HOLD 4 (or explicitly documented exception before a low-elevation-only first fire); required before high camps (Q-015 / DEC-006)
 - [ ] Isotemp Slim Square 4.2 gal heat battery element operation tested only after Paneltronics checks and full-chamber confirmation
 
 ## Verification
@@ -66,5 +66,5 @@ Isotemp Slim Square 4.2 gal heat battery commissioning (DEC-007). Eberspächer f
 
 ## Open items
 
-- [ ] **OPEN:** Q-009 / Q-016 Paneltronics AC protection, cable route, and control/enable details
-- [ ] **MEASURE:** Confirm Altitude kit 22 1000 33 22 00 P/N and H-Kit mark before high camps (Q-015)
+- [ ] **OPEN:** Q-009 Paneltronics AC protection, cable route, and control/enable details (HOLD 9). Q-016 is closed on architecture (AC-only panel); remaining work is Q-009.
+- [ ] **MEASURE:** Confirm Altitude kit 22 1000 33 22 00 is mounted and wired at HOLD 4; required before high camps (Q-015)

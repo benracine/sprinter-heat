@@ -10,6 +10,13 @@ Jump: [Project Phases](#project-phases) · [Builder’s Guide](#builders-guide) 
 **Next — Phase A.** Fuel pickup and exhaust are already on the van. Finish HOLD 1 and HOLD 2 against [SRC-009](#src-009) before you open Phase B.
 :::
 
+| Phase | Status |
+|---|---|
+| A. Fuel and exhaust | **Do next** — HOLD 1–2 open |
+| B. Mount and wire | After A — includes altitude kit at HOLD 4 |
+| C. Dry plumbing | Later |
+| D. Fill and first fire | Last — HOLD 9 for complete system only |
+
 Ask once per part: if it is already on the van, inspect and finish the remaining work; if it is still in the garage, bring it in for Phase B after Phase A passes. After diesel Acceptance, live from the [User’s Guide](#users-guide). Keep-or-sell numbers for the Isotemp are in the [Isotemp value study](#isotemp-value-study).
 
 ## Already on the van
@@ -18,7 +25,7 @@ Ask once per part: if it is already on the van, inspect and finish the remaining
 |---|---|---|
 | Hydronic D5S diesel heater | Mounted; **25 2526** / **H-Kit** | Confirm tilt ([SRC-009](#src-009)) |
 | Fuel pickup (factory aux tap) | Installed | [HOLD 1](#hold-1-fuel); prime at [HOLD 8](#hold-8-first-fire) |
-| Exhaust / combustion air | Believed complete | [HOLD 2](#hold-2-exhaust) checklist |
+| Exhaust / combustion air | On van; re-check before fire | [HOLD 2](#hold-2-exhaust) checklist |
 | Duda B3-12DW-20 + AM100-1LF mixer | Mixer on; one hose on | Glycol port; mixed and cold to taps; set ~120°F |
 | Sure Marine cabin heater | REAL **16401**; **IN bottom / OUT top**; fans taped | Level, bleeder, fan power — [HOLD 3](#hold-3-mounts) / 4 |
 | EasyStart Timer | On wood panel (with LinkPRO / PROwatt SW) | Land per [SRC-003](#src-003) / [SRC-009](#src-009) — [HOLD 4](#hold-4-electrical) |
@@ -49,9 +56,17 @@ Diesel-only Acceptance can finish without HOLD 9. Complete system Acceptance nee
 
 ## Still open (check the manuals first)
 
+**May wait after a low-elevation diesel first fire**
+
 - [Q-022](#q-022) — SC1600 relay and approved wake landing; use EasyStart only until then  
 - [Q-009](#q-009) — upstream GFCI/ELCI and element route before HOLD 9  
-- [Q-015](#q-015) — altitude kit install and wire (identity is confirmed)  
+
+**Do at HOLD 4 (not on the wait list)**
+
+- [Q-015](#q-015) — altitude kit install and wire (identity confirmed); required before high camps  
+
+**Owner placement answers**
+
 - [Questions for You](#questions-for-you-in-order) — bay spots, relay, fans, GFCI, mountain timing  
 
 → [Builder’s Guide](#builders-guide).

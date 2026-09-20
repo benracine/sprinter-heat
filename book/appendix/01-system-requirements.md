@@ -72,5 +72,6 @@ Tolerances ±10% at rated voltage / Esslingen reference altitude. Staging ~65 / 
 - [ ] **OPEN:** Q-010 fuel-line routing inspection before first fire
 - [ ] **OPEN:** Q-013 EasyStart Timer wiring finish
 - [ ] **OPEN:** Q-015 Altitude kit 22 1000 33 22 00 land at HOLD 4 (required before high camps; preferred with harness open)
-- [ ] **OPEN:** Q-009 / Q-016 element AC path (required for **complete** system acceptance; diesel-only first fire may precede HOLD 9)
-- [ ] **OPEN:** Q-019 / Q-021 brand pick and Sure Marine cabin heater switch model
+- [ ] **OPEN:** Q-009 Paneltronics AC path (HOLD 9). Q-016 architecture closed (AC-only); remaining work is Q-009.
+- [ ] **CLOSED:** Q-019 / DEC-017 — Prestone LowTox AF555 ≤50% for this loop
+- [ ] **CLOSED:** Q-021 / DEC-018 — fan dial Low/Med/High without hard Off (meter at HOLD 4)

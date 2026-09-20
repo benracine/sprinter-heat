@@ -12,7 +12,7 @@ Document-implied and owner-selected components. This is not a complete physical 
 | SRC-002 / SRC-003 | Whole | Altitude kit 22 1000 33 22 00 and EasyStart Timer |
 | SRC-008 / SRC-017 | Whole | Valve, Heatmiser |
 | SRC-004 | Architecture list | Blog-claimed van parts, Bosch withdrawn |
-| SRC-021 / SRC-022 | Product + I&O | Selected DHW tank |
+| SRC-021 / SRC-022 | Product + I&O | Selected Isotemp Slim Square (static glycol mass) |
 
 ## Content
 

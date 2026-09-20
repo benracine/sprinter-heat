@@ -2,7 +2,7 @@
 
 ## Scope
 
-Build a working BOM for the independent loop (DEC-009). DHW tank is selected (DEC-001).
+Build a working BOM for the independent loop (DEC-009). Isotemp Slim Square selected as static glycol mass (DEC-001 / DEC-007); Duda is the DHW exchanger (DEC-003).
 
 ## Inputs and sources
 
@@ -18,7 +18,7 @@ Build a working BOM for the independent loop (DEC-009). DHW tank is selected (DE
 
 No approved heater-side BOM. Do not purchase from mixed Eberspächer manuals.
 
-### Selected DHW / buffer line
+### Selected Isotemp / Duda line
 
 | Item | Qty | Spec | Source |
 |---|---|---|---|
@@ -27,11 +27,11 @@ No approved heater-side BOM. Do not purchase from mixed Eberspächer manuals.
 | AM100-1LF thermostatic mixing valve | 1 | On the Duda B3-12DW-20 plate heat exchanger hot outlet. Tap runs not landed | DEC-008; SRC-024 |
 | Hydronic coil hoses (Isotemp Slim Square 4.2 gal heat battery) | on hand | Owner has hose; remaining stock ID / material `[OPEN]` | Owner 2026-09-19 |
 | Duda B3-12DW-20 plate heat exchanger potable + glycol hoses | partial | Mixer on the Duda B3-12DW-20 plate heat exchanger; freshwater in through cabinet; one 3/4 in heater hose on a lower port; mixer-to-tap and remaining glycol barb open | SRC-024; SRC-026 |
-| Glycol | on hand | Prestone LowTox AF555 + Star brite Bio-Safe year-round — both concentrates (SRC-029 / SRC-030). Dilute ≤50%. Do not mix brands (Q-019) | Owner; SRC-027–031 |
+| Glycol | on hand | **Prestone LowTox AF555** concentrate only for this loop (DEC-017); ≤50%. Cap Star brite Bio-Safe | Owner; SRC-027–031; DEC-017 |
 | Clamps | on hand | Confirm type on the joints that matter | Owner 2026-09-19 |
 | SC1600B Digital Thermostat | 1 | Sure Marine cabin heater / cabin heat control — not hot water (DEC-014; earlier DEC-013 assist-circuit pump withdrawn) | DEC-014 |
 | Master Off/On 12 V switch | 1 | Gates EasyStart Timer + Sure Marine cabin heater circuit | DEC-012 |
-| Altitude kit 22 1000 33 22 00 | 1 | Required; garage — find box | DEC-006 / Q-015 |
+| Altitude kit 22 1000 33 22 00 | 1 | Required; garage — land at HOLD 4 | DEC-006 / Q-015 |
 
 ### Known documentation gaps
 
@@ -45,7 +45,7 @@ No approved heater-side BOM. Do not purchase from mixed Eberspächer manuals.
 | 6-port valve P/N unconfirmed | SRC-008 vs SRC-010 historical 330 00 176 | **N/A (DEC-009):** no engine splice |
 | Expansion-tank volume | WFT 5 L expansion/header tank + coil/hose circulating fill; 4.2 gal chamber separate static | DEC-005; DEC-007 |
 | Remaining hose stock ID | Landed Duda B3-12DW-20 plate heat exchanger hose is 3/4 in / 16 bar (SRC-024); leftover coil hose still open | Owner 2026-09-19 |
-| Glycol product / mix | Two PG concentrates on hand; mixing brands not OK; max 50% coolant (SRC-009) | Q-019; SRC-029; SRC-030 |
+| Glycol product / mix | Prestone LowTox AF555 concentrate ≤50% (DEC-017); do not mix brands | DEC-017; SRC-029 |
 
 ### Missing identification work (do this first)
 
@@ -53,7 +53,7 @@ No approved heater-side BOM. Do not purchase from mixed Eberspächer manuals.
 2. Photograph the Isotemp Slim Square 4.2 gal heat battery nameplate/P/N and the Sure Marine cabin heater if present.
 3. Duda B3-12DW-20 plate heat exchanger is on the van (SRC-024). Do not re-buy it.
 4. Match each photo to an SRC ID before adding a BOM line.
-5. Install Altitude kit 22 1000 33 22 00 from the garage; wire per SRC-002 before high camps (Q-015 — P/N and H-Kit already confirmed).
+5. Install Altitude kit 22 1000 33 22 00 from the garage at HOLD 4; wire per SRC-002 (Q-015 — P/N and H-Kit already confirmed). Required before high camps.
 
 ## Verification
 
@@ -65,6 +65,6 @@ No approved heater-side BOM. Do not purchase from mixed Eberspächer manuals.
 ## Open items
 
 - [ ] **OPEN:** Q-009 (Isotemp Slim Square 4.2 gal heat battery AC circuit / GFCI sizing)
-- [ ] **OPEN:** Q-019 (which concentrate brand for final fill)
-- [ ] **OPEN:** Q-021 (Sure Marine cabin heater switch model)
+- [ ] **CLOSED:** Q-019 / DEC-017 — Prestone LowTox AF555 ≤50%
+- [ ] **CLOSED:** Q-021 / DEC-018 — fan dial without hard Off
 - [ ] **MEASURE:** Remaining hose stock ID / material

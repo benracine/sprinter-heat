@@ -16,7 +16,7 @@ Use reinforced heater hose, stainless clamps, and brass, copper, or stainless ba
 
 ## What “done” means
 
-Cabin heat and diesel hot water can pass the diesel-only checks before [HOLD 9](#hold-9). Complete system acceptance requires the Isotemp AC circuit and first energization at [HOLD 9](#hold-9).
+Cabin heat and diesel hot water can pass the diesel-only checks before [HOLD 9](#hold-9). Diesel-only still means the Isotemp **coil is in the loop** and the **chamber is full of static glycol**—you just skip AC energize. Complete system acceptance requires the Isotemp AC circuit and first energization at [HOLD 9](#hold-9).
 
 ## Four Project Phases {#project-phases}
 
@@ -89,11 +89,13 @@ The altitude kit does not block a low-camp first fire. It is still not on the wa
 | EasyStart / Hydronic diagrams; Eberspächer-style crimper | No generic-crimp kit pins |
 | SC1600B; two Noctua NF-F12; 12 V fan dial | Cabin air |
 | Multimeter | Prove master Off |
-| Altitude kit 22 1000 33 22 00 | Before high camps |
+| Altitude kit 22 1000 33 22 00 | Land at HOLD 4 (required before high camps) |
 
 ## Sofa/bed platform decision
 
 The sofa/bed spans both sides of the van and has a removable center. Treat it as part of the hydronic installation: it must carry the Isotemp Slim Square 4.2 gal heat battery, preserve service access, and leave the WFT 5 L expansion/header tank as the highest point of the loop.
+
+**Preferred method for this van:** hybrid wood furniture shell plus an aluminum Isotemp cradle. That gives a defined restraint and service bay without forcing the whole bed into extrusion. Confirm the side bay and fastening details at HOLD S before cutting.
 
 ### Requirements before choosing a building method
 

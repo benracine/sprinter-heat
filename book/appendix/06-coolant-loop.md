@@ -27,7 +27,7 @@ Coolant chemistry, flow, pressure, and plumbing. Fresh water is heated in the Du
 | Min flow through heater | 250 l/h |
 | 12 V pump delivery | 680 l/h @ 0.1 bar, <12 W |
 
-Overheat / low-flow is a lockout condition: coolant must drop below 70 °C before restart after overheat (SRC-009 p. 32). Normal staging (SRC-009 p. 31): Power → High ~65 °C; High → Low ~80 °C; Low → Off/pause ~85 °C; restart from pause ~75 °C.
+Overheat / low-flow is a lockout condition: coolant must drop below 70 °C before restart after overheat (SRC-009 p. 32). Normal staging (SRC-009 p. 31): Power → High ~65 °C; High → Low ~80 °C; Low → Off/pause ~85 °C; restart from pause ~75 °C. **During pause the circulating pump keeps running** so the Isotemp coil can still exchange heat with the static chamber ([The Numbers](#the-numbers-that-matter); [Isotemp value study](#isotemp-value-study)).
 
 Hydronic II C and D5WS tables are **not** this heater (DEC-000) — do not use their min-flow or wattage columns.
 
@@ -114,7 +114,7 @@ SRC-018 (Webasto DBW) and **SRC-019 (Sure Marine TSL-17 with SureWire, June 2017
 - Bleed until a **steady** stream (sputter = air). Run the pump briefly, then bleed again.
 - Check header level only when the system is **cool**. Hot open-cap checks can scald.
 - Optional diagnostic after first heat (marine practice): supply-to-return ΔT around 10°F is healthy circulation; much larger ΔT suggests flow is too low. Confirm against SRC-009 min flow (250 l/h) if anything feels lukewarm while the burner runs.
-- Mix chemistry: that guide discusses ~40% antifreeze and a 50% ceiling. **This heater** is capped at **≤50% propylene glycol** by SRC-009; use one on-hand concentrate brand only (Q-019).
+- Mix chemistry: that guide discusses ~40% antifreeze and a 50% ceiling. **This heater** is capped at **≤50% propylene glycol** by SRC-009; use Prestone LowTox AF555 only (DEC-017).
 
 **Thermostat placement (SRC-019 p. 7)**
 
@@ -129,5 +129,5 @@ SRC-018 (Webasto DBW) and **SRC-019 (Sure Marine TSL-17 with SureWire, June 2017
 
 ## Open items
 
-- [ ] **OPEN:** Which concentrate brand to use for the final fill (Q-019) — either is OK chemically as concentrate; do not mix brands
+- [ ] **CLOSED:** Q-019 / DEC-017 — Prestone LowTox AF555 only, ≤50%
 - [ ] **MEASURE:** Static height of Eberspächer and coil in the Isotemp Slim Square 4.2 gal heat battery vs the WFT 5 L expansion/header tank; circulating fill volume (coil + hoses + heater)
