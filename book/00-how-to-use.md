@@ -1,7 +1,5 @@
 # How to Use This Book
 
-Three stages: how the system is designed, how you operate the finished system, and how to build the system from parts on the van and in the garage.
-
 | Stage | Go here | You leave knowing… |
 | --- | --- | --- |
 | **1. Architecture** | [System Design](#system-design) | What the system is, how heat moves, and what is forbidden |
