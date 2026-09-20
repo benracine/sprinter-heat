@@ -388,6 +388,27 @@ margin: 0.3em 0 0;
 font-weight: 500;
 }
 
+.study-tldr {
+margin: 1.5em 0 1.8em;
+padding: 1em 1.15em 0.75em;
+border: 1.5px solid color-mix(in srgb, var(--accent) 30%, var(--rule));
+border-left: 5px solid var(--accent);
+background: var(--accent-soft);
+break-inside: avoid;
+page-break-inside: avoid;
+}
+.study-tldr h2 {
+margin-top: 0;
+color: var(--accent);
+}
+.study-tldr table {
+margin-bottom: 0.8em;
+}
+table {
+break-inside: avoid;
+page-break-inside: avoid;
+}
+
 .install-guide {
 font-size: 11.75pt;
 line-height: 1.58;
@@ -689,6 +710,14 @@ line-height: 1.45;
 margin: 1.15em 0 1.5em;
 box-shadow: 0 1px 0 rgba(28, 25, 23, 0.03);
 }
+.study-tldr {
+padding: 1.1rem 1.2rem 0.85rem;
+border-radius: 10px;
+box-shadow: 0 1px 0 rgba(28, 25, 23, 0.03);
+}
+.study-tldr h2 {
+margin-top: 0;
+}
 th, td {
 padding: 0.7em 0.95em;
 vertical-align: top;
@@ -871,6 +900,13 @@ word-break: break-word;
 }
 table {
 font-variant-numeric: tabular-nums;
+}
+table {
+break-inside: avoid;
+page-break-inside: avoid;
+}
+thead {
+display: table-header-group;
 }
 img {
 max-width: 100%;
@@ -2947,11 +2983,11 @@ EasyStart)</td>
 </table>
 <p><strong>Sofa/bed (discovery):</strong> current bed <strong>coming
 out</strong>. Rebuild hybrid per <a href="#dec-021">DEC-021</a>: wood
-side boxes, aluminum Isotemp cradle, light plywood lift-out. Owner
-priorities: <strong>ease of access</strong> and <strong>ease of
-construction</strong> (<a href="#working-design-understanding">Working
-design understanding</a>). Day layout trade still OPEN (full-length
-remove vs rear forward-facing bench).</p>
+side boxes, aluminum Isotemp cradle, light plywood
+<strong>full-length</strong> lift-out (day = side seats + aisle). Water
+Flow Tank in <strong>backrest</strong>; Isotemp under bench. Sure Marine
+under fridge; Duda under sink. Details: <a href="#working-design-understanding">Working design understanding</a>.
+Effort: <a href="#effort-estimate">Effort estimate</a>.</p>
 <h2 id="do-not-change-the-design-into-these">Do not change the design
 into these</h2>
 <table>
@@ -3278,22 +3314,21 @@ brass/copper/stainless barbs</td>
 </table>
 <h2 id="sofabed-platform-decision">Sofa/bed platform decision</h2>
 <p>The current bed is <strong>coming out</strong>. Rebuild as a sofa/bed
-with a removable center for day use. It must carry the Isotemp Slim
-Square 4.2 gal heat battery on the <strong>driver side</strong>,
-preserve service access, and leave the Water Flow Tank (WFT) 5 L
-expansion/header as the highest glycol point in the loop (exact high
-mount still OPEN).</p>
+with a <strong>full-length</strong> removable center for day use (side
+seats + aisle). It must carry the Isotemp Slim Square 4.2 gal heat
+battery on the <strong>driver side under the bench (low)</strong>, put
+the Water Flow Tank in the <strong>backrest (high)</strong>, preserve
+service access, and keep the Water Flow Tank top as the highest
+circulating glycol point.</p>
 <p><strong>Owner priorities:</strong> ease of access and ease of
 construction. Prefer the simpler package that still reaches the Isotemp
-element (~30 cm), coil fittings, and straps—do not force a complex
-“hidden void” if it fights those priorities (<a href="#working-design-understanding">Working design
+element (~30 cm), coil fittings, and straps (<a href="#working-design-understanding">Working design
 understanding</a>).</p>
 <p><strong>Locked method (<a href="#dec-021">DEC-021</a>):</strong>
 hybrid — wood furniture shell + aluminum Isotemp cradle + light plywood
-lift-out center. Weighted score beat all-wood, all-extrusion, and steel
-(see <a href="#working-design-understanding">Working design
-understanding</a>). Day layout trade still OPEN: full-length removable
-center vs leaving a rear forward-facing bench.</p>
+lift-out center.</p>
+<p><strong>Remaining effort:</strong> see <a href="#effort-estimate">Effort estimate</a> (~110–120 h typical through
+diesel first fire; sofa is the largest block).</p>
 <h3 id="requirements-before-cutting">Requirements before cutting</h3>
 <ul>
 <li>Support the Isotemp empty and full. Empty mass is about 35 lb; a
@@ -4496,6 +4531,11 @@ reference (<a href="#src-041">SRC-041</a>). Confirm snapshot (<a href="#q-025">Q
 water can pass before HOLD 9. Complete system (Isotemp AC) needs HOLD 9.
 After a low-elevation diesel first fire, only Q-022 and Q-009 may still
 wait; land the altitude kit at HOLD 4.</p>
+<p><strong>Remaining effort (ASSUMPTION).</strong> About <strong>110–120
+person-hours</strong> typical through diesel first fire (sofa rebuild is
+the largest block); about <strong>120–130 h</strong> with HOLD 9 and
+light thermostat auto. Breakdown: <a href="#effort-estimate">Effort
+estimate</a>.</p>
 <p><strong>Where to read.</strong> Part one: <a href="#system-design">System Design</a> → <a href="#the-numbers-that-matter">Numbers</a> → <a href="#users-guide">User’s Guide</a> → <a href="#current-status-report">Status</a> → <a href="#builders-guide">Builder</a>. Part two: this appendix, starting at
 the <a href="#technical-appendix">Technical appendix</a> map.</p>
 <h2 id="vehicle-and-heater">Vehicle and heater</h2>
@@ -8013,7 +8053,8 @@ draw</td>
 </tr>
 </tbody>
 </table>
-<h2 id="tldr">TL;DR</h2>
+<section id="tldr" class="study-tldr">
+<h2>TL;DR</h2>
 <ul>
 <li><strong>Why a buffer helps:</strong> D5S Low is <strong>2.1
 kW</strong>. A well-insulated van often needs <strong>less than 2
@@ -8092,6 +8133,7 @@ helps the diesel finish faster; it does not skip the flame.</li>
 cabin / useful AC preheat for short draws; sell if those numbers do not
 show up.</li>
 </ul>
+</section>
 <h1 id="decision-log">Decision Log</h1>
 <h2 id="dec-000">DEC-000 — Heater identity confirmed: Hydronic D5S
 diesel heater</h2>
