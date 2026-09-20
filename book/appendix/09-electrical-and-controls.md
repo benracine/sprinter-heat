@@ -2,7 +2,7 @@
 
 ## Scope
 
-Pin tables and fuse sizes for this van’s Hydronic D5S + EasyStart Timer + master / fans / Paneltronics. Part one [Controls](#controls) is the plain-English story. Manufacturer diagrams still win at the connector.
+Pin tables and fuse sizes for this van’s Hydronic D5S + EasyStart Timer + master / fans / Paneltronics. Part one [Controls](#controls) is the plain-English story, including how hydronic loads sit on the existing house electrical. Manufacturer diagrams still win at the connector.
 
 **Wire size note:** Eberspächer manuals list **mm²**. This book uses **AWG** for shop work. Same conductors.
 
@@ -25,6 +25,8 @@ Pin tables and fuse sizes for this van’s Hydronic D5S + EasyStart Timer + mast
 | SRC-033 | SC1600 R–W limits (family; SC1600B not proven identical) |
 | SRC-038 / DEC-020 | Paneltronics WATER HEATER |
 | SRC-019 | Thermostat = signal; fans need a relay |
+| SRC-040 | Owner house-electrical intent (this van) |
+| SRC-041 | FarOutRide reference architecture (class of system) |
 
 ## Heater envelope (SRC-009 p. 13)
 
@@ -88,9 +90,21 @@ SC1600B: battery-powered; R–W dry contact ≤1 A. Fans need a relay. Fan dial 
 
 Adapter on the control harness (SRC-002). Land at HOLD 4 while the EasyStart harness is open (Q-015 / DEC-006). Required before high camps; not on the post–first-fire wait list with Q-022 / Q-009.
 
+## House electrical context (SRC-040 / SRC-041)
+
+Hydronic 12 V loads take power from the **house battery**. Hydronic AC (Isotemp 750 W) takes power from **Paneltronics**, which is fed by shore and/or the **PROwatt SW** inverter. This appendix does not size the house bank, solar, B2B, or shore charger.
+
+| Observed on van | Role for hydronic |
+|---|---|
+| Xantrex LinkPRO (wood panel) | Battery monitor — watch voltage before long inverter + **WATER HEATER** runs |
+| Xantrex PROwatt SW (wood panel) | Inverter face — must be on for off-grid AC to Paneltronics |
+| Paneltronics 72313 / 9972313B | AC distribution: MAIN · BATTERY CHARGER · **WATER HEATER** · OUTLETS |
+
+Owner intent: [SRC-040](#src-040). Same *class* of architecture: [SRC-041](#src-041). Confirm amps / Ah / solar / shore path on the van ([Q-025](#q-025)). Do not copy FarOutRide parts lists into this BOM.
+
 ## Isotemp element (DEC-004 / DEC-020)
 
-115 VAC / 750 W ≈ 6.5 A on Paneltronics **WATER HEATER**. Upstream GFCI/ELCI required (Q-009). Fill chamber before HOLD 9.
+115 VAC / 750 W ≈ 6.5 A on Paneltronics **WATER HEATER**. Upstream GFCI/ELCI required (Q-009). Fill chamber before HOLD 9. Path: shore and/or PROwatt SW → GFCI/ELCI → Paneltronics MAIN → **WATER HEATER** → element.
 
 ## Verification
 

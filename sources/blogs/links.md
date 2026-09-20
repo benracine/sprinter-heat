@@ -27,3 +27,7 @@ Registered in `research/source-register.md` on 2026-09-19.
 [SRC-008](https://www.lubricationspecialist.com/espar/6-port-combination-valve/)
 
 [SRC-021](https://www.vanlifeoutfitters.com/products/isotemp-slim-square-4-2-gallon-water-heater)
+
+[SRC-040](https://medium.com/@mylifewodoor/sprinter-van-electrical-27b51f6bbe8f)
+
+[SRC-041](https://faroutride.com/electrical-system/)

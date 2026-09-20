@@ -29,6 +29,7 @@ Ask once per part: if it is already on the van, inspect and finish the remaining
 | Duda B3-12DW-20 + AM100-1LF mixer | Mixer on; one hose on | Glycol port; mixed and cold to taps; set ~120°F |
 | Sure Marine cabin heater | REAL **16401**; **IN bottom / OUT top**; fans taped | Level, bleeder, fan power — [HOLD 3](#hold-3-mounts) / 4 |
 | EasyStart Timer | On wood panel (with LinkPRO / PROwatt SW) | Land per [SRC-003](#src-003) / [SRC-009](#src-009) — [HOLD 4](#hold-4-electrical) |
+| Xantrex LinkPRO + PROwatt SW | On wood panel with EasyStart | House monitor + inverter for Paneltronics AC ([SRC-040](#src-040) / [SRC-041](#src-041)) |
 | Paneltronics AC panel | **72313** / **9972313B**: MAIN 30 A · BATTERY CHARGER · **WATER HEATER** (empty, reserved) · OUTLETS | Element cable + upstream GFCI at [HOLD 9](#hold-9) |
 
 Diesel-only Acceptance can finish without HOLD 9. Complete system Acceptance needs HOLD 9. After diesel first fire, only [Q-022](#q-022) and [Q-009](#q-009) may still wait; land the altitude kit at HOLD 4.
@@ -65,8 +66,8 @@ Diesel-only Acceptance can finish without HOLD 9. Complete system Acceptance nee
 
 - [Q-015](#q-015) — altitude kit install and wire (identity confirmed); required before high camps  
 
-**Owner placement answers**
+**Owner placement / electrical answers**
 
-- [Questions for You](#questions-for-you-in-order) — bay spots, relay, fans, GFCI, mountain timing  
+- [Questions for You](#questions-for-you-in-order) — bay spots, relay, fans, GFCI, house electrical snapshot ([Q-025](#q-025)), mountain timing  
 
 → [Builder’s Guide](#builders-guide).

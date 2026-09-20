@@ -64,13 +64,37 @@ Meet each part once here. After this table, use only these official names—or t
 
 ## Controls
 
-The van has three electrical jobs. Keep the jobs separate.
+The van has three electrical jobs for the hydronic system. Keep the jobs separate.
 
 1. **12 V diesel heat** — the house battery feeds the heater and the EasyStart Timer.  
 2. **Cabin fans** — a dial sets how hard air blows across the Sure Marine cabin heater.  
 3. **120 V Isotemp element** — that load lives on Paneltronics only, and stays dead until [HOLD 9](#hold-9).
 
-Land every pin from the printed manuals ([SRC-009](#src-009) / [SRC-003](#src-003)). Wire sizes in this chapter are **AWG**; the manuals print mm² for the same conductors. Full pin tables live in [Electrical and Controls](#electrical-and-controls).
+### House electrical (context for hydronic)
+
+This book does not rebuild the whole van electrical system. House charging and distribution were designed earlier and are only lightly documented. Align on layout and remaining electrical facts in [Working design understanding](#working-design-understanding), then promote locked facts here.
+
+| Source | Role |
+|---|---|
+| [SRC-040](#src-040) — owner “Sprinter Van Electrical” | This van’s intended house layout (solar / shore / alternator / inverter / panels) |
+| [SRC-041](#src-041) — FarOutRide electrical guide | Same *class* of system: charge sources → house battery → 12 V loads; inverter and/or shore → 120 V AC |
+
+**What is already visible on this van**
+
+- Wood panel (with EasyStart): Xantrex **LinkPRO** battery monitor and Xantrex **PROwatt SW** inverter face.  
+- Paneltronics AC face **72313** / sheet **9972313B**: **MAIN 30 A** · **BATTERY CHARGER** · **WATER HEATER** (empty, reserved for Isotemp) · **OUTLETS** ([DEC-020](#dec-020)).
+
+**How heat uses that house system**
+
+| Path | Feeds | Notes |
+|---|---|---|
+| House battery → heater 20 A fuse | Hydronic D5S brain + pump | Always fused; not through the hydronic master switch |
+| House battery → master → EasyStart / fans / thermostat path | Heat call and cabin air | Master Off is the parked lockout for 12 V heat controls |
+| Shore and/or PROwatt SW → (GFCI/ELCI still OPEN) → Paneltronics MAIN → **WATER HEATER** | Isotemp 750 W element | ~6.5 A; never on the 12 V panel; master Off does **not** cut this |
+
+FarOutRide-style systems often keep a **shore battery charger** and an **inverter** as separate devices ([SRC-041](#src-041)). That matches a Paneltronics face with both **BATTERY CHARGER** and AC load branches. Exact charger amps, battery Ah, solar watts, and whether shore and inverter share a transfer path remain **ASSUMPTION** until confirmed against [SRC-040](#src-040) and the van ([Q-025](#q-025)).
+
+Land every hydronic pin from the printed manuals ([SRC-009](#src-009) / [SRC-003](#src-003)). Wire sizes in this chapter are **AWG**; the manuals print mm² for the same conductors. Full pin tables live in [Electrical and Controls](#electrical-and-controls).
 
 ![Day-one electrical](diagrams/electrical.svg)
 
@@ -153,7 +177,7 @@ Until [Q-022](#q-022) names an approved way to wake the heater from that switch,
 
 The Isotemp element circuit is **not** on the 12 V panel.
 
-Power runs from shore or inverter through an upstream **GFCI/ELCI** (still OPEN — [Q-009](#q-009)), then the Paneltronics main breaker, then the breaker labeled **WATER HEATER**, then the Isotemp 750 W element.
+Power runs from shore and/or the PROwatt SW inverter through an upstream **GFCI/ELCI** (still OPEN — [Q-009](#q-009)), then the Paneltronics main breaker, then the breaker labeled **WATER HEATER**, then the Isotemp 750 W element. House-electrical intent: [SRC-040](#src-040) / [SRC-041](#src-041).
 
 The element only warms the Isotemp **static** chamber. Circulating glycol still goes through the Isotemp **coil** whenever the diesel pump runs. Running the element alone will not give you a hot shower.
 

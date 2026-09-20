@@ -66,11 +66,13 @@ Stored energy in the chamber is **tens of minutes** of holdover at Low output, n
 
 Use this after [HOLD 9](#hold-9) (chamber full, GFCI/ELCI and Paneltronics path verified).
 
+The 750 W element is a **house AC** load. It rides the same Paneltronics face as **BATTERY CHARGER** and **OUTLETS**. Energy to that face comes from shore power and/or the PROwatt SW inverter fed by the house battery (and whatever solar / alternator charging fills that battery — [SRC-040](#src-040) / [SRC-041](#src-041)). Master **Off** does not cut Isotemp AC.
+
 ### Charge
 
-1. Shore or abundant solar ready; inverter on if you are not on shore.
-2. Turn Paneltronics **WATER HEATER** **on**.
-3. The 750 W element heats the **static chamber** only. The working thermostat cuts near **75°C / 167°F**, then tops off as the chamber cools. From a cool chamber, plan about **40–60 minutes** to reach that band.
+1. Shore power connected, **or** inverter on with enough house-battery / solar headroom for ~750 W plus inverter idle.  
+2. Turn Paneltronics **WATER HEATER** **on**.  
+3. The 750 W element heats the **static chamber** only. The working thermostat cuts near **75°C / 167°F**, then tops off as the chamber cools. From a cool chamber, plan about **40–60 minutes** to reach that band.  
 4. Taps stay **cold** during the charge. No pump → no heat at the Duda.
 
 ### Leave WATER HEATER on or not?
@@ -82,7 +84,7 @@ The thermostat will top off by itself. That does **not** mean leave inverter + *
 | Shore power, or solar clearly covering ~750 W plus inverter idle | Saving the house battery; long unattended park; HOLD 9 / GFCI path not finished |
 | You want the chamber ready for a later dish rinse | You only need cabin heat from diesel |
 
-Master **Off** does not cut Isotemp AC. Kill **WATER HEATER** (and the inverter if you are done) separately.
+Kill **WATER HEATER** (and the inverter if you are done) separately from the hydronic master.
 
 ### Dish rinse after a charge
 

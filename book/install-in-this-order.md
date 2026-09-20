@@ -591,7 +591,7 @@ Do not run the Hydronic D5S diesel heater in a closed garage. Exhaust is carbon 
 
 ## 9. First energize of Isotemp AC element ([HOLD 9](#hold-9)) {#hold-9}
 
-Do this only after HOLD 7 (chamber full) and after you have closed [Q-009](#q-009) / [Q-016](#q-016) far enough to name the actual Paneltronics breaker, GFCI/grounding, cable size, and switch. A diesel-only first fire may precede [HOLD 9](#hold-9), but complete system acceptance requires [HOLD 9](#hold-9).
+Do this only after HOLD 7 (chamber full) and after you have closed [Q-009](#q-009) far enough to name the actual Paneltronics breaker, GFCI/grounding, cable size, and how shore / PROwatt SW feed Paneltronics MAIN ([SRC-040](#src-040) / [SRC-041](#src-041) / [Q-025](#q-025)). A diesel-only first fire may precede [HOLD 9](#hold-9), but complete system acceptance requires [HOLD 9](#hold-9).
 
 1. Confirm the Isotemp chamber is full of the same propylene glycol mix; element never runs dry ([SRC-022](#src-022)).
 2. Confirm the element cable lands only on the Paneltronics AC panel — never the 12 V panel.

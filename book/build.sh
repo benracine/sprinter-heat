@@ -44,6 +44,7 @@ FILES=(
   "$BOOK/appendix/12-isotemp-value-study.md"
   "$BOOK/appendix/decisions.md"
   "$BOOK/appendix/open-questions.md"
+  "$BOOK/research/house-electrical-understanding.md"
   "$BOOK/research/verified-requirements.md"
   "$BOOK/research/source-register.md"
 )

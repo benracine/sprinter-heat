@@ -16,6 +16,7 @@ Do not create or maintain any other report, guide PDF, or HTML alias.
 |---|---|
 | `book/00`–`05`, `install-in-this-order.md` | Part one (edit here first) |
 | `book/front-matter.md`, `book/appendix/`, `book/research/` | Part two |
+| `book/research/house-electrical-understanding.md` | Working design scratchpad (sofa, layout, short electrical facts) — promote when VERIFIED |
 | `book/diagrams/*.mmd` (+ matching `.svg`) | Loop / air / electrical diagrams |
 | `book/build.sh`, `book/style.css` | Build only |
 | `sources/` | Manufacturer PDFs and blog links — **cite, do not dump into chat** |

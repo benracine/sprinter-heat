@@ -13,6 +13,7 @@ This is the controlled reference record for the build: specifications, sources, 
 | Serial install HOLDs | [Builder’s Guide](#builders-guide) | [Installation](#installation-procedure) · [Commissioning](#commissioning-procedure) |
 | Dual finish lines (diesel vs complete) | [How to Use](#how-to-use-this-book) · [Acceptance](#acceptance) | [HOLD 9](#hold-9) · [Q-009](#q-009) |
 | Keep-or-sell Isotemp numbers | [Isotemp value study](#isotemp-value-study) | [Coolant Loop](#coolant-loop) · [DEC-007](#dec-007) |
+| House / sofa working draft | [Working design understanding](#working-design-understanding) | Promote into [Controls](#controls) · HOLD S · [Q-009](#q-009) |
 | Owner answers still open | [Questions for You](#questions-for-you-in-order) | full [Open Questions](#open-questions) table |
 | Stop rules | [Safety](#safety) | [Hazard Register](#hazard-register) |
 
@@ -23,3 +24,5 @@ This is the controlled reference record for the build: specifications, sources, 
 - After a low-elevation diesel first fire, only [Q-022](#q-022) and [Q-009](#q-009) / HOLD 9 may still wait. The altitude kit is **not** on that wait list—land it at HOLD 4 ([Q-015](#q-015) / [DEC-006](#dec-006)).
 
 The [Isotemp value study](#isotemp-value-study) is the keep-or-sell and cycling analysis for the Slim Square. Read it when you need the numbers behind the User’s Guide.
+
+Working drafts that are not yet locked live under `book/research/` (for example [Working design understanding](#working-design-understanding)). Promote VERIFIED rows into part one and the controlled appendix; do not invent a second report.
