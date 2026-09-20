@@ -2,6 +2,8 @@
 
 Scratchpad for Ben’s questions. Not the Builder’s Guide. Promote locked answers into part one / HOLD S when ready.
 
+**Hydronic mental model (promoted to [Controls](#controls)).** Two worlds that never share a fuse panel: **12 V** diesel heat + fans (master Off lockout) vs **120 V** Isotemp chamber on Paneltronics **WATER HEATER**. Two **Blue Sea 9009** rotaries: one is Isotemp heat (shore/inverter → Paneltronics); the other is battery charge only (shore/J1772 → Mean Well).
+
 ## Input from Ben
 
 - Doesn’t the Xantrex we own have GFCI on the outlets already? Doesn’t that help answer some outstanding questions?

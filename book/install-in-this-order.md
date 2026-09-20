@@ -333,7 +333,7 @@ REAL unit, SN **16401**. Label: **IN — bottom fitting · OUT — top fitting**
 
 ## 4. Wiring and controls {#hold-4-electrical}
 
-Story and diagrams: [Controls](#controls). Pin colours and AWG sizes: [Electrical and Controls](#electrical-and-controls). Land every connector from [SRC-009](#src-009) / [SRC-003](#src-003) on the bench — kit pins need the Eberspächer-style crimper.
+**Two worlds.** HOLD 4 lands **12 V** diesel heat (heater feed, master, EasyStart, fans, altitude kit) and routes the Isotemp **element cable** dead to Paneltronics. **120 V** energize is HOLD 9 only. Story and diagrams: [Controls](#controls). Pin colours and AWG: [Electrical and Controls](#electrical-and-controls). Land every connector from [SRC-009](#src-009) / [SRC-003](#src-003) on the bench — kit pins need the Eberspächer-style crimper.
 
 ### Heater battery feed and master {#hold-4-power}
 
