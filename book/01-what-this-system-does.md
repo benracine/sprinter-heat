@@ -2,7 +2,7 @@
 
 **Stage 1 — Architecture.** Finish this chapter before the [User’s Guide](#users-guide) or the [Builder’s Guide](#builders-guide). Read the glycol loop first, then the two jobs off that loop, then the part names. Next: skim [The Numbers](#the-numbers-that-matter), then the User’s Guide.
 
-Jump: [Safety](#safety) · [Locked architecture](#locked-architecture) · [The Parts](#the-parts) · [Controls](#controls) · [The Numbers](#the-numbers-that-matter) · [User’s Guide](#users-guide) · [Current Status](#current-status-report) · [Builder’s Guide](#builders-guide)
+Jump: [Safety](#safety) · [The glycol loop](#locked-architecture) · [The Parts](#the-parts) · [Controls](#controls) · [The Numbers](#the-numbers-that-matter) · [User’s Guide](#users-guide) · [Current Status](#current-status-report) · [Builder’s Guide](#builders-guide)
 
 ## Purpose
 
@@ -14,29 +14,25 @@ Day-to-day use: [User’s Guide](#users-guide). Keep-or-sell numbers: [Isotemp v
 
 **Stop and reject** any proposal that would splice into the engine, tee glycol into drinking water, bypass cabin heat, add a second glycol pump, or land the 750 W element on the 12 V panel.
 
-## Locked architecture {#locked-architecture}
-
-This is the spine of the system. Everything else hangs off this loop.
-
-| | Locked rule |
-|---|---|
-| Loop order | Return → heater pump → Hydronic D5S → Sure Marine cabin heater → Duda (glycol) → Isotemp coil → return ([DEC-010](#dec-010)) |
-| Header | Water Flow Tank (WFT) tees into the **return** at the highest circulating point — not in series, not off the Isotemp coil |
-| Why that order | Cabin heat first (daily priority); Duda next (hottest fluid for sinks / occasional showers); Isotemp last (stores leftovers — see [Isotemp value study](#isotemp-value-study)) |
-| Drinking water | Duda only; AM100-1LF on hot out; set ~120°F; taps from mixed outlet only ([DEC-003](#dec-003) / [DEC-008](#dec-008)) |
-| Isotemp | Coil circulating; chamber static same mix; **750 W** on Paneltronics **WATER HEATER** only. Factory mixer stays capped — never for taps ([DEC-008](#dec-008)) |
-| Heights | Water Flow Tank highest; everything else below it; cabin heater level, bottom-in/top-out, outlet bleeder; fill/drain at lowest point; unrestricted path from Water Flow Tank tee back to the pump |
-| Isotemp mount (owner) | **Driver side under bench/bed (low)**; Water Flow Tank in **sofa-bed backrest (high)**; day: **outboard → seat back**, **inboard → seat butt** ([Working design understanding](#working-design-understanding)) |
-| Cabin air | Living-space air across the Sure Marine cabin heater (**under the fridge**, SN 16401); Duda **under the sink**; combustion stays outside |
-| Build priority (owner) | **Ease of access** and **ease of construction** rank high for sofa/Isotemp packaging |
-| Sofa/bed materials ([DEC-021](#dec-021)) | **Hybrid:** wood side boxes + aluminum Isotemp cradle + light plywood day/night panels (seat-back / seat-butt geometry) — not all-extrusion furniture |
-| Hot water use (owner) | ~**80% sinks**; showers minority — mention showers, do not center the narrative on them |
+## The glycol loop {#locked-architecture}
 
 ::: {.media-pair}
 ![Glycol loop](diagrams/glycol-loop.svg)
 
 ![Glycol loop layout](assets/parts/glycol-loop.webp)
 :::
+
+Glycol circulates in this order only ([DEC-010](#dec-010)):
+
+1. Heater’s own pump → Hydronic D5S  
+2. Sure Marine cabin heater — cabin heat first (daily priority)  
+3. Duda (glycol side) — hottest fluid for sinks; showers are the minority (~**80%** sinks)  
+4. Isotemp coil — stores leftovers ([Isotemp value study](#isotemp-value-study))  
+5. Return to the pump  
+
+The Water Flow Tank tees into the **return** at the highest circulating point—not in series, not off the Isotemp coil. Keep the Water Flow Tank highest and everything else below it. Leave an unrestricted path from that tee back to the pump. Put fill and drain at the low point. Mount the cabin heater level, bottom-in / top-out, with a bleeder on the outlet.
+
+**Where those loop parts sit.** Sure Marine under the fridge (SN 16401). Duda under the sink. Isotemp driver-side under the bench (low). Water Flow Tank in the sofa-bed backrest (high). Day panels: outboard → seat back, inboard → seat butt ([Working design understanding](#working-design-understanding)). Sofa/bed is hybrid: wood side boxes, aluminum Isotemp cradle, light plywood panels ([DEC-021](#dec-021)). Ease of access and ease of construction rank high for that packaging.
 
 ## The two jobs
 
@@ -54,7 +50,7 @@ Living-space air crosses the Sure Marine cabin heater under the fridge. Two Noct
 
 ### Tap water
 
-Freshwater runs tank → pump → Duda (cold in bottom, hot out top) → AM100-1LF → sink / shower. Heat crosses the Duda double wall only. The Isotemp chamber is not on this path. The factory Isotemp mixer stays capped forever.
+Freshwater runs tank → pump → Duda (cold in bottom, hot out top) → AM100-1LF (~120°F) → sink / shower ([DEC-003](#dec-003) / [DEC-008](#dec-008)). Heat crosses the Duda double wall only. The Isotemp coil stays in the glycol loop; the chamber is static glycol of the same mix, heated only by leftover loop heat or the Paneltronics **WATER HEATER** element. The factory Isotemp mixer stays capped forever—never for taps.
 
 ::: {.media-pair}
 ![Fresh water system](diagrams/freshwater.svg)

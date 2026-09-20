@@ -6,7 +6,7 @@ This is the controlled reference record for the build: specifications, sources, 
 
 | If you need… | Start here | Then |
 |---|---|---|
-| Locked loop, forbidden designs, part glossary | [System Design](#system-design) / [Locked architecture](#locked-architecture) / [The Parts](#the-parts) | [System Architecture](#system-architecture) · [Decision Log](#decision-log) |
+| Locked loop, forbidden designs, part glossary | [System Design](#system-design) / [The glycol loop](#locked-architecture) / [The Parts](#the-parts) | [System Architecture](#system-architecture) · [Decision Log](#decision-log) |
 | Staging, fuel, altitude, mixer numbers | [The Numbers](#the-numbers-that-matter) | [Verified Requirements](#verified-requirements) · [Source Register](#source-register) |
 | Living with cabin heat, dishes, AC | [User’s Guide](#users-guide) | [Isotemp value study](#isotemp-value-study) |
 | What is on the van vs garage | [Current Status](#current-status-report) | [Parts Inventory](#parts-inventory) · [BOM](#bom-and-missing-parts) |
