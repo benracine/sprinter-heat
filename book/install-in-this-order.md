@@ -173,7 +173,11 @@ Forbidden while installing:
 - Teeing the Isotemp chamber into circulating flow
 - Using the Isotemp factory mixer as the tap mixer
 
+::: {.media-pair}
 ![Glycol loop](diagrams/glycol-loop.svg)
+
+![Glycol loop layout](assets/parts/glycol-loop.webp)
+:::
 
 **HOLD A — positions locked**
 

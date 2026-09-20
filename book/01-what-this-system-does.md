@@ -62,7 +62,11 @@ Meet each part once here. After this table, use only these official names—or t
 | Sofa/bed materials ([DEC-021](#dec-021)) | **Hybrid:** wood side boxes + aluminum Isotemp cradle + light plywood **full-length** lift-out — not all-extrusion furniture |
 | Hot water use (owner) | ~**80% sinks**; showers minority — mention showers, do not center the narrative on them |
 
+::: {.media-pair}
 ![Glycol loop](diagrams/glycol-loop.svg)
+
+![Glycol loop layout](assets/parts/glycol-loop.webp)
+:::
 
 ## Fuel, air, exhaust (architecture only)
 
