@@ -45,6 +45,9 @@ FILES=(
   "$BOOK/appendix/decisions.md"
   "$BOOK/appendix/open-questions.md"
   "$BOOK/research/house-electrical-understanding.md"
+  "$BOOK/research/photo-extract-electrical.md"
+  "$BOOK/research/photo-extract-heater.md"
+  "$BOOK/research/photo-extract-insulation.md"
   "$BOOK/research/verified-requirements.md"
   "$BOOK/research/source-register.md"
 )

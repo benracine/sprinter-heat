@@ -42,8 +42,19 @@ Xantrex inverter (L1/N) ───────────────┘        
 
 **GFCI (owner 2026-09-20):** “The inverter might be capable of that.” Treat as **unverified**. PROwatt SW 2000 face has dual GFCI receptacles; whether the **hardwired** feed into the Paneltronics 9009 / Paneltronics is also ground-fault protected is a manual + as-built check — do not assume face GFCI covers Isotemp. When the panel is on **shore** (not inverter), that inverter GFCI story does not apply anyway. HOLD 9: confirm inverter hardwire behavior, then state shore-side protection separately (or “breaker + chamber full” if none).
 
-**House DC snapshot (owner):** **200 Ah** battery bank; **650 W** rated solar on roof. Chargers: **Mean Well RPB-1600-12** (shore / J1772 via Blue Sea 9009) and **Sterling 60 A battery-to-battery** (alternator / vehicle charge path). PROwatt SW 2000 inverts for the AC panel when its 9009 is selected.
+**House DC snapshot (owner):** **200 Ah** battery bank (**LiFeBlue** LiFePO4 class in build photos — often 2×100 Ah); **650 W** rated solar on roof (**Victron SmartSolar MPPT 100\|50** in build photos). Chargers: **Mean Well RPB-1600-12** (shore / J1772 via Blue Sea 9009; replaces early **IOTA DLS-55** in diagrams — confirm IOTA gone) and **Sterling 60 A** B2B. **Blue Sea ML-RBS** remote battery switch + ~12-circuit **ST Blade** fuse block in power bay. Owner: blade block may be **full** → hydronic may need a **second breakout**. PROwatt SW 2000 inverts for the AC panel when its 9009 is selected.
 
+**Shore inlets (build photos):** exterior **SmartPlug** (120 V; cord often NEMA 5-15P) and underbody **DUOSIDA DSS-EV-32S-V3** J1772 (**32 A / 240 V**). Photo extract: [photo-extract-electrical](#photo-extract-electrical).
+
+---
+
+## Photo extracts (2026-09-20)
+
+| Folder | Notes file |
+| --- | --- |
+| `photos/Tyrah portfolio_ electrical/` | [photo-extract-electrical](#photo-extract-electrical) |
+| `photos/Tyrah portfolio_ heater stuff/` | [photo-extract-heater](#photo-extract-heater) |
+| `photos/Tyrah portfolio_ insulation/` | [photo-extract-insulation](#photo-extract-insulation) |
 
 ---
 
@@ -188,8 +199,8 @@ Exact Sprinter floor/wall hard-point map: still **OPEN**—measure before drilli
 | 3 | Isotemp bay + nearby layout | **Isotemp: driver side under bed/bench (low).** **Sure Marine:** under the fridge (Tyrah — fits). **Duda:** under the sink (as-built now). Hose routing: defer. |
 | 4 | Water Flow Tank (5 L header) height | **Owner 2026-09-20:** WFT in the **sofa-bed backrest** (high); Isotemp stays **under the bench/bed lower** — same furniture stack, different heights. Top of WFT must still be highest circulating glycol point. Fill/bleed via hinged/removable backrest panel. Prefer driver-side stack with Isotemp unless framing forces otherwise. |
 | 5 | Driver-side sofa back / hide Isotemp | **Superseded by #4.** Backrest’s job is the **Water Flow Tank** (access panel), not hiding the Isotemp. Isotemp service stays at the **low under-bench** face (~30 cm element clearance). Keep construction simple. |
-| 6 | Blue Sea 12 V block | **On van** (owner). House 12 V distribution—hydronic master / EasyStart / fans likely feed from here or via it. Confirm which fuse positions at HOLD 4. |
-| 7 | Sofa/bed materials | **Hybrid locked ([DEC-021](#dec-021)).** Wood shell + Al cradle + light ply **hinging/sliding** day panels (not carry-out as primary). |
+| 6 | Blue Sea 12 V block | **On van** (owner). House 12 V distribution. **Owner 2026-09-20:** may be **out of free fuse positions** for hydronic master / EasyStart / fans — plan a **second blade-fuse breakout** if needed. Photo evidence: ~12-circuit Blue Sea ST Blade in power bay ([photo-extract-electrical](#photo-extract-electrical)). |
+| 7 | Sofa/bed materials | **Hybrid locked ([DEC-021](#dec-021)).** Wood shell + Al cradle + light ply day/night panels (seat-back / seat-butt geometry). |
 | 8 | Paneltronics MAIN feed | **Owner 2026-09-20:** **Blue Sea 9009 rotary** selects **120 V RV shore** or **PROwatt SW 2000** into Paneltronics (diagram draft said automatic; as-built is rotary). Isotemp = “Coolant / water heater 120v” off that panel — **not** 12 V. |
 | 9 | Mean Well vs Paneltronics BATTERY CHARGER | **Mean Well RPB-1600-12** fed only via its own **Blue Sea 9009** (J1772 240 V ↔ 120 V shore). **Not** through Paneltronics **BATTERY CHARGER**. Owner: both rotaries are **9009s** (confirm faceplates). |
 | 10 | Inverter identity | **Xantrex PROwatt SW 2000** P/N **806-1220** (Amazon B002LGEMOQ). Diagram “SW2000” = wood-panel PROwatt SW. |
@@ -209,6 +220,7 @@ Exact Sprinter floor/wall hard-point map: still **OPEN**—measure before drilli
 | 24 | Day panels | **Owner 2026-09-20:** Prefer **outboard → seat back**, **inboard → seat butt** (details still open). Night = panels flat as sleep deck. Not carry-out. Hinge/slide hardware TBD to serve that geometry. |
 | 25 | Transfer switches as-built | **Both rotary Blue Sea; both believed 9009.** One → Mean Well; one → Paneltronics. Diagram draft’s “automatic” path is obsolete. |
 | 26 | Paneltronics 9009 use / labeling | **Owner:** throw **by hand**; switch is **poorly labelled** — hard to remember which position is shore vs inverter. May recover from an old Google photo. Book: add a clear face label at HOLD 4/9 (e.g. SHORE / INVERTER). |
+| 27 | Hydronic fuse positions | **Owner:** may be **running out of positions** on the existing Blue Sea blade block — **may need another breakout** for master / EasyStart / fan dial. |
 
 ## 12 V heat wiring (plain)
 
@@ -262,7 +274,11 @@ Shelf check: look for **W002-911** / **W002-912** / **W002-914** on the bag, or 
 - [x] Shore vs inverter into Paneltronics: **Blue Sea 9009 rotary** (as-built; diagram draft said automatic)
 - [x] Mean Well via its own **Blue Sea 9009** (J1772 ↔ 120 V shore) — **not** Paneltronics BATTERY CHARGER
 - [ ] Label both **9009** faces clearly (Paneltronics: SHORE / INVERTER; Mean Well: SHORE / J1772) — owner: Paneltronics one is poorly labelled today  
-- [ ] Optional: recover position meaning from old Google photo
+- [ ] Optional: recover position meaning from old Google photo  
+- [ ] Photograph Blue Sea blade block (used vs free); add **second breakout** if no free slots for master / EasyStart / fans  
+- [ ] Confirm IOTA DLS-55 removed; Mean Well RPB-1600-12 is the shore/J1772 charger  
+- [ ] Confirm SmartPlug (120 V) + DUOSIDA J1772 (32 A / 240 V) still feed the two 9009 paths as designed  
+
 - [x] Inverter: **Xantrex PROwatt SW 2000** (806-1220 / B002LGEMOQ) — diagram SW2000 = PROwatt SW  
 - [x] Master Off ≠ Isotemp AC — owner OK they are separate controls  
 - [x] Isotemp factory mixer — **unused forever** (cap only; AM100-1LF for taps)  

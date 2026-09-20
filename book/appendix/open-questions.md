@@ -24,11 +24,12 @@ The altitude kit is **not** on that wait list.
 3. **SC1600 fans** — Reference relay: TE **V23134-A3052-X540** (or any ISO mini 12 V / ≥10 A) — [DigiKey](https://www.digikey.com/en/products/detail/te-connectivity-potter-brumfield-relays/V23134-A3052-X540/6234681). Match on shelf or buy.
 4. **Cabin fans** — Both Noctua NF-F12; speed = voltage Low/Med/High dial (not NA-FC1). Meter Low still spins at HOLD 4.
 5. **Shore / inverter ground fault** — Inverter *might*; shore unknown; Paneltronics has no GFCI. Leave for HOLD 9.
-6. **House electrical snapshot** — **200 Ah** / **650 W** solar / Mean Well RPB-1600-12 / **Sterling 60 A** B2B / PROwatt SW 2000. Still compare to [SRC-040](#src-040) text when readable ([Q-025](#q-025)).
+6. **House electrical snapshot** — **200 Ah** / **650 W** solar / Mean Well RPB-1600-12 / **Sterling 60 A** B2B / PROwatt SW 2000 / two **9009** rotaries. Blade fuse block may need a **second breakout** for hydronic. Photo extracts: [photo-extract-electrical](#photo-extract-electrical). Still compare to [SRC-040](#src-040) ([Q-025](#q-025)).
 7. **Mountains** — First high camp **ASAP** → altitude kit at HOLD 4 is urgent.
 8. **Hot water** — ~80% sinks; showers minority — mention showers, don’t center on them.
+9. **Envelope** — Walls/ceiling already **Rattle Trap** + Thinsulate-class insulation behind grey panels / L-track ([photo-extract-insulation](#photo-extract-insulation)) — plan HOLD S hatches through that stack.
 
-Live layout/sofa discovery: [Working design understanding](#working-design-understanding).
+Live layout/sofa discovery: [Working design understanding](#working-design-understanding). Photo knowledge dumps: [electrical](#photo-extract-electrical) · [heater](#photo-extract-heater) · [insulation](#photo-extract-insulation).
 
 ---
 
@@ -57,4 +58,4 @@ Live layout/sofa discovery: [Working design understanding](#working-design-under
 | <span id="q-022">Q-022</span> | How does SC1600B wake the heater and enable fans? | Automatic cabin heat. | SRC-019 / SRC-033 / SRC-003 | No | **2026-09-20:** Intent locked (DEC-014) — dry contact → fan relay + heater wake. **Landing open.** Do **not** use EasyStart pins 9–10 (those are for the factory temp sensor). Fans need a relay. Until tested: EasyStart Timer only. |
 | <span id="q-023">Q-023</span> | What controls the withdrawn auxiliary glycol-pump circuit? | Must not reappear accidentally. | Owner | No | **N/A 2026-09-19 (DEC-013):** no auxiliary glycol pump. |
 | <span id="q-024">Q-024</span> | Does the WFT ~1.2 bar relief need a drip pan / routed drain? | Hot glycol under pressure. | DEC-019 | No | **Resolved 2026-09-19 (DEC-019):** yes — catch bottle, drip pan, or hose to a safe path. Free drip over living space forbidden. |
-| <span id="q-025">Q-025</span> | Does the installed house electrical still match [SRC-040](#src-040)? | Isotemp AC load planning; inverter vs shore behavior. | Owner / SRC-040 / SRC-041 / `photos/ac-electrical.jpg` | Partial (HOLD 9) | **2026-09-20:** Two **Blue Sea 9009** rotaries (as-built; diagram draft had auto on Paneltronics path): one → Paneltronics (shore ↔ PROwatt SW 2000), one → Mean Well **RPB-1600-12** (shore ↔ J1772). Confirm both faceplates are 9009. House: **200 Ah** / **650 W** solar / **Sterling 60 A** B2B. HOLD 9 ground-fault open. |
+| <span id="q-025">Q-025</span> | Does the installed house electrical still match [SRC-040](#src-040)? | Isotemp AC load planning; inverter vs shore behavior. | Owner / SRC-040 / SRC-041 / `photos/ac-electrical.jpg` / `photos/Tyrah portfolio_ electrical/` | Partial (HOLD 9) | **2026-09-20:** Two **Blue Sea 9009** rotaries (as-built): Paneltronics (shore ↔ PROwatt SW 2000; poorly labelled) and Mean Well **RPB-1600-12** (shore ↔ J1772). Inlets: **SmartPlug** + **DUOSIDA 32 A J1772**. House: **200 Ah** / **650 W** / **Sterling 60 A** / Victron **100\|50** (photos). Blade block may need **second breakout** for hydronic. Confirm IOTA DLS-55 removed. HOLD 9 ground-fault open. Extract: [photo-extract-electrical](#photo-extract-electrical). |

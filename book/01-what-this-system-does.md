@@ -98,9 +98,10 @@ This book does not rebuild the whole van electrical system. House charging and d
 **What is already visible on this van**
 
 - Wood panel (with EasyStart): Xantrex **LinkPRO** battery monitor and Xantrex **PROwatt SW 2000** inverter (P/N **806-1220**; dual GFCI outlets on the face only).  
-- **Blue Sea** 12 V distribution block (on van)—likely feed point for hydronic master / EasyStart / fans; confirm fuse positions at HOLD 4.  
+- **Blue Sea** house DC: **ML-RBS** remote battery switch (build photos), ~**12-circuit ST Blade** fuse block, busbars / high-amp fuses. Hydronic master / EasyStart / fans may need a **second blade breakout** if the main block is full ([photo-extract-electrical](#photo-extract-electrical)).  
 - Paneltronics AC face **72313** / sheet **9972313B**: **MAIN 30 A** · **BATTERY CHARGER** · **WATER HEATER** (empty, reserved for Isotemp) · **OUTLETS** ([DEC-020](#dec-020)).  
-- House bank (owner): **200 Ah** battery; **650 W** rated solar; **Sterling 60 A** battery-to-battery charger; **Mean Well RPB-1600-12** for shore / J1772 charge.
+- Shore / charge inlets (build photos): exterior **SmartPlug** (120 V) and underbody **DUOSIDA** J1772 (**32 A / 240 V**).  
+- House bank (owner): **200 Ah** battery; **650 W** rated solar (**Victron SmartSolar MPPT 100\|50** in build photos); **Sterling 60 A** B2B; **Mean Well RPB-1600-12** for shore / J1772 (early photos show **IOTA DLS-55** — confirm removed).
 
 **How heat uses that house system**
 

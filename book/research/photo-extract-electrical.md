@@ -1,4 +1,4 @@
-# Photo extract — Tyrah portfolio electrical
+# Photo extract — Tyrah portfolio electrical {#photo-extract-electrical}
 
 **Source folder:** `photos/Tyrah portfolio_ electrical/`  
 **Extracted:** 2026-09-20  

@@ -112,7 +112,7 @@ The current bed is **coming out**. Rebuild as a sofa/bed whose sleep deck is **m
 - Protect the Isotemp, hoses, element cable, and Paneltronics route from luggage, screws, sharp edges, and movement.
 - Leave access to the Isotemp fill/vent ports, safety valve, coil fittings, and electrical connection.
 - Provide positive mechanical restraint. The Isotemp must not rely on hose connections or furniture weight alone.
-- Plan plywood wall **access hatches** where bolts must hit metal behind panels.
+- Plan plywood wall **access hatches** where bolts must hit metal behind panels. Envelope already has **Rattle Trap** + Thinsulate-class fill behind grey panels ([photo-extract-insulation](#photo-extract-insulation)) — hatches must reach structure without gutting whole cavities.
 - Freshwater tank lives over the **passenger** rear wheel well—do not fight that bay with the Isotemp.
 
 ### Construction methods (weighted)
@@ -338,9 +338,10 @@ Story and diagrams: [Controls](#controls). Pin colours and AWG sizes: [Electrica
 ### Heater battery feed and master {#hold-4-power}
 
 1. Disconnect house-battery positive before cutting heater power leads.
-2. Heater battery **+** (red) and **−** (brown) at **12 AWG** if the round trip is **20 ft / 6 m** or less ([SRC-009](#src-009) p. 33 — manual says 4 mm²). Longer → go up one AWG size so drop stays ≤ 0.5 V.
-3. Land the **20 A** main fuse on that positive → heater pins **1–2**. This feed does **not** go through the master.
-4. From the battery (switched + only), mount the **master Off/On** next to EasyStart. After the master, three fused branches:
+2. Photograph the existing **Blue Sea ST Blade** fuse block (used vs free slots). Owner: positions may be **full** — if so, add a **second blade-fuse breakout** fed from a spare bus / high-amp fuse with its own feeder, then land hydronic branches there ([photo-extract-electrical](#photo-extract-electrical)).
+3. Heater battery **+** (red) and **−** (brown) at **12 AWG** if the round trip is **20 ft / 6 m** or less ([SRC-009](#src-009) p. 33 — manual says 4 mm²). Longer → go up one AWG size so drop stays ≤ 0.5 V.
+4. Land the **20 A** main fuse on that positive → heater pins **1–2**. This feed does **not** go through the master.
+5. From the battery (switched + only — typically after **Blue Sea ML-RBS** if that switch is still in the positive path), mount the **master Off/On** next to EasyStart. After the master, three fused branches:
 
 | Branch | Fuse | Goes to |
 |---|---|---|
@@ -406,6 +407,7 @@ Isotemp 750 W is a Paneltronics AC load. It heats the static chamber only. It do
 
 **HOLD 4 — 12 V electrical (AC element stays dead)**
 
+- [ ] Blue Sea blade block photographed; free slots named **or** second breakout planned/installed for hydronic branches
 - [ ] Heater feed 12 AWG (≤20 ft round trip) and 20 A fuse landed
 - [ ] Master Off kills EasyStart / thermostat path / fans
 - [ ] EasyStart landed; 5 A fuse inserted last
