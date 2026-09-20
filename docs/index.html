@@ -995,9 +995,10 @@ bay</a></li>
 </ul></li>
 <li><a href="#sofabed-platform-decision" id="toc-sofabed-platform-decision">Sofa/bed platform decision</a>
 <ul>
-<li><a href="#requirements-before-choosing-a-building-method" id="toc-requirements-before-choosing-a-building-method">Requirements
-before choosing a building method</a></li>
-<li><a href="#construction-methods" id="toc-construction-methods">Construction methods</a></li>
+<li><a href="#requirements-before-cutting" id="toc-requirements-before-cutting">Requirements before
+cutting</a></li>
+<li><a href="#construction-methods-weighted" id="toc-construction-methods-weighted">Construction methods
+(weighted)</a></li>
 <li><a href="#decision-procedure" id="toc-decision-procedure">Decision
 procedure</a></li>
 </ul></li>
@@ -1009,8 +1010,8 @@ combustion air</a></li>
 <li><a href="#hold-3-mounts" id="toc-hold-3-mounts">3. Mount the tanks
 and cabin heater</a>
 <ul>
-<li><a href="#wft-5-l-expansionheader-tank" id="toc-wft-5-l-expansionheader-tank">WFT 5 L expansion/header
-tank</a></li>
+<li><a href="#wft-5-l-expansionheader-tank-water-flow-tank-brand" id="toc-wft-5-l-expansionheader-tank-water-flow-tank-brand">WFT 5 L
+expansion/header tank — Water Flow Tank brand</a></li>
 <li><a href="#isotemp-slim-square-4.2-gal-heat-battery" id="toc-isotemp-slim-square-4.2-gal-heat-battery">Isotemp Slim Square
 4.2 gal heat battery</a></li>
 <li><a href="#duda-b3-12dw-20-plate-heat-exchanger-already-in-the-van" id="toc-duda-b3-12dw-20-plate-heat-exchanger-already-in-the-van">Duda
@@ -1397,24 +1398,31 @@ Low/Med/High without hard Off; NA-FC1 not used</a></li>
 safe catch path</a></li>
 <li><a href="#dec-020" id="toc-dec-020">DEC-020 — Paneltronics 9972313B
 / face 72313: WATER HEATER branch; GFCI not on the panel</a></li>
+<li><a href="#dec-021" id="toc-dec-021">DEC-021 — Sofa/bed: hybrid wood
+shell + aluminum Isotemp cradle</a></li>
 </ul></li>
 <li><a href="#open-questions" id="toc-open-questions">Open Questions</a>
 <ul>
 <li><a href="#questions-for-you-in-order" id="toc-questions-for-you-in-order">Questions for you, in order</a></li>
 </ul></li>
-<li><a href="#house-electrical-understanding" id="toc-house-electrical-understanding">Working understanding</a>
+<li><a href="#working-design-understanding" id="toc-working-design-understanding">Working design understanding</a>
 <ul>
 <li><a href="#input-from-ben" id="toc-input-from-ben">Input from
 Ben</a></li>
 <li><a href="#prowatt-sw-gfci" id="toc-prowatt-sw-gfci">PROwatt SW
 GFCI</a></li>
-<li><a href="#isotemp-ac-wiring-keep-it-simple" id="toc-isotemp-ac-wiring-keep-it-simple">Isotemp AC wiring (keep it
-simple)</a></li>
+<li><a href="#v-heat-wiring-plain" id="toc-v-heat-wiring-plain">12 V
+heat wiring (plain)</a></li>
 <li><a href="#layout-constraints-owner" id="toc-layout-constraints-owner">Layout constraints (owner)</a></li>
 <li><a href="#rip-out-the-bed" id="toc-rip-out-the-bed">Rip out the
 bed?</a></li>
 <li><a href="#materials-comparison-sofa-bed-structure" id="toc-materials-comparison-sofa-bed-structure">Materials comparison
-(sofa / bed structure)</a></li>
+(sofa / bed structure)</a>
+<ul>
+<li><a href="#what-matters-here-weights" id="toc-what-matters-here-weights">What matters here (weights)</a></li>
+<li><a href="#conclusion-locked-for-hold-s" id="toc-conclusion-locked-for-hold-s">Conclusion (locked for HOLD
+S)</a></li>
+</ul></li>
 <li><a href="#frame-mechanisms-removable-middle-day-sofa" id="toc-frame-mechanisms-removable-middle-day-sofa">Frame mechanisms
 (removable middle → day sofa)</a>
 <ul>
@@ -1422,13 +1430,17 @@ bed?</a></li>
 needs</a></li>
 <li><a href="#mechanisms-how-the-middle-attaches" id="toc-mechanisms-how-the-middle-attaches">Mechanisms (how the middle
 attaches)</a></li>
-<li><a href="#optimum-construction-for-this-van-recommendation" id="toc-optimum-construction-for-this-van-recommendation">Optimum
-construction for this van (recommendation)</a></li>
+<li><a href="#optimum-construction-for-this-van-dec-021-locked" id="toc-optimum-construction-for-this-van-dec-021-locked">Optimum
+construction for this van (DEC-021 locked)</a></li>
 <li><a href="#attach-to-van-floor-and-wall" id="toc-attach-to-van-floor-and-wall">Attach to van (floor and
 wall)</a></li>
 </ul></li>
 <li><a href="#plumbing-to-the-structure-sketch" id="toc-plumbing-to-the-structure-sketch">Plumbing to the structure
 (sketch)</a></li>
+<li><a href="#decisions-from-qa" id="toc-decisions-from-qa">Decisions
+from Q&amp;A</a></li>
+<li><a href="#v-heat-wiring-plain-1" id="toc-v-heat-wiring-plain-1">12 V
+heat wiring (plain)</a></li>
 <li><a href="#still-open-short" id="toc-still-open-short">Still open
 (short)</a></li>
 <li><a href="#scratch-notes" id="toc-scratch-notes">Scratch
@@ -1669,8 +1681,9 @@ chamber</em></td>
 element</td>
 </tr>
 <tr>
-<td><strong>WFT 5 L expansion/header tank</strong><br><em>Short:
-WFT</em></td>
+<td><strong>Water Flow Tank (WFT) 5 L expansion/header
+tank</strong><br><em>Short: Water Flow Tank; WFT (brand name, not a
+cryptic code)</em></td>
 <td><img role="img" aria-label="WFT expansion tank" src="data:image/jpeg;base64,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" class="part-photo" alt="WFT expansion tank" /></td>
 <td>Expansion + air bleed at the high point (~1.2 bar cap)</td>
 <td>Use the Isotemp potable PRV as a glycol setting</td>
@@ -1753,8 +1766,8 @@ Duda (glycol) → Isotemp coil → return (<a href="#dec-010">DEC-010</a>)</td>
 </tr>
 <tr>
 <td>Header</td>
-<td>WFT tees into the <strong>return</strong> at the highest circulating
-point — not in series, not off the Isotemp coil</td>
+<td>Water Flow Tank (WFT) tees into the <strong>return</strong> at the
+highest circulating point — not in series, not off the Isotemp coil</td>
 </tr>
 <tr>
 <td>Why that order</td>
@@ -1772,15 +1785,32 @@ only (<a href="#dec-003">DEC-003</a> / <a href="#dec-008">DEC-008</a>)</td>
 W on Paneltronics <strong>WATER HEATER</strong> only</td>
 </tr>
 <tr>
-<td>Cabin air</td>
-<td>Living-space air across the Sure Marine cabin heater (on van, SN
-16401); combustion stays outside</td>
+<td>Heights</td>
+<td>Water Flow Tank highest; everything else below it; cabin heater
+level, bottom-in/top-out, outlet bleeder; fill/drain at lowest point;
+unrestricted path from Water Flow Tank tee back to the pump</td>
 </tr>
 <tr>
-<td>Heights</td>
-<td>WFT highest; everything else below it; cabin heater level,
-bottom-in/top-out, outlet bleeder; fill/drain at lowest point;
-unrestricted path from WFT tee back to the pump</td>
+<td>Cabin air</td>
+<td>Living-space air across the Sure Marine cabin heater (on van, SN
+16401; intended near jump seat / sink-fridge); combustion stays
+outside</td>
+</tr>
+<tr>
+<td>Isotemp mount (owner)</td>
+<td><strong>Driver side under new sofa/bed</strong> — current bed coming
+out (<a href="#working-design-understanding">Working design
+understanding</a>)</td>
+</tr>
+<tr>
+<td>Build priority (owner)</td>
+<td><strong>Ease of access</strong> and <strong>ease of
+construction</strong> rank high for sofa/Isotemp packaging</td>
+</tr>
+<tr>
+<td>Sofa/bed materials (<a href="#dec-021">DEC-021</a>)</td>
+<td><strong>Hybrid:</strong> wood side boxes + aluminum Isotemp cradle +
+light plywood lift-out center — not all-extrusion furniture</td>
 </tr>
 </tbody>
 </table>
@@ -1855,8 +1885,12 @@ loads; inverter and/or shore → 120 V AC</td>
 <p><strong>What is already visible on this van</strong></p>
 <ul>
 <li>Wood panel (with EasyStart): Xantrex <strong>LinkPRO</strong>
-battery monitor and Xantrex <strong>PROwatt SW</strong> inverter
-face.<br />
+battery monitor and Xantrex <strong>PROwatt SW</strong> inverter face
+(dual GFCI outlets on the inverter face).<br />
+</li>
+<li><strong>Blue Sea</strong> 12 V distribution block (on van)—likely
+feed point for hydronic master / EasyStart / fans; confirm fuse
+positions at HOLD 4.<br />
 </li>
 <li>Paneltronics AC face <strong>72313</strong> / sheet
 <strong>9972313B</strong>: <strong>MAIN 30 A</strong> · <strong>BATTERY
@@ -1881,19 +1915,22 @@ Isotemp) · <strong>OUTLETS</strong> (<a href="#dec-020">DEC-020</a>).</li>
 <tr>
 <td>House battery → heater 20 A fuse</td>
 <td>Hydronic D5S brain + pump</td>
-<td>Always fused; not through the hydronic master switch</td>
+<td>Always fused; <strong>not</strong> through the hydronic master
+switch</td>
 </tr>
 <tr>
-<td>House battery → master → EasyStart / fans / thermostat path</td>
+<td>House battery → Blue Sea (typical) → <strong>master</strong> →
+EasyStart / fans / thermostat path</td>
 <td>Heat call and cabin air</td>
-<td>Master Off is the parked lockout for 12 V heat controls</td>
+<td>Master is <strong>upstream of the EasyStart Timer</strong>; Master
+Off is the parked lockout for 12 V heat controls</td>
 </tr>
 <tr>
-<td>Shore and/or PROwatt SW → (GFCI/ELCI still OPEN) → Paneltronics MAIN
-→ <strong>WATER HEATER</strong></td>
+<td>Shore and/or PROwatt SW → Paneltronics MAIN → <strong>WATER
+HEATER</strong></td>
 <td>Isotemp 750 W element</td>
 <td>~6.5 A; never on the 12 V panel; master Off does
-<strong>not</strong> cut this</td>
+<strong>not</strong> cut this; HOLD 9 documents protection</td>
 </tr>
 </tbody>
 </table>
@@ -2707,13 +2744,15 @@ study</a>.</p>
 </tr>
 <tr>
 <td>Duda B3-12DW-20 + AM100-1LF mixer</td>
-<td>Mixer on; one hose on</td>
-<td>Glycol port; mixed and cold to taps; set ~120°F</td>
+<td>Mixer on; one hose on; intended near jump seat / sink-fridge
+zone</td>
+<td>Glycol port; mixed and cold to taps; set ~120°F; confirm fit with
+cabin heater</td>
 </tr>
 <tr>
 <td>Sure Marine cabin heater</td>
 <td>REAL <strong>16401</strong>; <strong>IN bottom / OUT top</strong>;
-fans taped</td>
+fans taped; intended near jump seat / sink-fridge</td>
 <td>Level, bleeder, fan power — <a href="#hold-3-mounts">HOLD 3</a> /
 4</td>
 </tr>
@@ -2725,15 +2764,24 @@ fans taped</td>
 </tr>
 <tr>
 <td>Xantrex LinkPRO + PROwatt SW</td>
-<td>On wood panel with EasyStart</td>
-<td>House monitor + inverter for Paneltronics AC (<a href="#src-040">SRC-040</a> / <a href="#src-041">SRC-041</a>)</td>
+<td>On wood panel with EasyStart; PROwatt face has dual GFCI
+outlets</td>
+<td>House monitor + inverter; Paneltronics <strong>WATER HEATER</strong>
+path still HOLD 9</td>
+</tr>
+<tr>
+<td>Blue Sea 12 V distribution block</td>
+<td>On van (owner)</td>
+<td>Confirm fuse positions feeding master / EasyStart / fans at HOLD
+4</td>
 </tr>
 <tr>
 <td>Paneltronics AC panel</td>
 <td><strong>72313</strong> / <strong>9972313B</strong>: MAIN 30 A ·
 BATTERY CHARGER · <strong>WATER HEATER</strong> (empty, reserved) ·
 OUTLETS</td>
-<td>Element cable + upstream GFCI at <a href="#hold-9">HOLD 9</a></td>
+<td>Element cable + document protection at <a href="#hold-9">HOLD
+9</a></td>
 </tr>
 </tbody>
 </table>
@@ -2754,14 +2802,15 @@ land the altitude kit at HOLD 4.</p>
 </thead>
 <tbody>
 <tr>
-<td>WFT 5 L expansion/header tank</td>
-<td>Highest circulating point; tee on return; free path from tee to
-pump</td>
+<td>Water Flow Tank (WFT) 5 L expansion/header</td>
+<td><strong>Highest</strong> circulating glycol point (rear bench / high
+wall / other—not under bed unless that bay wins on height); tee on
+return; free path from tee to pump</td>
 </tr>
 <tr>
 <td>Isotemp Slim Square 4.2 gal heat battery</td>
-<td>Mount empty under sofa; mixer capped; element → <strong>WATER
-HEATER</strong> (dead)</td>
+<td>Mount empty <strong>driver side under new sofa/bed</strong>; mixer
+capped; element → <strong>WATER HEATER</strong> (dead)</td>
 </tr>
 <tr>
 <td>Altitude kit 22 1000 33 22 00</td>
@@ -2769,7 +2818,8 @@ HEATER</strong> (dead)</td>
 </tr>
 <tr>
 <td>Master switch</td>
-<td>Mount next to EasyStart; Off cuts three 12 V branches</td>
+<td>Mount next to EasyStart; Off cuts three 12 V branches (upstream of
+EasyStart)</td>
 </tr>
 <tr>
 <td>Hose, clamps, Prestone LowTox AF555 glycol</td>
@@ -2781,6 +2831,13 @@ HEATER</strong> (dead)</td>
 </tr>
 </tbody>
 </table>
+<p><strong>Sofa/bed (discovery):</strong> current bed <strong>coming
+out</strong>. Rebuild hybrid per <a href="#dec-021">DEC-021</a>: wood
+side boxes, aluminum Isotemp cradle, light plywood lift-out. Owner
+priorities: <strong>ease of access</strong> and <strong>ease of
+construction</strong> (<a href="#working-design-understanding">Working
+design understanding</a>). Day layout trade still OPEN (full-length
+remove vs rear forward-facing bench).</p>
 <h2 id="do-not-change-the-design-into-these">Do not change the design
 into these</h2>
 <table>
@@ -2828,8 +2885,11 @@ confirmed); required before high camps</li>
 </ul>
 <p><strong>Owner placement / electrical answers</strong></p>
 <ul>
-<li><a href="#questions-for-you-in-order">Questions for You</a> — bay
-spots, relay, fans, GFCI, house electrical snapshot (<a href="#q-025">Q-025</a>), mountain timing</li>
+<li><a href="#working-design-understanding">Working design
+understanding</a> — live discovery (sofa, layout, 12 V story)<br />
+</li>
+<li><a href="#questions-for-you-in-order">Questions for You</a> —
+remaining placement / GFCI / house snapshot (<a href="#q-025">Q-025</a>)</li>
 </ul>
 <p>→ <a href="#builders-guide">Builder’s Guide</a>.</p>
 <section id="builders-guide" class="install-guide">
@@ -3103,23 +3163,31 @@ brass/copper/stainless barbs</td>
 </tbody>
 </table>
 <h2 id="sofabed-platform-decision">Sofa/bed platform decision</h2>
-<p>The sofa/bed spans both sides of the van and has a removable center.
-Treat it as part of the hydronic installation: it must carry the Isotemp
-Slim Square 4.2 gal heat battery, preserve service access, and leave the
-WFT 5 L expansion/header tank as the highest point of the loop.</p>
-<p><strong>Preferred method for this van:</strong> hybrid wood furniture
-shell plus an aluminum Isotemp cradle. That gives a defined restraint
-and service bay without forcing the whole bed into extrusion. Confirm
-the side bay and fastening details at HOLD S before cutting.</p>
-<h3 id="requirements-before-choosing-a-building-method">Requirements
-before choosing a building method</h3>
+<p>The current bed is <strong>coming out</strong>. Rebuild as a sofa/bed
+with a removable center for day use. It must carry the Isotemp Slim
+Square 4.2 gal heat battery on the <strong>driver side</strong>,
+preserve service access, and leave the Water Flow Tank (WFT) 5 L
+expansion/header as the highest glycol point in the loop (exact high
+mount still OPEN).</p>
+<p><strong>Owner priorities:</strong> ease of access and ease of
+construction. Prefer the simpler package that still reaches the Isotemp
+element (~30 cm), coil fittings, and straps—do not force a complex
+“hidden void” if it fights those priorities (<a href="#working-design-understanding">Working design
+understanding</a>).</p>
+<p><strong>Locked method (<a href="#dec-021">DEC-021</a>):</strong>
+hybrid — wood furniture shell + aluminum Isotemp cradle + light plywood
+lift-out center. Weighted score beat all-wood, all-extrusion, and steel
+(see <a href="#working-design-understanding">Working design
+understanding</a>). Day layout trade still OPEN: full-length removable
+center vs leaving a rear forward-facing bench.</p>
+<h3 id="requirements-before-cutting">Requirements before cutting</h3>
 <ul>
 <li>Support the Isotemp empty and full. Empty mass is about 35 lb; a
 full chamber adds about 16 L of static glycol.</li>
 <li>Leave about 30 cm of service space in front of the Isotemp
 element/thermostat side.</li>
-<li>Keep the Isotemp coil fittings and hoses below the WFT, or provide a
-bleeder at the hose high point.</li>
+<li>Keep the Isotemp coil fittings and hoses below the Water Flow Tank,
+or provide a bleeder at the hose high point.</li>
 <li>Make the center section removable without draining the loop or
 disconnecting the Isotemp.</li>
 <li>Protect the Isotemp, hoses, element cable, and Paneltronics route
@@ -3128,96 +3196,114 @@ from luggage, screws, sharp edges, and movement.</li>
 fittings, and electrical connection.</li>
 <li>Provide positive mechanical restraint. The Isotemp must not rely on
 hose connections or furniture weight alone.</li>
+<li>Plan plywood wall <strong>access hatches</strong> where bolts must
+hit metal behind panels.</li>
+<li>Freshwater tank lives over the <strong>passenger</strong> rear wheel
+well—do not fight that bay with the Isotemp.</li>
 </ul>
-<h3 id="construction-methods">Construction methods</h3>
-<table>
+<h3 id="construction-methods-weighted">Construction methods
+(weighted)</h3>
+<p>Weights: easy to work with / revise <strong>35%</strong>, strength
+<strong>25%</strong>, light <strong>20%</strong>, cost
+<strong>20%</strong>. Scores 1–5; higher is better for this van.</p>
+<table style="width:100%;">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
 </colgroup>
 <thead>
 <tr>
 <th>Method</th>
-<th>Strength and stiffness</th>
-<th>Advantages</th>
-<th>Risks / work</th>
+<th>Easy</th>
+<th>Strong</th>
+<th>Light</th>
+<th>Cost</th>
+<th>Weighted</th>
 <th>Fit for this build</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>80/20 aluminum extrusion</td>
-<td>High and predictable when properly bracketed</td>
-<td>Adjustable, removable, clean service access, easy to revise</td>
-<td>Cost, many brackets/fasteners, must isolate edges and prevent
-rattles</td>
-<td>Strong candidate for a structural base and removable center</td>
+<td>All wood (2× + plywood)</td>
+<td>5</td>
+<td>4</td>
+<td>2</td>
+<td>5</td>
+<td>4.15</td>
+<td>Shell only — weak on tank restraint + revise</td>
 </tr>
 <tr>
-<td>EZTube or similar slot extrusion</td>
-<td>High and adjustable</td>
-<td>Similar serviceability to 80/20; may use simpler connectors</td>
-<td>Confirm actual load ratings, connector strength, and available
-accessories</td>
-<td>Candidate if the exact system and hardware are already on hand</td>
+<td>All T-slot aluminum</td>
+<td>3</td>
+<td>5</td>
+<td>4</td>
+<td>1</td>
+<td>3.30</td>
+<td>Overkill cost; rattle risk; slow first build</td>
 </tr>
 <tr>
-<td>Wood</td>
-<td>High when properly framed and fastened</td>
-<td>Lowest cost, easy to cut, quiet, familiar</td>
-<td>Can trap access, absorb moisture, hide leaks, and make future
-changes harder</td>
-<td>Good for the furniture shell; needs a deliberate removable service
-panel</td>
+<td>Steel tube</td>
+<td>2</td>
+<td>5</td>
+<td>1</td>
+<td>3</td>
+<td>2.75</td>
+<td>Heavy; hard to revise</td>
 </tr>
 <tr>
-<td>Hybrid: wood furniture plus aluminum Isotemp cradle</td>
-<td>High where it matters</td>
-<td>Keeps wood simplicity while giving the Isotemp a defined restraint
-and service bay</td>
-<td>Requires one interface between cradle and furniture</td>
-<td>Recommended starting point for this van</td>
-</tr>
-<tr>
-<td>Other</td>
-<td>Unknown until specified</td>
-<td>May use existing materials or a ready-made bed system</td>
-<td>Cannot approve without load, restraint, service, and fire/heat
-review</td>
-<td>Do not choose until those facts are documented</td>
+<td><strong>Hybrid: wood shell + Al cradle + light
+lift-out</strong></td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td><strong>4.55</strong></td>
+<td><strong>Chosen (<a href="#dec-021">DEC-021</a>)</strong></td>
 </tr>
 </tbody>
 </table>
+<p><strong>Bill of materials intent:</strong> construction plywood +
+dimensional lumber for side boxes; short T-slot (or bolted aluminum) for
+Isotemp cradle and center ledgers; ⅜–½ in plywood lift-out with handles;
+foam tape where wood meets metal (rattle).</p>
 <h3 id="decision-procedure">Decision procedure</h3>
 <ol type="1">
-<li>Measure the sofa/bed opening, both side bays, the removable center,
-and the Isotemp envelope.</li>
-<li>Mark the Isotemp envelope on the floor with tape. Test both possible
-side bays.</li>
-<li>Choose the side that gives the shortest practical coil-hose route,
-keeps the coil below the WFT, leaves element/thermostat service access,
-and protects the Paneltronics cable route.</li>
+<li>Measure the sofa/bed opening, driver-side bay, removable center, and
+the Isotemp envelope.</li>
+<li>Mark the Isotemp envelope on the <strong>driver-side</strong> floor
+with tape.</li>
+<li>Confirm shortest practical coil-hose route to the jump-seat /
+sink-fridge zone (Duda + Sure Marine), keep the coil below the Water
+Flow Tank, leave element/thermostat service access, and protect the
+Paneltronics cable route.</li>
 <li>Build the Isotemp restraint first. Do not finalize cushions, drawer
-fronts, or the removable center until the Isotemp can be removed without
-disturbing plumbing.</li>
-<li>Choose the construction method using the table above. Record the
-choice and fastening method before cutting material.</li>
+fronts, or the removable center until the Isotemp can be serviced
+without disturbing plumbing.</li>
+<li>Record fastening details (floor bolts, cradle straps, center
+pins/ledgers) before cutting. Method is already locked: hybrid.</li>
 </ol>
 <p><strong>HOLD S — sofa/bed platform</strong></p>
 <ul class="task-list">
-<li><label><input type="checkbox"></input>Side bay selected using measured
-hose route and service access</label></li>
+<li><label><input type="checkbox"></input>Current bed removed; new structure
+plan recorded</label></li>
+<li><label><input type="checkbox"></input>Driver-side bay selected for
+Isotemp; tape-fit done</label></li>
 <li><label><input type="checkbox"></input>Isotemp full-load weight and
-restraint method documented</label></li>
+restraint method documented (aluminum cradle + straps)</label></li>
 <li><label><input type="checkbox"></input>Removable center clears the Isotemp,
-hoses, element cable, and service access</label></li>
-<li><label><input type="checkbox"></input>WFT location remains the highest
-circulating point</label></li>
-<li><label><input type="checkbox"></input>Selected construction method and
+hoses, element cable, and service access (full-length vs rear-bench
+trade noted if still OPEN)</label></li>
+<li><label><input type="checkbox"></input>Water Flow Tank location remains the
+highest circulating point (exact mount named)</label></li>
+<li><label><input type="checkbox"></input>Hybrid construction per DEC-021;
 fastening details recorded</label></li>
+<li><label><input type="checkbox"></input>Plywood access hatches planned where
+wall bolts need metal</label></li>
 </ul>
 <hr />
 <h2 id="hold-a-positions">Position the parts</h2>
@@ -3435,15 +3521,19 @@ intake</label></li>
 <h2 id="hold-3-mounts">3. Mount the tanks and cabin heater</h2>
 <p>Work inside the van. Re-check the positioning table before you
 drill.</p>
-<h3 id="wft-5-l-expansionheader-tank">WFT 5 L expansion/header tank</h3>
-<p>Not mounted yet. Planned for the rear bench.</p>
+<h3 id="wft-5-l-expansionheader-tank-water-flow-tank-brand">WFT 5 L
+expansion/header tank — Water Flow Tank brand</h3>
+<p>Not mounted yet. Must be the <strong>highest</strong> circulating
+glycol point (owner). Exact mount OPEN (rear bench / high wall /
+other)—choose for height first, then ease of fill/bleed access. Not
+“under bed” unless that bay actually wins on height.</p>
 <ol type="1">
-<li>Mount so the <strong>top</strong> of the WFT is the highest
-propylene glycol point in the whole loop. Plan was about 20–30 inches
-above the floor. Verify nothing else will sit higher once hose is
+<li>Mount so the <strong>top</strong> of the Water Flow Tank is the
+highest propylene glycol point in the whole loop. Plan was about 20–30
+inches above the floor. Verify nothing else will sit higher once hose is
 run.</li>
 <li>Later you bleed air here. You fill from the lowest drain until this
-WFT takes fluid.</li>
+tank takes fluid.</li>
 <li>Cap is the ~1.2 bar relief. Do not substitute a different cap
 without confirming relief pressure stays below the heater’s 2.5 bar
 limit.</li>
@@ -3452,9 +3542,11 @@ pan, or hose to a safe path — never onto bedding or wiring (<a href="#dec-019"
 </ol>
 <h3 id="isotemp-slim-square-4.2-gal-heat-battery">Isotemp Slim Square
 4.2 gal heat battery</h3>
-<p>Still in the garage. Planned under the sofa/bed. Envelope about
-22-1/4 × 7-3/16 × 15-3/4 in; empty weight about 35 lb; full chamber adds
-about 16 L of fluid mass — mount to structure rated for that.</p>
+<p>Still in the garage. <strong>Driver side under the new
+sofa/bed</strong> (owner). Envelope about 22-1/4 × 7-3/16 × 15-3/4 in;
+empty weight about 35 lb; full chamber adds about 16 L of fluid mass —
+mount to structure rated for that. Favor easy service access over
+cosmetic hiding.</p>
 <ol type="1">
 <li>Mount so its drain / safety valve is the lowest point on the
 Isotemp.</li>
@@ -3464,10 +3556,11 @@ bleeder at the high point of those hoses.</li>
 <li>Keep coil hoses short (heater minimum flow is 250 l/h — every
 restriction counts).</li>
 <li>Bench-fit and label the chamber connections outside the van if that
-makes the port identities clear. Mount the Isotemp empty under the
-sofa/bed. Do not fill the main chamber until the Isotemp is secured, the
-coil is connected, and the water-only circulating-loop leak check in
-section 7 is complete.</li>
+makes the port identities clear. Mount the Isotemp empty on the
+<strong>driver side under the new sofa/bed</strong>. Do not fill the
+main chamber until the Isotemp is secured, the coil is connected, and
+the water-only circulating-loop leak check in section 7 is
+complete.</li>
 <li>During chamber fill (section 7B), use the Isotemp main-chamber fill
 and vent ports from the Isotemp installation diagram,
 <strong>not</strong> the hydronic coil fittings. Add the
@@ -4365,13 +4458,13 @@ No summer bypass valve.</p>
 <td><strong>Isotemp Slim Square 4.2 gal heat battery</strong></td>
 <td>Circulating glycol in the coil. Static glycol in the chamber. Not
 DHW. Factory mixer unused.</td>
-<td>Garage → under sofa</td>
+<td>Garage → <strong>driver side under new sofa/bed</strong></td>
 </tr>
 <tr>
 <td><strong><a href="https://www.dudadiesel.com/choose_item.php?id=HX3220DW">Duda
 B3-12DW-20 plate heat exchanger</a></strong></td>
 <td>Freshwater heat exchanger.</td>
-<td>On van</td>
+<td>On van; intended near jump seat / sink-fridge</td>
 </tr>
 <tr>
 <td><strong>AM100-1LF thermostatic mixing valve</strong></td>
@@ -4383,13 +4476,14 @@ B3-12DW-20 plate heat exchanger</a></strong></td>
 Marine cabin heater</a></strong></td>
 <td>Only cabin heat. REAL SN <strong>16401</strong>; IN bottom / OUT
 top.</td>
-<td>On van</td>
+<td>On van; intended near jump seat / sink-fridge</td>
 </tr>
 <tr>
-<td><strong><a href="https://www.butlertechnik.com/installation-accessories-c63/marine-accessories-c115/eberspacher-or-webasto-expansion-header-tank-5l-2-outlet-292100017742-17742-p1723">WFT
-5 L expansion/header tank</a></strong></td>
+<td><strong><a href="https://www.butlertechnik.com/installation-accessories-c63/marine-accessories-c115/eberspacher-or-webasto-expansion-header-tank-5l-2-outlet-292100017742-17742-p1723">Water
+Flow Tank (WFT) 5 L expansion/header</a></strong></td>
 <td>Expansion / bleed high point.</td>
-<td>Garage → rear bench</td>
+<td>Garage → <strong>highest</strong> glycol point (exact mount
+OPEN)</td>
 </tr>
 <tr>
 <td><strong><a href="https://www.melloronline.co.uk/Heater_Installation_Accessories_/5147/EBERSPACHER_AIR/WATER_HEATER_HIGH_ALTITUDE_KIT_%7C_221000332200.html">Altitude
@@ -4401,6 +4495,11 @@ kit 22 1000 33 22 00</a></strong></td>
 <td><strong>EasyStart Timer</strong></td>
 <td>Schedule / start-stop.</td>
 <td>Mounted on wood panel; not fully wired</td>
+</tr>
+<tr>
+<td><strong>Blue Sea 12 V distribution</strong></td>
+<td>House 12 V fuse block</td>
+<td>On van — confirm hydronic feeds at HOLD 4</td>
 </tr>
 <tr>
 <td><strong>Paneltronics AC (72313 / 9972313B)</strong></td>
@@ -4474,12 +4573,12 @@ kit (PDF)</a>.</p>
 </thead>
 <tbody>
 <tr>
-<td>WFT 5 L expansion/header tank</td>
-<td>→ rear bench (highest circulating point)</td>
+<td>Water Flow Tank (WFT) 5 L expansion/header</td>
+<td>→ <strong>highest</strong> glycol point (exact mount OPEN)</td>
 </tr>
 <tr>
 <td>Isotemp Slim Square 4.2 gal heat battery</td>
-<td>→ under sofa</td>
+<td>→ <strong>driver side under new sofa/bed</strong></td>
 </tr>
 <tr>
 <td>Altitude kit 22 1000 33 22 00</td>
@@ -4511,7 +4610,7 @@ HOLD 4.</li>
 <li>Fill and bleed circulating glycol including the Isotemp coil; fill
 chamber separately (static). Heater and coil below WFT.</li>
 <li>Route Isotemp element to Paneltronics <strong>WATER HEATER</strong>;
-upstream GFCI/ELCI before energize (HOLD 9).</li>
+document protection on that path before energize (HOLD 9 / <a href="#q-009">Q-009</a>).</li>
 <li>AM100-1LF set ~120°F and tap hoses landed before anyone
 showers.</li>
 </ol>
@@ -5064,10 +5163,14 @@ AM100-1LF thermostatic mixing valve → taps (SRC-026). The Isotemp Slim
 Square 4.2 gal heat battery chamber is not on that path.</p>
 <p><strong>Planned locations (updated from SRC-004 “all under
 sink”):</strong> heater + metering pump underbody (driver side /
-fuel-fill area — SRC-005). Duda B3-12DW-20 plate heat exchanger already
-in the van. Sure Marine cabin heater near jump seat (final spot OPEN).
-Isotemp Slim Square 4.2 gal heat battery under the sofa/bed. WFT 5 L
-expansion/header tank at rear bench.</p>
+fuel-fill area — SRC-005). Duda B3-12DW-20 plate heat exchanger and Sure
+Marine cabin heater on van; intended near jump seat / sink-fridge (exact
+fit OPEN). Isotemp Slim Square 4.2 gal heat battery <strong>driver side
+under new sofa/bed</strong> (current bed coming out). Water Flow Tank
+(WFT) 5 L expansion/header at the <strong>highest</strong> circulating
+glycol point (exact mount OPEN—rear bench / high wall / other). Owner
+priorities for sofa packaging: ease of access and ease of
+construction.</p>
 <h3 id="candidate-b-engine-coolant-integration-not-selected-dec-009">Candidate
 B — Engine-coolant integration
 <code>[NOT SELECTED — DEC-009]</code></h3>
@@ -5237,12 +5340,12 @@ empty for Isotemp</td>
 <tr>
 <td>Isotemp Slim Square 4.2 gal heat battery</td>
 <td>Garage</td>
-<td>Mount empty under sofa</td>
+<td>Mount empty <strong>driver side under new sofa/bed</strong></td>
 </tr>
 <tr>
 <td>WFT 5 L expansion/header tank</td>
 <td>Garage</td>
-<td>Highest circulating point</td>
+<td><strong>Highest</strong> circulating point (exact mount OPEN)</td>
 </tr>
 <tr>
 <td>Altitude kit 22 1000 33 22 00</td>
@@ -5776,11 +5879,14 @@ bleeder at the high point (SRC-022 §2).</li>
 <li>Horizontal, vertical, or other Slim Square positions in the manual
 are allowed; <strong>drain / safety valve must be the lowest
 point</strong>.</li>
+<li><strong>This van (owner):</strong> mount <strong>driver side under
+the new sofa/bed</strong> (current bed coming out). Prefer ease of
+access and ease of construction over a complex hidden void.</li>
 <li>Keep hydronic hoses to the coil short. Leave ~30 cm (1 ft) in front
 for element/thermostat service.</li>
-<li>Tank full of water is extra mass (~16 L potable plus the unit; empty
-weight ~35 lb per SRC-022 §8.3). Mount to a shelf or bulkhead rated for
-that.</li>
+<li>Tank full of fluid is extra mass (~16 L static glycol plus the unit;
+empty weight ~35 lb per SRC-022 §8.3). Mount to a shelf or bulkhead
+rated for that.</li>
 <li>Envelope about 22-1/4 × 7-3/16 × 15-3/4 in (SRC-022 / National Luna
 Slim Square 16 L table). <code>[MEASURE]</code> against the actual
 bay.</li>
@@ -5794,6 +5900,9 @@ expansion/header tank <code>[DEC-005, SRC-019]</code></h3>
 the Isotemp coil.</li>
 <li>Unrestricted return path from that tee back to the Hydronic D5S
 diesel heater’s own pump.</li>
+<li><strong>This van (owner):</strong> exact mount OPEN (rear bench /
+high wall / other). Under-bed only if that bay is actually the highest
+glycol point.</li>
 </ul>
 <h3 id="factory-sprinter-sketch-not-this-build">Factory Sprinter sketch
 <code>[NOT THIS BUILD]</code></h3>
@@ -7715,8 +7824,9 @@ available.</li>
 <ul>
 <li>A larger fluid volume to fill, bleed, inspect, and protect from
 freezing.</li>
-<li>A tank that must be structurally restrained under the sofa and
-remain serviceable.</li>
+<li>A tank that must be structurally restrained on the <strong>driver
+side under the new sofa/bed</strong> and remain serviceable (favor
+access and simple construction).</li>
 <li>Additional coil fittings and hose length that can introduce air,
 restriction, or leaks.</li>
 <li>A 115 VAC element that requires a full chamber, correct grounding,
@@ -7996,21 +8106,26 @@ MPN 65288A)</h2>
 <li><strong>Date:</strong> 2026-09-19</li>
 <li><strong>Status:</strong> Accepted</li>
 <li><strong>Decision:</strong> The independent glycol loop’s expansion
-vessel is a WFT 5 L expansion/header tank (heatso.com, MPN 65288A;
-retrofit-compatible with Webasto/Eberspächer 29 2100 01 77 41), owner
-already has it on hand. <strong>Not yet mounted.</strong> Planned
-location is the rear bench, with the top of the tank ~20–30 in above the
-van floor, but this is a plan, not an as-built fact.</li>
-<li><strong>Reason:</strong> Owner already purchased this part.</li>
-<li><strong>Alternatives considered:</strong> None evaluated; part
-already on hand.</li>
+vessel is a WFT 5 L expansion/header tank — Water Flow Tank brand
+(heatso.com, MPN 65288A; retrofit-compatible with Webasto/Eberspächer 29
+2100 01 77 41), owner already has it on hand. <strong>Not yet
+mounted.</strong> The top of the tank must be the <strong>highest
+circulating glycol point</strong>. Exact mount is OPEN (rear bench /
+high wall / other; under-bed only if that bay actually wins on height).
+Planned elevation order of magnitude ~20–30 in above the van floor is a
+starting guess, not an as-built fact.</li>
+<li><strong>Reason:</strong> Owner already purchased this part; owner
+confirmed high-mount rule 2026-09-20.</li>
+<li><strong>Alternatives considered:</strong> None evaluated for the
+part itself; location options remain open pending height + fill/bleed
+access.</li>
 <li><strong>Supporting sources:</strong> heatso.com product page
-(retrieved 2026-09-19); owner-stated planned mounting location (not yet
-installed)</li>
+(retrieved 2026-09-19); owner layout discovery 2026-09-20</li>
 <li><strong>Affected documents:</strong>
 <code>05-mechanical-layout.md</code>, <code>06-coolant-loop.md</code>,
 <code>04-bom-and-missing-parts.md</code>,
-<code>open-questions.md</code></li>
+<code>open-questions.md</code>,
+<code>house-electrical-understanding.md</code></li>
 </ul>
 <h2 id="dec-006">DEC-006 — High-elevation use is a design
 requirement</h2>
@@ -8425,6 +8540,38 @@ DEC-004; Q-009 / Q-016</li>
 <code>book/02-where-things-are.md</code>,
 <code>open-questions.md</code></li>
 </ul>
+<h2 id="dec-021">DEC-021 — Sofa/bed: hybrid wood shell + aluminum
+Isotemp cradle</h2>
+<ul>
+<li><strong>Date:</strong> 2026-09-20</li>
+<li><strong>Status:</strong> Accepted</li>
+<li><strong>Decision:</strong> Rebuild the sofa/bed as a
+<strong>hybrid</strong>: fixed wood side boxes (plywood + dimensional
+lumber), a short <strong>aluminum</strong> Isotemp cradle/restraint
+bolted to floor structure, and a <strong>light plywood</strong>
+removable center on pins or aluminum ledgers. Do <strong>not</strong>
+build the whole furniture in T-slot extrusion; do <strong>not</strong>
+rely on all-wood alone for Isotemp crash restraint.</li>
+<li><strong>Reason:</strong> Weighted against easy-to-work
+(<strong>35%</strong>), strength (<strong>25%</strong>), light
+(<strong>20%</strong>), cost (<strong>20%</strong>) — hybrid scored
+<strong>4.55 / 5</strong> vs all-wood 4.15, all-extrusion 3.30, steel
+2.75. Matches owner priority (access + construction ease). Field check:
+full aluminum bed frames save only ~7 lb over wood at ~3× frame cost;
+plywood deck dominates mass either way.</li>
+<li><strong>Alternatives considered:</strong> All wood (rejected for
+tank restraint / revise); all 80/20 furniture (rejected — cost, rattle,
+slow first build); steel tube (rejected — weight / revise); Baltic birch
+everywhere (optional for visible faces only, not required as
+structure).</li>
+<li><strong>Supporting sources:</strong> Owner priorities 2026-09-20;
+FarOutRide bed-platform cost/weight comparison; <a href="#working-design-understanding">Working design
+understanding</a></li>
+<li><strong>Affected documents:</strong>
+<code>book/install-in-this-order.md</code> HOLD S;
+<code>book/01-what-this-system-does.md</code>;
+<code>book/research/house-electrical-understanding.md</code></li>
+</ul>
 <h1 id="open-questions">Open Questions</h1>
 <h2 id="questions-for-you-in-order">Questions for you, in order</h2>
 <p>Answer what is still open. Skip the rest. Manuals win on how; these
@@ -8450,23 +8597,24 @@ AC path (required for complete system acceptance)</li>
 <p>The altitude kit is <strong>not</strong> on that wait list.</p>
 <p><strong>Still useful:</strong></p>
 <ol type="1">
-<li><strong>Isotemp</strong> — Exact under-sofa bay (left/right)? Any
-hose path you already hate?</li>
-<li><strong>WFT</strong> — Exact rear-bench spot so it stays the highest
-glycol point?</li>
+<li><strong>Water Flow Tank</strong> — Exact high mount (rear bench /
+wall / other) that stays the highest glycol point and is easy to
+fill/bleed?</li>
+<li><strong>Day sofa</strong> — Full-length removable center, or leave a
+rear forward-facing bench (partial remove)?</li>
 <li><strong>SC1600 fans</strong> — Own a 12 V relay already, or book
 says “buy one”?</li>
 <li><strong>Cabin fans</strong> — Both Noctua NF-F12, or keep the mixed
 pair on the Sure Marine cabin heater?</li>
-<li><strong>Shore / inverter GFCI</strong> — GFCI or ELCI already
-upstream of Paneltronics? (<a href="#q-009">Q-009</a>)</li>
-<li><strong>House electrical snapshot</strong> — Does <a href="#src-040">SRC-040</a> still match the van (battery Ah, solar W,
-shore charger, how PROwatt and shore meet Paneltronics)? FarOutRide (<a href="#src-041">SRC-041</a>) is the class of system only.</li>
-<li><strong>Mountains</strong> — First high camp roughly when? (altitude
-kit timing only)</li>
+<li><strong>Shore / inverter GFCI</strong> — Document protection on the
+Paneltronics <strong>WATER HEATER</strong> path for HOLD 9 (<a href="#q-009">Q-009</a>)</li>
+<li><strong>House electrical snapshot</strong> — Does <a href="#src-040">SRC-040</a> still match the van (<a href="#q-025">Q-025</a>)?</li>
+<li><strong>Mountains</strong> — First high camp roughly when?</li>
 <li><strong>Hot water</strong> — Mostly sinks, or long showers? (mixer
 wording only)</li>
 </ol>
+<p>Live layout/sofa discovery: <a href="#working-design-understanding">Working design
+understanding</a>.</p>
 <hr />
 <table style="width:100%;">
 <colgroup>
@@ -8596,12 +8744,13 @@ high point.</td>
 </tr>
 <tr>
 <td><span id="q-012">Q-012</span></td>
-<td>Exact heater mounting height vs WFT and nearby lines?</td>
+<td>Exact heater mounting height vs Water Flow Tank and nearby
+lines?</td>
 <td>Self-vent height; fuel-line clearance.</td>
 <td>Owner / measurement</td>
 <td>Partial</td>
-<td><strong>Verify while mounting.</strong> WFT still in garage; planned
-rear bench ~20–30 in above floor (DEC-005).</td>
+<td><strong>Verify while mounting.</strong> Water Flow Tank still in
+garage; must be highest glycol point (DEC-005)—exact mount OPEN.</td>
 </tr>
 <tr>
 <td><span id="q-013">Q-013</span></td>
@@ -8737,7 +8886,7 @@ Paneltronics 72313.</td>
 </tr>
 </tbody>
 </table>
-<h1 id="house-electrical-understanding">Working understanding</h1>
+<h1 id="working-design-understanding">Working design understanding</h1>
 <p>Scratchpad for Ben’s questions. Not the Builder’s Guide. Promote
 locked answers into part one / HOLD S when ready.</p>
 <h2 id="input-from-ben">Input from Ben</h2>
@@ -8754,6 +8903,11 @@ them.</li>
 <li>Do we need to rip out the bed?</li>
 <li>Wiring: Paneltronics → Isotemp is obvious—don’t complicate it. Don’t
 debate GFCI/inverter feed validity here.</li>
+<li><strong>Does not love acronyms.</strong> Prefer full names (or full
+name first). Example: <strong>WFT</strong> = brand/product name
+<strong>Water Flow Tank</strong> (the 5 L expansion/header tank)—not a
+cryptic heater-code. In this scratchpad and when promoting to part one,
+spell things out.</li>
 </ul>
 <hr />
 <h2 id="prowatt-sw-gfci">PROwatt SW GFCI</h2>
@@ -8771,8 +8925,20 @@ intend—without reopening inverter-architecture debates in this file.</p>
 <p><strong>Hydronic 12 V</strong> (heater, EasyStart, fans) never uses
 this GFCI. Master Off is the parked lockout for those circuits.</p>
 <hr />
-<h2 id="isotemp-ac-wiring-keep-it-simple">Isotemp AC wiring (keep it
-simple)</h2>
+<h2 id="v-heat-wiring-plain">12 V heat wiring (plain)</h2>
+<p>Two separate feeds from the house battery side (often via the
+<strong>Blue Sea</strong> fuse block):</p>
+<ol type="1">
+<li><strong>Always-hot to the Hydronic D5S</strong> — heavy fused pair
+(book: 20 A). Does <strong>not</strong> go through the master. Heater
+brain can finish after-run.</li>
+<li><strong>Master switch → EasyStart Timer (and later fans / thermostat
+path)</strong> — master is <strong>upstream of the 7-day
+EasyStart</strong>. Master Off = EasyStart dead = no wake signal = no
+new heat call. Master On only unlocks the timer; it does not start the
+heater by itself.</li>
+</ol>
+<p>Isotemp 120 V is unrelated to this master.</p>
 <pre><code>Paneltronics breaker labeled WATER HEATER  →  Isotemp 750 W element</code></pre>
 <p>Chamber must be full before energize. Never land this on 12 V. Master
 Off does not cut this branch.</p>
@@ -8801,153 +8967,182 @@ swing</td>
 <td>Freshwater tank <strong>30+ gal over passenger rear wheel
 well</strong></td>
 <td>Matches ~35 gal intent (<a href="#src-026">SRC-026</a>). Driver-side
-and center sofa bays are freer for Isotemp / hydronic hose</td>
+sofa bay freer for Isotemp</td>
 </tr>
 <tr>
-<td>WFT must be <strong>highest</strong> circulating glycol point</td>
-<td>Prefer rear-bench / high mount—not under the sofa with the
-Isotemp</td>
+<td>Isotemp</td>
+<td><strong>Driver side under bed</strong> (owner)</td>
 </tr>
 <tr>
-<td>Isotemp under sofa/bed</td>
-<td>Prefer <strong>driver-side</strong> or center bay so it does not
-fight the freshwater tank over the passenger wheel well; confirm with
-tape measure</td>
+<td>Jump seat behind driver → sink/fridge aft of that</td>
+<td>Likely home for <strong>Duda + Sure Marine cabin heater</strong>
+(owner—“fit somehow”)</td>
+</tr>
+<tr>
+<td>Water Flow Tank (5 L expansion/header)</td>
+<td><strong>Must sit high</strong> (owner). Top = highest circulating
+glycol point. Not “under bed by default.”</td>
+</tr>
+<tr>
+<td>Blue Sea 12 V distribution block</td>
+<td><strong>On van</strong> (owner). Likely feed point for fused
+hydronic branches—confirm which circuits and fuse sizes later.</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <h2 id="rip-out-the-bed">Rip out the bed?</h2>
-<p><strong>Yes, if the current bed cannot meet HOLD S.</strong> You
-need:</p>
-<ul>
-<li>Removable <strong>center</strong> for daytime sofa<br />
-</li>
-<li>A bay that carries the Isotemp (~35 lb empty + ~16 L glycol) with
-real restraint<br />
-</li>
-<li>~<strong>30 cm</strong> service space in front of the Isotemp
-element/thermostat side<br />
-</li>
-<li>Removable center that does <strong>not</strong> require draining
-glycol or disconnecting the Isotemp<br />
-</li>
-<li>Access for coil hoses + element cable toward Paneltronics<br />
-</li>
-<li>Wall/floor fasteners that still work with <strong>plywood wall
-panels</strong> (access hatches or removable panels where you must hit
-metal)</li>
-</ul>
-<p>If the current bed already has a removable center and can accept an
-Isotemp cradle underneath without trapping hoses, you may <strong>modify
-in place</strong> instead of a full rip. Default plan in the Builder’s
-Guide is still: treat the sofa/bed as part of the hydronic install and
-finish HOLD S before locking cushions.</p>
+<p><strong>Owner decision:</strong> the current bed is <strong>coming
+out entirely.</strong> Rebuild to meet HOLD S: removable center for
+daytime sofa, Isotemp cradle with restraint, ~30 cm service space at the
+element end, hose/cable access without draining to remove the center,
+wall/floor bolts into metal (via plywood hatches as needed).</p>
 <hr />
 <h2 id="materials-comparison-sofa-bed-structure">Materials comparison
 (sofa / bed structure)</h2>
+<h3 id="what-matters-here-weights">What matters here (weights)</h3>
+<p>Owner priority is <strong>ease of access</strong> and <strong>ease of
+construction</strong>. Isotemp empty ~35 lb; full chamber adds ~16 L
+(~35 lb fluid). Removable center must stay light enough to lift
+daily.</p>
 <table>
 <colgroup>
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
 </colgroup>
 <thead>
 <tr>
-<th>Material / system</th>
-<th>Strength</th>
+<th>Criterion</th>
 <th>Weight</th>
-<th>Noise</th>
-<th>Moisture / leaks</th>
-<th>Service access</th>
-<th>Cost / revise</th>
-<th>Fit here</th>
+<th>Why</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Wood framing</strong> (ply / dimensional)</td>
-<td>High if triangulated and through-bolted</td>
-<td>Medium</td>
-<td>Quiet</td>
-<td>Can hide leaks; needs sealed/drain-aware design</td>
-<td>Poor unless you plan removable panels</td>
-<td>Low; easy to cut</td>
-<td>Best for <strong>furniture shell</strong>, seat backs, day
-cushions</td>
+<td>Easy to work with / revise</td>
+<td><strong>35%</strong></td>
+<td>Owner priority; first build; day-sofa will iterate</td>
 </tr>
 <tr>
-<td><strong>Plywood skins</strong> (already on walls)</td>
-<td>Skin only—not structure</td>
-<td>Low</td>
-<td>Quiet</td>
-<td>OK if sealed edges</td>
-<td>Must keep <strong>removable panels</strong> or access doors at
-fastener / hose / wire points</td>
-<td>Already chosen for walls</td>
-<td>Keep; add hatches where hydronic needs metal behind</td>
+<td>Strength / restraint</td>
+<td><strong>25%</strong></td>
+<td>Sleep load + Isotemp crash restraint into floor metal</td>
 </tr>
 <tr>
-<td><strong>80/20 (T-slot aluminum)</strong></td>
-<td>High, predictable</td>
-<td>Medium-high</td>
-<td>Can rattle if unisolated</td>
-<td>Excellent (metal)</td>
-<td>Excellent—bolts move</td>
-<td>Higher parts cost; easy to revise</td>
-<td>Best for <strong>Isotemp cradle</strong>, removable center rails,
-floor ledger</td>
+<td>Light (esp. removable center)</td>
+<td><strong>20%</strong></td>
+<td>Daily lift-out; payload</td>
 </tr>
 <tr>
-<td><strong>EZTube / similar slot tube</strong></td>
-<td>High if rated hardware</td>
-<td>Medium</td>
-<td>Similar to 80/20</td>
-<td>Excellent</td>
-<td>Excellent</td>
-<td>Depends on kit on hand</td>
-<td>Same role as 80/20 if you already own it</td>
-</tr>
-<tr>
-<td><strong>Hybrid: wood shell + aluminum cradle</strong></td>
-<td>High where it matters</td>
-<td>Medium</td>
-<td>Quiet living surfaces</td>
-<td>Cradle isolates tank from wood</td>
-<td>Cradle serviceable; shell can hide access if you plan poorly</td>
-<td>Medium</td>
-<td><strong>Recommended</strong> for this van</td>
-</tr>
-<tr>
-<td><strong>All-aluminum furniture</strong></td>
-<td>High</td>
-<td>Higher</td>
-<td>More rattle risk</td>
-<td>Excellent</td>
-<td>Excellent</td>
-<td>Highest labor/cost</td>
-<td>Overkill unless you prefer metal aesthetic</td>
+<td>Cost</td>
+<td><strong>20%</strong></td>
+<td>Whole-bed all-extrusion is expensive for little gain</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Isotemp alone:</strong> empty ~35 lb; full chamber adds ~16 L
-(~35 lb of fluid). Do not hang that mass on hose barbs or on furniture
-weight alone.</p>
+<p>Scores 1–5 (higher = better for this van). Weighted = sum(score ×
+weight).</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th>Option</th>
+<th>Easy 35%</th>
+<th>Strong 25%</th>
+<th>Light 20%</th>
+<th>Cost 20%</th>
+<th><strong>Weighted</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A. All wood</strong> (2× framing + plywood deck)</td>
+<td>5</td>
+<td>4</td>
+<td>2</td>
+<td>5</td>
+<td><strong>4.15</strong></td>
+</tr>
+<tr>
+<td><strong>B. Baltic birch furniture ply everywhere</strong></td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+<td>3</td>
+<td><strong>3.60</strong></td>
+</tr>
+<tr>
+<td><strong>C. All T-slot aluminum (80/20 / similar)</strong></td>
+<td>3</td>
+<td>5</td>
+<td>4</td>
+<td>1</td>
+<td><strong>3.30</strong></td>
+</tr>
+<tr>
+<td><strong>D. Hybrid: wood shell + Al Isotemp cradle + light
+lift-out</strong></td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td><strong>4.55</strong></td>
+</tr>
+<tr>
+<td><strong>E. Steel tube frame</strong></td>
+<td>2</td>
+<td>5</td>
+<td>1</td>
+<td>3</td>
+<td><strong>2.75</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Field check (FarOutRide bed-frame only): aluminum frame ~45 lb /
+~$585 vs wood ~52 lb / ~$200 — ~7 lb saved for ~3× frame cost. Plywood
+deck dominates weight either way. All-extrusion furniture is the wrong
+spend for this van.</p>
+<h3 id="conclusion-locked-for-hold-s">Conclusion (locked for HOLD
+S)</h3>
+<p><strong>Build hybrid (option D):</strong></p>
+<ol type="1">
+<li><strong>Fixed side boxes / seat bases</strong> — construction
+plywood + dimensional lumber (or Baltic birch where faces show). Quiet,
+cheap, familiar tools, easy to cut hatches.</li>
+<li><strong>Isotemp cradle</strong> — short T-slot aluminum rails or a
+small bolted aluminum frame, strapped to floor structure. Metal holds
+the tank; wood does not.</li>
+<li><strong>Removable center</strong> — light plywood panel (½ in Baltic
+birch or ⅜–½ in construction ply with ledgers) on pins or aluminum
+ledgers. Handles; store on end or under a seat.</li>
+<li><strong>Walls</strong> — keep existing plywood skins; add
+<strong>access hatches</strong> where bolts must hit metal.</li>
+</ol>
+<p><strong>Do not</strong> build the whole sofa in 80/20. <strong>Do
+not</strong> hang the Isotemp on hose barbs or on furniture weight
+alone. <strong>Do not</strong> glue the only service path under a fixed
+mattress platform.</p>
+<p>If T-slot stock is already on the shelf, use it for the cradle and
+center ledgers only—same hybrid, lower buy cost.</p>
 <hr />
 <h2 id="frame-mechanisms-removable-middle-day-sofa">Frame mechanisms
 (removable middle → day sofa)</h2>
 <h3 id="what-tyrah-needs">What Tyrah needs</h3>
 <ul>
-<li><strong>Night:</strong> continuous sleep surface across both side
-bays + center<br />
+<li><strong>Night:</strong> continuous sleep surface (exact span still
+OPEN if rear bench stays)<br />
 </li>
-<li><strong>Day:</strong> center section <strong>out</strong> → two side
-seats / sofa feel with an aisle or open middle<br />
+<li><strong>Day:</strong> side seats with a gap/aisle; whether the
+removable piece is <strong>full-length</strong> or leaves a <strong>rear
+forward-facing bench</strong> is an OPEN trade<br />
 </li>
 <li>Under/behind: Isotemp + hoses + cable stay put when the center comes
 out</li>
@@ -9009,8 +9204,8 @@ attaches)</h3>
 </tr>
 </tbody>
 </table>
-<h3 id="optimum-construction-for-this-van-recommendation">Optimum
-construction for this van (recommendation)</h3>
+<h3 id="optimum-construction-for-this-van-dec-021-locked">Optimum
+construction for this van (<a href="#dec-021">DEC-021</a> locked)</h3>
 <p><strong>Hybrid wood + aluminum, three bays:</strong></p>
 <ol type="1">
 <li><strong>Two fixed side boxes</strong> — wood (or wood-skinned) seat
@@ -9030,8 +9225,9 @@ or under a seat.<br />
 along the wall <strong>behind removable plywood hatches</strong>—never
 through the lift-out center.<br />
 </li>
-<li><strong>WFT</strong> stays highest (rear bench or high wall
-bracket)—not under the bed.<br />
+<li><strong>Water Flow Tank (WFT) 5 L expansion/header</strong> stays
+highest (rear bench, high wall, or other mount that wins on height)—not
+“under bed” unless that bay is actually highest.<br />
 </li>
 <li><strong>AC element cable</strong> exits the Isotemp bay toward
 Paneltronics in a protected chase; leave slack for service.</li>
@@ -9097,8 +9293,8 @@ loads</td>
 <tr>
 <td>Glycol loop</td>
 <td>Heater → cabin heater → Duda → <strong>Isotemp coil</strong> →
-return; WFT high on return</td>
-<td>Coil hoses below WFT; service loops in fixed bay</td>
+return; Water Flow Tank high on return</td>
+<td>Coil hoses below Water Flow Tank; service loops in fixed bay</td>
 </tr>
 <tr>
 <td>Isotemp chamber</td>
@@ -9113,22 +9309,112 @@ return; WFT high on return</td>
 </tbody>
 </table>
 <hr />
+<h2 id="decisions-from-qa">Decisions from Q&amp;A</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>#</th>
+<th>Question</th>
+<th>Answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Current bed keep or rip?</td>
+<td><strong>Coming out entirely.</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Day layout when middle is out</td>
+<td><strong>OPEN trade.</strong> Facing side seats with a gap
+<em>is</em> an aisle. Unsure whether a <strong>forward-facing rear
+bench</strong> is acceptable so the removable day piece is <strong>not
+full-length</strong> (partial center only). Maybe full-length remove,
+maybe not—decide later.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Isotemp bay + nearby layout</td>
+<td><strong>Isotemp: driver side under bed.</strong> Jump seat behind
+driver; sink/fridge unit behind that—<strong>Duda + Sure Marine cabin
+heater</strong> expected to fit in that zone somehow. Hose routing:
+defer; figure out later.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Water Flow Tank (5 L header) height</td>
+<td><strong>Must be high</strong> — top of tank = highest circulating
+glycol point. Under-bed only if that bay is actually the highest;
+otherwise rear bench / wall / other high mount. Fill/bleed access can
+differ from the tank’s elevation.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Driver-side sofa back / hide Isotemp</td>
+<td><strong>Not sure.</strong> Priority: <strong>ease of access</strong>
+and <strong>ease of construction</strong> over a fancy hidden void.
+Prefer the simpler build that still reaches element (~30 cm), fittings,
+and straps. Seat back / finished panel only if it does not fight those
+priorities.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Blue Sea 12 V block</td>
+<td><strong>On van</strong> (owner). House 12 V distribution—hydronic
+master / EasyStart / fans likely feed from here or via it. Confirm which
+fuse positions at HOLD 4.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Sofa/bed materials</td>
+<td><strong>Hybrid locked (<a href="#dec-021">DEC-021</a>).</strong>
+Wood shell + Al cradle + light ply lift-out. Weighted winner vs all-wood
+/ all-extrusion / steel.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="v-heat-wiring-plain-1">12 V heat wiring (plain)</h2>
+<pre><code>House battery
+   ├─(20 A fuse)──→ Hydronic D5S pins 1–2     [always hot — after-run / memory]
+   │
+   └─→ Blue Sea 12 V distribution (on van)
+          └─→ Master switch (positive only)
+                 ├─→ EasyStart Timer (7-day)     [YES — master is upstream of the timer]
+                 ├─→ Fan dial → cabin fans
+                 └─→ Later: thermostat / relay path (Q-022)</code></pre>
+<p>Master <strong>Off</strong> kills the EasyStart Timer, so the heater
+gets no wake signal and will not start a new heat call. Master does
+<strong>not</strong> sit on the heater’s heavy 20 A feed. Paneltronics /
+Isotemp AC is unrelated.</p>
 <h2 id="still-open-short">Still open (short)</h2>
 <ul class="task-list">
-<li><label><input type="checkbox"></input>Driver vs passenger vs center bay
-for Isotemp (tape-fit against freshwater tank)<br />
+<li><label><input type="checkbox"></input>Day: full-length remove vs rear
+forward-facing bench (partial remove)<br />
+</label></li>
+<li><label><input type="checkbox"></input>Exact high mount for Water Flow Tank
+(rear bench / wall / raised bay)—pick for height + easy fill/bleed<br />
 </label></li>
 <li><label><input type="checkbox"></input>Exact floor/wall bolt points<br />
-</label></li>
-<li><label><input type="checkbox"></input>Center lift-out size and storage
-location by day<br />
 </label></li>
 <li><label><input type="checkbox"></input>Which plywood panels become access
 hatches<br />
 </label></li>
-<li><label><input type="checkbox"></input>Q-009: protection on the
-Paneltronics <strong>WATER HEATER</strong> path (PROwatt face GFCI is
-not the whole answer)</label></li>
+<li><label><input type="checkbox"></input>Duda + Sure Marine exact fit behind
+jump seat / sink-fridge<br />
+</label></li>
+<li><label><input type="checkbox"></input>Hose routing (later)<br />
+</label></li>
+<li><label><input type="checkbox"></input>Blue Sea fuse positions for master /
+EasyStart / fans<br />
+</label></li>
+<li><label><input type="checkbox"></input>Q-009: protection on Paneltronics
+<strong>WATER HEATER</strong> path</label></li>
 </ul>
 <h2 id="scratch-notes">Scratch notes</h2>
 <p>_</p>
@@ -9372,8 +9658,8 @@ off/on into fault</td>
 </tr>
 <tr>
 <td>REQ-024</td>
-<td>WFT 5 L expansion/header tank at high point (planned rear bench);
-not yet mounted</td>
+<td>WFT 5 L expansion/header tank at high point (exact mount OPEN); not
+yet mounted</td>
 <td>Coolant / layout</td>
 <td>DEC-005</td>
 <td>VERIFIED (part); mount OPEN</td>
