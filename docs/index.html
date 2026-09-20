@@ -1315,6 +1315,8 @@ tradeoff</a>
 <li><a href="#recommendation" id="toc-recommendation">Recommendation</a></li>
 <li><a href="#decision-record" id="toc-decision-record">Decision
 record</a></li>
+<li><a href="#tldr" id="toc-tldr">TL;DR</a></li>
+<li><a href="#tldr-1" id="toc-tldr-1">TL;DR</a></li>
 </ul></li>
 <li><a href="#decision-log" id="toc-decision-log">Decision Log</a>
 <ul>
@@ -6651,8 +6653,13 @@ approximately 21 L.</li>
 is treated as 1 kg. Actual glycol properties, tank stratification, and
 coil transfer will change the result.</li>
 <li>During a low-stage cycle, the van heat load is treated as constant.
-The estimate uses 1.0, 1.5, and 2.0 kW of load, corresponding roughly to
-mild, moderate, and cold operation in the heat-loss range above.</li>
+The estimate uses 1.0, 1.5, and 2.0 kW of load. Those loads map roughly
+onto the heat-loss table above (cabin held at 70°F): about <strong>40°F
+outside</strong> for 1.0 kW on a better-insulated build, about
+<strong>40–20°F</strong> for 1.5 kW, and about <strong>20°F</strong> (or
+a leakier build near 40°F) for 2.0 kW. Colder than that pushes load
+above 2.1 kW, where this low-stage charge/pause model no longer
+applies.</li>
 </ul>
 <p>For a 10°C control band, the thermal energy in the temperature swing
 is:</p>
@@ -6667,47 +6674,65 @@ During pause, the discharge rate is
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Q</mi><mrow><mi>l</mi><mi>o</mi><mi>a</mi><mi>d</mi></mrow></msub><annotation encoding="application/x-tex">Q_{load}</annotation></semantics></math>.</p>
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col style="width: 17%" />
+<col style="width: 13%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
 </colgroup>
 <thead>
 <tr>
 <th style="text-align: right;">Van heat load</th>
+<th>Rough outdoor air (cabin 70°F)</th>
 <th style="text-align: right;">Estimated cycle without Isotemp</th>
 <th style="text-align: right;">Estimated cycle with Isotemp fully
 coupled</th>
-<th style="text-align: right;">Predicted starts per hour</th>
+<th style="text-align: right;">Starts/h without Isotemp</th>
+<th style="text-align: right;">Starts/h with Isotemp</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: right;">1.0 kW</td>
+<td>~40°F on a better-insulated build (low end of the 40°F loss
+band)</td>
 <td style="text-align: right;">3.3 min on + 3.3 min paused = 6.6
 min</td>
 <td style="text-align: right;">14.0 min on + 14.0 min paused = 28
 min</td>
-<td style="text-align: right;">9.1 without / 2.1 with</td>
+<td style="text-align: right;">9.1</td>
+<td style="text-align: right;">2.1</td>
 </tr>
 <tr>
 <td style="text-align: right;">1.5 kW</td>
+<td>~40–20°F (mid 40°F band → low 20°F band)</td>
 <td style="text-align: right;">5.6 min on + 2.2 min paused = 7.8
 min</td>
 <td style="text-align: right;">23.3 min on + 9.3 min paused = 32.6
 min</td>
-<td style="text-align: right;">7.7 without / 1.8 with</td>
+<td style="text-align: right;">7.7</td>
+<td style="text-align: right;">1.8</td>
 </tr>
 <tr>
 <td style="text-align: right;">2.0 kW</td>
+<td>~20°F, or a leakier build near 40°F (near D5S low-stage output)</td>
 <td style="text-align: right;">33.3 min on + 1.7 min paused = 35
 min</td>
 <td style="text-align: right;">140 min on + 7.0 min paused = 147
 min</td>
-<td style="text-align: right;">1.7 without / 0.4 with</td>
+<td style="text-align: right;">1.7</td>
+<td style="text-align: right;">0.4</td>
 </tr>
 </tbody>
 </table>
+<p>Outdoor temperatures are a <strong>planning correlation</strong> from
+the heat-loss ranges above, not a forecast for this van. Wind, windows,
+and floor losses can move the same outdoor temperature into a different
+row. At about <strong>0°F and below</strong>, the estimated loss is
+often already <strong>above 2.1 kW</strong>, so the D5S is no longer in
+a low-stage surplus cycle and this starts-per-hour table does not
+apply.</p>
 <p>The 2.0 kW row is a boundary case. At a 2.0 kW load, the D5S has only
 0.1 kW of surplus at low stage, so the D5S may remain at low output for
 a long period rather than follow a clean charge-and-pause cycle. At
@@ -6889,6 +6914,35 @@ time;</li>
 <li>AC preheat time, inverter draw, and battery energy used;</li>
 <li>leaks, air problems, or maintenance added by the Isotemp.</li>
 </ul>
+<h2 id="tldr">TL;DR</h2>
+<ul>
+<li><strong>Keep it through first fire</strong> if mounting and AC
+safety stay reasonable. Decide keep-or-sell from logs, not from this
+memo alone.</li>
+<li><strong>What it is good for:</strong> softens D5S short-cycling when
+cabin load is <strong>below</strong> the 2.1 kW low stage (roughly mild
+/ ~40°F nights on a decent build); optional AC preheat of the static
+chamber (element cuts at ~75°C).</li>
+<li><strong>What it is not:</strong> a hot-water tank. Taps still need
+the D5S pump through the Duda. No guaranteed fuel save.</li>
+<li><strong>Scale:</strong> ~16 L chamber is tens of minutes of buffer
+at most, not hours. Idealized full coupling cuts starts a lot; real coil
+coupling is weaker (expect maybe 30–70% fewer starts in mild weather,
+little help near or above 2.1 kW load / hard cold).</li>
+<li><strong>Sell later if:</strong> no measured cycling or comfort gain,
+AC cannot be protected properly, or the mount/fill/freeze burden is not
+worth it.</li>
+</ul>
+<h2 id="tldr-1">TL;DR</h2>
+<p>The Isotemp is most useful as a buffer because the D5S produces about
+2.1 kW even at low output, while a well-insulated van often needs less
+than 2 kW. The buffer can turn short cycles into longer runs and pauses,
+especially in mild and moderate cold. The buffer does not create hot
+water by itself: the D5S pump must circulate glycol through the coil and
+the Duda plate. Keep the Isotemp if commissioning shows fewer starts,
+steadier cabin temperatures, useful AC preheating, or worthwhile
+short-term hot-water support. Sell the Isotemp if those benefits do not
+appear after measuring the installed system.</p>
 <h1 id="decision-log">Decision Log</h1>
 <h2 id="dec-000">DEC-000 — Heater identity confirmed: Hydronic D5S
 diesel heater</h2>
