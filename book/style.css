@@ -598,7 +598,9 @@ table:has(th:first-child) tr:hover td {
   #TOC > ul > li {
     margin: 0.45rem 0 0;
     padding-top: 0.4rem;
+    padding-bottom: 0;
     border-top: 1px solid var(--screen-rule);
+    border-bottom: none;
     font-size: 0.92rem;
     font-weight: 600;
     line-height: 1.4;
