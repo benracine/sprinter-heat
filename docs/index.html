@@ -638,6 +638,17 @@ text-decoration: none;
 color: var(--screen-accent);
 background: color-mix(in srgb, var(--screen-accent) 8%, transparent);
 }
+#TOC a.is-active,
+#TOC a[aria-current="location"] {
+color: var(--screen-heading);
+font-weight: 600;
+background: color-mix(in srgb, var(--screen-accent) 14%, transparent);
+box-shadow: inset 3px 0 0 var(--screen-accent);
+}
+#TOC ul ul a.is-active,
+#TOC ul ul a[aria-current="location"] {
+color: var(--screen-heading);
+}
 body > *:not(#TOC) {
 box-sizing: border-box;
 width: min(var(--prose), calc(100vw - var(--toc-w) - 2.5rem));
@@ -1867,8 +1878,9 @@ only (<a href="#dec-003">DEC-003</a> / <a href="#dec-008">DEC-008</a>)</td>
 </tr>
 <tr>
 <td>Isotemp</td>
-<td>Coil circulating; chamber static same mix; factory mixer capped; 750
-W on Paneltronics <strong>WATER HEATER</strong> only</td>
+<td>Coil circulating; chamber static same mix; <strong>750 W</strong> on
+Paneltronics <strong>WATER HEATER</strong> only. Factory mixer stays
+capped — never for taps (<a href="#dec-008">DEC-008</a>)</td>
 </tr>
 <tr>
 <td>Heights</td>
@@ -2175,11 +2187,10 @@ and plug unused chambers.</p>
 <img role="img" aria-label="Fans" src="data:image/svg+xml;base64,PHN2ZyBhcmlhLXJvbGVkZXNjcmlwdGlvbj0iZmxvd2NoYXJ0LXYyIiByb2xlPSJncmFwaGljcy1kb2N1bWVudCBkb2N1bWVudCIgdmlld0JveD0iMCAwIDcwMC43OTY4NzUgNTg0IiBzdHlsZT0ibWF4LXdpZHRoOiA3MDAuNzk3cHg7IGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50OyIgY2xhc3M9ImZsb3djaGFydCIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGlkPSJteS1zdmciPjxzdHlsZT4jbXktc3Zne2ZvbnQtc2l6ZToyOHB4O2ZpbGw6IzFjMTkxNzt9QGtleWZyYW1lcyBlZGdlLWFuaW1hdGlvbi1mcmFtZXtmcm9te3N0cm9rZS1kYXNob2Zmc2V0OjA7fX1Aa2V5ZnJhbWVzIGRhc2h7dG97c3Ryb2tlLWRhc2hvZmZzZXQ6MDt9fSNteS1zdmcgLmVkZ2UtYW5pbWF0aW9uLXNsb3d7c3Ryb2tlLWRhc2hhcnJheTo5LDUhaW1wb3J0YW50O3N0cm9rZS1kYXNob2Zmc2V0OjkwMDthbmltYXRpb246ZGFzaCA1MHMgbGluZWFyIGluZmluaXRlO3N0cm9rZS1saW5lY2FwOnJvdW5kO30jbXktc3ZnIC5lZGdlLWFuaW1hdGlvbi1mYXN0e3N0cm9rZS1kYXNoYXJyYXk6OSw1IWltcG9ydGFudDtzdHJva2UtZGFzaG9mZnNldDo5MDA7YW5pbWF0aW9uOmRhc2ggMjBzIGxpbmVhciBpbmZpbml0ZTtzdHJva2UtbGluZWNhcDpyb3VuZDt9I215LXN2ZyAuZXJyb3ItaWNvbntmaWxsOiNlZWVlZWM7fSNteS1zdmcgLmVycm9yLXRleHR7ZmlsbDojMTExMTEzO3N0cm9rZTojMTExMTEzO30jbXktc3ZnIC5lZGdlLXRoaWNrbmVzcy1ub3JtYWx7c3Ryb2tlLXdpZHRoOjFweDt9I215LXN2ZyAuZWRnZS10aGlja25lc3MtdGhpY2t7c3Ryb2tlLXdpZHRoOjMuNXB4O30jbXktc3ZnIC5lZGdlLXBhdHRlcm4tc29saWR7c3Ryb2tlLWRhc2hhcnJheTowO30jbXktc3ZnIC5lZGdlLXRoaWNrbmVzcy1pbnZpc2libGV7c3Ryb2tlLXdpZHRoOjA7ZmlsbDpub25lO30jbXktc3ZnIC5lZGdlLXBhdHRlcm4tZGFzaGVke3N0cm9rZS1kYXNoYXJyYXk6Mzt9I215LXN2ZyAuZWRnZS1wYXR0ZXJuLWRvdHRlZHtzdHJva2UtZGFzaGFycmF5OjI7fSNteS1zdmcgLm1hcmtlcntmaWxsOiM0NDQwM2M7c3Ryb2tlOiM0NDQwM2M7fSNteS1zdmcgLm1hcmtlci5jcm9zc3tzdHJva2U6IzQ0NDAzYzt9I215LXN2ZyBzdmd7Zm9udC1zaXplOjI4cHg7fSNteS1zdmcgcHttYXJnaW46MDt9I215LXN2ZyAubGFiZWx7Y29sb3I6IzFjMTkxNzt9I215LXN2ZyAuY2x1c3Rlci1sYWJlbCB0ZXh0e2ZpbGw6IzExMTExMzt9I215LXN2ZyAuY2x1c3Rlci1sYWJlbCBzcGFue2NvbG9yOiMxMTExMTM7fSNteS1zdmcgLmNsdXN0ZXItbGFiZWwgc3BhbiBwe2JhY2tncm91bmQtY29sb3I6dHJhbnNwYXJlbnQ7fSNteS1zdmcgLmxhYmVsIHRleHQsI215LXN2ZyBzcGFue2ZpbGw6IzFjMTkxNztjb2xvcjojMWMxOTE3O30jbXktc3ZnIC5ub2RlIHJlY3QsI215LXN2ZyAubm9kZSBjaXJjbGUsI215LXN2ZyAubm9kZSBlbGxpcHNlLCNteS1zdmcgLm5vZGUgcG9seWdvbiwjbXktc3ZnIC5ub2RlIHBhdGh7ZmlsbDojZjVmNWY0O3N0cm9rZTojNTc1MzRlO3N0cm9rZS13aWR0aDoxcHg7fSNteS1zdmcgLnJvdWdoLW5vZGUgLmxhYmVsIHRleHQsI215LXN2ZyAubm9kZSAubGFiZWwgdGV4dCwjbXktc3ZnIC5pbWFnZS1zaGFwZSAubGFiZWwsI215LXN2ZyAuaWNvbi1zaGFwZSAubGFiZWx7dGV4dC1hbmNob3I6bWlkZGxlO30jbXktc3ZnIC5ub2RlIC5rYXRleCBwYXRoe2ZpbGw6IzAwMDtzdHJva2U6IzAwMDtzdHJva2Utd2lkdGg6MXB4O30jbXktc3ZnIC5yb3VnaC1ub2RlIC5sYWJlbCwjbXktc3ZnIC5ub2RlIC5sYWJlbCwjbXktc3ZnIC5pbWFnZS1zaGFwZSAubGFiZWwsI215LXN2ZyAuaWNvbi1zaGFwZSAubGFiZWx7dGV4dC1hbGlnbjpjZW50ZXI7fSNteS1zdmcgLm5vZGUuY2xpY2thYmxle2N1cnNvcjpwb2ludGVyO30jbXktc3ZnIC5yb290IC5hbmNob3IgcGF0aHtmaWxsOiM0NDQwM2MhaW1wb3J0YW50O3N0cm9rZS13aWR0aDowO3N0cm9rZTojNDQ0MDNjO30jbXktc3ZnIC5hcnJvd2hlYWRQYXRoe2ZpbGw6IzA1MDUwNjt9I215LXN2ZyAuZWRnZVBhdGggLnBhdGh7c3Ryb2tlOiM0NDQwM2M7c3Ryb2tlLXdpZHRoOjIuMHB4O30jbXktc3ZnIC5mbG93Y2hhcnQtbGlua3tzdHJva2U6IzQ0NDAzYztmaWxsOm5vbmU7fSNteS1zdmcgLmVkZ2VMYWJlbHtiYWNrZ3JvdW5kLWNvbG9yOiNmYWZhZjk7dGV4dC1hbGlnbjpjZW50ZXI7fSNteS1zdmcgLmVkZ2VMYWJlbCBwe2JhY2tncm91bmQtY29sb3I6I2ZhZmFmOTt9I215LXN2ZyAuZWRnZUxhYmVsIHJlY3R7b3BhY2l0eTowLjU7YmFja2dyb3VuZC1jb2xvcjojZmFmYWY5O2ZpbGw6I2ZhZmFmOTt9I215LXN2ZyAubGFiZWxCa2d7YmFja2dyb3VuZC1jb2xvcjpyZ2JhKDI1MCwgMjUwLCAyNDksIDAuNSk7fSNteS1zdmcgLmNsdXN0ZXIgcmVjdHtmaWxsOiNlZWVlZWM7c3Ryb2tlOiM3ODcxNmM7c3Ryb2tlLXdpZHRoOjFweDt9I215LXN2ZyAuY2x1c3RlciB0ZXh0e2ZpbGw6IzExMTExMzt9I215LXN2ZyAuY2x1c3RlciBzcGFue2NvbG9yOiMxMTExMTM7fSNteS1zdmcgZGl2Lm1lcm1haWRUb29sdGlwe3Bvc2l0aW9uOmFic29sdXRlO3RleHQtYWxpZ246Y2VudGVyO21heC13aWR0aDoyMDBweDtwYWRkaW5nOjJweDtmb250LXNpemU6MTJweDtiYWNrZ3JvdW5kOiNlZWVlZWM7Ym9yZGVyOjFweCBzb2xpZCBoc2woNjAsIDAlLCA4Mi45NDExNzY0NzA2JSk7Ym9yZGVyLXJhZGl1czoycHg7cG9pbnRlci1ldmVudHM6bm9uZTt6LWluZGV4OjEwMDt9I215LXN2ZyAuZmxvd2NoYXJ0VGl0bGVUZXh0e3RleHQtYW5jaG9yOm1pZGRsZTtmb250LXNpemU6MThweDtmaWxsOiMxYzE5MTc7fSNteS1zdmcgcmVjdC50ZXh0e2ZpbGw6bm9uZTtzdHJva2Utd2lkdGg6MDt9I215LXN2ZyAuaWNvbi1zaGFwZSwjbXktc3ZnIC5pbWFnZS1zaGFwZXtiYWNrZ3JvdW5kLWNvbG9yOiNmYWZhZjk7dGV4dC1hbGlnbjpjZW50ZXI7fSNteS1zdmcgLmljb24tc2hhcGUgcCwjbXktc3ZnIC5pbWFnZS1zaGFwZSBwe2JhY2tncm91bmQtY29sb3I6I2ZhZmFmOTtwYWRkaW5nOjJweDt9I215LXN2ZyAuaWNvbi1zaGFwZSByZWN0LCNteS1zdmcgLmltYWdlLXNoYXBlIHJlY3R7b3BhY2l0eTowLjU7YmFja2dyb3VuZC1jb2xvcjojZmFmYWY5O2ZpbGw6I2ZhZmFmOTt9I215LXN2ZyA6cm9vdHstLW1lcm1haWQtZm9udC1mYW1pbHk6InRyZWJ1Y2hldCBtcyIsdmVyZGFuYSxhcmlhbCxzYW5zLXNlcmlmO30jbXktc3ZnIC5zb2xpZCZndDsqe2ZpbGw6I2Y1ZjVmNCFpbXBvcnRhbnQ7c3Ryb2tlOiM1NzUzNGUhaW1wb3J0YW50O3N0cm9rZS13aWR0aDoxcHghaW1wb3J0YW50O2NvbG9yOiMxYzE5MTchaW1wb3J0YW50O30jbXktc3ZnIC5zb2xpZCBzcGFue2ZpbGw6I2Y1ZjVmNCFpbXBvcnRhbnQ7c3Ryb2tlOiM1NzUzNGUhaW1wb3J0YW50O3N0cm9rZS13aWR0aDoxcHghaW1wb3J0YW50O2NvbG9yOiMxYzE5MTchaW1wb3J0YW50O30jbXktc3ZnIC5zb2xpZCB0c3BhbntmaWxsOiMxYzE5MTchaW1wb3J0YW50O308L3N0eWxlPjxnPjxtYXJrZXIgb3JpZW50PSJhdXRvIiBtYXJrZXJIZWlnaHQ9IjgiIG1hcmtlcldpZHRoPSI4IiBtYXJrZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIHJlZlk9IjUiIHJlZlg9IjUiIHZpZXdCb3g9IjAgMCAxMCAxMCIgY2xhc3M9Im1hcmtlciBmbG93Y2hhcnQtdjIiIGlkPSJteS1zdmdfZmxvd2NoYXJ0LXYyLXBvaW50RW5kIj48cGF0aCBzdHlsZT0ic3Ryb2tlLXdpZHRoOiAxOyBzdHJva2UtZGFzaGFycmF5OiAxLCAwOyIgY2xhc3M9ImFycm93TWFya2VyUGF0aCIgZD0iTSAwIDAgTCAxMCA1IEwgMCAxMCB6Ii8+PC9tYXJrZXI+PG1hcmtlciBvcmllbnQ9ImF1dG8iIG1hcmtlckhlaWdodD0iOCIgbWFya2VyV2lkdGg9IjgiIG1hcmtlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgcmVmWT0iNSIgcmVmWD0iNC41IiB2aWV3Qm94PSIwIDAgMTAgMTAiIGNsYXNzPSJtYXJrZXIgZmxvd2NoYXJ0LXYyIiBpZD0ibXktc3ZnX2Zsb3djaGFydC12Mi1wb2ludFN0YXJ0Ij48cGF0aCBzdHlsZT0ic3Ryb2tlLXdpZHRoOiAxOyBzdHJva2UtZGFzaGFycmF5OiAxLCAwOyIgY2xhc3M9ImFycm93TWFya2VyUGF0aCIgZD0iTSAwIDUgTCAxMCAxMCBMIDEwIDAgeiIvPjwvbWFya2VyPjxtYXJrZXIgb3JpZW50PSJhdXRvIiBtYXJrZXJIZWlnaHQ9IjExIiBtYXJrZXJXaWR0aD0iMTEiIG1hcmtlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgcmVmWT0iNSIgcmVmWD0iMTEiIHZpZXdCb3g9IjAgMCAxMCAxMCIgY2xhc3M9Im1hcmtlciBmbG93Y2hhcnQtdjIiIGlkPSJteS1zdmdfZmxvd2NoYXJ0LXYyLWNpcmNsZUVuZCI+PGNpcmNsZSBzdHlsZT0ic3Ryb2tlLXdpZHRoOiAxOyBzdHJva2UtZGFzaGFycmF5OiAxLCAwOyIgY2xhc3M9ImFycm93TWFya2VyUGF0aCIgcj0iNSIgY3k9IjUiIGN4PSI1Ii8+PC9tYXJrZXI+PG1hcmtlciBvcmllbnQ9ImF1dG8iIG1hcmtlckhlaWdodD0iMTEiIG1hcmtlcldpZHRoPSIxMSIgbWFya2VyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiByZWZZPSI1IiByZWZYPSItMSIgdmlld0JveD0iMCAwIDEwIDEwIiBjbGFzcz0ibWFya2VyIGZsb3djaGFydC12MiIgaWQ9Im15LXN2Z19mbG93Y2hhcnQtdjItY2lyY2xlU3RhcnQiPjxjaXJjbGUgc3R5bGU9InN0cm9rZS13aWR0aDogMTsgc3Ryb2tlLWRhc2hhcnJheTogMSwgMDsiIGNsYXNzPSJhcnJvd01hcmtlclBhdGgiIHI9IjUiIGN5PSI1IiBjeD0iNSIvPjwvbWFya2VyPjxtYXJrZXIgb3JpZW50PSJhdXRvIiBtYXJrZXJIZWlnaHQ9IjExIiBtYXJrZXJXaWR0aD0iMTEiIG1hcmtlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgcmVmWT0iNS4yIiByZWZYPSIxMiIgdmlld0JveD0iMCAwIDExIDExIiBjbGFzcz0ibWFya2VyIGNyb3NzIGZsb3djaGFydC12MiIgaWQ9Im15LXN2Z19mbG93Y2hhcnQtdjItY3Jvc3NFbmQiPjxwYXRoIHN0eWxlPSJzdHJva2Utd2lkdGg6IDI7IHN0cm9rZS1kYXNoYXJyYXk6IDEsIDA7IiBjbGFzcz0iYXJyb3dNYXJrZXJQYXRoIiBkPSJNIDEsMSBsIDksOSBNIDEwLDEgbCAtOSw5Ii8+PC9tYXJrZXI+PG1hcmtlciBvcmllbnQ9ImF1dG8iIG1hcmtlckhlaWdodD0iMTEiIG1hcmtlcldpZHRoPSIxMSIgbWFya2VyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiByZWZZPSI1LjIiIHJlZlg9Ii0xIiB2aWV3Qm94PSIwIDAgMTEgMTEiIGNsYXNzPSJtYXJrZXIgY3Jvc3MgZmxvd2NoYXJ0LXYyIiBpZD0ibXktc3ZnX2Zsb3djaGFydC12Mi1jcm9zc1N0YXJ0Ij48cGF0aCBzdHlsZT0ic3Ryb2tlLXdpZHRoOiAyOyBzdHJva2UtZGFzaGFycmF5OiAxLCAwOyIgY2xhc3M9ImFycm93TWFya2VyUGF0aCIgZD0iTSAxLDEgbCA5LDkgTSAxMCwxIGwgLTksOSIvPjwvbWFya2VyPjxnIGNsYXNzPSJyb290Ij48ZyBjbGFzcz0iY2x1c3RlcnMiLz48ZyBjbGFzcz0iZWRnZVBhdGhzIj48cGF0aCBtYXJrZXItZW5kPSJ1cmwoI215LXN2Z19mbG93Y2hhcnQtdjItcG9pbnRFbmQpIiBzdHlsZT0iIiBjbGFzcz0iZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBlZGdlLXRoaWNrbmVzcy1ub3JtYWwgZWRnZS1wYXR0ZXJuLXNvbGlkIGZsb3djaGFydC1saW5rIiBpZD0iTF9DX0RfMCIgZD0iTTI1Mi43OTcsMTY0TDI1Mi43OTcsMTc1LjE2N0MyNTIuNzk3LDE4Ni4zMzMsMjUyLjc5NywyMDguNjY3LDI1Mi43OTcsMjIzLjMzM0MyNTIuNzk3LDIzOCwyNTIuNzk3LDI0NSwyNTIuNzk3LDI0OC41TDI1Mi43OTcsMjUyIi8+PHBhdGggbWFya2VyLWVuZD0idXJsKCNteS1zdmdfZmxvd2NoYXJ0LXYyLXBvaW50RW5kKSIgc3R5bGU9IiIgY2xhc3M9ImVkZ2UtdGhpY2tuZXNzLW5vcm1hbCBlZGdlLXBhdHRlcm4tc29saWQgZWRnZS10aGlja25lc3Mtbm9ybWFsIGVkZ2UtcGF0dGVybi1zb2xpZCBmbG93Y2hhcnQtbGluayIgaWQ9IkxfRF9GMV8wIiBkPSJNMTQ1LjA5Niw0NTRMMTQwLjU2Myw0NTguMTY3QzEzNi4wMyw0NjIuMzMzLDEyNi45NjQsNDcwLjY2NywxMjIuNDMxLDQ3OC4zMzNDMTE3Ljg5OCw0ODYsMTE3Ljg5OCw0OTMsMTE3Ljg5OCw0OTYuNUwxMTcuODk4LDUwMCIvPjxwYXRoIG1hcmtlci1lbmQ9InVybCgjbXktc3ZnX2Zsb3djaGFydC12Mi1wb2ludEVuZCkiIHN0eWxlPSIiIGNsYXNzPSJlZGdlLXRoaWNrbmVzcy1ub3JtYWwgZWRnZS1wYXR0ZXJuLXNvbGlkIGVkZ2UtdGhpY2tuZXNzLW5vcm1hbCBlZGdlLXBhdHRlcm4tc29saWQgZmxvd2NoYXJ0LWxpbmsiIGlkPSJMX0RfRjJfMCIgZD0iTTM2MC40OTgsNDU0TDM2NS4wMzEsNDU4LjE2N0MzNjkuNTY0LDQ2Mi4zMzMsMzc4LjYzLDQ3MC42NjcsMzgzLjE2Miw0NzguMzMzQzM4Ny42OTUsNDg2LDM4Ny42OTUsNDkzLDM4Ny42OTUsNDk2LjVMMzg3LjY5NSw1MDAiLz48L2c+PGcgY2xhc3M9ImVkZ2VMYWJlbHMiPjxnIGNsYXNzPSJlZGdlTGFiZWwiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsIDApIiBjbGFzcz0ibGFiZWwiPjxmb3JlaWduT2JqZWN0IGhlaWdodD0iMCIgd2lkdGg9IjAiPjxkaXYgc3R5bGU9ImRpc3BsYXk6IHRhYmxlLWNlbGw7IHdoaXRlLXNwYWNlOiBub3dyYXA7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsiIGNsYXNzPSJsYWJlbEJrZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiPjxzcGFuIGNsYXNzPSJlZGdlTGFiZWwiPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48ZyBjbGFzcz0iZWRnZUxhYmVsIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLCAwKSIgY2xhc3M9ImxhYmVsIj48Zm9yZWlnbk9iamVjdCBoZWlnaHQ9IjAiIHdpZHRoPSIwIj48ZGl2IHN0eWxlPSJkaXNwbGF5OiB0YWJsZS1jZWxsOyB3aGl0ZS1zcGFjZTogbm93cmFwOyBsaW5lLWhlaWdodDogMS41OyBtYXgtd2lkdGg6IDIwMHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7IiBjbGFzcz0ibGFiZWxCa2ciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIj48c3BhbiBjbGFzcz0iZWRnZUxhYmVsIj48L3NwYW4+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48L2c+PGcgY2xhc3M9ImVkZ2VMYWJlbCI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwgMCkiIGNsYXNzPSJsYWJlbCI+PGZvcmVpZ25PYmplY3QgaGVpZ2h0PSIwIiB3aWR0aD0iMCI+PGRpdiBzdHlsZT0iZGlzcGxheTogdGFibGUtY2VsbDsgd2hpdGUtc3BhY2U6IG5vd3JhcDsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyIgY2xhc3M9ImxhYmVsQmtnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCI+PHNwYW4gY2xhc3M9ImVkZ2VMYWJlbCI+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjwvZz48ZyBjbGFzcz0ibm9kZXMiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI1Mi43OTY4NzUsIDEwNykiIGlkPSJmbG93Y2hhcnQtQy0wIiBjbGFzcz0ibm9kZSBkZWZhdWx0IHNvbGlkIj48cmVjdCBoZWlnaHQ9IjExNCIgd2lkdGg9IjI2MCIgeT0iLTU3IiB4PSItMTMwIiBzdHlsZT0iZmlsbDojZjVmNWY0ICFpbXBvcnRhbnQ7c3Ryb2tlOiM1NzUzNGUgIWltcG9ydGFudDtzdHJva2Utd2lkdGg6MXB4ICFpbXBvcnRhbnQiIGNsYXNzPSJiYXNpYyBsYWJlbC1jb250YWluZXIiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTAwLCAtNDIpIiBzdHlsZT0iY29sb3I6IzFjMTkxNyAhaW1wb3J0YW50IiBjbGFzcz0ibGFiZWwiPjxyZWN0Lz48Zm9yZWlnbk9iamVjdCBoZWlnaHQ9Ijg0IiB3aWR0aD0iMjAwIj48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iY29sb3I6IHJnYigyOCwgMjUsIDIzKSAhaW1wb3J0YW50OyBkaXNwbGF5OiB0YWJsZTsgd2hpdGUtc3BhY2U6IGJyZWFrLXNwYWNlczsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyB3aWR0aDogMjAwcHg7Ij48c3BhbiBjbGFzcz0ibm9kZUxhYmVsIiBzdHlsZT0iY29sb3I6IzFjMTkxNyAhaW1wb3J0YW50Ij48cD5NYXN0ZXIgT24gwrcgQnJhbmNoIEM8L3A+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI1Mi43OTY4NzUsIDM1NSkiIGlkPSJmbG93Y2hhcnQtRC0xIiBjbGFzcz0ibm9kZSBkZWZhdWx0IHNvbGlkIj48cmVjdCBoZWlnaHQ9IjE5OCIgd2lkdGg9IjI2MCIgeT0iLTk5IiB4PSItMTMwIiBzdHlsZT0iZmlsbDojZjVmNWY0ICFpbXBvcnRhbnQ7c3Ryb2tlOiM1NzUzNGUgIWltcG9ydGFudDtzdHJva2Utd2lkdGg6MXB4ICFpbXBvcnRhbnQiIGNsYXNzPSJiYXNpYyBsYWJlbC1jb250YWluZXIiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTAwLCAtODQpIiBzdHlsZT0iY29sb3I6IzFjMTkxNyAhaW1wb3J0YW50IiBjbGFzcz0ibGFiZWwiPjxyZWN0Lz48Zm9yZWlnbk9iamVjdCBoZWlnaHQ9IjE2OCIgd2lkdGg9IjIwMCI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImNvbG9yOiByZ2IoMjgsIDI1LCAyMykgIWltcG9ydGFudDsgZGlzcGxheTogdGFibGU7IHdoaXRlLXNwYWNlOiBicmVhay1zcGFjZXM7IGxpbmUtaGVpZ2h0OiAxLjU7IG1heC13aWR0aDogMjAwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsgd2lkdGg6IDIwMHB4OyI+PHNwYW4gY2xhc3M9Im5vZGVMYWJlbCIgc3R5bGU9ImNvbG9yOiMxYzE5MTcgIWltcG9ydGFudCI+PHA+RmFuIGRpYWwgTG93IC8gTWVkIC8gSGlnaDxiciAvPm5vIE9mZiDCtyBub3QgTkEtRkMxPC9wPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMTcuODk4NDM3NSwgNTQwKSIgaWQ9ImZsb3djaGFydC1GMS0yIiBjbGFzcz0ibm9kZSBkZWZhdWx0IHNvbGlkIj48cmVjdCBoZWlnaHQ9IjcyIiB3aWR0aD0iMjE5Ljc5Njg3NSIgeT0iLTM2IiB4PSItMTA5Ljg5ODQzNzUiIHN0eWxlPSJmaWxsOiNmNWY1ZjQgIWltcG9ydGFudDtzdHJva2U6IzU3NTM0ZSAhaW1wb3J0YW50O3N0cm9rZS13aWR0aDoxcHggIWltcG9ydGFudCIgY2xhc3M9ImJhc2ljIGxhYmVsLWNvbnRhaW5lciIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03OS44OTg0Mzc1LCAtMjEpIiBzdHlsZT0iY29sb3I6IzFjMTkxNyAhaW1wb3J0YW50IiBjbGFzcz0ibGFiZWwiPjxyZWN0Lz48Zm9yZWlnbk9iamVjdCBoZWlnaHQ9IjQyIiB3aWR0aD0iMTU5Ljc5Njg3NSI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImNvbG9yOiByZ2IoMjgsIDI1LCAyMykgIWltcG9ydGFudDsgZGlzcGxheTogdGFibGUtY2VsbDsgd2hpdGUtc3BhY2U6IG5vd3JhcDsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyI+PHNwYW4gY2xhc3M9Im5vZGVMYWJlbCIgc3R5bGU9ImNvbG9yOiMxYzE5MTcgIWltcG9ydGFudCI+PHA+Tm9jdHVhIGZhbiAxPC9wPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzODcuNjk1MzEyNSwgNTQwKSIgaWQ9ImZsb3djaGFydC1GMi0zIiBjbGFzcz0ibm9kZSBkZWZhdWx0IHNvbGlkIj48cmVjdCBoZWlnaHQ9IjcyIiB3aWR0aD0iMjE5Ljc5Njg3NSIgeT0iLTM2IiB4PSItMTA5Ljg5ODQzNzUiIHN0eWxlPSJmaWxsOiNmNWY1ZjQgIWltcG9ydGFudDtzdHJva2U6IzU3NTM0ZSAhaW1wb3J0YW50O3N0cm9rZS13aWR0aDoxcHggIWltcG9ydGFudCIgY2xhc3M9ImJhc2ljIGxhYmVsLWNvbnRhaW5lciIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03OS44OTg0Mzc1LCAtMjEpIiBzdHlsZT0iY29sb3I6IzFjMTkxNyAhaW1wb3J0YW50IiBjbGFzcz0ibGFiZWwiPjxyZWN0Lz48Zm9yZWlnbk9iamVjdCBoZWlnaHQ9IjQyIiB3aWR0aD0iMTU5Ljc5Njg3NSI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImNvbG9yOiByZ2IoMjgsIDI1LCAyMykgIWltcG9ydGFudDsgZGlzcGxheTogdGFibGUtY2VsbDsgd2hpdGUtc3BhY2U6IG5vd3JhcDsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyI+PHNwYW4gY2xhc3M9Im5vZGVMYWJlbCIgc3R5bGU9ImNvbG9yOiMxYzE5MTcgIWltcG9ydGFudCI+PHA+Tm9jdHVhIGZhbiAyPC9wPjwvc3Bhbj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1NjIuNzk2ODc1LCAxMDcpIiBpZD0iZmxvd2NoYXJ0LU4tMTAiIGNsYXNzPSJub2RlIGRlZmF1bHQgc29saWQiPjxyZWN0IGhlaWdodD0iMTk4IiB3aWR0aD0iMjYwIiB5PSItOTkiIHg9Ii0xMzAiIHN0eWxlPSJmaWxsOiNmNWY1ZjQgIWltcG9ydGFudDtzdHJva2U6IzU3NTM0ZSAhaW1wb3J0YW50O3N0cm9rZS13aWR0aDoxcHggIWltcG9ydGFudCIgY2xhc3M9ImJhc2ljIGxhYmVsLWNvbnRhaW5lciIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMDAsIC04NCkiIHN0eWxlPSJjb2xvcjojMWMxOTE3ICFpbXBvcnRhbnQiIGNsYXNzPSJsYWJlbCI+PHJlY3QvPjxmb3JlaWduT2JqZWN0IGhlaWdodD0iMTY4IiB3aWR0aD0iMjAwIj48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iY29sb3I6IHJnYigyOCwgMjUsIDIzKSAhaW1wb3J0YW50OyBkaXNwbGF5OiB0YWJsZTsgd2hpdGUtc3BhY2U6IGJyZWFrLXNwYWNlczsgbGluZS1oZWlnaHQ6IDEuNTsgbWF4LXdpZHRoOiAyMDBweDsgdGV4dC1hbGlnbjogY2VudGVyOyB3aWR0aDogMjAwcHg7Ij48c3BhbiBjbGFzcz0ibm9kZUxhYmVsIiBzdHlsZT0iY29sb3I6IzFjMTkxNyAhaW1wb3J0YW50Ij48cD5EaWFsID0gc3BlZWQgb25seTxiciAvPmRvZXMgbm90IHN0YXJ0IHRoZSBoZWF0ZXI8L3A+PC9zcGFuPjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PC9nPjwvZz48L2c+PC9nPjwvc3ZnPg==" alt="Fans" />
 <figcaption aria-hidden="true">Fans</figcaption>
 </figure>
-<p>Branch C feeds one Low/Med/High dial. The SKU is not chosen yet; the
-dial must have <strong>no hard Off</strong>, and the dial must
-<strong>not</strong> be a Noctua NA-FC1. After the dial, both Noctua
-fans share that power on their red and black leads only. Leave the PWM
-and tach wires unused.</p>
+<p>Branch C feeds one shared fan dial. Book pick: Sure Marine <a href="https://www.suremarineservice.com/Heat/System-Switches/W002-912.html"><strong>W002-912</strong></a>
+Hi/Low <strong>without</strong> Off, 12 V / 0.52 A option (<a href="#dec-018">DEC-018</a>). <strong>Do not</strong> use a Noctua
+NA-FC1. After the dial, both Noctua fans share that power on their red
+and black leads only. Leave the PWM and tach wires unused.</p>
 <p>The dial only sets <strong>how hard</strong> the fans blow. The dial
 never starts the diesel heater.</p>
 <p>Until the thermostat auto path is finished (<a href="#q-022">Q-022</a>), with master On the fans run whenever the dial
@@ -2695,8 +2706,8 @@ starts the D5S pump on a heat call</td>
 </tr>
 <tr>
 <td>AM100-1LF</td>
-<td>Safe tap temperature</td>
-<td>Act as a glycol valve or the Isotemp factory mixer</td>
+<td>Safe tap temperature (~120°F)</td>
+<td>Act as a glycol valve</td>
 </tr>
 <tr>
 <td>Paneltronics <strong>WATER HEATER</strong></td>
@@ -3072,10 +3083,10 @@ EasyStart)</td>
 </table>
 <p><strong>Sofa/bed (discovery):</strong> current bed <strong>coming
 out</strong>. Rebuild hybrid per <a href="#dec-021">DEC-021</a>: wood
-side boxes, aluminum Isotemp cradle, light plywood
-<strong>full-length</strong> lift-out (day = side seats + aisle). Water
-Flow Tank in <strong>backrest</strong>; Isotemp under bench. Sure Marine
-under fridge; Duda under sink. Details: <a href="#working-design-understanding">Working design understanding</a>.
+side boxes, aluminum Isotemp cradle, <strong>2–3 light panels</strong>
+flat at night / hinge or slide by day. Water Flow Tank in
+<strong>backrest</strong>; Isotemp under bench. Sure Marine under
+fridge; Duda under sink. Details: <a href="#working-design-understanding">Working design understanding</a>.
 Effort: <a href="#effort-estimate">Effort estimate</a>.</p>
 <h2 id="do-not-change-the-design-into-these">Do not change the design
 into these</h2>
@@ -3403,19 +3414,24 @@ brass/copper/stainless barbs</td>
 </table>
 <h2 id="sofabed-platform-decision">Sofa/bed platform decision</h2>
 <p>The current bed is <strong>coming out</strong>. Rebuild as a sofa/bed
-with a <strong>full-length</strong> removable center for day use (side
-seats + aisle). It must carry the Isotemp Slim Square 4.2 gal heat
-battery on the <strong>driver side under the bench (low)</strong>, put
-the Water Flow Tank in the <strong>backrest (high)</strong>, preserve
-service access, and keep the Water Flow Tank top as the highest
-circulating glycol point.</p>
+with a <strong>multi-panel</strong> sleep deck (<strong>2–3
+panels</strong>): <strong>flat by night</strong>, <strong>hinge up or
+slide by day</strong> for an aisle between facing side seats. It must
+carry the Isotemp Slim Square 4.2 gal heat battery on the <strong>driver
+side under the bench (low)</strong>, put the Water Flow Tank in the
+<strong>backrest (high)</strong>, preserve service access, and keep the
+Water Flow Tank top as the highest circulating glycol point.</p>
 <p><strong>Owner priorities:</strong> ease of access and ease of
 construction. Prefer the simpler package that still reaches the Isotemp
 element (~30 cm), coil fittings, and straps (<a href="#working-design-understanding">Working design
 understanding</a>).</p>
 <p><strong>Locked method (<a href="#dec-021">DEC-021</a>):</strong>
 hybrid — wood furniture shell + aluminum Isotemp cradle + light plywood
-lift-out center.</p>
+<strong>hinging/sliding</strong> day panels (not one carry-out lift-out
+as the primary plan).</p>
+<p><strong>Day motion:</strong> panels stay attached. Exact hinge vs
+slide and whether two or three panels: still OPEN — decide before
+cutting ledgers.</p>
 <p><strong>Remaining effort:</strong> see <a href="#effort-estimate">Effort estimate</a> (~110–120 h typical through
 diesel first fire; sofa is the largest block).</p>
 <h3 id="requirements-before-cutting">Requirements before cutting</h3>
@@ -4183,8 +4199,9 @@ desired temperature → reseat and retighten to
 <li>Confirm with a thermometer at a faucet. Water above 120°F can scald
 — write the setting on the CAUTION label and stick it on the valve (<a href="#src-036">SRC-036</a>).</li>
 </ul></li>
-<li>Do not use the little mixer on the Isotemp Slim Square 4.2 gal heat
-battery for the shower.</li>
+<li>Tap temperature is the <strong>AM100-1LF</strong> on the Duda only.
+Cap anything unused on the Isotemp (including the factory mixer) so
+nobody mistakes it for a tap control.</li>
 <li>Cap anything you are not holding. Keep propylene glycol fittings and
 water fittings obviously different while you work.</li>
 </ol>
@@ -4205,8 +4222,8 @@ only</label></li>
 <li><label><input type="checkbox"></input>Cold feed to mixing valve
 present</label></li>
 <li><label><input type="checkbox"></input>Mixer set ~120°F per <a href="#src-036">SRC-036</a> handwheel procedure and labeled</label></li>
-<li><label><input type="checkbox"></input>Isotemp factory mixer still capped /
-unused</label></li>
+<li><label><input type="checkbox"></input>Isotemp unused ports capped (factory
+mixer included — never for taps)</label></li>
 <li><label><input type="checkbox"></input>No glycol/fresh cross at any open
 fitting</label></li>
 </ul>
@@ -4621,8 +4638,8 @@ stay OPEN — do not invent pinouts or hose routes.</p>
 <h2 id="snapshot">Snapshot</h2>
 <p><strong>One loop.</strong> Hydronic D5S → Sure Marine cabin heater →
 Duda → Isotemp coil → return. No engine. No second pump. Isotemp chamber
-= static glycol; factory mixer unused. Drinking water only through the
-Duda + AM100-1LF.</p>
+= static glycol; factory mixer unused forever (AM100-1LF is the only tap
+mixer). Drinking water only through the Duda + AM100-1LF.</p>
 <p><strong>House electrical (context only).</strong> Hydronic 12 V from
 the <strong>200 Ah</strong> house battery (<strong>650 W</strong> solar;
 Sterling 60 A B2B; Mean Well RPB-1600-12). Isotemp 750 W from
@@ -8490,7 +8507,9 @@ supplyhouse.com order confirmation. Also ordered in that shipment: two
 male brass pipe adapters (G25121) for the transitions to hose. This is a
 <strong>different valve</strong> from the Isotemp Slim Square 4.2 gal
 heat battery factory mixer (SRC-022, 38–65°C) — do not treat that
-factory mixer as the tap-water mixer.</li>
+factory mixer as the tap-water mixer. <strong>Owner confirmed
+2026-09-20: Isotemp factory mixer unused forever</strong> — leave
+capped; omit from User’s Guide operating steps.</li>
 <li><strong>Reason:</strong> Owner-confirmed 2026-09-19 via order
 confirmation email/photo. Van photo
 <code>photos/IMG_20200706_184257_691.jpg</code> (SRC-024) shows that
@@ -8874,9 +8893,8 @@ AC path (required for complete system acceptance)</li>
 (high)</strong>; Isotemp under bench/bed (low). Confirm top is highest
 glycol point after framing (<a href="#working-design-understanding">Working design
 understanding</a>).</li>
-<li><strong>Day sofa</strong> — <strong>Locked:</strong> full-length
-removable center; day = side seats + aisle (no fixed rear forward
-bench). See <a href="#working-design-understanding">Working design
+<li><strong>Day sofa</strong> — <strong>Revised:</strong> 2–3 panels
+flat at night; hinge up / slide by day (stay attached). See <a href="#working-design-understanding">Working design
 understanding</a>.</li>
 <li><strong>SC1600 fans</strong> — Reference relay: TE
 <strong>V23134-A3052-X540</strong> (or any ISO mini 12 V / ≥10 A) — <a href="https://www.digikey.com/en/products/detail/te-connectivity-potter-brumfield-relays/V23134-A3052-X540/6234681">DigiKey</a>.
@@ -9472,15 +9490,14 @@ center ledgers only—same hybrid, lower buy cost.</p>
 (removable middle → day sofa)</h2>
 <h3 id="what-tyrah-needs">What Tyrah needs</h3>
 <ul>
-<li><strong>Night:</strong> continuous sleep surface across the three
-bays (full-length center in)<br />
+<li><strong>Night:</strong> continuous sleep surface — <strong>2–3
+panels flat</strong> across the sofa/bed span<br />
 </li>
-<li><strong>Day:</strong> facing side seats + walk-through aisle;
-<strong>full-length</strong> center lifts out (no fixed rear
-forward-facing bench)<br />
+<li><strong>Day:</strong> ~<strong>two panels hinge up or slide</strong>
+so facing side seats + walk-through aisle appear; panels stay attached
+(no carry-out)<br />
 </li>
-<li>Under/behind: Isotemp + hoses + cable stay put when the center comes
-out</li>
+<li>Under/behind: Isotemp + hoses + cable stay put when panels move</li>
 </ul>
 <h3 id="mechanisms-how-the-middle-attaches">Mechanisms (how the middle
 attaches)</h3>
@@ -9552,9 +9569,11 @@ allows a hatch to metal). These stay day and night.<br />
 freshwater tank)—strapped/bolted tank, coil fittings facing service
 aisle, ~30 cm clear in front of element end.<br />
 </li>
-<li><strong>Removable center deck</strong> — light wood or ply panel on
-aluminum ledgers or pin sockets; lifts out for day sofa; stores on end
-or under a seat.<br />
+<li><strong>Sleep / day deck</strong> — <strong>2–3 light
+panels</strong> on the center span: <strong>flat at night</strong>,
+<strong>hinge up or slide by day</strong> (owner). Prefer stay-attached;
+no carry-out as primary. Hinges/tracks land on the fixed side boxes;
+hoses never through moving panels.<br />
 </li>
 <li><strong>Hydronic and freshwater hoses</strong> run in fixed bays or
 along the wall <strong>behind removable plywood hatches</strong>—never
@@ -9669,17 +9688,11 @@ return; Water Flow Tank high on return</td>
 <tr>
 <td>2</td>
 <td>Day layout when middle is out</td>
-<td><strong>Locked (agent pick 2026-09-20):</strong> <strong>full-length
-removable center.</strong> Day = facing side seats + walk-through aisle.
-<strong>No</strong> fixed rear forward-facing bench. Night = continuous
-sleep surface across the three bays. Rationale: matches the hybrid
-three-bay build (two fixed side boxes + one lift-out); one mechanism;
-Isotemp stays in a fixed side bay; Water Flow Tank can still mount high
-on a wall/rear structure without needing a permanent rear seat. Partial
-remove would lighten the panel and keep forward seating, but adds a
-joint and more framing for a preference that was never stated as
-required. Keep the lift-out light (½ in Baltic birch or similar +
-handles) instead of shortening it.</td>
+<td><strong>Revised 2026-09-20 (owner):</strong> <strong>2–3
+panels</strong> that <strong>lay flat by night</strong> and
+<strong>hinge up / slide by day</strong> — not one full-length lift-out
+carried away. Day still aims for facing side seats + walk-through aisle.
+Exact hinge vs slide and panel count refining (see #24).</td>
 </tr>
 <tr>
 <td>3</td>
@@ -9801,20 +9814,24 @@ NA-FC1); meter Low at HOLD 4.</td>
 </tr>
 <tr>
 <td>21</td>
-<td>Fan dial (Sure Marine on hand?)</td>
-<td><strong>Owner may have Sure Marine speed switch.</strong> See
-fan-dial spec below — Hi/Low computer-fan type can work with two Noctuas
-if amp rating matches and lowest detent still spins; classic 5-pin
-blower L/M/H alone does <strong>not</strong>. Prefer <strong>no
-Off</strong> on the dial (Off = master).</td>
+<td>Fan dial</td>
+<td><strong>Book pick:</strong> Sure Marine <a href="https://www.suremarineservice.com/Heat/System-Switches/W002-912.html"><strong>W002-912</strong></a>
+Hi/Low <strong>no Off</strong>, 12 V <strong>0.52 A</strong> (-36).
+Owner may already have W002-911/912 — check bag. Two Noctuas ≈ 0.28
+A.</td>
 </tr>
 <tr>
-<td>22</td>
-<td>Master Off vs Isotemp AC</td>
-<td><strong>Owner 2026-09-20:</strong> OK that they are
-<strong>separate</strong>. Master Off is 12 V diesel heat lockout only;
-Isotemp AC stays on Paneltronics <strong>WATER HEATER</strong>. Not the
-same control.</td>
+<td>24</td>
+<td>Day stash for lift-out center</td>
+<td><strong>Agent pick 2026-09-20:</strong> <strong>stand on end in a
+narrow pocket against the rear interior wall</strong> (or the forward
+bulkhead if rear is crowded)—designed into the furniture, indoors,
+one-motion daily. <strong>Not</strong> outside the van.
+<strong>Not</strong> under a seat by default (full-length panel rarely
+fits there). <strong>Measure first:</strong> panel length must be ≤
+clear cabin height minus ~2 in. If it will not stand, fall back to
+<strong>two light half-panels</strong> that nest under the side seats
+(same day aisle; slightly more hardware).</td>
 </tr>
 </tbody>
 </table>
@@ -9879,19 +9896,51 @@ count wires/terminals; any printing like W002-911 / amp rating. Meter
 Low (or Hi/Low low) so both fans still spin.</p>
 <h3 id="buy-if-you-do-not-have-a-matching-hilow">Buy if you do not have
 a matching Hi/Low</h3>
-<p><strong>Preferred (matches catalog craft):</strong> Sure Marine
-<strong>Hi/Low without Off</strong>, 12 V, sized for <strong>≥0.52
-A</strong> total fan draw (your two Noctuas are ~0.28 A). Ask Sure
-Marine for the no-Off sibling of W002-911 if the stock listing only
-shows “with Off.”</p>
-<p><strong>Acceptable DIY:</strong> any <strong>12 V voltage-drop /
-rheostat-style</strong> inline fan controller rated <strong>≥2
-A</strong>, knob that does <strong>not</strong> go to full stop at the
-low end — wire on the shared <strong>+</strong> lead to both fans (power
-leads only; leave PWM/tach unused). At HOLD 4, meter Low still
-spins.</p>
-<p><strong>Do not buy:</strong> Noctua <strong>NA-FC1</strong> (PWM
-path; can command Off — <a href="#dec-018">DEC-018</a>).</p>
+<p><strong>Book pick (Sure Marine, matches DEC-018):</strong> <a href="https://www.suremarineservice.com/Heat/System-Switches/W002-912.html"><strong>W002-912</strong>
+Hi/Low Switch for Fan Heater</a> — <strong>no Off</strong> position.
+Order the <strong>12 V / up to 0.52 A</strong> option (suffix
+<strong>-36</strong>). Two Noctua NF-F12 ≈ <strong>0.28 A</strong>
+combined — that SKU fits. (~$50–56)</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Sure Marine SKU</th>
+<th>What it is</th>
+<th>Use here?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.suremarineservice.com/Heat/System-Switches/W002-912.html"><strong>W002-912</strong></a></td>
+<td>Hi/Low, <strong>no Off</strong></td>
+<td><strong>Yes — preferred</strong></td>
+</tr>
+<tr>
+<td><a href="https://www.suremarineservice.com/Heat/System-Switches/W002-911.html">W002-911</a></td>
+<td>Hi/Low <strong>with Off</strong></td>
+<td>OK only if you ignore Off and keep master as lockout</td>
+</tr>
+<tr>
+<td><a href="https://www.suremarineservice.com/Heat/System-Switches/W002-914.html">W002-914</a></td>
+<td>VIMAR Hi/Low, no Off</td>
+<td>Same job, different faceplate</td>
+</tr>
+<tr>
+<td>Defroster <strong>3-speed</strong> switch (comes with squirrel-cage
+units)</td>
+<td>Selects motor speed taps</td>
+<td><strong>No</strong> for two Noctuas alone</td>
+</tr>
+</tbody>
+</table>
+<p>Shelf check: look for <strong>W002-911</strong> /
+<strong>W002-912</strong> / <strong>W002-914</strong> on the bag, or
+count positions (2 vs 3 + Off).</p>
 <ul class="task-list">
 <li><p><label><input type="checkbox" checked></input>Day:
 <strong>full-length remove</strong> → side seats + aisle (no fixed rear
@@ -10898,5 +10947,83 @@ how Isotemp AC sits in a typical van; pinouts and amp ratings for
 </tr>
 </tbody>
 </table>
+<script>
+/* Screen TOC: highlight the section currently in view, and keep it visible in the sidebar. */
+(function () {
+  if (window.matchMedia && !window.matchMedia("screen").matches) return;
+
+  var toc = document.getElementById("TOC");
+  if (!toc) return;
+
+  var links = Array.prototype.slice.call(toc.querySelectorAll('a[href^="#"]'));
+  if (!links.length) return;
+
+  var entries = [];
+  for (var i = 0; i < links.length; i++) {
+    var href = links[i].getAttribute("href");
+    if (!href || href === "#") continue;
+    var id = decodeURIComponent(href.slice(1));
+    var el = document.getElementById(id);
+    if (el) entries.push({ link: links[i], el: el });
+  }
+  if (!entries.length) return;
+
+  var active = null;
+  var ticking = false;
+  var headerOffset = 72;
+
+  function setActive(next) {
+    if (next === active) return;
+    if (active) {
+      active.classList.remove("is-active");
+      active.removeAttribute("aria-current");
+    }
+    active = next;
+    if (!active) return;
+    active.classList.add("is-active");
+    active.setAttribute("aria-current", "location");
+    var li = active.closest("li");
+    if (li) {
+      var top = li.offsetTop;
+      var bottom = top + li.offsetHeight;
+      var viewTop = toc.scrollTop;
+      var viewBottom = viewTop + toc.clientHeight;
+      if (top < viewTop + 24) {
+        toc.scrollTop = Math.max(0, top - 24);
+      } else if (bottom > viewBottom - 24) {
+        toc.scrollTop = bottom - toc.clientHeight + 24;
+      }
+    }
+  }
+
+  function update() {
+    ticking = false;
+    var y = window.scrollY + headerOffset;
+    var current = entries[0].link;
+    for (var i = 0; i < entries.length; i++) {
+      if (entries[i].el.offsetTop <= y) current = entries[i].link;
+      else break;
+    }
+    /* Near page bottom: last section wins */
+    var docBottom = window.scrollY + window.innerHeight;
+    var maxScroll = document.documentElement.scrollHeight - 4;
+    if (docBottom >= maxScroll) {
+      current = entries[entries.length - 1].link;
+    }
+    setActive(current);
+  }
+
+  function onScroll() {
+    if (!ticking) {
+      ticking = true;
+      window.requestAnimationFrame(update);
+    }
+  }
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll, { passive: true });
+  update();
+})();
+</script>
 </body>
 </html>
