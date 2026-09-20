@@ -54,7 +54,7 @@ Meet each part once here. After this table, use only these official names—or t
 | Header | Water Flow Tank (WFT) tees into the **return** at the highest circulating point — not in series, not off the Isotemp coil |
 | Why that order | Cabin heat first (daily priority); Duda next (hottest fluid for sinks / occasional showers); Isotemp last (stores leftovers — see [Isotemp value study](#isotemp-value-study)) |
 | Drinking water | Duda only; AM100-1LF on hot out; set ~120°F; taps from mixed outlet only ([DEC-003](#dec-003) / [DEC-008](#dec-008)) |
-| Isotemp | Coil circulating; chamber static same mix; factory mixer capped; 750 W on Paneltronics **WATER HEATER** only |
+| Isotemp | Coil circulating; chamber static same mix; **750 W** on Paneltronics **WATER HEATER** only. Factory mixer stays capped — never for taps ([DEC-008](#dec-008)) |
 | Heights | Water Flow Tank highest; everything else below it; cabin heater level, bottom-in/top-out, outlet bleeder; fill/drain at lowest point; unrestricted path from Water Flow Tank tee back to the pump |
 | Isotemp mount (owner) | **Driver side under bench/bed (low)**; Water Flow Tank in **sofa-bed backrest (high)**; full-length lift-out day sofa ([Working design understanding](#working-design-understanding)) |
 | Cabin air | Living-space air across the Sure Marine cabin heater (**under the fridge**, SN 16401); Duda **under the sink**; combustion stays outside |
@@ -176,7 +176,7 @@ Ignore the kit’s vehicle-blower wiring (pin **3**, blower relay leads, and the
 
 ![Fans](diagrams/electrical-fans.svg)
 
-Branch C feeds one Low/Med/High dial. The SKU is not chosen yet; the dial must have **no hard Off**, and the dial must **not** be a Noctua NA-FC1. After the dial, both Noctua fans share that power on their red and black leads only. Leave the PWM and tach wires unused.
+Branch C feeds one shared fan dial. Book pick: Sure Marine [**W002-912**](https://www.suremarineservice.com/Heat/System-Switches/W002-912.html) Hi/Low **without** Off, 12 V / 0.52 A option ([DEC-018](#dec-018)). **Do not** use a Noctua NA-FC1. After the dial, both Noctua fans share that power on their red and black leads only. Leave the PWM and tach wires unused.
 
 The dial only sets **how hard** the fans blow. The dial never starts the diesel heater.
 

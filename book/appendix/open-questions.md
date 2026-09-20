@@ -20,7 +20,7 @@ The altitude kit is **not** on that wait list.
 **Still useful:**
 
 1. **Water Flow Tank** — **In sofa-bed backrest (high)**; Isotemp under bench/bed (low). Confirm top is highest glycol point after framing ([Working design understanding](#working-design-understanding)).
-2. **Day sofa** — **Locked:** full-length removable center; day = side seats + aisle (no fixed rear forward bench). See [Working design understanding](#working-design-understanding).
+2. **Day sofa** — **Revised:** 2–3 panels flat at night; hinge up / slide by day (stay attached). See [Working design understanding](#working-design-understanding).
 3. **SC1600 fans** — Reference relay: TE **V23134-A3052-X540** (or any ISO mini 12 V / ≥10 A) — [DigiKey](https://www.digikey.com/en/products/detail/te-connectivity-potter-brumfield-relays/V23134-A3052-X540/6234681). Match on shelf or buy.
 4. **Cabin fans** — Both Noctua NF-F12; speed = voltage Low/Med/High dial (not NA-FC1). Meter Low still spins at HOLD 4.
 5. **Shore / inverter ground fault** — Inverter *might*; shore unknown; Paneltronics has no GFCI. Leave for HOLD 9.

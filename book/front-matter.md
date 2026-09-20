@@ -15,7 +15,7 @@ Hand this file with the PDFs in `sources/hydronic-install/` and `sources/coolant
 
 ## Snapshot
 
-**One loop.** Hydronic D5S → Sure Marine cabin heater → Duda → Isotemp coil → return. No engine. No second pump. Isotemp chamber = static glycol; factory mixer unused. Drinking water only through the Duda + AM100-1LF.
+**One loop.** Hydronic D5S → Sure Marine cabin heater → Duda → Isotemp coil → return. No engine. No second pump. Isotemp chamber = static glycol; factory mixer unused forever (AM100-1LF is the only tap mixer). Drinking water only through the Duda + AM100-1LF.
 
 **House electrical (context only).** Hydronic 12 V from the **200 Ah** house battery (**650 W** solar; Sterling 60 A B2B; Mean Well RPB-1600-12). Isotemp 750 W from Paneltronics **WATER HEATER**, fed by shore or **PROwatt SW 2000** via automatic transfer ([`photos/ac-electrical.jpg`](../photos/ac-electrical.jpg)). Mean Well charge path is separate (Blue Sea 9009). Ground-fault on Isotemp still OPEN ([Q-009](#q-009)).
 

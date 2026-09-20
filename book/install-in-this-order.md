@@ -93,11 +93,13 @@ The altitude kit does not block a low-camp first fire. It is still not on the wa
 
 ## Sofa/bed platform decision
 
-The current bed is **coming out**. Rebuild as a sofa/bed with a **full-length** removable center for day use (side seats + aisle). It must carry the Isotemp Slim Square 4.2 gal heat battery on the **driver side under the bench (low)**, put the Water Flow Tank in the **backrest (high)**, preserve service access, and keep the Water Flow Tank top as the highest circulating glycol point.
+The current bed is **coming out**. Rebuild as a sofa/bed with a **multi-panel** sleep deck (**2–3 panels**): **flat by night**, **hinge up or slide by day** for an aisle between facing side seats. It must carry the Isotemp Slim Square 4.2 gal heat battery on the **driver side under the bench (low)**, put the Water Flow Tank in the **backrest (high)**, preserve service access, and keep the Water Flow Tank top as the highest circulating glycol point.
 
 **Owner priorities:** ease of access and ease of construction. Prefer the simpler package that still reaches the Isotemp element (~30 cm), coil fittings, and straps ([Working design understanding](#working-design-understanding)).
 
-**Locked method ([DEC-021](#dec-021)):** hybrid — wood furniture shell + aluminum Isotemp cradle + light plywood lift-out center.
+**Locked method ([DEC-021](#dec-021)):** hybrid — wood furniture shell + aluminum Isotemp cradle + light plywood **hinging/sliding** day panels (not one carry-out lift-out as the primary plan).
+
+**Day motion:** panels stay attached. Exact hinge vs slide and whether two or three panels: still OPEN — decide before cutting ledgers.
 
 **Remaining effort:** see [Effort estimate](#effort-estimate) (~110–120 h typical through diesel first fire; sofa is the largest block).
 
@@ -482,7 +484,7 @@ A diesel boiler can produce very hot domestic water. An anti-scald valve is mand
    - Apply thermostrip (or thermometer) on the **Mix** outlet pipe.
    - Loosen the handwheel screw → lift the handwheel → turn to the desired temperature → reseat and retighten to **lock**.
    - Confirm with a thermometer at a faucet. Water above 120°F can scald — write the setting on the CAUTION label and stick it on the valve ([SRC-036](#src-036)).
-5. Do not use the little mixer on the Isotemp Slim Square 4.2 gal heat battery for the shower.
+5. Tap temperature is the **AM100-1LF** on the Duda only. Cap anything unused on the Isotemp (including the factory mixer) so nobody mistakes it for a tap control.
 6. Cap anything you are not holding. Keep propylene glycol fittings and water fittings obviously different while you work.
 
 ::: {.media-pair}
@@ -496,7 +498,7 @@ A diesel boiler can produce very hot domestic water. An anti-scald valve is mand
 - [ ] Tap hoses from mixed outlet only
 - [ ] Cold feed to mixing valve present
 - [ ] Mixer set ~120°F per [SRC-036](#src-036) handwheel procedure and labeled
-- [ ] Isotemp factory mixer still capped / unused
+- [ ] Isotemp unused ports capped (factory mixer included — never for taps)
 - [ ] No glycol/fresh cross at any open fitting
 
 ---

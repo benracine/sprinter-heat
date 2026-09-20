@@ -106,7 +106,7 @@ This is a dish rinse, not a shower. For a shower, run EasyStart and expect the d
 | EasyStart Timer | Start, stop, schedule, and target ([SRC-003](#src-003)); starts the D5S pump on a heat call | Replace master Off |
 | SC1600B | Low-current heat **signal** only ([SRC-033](#src-033)); needs a relay for fans | Fan power; trusted auto until [Q-022](#q-022) |
 | Fan dial | Low/Med/High — no hard Off ([DEC-018](#dec-018)) | Call for heat |
-| AM100-1LF | Safe tap temperature | Act as a glycol valve or the Isotemp factory mixer |
+| AM100-1LF | Safe tap temperature (~120°F) | Act as a glycol valve |
 | Paneltronics **WATER HEATER** | Chamber charge after [HOLD 9](#hold-9); tops off near 75°C | Circulate glycol; heat the taps alone |
 
 ## If something is wrong

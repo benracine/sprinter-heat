@@ -88,6 +88,7 @@ echo "Writing $OUT/$HTML_NAME"
   --to html5 \
   --embed-resources \
   --css "$BOOK/style.css" \
+  --include-after-body="$BOOK/toc-scroll.html" \
   --metadata "pagetitle=$TITLE" \
   -o "$OUT/$HTML_NAME"
 

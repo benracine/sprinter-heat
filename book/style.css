@@ -718,6 +718,19 @@ table {
     background: color-mix(in srgb, var(--screen-accent) 8%, transparent);
   }
 
+  #TOC a.is-active,
+  #TOC a[aria-current="location"] {
+    color: var(--screen-heading);
+    font-weight: 600;
+    background: color-mix(in srgb, var(--screen-accent) 14%, transparent);
+    box-shadow: inset 3px 0 0 var(--screen-accent);
+  }
+
+  #TOC ul ul a.is-active,
+  #TOC ul ul a[aria-current="location"] {
+    color: var(--screen-heading);
+  }
+
   body > *:not(#TOC) {
     box-sizing: border-box;
     width: min(var(--prose), calc(100vw - var(--toc-w) - 2.5rem));
