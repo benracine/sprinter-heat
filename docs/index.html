@@ -1291,6 +1291,8 @@ before calling it done</a></li>
 <li><a href="#isotemp-value-study" id="toc-isotemp-value-study">Isotemp
 value study</a>
 <ul>
+<li><a href="#why-this-note-exists" id="toc-why-this-note-exists">Why
+this note exists</a></li>
 <li><a href="#question" id="toc-question">Question</a></li>
 <li><a href="#short-answer" id="toc-short-answer">Short answer</a></li>
 <li><a href="#what-the-isotemp-adds" id="toc-what-the-isotemp-adds">What
@@ -1443,13 +1445,16 @@ day-to-day manual.</p>
 <a href="#builders-guide">Builder’s Guide</a>.</p>
 <h3 id="lookups">Lookups</h3>
 <p>For numbers and citations: <a href="#the-numbers-that-matter">The
-Numbers</a> · <a href="#source-register">Sources</a> · <a href="#decision-log">Decisions</a> · <a href="#questions-for-you-in-order">Questions for You</a> · <a href="#open-questions">Open Questions</a> · <a href="#hazard-register">Hazards</a>.</p>
+Numbers</a> · <a href="#isotemp-value-study">Isotemp value study</a> ·
+<a href="#source-register">Sources</a> · <a href="#decision-log">Decisions</a> · <a href="#questions-for-you-in-order">Questions for You</a> · <a href="#open-questions">Open Questions</a> · <a href="#hazard-register">Hazards</a>.</p>
 <p>Part two is reference, not the work order. A code such as <a href="#src-009">SRC-009</a> jumps to the source register. DANGER,
 CAUTION, and MUST boxes override whatever sits around them.</p>
 <p>Part names appear once in <a href="#the-parts">The Parts</a>—that
 table is the glossary of record. What is already on the van versus still
-in the garage is in <a href="#current-status-report">Current
-Status</a>.</p>
+in the garage is in <a href="#current-status-report">Current Status</a>.
+After Acceptance, live from the <a href="#users-guide">User’s Guide</a>,
+including <a href="#ac-chamber-and-dishes">AC chamber and
+dishes</a>.</p>
 <h2 id="when-sources-disagree">When sources disagree</h2>
 <ol type="1">
 <li><a href="#src-009">SRC-009</a> — Hydronic D5S: fuel, exhaust,
@@ -1490,6 +1495,13 @@ taps from the mixed outlet only (<a href="#dec-008">DEC-008</a>). → <a href="#
 VAC element lands on Paneltronics <strong>WATER HEATER</strong>
 only—never on 12 V (<a href="#dec-004">DEC-004</a> / <a href="#dec-020">DEC-020</a>). Never energize an empty chamber. Confirm
 upstream GFCI/ELCI and cable route before first use (<a href="#hold-9">HOLD 9</a>). → <a href="#haz-006">HAZ-006</a> · <a href="#haz-009">HAZ-009</a></p>
+</div>
+<div class="caution">
+<p><strong>Unattended Isotemp AC.</strong> Paneltronics <strong>WATER
+HEATER</strong> is not cut by the master switch. Do not leave the
+inverter and <strong>WATER HEATER</strong> on for long unattended
+periods unless you intend a deliberate chamber top-off on shore or
+abundant solar, the chamber is full, and the GFCI path is verified (<a href="#hold-9">HOLD 9</a>). → <a href="#haz-006">HAZ-006</a> · <a href="#ac-chamber-and-dishes">User’s Guide — AC chamber</a></p>
 </div>
 <div class="caution">
 <p><strong>Hot glycol and steam.</strong> Keep the loop full and bled.
@@ -2068,8 +2080,8 @@ AM100-1LF. Expect the diesel to run</td>
 </tr>
 <tr>
 <td>Dish rinse with chamber already hot</td>
-<td>Master <strong>On</strong> → short EasyStart → wait per <a href="#ac-chamber-and-dishes">timing table</a> → tap through
-AM100-1LF</td>
+<td>Master <strong>On</strong>, short EasyStart start, then follow <a href="#ac-chamber-and-dishes">AC chamber and dishes</a>. Draw through
+the AM100-1LF only.</td>
 </tr>
 <tr>
 <td>Charge chamber from shore/solar</td>
@@ -2207,32 +2219,21 @@ not finished</td>
 <strong>WATER HEATER</strong> (and the inverter if you are done)
 separately.</p>
 <h3 id="dish-rinse-after-a-charge">Dish rinse after a charge</h3>
-<p>Master <strong>On</strong>, short EasyStart start, then wait for the
-<strong>pump</strong>. Heat moves chamber → coil → Duda → AM100-1LF →
-sink.</p>
+<p>Turn the master <strong>On</strong> and make a short EasyStart start
+so the <strong>pump</strong> runs. Heat moves from the chamber through
+the coil, the Duda, and the AM100-1LF to the sink.</p>
 <p>The pump and the burner are different. EasyStart always starts the
 pump. The burner lights only if glycol at the D5S is cool enough.</p>
-<p><strong>If the glycol loop is still warm</strong> (you ran heat
-recently):</p>
-<ul>
-<li>Flame often stays <strong>off</strong>.</li>
-<li>Wait about <strong>half a minute to a minute</strong>, then open the
-tap.</li>
-<li>You get about <strong>two to five minutes</strong> of dish-rinse
-water (a few liters). After that the water softens or the burner
-lights.</li>
-</ul>
-<p><strong>If the glycol loop is cold:</strong></p>
-<ul>
-<li>Flame almost always comes <strong>on</strong>. The D5S feels cold
-coolant, not the hot chamber.</li>
-<li>Wait about <strong>two to five minutes</strong> for useful hot water
-at the sink.</li>
-<li>The chamber helps the diesel finish the job faster. It does not skip
-the flame.</li>
-</ul>
-<p>This is a <strong>dish rinse</strong>, not a shower. For a shower,
-run EasyStart and expect the diesel to work.</p>
+<p>If the glycol loop is still warm from recent heat, the flame often
+stays off. Wait about half a minute to a minute, then open the tap. You
+get about two to five minutes of dish-rinse water (a few liters). After
+that the water softens or the burner lights.</p>
+<p>If the glycol loop is cold, the flame almost always comes on. The D5S
+feels cold coolant, not the hot chamber. Wait about two to five minutes
+for useful hot water at the sink. The chamber helps the diesel finish
+the job faster. It does not skip the flame.</p>
+<p>This is a dish rinse, not a shower. For a shower, run EasyStart and
+expect the diesel to work.</p>
 <h2 id="controls-at-a-glance">Controls at a glance</h2>
 <table>
 <colgroup>
@@ -3147,7 +3148,7 @@ makes the port identities clear. Mount the tank empty under the
 sofa/bed. Do not fill the main chamber until the tank is secured, the
 coil is connected, and the water-only circulating-loop leak check in
 section 7 is complete.</li>
-<li>During chamber fill (section 7B), use the tank’s main-chamber fill
+<li>During chamber fill (section 7B), use the Isotemp main-chamber fill
 and vent ports from the Isotemp installation diagram,
 <strong>not</strong> the hydronic coil fittings. Add the
 <strong>same</strong> propylene glycol mix as the loop until the chamber
@@ -3155,7 +3156,7 @@ is full and air is expelled, then cap. Leave this volume sitting still.
 It is never drinking water.</li>
 <li>Do not pipe this tank’s “fresh water” ports to the shower. Cap the
 little mixer on the tank. It has nothing to do here.</li>
-<li>Route the tank’s electric-element cable to the Paneltronics
+<li>Route the Isotemp electric-element cable to the Paneltronics
 <strong>WATER HEATER</strong> breaker. Do not connect it to the 12 V
 panel or energize it before the chamber and AC safety checks pass (<a href="#hold-9">HOLD 9</a>).</li>
 </ol>
@@ -3639,7 +3640,7 @@ Isotemp Slim Square 4.2 gal heat battery chamber (static)</h3>
 the water-only circulating-loop leak check above has passed, and before
 first fire.</p>
 <ol type="1">
-<li>Use the tank’s main-chamber fill and vent ports from the Isotemp
+<li>Use the Isotemp main-chamber fill and vent ports from the Isotemp
 installation diagram, not the hydronic coil fittings.</li>
 <li>Add the <strong>same</strong> propylene glycol mix as the
 circulating loop until the chamber is full and air is expelled.</li>
@@ -3815,10 +3816,14 @@ low-elevation first fire, but land at HOLD 4 while the EasyStart harness
 is open; required before high camps (<a href="#q-015">Q-015</a> / <a href="#dec-006">DEC-006</a>).</p>
 </section>
 <h1 id="technical-appendix">Technical appendix</h1>
-<p>This is the controlled reference record for the build. Use it for
+<p>This is the controlled reference record for the build:
 specifications, sources, hazards, decisions, open questions, and
-verification. It is not a second installation sequence: the practical
-order is in the Builder’s Guide.</p>
+verification. It is not a second installation sequence. The practical
+order is in the Builder’s Guide. Day-to-day operation is in the User’s
+Guide.</p>
+<p>The <a href="#isotemp-value-study">Isotemp value study</a> is the
+keep-or-sell and cycling analysis for the Slim Square buffer. Read it
+when you need the numbers behind the User’s Guide.</p>
 <h1 id="spec-and-sources">Spec and sources</h1>
 <p>This section is part of the technical appendix. Use it for the build
 snapshot, architecture, sources, and hold points. It is not the order of
@@ -6509,6 +6514,17 @@ Altitude kit 22 1000 33 22 00 P/N and H-Kit mark before high camps
 (Q-015)</label></li>
 </ul>
 <h1 id="isotemp-value-study">Isotemp value study</h1>
+<h2 id="why-this-note-exists">Why this note exists</h2>
+<p>Most van guidance sizes <strong>air</strong> heaters (Airtronic D2 ≈
+2 kW, D4 ≈ 4 kW). This build uses a <strong>Hydronic D5S</strong> whose
+lowest documented stage is still <strong>2.1 kW</strong>, plus a marine
+calorifier (Isotemp Slim Square) as <strong>static glycol
+buffer</strong>—not as a potable tank. This note estimates whether that
+buffer earns its complexity: heat-loss bands, stored energy, predicted
+starts per hour with and without the chamber, a coil-coupling factor,
+and what AC preheat can (and cannot) do for dish water. Day-to-day
+operating language lives in the <a href="#users-guide">User’s Guide</a>.
+Manufacturer truth remains <a href="#src-009">SRC-009</a> and <a href="#src-022">SRC-022</a>.</p>
 <h2 id="question">Question</h2>
 <p>Does the Isotemp Slim Square 4.2 gal heat battery improve this build
 enough to justify keeping it, or would selling it simplify the system
@@ -6554,31 +6570,22 @@ improve the Duda plate’s maximum transfer rate, or make the system safe
 to operate with an empty chamber.</p>
 <h2 id="field-benchmark-for-heater-sizing">Field benchmark for heater
 sizing</h2>
-<p>A useful sanity check comes from the heater sizes that commonly work
-in insulated camper vans. Many owners report acceptable winter
-performance from heaters near 2 kW, while some choose a 4 kW heater so
-the heater has reserve capacity and can run at a lower stage. Those
-field choices are not controlled laboratory measurements, and van
-layouts, climates, windows, air leakage, and comfort targets vary
-widely. The pattern still provides an important constraint: a
-well-insulated van often has a normal operating heat load near or below
-2 kW for at least part of the heating season.</p>
-<p>The Hydronic D5S low stage is approximately 2.1 kW. If a typical
-insulated van needs about 0.8–1.5 kW during ordinary cold-weather
-operation, the D5S has approximately 0.6–1.3 kW of surplus output
-whenever the D5S is already at low stage. Without additional thermal
-mass, that surplus has nowhere to go except raising loop temperature
-until the D5S pauses. The field benchmark therefore supports the cycling
-model below: the D5S is likely oversized at low stage during many normal
-conditions, even when the D5S is appropriately sized for colder weather
-and warm-up.</p>
-<p>A 4 kW heater that can turn down to approximately 1–1.5 kW
-illustrates the same sizing issue from the other direction. Low
-modulation helps, but minimum output still matters. The D5S has no
-equivalent low modulation below approximately 2.1 kW in the documented
-operating points, so the Isotemp can serve as thermal mass during
-conditions in which a lower-output heater would simply run
-continuously.</p>
+<p>Insulated camper vans commonly run well on heaters near <strong>2
+kW</strong>, while builders sometimes choose <strong>4–5 kW</strong> for
+reserve or colder use. That pattern appears across installer and owner
+write-ups (for example <a href="https://www.sparksoverland.com/post/2kw-vs-4kw-diesel-heater-for-a-van-build-why-90-of-people-should-buy-the-2kw">Sparks
+Overland on 2 kW vs 4 kW</a>, <a href="https://vanlifecustoms.com/blog/heaterintro">Vanlife Customs</a>,
+and Sprinter-oriented sizing notes such as <a href="https://www.rvheater.com/blogs/news/diesel-heater-for-sprinter-van">VVKB</a>).
+Those sources are not controlled laboratory tests. Layouts, climates,
+windows, and leakage vary. The shared signal is still useful: a
+well-insulated van often has a <strong>normal operating heat load near
+or below 2 kW</strong> for part of the season.</p>
+<p>The Hydronic D5S low stage is <strong>2.1 kW</strong> (<a href="#src-009">SRC-009</a>). An Airtronic D2 can modulate well below
+that; the D5S cannot. If this van needs about 0.8–1.5 kW on an ordinary
+cold night, Low already has about <strong>0.6–1.3 kW of
+surplus</strong>. Without thermal mass, that surplus mostly raises loop
+temperature until the D5S pauses. That is the physical reason a buffer
+can matter here even when a 2 kW air heater would simply run steady.</p>
 <h2 id="estimated-heat-loss-from-the-van">Estimated heat loss from the
 van</h2>
 <p>The exact heat loss cannot be known until the actual van dimensions,
@@ -6701,8 +6708,12 @@ storage.</p>
 <h2 id="energy-capacity-the-upper-bound">Energy capacity: the upper
 bound</h2>
 <p>The main chamber holds approximately 16 L of static glycol mix. For a
-first-order estimate, treat 16 L as 16 kg and use a specific heat near 4
-kJ/kg-K. The resulting stored energy is approximately:</p>
+first-order estimate, treat 16 L as 16 kg. The tables below use a
+specific heat near <strong>4 kJ/kg·K</strong> (water-like) so the
+arithmetic stays transparent. A ≤50% propylene glycol mix is closer to
+about <strong>3.5–3.7 kJ/kg·K</strong>, which lowers stored energy by
+roughly <strong>10–15%</strong>. Treat every kWh figure as slightly
+optimistic until measured.</p>
 <table>
 <colgroup>
 <col style="width: 27%" />
@@ -6712,7 +6723,7 @@ kJ/kg-K. The resulting stored energy is approximately:</p>
 <thead>
 <tr>
 <th>Temperature swing in the chamber</th>
-<th style="text-align: right;">Stored energy</th>
+<th style="text-align: right;">Stored energy (water-like (c_p))</th>
 <th style="text-align: right;">Equivalent at the D5S 2.1 kW low
 output</th>
 </tr>
@@ -6743,8 +6754,9 @@ output</th>
 <p>These are storage limits, not guaranteed delivered benefits.
 Heat-transfer resistance in the coil, cabin heater, Duda plate, hose
 flow, control logic, and temperature limits will reduce the usable
-amount. Glycol concentration also changes the specific heat. The table
-is therefore a scale check, not a performance guarantee.</p>
+amount. The AC working thermostat also caps element charging near
+<strong>75°C</strong> (<a href="#src-022">SRC-022</a>). The table is a
+scale check, not a performance guarantee.</p>
 <p>A 20°C chamber swing can absorb about 0.36 kWh. If the cabin and tap
 loads together consume only 1.0 kW while the D5S is delivering its 2.1
 kW low output, the surplus is about 1.1 kW and would fill that
@@ -7135,20 +7147,23 @@ on inverter efficiency and battery voltage, which are not yet measured
 in this build.</p>
 <h3 id="dishes-after-an-ac-charge-what-to-expect">Dishes after an AC
 charge — what to expect</h3>
-<p>Charge the chamber first (often <strong>40–60 min</strong> to ~75°C
-at 750 W). Taps stay cold until you run EasyStart.</p>
-<p>Then: master <strong>On</strong>, short EasyStart,
-<strong>pump</strong> on. Heat moves chamber → coil → Duda → sink. The
-pump always starts; the burner is separate.</p>
-<p><strong>If the glycol loop is still warm:</strong> flame often stays
-off. Hot sink in about <strong>30–60 seconds</strong>. About <strong>2–5
-minutes</strong> of rinse water (a few liters), then flame or lukewarm
-water.</p>
-<p><strong>If the glycol loop is cold:</strong> flame almost always
-comes on. Hot sink in about <strong>2–5 minutes</strong>. The chamber
-shortens the diesel run; it does not skip the flame.</p>
-<p>Dish rinse only—not a shower. Skipping the flame requires a loop that
-is already warm.</p>
+<p>Charge the chamber first. That often takes about <strong>40–60
+minutes</strong> to reach ~<strong>75°C</strong> at 750 W. The taps stay
+cold until you run EasyStart.</p>
+<p>Then turn the master <strong>On</strong>, make a short EasyStart
+start, and let the <strong>pump</strong> run. Heat moves from the
+chamber through the coil and the Duda to the sink. The pump always
+starts; the burner is separate.</p>
+<p>If the glycol loop is still warm, the flame often stays off. Hot
+water at the sink usually arrives in about <strong>30–60
+seconds</strong>. You get about <strong>2–5 minutes</strong> of rinse
+water (a few liters), then the flame lights or the water goes
+lukewarm.</p>
+<p>If the glycol loop is cold, the flame almost always comes on. Hot
+water at the sink usually arrives in about <strong>2–5 minutes</strong>.
+The chamber shortens the diesel run; it does not skip the flame.</p>
+<p>This is a dish rinse, not a shower. Skipping the flame requires a
+loop that is already warm.</p>
 <h2 id="convenience-and-complexity-tradeoff">Convenience and complexity
 tradeoff</h2>
 <h3 id="convenience-gained">Convenience gained</h3>
@@ -7274,16 +7289,20 @@ Planning = about <strong>40%</strong> of the chamber participates
 <li><strong>Storage scale:</strong> 16 L chamber, ~10–40°C swing → about
 <strong>0.18–0.71 kWh</strong> (roughly <strong>5–20 min</strong> at 2.1
 kW), not hours.</li>
-<li><strong>AC / solar and dishes:</strong> Charge the chamber first
-(<strong>~40–60 min</strong> to ~75°C; taps stay cold). Then master On,
-short EasyStart, pump on.
+<li><strong>AC / solar and dishes:</strong> Charge the chamber first.
+That often takes about <strong>40–60 minutes</strong> to reach
+~<strong>75°C</strong>; the taps stay cold during the charge. Then turn
+the master <strong>On</strong>, make a short EasyStart start, and let
+the <strong>pump</strong> run.
 <ul>
-<li><strong>Loop still warm:</strong> flame often off; hot sink in
-<strong>~30–60 s</strong>; about <strong>2–5 min</strong> of rinse
-water, then flame or lukewarm.</li>
-<li><strong>Loop cold:</strong> flame on; hot sink in <strong>~2–5
-min</strong>. Chamber helps; it does not skip the flame.</li>
-<li>Dish rinse only—not a shower.</li>
+<li>If the glycol loop is still warm, the flame often stays off. Hot
+water at the sink usually arrives in about <strong>30–60
+seconds</strong>. You get about <strong>2–5 minutes</strong> of rinse
+water, then the flame lights or the water goes lukewarm.</li>
+<li>If the glycol loop is cold, the flame comes on. Hot water at the
+sink usually arrives in about <strong>2–5 minutes</strong>. The chamber
+helps the diesel finish faster; it does not skip the flame.</li>
+<li>This is a dish rinse, not a shower.</li>
 </ul></li>
 <li><strong>Decision:</strong> keep if logs show fewer starts / steadier
 cabin / useful AC preheat for short draws; sell if those numbers do not
