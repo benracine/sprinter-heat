@@ -1299,6 +1299,8 @@ bound</a></li>
 <ul>
 <li><a href="#engineering-estimate-of-cycling-with-and-without-the-isotemp" id="toc-engineering-estimate-of-cycling-with-and-without-the-isotemp">Engineering
 estimate of cycling with and without the Isotemp</a></li>
+<li><a href="#coil-coupling-estimate-why-fully-coupled-is-too-rosy" id="toc-coil-coupling-estimate-why-fully-coupled-is-too-rosy">Coil
+coupling estimate (why “fully coupled” is too rosy)</a></li>
 <li><a href="#measurement-plan" id="toc-measurement-plan">Measurement
 plan</a></li>
 </ul></li>
@@ -6741,27 +6743,164 @@ cannot reduce cycling by storing surplus heat.</p>
 cycles and roughly 75–80% fewer starts per hour when the Isotemp is
 fully coupled. Those percentages are an <strong>upper-bound
 estimate</strong>, not a claim about the installed van. The coil cannot
-make 16 L of static glycol behave like instantaneous circulating volume.
-A practical coupling factor of 25–75% would make the effective added
-mass about 4–12 L, producing a smaller but still meaningful reduction in
-starts.</p>
+make 16 L of static glycol behave like instantaneous circulating
+volume.</p>
+<h3 id="coil-coupling-estimate-why-fully-coupled-is-too-rosy">Coil
+coupling estimate (why “fully coupled” is too rosy)</h3>
+<p>Define a coupling factor
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+as the fraction of the 16 L chamber that effectively joins the
+circulating mass on the cycle timescale:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mrow><mi mathvariant="normal">e</mi><mi mathvariant="normal">f</mi><mi mathvariant="normal">f</mi></mrow></msub><mo>=</mo><mn>5</mn><mo>+</mo><mi>f</mi><mo>⋅</mo><mn>16</mn><mspace width="1.0em"></mspace><mtext mathvariant="normal">(liters)</mtext></mrow><annotation encoding="application/x-tex">
+m_{\mathrm{eff}} = 5 + f \cdot 16 \quad \text{(liters)}
+</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">f = 1</annotation></semantics></math>
+is the table above. Real
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is lower because heat must cross the corrugated 316 SS coil, the chamber
+is static (stratified), and this build puts the Isotemp
+<strong>last</strong> (after the cabin heater and Duda), so coil inlet
+fluid is already cooler than heater outlet.</p>
+<p>No published UA for the Slim Square coil was found. A planning
+estimate uses a thermal time constant
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>τ</mi><mo>=</mo><msub><mi>C</mi><mrow><mi mathvariant="normal">c</mi><mi mathvariant="normal">h</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">r</mi></mrow></msub><mi>/</mi><mi>U</mi><mi>A</mi></mrow><annotation encoding="application/x-tex">\tau = C_{\mathrm{chamber}} / UA</annotation></semantics></math>:</p>
+<ul>
+<li>Chamber capacitance
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≈</mo><mn>16</mn><mspace width="0.167em"></mspace><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi></mrow><mo>×</mo><mn>4</mn><mspace width="0.167em"></mspace><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">J</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">k</mi><mi mathvariant="normal">g</mi><mo mathvariant="normal">⋅</mo><mi mathvariant="normal">K</mi></mrow><mo>=</mo><mn>64</mn><mspace width="0.167em"></mspace><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">J</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">K</mi></mrow></mrow><annotation encoding="application/x-tex">\approx 16\,\mathrm{kg} \times 4\,\mathrm{kJ/kg\cdot K} = 64\,\mathrm{kJ/K}</annotation></semantics></math>.</li>
+<li>Marine calorifier coils of this class are “extra long / corrugated,”
+but still a single pass into a tank. A plausible UA band is about
+<strong>20–80 W/K</strong> (weak stratification / low ΔT → strong
+well-mixed coil).</li>
+<li>That gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>τ</mi><mo>≈</mo><mn>13</mn></mrow><annotation encoding="application/x-tex">\tau \approx 13</annotation></semantics></math>–<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>53</mn><annotation encoding="application/x-tex">53</annotation></semantics></math>
+minutes (mid ≈ <strong>25–30 minutes</strong> at ~40 W/K).</li>
+</ul>
+<p>Cycle half-periods without the buffer are only about <strong>2–6
+minutes</strong> at 1.0–1.5 kW load — much shorter than
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>τ</mi><annotation encoding="application/x-tex">\tau</annotation></semantics></math>
+— so the chamber cannot stay isothermal with the loop. Power also limits
+coupling: at a few kelvin coil-to-chamber ΔT,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mi>A</mi><mo>⋅</mo><mi mathvariant="normal">Δ</mi><mi>T</mi></mrow><annotation encoding="application/x-tex">UA\cdot\Delta T</annotation></semantics></math>
+is only a few hundred watts, while Low-stage surplus at 1.0 kW load is
+about <strong>1.1 kW</strong>. Only part of that surplus enters the
+chamber each minute; the rest still races the D5S sensor through the
+small circulating volume.</p>
+<p><strong>Planning stab</strong></p>
+<table>
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 21%" />
+<col style="width: 28%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: right;">Coupling
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math></th>
+<th>Meaning</th>
+<th style="text-align: right;">Effective mass</th>
+<th>Use as</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1.0</td>
+<td>Chamber tracks loop instantly</td>
+<td style="text-align: right;">21 L</td>
+<td>Ceiling only</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>0.35–0.50</strong></td>
+<td>Mid UA (~40 W/K), Isotemp last, some stratification</td>
+<td style="text-align: right;"><strong>~11–13 L</strong></td>
+<td><strong>Expected band</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;">0.25</td>
+<td>Weak coil / low ΔT / air</td>
+<td style="text-align: right;">~9 L</td>
+<td>Pessimistic</td>
+</tr>
+<tr>
+<td style="text-align: right;">0.55</td>
+<td>Strong coil, good mixing, large ΔT</td>
+<td style="text-align: right;">~14 L</td>
+<td>Optimistic installed</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Point estimate for predictions:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>≈</mo><mn>0.40</mn></mrow><annotation encoding="application/x-tex">f \approx 0.40</annotation></semantics></math></strong>
+(about 40% of the chamber participates). That is a judgment call, not a
+measurement. Recompute
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>
+and starts with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mrow><mi mathvariant="normal">e</mi><mi mathvariant="normal">f</mi><mi mathvariant="normal">f</mi></mrow></msub><mo>=</mo><mn>11.4</mn><mspace width="0.167em"></mspace><mi mathvariant="normal">L</mi></mrow><annotation encoding="application/x-tex">m_{\mathrm{eff}} = 11.4\,\mathrm{L}</annotation></semantics></math>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>≈</mo><mn>0.127</mn><mspace width="0.167em"></mspace><mrow><mi mathvariant="normal">k</mi><mi mathvariant="normal">W</mi><mi mathvariant="normal">h</mi></mrow></mrow><annotation encoding="application/x-tex">E \approx 0.127\,\mathrm{kWh}</annotation></semantics></math>):</p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 15%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: right;">Van heat load</th>
+<th>Rough outdoor (cabin 70°F)</th>
+<th style="text-align: right;">Starts/h without</th>
+<th style="text-align: right;">Starts/h at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">f=1</annotation></semantics></math>
+(ceiling)</th>
+<th style="text-align: right;">Starts/h at
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>≈</mo><mn>0.4</mn></mrow><annotation encoding="application/x-tex">f\approx0.4</annotation></semantics></math>
+(planning)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1.0 kW</td>
+<td>~40°F (better insulation)</td>
+<td style="text-align: right;">9.1</td>
+<td style="text-align: right;">2.1</td>
+<td style="text-align: right;"><strong>~4.1</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;">1.5 kW</td>
+<td>~40–20°F</td>
+<td style="text-align: right;">7.7</td>
+<td style="text-align: right;">1.8</td>
+<td style="text-align: right;"><strong>~3.4</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;">2.0 kW</td>
+<td>~20°F (or leaky near 40°F)</td>
+<td style="text-align: right;">1.7</td>
+<td style="text-align: right;">0.4</td>
+<td style="text-align: right;"><strong>~0.8</strong></td>
+</tr>
+</tbody>
+</table>
+<p>So the honest Mild-weather expectation is closer to <strong>cutting
+starts roughly in half</strong> (about <strong>9 → 4/h</strong> at 1.0
+kW), not the 9 → 2/h ceiling. Still a large change; still depends on
+surplus at Low stage.</p>
 <p>The most defensible expectation before commissioning is
 therefore:</p>
 <ul>
-<li><strong>Mild weather:</strong> the Isotemp may change short cycling
-into longer runs and pauses. A reduction of roughly 30–70% in starts per
-hour is plausible, depending on coil transfer and control behavior.</li>
-<li><strong>Moderate cold:</strong> the Isotemp may reduce starts, but
-the D5S will spend more time delivering heat directly to the van. A
-reduction of roughly 20–60% is plausible.</li>
-<li><strong>Near design load or colder:</strong> the Isotemp provides
-little cycling benefit because the D5S has little surplus output to
-store. The difference may approach zero.</li>
+<li><strong>Mild weather (~1.0 kW / ~40°F band):</strong> planning
+starts drop from about <strong>9/h to about 4/h</strong>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>≈</mo><mn>0.4</mn></mrow><annotation encoding="application/x-tex">f\approx0.4</annotation></semantics></math>);
+ceiling about <strong>2/h</strong> if the coil were perfect.</li>
+<li><strong>Moderate cold (~1.5 kW):</strong> planning about <strong>8/h
+→ 3–4/h</strong>; ceiling about <strong>2/h</strong>.</li>
+<li><strong>Near 2.0 kW / ~20°F:</strong> little surplus left; starts
+are already low; Isotemp helps less.</li>
+<li><strong>At or above 2.1 kW load (often ~0°F and colder on the loss
+table):</strong> no Low-stage surplus to store; cycling benefit →
+~0.</li>
 </ul>
-<p>The estimate also shows why the Isotemp cannot be justified by a
-single percentage. The benefit depends primarily on the difference
-between D5S low-stage output and the van’s actual heat loss, not just on
-the nominal 16 L tank volume.</p>
 <h3 id="measurement-plan">Measurement plan</h3>
 <p>Measure the same operating condition with the Isotemp coil connected
 and, only if practical and safe, with the Isotemp bypassed according to
@@ -6919,16 +7058,30 @@ time;</li>
 kW</strong>. A well-insulated van often needs <strong>less than 2
 kW</strong> in mild/moderate cold, so Low has surplus heat to
 store.</li>
-<li><strong>Predicted starts/hour</strong> (10°C band, fully coupled
-upper bound — real coil coupling will be weaker):</li>
+<li><strong>Predicted starts/hour</strong> (10°C band). Ceiling =
+chamber fully coupled
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">f=1</annotation></semantics></math>).
+Planning = about <strong>40%</strong> of the chamber participates
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>≈</mo><mn>0.4</mn></mrow><annotation encoding="application/x-tex">f\approx0.4</annotation></semantics></math>)
+— coil UA, stratification, and Isotemp-last loop order:</li>
 </ul>
 <table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 15%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+</colgroup>
 <thead>
 <tr>
 <th style="text-align: right;">Load</th>
 <th>Rough outdoor (cabin 70°F)</th>
-<th style="text-align: right;">Without Isotemp</th>
-<th style="text-align: right;">With Isotemp</th>
+<th style="text-align: right;">Without</th>
+<th style="text-align: right;">With
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">f=1</annotation></semantics></math>)</th>
+<th style="text-align: right;">With
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>≈</mo><mn>0.4</mn></mrow><annotation encoding="application/x-tex">f\approx0.4</annotation></semantics></math>)</th>
 </tr>
 </thead>
 <tbody>
@@ -6937,18 +7090,21 @@ upper bound — real coil coupling will be weaker):</li>
 <td>~40°F (better insulation)</td>
 <td style="text-align: right;"><strong>9.1</strong></td>
 <td style="text-align: right;"><strong>2.1</strong></td>
+<td style="text-align: right;"><strong>~4.1</strong></td>
 </tr>
 <tr>
 <td style="text-align: right;">1.5 kW</td>
 <td>~40–20°F</td>
 <td style="text-align: right;"><strong>7.7</strong></td>
 <td style="text-align: right;"><strong>1.8</strong></td>
+<td style="text-align: right;"><strong>~3.4</strong></td>
 </tr>
 <tr>
 <td style="text-align: right;">2.0 kW</td>
 <td>~20°F (or leaky near 40°F)</td>
 <td style="text-align: right;"><strong>1.7</strong></td>
 <td style="text-align: right;"><strong>0.4</strong></td>
+<td style="text-align: right;"><strong>~0.8</strong></td>
 </tr>
 </tbody>
 </table>
@@ -6956,10 +7112,33 @@ upper bound — real coil coupling will be weaker):</li>
 <li><strong>Storage scale:</strong> 16 L chamber, ~10–40°C swing → about
 <strong>0.18–0.71 kWh</strong> (roughly <strong>5–20 min</strong> at 2.1
 kW), not hours.</li>
-<li><strong>Not a water heater:</strong> taps still need the D5S pump
-through the Duda. AC element stops at ~<strong>75°C</strong>.</li>
+<li><strong>AC / solar and dishes (what to expect):</strong>
+<ul>
+<li><strong>120 V alone does not heat the taps.</strong> The 750 W
+element only warms the <strong>static chamber</strong> (cuts out
+~<strong>75°C</strong>). No flow through the Duda → no hot sink
+water.</li>
+<li><strong>To use that heat for dishes:</strong> master On → short
+<strong>EasyStart</strong> call so the <strong>D5S pump</strong> runs →
+glycol through the Isotemp coil → Duda → mixer. Expect a
+<strong>short</strong> dish rinse from a precharged chamber (stored
+energy is small: a few liters of warm water, not a long wash).</li>
+<li><strong>Can AC keep the diesel burner off?</strong> Sometimes
+<strong>yes for the burner</strong>, <strong>no for the heater
+unit</strong>. EasyStart still wakes the D5S so the
+<strong>pump</strong> runs. If the chamber is already hot and the loop
+is warm enough, the control may <strong>not fire the burner</strong> and
+still move heat to the Duda. If the loop is cold or the draw is long,
+the <strong>burner will start</strong>. AC does <strong>not</strong>
+replace EasyStart or the pump.</li>
+<li><strong>Scale check:</strong> ~0.1–0.2 kWh heats about <strong>3–6
+L</strong> of freshwater by ~20°C before losses — dishes, not a shower.
+Shower still wants a diesel run (or a long AC preheat plus pump, still
+limited by coil rate).</li>
+</ul></li>
 <li><strong>Decision:</strong> keep if logs show fewer starts / steadier
-cabin / useful AC preheat; sell if those numbers do not show up.</li>
+cabin / useful AC preheat for short draws; sell if those numbers do not
+show up.</li>
 </ul>
 <h1 id="decision-log">Decision Log</h1>
 <h2 id="dec-000">DEC-000 — Heater identity confirmed: Hydronic D5S
