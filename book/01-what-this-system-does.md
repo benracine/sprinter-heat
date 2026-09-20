@@ -24,11 +24,12 @@ Day-to-day use is in the [User’s Guide](#users-guide). Keep-or-sell numbers ar
 
 Glycol circulates in this order only ([DEC-010](#dec-010)):
 
-1. Heater’s own pump → Hydronic D5S  
-2. Sure Marine cabin heater — cabin heat first  
-3. Duda (glycol side) — hottest fluid for sinks (~**80%** of hot-water use is sinks)  
-4. Isotemp coil — stores leftovers  
-5. Return to the pump  
+1. Heater’s own circulating pump  
+2. Hydronic D5S  
+3. Sure Marine cabin heater — cabin heat first  
+4. Duda (glycol side) — hottest fluid for sinks (~**80%** of hot-water use is sinks)  
+5. Isotemp coil — stores leftovers  
+6. Return to the pump  
 
 The Water Flow Tank tees into the **return** at the highest circulating point. It is not in series, and it is not teed off the Isotemp coil. Keep the Water Flow Tank highest and everything else below it. Leave an unrestricted path from that tee back to the pump. Put fill and drain at the low point. Mount the cabin heater level, bottom-in / top-out, with a bleeder on the outlet.
 

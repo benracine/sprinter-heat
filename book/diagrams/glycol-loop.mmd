@@ -1,14 +1,15 @@
 %%{init: {'theme':'base','themeVariables': {'background':'#fafaf9','primaryColor':'#f5f5f4','primaryTextColor':'#1c1917','primaryBorderColor':'#57534e','lineColor':'#44403c','secondaryColor':'#e7e5e4','tertiaryColor':'#eeeeec','fontFamily':'Avenir Next, Avenir, Helvetica Neue, sans-serif','fontSize':'22px','textColor':'#1c1917','mainBkg':'#f5f5f4','clusterBkg':'#eeeeec','clusterBorder':'#78716c','edgeLabelBackground':'#fafaf9'}}}%%
 flowchart TD
-  S1["1 · Heater’s own pump → Hydronic D5S"] --> S2["2 · Sure Marine cabin heater<br/>under fridge · cabin heat first"]
-  S2 --> S3["3 · Duda · glycol side<br/>under sink"]
-  S3 --> S4["4 · Isotemp coil<br/>under bench low · stores leftovers"]
-  S4 --> S5["5 · Return to the pump"]
-  S5 --> S1
+  S1["1 · Heater’s own circulating pump"] --> S2["2 · Hydronic D5S"]
+  S2 --> S3["3 · Sure Marine cabin heater<br/>under fridge · cabin heat first"]
+  S3 --> S4["4 · Duda · glycol side<br/>under sink"]
+  S4 --> S5["5 · Isotemp coil<br/>under bench low · stores leftovers"]
+  S5 --> S6["6 · Return to the pump"]
+  S6 --> S1
   WFT["WFT 5 L · sofa-bed backrest high<br/>teed on return · highest glycol"]
-  S5 --- WFT
+  S6 --- WFT
 
   classDef normal fill:#f5f5f4,stroke:#57534e,stroke-width:1px,color:#1c1917;
   classDef note fill:#eeeeec,stroke:#78716c,stroke-width:1px,stroke-dasharray:4 3,color:#1c1917;
-  class S1,S2,S3,S4,S5 normal;
+  class S1,S2,S3,S4,S5,S6 normal;
   class WFT note;
