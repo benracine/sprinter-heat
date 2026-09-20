@@ -73,20 +73,23 @@ Master **Off** does not cut Isotemp AC. Kill **WATER HEATER** (and the inverter 
 
 ### Dish rinse after a charge
 
-1. Master **On** → short EasyStart start → **pump** runs.
-2. Heat moves: chamber → coil → Duda → AM100-1LF → sink.
-3. **Pump and burner are different.** EasyStart always starts the pump. The burner lights only if glycol at the D5S is cool enough.
+Master **On**, short EasyStart start, then wait for the **pump**. Heat moves chamber → coil → Duda → AM100-1LF → sink.
 
-| Starting glycol loop | Flame | Wait for hot sink after EasyStart |
-|---|---|---|
-| Still warm from recent heat | Often **off** | About **30–60 seconds**, then open the tap |
-| Cold | **On** | About **2–5 minutes** to useful dish heat. The chamber shortens the run; it does **not** skip the flame |
+The pump and the burner are different. EasyStart always starts the pump. The burner lights only if glycol at the D5S is cool enough.
 
-| Flame-off dishes? | How long |
-|---|---|
-| Only if the loop was already warm enough not to light | About **2–5 minutes** of rinse water (roughly **3–6 L** warmed ~20°C), then flame or lukewarm water |
+**If the glycol loop is still warm** (you ran heat recently):
 
-That is a **dish rinse**, not a shower. For a shower, run EasyStart and expect the diesel to work.
+- Flame often stays **off**.
+- Wait about **half a minute to a minute**, then open the tap.
+- You get about **two to five minutes** of dish-rinse water (a few liters). After that the water softens or the burner lights.
+
+**If the glycol loop is cold:**
+
+- Flame almost always comes **on**. The D5S feels cold coolant, not the hot chamber.
+- Wait about **two to five minutes** for useful hot water at the sink.
+- The chamber helps the diesel finish the job faster. It does not skip the flame.
+
+This is a **dish rinse**, not a shower. For a shower, run EasyStart and expect the diesel to work.
 
 ## Controls at a glance
 
