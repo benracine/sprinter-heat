@@ -6,11 +6,11 @@ Jump: [Safety](#safety) · [Locked architecture](#locked-architecture) · [The P
 
 ## Purpose
 
-One diesel hydronic loop under the van does two jobs: warm cabin air, and heat tap water. Both jobs share one closed propylene glycol loop. That loop never mixes with drinking water, never connects to the engine ([DEC-009](#dec-009)), and has no second pump ([DEC-013](#dec-013)).
+One closed propylene glycol loop heats cabin air and tap water. The Hydronic D5S sits under the van. The Sure Marine cabin heater, Duda, Isotemp, and Water Flow Tank sit in the cabin. Glycol never mixes with drinking water, never connects to the engine ([DEC-009](#dec-009)), and has no second pump ([DEC-013](#dec-013)).
 
-Leftover loop heat can sit in a static chamber for later. The planned 750 W / 115 VAC element warms that chamber from the Paneltronics AC panel—it does not pump the loop, and it alone does not put hot water at the taps.
+On a working day, EasyStart calls the Hydronic D5S. The heater’s own pump moves glycol through the Sure Marine cabin heater (cabin air), then the Duda (tap water across the double wall), then the Isotemp coil, then back. When the loop is warm enough, the burner may pause while the pump keeps circulating—leftover heat in the Isotemp static chamber can smooth those short cycles. A planned 750 W / 115 VAC element on Paneltronics **WATER HEATER** can warm that chamber from shore or inverter; the element does not pump the loop and does not put hot water at the taps by itself.
 
-**How heat moves on a working day.** EasyStart calls the Hydronic D5S. The heater’s own pump moves glycol through the Sure Marine cabin heater (cabin air), then the Duda (tap water across the double wall), then the Isotemp coil (leftover heat into or out of the static chamber), then back. When the loop is warm enough, the burner may pause while the pump keeps circulating—that is when the chamber can smooth short cycles. Living with that pattern is in the [User’s Guide](#users-guide); predicted starts and keep-or-sell numbers are in the [Isotemp value study](#isotemp-value-study).
+Day-to-day use: [User’s Guide](#users-guide). Keep-or-sell numbers: [Isotemp value study](#isotemp-value-study).
 
 **Stop and reject** any proposal that would splice into the engine, tee glycol into drinking water, bypass cabin heat, add a second glycol pump, or land the 750 W element on the 12 V panel.
 
