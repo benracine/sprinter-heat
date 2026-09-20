@@ -613,9 +613,11 @@ Do not energize the 750 W / 115 VAC element on an empty chamber. Do not land it 
 
 ## Acceptance {#acceptance}
 
-**Safe to park and use for cabin heat / diesel hot water when all of these are true**
+There are two finish lines. Do not confuse them.
 
-- [ ] Fuel line walked and dry; primed before first fire
+**Diesel cabin heat and diesel hot water at the Duda** — safe to park and use when all of these are true:
+
+- [ ] Fuel line inspected and dry; primed before first fire
 - [ ] Exhaust ends outside, away from the intake and cabin openings; slope and drain present
 - [ ] Circulating propylene glycol full and bled; heater and coil below WFT fluid level
 - [ ] Coil in the Isotemp Slim Square 4.2 gal heat battery in the loop; 4.2 gal chamber full of the same mix, sitting still
@@ -625,12 +627,14 @@ Do not energize the 750 W / 115 VAC element on an empty chamber. Do not land it 
 - [ ] Sure Marine cabin heater fans and speed controller installed; dial is speed only
 - [ ] SC1600B automatic heater/fan behavior is either verified against the EasyStart Timer manual or remains explicitly OPEN under [Q-022](#q-022) — do not call it complete on assumption
 - [ ] First commissioning run completed without unexplained wetness or smell
-- [ ] Whole-system inspection after install, before day-to-day use
+- [ ] Whole-system inspection after install, before day-to-day diesel use
 
-**May stay open after a successful low-elevation first fire**
+**Complete system (diesel plus Isotemp AC)** — also requires [HOLD 9](#hold-9): chamber full, GFCI/ELCI and Paneltronics **WATER HEATER** path verified, first AC energize watched. After that, live from the [User’s Guide](#users-guide), including [AC chamber and dishes](#ac-chamber-and-dishes).
+
+**May stay open after a successful low-elevation diesel first fire**
 
 - [Q-022](#q-022) — SC1600B auto call (start heat from EasyStart Timer until closed)
-- [HOLD 9](#hold-9) / Isotemp AC first energize — required for complete system acceptance and before using the element; a diesel-only first fire may precede HOLD 9
+- [HOLD 9](#hold-9) — required before using the element and before calling the build fully complete; not required for diesel cabin heat or diesel hot water at the Duda
 - Sure Marine cabin heater final cosmetic mount — must still be plumbed, level, and bled before relying on cabin air
 
 **Altitude kit 22 1000 33 22 00** — does not block a low-elevation first fire, but land at HOLD 4 while the EasyStart harness is open; required before high camps ([Q-015](#q-015) / [DEC-006](#dec-006)).

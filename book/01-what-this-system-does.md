@@ -2,7 +2,7 @@
 
 **Stage 1 — Architecture.** Finish this chapter before the [User’s Guide](#users-guide) or the [Builder’s Guide](#builders-guide). For each part, know what the part does, what the part must not do, and which way glycol flows. Next: skim [The Numbers](#the-numbers-that-matter), then the User’s Guide.
 
-Jump: [Safety](#safety) · [The Numbers](#the-numbers-that-matter) · [User’s Guide](#users-guide) · [Current Status](#current-status-report) · [Builder’s Guide](#builders-guide)
+Jump: [Safety](#safety) · [The Numbers](#the-numbers-that-matter) · [User’s Guide](#users-guide) · [Isotemp value study](#isotemp-value-study) · [Current Status](#current-status-report) · [Builder’s Guide](#builders-guide)
 
 ## Purpose
 
@@ -42,7 +42,7 @@ Meet each part once here. After this table, use only these official names—or t
 |---|---|
 | Loop order | Return → heater pump → Hydronic D5S → Sure Marine cabin heater → Duda (glycol) → Isotemp coil → return ([DEC-010](#dec-010)) |
 | Header | WFT tees into the **return** at the highest circulating point — not in series, not off the Isotemp coil |
-| Why that order | Cabin heat first (daily priority); Duda next (hottest fluid for showers); Isotemp last (stores leftovers) |
+| Why that order | Cabin heat first (daily priority); Duda next (hottest fluid for showers); Isotemp last (stores leftovers — see [Isotemp value study](#isotemp-value-study)) |
 | Drinking water | Duda only; AM100-1LF on hot out; set ~120°F; taps from mixed outlet only ([DEC-003](#dec-003) / [DEC-008](#dec-008)) |
 | Isotemp | Coil circulating; chamber static same mix; factory mixer capped; 750 W on Paneltronics **WATER HEATER** only |
 | Cabin air | Living-space air across the Sure Marine cabin heater (on van, SN 16401); combustion stays outside |
@@ -72,7 +72,7 @@ Land every pin from the printed manuals ([SRC-009](#src-009) / [SRC-003](#src-00
 
 ![Day-one electrical](diagrams/electrical.svg)
 
-**Enough for first fire.** Turn the master On, start heat on the EasyStart Timer, and set the fan dial.
+**Enough for diesel first fire.** Turn the master On, start heat on the EasyStart Timer, and set the fan dial. Living with the Isotemp buffer and AC dish rinses is in the [User’s Guide](#users-guide). The numbers behind keep-or-sell are in the [Isotemp value study](#isotemp-value-study).
 
 **Still being completed.** SC1600 auto ([Q-022](#q-022)) and the Isotemp AC circuit with upstream GFCI ([Q-009](#q-009)). Land the altitude kit at HOLD 4 while the harness is open ([Q-015](#q-015)).
 

@@ -2,7 +2,7 @@
 
 Read this after the [User’s Guide](#users-guide) and before the [Builder’s Guide](#builders-guide). Honest inventory as of September 2026. Part names match [The Parts](#the-parts). The HOLD checklists still govern the work.
 
-Jump: [Project Phases](#project-phases) · [Builder’s Guide](#builders-guide) · [Questions for You](#questions-for-you-in-order)
+Jump: [Project Phases](#project-phases) · [Builder’s Guide](#builders-guide) · [Questions for You](#questions-for-you-in-order) · [Isotemp value study](#isotemp-value-study)
 
 ## Next action
 
@@ -10,7 +10,7 @@ Jump: [Project Phases](#project-phases) · [Builder’s Guide](#builders-guide) 
 **Next — Phase A.** Fuel pickup and exhaust are already on the van. Finish HOLD 1 and HOLD 2 against [SRC-009](#src-009) before you open Phase B.
 :::
 
-Ask once per part: if it is already on the van, inspect and finish the remaining work; if it is still in the garage, bring it in for Phase B after Phase A passes.
+Ask once per part: if it is already on the van, inspect and finish the remaining work; if it is still in the garage, bring it in for Phase B after Phase A passes. After diesel Acceptance, live from the [User’s Guide](#users-guide). Keep-or-sell numbers for the Isotemp are in the [Isotemp value study](#isotemp-value-study).
 
 ## Already on the van
 

@@ -81,7 +81,7 @@ Part-one inventory with finish-at HOLDs: [Current Status](#current-status-report
 ## Hold points before first fire
 
 1. Fuel walk at HOLD 1 (HAZ-001).
-2. EasyStart / heater 12 V landed enough to start and stop (HOLD 4 / Q-013). Altitude kit install before high camps (Q-015) — not before a low-elevation first fire.
+2. EasyStart / heater 12 V landed enough to start and stop (HOLD 4 / Q-013). Land the altitude kit at HOLD 4 while the harness is open (Q-015 / DEC-006) — required before high camps; prefer not to defer it past HOLD 4.
 3. Fill and bleed circulating glycol including the Isotemp coil; fill chamber separately (static). Heater and coil below WFT.
 4. Route Isotemp element to Paneltronics **WATER HEATER**; upstream GFCI/ELCI before energize (HOLD 9).
 5. AM100-1LF set ~120°F and tap hoses landed before anyone showers.
