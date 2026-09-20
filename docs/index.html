@@ -1345,6 +1345,7 @@ map</a></li>
 </ul>
 </nav>
 <h1 id="how-to-use-this-book">How to Use This Book</h1>
+<p>Three stages: design, day-to-day use, then the build.</p>
 <table>
 <colgroup>
 <col style="width: 33%" />
@@ -1362,12 +1363,12 @@ map</a></li>
 <tr>
 <td><strong>1. Architecture</strong></td>
 <td><a href="#system-design">System Design</a></td>
-<td>What the system is, how heat moves, and what is forbidden</td>
+<td>What the system is, how heat moves, and what is off-limits</td>
 </tr>
 <tr>
 <td><strong>2. Use</strong></td>
 <td><a href="#users-guide">User’s Guide</a></td>
-<td>How to operate the system day to day</td>
+<td>Day-to-day operation once the system works</td>
 </tr>
 <tr>
 <td><strong>3. Make it</strong></td>
@@ -1377,25 +1378,24 @@ map</a></li>
 </tbody>
 </table>
 <h3 id="start-here">Start here</h3>
-<p>Read in order: <a href="#safety">Safety</a>, <a href="#system-design">System Design</a>, <a href="#users-guide">User’s
-Guide</a>, <a href="#current-status-report">Current Status</a>, <a href="#builders-guide">Builder’s Guide</a>. While you build, jump back
-to Safety and System Design (especially <a href="#controls">Controls</a>
-and <a href="#the-parts">The Parts</a>) when a HOLD says so. The User’s
-Guide is how the finished system should work—do not light the heater
-from that chapter until Acceptance; after Acceptance, use the User’s
-Guide day to day.</p>
+<p>Read in this order: <a href="#safety">Safety</a>, <a href="#system-design">System Design</a>, <a href="#users-guide">User’s
+Guide</a>, <a href="#current-status-report">Current Status</a>, <a href="#builders-guide">Builder’s Guide</a>.</p>
+<p>While you build, return to Safety and System Design—especially <a href="#controls">Controls</a> and <a href="#the-parts">The
+Parts</a>—whenever a HOLD points you there. The User’s Guide describes
+the finished system. Do not light the heater from that chapter until
+Acceptance. After Acceptance, that guide is your day-to-day manual.</p>
 <h3 id="lookups">Lookups</h3>
-<p>Numbers and citations: <a href="#the-numbers-that-matter">The
-Numbers</a> · <a href="#source-register">Sources</a> · <a href="#decision-log">Decisions</a> · <a href="#questions-for-you-in-order">Questions for You</a> · <a href="#open-questions">Open Questions</a> · <a href="#hazard-register">Hazards</a>. Part two is reference, not the work
-order. Codes such as <a href="#src-009">SRC-009</a> jump to the source
-register. DANGER, CAUTION, and MUST boxes override the surrounding
-text.</p>
-<p>Part names are defined once in <a href="#the-parts">The Parts</a>.
-On-van vs garage inventory is in <a href="#current-status-report">Current Status</a>.</p>
+<p>For numbers and citations: <a href="#the-numbers-that-matter">The
+Numbers</a> · <a href="#source-register">Sources</a> · <a href="#decision-log">Decisions</a> · <a href="#questions-for-you-in-order">Questions for You</a> · <a href="#open-questions">Open Questions</a> · <a href="#hazard-register">Hazards</a>.</p>
+<p>Part two is reference, not the work order. A code such as <a href="#src-009">SRC-009</a> jumps to the source register. DANGER,
+CAUTION, and MUST boxes override whatever sits around them.</p>
+<p>Part names appear once in <a href="#the-parts">The Parts</a>. What is
+already on the van versus still in the garage is in <a href="#current-status-report">Current Status</a>.</p>
 <h2 id="project-phases-overview">Four Project Phases</h2>
-<p>Four phases, not twenty tasks. Finish one phase before the next.
-Inside a phase, finish each HOLD before you move on. Steps live in the
-<a href="#project-phases">Builder’s Guide</a>.</p>
+<p>Treat the install as four phases, not twenty loose tasks. Finish one
+phase before the next. Inside a phase, finish each HOLD before you move
+on. The steps live in the <a href="#project-phases">Builder’s
+Guide</a>.</p>
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -1446,20 +1446,21 @@ on the van. Finish HOLD 1 and HOLD 2 against <a href="#src-009">SRC-009</a> befo
 </div>
 <h3 id="what-can-wait-until-after-first-fire">What can wait until after
 first fire</h3>
-<p>Only these stay open after a low-elevation diesel first fire that
-gives cabin heat and hot water at the Duda:</p>
+<p>After a low-elevation diesel first fire that delivers cabin heat and
+hot water at the Duda, only two items may still be open:</p>
 <ul>
 <li>Cabin thermostat auto-call (<a href="#q-022">Q-022</a>) — start heat
 from the EasyStart Timer<br />
 </li>
 <li>Isotemp AC and upstream GFCI (<a href="#q-009">Q-009</a>) — <a href="#hold-9">HOLD 9</a> only</li>
 </ul>
-<p>Everything else on the HOLD path through step 8 is required for that
-first fire — including a filled glycol loop, a filled static Isotemp
-chamber, EasyStart / heater 12 V, the master switch, and cabin fans.</p>
-<p>The altitude kit does <strong>not</strong> block a low camp first
-fire, but it is <strong>not</strong> on this wait list. Land it at HOLD
-4 while the EasyStart harness is open (<a href="#q-015">Q-015</a> / <a href="#dec-006">DEC-006</a>); you need it before high camps anyway.</p>
+<p>Everything else through step 8 is required for that first fire: a
+filled glycol loop, a filled static Isotemp chamber, EasyStart and
+heater 12 V, the master switch, and the cabin fans.</p>
+<p>The altitude kit does not block a low-camp first fire. It is still
+not on the wait list. Land it at HOLD 4 while the EasyStart harness is
+open (<a href="#q-015">Q-015</a> / <a href="#dec-006">DEC-006</a>). You
+will need it before high camps.</p>
 <h2 id="when-sources-disagree">When sources disagree</h2>
 <ol type="1">
 <li><a href="#src-009">SRC-009</a> — Hydronic D5S: fuel, exhaust,
@@ -1470,7 +1471,7 @@ bleed, and water-first leak check<br />
 </li>
 <li>This book — locked van layout (<a href="#dec-009">DEC-009</a> · <a href="#dec-010">DEC-010</a> · <a href="#dec-004">DEC-004</a> / <a href="#dec-013">DEC-013</a> / <a href="#dec-020">DEC-020</a>)<br />
 </li>
-<li>OPEN items — do not invent; prefer <a href="#questions-for-you-in-order">Questions for You</a></li>
+<li>OPEN items — do not invent an answer; prefer <a href="#questions-for-you-in-order">Questions for You</a></li>
 </ol>
 <p>Diagrams are not to scale. Land every terminal from <a href="#src-009">SRC-009</a>, <a href="#src-003">SRC-003</a>, and <a href="#src-002">SRC-002</a> on the bench.</p>
 <h1 id="safety">Safety</h1>
