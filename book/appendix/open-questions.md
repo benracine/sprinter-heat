@@ -19,8 +19,8 @@ The altitude kit is **not** on that wait list.
 
 **Still useful:**
 
-1. **Water Flow Tank** — Exact high mount (rear bench / wall / other) that stays the highest glycol point and is easy to fill/bleed?
-2. **Day sofa** — Full-length removable center, or leave a rear forward-facing bench (partial remove)?
+1. **Water Flow Tank** — Prefer **under sofa-bed backrest** if that bay is the highest glycol point; fill/bleed via backrest panel. Confirm height after framing ([Working design understanding](#working-design-understanding)).
+2. **Day sofa** — **Locked:** full-length removable center; day = side seats + aisle (no fixed rear forward bench). See [Working design understanding](#working-design-understanding).
 3. **SC1600 fans** — Own a 12 V relay already, or book says “buy one”?
 4. **Cabin fans** — Both Noctua NF-F12, or keep the mixed pair on the Sure Marine cabin heater?
 5. **Shore / inverter GFCI** — Document protection on the Paneltronics **WATER HEATER** path for HOLD 9 ([Q-009](#q-009))
