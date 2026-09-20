@@ -68,7 +68,7 @@ Diesel-only Acceptance can finish without HOLD 9. Complete system Acceptance nee
 | Hose, clamps, Prestone LowTox AF555 glycol | Reinforced hose; stainless clamps; ≤50% PG ([DEC-017](#dec-017)) |
 | SC1600B thermostat, Noctua fans, speed dial | Mount and wire; auto call waits on [Q-022](#q-022) |
 
-**Sofa/bed (discovery):** current bed **coming out**. Rebuild hybrid per [DEC-021](#dec-021): wood side boxes, aluminum Isotemp cradle, **2–3 light panels** flat at night / hinge or slide by day. Water Flow Tank in **backrest**; Isotemp under bench. Sure Marine under fridge; Duda under sink. Details: [Working design understanding](#working-design-understanding). Effort: [Effort estimate](#effort-estimate).
+**Sofa/bed (discovery):** current bed **coming out**. Rebuild hybrid per [DEC-021](#dec-021): wood side boxes, aluminum Isotemp cradle, day panels with **outboard → seat back** / **inboard → seat butt**. Water Flow Tank in **backrest**; Isotemp under bench. Sure Marine under fridge; Duda under sink. Details: [Working design understanding](#working-design-understanding). Effort: [Effort estimate](#effort-estimate).
 
 ## Do not change the design into these
 

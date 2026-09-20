@@ -56,10 +56,10 @@ Meet each part once here. After this table, use only these official names—or t
 | Drinking water | Duda only; AM100-1LF on hot out; set ~120°F; taps from mixed outlet only ([DEC-003](#dec-003) / [DEC-008](#dec-008)) |
 | Isotemp | Coil circulating; chamber static same mix; **750 W** on Paneltronics **WATER HEATER** only. Factory mixer stays capped — never for taps ([DEC-008](#dec-008)) |
 | Heights | Water Flow Tank highest; everything else below it; cabin heater level, bottom-in/top-out, outlet bleeder; fill/drain at lowest point; unrestricted path from Water Flow Tank tee back to the pump |
-| Isotemp mount (owner) | **Driver side under bench/bed (low)**; Water Flow Tank in **sofa-bed backrest (high)**; **2–3 panels** flat night / hinge or slide day ([Working design understanding](#working-design-understanding)) |
+| Isotemp mount (owner) | **Driver side under bench/bed (low)**; Water Flow Tank in **sofa-bed backrest (high)**; day: **outboard → seat back**, **inboard → seat butt** ([Working design understanding](#working-design-understanding)) |
 | Cabin air | Living-space air across the Sure Marine cabin heater (**under the fridge**, SN 16401); Duda **under the sink**; combustion stays outside |
 | Build priority (owner) | **Ease of access** and **ease of construction** rank high for sofa/Isotemp packaging |
-| Sofa/bed materials ([DEC-021](#dec-021)) | **Hybrid:** wood side boxes + aluminum Isotemp cradle + light plywood **hinging/sliding** day panels — not all-extrusion furniture |
+| Sofa/bed materials ([DEC-021](#dec-021)) | **Hybrid:** wood side boxes + aluminum Isotemp cradle + light plywood day/night panels (seat-back / seat-butt geometry) — not all-extrusion furniture |
 | Hot water use (owner) | ~**80% sinks**; showers minority — mention showers, do not center the narrative on them |
 
 ::: {.media-pair}
@@ -108,10 +108,10 @@ This book does not rebuild the whole van electrical system. House charging and d
 |---|---|---|
 | House battery → heater 20 A fuse | Hydronic D5S brain + pump | Always fused; **not** through the hydronic master switch |
 | House battery → Blue Sea (typical) → **master** → EasyStart / fans / thermostat path | Heat call and cabin air | Master is **upstream of the EasyStart Timer**; Master Off is the parked lockout for 12 V heat controls |
-| Automatic transfer → Paneltronics MAIN → **WATER HEATER** | Isotemp 750 W element | Source is **120 V RV shore** or **PROwatt SW 2000** ([`photos/ac-electrical.jpg`](../photos/ac-electrical.jpg)); ~6.5 A; master Off does **not** cut this |
+| Blue Sea **9009** rotary → Paneltronics MAIN → **WATER HEATER** | Isotemp 750 W element | Hand-select **120 V RV shore** or **PROwatt SW 2000** ([`photos/ac-electrical.jpg`](../photos/ac-electrical.jpg)); ~6.5 A; master Off does **not** cut this |
 | Blue Sea **9009** rotary → Mean Well RPB-1600-12 | House battery charge from shore or J1772 | **Not** through Paneltronics **BATTERY CHARGER** |
 
-**AC topology (owner diagram).** Two independent transfer paths: (1) automatic transfer feeds the Paneltronics panel from shore or the PROwatt SW 2000; (2) Blue Sea 9009 feeds only the Mean Well from shore or 240 V J1772. See [Working design understanding](#working-design-understanding). Ground-fault cutout on the hardwired Isotemp branch is still OPEN for HOLD 9 (inverter *might*; shore unknown; Paneltronics has none).
+**AC topology (as-built).** Two independent **Blue Sea 9009** rotary transfers (owner: both 9009s): (1) shore ↔ PROwatt SW 2000 → Paneltronics (Isotemp **WATER HEATER** + outlets); (2) shore ↔ J1772 → Mean Well only. Diagram draft showed an automatic switch on path (1); van uses rotary. Isotemp is AC only — never the 12 V panel. See [Working design understanding](#working-design-understanding). Ground-fault on the hardwired Isotemp branch still OPEN for HOLD 9.
 
 Land every hydronic pin from the printed manuals ([SRC-009](#src-009) / [SRC-003](#src-003)). Wire sizes in this chapter are **AWG**; the manuals print mm² for the same conductors. Full pin tables live in [Electrical and Controls](#electrical-and-controls).
 
@@ -196,7 +196,7 @@ Until [Q-022](#q-022) names an approved way to wake the heater from that switch,
 
 The Isotemp element circuit is **not** on the 12 V panel.
 
-Power runs from **120 V RV shore** or the **PROwatt SW 2000** through the **automatic transfer switch** into Paneltronics MAIN, then the breaker labeled **WATER HEATER**, then the Isotemp 750 W element ([`photos/ac-electrical.jpg`](../photos/ac-electrical.jpg)). Ground-fault protection on that hardwired branch is still OPEN ([Q-009](#q-009)): inverter *might*; shore unknown; Paneltronics has none. Face GFCI outlets on the inverter protect only loads plugged into them.
+Power runs from **120 V RV shore** or the **PROwatt SW 2000** through a **Blue Sea 9009** rotary transfer into Paneltronics MAIN, then the breaker labeled **WATER HEATER**, then the Isotemp 750 W element ([`photos/ac-electrical.jpg`](../photos/ac-electrical.jpg)). That path is AC only — not the 12 V panel. Ground-fault protection on that hardwired branch is still OPEN ([Q-009](#q-009)): inverter *might*; shore unknown; Paneltronics has none. Face GFCI outlets on the inverter protect only loads plugged into them.
 
 The element only warms the Isotemp **static** chamber. Circulating glycol still goes through the Isotemp **coil** whenever the diesel pump runs. Running the element alone will not give you a hot shower.
 

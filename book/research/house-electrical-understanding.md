@@ -21,26 +21,28 @@ Authority for this van’s AC topology: **Van AC Electrical Diagram** (`photos/a
 
 ```
 J1772 240 V (L1/L2) ──2-pole breaker──┐
-                                       ├─→ Blue Sea 9009 rotary transfer ──→ Mean Well RPB-1600-12
+                                       ├─→ Blue Sea 9009 rotary ──→ Mean Well RPB-1600-12
 120 V RV shore (L1/N) ─2-pole breaker──┤         (charger; NOT via Paneltronics)
                                        │
-                                       └─→ Automatic transfer switch ──→ 120 V AC panel (Paneltronics)
+                                       └─→ Blue Sea 9009 rotary ──→ 120 V AC panel (Paneltronics)
 Xantrex inverter (L1/N) ───────────────┘         ├─→ Coolant / water heater 120 V  (= Isotemp path)
                                                  └─→ Outlets 120 V
 ```
 
-| Switch | Part (per diagram) | Selects | Feeds |
+| Switch | Part (as-built) | Selects | Feeds |
 | --- | --- | --- | --- |
-| Rotary | **Blue Sea 9009** | J1772 240 V ↔ 120 V RV shore | **Mean Well RPB-1600-12** only |
-| Automatic | (unnamed on drawing) | 120 V RV shore ↔ **Xantrex PROwatt SW 2000** | **Paneltronics** MAIN → WATER HEATER + OUTLETS |
+| Rotary A | **Blue Sea 9009** (owner: both are 9009s) | J1772 240 V ↔ 120 V RV shore | **Mean Well RPB-1600-12** only |
+| Rotary B | **Blue Sea 9009** (owner: both are 9009s) | 120 V RV shore ↔ **Xantrex PROwatt SW 2000** | **Paneltronics** MAIN → WATER HEATER + OUTLETS |
 
-**Mean Well** does **not** use the Paneltronics **BATTERY CHARGER** breaker — it is fed only through the Blue Sea 9009.
+**As-built note (owner 2026-09-20):** diagram draft showed an *automatic* transfer into Paneltronics; both paths **ended up rotary Blue Sea** — owner thinks **both are 9009s**. Confirm faceplates at HOLD 9. Hand-throw: shore vs inverter for the AC panel; shore vs J1772 for the Mean Well.
 
-**Isotemp** = diagram’s “Coolant / water heater 120v” off the AC panel (**WATER HEATER** branch).
+**Mean Well** does **not** use the Paneltronics **BATTERY CHARGER** breaker — it is fed only through its Blue Sea 9009.
 
-**GFCI (owner 2026-09-20):** “The inverter might be capable of that.” Treat as **unverified**. PROwatt SW 2000 face has dual GFCI receptacles; whether the **hardwired** feed into the automatic transfer switch / Paneltronics is also ground-fault protected is a manual + as-built check — do not assume face GFCI covers Isotemp. When the panel is on **shore** (not inverter), that inverter GFCI story does not apply anyway. HOLD 9: confirm inverter hardwire behavior, then state shore-side protection separately (or “breaker + chamber full” if none).
+**Isotemp** = diagram’s “Coolant / water heater 120v” off the AC panel (**WATER HEATER** branch). Not on the 12 V panel.
 
-**House DC snapshot (owner):** **200 Ah** battery bank; **650 W** rated solar on roof. Chargers: **Mean Well RPB-1600-12** (shore / J1772 via Blue Sea 9009) and **Sterling 60 A battery-to-battery** (alternator / vehicle charge path). PROwatt SW 2000 inverts for the AC panel when selected.
+**GFCI (owner 2026-09-20):** “The inverter might be capable of that.” Treat as **unverified**. PROwatt SW 2000 face has dual GFCI receptacles; whether the **hardwired** feed into the Paneltronics 9009 / Paneltronics is also ground-fault protected is a manual + as-built check — do not assume face GFCI covers Isotemp. When the panel is on **shore** (not inverter), that inverter GFCI story does not apply anyway. HOLD 9: confirm inverter hardwire behavior, then state shore-side protection separately (or “breaker + chamber full” if none).
+
+**House DC snapshot (owner):** **200 Ah** battery bank; **650 W** rated solar on roof. Chargers: **Mean Well RPB-1600-12** (shore / J1772 via Blue Sea 9009) and **Sterling 60 A battery-to-battery** (alternator / vehicle charge path). PROwatt SW 2000 inverts for the AC panel when its 9009 is selected.
 
 
 ---
@@ -79,7 +81,7 @@ Everything else about house AC stays out of this scratchpad unless you ask.
 
 ## Rip out the bed?
 
-**Owner decision:** the current bed is **coming out entirely.** Rebuild to meet HOLD S: **2–3 light panels** flat at night / hinge or slide by day, Isotemp cradle with restraint, ~30 cm service space at the element end, hose/cable access without draining when panels move, wall/floor bolts into metal (via plywood hatches as needed).
+**Owner decision:** the current bed is **coming out entirely.** Rebuild to meet HOLD S: night flat sleep deck; day **outboard → seat back** / **inboard → seat butt**; Isotemp cradle with restraint; ~30 cm service space at the element end; hose/cable access without draining when panels move; wall/floor bolts into metal (via plywood hatches as needed).
 
 ---
 
@@ -114,7 +116,7 @@ Field check (FarOutRide bed-frame only): aluminum frame ~45 lb / ~$585 vs wood ~
 
 1. **Fixed side boxes / seat bases** — construction plywood + dimensional lumber (or Baltic birch where faces show). Quiet, cheap, familiar tools, easy to cut hatches.
 2. **Isotemp cradle** — short T-slot aluminum rails or a small bolted aluminum frame, strapped to floor structure. Metal holds the tank; wood does not.
-3. **Sleep / day deck** — **2–3 light plywood panels** (⅜–½ in) that lay flat at night; ~two hinge up or slide by day. Stay attached; no carry-out as primary.
+3. **Sleep / day deck** — light panels flat at night; by day **outboard → seat back**, **inboard → seat butt** (owner intent). Stay attached; no carry-out as primary. Hardware TBD; hoses never through moving panels.
 4. **Walls** — keep existing plywood skins; add **access hatches** where bolts must hit metal.
 
 **Do not** build the whole sofa in 80/20. **Do not** hang the Isotemp on hose barbs or on furniture weight alone. **Do not** glue the only service path under a fixed mattress platform.
@@ -127,8 +129,8 @@ If T-slot stock is already on the shelf, use it for the cradle and panel ledgers
 
 ### What Tyrah needs
 
-- **Night:** continuous sleep surface — **2–3 panels flat** across the sofa/bed span  
-- **Day:** ~**two panels hinge up or slide** so facing side seats + walk-through aisle appear; panels stay attached (no carry-out)  
+- **Night:** continuous sleep surface — panels flat across the sofa/bed span  
+- **Day (owner intent):** **outboard** panels become **seat backs**; **inboard** panels become **seat butts**; walk-through aisle between facing sides. Panels stay attached. Exact count / hinges / slides OPEN until measure.  
 - Under/behind: Isotemp + hoses + cable stay put when panels move  
 
 ### Mechanisms (how the middle attaches)
@@ -147,7 +149,7 @@ If T-slot stock is already on the shelf, use it for the cradle and panel ledgers
 
 1. **Two fixed side boxes** — wood (or wood-skinned) seat bases, bolted to **floor** (and to wall where plywood allows a hatch to metal). These stay day and night.  
 2. **Aluminum Isotemp cradle** in one side bay (prefer **not** the passenger wheel-well bay that already holds the freshwater tank)—strapped/bolted tank, coil fittings facing service aisle, ~30 cm clear in front of element end.  
-3. **Sleep / day deck** — **2–3 light panels** on the center span: **flat at night**, **hinge up or slide by day** (owner). Prefer stay-attached; no carry-out as primary. Hinges/tracks land on the fixed side boxes; hoses never through moving panels.  
+3. **Sleep / day deck** — light panels on the center span: **flat at night**; day **outboard → seat back**, **inboard → seat butt** (owner). Prefer stay-attached. Hinges/tracks land on the fixed side boxes; hoses never through moving panels.  
 4. **Hydronic and freshwater hoses** run in fixed bays or along the wall **behind removable plywood hatches**—never through the moving day panels.  
 5. **Water Flow Tank (WFT) 5 L expansion/header** — **in the sofa-bed backrest (high)**; Isotemp stays **under the bench/bed (low)**. Same driver-side furniture stack preferred. Fill/bleed via hinged or removable backrest. Confirm WFT top is highest circulating glycol point after framing.  
 6. **AC element cable** exits the Isotemp bay toward Paneltronics in a protected chase; leave slack for service.
@@ -182,14 +184,14 @@ Exact Sprinter floor/wall hard-point map: still **OPEN**—measure before drilli
 | # | Question | Answer |
 | --- | --- | --- |
 | 1 | Current bed keep or rip? | **Coming out entirely.** |
-| 2 | Day layout when middle is out | **Revised 2026-09-20 (owner):** **2–3 panels** that **lay flat by night** and **hinge up / slide by day** — not one full-length lift-out carried away. Day still aims for facing side seats + walk-through aisle. Exact hinge vs slide and panel count refining (see #24). |
+| 2 | Day layout when middle is out | **Revised 2026-09-20 (owner):** Night = flat sleep deck. Day intent: **outboard panels become seat backs**, **inboard panels become seat butts** (facing side seats + aisle). Exact panel count / hinges / slides still open — geometry first (see #24). |
 | 3 | Isotemp bay + nearby layout | **Isotemp: driver side under bed/bench (low).** **Sure Marine:** under the fridge (Tyrah — fits). **Duda:** under the sink (as-built now). Hose routing: defer. |
 | 4 | Water Flow Tank (5 L header) height | **Owner 2026-09-20:** WFT in the **sofa-bed backrest** (high); Isotemp stays **under the bench/bed lower** — same furniture stack, different heights. Top of WFT must still be highest circulating glycol point. Fill/bleed via hinged/removable backrest panel. Prefer driver-side stack with Isotemp unless framing forces otherwise. |
 | 5 | Driver-side sofa back / hide Isotemp | **Superseded by #4.** Backrest’s job is the **Water Flow Tank** (access panel), not hiding the Isotemp. Isotemp service stays at the **low under-bench** face (~30 cm element clearance). Keep construction simple. |
 | 6 | Blue Sea 12 V block | **On van** (owner). House 12 V distribution—hydronic master / EasyStart / fans likely feed from here or via it. Confirm which fuse positions at HOLD 4. |
 | 7 | Sofa/bed materials | **Hybrid locked ([DEC-021](#dec-021)).** Wood shell + Al cradle + light ply **hinging/sliding** day panels (not carry-out as primary). |
-| 8 | Paneltronics MAIN feed | **From `photos/ac-electrical.jpg`:** Automatic transfer switch selects **120 V RV shore** or **Xantrex inverter** into the 120 V AC panel. Isotemp = “Coolant / water heater 120v” off that panel. |
-| 9 | Mean Well vs Paneltronics BATTERY CHARGER | **Mean Well RPB-1600-12** fed only via **Blue Sea 9009** (J1772 240 V ↔ 120 V shore). **Not** through Paneltronics **BATTERY CHARGER**. |
+| 8 | Paneltronics MAIN feed | **Owner 2026-09-20:** **Blue Sea 9009 rotary** selects **120 V RV shore** or **PROwatt SW 2000** into Paneltronics (diagram draft said automatic; as-built is rotary). Isotemp = “Coolant / water heater 120v” off that panel — **not** 12 V. |
+| 9 | Mean Well vs Paneltronics BATTERY CHARGER | **Mean Well RPB-1600-12** fed only via its own **Blue Sea 9009** (J1772 240 V ↔ 120 V shore). **Not** through Paneltronics **BATTERY CHARGER**. Owner: both rotaries are **9009s** (confirm faceplates). |
 | 10 | Inverter identity | **Xantrex PROwatt SW 2000** P/N **806-1220** (Amazon B002LGEMOQ). Diagram “SW2000” = wood-panel PROwatt SW. |
 | 11 | Ground-fault cutout on Isotemp | Inverter *might*; shore **unknown**; Paneltronics has **no** GFCI. HOLD 9 verifies. |
 | 12 | House battery + solar + charge | **200 Ah** battery; **650 W** solar; **Sterling 60 A** B2B; Mean Well RPB-1600-12. |
@@ -204,7 +206,8 @@ Exact Sprinter floor/wall hard-point map: still **OPEN**—measure before drilli
 | 21 | Fan dial | **Book pick:** Sure Marine [**W002-912**](https://www.suremarineservice.com/Heat/System-Switches/W002-912.html) Hi/Low **no Off**, 12 V **0.52 A** (-36). Owner may already have W002-911/912 — check bag. Two Noctuas ≈ 0.28 A. |
 | 22 | Master Off vs Isotemp AC | OK they are **separate** controls. |
 | 23 | Isotemp factory mixer | **Unused forever.** Cap only; AM100-1LF is the tap mixer. |
-| 24 | Day panels | **Owner:** **2–3 panels**, flat at night; ~**2 hinge up or slide** by day; stay attached. Hinge vs slide / exact count still open. |
+| 24 | Day panels | **Owner 2026-09-20:** Prefer **outboard → seat back**, **inboard → seat butt** (details still open). Night = panels flat as sleep deck. Not carry-out. Hinge/slide hardware TBD to serve that geometry. |
+| 25 | Transfer switches as-built | **Both rotary Blue Sea; both believed 9009.** One → Mean Well; one → Paneltronics. Diagram draft’s “automatic” path is obsolete. |
 
 ## 12 V heat wiring (plain)
 
@@ -247,16 +250,17 @@ Master **Off** kills the EasyStart Timer, so the heater gets no wake signal and 
 
 Shelf check: look for **W002-911** / **W002-912** / **W002-914** on the bag, or count positions (2 vs 3 + Off).
 
-- [x] Day: **2–3 panels** flat at night; ~**two hinge up or slide** by day → side seats + aisle (stay attached)  
-- [ ] Exact hinge vs slide + panel count (measure before cutting)  
+- [x] Day intent: **outboard → seat back**, **inboard → seat butt**; aisle between facing sides (stay attached)  
+- [ ] Exact panel count + hinge/slide hardware (measure; geometry above wins)  
 - [x] WFT in **backrest (high)**; Isotemp **under bench (low)** — same stack; verify WFT top is highest glycol point after framing  
 - [ ] Exact floor/wall bolt points  
 - [ ] Which plywood panels become access hatches  
 - [x] Sure Marine **under fridge** (Tyrah: fits); Duda **under sink** (as-built)  
 - [ ] Hose routing (later)  
 - [ ] Blue Sea fuse positions for master / EasyStart / fans  
-- [x] Shore vs inverter into Paneltronics: **automatic transfer** (`ac-electrical.jpg`)  
-- [x] Mean Well via **Blue Sea 9009** (J1772 ↔ 120 V shore) — **not** Paneltronics BATTERY CHARGER  
+- [x] Shore vs inverter into Paneltronics: **Blue Sea 9009 rotary** (as-built; diagram draft said automatic)
+- [x] Mean Well via its own **Blue Sea 9009** (J1772 ↔ 120 V shore) — **not** Paneltronics BATTERY CHARGER
+- [ ] Confirm both faceplates are **9009** (owner belief)
 - [x] Inverter: **Xantrex PROwatt SW 2000** (806-1220 / B002LGEMOQ) — diagram SW2000 = PROwatt SW  
 - [x] Master Off ≠ Isotemp AC — owner OK they are separate controls  
 - [x] Isotemp factory mixer — **unused forever** (cap only; AM100-1LF for taps)  

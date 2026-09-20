@@ -93,13 +93,13 @@ The altitude kit does not block a low-camp first fire. It is still not on the wa
 
 ## Sofa/bed platform decision
 
-The current bed is **coming out**. Rebuild as a sofa/bed with a **multi-panel** sleep deck (**2–3 panels**): **flat by night**, **hinge up or slide by day** for an aisle between facing side seats. It must carry the Isotemp Slim Square 4.2 gal heat battery on the **driver side under the bench (low)**, put the Water Flow Tank in the **backrest (high)**, preserve service access, and keep the Water Flow Tank top as the highest circulating glycol point.
+The current bed is **coming out**. Rebuild as a sofa/bed whose sleep deck is **multi-panel**: **flat by night**; by day **outboard panels become seat backs** and **inboard panels become seat butts**, with an aisle between facing sides. It must carry the Isotemp Slim Square 4.2 gal heat battery on the **driver side under the bench (low)**, put the Water Flow Tank in the **backrest (high)**, preserve service access, and keep the Water Flow Tank top as the highest circulating glycol point.
 
 **Owner priorities:** ease of access and ease of construction. Prefer the simpler package that still reaches the Isotemp element (~30 cm), coil fittings, and straps ([Working design understanding](#working-design-understanding)).
 
-**Locked method ([DEC-021](#dec-021)):** hybrid — wood furniture shell + aluminum Isotemp cradle + light plywood **hinging/sliding** day panels (not one carry-out lift-out as the primary plan).
+**Locked method ([DEC-021](#dec-021)):** hybrid — wood furniture shell + aluminum Isotemp cradle + light plywood day/night panels (not one carry-out lift-out as the primary plan).
 
-**Day motion:** panels stay attached. Exact hinge vs slide and whether two or three panels: still OPEN — decide before cutting ledgers.
+**Day geometry (owner intent):** outboard → seat back; inboard → seat butt. Exact panel count and hinge/slide hardware still OPEN — decide after measuring seat depth and back height.
 
 **Remaining effort:** see [Effort estimate](#effort-estimate) (~110–120 h typical through diesel first fire; sofa is the largest block).
 
