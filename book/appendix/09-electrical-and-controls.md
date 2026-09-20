@@ -84,7 +84,7 @@ Off/On switches + to EasyStart, thermostat signal path, and fans. Heater **20 A*
 
 ## SC1600B / fans (Q-022 open)
 
-SC1600B: battery-powered; R–W dry contact ≤1 A. Fans need a relay. Fan dial Low/Med/High without hard Off (DEC-018). Until Q-022 closes: EasyStart Timer calls only.
+SC1600B: battery-powered; R–W dry contact ≤1 A. Fans need a relay. Fan dial Low/Med/High without hard Off (DEC-018). Until Q-022 closes: EasyStart Timer calls only. Fan-path relay reference: TE Connectivity **V23134-A3052-X540** (or any ISO mini 12 V coil / ≥10 A contacts) — [DigiKey](https://www.digikey.com/en/products/detail/te-connectivity-potter-brumfield-relays/V23134-A3052-X540/6234681).
 
 ## Altitude kit 22 1000 33 22 00
 

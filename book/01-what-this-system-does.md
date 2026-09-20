@@ -1,18 +1,18 @@
 # System Design
 
-**Stage 1 — Architecture.** Finish this chapter before the [User’s Guide](#users-guide) or the [Builder’s Guide](#builders-guide). Read the glycol loop first, then the two jobs off that loop, then the part names. Next: skim [The Numbers](#the-numbers-that-matter), then the User’s Guide.
+**Stage 1 — Architecture.** Glycol loop → two jobs → part names → how you call heat. Then skim [The Numbers](#the-numbers-that-matter) and the [User’s Guide](#users-guide).
 
 Jump: [Safety](#safety) · [The glycol loop](#locked-architecture) · [The Parts](#the-parts) · [Controls](#controls) · [The Numbers](#the-numbers-that-matter) · [User’s Guide](#users-guide) · [Current Status](#current-status-report) · [Builder’s Guide](#builders-guide)
 
 ## Purpose
 
-One closed propylene glycol loop heats cabin air and tap water. The Hydronic D5S sits under the van. The Sure Marine cabin heater, Duda, Isotemp, and Water Flow Tank sit in the cabin. Glycol never mixes with drinking water, never connects to the engine ([DEC-009](#dec-009)), and has no second pump ([DEC-013](#dec-013)).
+One closed propylene glycol loop heats cabin air and tap water. The Hydronic D5S sits under the van; the Sure Marine cabin heater, Duda, Isotemp, and Water Flow Tank sit in the cabin. Glycol never mixes with drinking water, never connects to the engine ([DEC-009](#dec-009)), and has no second pump ([DEC-013](#dec-013)).
 
-On a working day, EasyStart calls the Hydronic D5S. The heater’s own pump moves glycol through the Sure Marine cabin heater (cabin air), then the Duda (tap water across the double wall), then the Isotemp coil, then back. When the loop is warm enough, the burner may pause while the pump keeps circulating—leftover heat in the Isotemp static chamber can smooth those short cycles. A planned 750 W / 115 VAC element on Paneltronics **WATER HEATER** can warm that chamber from shore or inverter; the element does not pump the loop and does not put hot water at the taps by itself.
-
-Day-to-day use: [User’s Guide](#users-guide). Keep-or-sell numbers: [Isotemp value study](#isotemp-value-study).
+Leftover heat can sit in the Isotemp static chamber. A planned 750 W / 115 VAC element on Paneltronics **WATER HEATER** can warm that chamber—it does not pump the loop and does not put hot water at the taps by itself.
 
 **Stop and reject** any proposal that would splice into the engine, tee glycol into drinking water, bypass cabin heat, add a second glycol pump, or land the 750 W element on the 12 V panel.
+
+Day-to-day: [User’s Guide](#users-guide). Keep-or-sell: [Isotemp value study](#isotemp-value-study).
 
 ## The glycol loop {#locked-architecture}
 
@@ -22,25 +22,23 @@ Day-to-day use: [User’s Guide](#users-guide). Keep-or-sell numbers: [Isotemp v
 ![Glycol loop layout](assets/parts/glycol-loop.webp)
 :::
 
-Glycol circulates in this order only ([DEC-010](#dec-010)):
+Order only ([DEC-010](#dec-010)):
 
 1. Heater’s own pump → Hydronic D5S  
-2. Sure Marine cabin heater — cabin heat first (daily priority)  
-3. Duda (glycol side) — hottest fluid for sinks; showers are the minority (~**80%** sinks)  
-4. Isotemp coil — stores leftovers ([Isotemp value study](#isotemp-value-study))  
-5. Return to the pump  
+2. Sure Marine cabin heater — cabin heat first  
+3. Duda (glycol) — hottest fluid for sinks (~**80%** of hot-water use)  
+4. Isotemp coil — stores leftovers  
+5. Return  
 
-The Water Flow Tank tees into the **return** at the highest circulating point—not in series, not off the Isotemp coil. Keep the Water Flow Tank highest and everything else below it. Leave an unrestricted path from that tee back to the pump. Put fill and drain at the low point. Mount the cabin heater level, bottom-in / top-out, with a bleeder on the outlet.
+Water Flow Tank tees into the **return** at the highest circulating point—not in series, not off the Isotemp coil. Keep it highest; fill/drain at the low point; unrestricted path from that tee back to the pump. Cabin heater: level, bottom-in / top-out, outlet bleeder.
 
-**Where those loop parts sit.** Sure Marine under the fridge (SN 16401). Duda under the sink. Isotemp driver-side under the bench (low). Water Flow Tank in the sofa-bed backrest (high). Day panels: outboard → seat back, inboard → seat butt ([Working design understanding](#working-design-understanding)). Sofa/bed is hybrid: wood side boxes, aluminum Isotemp cradle, light plywood panels ([DEC-021](#dec-021)). Ease of access and ease of construction rank high for that packaging.
+**Where.** Sure Marine under the fridge (SN 16401). Duda under the sink. Isotemp driver-side under the bench (low). Water Flow Tank in the sofa-bed backrest (high). Day panels: outboard → seat back, inboard → seat butt. Sofa/bed: hybrid wood boxes + aluminum Isotemp cradle + light plywood ([DEC-021](#dec-021)).
 
 ## The two jobs
 
-The same glycol loop does cabin heat and tap heat. Those jobs never share fluid with each other or with combustion.
-
 ### Cabin air
 
-Living-space air crosses the Sure Marine cabin heater under the fridge. Two Noctua fans and one dial move that air. Combustion air and exhaust stay outside.
+Living-space air across the Sure Marine cabin heater. Two Noctua fans + one dial. Combustion stays outside.
 
 ::: {.media-pair}
 ![Cabin air](diagrams/cabin-air.svg)
@@ -50,7 +48,7 @@ Living-space air crosses the Sure Marine cabin heater under the fridge. Two Noct
 
 ### Tap water
 
-Freshwater runs tank → pump → Duda (cold in bottom, hot out top) → AM100-1LF (~120°F) → sink / shower ([DEC-003](#dec-003) / [DEC-008](#dec-008)). Heat crosses the Duda double wall only. The Isotemp coil stays in the glycol loop; the chamber is static glycol of the same mix, heated only by leftover loop heat or the Paneltronics **WATER HEATER** element. The factory Isotemp mixer stays capped forever—never for taps.
+Tank → pump → Duda (cold in bottom, hot out top) → AM100-1LF (~120°F) → taps ([DEC-003](#dec-003) / [DEC-008](#dec-008)). Heat crosses the double wall only. Isotemp chamber is not on this path; factory mixer capped forever.
 
 ::: {.media-pair}
 ![Fresh water system](diagrams/freshwater.svg)
@@ -60,7 +58,7 @@ Freshwater runs tank → pump → Duda (cold in bottom, hot out top) → AM100-1
 
 ## The Parts {#the-parts}
 
-Meet each part once here. After this table, use only these official names—or the short forms listed under each name. Do not invent aliases (buffer, Bosch, Espar, “the tank,” “the core,” “the plate”).
+Meet each part once. After this table, use only these official names or the short forms listed. Do not invent aliases (buffer, Bosch, Espar, “the tank,” “the core,” “the plate”).
 
 | Part (official name) | Photo | Does | Does not |
 |---|---|---|---|
@@ -80,115 +78,71 @@ Meet each part once here. After this table, use only these official names—or t
 
 ## Fuel, air, exhaust, and fluids
 
-**Fuel.** Fuel runs from the factory aux pickup through the metering pump to the heater. Owner is confident of the tap; believes the hose was run; **needs priming** before first fire. **Fuel pump** under van is **future work** before fire (look with the manual open). Prefer a metering-pump angle of 15°–35°. Keep the fuel line rising continuously, and never rest it on the exhaust ([SRC-009](#src-009)). Prime with the hand bulb immediately before first fire ([HOLD 8](#hold-8-first-fire)), then remove it.
+**Fuel.** Factory aux pickup → metering pump → Hydronic D5S. Prefer pump angle 15°–35°. Keep the line rising; never rest it on the exhaust ([SRC-009](#src-009)). Prime at [HOLD 8](#hold-8-first-fire), then remove the hand bulb. Confirm pump under van before first fire ([Current Status](#current-status-report)).
 
-**Exhaust and combustion air.** Owner thinks exhaust is OK; still a quick [HOLD 2](#hold-2-exhaust) look before fire. These are two separate paths to outside air; neither enters the cabin. Kit limits are in [The Numbers](#the-numbers-that-matter) and [Builder §2](#hold-2-exhaust).
+**Exhaust and combustion air.** Two separate paths to outside; neither enters the cabin. Limits: [The Numbers](#the-numbers-that-matter). Confirm at [HOLD 2](#hold-2-exhaust).
 
 ![Fuel system](diagrams/fuel-system.svg)
 
 ![Combustion air and exhaust](diagrams/combustion-air.svg)
 
-**Circulating loop and Isotemp chamber.** Fill with water plus propylene glycol at **most 50%** glycol ([SRC-009](#src-009)), **one brand only** (both on-hand jugs are concentrates — [SRC-029](#src-029) / [SRC-030](#src-030)). Prefer a water-first leak check before you commit glycol. Never run the pump dry.
-
-**Fresh water.** Same path as [Tap water](#tap-water) above: tank → pump → Duda → AM100-1LF → taps. The Isotemp chamber is not on this path.
+**Glycol.** Loop and Isotemp chamber: ≤50% propylene glycol, **one brand only** ([SRC-009](#src-009); [SRC-029](#src-029) / [SRC-030](#src-030)). Prefer water-first leak check. Never run the pump dry. Freshwater path: [Tap water](#tap-water).
 
 ## Controls {#controls}
 
-Hydronic wiring is two separate worlds. They never share a fuse panel.
+Two worlds. They never share a fuse panel.
 
-| World | Power | What it does | Parked lockout |
+| World | Power | Does | Parked lockout |
 |---|---|---|---|
 | **12 V** | House battery | Diesel heat call, heater pump, cabin fans | **Master Off** |
-| **120 V** | Shore or PROwatt SW → Paneltronics | Isotemp chamber element only | **WATER HEATER** breaker Off |
+| **120 V** | Shore or PROwatt SW → Paneltronics | Isotemp chamber element only | **WATER HEATER** Off |
 
-Master Off stops diesel heat and fans. Master Off does **not** cut Isotemp AC. Isotemp AC never lands on the 12 V panel.
+Master Off stops diesel heat and fans. Master Off does **not** cut Isotemp AC.
 
 ![Day-one electrical](diagrams/electrical.svg)
 
-**Day-one diesel heat** (enough for first fire): Master **On** → EasyStart start → fan dial. Living with the chamber and AC dish rinses is in the [User’s Guide](#users-guide). Pin tables and fuse sizes: [Electrical and Controls](#electrical-and-controls).
+**Day-one diesel heat:** Master **On** → EasyStart start → fan dial. Pin tables: [Electrical and Controls](#electrical-and-controls). Still open: [Q-022](#q-022), [Q-009](#q-009); altitude kit at HOLD 4 ([Q-015](#q-015)).
 
-**Still open.** Thermostat auto ([Q-022](#q-022)). Isotemp GFCI path ([Q-009](#q-009)). Land the altitude kit at HOLD 4 ([Q-015](#q-015)).
-
-### 12 V — how diesel heat is wired
-
-Think of three layers. Only the middle layer goes through the master switch.
+### 12 V — three layers
 
 ![Power](diagrams/electrical-power.svg)
 
-**Layer 1 — heater always powered.** A heavy pair from the house battery: **12 AWG** if the round trip is **20 ft / 6 m** or less, through a **20 A** fuse, into heater pins **1** (red +) and **2** (brown −). This feed does **not** go through the master. The heater brain stays awake so it can finish an after-run and remember faults.
+**Layer 1 — heater always powered.** House battery → **20 A** → **12 AWG** (if round trip ≤ **20 ft / 6 m**) → pins **1** (+) / **2** (−). Not through the master—so the brain can after-run and remember faults.
 
-**Layer 2 — master unlocks the cabin controls.** Mount one Off/On switch next to the EasyStart. The master switches **positive only** to three small branches (land them on the Blue Sea ST Blade, or a **second breakout** if that block is full):
+**Layer 2 — master unlocks controls.** Off/On next to EasyStart; positive only to three branches (Blue Sea ST Blade or a **second breakout** if full):
 
 | Branch | Fuse | Feeds |
 |---|---|---|
-| A | **5 A** (insert **last**) | EasyStart Timer |
-| B | size still OPEN | Later: thermostat → relay |
-| C | size still OPEN | Fan dial → both Noctua fans |
+| A | **5 A** (insert **last**) | EasyStart |
+| B | OPEN | Later: thermostat → relay |
+| C | OPEN | Fan dial → both Noctuas |
 
-Master On does **not** start the heater. Master On only unlocks those branches so EasyStart (and later the thermostat) can call for heat. When you park or leave, turn the master **Off**.
+Master On does not start heat—it only unlocks. Parked: master **Off**. Emergency: EasyStart off → master Off → 20 A if needed → battery last. ≤ two off/on into a fault ([SRC-009](#src-009)).
 
-Emergency stop: EasyStart off → master Off → pull the 20 A if you must → battery last. Do not cycle off and on more than twice into a fault ([SRC-009](#src-009)).
-
-**Layer 3 — EasyStart wakes the heater.**
+**Layer 3 — wake.**
 
 ![Wake](diagrams/electrical-wake.svg)
 
-1. Branch A powers EasyStart pin **1** (+) and pin **3** (−).  
-2. On start (or a schedule), EasyStart puts positive on pin **6** (yellow). That yellow wire becomes heater pin **7** (S+ — “switch on”).
-
-No extra relay sits in a normal timer start. Once the heater sees S+, it decides whether to pump, glow, and fire.
-
-**Altitude kit** (garage). Required above roughly 5,000 ft. It plugs into the control harness as a whole adapter—do not snip only the yellow wire. Land it at HOLD 4 while the EasyStart harness is open ([Q-015](#q-015) / [DEC-006](#dec-006)).
+Branch A → EasyStart pins **1** / **3**. On start, pin **6** (yellow) → heater pin **7** (S+). Heater then runs its water pump (**8–9**), fuel pump (**4** / **10**), and glow / flame. Tape off vehicle-blower pin **3** and kit blower relay.
 
 ![Heater](diagrams/electrical-heater.svg)
 
-With battery on pins 1–2 and yellow wake on pin 7, the heater runs its own water pump (pins **8–9**), the fuel metering pump (pins **4** and **10**), and glow / flame sensing. Do **not** add a second glycol pump. Tape off kit vehicle-blower wiring (pin **3**, blower relay, 25 A blower fuse)—that path is for a car heater matrix, not the Sure Marine cabin heater.
+**Altitude kit** — whole harness adapter (do not snip only yellow). Land at HOLD 4 ([DEC-006](#dec-006)). Required above ~5,000 ft.
 
-**Cabin fans** ride Branch C only.
+**Fans** — Branch C only. Sure Marine [**W002-912**](https://www.suremarineservice.com/Heat/System-Switches/W002-912.html); no Noctua NA-FC1. Speed only—never starts diesel. Until [Q-022](#q-022), fans run whenever master is On and the dial is up.
 
 ![Fans](diagrams/electrical-fans.svg)
 
-Book pick: Sure Marine [**W002-912**](https://www.suremarineservice.com/Heat/System-Switches/W002-912.html) Hi/Low **without** Off ([DEC-018](#dec-018)). **Do not** use a Noctua NA-FC1. Both Noctua fans share red/black after the dial; leave PWM and tach unused. The dial sets **speed only**—it never starts the diesel. Until thermostat auto closes ([Q-022](#q-022)), fans run whenever master is On and the dial is up.
-
-**Thermostat auto — not ready.** The SC1600B’s **R** / **W** terminals are a dry contact (≤1 A). They need a **relay** for fan current ([SRC-019](#src-019)). **Do not** land them on EasyStart pins **9–10** (those are for Eberspächer’s optional temperature *sensor*). Until [Q-022](#q-022) names an approved wake path, start heat only from the EasyStart Timer. Fan-path relay reference: TE Connectivity **V23134-A3052-X540** (or any ISO mini 12 V coil / ≥10 A contacts).
+**Thermostat auto — not ready.** SC1600B R–W is a dry contact; needs a relay for fans ([SRC-019](#src-019)). Do **not** land on EasyStart pins **9–10**. Start heat from EasyStart only until [Q-022](#q-022). Relay notes: [Electrical and Controls](#electrical-and-controls).
 
 ### 120 V — Isotemp chamber only
 
 ![AC](diagrams/electrical-ac.svg)
 
-The 750 W element is a **Paneltronics** load. Path:
+**SmartPlug** *or* **PROwatt SW 2000** → **Blue Sea 9009** (**SHORE** / **INVERTER**) → Paneltronics MAIN → **WATER HEATER** → 750 W element. Label that poorly labelled face ([`photos/ac-electrical.jpg`](../photos/ac-electrical.jpg)). Hardwire GFCI still OPEN ([Q-009](#q-009)). Element warms the **static** chamber only; taps still need the diesel pump through the coil. Route cable at HOLD 4; leave **WATER HEATER** off until [HOLD 9](#hold-9).
 
-**SmartPlug shore** *or* **PROwatt SW 2000** → one **Blue Sea 9009** hand rotary (**SHORE** / **INVERTER**) → Paneltronics MAIN → breaker **WATER HEATER** → element.
+**Second 9009** — SmartPlug / **DUOSIDA** J1772 → Mean Well charger only. Not heat.
 
-Master Off does **not** cut this path. Label that 9009 face—it is poorly labelled today ([`photos/ac-electrical.jpg`](../photos/ac-electrical.jpg)). Upstream hardwire GFCI/ELCI is still OPEN ([Q-009](#q-009)). Inverter face GFCI outlets protect only loads plugged into them.
-
-The element warms the Isotemp **static** chamber only. Circulating glycol still needs the diesel pump through the **coil**. Element alone does not make a hot shower.
-
-Route the element cable at HOLD 4. Leave **WATER HEATER** **off** until [HOLD 9](#hold-9).
-
-**Second 9009 (not heat).** A separate rotary selects SmartPlug shore vs **DUOSIDA** J1772 into the **Mean Well RPB-1600-12** charger. That path charges the house battery. It does not feed **WATER HEATER**. Do not confuse the two rotaries.
-
-### Existing house electrical
-
-This book does not rebuild the whole van electrical system. The hydronic loads use gear already on the van. Full inventory and photo extracts: [Working design understanding](#working-design-understanding) · [Electrical and Controls](#electrical-and-controls).
-
-| Already on the van | Role for hydronic |
-|---|---|
-| House battery **200 Ah** | Feeds all 12 V hydronic loads |
-| Blue Sea ST Blade (+ ML-RBS) | Where master / EasyStart / fan fuses land (or a second breakout) |
-| Wood panel: LinkPRO + **PROwatt SW 2000** + EasyStart | Monitor, inverter, heat call |
-| Paneltronics face **72313** | **WATER HEATER** reserved for Isotemp; MAIN · BATTERY CHARGER · OUTLETS also on that face |
-| Two **Blue Sea 9009** rotaries | (1) Paneltronics shore/inverter · (2) Mean Well shore/J1772 |
-| SmartPlug + DUOSIDA J1772 | 120 V shore and 32 A / 240 V Level-2 inlets |
-
-Wire sizes in this chapter are **AWG**; manuals print mm² for the same conductors ([SRC-009](#src-009) / [SRC-003](#src-003)).
-
-## Architecture check
-
-- [ ] Locked loop order, with the WFT on the return high point  
-- [ ] Cabin air and drinking water stay separated from glycol (heat crosses the Duda only)  
-- [ ] Isotemp chamber holds static glycol; the element is Paneltronics chamber heat only  
-- [ ] Tap hot water needs the diesel pump through the Duda plate  
-- [ ] Forbidden list is clear: no engine splice, no summer bypass, no second pump, no 12 V to the element  
+House inventory and photos: [Working design understanding](#working-design-understanding) · [Electrical and Controls](#electrical-and-controls). Wire sizes here are **AWG** ([SRC-009](#src-009) / [SRC-003](#src-003)).
 
 → [The Numbers](#the-numbers-that-matter), then the [User’s Guide](#users-guide).

@@ -1,48 +1,44 @@
 # The Numbers {#the-numbers-that-matter}
 
-A short card after [System Design](#system-design). Skim it, then continue to the [User’s Guide](#users-guide). Figures come from the Hydronic D5S diesel heater manual ([SRC-009](#src-009)) unless noted. If you swap the heater, rewrite this page from that heater’s manual first. Isotemp chamber sizing and predicted starts live in the [Isotemp value study](#isotemp-value-study).
+Skim after [System Design](#system-design), then the [User’s Guide](#users-guide). From [SRC-009](#src-009) unless noted. Swap the heater → rewrite this page. Chamber sizing / keep-or-sell: [Isotemp value study](#isotemp-value-study).
 
-Jump: [System Design](#system-design) · [User’s Guide](#users-guide) · [Isotemp value study](#isotemp-value-study) · [Builder’s Guide](#builders-guide) · [Source Register](#source-register)
+Jump: [System Design](#system-design) · [User’s Guide](#users-guide) · [Isotemp value study](#isotemp-value-study) · [Builder’s Guide](#builders-guide)
 
 | | |
 |---|---|
 | Heat output (Power / High / Low) | 5.2 / 5.0 / 2.1 kW (~17,740 / 17,060 / 7,165 Btu/h) |
 | Fuel use at those settings | 0.64 / 0.61 / 0.26 L/h |
 | Coolant staging (approx.) | Power → High ~65°C · High → Low ~80°C · pause ~85°C · restart ~75°C |
-| During control pause | Burner off; **circulating pump keeps running** ([SRC-009](#src-009)) |
+| During control pause | Burner off; **pump keeps running** |
 | Overheat restart | Coolant below 70°C (158°F) |
-| Fluid in the heater itself | ~0.18 L (the loop and Isotemp hold the rest) |
+| Fluid in the heater itself | ~0.18 L |
 | Minimum flow through the heater | 250 L/h |
 | Heater pump (reference) | ~680 L/h @ 0.1 bar; under ~12 W |
 | Max propylene glycol overpressure | 2.5 bar |
-| WFT 5 L expansion/header tank relief | ~1.2 bar (below heater limit) |
-| Isotemp potable PRV (not a glycol setting) | ~5.5 bar / 80 psi — do not size the loop to this |
-| Isotemp AC working thermostat | Cuts near **75°C / 167°F**; overheat cut-out ~95°C, manual reset ([SRC-022](#src-022)) |
-| Mix | ≤50% Prestone LowTox AF555 only ([DEC-017](#dec-017); [SRC-029](#src-029)) |
+| WFT relief | ~1.2 bar |
+| Isotemp potable PRV (not glycol) | ~5.5 bar / 80 psi |
+| Isotemp AC working thermostat | Cuts near **75°C / 167°F**; overheat ~95°C, manual reset ([SRC-022](#src-022)) |
+| Mix | ≤50% Prestone LowTox AF555 only ([DEC-017](#dec-017)) |
 | Voltage window | 10.5–16 V |
 | Electrical start / run (without pump) | ~120 W start; ~40 / 37 / 12 W Power / High / Low |
 | Fuel | Diesel EN 590; ≤20% FAME OK; pure biodiesel not |
-| Metering pump angle | 15°–90°; prefer 15°–35°; flat 0°–15° forbidden |
+| Metering pump angle | Prefer 15°–35°; flat 0°–15° forbidden |
 | Metering pump heads | Pressure tank→pump max 3000 mm; suction pressureless max 1000 mm; suction with 0.03 bar cap max 400 mm |
 | Exhaust | 24 mm ID; ~0.2–2 m; downslope; ~5 mm drain |
-| Combustion air | 20 mm ID; kit hose max ~0.76 m; cool outside air |
-| Altitude | Unlimited to ~5,000 ft without kit; kit [22 1000 33 22 00](#dec-006) for sustained 5,000–10,000 ft. Fuel delivery starts reducing ~1400 m (~9% / 1000 m) with kit ([SRC-002](#src-002)) |
-| AM100-1LF thermostatic mixing valve | 70–145°F range; set ~120°F, lock handwheel, label ([DEC-008](#dec-008); [SRC-036](#src-036)) |
-| Isotemp factory mixer | **Unused forever** — capped; not for taps ([DEC-008](#dec-008)) |
-| Isotemp element | 750 W ≈ **6.5 A** @ 115 V on Paneltronics **WATER HEATER** only |
-| Paneltronics AC feed | One **9009**: shore ↔ PROwatt SW → **WATER HEATER** (Isotemp heat) |
-| Mean Well charge feed | Other **9009**: shore ↔ J1772 (battery charge only — not heat) |
-| Diesel start lockout | Miss may retry ~70 s; lock after two further fails; ≤2 off/on into a fault |
+| Combustion air | 20 mm ID; kit hose max ~0.76 m |
+| Altitude | Unlimited to ~5,000 ft without kit; kit [22 1000 33 22 00](#dec-006) for 5,000–10,000 ft |
+| AM100-1LF | Set ~120°F, lock, label ([DEC-008](#dec-008)) |
+| Isotemp factory mixer | **Unused forever** |
+| Isotemp element | 750 W ≈ **6.5 A** @ 115 V on **WATER HEATER** only |
+| Paneltronics AC feed | One **9009**: shore ↔ PROwatt → **WATER HEATER** |
+| Mean Well charge | Other **9009**: shore ↔ J1772 (not heat) |
+| Diesel start lockout | ≤2 off/on into a fault |
 
-The Isotemp chamber holds about 4.2 gal of static glycol. The coil is charged by the heater pump. The 750 W element on Paneltronics **WATER HEATER** (face **72313** / sheet **9972313B**) heats the chamber only ([DEC-004](#dec-004) / [DEC-007](#dec-007) / [DEC-020](#dec-020)).
-
-### Live with it (planning scale)
+### Planning scale
 
 | | |
 |---|---|
-| Chamber charge on AC (cool → ~75°C) | About **40–60 min** at 750 W; taps stay cold until the diesel pump runs |
-| Holdover at Low (2.1 kW) | **Tens of minutes**, not hours — see [Isotemp value study](#isotemp-value-study) |
-| Dish rinse after AC charge, warm loop | Pump on; flame often stays off; hot water in ~**30–60 s**; ~**2–5 min** of rinse |
-| Dish rinse after AC charge, cold loop | Pump on; flame usually lights; useful hot water in ~**2–5 min** |
-| Day-to-day steps | [User’s Guide](#users-guide) · [AC chamber and dishes](#ac-chamber-and-dishes) |
-| Keep-or-sell numbers | [Isotemp value study](#isotemp-value-study) |
+| Chamber charge cool → ~75°C | ~**40–60 min** at 750 W; taps cold until pump runs |
+| Holdover at Low (2.1 kW) | **Tens of minutes** — [Isotemp value study](#isotemp-value-study) |
+| Dish rinse, warm loop | ~**30–60 s** to hot; ~**2–5 min** rinse |
+| Dish rinse, cold loop | Flame usually on; useful hot in ~**2–5 min** |
