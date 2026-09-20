@@ -10,6 +10,8 @@ One diesel hydronic loop under the van does two jobs: warm cabin air, and heat t
 
 Leftover loop heat can sit in a static chamber for later. The planned 750 W / 115 VAC element warms that chamber from the Paneltronics AC panel—it does not pump the loop, and it alone does not put hot water at the taps.
 
+**How heat moves on a working day.** EasyStart calls the Hydronic D5S. The heater’s own pump moves glycol through the Sure Marine cabin heater (cabin air), then the Duda (tap water across the double wall), then the Isotemp coil (leftover heat into or out of the static chamber), then back. When the loop is warm enough, the burner may pause while the pump keeps circulating—that is when the chamber can smooth short cycles. Living with that pattern is in the [User’s Guide](#users-guide); predicted starts and keep-or-sell numbers are in the [Isotemp value study](#isotemp-value-study).
+
 **Stop and reject** any proposal that would splice into the engine, tee glycol into drinking water, bypass cabin heat, add a second glycol pump, or land the 750 W element on the 12 V panel.
 
 ## The Parts {#the-parts}

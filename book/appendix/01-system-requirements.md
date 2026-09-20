@@ -42,14 +42,14 @@ Diesel hydronic space heat plus on-demand DHW on an **independent living-space p
 |---|---|---|---|---|
 | 25 2526 05 00 00 | 5200 / 5000 / 2100 W | 0.64 / 0.61 / 0.26 l/h | 250 l/h | 10.5–16 V |
 
-Tolerances ±10% at rated voltage / Esslingen reference altitude. Staging ~65 / 80 / 85 / 75 °C; overheat restart <70 °C (SRC-009 p. 31–32).
+Tolerances ±10% at rated voltage / Esslingen reference altitude. Staging ~65 / 80 / 85 / 75 °C; during pause the circulating pump continues; overheat restart <70 °C (SRC-009 p. 31–32). Plain-language card: [The Numbers](#the-numbers-that-matter). Cycling estimates: [Isotemp value study](#isotemp-value-study).
 
 ### Hard constraints
 
 - Coolant: water + propylene glycol, **≤50%** coolant; ≤ 2.5 bar (SRC-009). Header cap ~1.2 bar.
 - Heater and pumps below the WFT 5 L expansion/header tank fluid level (SRC-009 p. 15).
 - Exhaust and combustion air outside the cabin (SRC-009 p. 24–25).
-- Sustained use above ~1500 m needs Altitude kit 22 1000 33 22 00 (DEC-006).
+- Sustained use above ~1500 m needs Altitude kit 22 1000 33 22 00 (DEC-006). Prefer land at HOLD 4 while the EasyStart harness is open (Q-015).
 - Underbody mount allowed if install rules are met (SRC-009 p. 15) — this van: driver-side / fuel-fill area.
 
 ### Out of scope / ruled out
@@ -71,6 +71,6 @@ Tolerances ±10% at rated voltage / Esslingen reference altitude. Staging ~65 / 
 
 - [ ] **OPEN:** Q-010 fuel-line routing inspection before first fire
 - [ ] **OPEN:** Q-013 EasyStart Timer wiring finish
-- [ ] **OPEN:** Q-015 Altitude kit 22 1000 33 22 00 find / wire (high camps)
-- [ ] **OPEN:** Q-009 / Q-016 element AC path (required for complete build; diesel-only first fire may precede final energization)
+- [ ] **OPEN:** Q-015 Altitude kit 22 1000 33 22 00 land at HOLD 4 (required before high camps; preferred with harness open)
+- [ ] **OPEN:** Q-009 / Q-016 element AC path (required for **complete** system acceptance; diesel-only first fire may precede HOLD 9)
 - [ ] **OPEN:** Q-019 / Q-021 brand pick and Sure Marine cabin heater switch model

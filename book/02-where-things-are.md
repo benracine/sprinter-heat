@@ -24,6 +24,8 @@ Ask once per part: if it is already on the van, inspect and finish the remaining
 | EasyStart Timer | On wood panel (with LinkPRO / PROwatt SW) | Land per [SRC-003](#src-003) / [SRC-009](#src-009) — [HOLD 4](#hold-4-electrical) |
 | Paneltronics AC panel | **72313** / **9972313B**: MAIN 30 A · BATTERY CHARGER · **WATER HEATER** (empty, reserved) · OUTLETS | Element cable + upstream GFCI at [HOLD 9](#hold-9) |
 
+Diesel-only Acceptance can finish without HOLD 9. Complete system Acceptance needs HOLD 9. After diesel first fire, only [Q-022](#q-022) and [Q-009](#q-009) may still wait; land the altitude kit at HOLD 4.
+
 ## Still in the garage
 
 | Item | Do this |

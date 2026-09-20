@@ -15,6 +15,12 @@ Hand this file with the PDFs in `sources/hydronic-install/` and `sources/coolant
 
 ## Snapshot
 
+**One loop.** Hydronic D5S → Sure Marine cabin heater → Duda → Isotemp coil → return. No engine. No second pump. Isotemp chamber = static glycol; factory mixer unused. Drinking water only through the Duda + AM100-1LF.
+
+**Two finish lines.** Diesel cabin heat / diesel hot water can pass before HOLD 9. Complete system (Isotemp AC) needs HOLD 9. After a low-elevation diesel first fire, only Q-022 and Q-009 may still wait; land the altitude kit at HOLD 4.
+
+**Where to read.** Part one: [System Design](#system-design) → [Numbers](#the-numbers-that-matter) → [User’s Guide](#users-guide) → [Status](#current-status-report) → [Builder](#builders-guide). Part two: this appendix, starting at the [Technical appendix](#technical-appendix) map.
+
 ## Vehicle and heater
 
 | | |

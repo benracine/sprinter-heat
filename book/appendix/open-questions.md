@@ -10,12 +10,19 @@ Answer what is still open. Skip the rest. Manuals win on how; these answers only
 - Paneltronics **WATER HEATER** — empty; reserved for Isotemp 750 W.
 - Master switch — in the garage; mount next to EasyStart at HOLD 4.
 
+**May wait after a low-elevation diesel first fire (only these):**
+
+- [Q-022](#q-022) — SC1600B auto call (use EasyStart until closed)
+- [Q-009](#q-009) / [HOLD 9](#hold-9) — Isotemp AC path (required for complete system acceptance)
+
+The altitude kit is **not** on that wait list.
+
 **Still useful:**
 
 1. **Isotemp** — Exact under-sofa bay (left/right)? Any hose path you already hate?
 2. **WFT** — Exact rear-bench spot so it stays the highest glycol point?
 3. **SC1600 fans** — Own a 12 V relay already, or book says “buy one”?
-4. **Cabin fans** — Both Noctua NF-F12, or keep the mixed pair on the REAL core?
+4. **Cabin fans** — Both Noctua NF-F12, or keep the mixed pair on the Sure Marine cabin heater?
 5. **Shore / inverter** — GFCI or ELCI already upstream of Paneltronics?
 6. **Mountains** — First high camp roughly when? (altitude kit timing only)
 7. **Hot water** — Mostly sinks, or long showers? (mixer wording only)
@@ -26,7 +33,7 @@ Answer what is still open. Skip the rest. Manuals win on how; these answers only
 |---|---|---|---|---|---|
 | <span id="q-001">Q-001</span> | What heater is actually on this vehicle? | Heat flow, min coolant flow, voltage limits, wiring, and fault codes differ. | SRC-023; nameplate photo | No | **Resolved 2026-09-19 (DEC-000):** Eberspächer Hydronic D5S diesel heater, order no. **25 2526 05 00 00** (invoice SKU 252526050000), with Installation Kit for D4S/D5S and EasyStart Timer. Nameplate photo reads Hydronic II / D5S / 25 2526 / 5.2 kW / 12 V diesel / max 2.5 bar. Use **SRC-009** only. |
 | <span id="q-002">Q-002</span> | Independent living-space hydronic loop or splice into engine coolant? | Architecture, BOM, and combination-valve use all change. | Owner | No | **Resolved 2026-09-19 (DEC-009):** Independent living-space glycol loop only. **No engine connection.** |
-| <span id="q-003">Q-003</span> | Domestic hot water path | DHW plumbing, mixing valve, PRV | Owner | No | **Resolved 2026-09-19 (DEC-003 / DEC-008 / SRC-024 / SRC-026):** Duda B3-12DW-20 plate + AM100-1LF. Isotemp is buffer only (DEC-007). |
+| <span id="q-003">Q-003</span> | Domestic hot water path | DHW plumbing, mixing valve, PRV | Owner | No | **Resolved 2026-09-19 (DEC-003 / DEC-008 / SRC-024 / SRC-026):** Duda B3-12DW-20 plate + AM100-1LF. Isotemp is static glycol mass only (DEC-007). |
 | <span id="q-004">Q-004</span> | Cabin control: EasyStart Timer only, Heatmiser, or both? | Harness, relays, and thermostat location. | Owner / parts on hand | Partial | **Resolved 2026-09-19 (DEC-002):** EasyStart Timer only (as primary). SC1600 is optional auto call once [Q-022](#q-022) closes. |
 | <span id="q-005">Q-005</span> | Vehicle platform and year? | OEM sheets apply only to those factory layouts. | Owner | Partial | **Resolved 2026-09-19:** 2017 Mercedes Sprinter 4x4, 170 wheelbase. |
 | <span id="q-007">Q-007</span> | Confirm 6-port combination valve part stamp. | SRC-008 is a dealer listing. | Physical part | No | **N/A (DEC-009):** no engine splice; combination valve not in this build. |

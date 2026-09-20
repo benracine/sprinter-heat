@@ -27,13 +27,13 @@ Identify candidate hydronic architectures and which sources apply to each. Heate
 
 **Locked now:**
 
-Espar / Hydronic D5S diesel heater internal pump → Hydronic D5S diesel heater (EasyStart Timer + Altitude kit 22 1000 33 22 00) → Sure Marine cabin heater → **Duda B3-12DW-20 plate heat exchanger (glycol side)** → **coil in the Isotemp Slim Square 4.2 gal heat battery (buffer)** → WFT 5 L expansion/header tank on the return high point. No auxiliary glycol pump. The Isotemp 750 W / 115 VAC element is a separate Paneltronics AC-panel load; it does not create a second circulating loop.
+Hydronic D5S diesel heater circulating pump → Hydronic D5S diesel heater (EasyStart Timer + Altitude kit 22 1000 33 22 00) → Sure Marine cabin heater → **Duda B3-12DW-20 plate heat exchanger (glycol side)** → **coil in the Isotemp Slim Square 4.2 gal heat battery** → return; WFT 5 L expansion/header tank on the return high point. No auxiliary glycol pump. The Isotemp 750 W / 115 VAC element is a separate Paneltronics AC-panel load; it does not create a second circulating loop. During control pause the burner is off and the circulating pump keeps running ([SRC-009](#src-009); [The Numbers](#the-numbers-that-matter)).
 
 | Goal from SRC-004 | How this build meets it |
 |---|---|
 | Diesel energy in | Hydronic D5S diesel heater underbody |
 | Electric energy in | Paneltronics AC panel → Isotemp 750 W / 115 VAC element; exact protection/control verification remains open |
-| Space heat out | Sure Marine cabin heater (Sure Marine cabin heater) |
+| Space heat out | Sure Marine cabin heater |
 | DHW out | Duda B3-12DW-20 plate heat exchanger + AM100 mixer |
 | Thermal mass / less cycling | Isotemp Slim Square 4.2 gal heat battery static glycol chamber (DEC-007), not Bosch ~8.5 gal claim |
 | No engine splice | Locked DEC-009 (blog had already deferred engine) |

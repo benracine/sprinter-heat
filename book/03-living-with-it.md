@@ -2,7 +2,9 @@
 
 **Stage 2 — Use.** Read this after [System Design](#system-design) and [The Numbers](#the-numbers-that-matter), and before [Current Status](#current-status-report) and the [Builder’s Guide](#builders-guide). After [Acceptance](#acceptance), use this chapter as the day-to-day manual. Until Acceptance, treat the tables below as the operating target—not as permission to light the heater.
 
-Jump: [System Design](#system-design) · [The Numbers](#the-numbers-that-matter) · [Current Status](#current-status-report) · [Builder’s Guide](#builders-guide) · [Isotemp value study](#isotemp-value-study)
+There are two finish lines. **Diesel cabin heat and diesel hot water** at the Duda can pass before [HOLD 9](#hold-9). **Complete system** (Isotemp AC included) needs HOLD 9. After that, this chapter is the living manual; keep-or-sell numbers stay in the [Isotemp value study](#isotemp-value-study).
+
+Jump: [System Design](#system-design) · [The Numbers](#the-numbers-that-matter) · [Current Status](#current-status-report) · [Builder’s Guide](#builders-guide) · [Acceptance](#acceptance) · [Isotemp value study](#isotemp-value-study)
 
 ## Quick start (after Acceptance)
 
@@ -19,7 +21,18 @@ Jump: [System Design](#system-design) · [The Numbers](#the-numbers-that-matter)
 
 Until [Q-022](#q-022) closes, always start heat from the EasyStart Timer, not from the SC1600B.
 
-A heat call wakes the Hydronic D5S and starts its **pump**. The **burner** fires only if coolant is cool enough. Cool cabin air for the first minute or two is normal.
+A heat call wakes the Hydronic D5S and starts its **pump**. The **burner** fires only if coolant is cool enough. Cool cabin air for the first minute or two is normal. When the loop is warm enough, the heater may pause the flame near **85°C** and restart near **75°C**; the pump usually keeps circulating during that pause ([The Numbers](#the-numbers-that-matter)). That is when leftover heat can move into or out of the Isotemp chamber.
+
+## A normal heat day (after Acceptance)
+
+| Moment | What usually happens |
+|---|---|
+| Park and leave | Master **Off**. **WATER HEATER** off unless you chose a deliberate shore/solar chamber top-off |
+| Cold morning, want cabin heat | Master **On** → EasyStart start → fan dial → wait a few minutes for warm air |
+| Mild night, Low oversized | Burner may pause and restart; chamber softens some of those short cycles |
+| Shower | EasyStart running; draw only through AM100-1LF; expect the diesel to work |
+| Shore day, dishes later | Charge chamber on **WATER HEATER**, then short EasyStart so the **pump** moves heat to the Duda ([AC chamber and dishes](#ac-chamber-and-dishes)) |
+| High camp | Altitude kit already landed at HOLD 4; do not overnight above ~5,000 ft without it |
 
 ## Hard rules
 

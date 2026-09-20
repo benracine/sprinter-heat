@@ -21,7 +21,7 @@ Jump: [System Design](#system-design) · [User’s Guide](#users-guide) · [Buil
 :::
 
 ::: {.caution}
-**Unattended Isotemp AC.** Paneltronics **WATER HEATER** is not cut by the master switch. Do not leave the inverter and **WATER HEATER** on for long unattended periods unless you intend a deliberate chamber top-off on shore or abundant solar, the chamber is full, and the GFCI path is verified ([HOLD 9](#hold-9)). → [HAZ-006](#haz-006) · [User’s Guide — AC chamber](#ac-chamber-and-dishes)
+**Unattended Isotemp AC.** Paneltronics **WATER HEATER** is not cut by the master switch. Do not leave the inverter and **WATER HEATER** on for long unattended periods unless you intend a deliberate chamber top-off on shore or abundant solar, the chamber is full, and the GFCI path is verified ([HOLD 9](#hold-9)). → [HAZ-006](#haz-006) · [HAZ-012](#haz-012) · [User’s Guide — AC chamber](#ac-chamber-and-dishes)
 :::
 
 ::: {.caution}

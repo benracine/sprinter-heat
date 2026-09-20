@@ -291,7 +291,7 @@ AM100-1LF thermostatic mixing valve already on the hot-water outlet (top). Cold 
 
 ### Sure Marine cabin heater (already on the van)
 
-REAL core, SN **16401**. Label: **IN — bottom fitting · OUT — top fitting**. Fan power leads are taped, not finished. Final cosmetic spot may still move — plumbing rules below do not.
+REAL unit, SN **16401**. Label: **IN — bottom fitting · OUT — top fitting**. Fan power leads are taped, not finished. Final cosmetic spot may still move — plumbing rules below do not.
 
 1. Confirm it sits **level**. An angled mount traps air away from the bleeder.
 2. Glycol **bottom in, top out** (matches the Duda orientation). Keep that orientation if you reverse the cabin heater for fit ([SRC-032](#src-032)).

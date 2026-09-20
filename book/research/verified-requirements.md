@@ -14,7 +14,7 @@ Heater identity is locked (DEC-000): Hydronic D5S diesel heater, **25 2526 05 00
 | REQ-008 | Exhaust open-air, not into interior/intake; slope + ~Ø 5 mm drain; no closed-garage run | Exhaust | SRC-009 p. 24–25; HAZ-002 | OPEN (as-built) | Routing + CO check |
 | REQ-009 | Exhaust Ø 24 mm; run min ~200 mm / max ~2 m | Exhaust | SRC-009 p. 24–25 | OPEN | Measure installed length |
 | REQ-010 | Combustion air ≤25 °C area, not cabin; hose Ø 20 mm, max ~760 mm; clean cut | Combustion air | SRC-009 p. 25 | OPEN | Routing inspection |
-| REQ-011 | Sustained heat above ~1500 m needs kit **22 1000 33 22 00** + EasyStart Timer; H-Kit on heater | Controls | SRC-009 p. 32; SRC-002; DEC-006 | OPEN (kit in garage) | Find box; wire (Q-015) |
+| REQ-011 | Sustained heat above ~1500 m needs kit **22 1000 33 22 00** + EasyStart Timer; H-Kit on heater. Prefer install at HOLD 4 while harness open | Controls | SRC-009 p. 32; SRC-002; DEC-006; Q-015 | OPEN (kit in garage) | Land at HOLD 4; required before high camps |
 | REQ-012 | 12 V window 10.5–16 V | Electrical | SRC-009 p. 13 | VERIFIED (spec) | Measure at heater |
 | REQ-013 | **Independent living-space loop only — no engine connection** | Architecture | DEC-009 | VERIFIED (decision) | No engine hoses cut |
 | REQ-014 | Isotemp Slim Square 4.2 gal = circulating glycol in coil, **static** glycol in chamber; not DHW; Bosch gone | Buffer | SRC-021; SRC-022; DEC-001; DEC-007 | VERIFIED (role) | P/N photo; chamber not teed into loop |
@@ -26,10 +26,10 @@ Heater identity is locked (DEC-000): Hydronic D5S diesel heater, **25 2526 05 00
 | REQ-020 | Glycol flow path: Hydronic D5S diesel heater's own pump → Hydronic D5S diesel heater → Sure Marine cabin heater → Duda B3-12DW-20 plate heat exchanger → coil in the Isotemp Slim Square 4.2 gal heat battery → return; WFT tank tees at return high point; no summer bypass | Architecture | DEC-010 | VERIFIED (decision) | Hose routing inspection |
 | REQ-021 | Master Off/On is intended to gate EasyStart Timer + SC1600B + Sure Marine cabin heater power; SC1600B is intended to call heat/Sure Marine cabin heater; dial is speed only | Controls | DEC-012; DEC-014 | PARTIAL (design intent; Q-022 interface and switch verification open) | Wire per DEC-012/014; Q-021; Q-022 |
 | REQ-022 | No separate solar/shore auxiliary glycol pump; hot water through the Duda loop remains diesel-loop dependent; Isotemp element is a separate Paneltronics AC load | Coolant / electrical | DEC-004; DEC-013 | VERIFIED (architecture); AC details OPEN | Leave CM10P7 out; resolve Q-009 / Q-016 |
-| REQ-023 | Staging ~65 / 80 / 85 / 75 °C (Power→High→Low→pause→restart); overheat restart <70 °C; ≤2 off/on into fault | Controls | SRC-009 p. 31–32; Q-020 resolved | VERIFIED (spec) | Observe first fire / diagnostics |
+| REQ-023 | Staging ~65 / 80 / 85 / 75 °C (Power→High→Low→pause→restart); **pump continues in pause**; overheat restart <70 °C; ≤2 off/on into fault | Controls | SRC-009 p. 31–32; Q-020 resolved | VERIFIED (spec) | Observe first fire / diagnostics |
 | REQ-024 | WFT 5 L expansion/header tank at high point (planned rear bench); not yet mounted | Coolant / layout | DEC-005 | VERIFIED (part); mount OPEN | Mount top = highest loop point |
 | REQ-025 | Fuel takeoff uses factory aux connection; still inspect line before fire | Fuel | Q-010; HAZ-008 | PARTIAL | Photo routing/clamps |
 
 ## Still blocking first fire (summary)
 
-Fuel-line inspection (REQ-007 / REQ-025), exhaust confirm (REQ-008), fill/bleed (REQ-002–005, REQ-017), EasyStart Timer landing (REQ-018). Altitude kit 22 1000 33 22 00 (REQ-011) blocks high camps, not a low-elevation first fire. Paneltronics element circuit (REQ-015 / REQ-019 / REQ-022) remains open until Q-009 / Q-016 are resolved.
+Fuel-line inspection (REQ-007 / REQ-025), exhaust confirm (REQ-008), fill/bleed (REQ-002–005, REQ-017), EasyStart Timer landing (REQ-018). Altitude kit 22 1000 33 22 00 (REQ-011) blocks high camps, not a low-elevation first fire—but land it at HOLD 4 while the harness is open. Paneltronics element circuit (REQ-015 / REQ-019 / REQ-022) is required for **complete** system acceptance ([HOLD 9](#hold-9)), not for diesel-only cabin heat / diesel hot water at the Duda.
