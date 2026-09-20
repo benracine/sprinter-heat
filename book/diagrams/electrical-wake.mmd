@@ -1,30 +1,39 @@
 %%{init: {'theme':'base','themeVariables': {'background':'#fafaf9','primaryColor':'#f5f5f4','primaryTextColor':'#1c1917','primaryBorderColor':'#57534e','lineColor':'#44403c','secondaryColor':'#e7e5e4','tertiaryColor':'#eeeeec','fontFamily':'Avenir Next, Avenir, Helvetica Neue, sans-serif','fontSize':'28px','textColor':'#1c1917','mainBkg':'#f5f5f4','clusterBkg':'#eeeeec','clusterBorder':'#78716c','edgeLabelBackground':'#fafaf9'}}}%%
 flowchart TB
-  F5["Branch A · 5 A fuse<br/>(after master)"]
-  ES["EasyStart Timer<br/>pin 1 RD + · pin 3 BN −"]
-  P6["EasyStart pin 6<br/>S+ yellow 0.35 mm²"]
-  ALT["Altitude kit 22 1000 33 22 00<br/>SERIES on wake path"]
-  S17["Heater S1 chamber 7<br/>Switch-on + yellow"]
+  F5["Branch A · 5 A<br/>after master"]
+  ES["EasyStart Timer<br/>+ pin 1 RD · − pin 3 BN"]
+  HARN["Control ↔ heater harness<br/>multi-wire (RD BN YE BUWH …)"]
+  ALT["Altitude adapter<br/>22 1000 33 22 00<br/>IN LINE on that harness"]
+  S17["S+ lands S1 ch 7 YE<br/>(switch-on +)"]
   ECU["Heater control box"]
 
-  F5 --> ES --> P6
-  P6 -->|"mountains: SERIES"| ALT
-  ALT --> S17
-  P6 -->|"sea level / kit deferred<br/>straight SERIES"| S17
+  F5 --> ES
+  ES -->|"SRC-003 p. 17"| HARN
+  HARN -->|"mountains: kit IN LINE<br/>SRC-002"| ALT
+  ALT -->|"includes S+ YE path"| S17
+  HARN -->|"sea level / deferred:<br/>harness direct"| S17
   S17 --> ECU
 
-  ECU -->|"after wake"| PUMP["Water pump<br/>S1 ch 8 VI+ / 9 BN−"]
-  ECU -->|"after wake"| MP["Metering pump<br/>S1 ch 4 GN+ / 10 BN/GN−"]
-  ECU -->|"if coolant cool"| FIRE["Burner · glow · sensors<br/>(inside heater)"]
+  subgraph after["After a valid wake — ECU drives these"]
+    direction LR
+    PUMP["Water pump<br/>S1 8–9"]
+    MP["Metering pump<br/>S1 4–10"]
+    FIRE["Burner / glow<br/>(inside)"]
+  end
+
+  ECU --> PUMP
+  ECU --> MP
+  ECU --> FIRE
 
   subgraph topo["Topology"]
     direction TB
-    T1["Wake path = one SERIES string:<br/>5 A → EasyStart → S+ → (altitude) → S1-7 → ECU"]
-    T2["Pump + metering pump = PARALLEL loads<br/>driven by the ECU after a valid wake"]
-    T3["No relay on this path for EasyStart-only heat"]
+    T1["EasyStart power = SERIES from Branch A"]
+    T2["Altitude kit = IN LINE adapter on the<br/>control↔heater harness — not a single-wire cut"]
+    T3["S+ is one wire in that harness (YE → S1-7)"]
+    T4["Pump / metering / burner = PARALLEL loads<br/>switched by the ECU — no extra relay here"]
   end
 
   classDef solid fill:#f5f5f4,stroke:#57534e,stroke-width:1px,color:#1c1917;
   classDef open fill:#eeeeec,stroke:#78716c,stroke-width:2px,stroke-dasharray:4 3,color:#1c1917;
-  class F5,ES,P6,S17,ECU,PUMP,MP,FIRE solid;
+  class F5,ES,HARN,S17,ECU,PUMP,MP,FIRE solid;
   class ALT open;

@@ -306,21 +306,20 @@ REAL core, SN **16401**. Label: **IN — bottom fitting · OUT — top fitting**
 
 Pin colours, mm², and fuse values live in [Controls](#controls). Land each connector from [SRC-009](#src-009) / [SRC-003](#src-003) / [SRC-002](#src-002) on the bench — kit pins need the Eberspächer-style crimper.
 
-### Battery feed, main fuse, master, three branches
+### Battery feed and master {#hold-4-power}
 
 1. Disconnect house-battery positive before cutting heater power leads.
 2. Heater battery **+** (red) and **−** (brown) at **4 mm²** if plus+minus ≤ **6 m** total ([SRC-009](#src-009) p. 33). Longer → upsize so drop ≤ 0.5 V.
-3. Land **main fuse 20 A** (kit item 2.7) on that positive.
-4. After the main fuse, mount the **master Off/On** (garage → next to EasyStart). Everything below hangs off the switched side.
-5. Fuse three branches **after** the master:
+3. Land **main fuse 20 A** (kit item 2.7) on that positive → heater **S1 chambers 1–2**. This feed does **not** go through the master.
+4. From the battery (switched + only), land the **master Off/On** (garage → next to EasyStart). Fuse three **parallel** branches after the master:
 
 | Branch | Fuse | Lands on |
 |---|---|---|
 | A — EasyStart / wake | **5 A** activation (item 2.7.1) — insert **last** | EasyStart pin 1 red (Terminal 30) |
-| B — SC1600B | Small (size OPEN) | Thermostat power / R–W signal path |
+| B — SC1600B | Small (size OPEN) | Thermostat R–W signal path |
 | C — Cabin fans | Sized for two Noctua NF-F12 (OPEN) | Fan dial → both fans’ power leads |
 
-Meter-prove master **Off** kills A, B, and C. **On** restores them without a hot wire or surprise draw. Emergency: EasyStart off → master Off → pull fuse → battery. ≤ two off/on cycles into a fault.
+Meter-prove master **Off** kills A, B, and C. Heater S1 1–2 may still be hot through the 20 A — that is expected; without EasyStart there is no S+. Emergency: EasyStart off → master Off → pull fuse → battery. ≤ two off/on cycles into a fault.
 
 ### EasyStart Timer and heater S1 harness
 
@@ -328,7 +327,7 @@ EasyStart Timer is **already mounted** on the wood panel (with LinkPRO / PROwatt
 
 1. Mate EasyStart **−XS10 / −XB10** per the [10-pin table](#controls) ([SRC-003](#src-003) pp. 8–9, circuit p. 17). Diagnosis pin 4 (blue/white) cabin-reachable.
 2. Land heater connector **S1** per the [S1 table](#controls) ([SRC-009](#src-009) p. 33): water pump chambers **8** violet + / **9** brown −; metering pump **4** / **10**.
-3. **S+ wake:** EasyStart pin **6** yellow → (optional altitude kit) → S1 chamber **7** yellow.
+3. **S+ wake:** EasyStart pin **6** yellow through the control↔heater harness (altitude kit **in line** on that harness if installed — [SRC-002](#src-002)) into S1 chamber **7** yellow.
 4. Insulate: S1 chamber **3** (vehicle fan), blower-relay leads **B / C / 22 / 23**, unused EasyStart pins. Seal empty chambers with filler plugs.
 5. Shorten long kit leads carefully. Battery in heater window (~10.5–16 V).
 

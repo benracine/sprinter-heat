@@ -82,13 +82,18 @@ How the wires actually connect: what is **in series**, what is **in parallel**, 
 | **Parallel** | Same supply feeds more than one load. One can run while another is idle (branches A/B/C after the master; two Noctuas after the dial). |
 | **Relay** | Electromagnet switch. A small **coil** circuit closes heavy **contacts** in another circuit. This build needs **one** cabin-fan relay for SC1600 auto — not the Espar vehicle-blower relay in the kit. |
 
-### 1 · Power feed — series into the master, then three parallels
+### 1 · Power feed — heater battery separate from master branches
 
 ![Power feed](diagrams/electrical-power.svg)
 
-**Series string:** house battery → **4 mm²** +/− (≤6 m total) → **20 A** main fuse → **master Off/On**.
+**Two strings from the house battery (not one):**
 
-**Parallel after the master** (each has its own fuse):
+| String | Path | Role |
+|---|---|---|
+| Heater battery | **4 mm²** +/− (≤6 m) → **20 A** main fuse → heater **S1 ch 1–2** | Keeps the ECU alive. Does **not** pass through the master ([DEC-012](#dec-012) only names EasyStart / SC1600 / fans). |
+| Master lockout | Battery → **master Off/On** → three **parallel** branches | Off kills calls and fans. ECU may still have battery, but with EasyStart dead there is no S+ → heater stays idle. |
+
+**Parallel after the master** (switched +; grounds common):
 
 | Branch | Fuse | Feeds |
 |---|---|---|
@@ -96,33 +101,30 @@ How the wires actually connect: what is **in series**, what is **in parallel**, 
 | **B** | Small (amp OPEN) | SC1600B signal side |
 | **C** | Fan fuse (amp OPEN) | Speed dial → both Noctuas |
 
-Master **Off** opens the series link and kills A, B, and C together. Master **On** only makes power available — it does not start heat by itself.
+Master **On** only makes those three available — it does not start heat by itself.
 
 Emergency: EasyStart off → master Off → pull fuse → battery. ≤ two off/on cycles into a fault ([SRC-009](#src-009) p. 32).
 
-### 2 · Wake path — one series string (no relay for EasyStart heat)
+### 2 · Wake path — EasyStart to S+ (no relay for timer heat)
 
 ![Wake path](diagrams/electrical-wake.svg)
 
-**Series (heat call today):** Branch A 5 A → EasyStart (pin 1 RD +, pin 3 BN −) → EasyStart **pin 6 S+ yellow** → *(optional altitude kit in series)* → heater **S1 chamber 7 yellow** → control box.
+**Today’s heat call (series on Branch A):** 5 A → EasyStart (pin 1 RD +, pin 3 BN −) → control↔heater harness → **S+ yellow into S1 chamber 7** → control box.
 
-- Altitude kit **22 1000 33 22 00** is **in series** on that wake string ([SRC-002](#src-002)). Without it (sea level / deferred): S+ goes straight to S1-7.
-- There is **no relay** between EasyStart and the heater for a normal timer/manual call. EasyStart raises S+; the control box does the rest.
+- Altitude kit **22 1000 33 22 00** is an **in-line multi-wire adapter** on that harness ([SRC-002](#src-002)) — not a single cut of the yellow wire. Land it from the Hydronic diagram (direct or via **S+ / YE**, pp. 8–10). Without the kit: harness runs straight.
+- There is **no relay** between EasyStart and the heater for a normal timer/manual call.
 - Optional factory room sensor uses EasyStart pins 9–10. The SC1600B is **not** that sensor — do not splice it there until [Q-022](#q-022) names an approved input.
 
-### 3 · Heater loads — parallel from the control box
+### 3 · Heater loads — two inputs, parallel outputs
 
 ![Heater loads](diagrams/electrical-heater.svg)
 
-Once S+ wakes the box:
-
-| Load | S1 chambers | Topology |
+| Into ECU | Path | |
 |---|---|---|
-| Water pump (heater’s own) | 8 violet + / 9 brown − | Parallel load from ECU |
-| Metering pump | 4 green + / 10 brown/green − | Parallel load from ECU |
-| Burner / glow / sensors | Inside heater | ECU switches them |
+| Power | S1 **1–2** (2.5 mm² red / brown) from the 20 A feed | Always fused when the main fuse is in |
+| Wake | S1 **7** yellow (S+) from EasyStart | Separate input — **not** series with the battery feed |
 
-Battery into the heater is still the series feed on S1 **1–2** (2.5 mm² red / brown).
+Once awake, the ECU switches **parallel** outputs: water pump (8–9), metering pump (4–10), burner/glow/sensors inside.
 
 **Insulate — not in circuit:** S1 chamber **3** (vehicle fan), kit blower relay **B / C / 22 / 23**, blower fuse **25 A**, unused EasyStart pins. Seal empty chambers with filler plugs.
 
@@ -132,18 +134,18 @@ Battery into the heater is still the series feed on S1 **1–2** (2.5 mm² red /
 
 **Works today (no SC1600 auto):**
 
-- Branch C fuse → speed dial (**series** on the shared +) → two Noctua NF-F12 (**parallel** after the dial).
-- PWM and tach wires unused — power leads only ([DEC-015](#dec-015)).
-- Dial is Low/Med/High **without** hard Off ([DEC-018](#dec-018)). Heat on/off is master + EasyStart.
+- Branch C fuse → speed dial (**series** on shared +) → two Noctua NF-F12 (**parallel** after the dial).
+- PWM/tach unused ([DEC-015](#dec-015)). Dial Low/Med/High **without** hard Off ([DEC-018](#dec-018)).
+- With master On, fans follow the dial even if the heater is idle — use the dial (or master Off) to stop them.
 
-**Intended after [Q-022](#q-022) — one relay, two jobs for one contact closure:**
+**Intended after [Q-022](#q-022) — one dry contact, two jobs:**
 
 | Part | Topology | Role |
 |---|---|---|
 | SC1600B **R–W** | Dry contact (≤1 A) | Closes below setpoint ([SRC-033](#src-033)) |
-| Relay **coil** | **Series** with R–W (Branch B) | Low-current signal loop |
-| Relay **contacts** | **Series** in Branch C positive | Carry fan current; open = fans dead even if dial is High |
-| Same R–W closure | Into an **approved** EasyStart/Hydronic wake input | Calls heater — pin still OPEN under Q-022 |
+| Relay **coil** | **Series** with R–W on Branch B | Low-current signal loop to ground |
+| Relay **contacts** | **Series** in Branch C positive (before the dial) | Fans dead when contact open, even if dial is High |
+| Same closure | **Parallel** from the contact into an approved wake input | Calls heater — pin still OPEN under Q-022 |
 
 Until that landing is documented: start heat from the **EasyStart Timer** only. Do **not** use the Espar vehicle-blower relay from the kit for cabin fans.
 

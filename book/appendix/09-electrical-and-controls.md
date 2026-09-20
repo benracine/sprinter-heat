@@ -71,7 +71,7 @@ Insert the 5 A control fuse only after all work is complete (SRC-003). Optional 
 
 ### Master switch (DEC-012)
 
-One Off/On after the 20 A main fuse. Representative face: Sure Marine **W005-378K** System Heat / Off. Switched feed splits to EasyStart (5 A), SC1600B, and cabin-fan branch. Meter three Off cuts.
+One Off/On that switches **+** only to EasyStart, SC1600B, and cabin fans (three parallel fused branches). Representative face: Sure Marine **W005-378K** System Heat / Off. The heater’s **20 A** battery feed to S1 1–2 stays on its own string — master Off removes S+ capability by killing EasyStart, not by opening S1 1–2. Meter three Off cuts on A/B/C.
 
 ### SC1600B / fans (DEC-014; Q-022 open)
 

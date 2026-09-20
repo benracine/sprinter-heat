@@ -1,6 +1,6 @@
 %%{init: {'theme':'base','themeVariables': {'background':'#fafaf9','primaryColor':'#f5f5f4','primaryTextColor':'#1c1917','primaryBorderColor':'#57534e','lineColor':'#44403c','secondaryColor':'#e7e5e4','tertiaryColor':'#eeeeec','fontFamily':'Avenir Next, Avenir, Helvetica Neue, sans-serif','fontSize':'28px','textColor':'#1c1917','mainBkg':'#f5f5f4','clusterBkg':'#eeeeec','clusterBorder':'#78716c','edgeLabelBackground':'#fafaf9'}}}%%
 flowchart TB
-  subgraph now["Works today — EasyStart heat, fans manual"]
+  subgraph now["Today — master On · fans follow the dial"]
     direction TB
     MC["Master On"]
     FC["Branch C fuse"]
@@ -10,32 +10,39 @@ flowchart TB
     MC --> FC --> DIAL
     DIAL -->|"PARALLEL"| N1
     DIAL -->|"PARALLEL"| N2
+    NOTE["Fans can spin with master On<br/>even if heater is idle"]
   end
 
-  subgraph later["After Q-022 — intended auto"]
+  subgraph later["After Q-022 — one relay, two jobs"]
     direction TB
     MB["Master On"]
     FB["Branch B fuse"]
-    TS["SC1600B<br/>R–W dry contact"]
-    COIL["Relay COIL<br/>SERIES with R–W"]
-    CONT["Relay CONTACTS<br/>SERIES in Branch C +"]
-    WAKE["Approved heater wake<br/>SERIES into S+ path<br/>pin TBD — Q-022"]
+    R["SC1600B R"]
+    W["SC1600B W"]
+    COIL["Relay COIL"]
+    GND["Ground"]
+    FC2["Branch C fuse"]
+    CONT["Relay CONTACTS<br/>SERIES in fan +"]
+    DIAL2["Speed dial"]
+    NP["Noctua #1 ∥ #2"]
+    WAKE["Approved wake input<br/>pin TBD — Q-022"]
 
-    MB --> FB --> TS
-    TS -->|"Heat: contact closes"| COIL
-    TS -.->|"same closure"| WAKE
-    CONT -->|"opens/closes fan power"| DIAL2["→ dial → parallel fans"]
+    MB --> FB --> R
+    R -->|"Heat: contact closes"| W
+    W --> COIL --> GND
+    W -.->|"same closure<br/>(parallel from contact)"| WAKE
+    MB --> FC2 --> CONT --> DIAL2 --> NP
   end
 
-  subgraph topo["Where the relay sits"]
+  subgraph topo["Relay placement"]
     direction TB
-    R1["Relay coil = SERIES with SC1600 R–W<br/>(low current signal loop)"]
-    R2["Relay contacts = SERIES in Branch C positive<br/>(carry fan current)"]
-    R3["Two Noctuas = PARALLEL after the dial"]
-    R4["Vehicle blower relay in the Espar kit = NOT used"]
+    R1["Coil loop SERIES: + → fuse → R–W → coil → ground"]
+    R2["Fan power SERIES: + → fuse → contacts → dial → fans"]
+    R3["Two Noctuas PARALLEL after the dial"]
+    R4["Espar vehicle-blower relay = NOT used"]
   end
 
   classDef solid fill:#f5f5f4,stroke:#57534e,stroke-width:1px,color:#1c1917;
   classDef open fill:#eeeeec,stroke:#78716c,stroke-width:2px,stroke-dasharray:4 3,color:#1c1917;
-  class MC,FC,DIAL,N1,N2 solid;
-  class MB,FB,TS,COIL,CONT,WAKE,DIAL2 open;
+  class MC,FC,DIAL,N1,N2,NOTE solid;
+  class MB,FB,R,W,COIL,GND,FC2,CONT,DIAL2,NP,WAKE open;
