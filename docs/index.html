@@ -916,6 +916,8 @@ architecture</a></li>
 (architecture only)</a></li>
 <li><a href="#controls" id="toc-controls">Controls</a>
 <ul>
+<li><a href="#house-electrical-context-for-hydronic" id="toc-house-electrical-context-for-hydronic">House electrical (context
+for hydronic)</a></li>
 <li><a href="#the-heaters-own-power-always-fused" id="toc-the-heaters-own-power-always-fused">The heater’s own power
 (always fused)</a></li>
 <li><a href="#the-master-switch-cabin-lockout" id="toc-the-master-switch-cabin-lockout">The master switch (cabin
@@ -1264,6 +1266,8 @@ p. 33)</a></li>
 <li><a href="#sc1600b-fans-q-022-open" id="toc-sc1600b-fans-q-022-open">SC1600B / fans (Q-022 open)</a></li>
 <li><a href="#altitude-kit-22-1000-33-22-00-1" id="toc-altitude-kit-22-1000-33-22-00-1">Altitude kit 22 1000 33 22
 00</a></li>
+<li><a href="#house-electrical-context-src-040-src-041" id="toc-house-electrical-context-src-040-src-041">House electrical
+context (SRC-040 / SRC-041)</a></li>
 <li><a href="#isotemp-element-dec-004-dec-020" id="toc-isotemp-element-dec-004-dec-020">Isotemp element (DEC-004 /
 DEC-020)</a></li>
 <li><a href="#verification-8" id="toc-verification-8">Verification</a></li>
@@ -1397,6 +1401,38 @@ safe catch path</a></li>
 <li><a href="#open-questions" id="toc-open-questions">Open Questions</a>
 <ul>
 <li><a href="#questions-for-you-in-order" id="toc-questions-for-you-in-order">Questions for you, in order</a></li>
+</ul></li>
+<li><a href="#house-electrical-understanding" id="toc-house-electrical-understanding">Working understanding</a>
+<ul>
+<li><a href="#input-from-ben" id="toc-input-from-ben">Input from
+Ben</a></li>
+<li><a href="#prowatt-sw-gfci" id="toc-prowatt-sw-gfci">PROwatt SW
+GFCI</a></li>
+<li><a href="#isotemp-ac-wiring-keep-it-simple" id="toc-isotemp-ac-wiring-keep-it-simple">Isotemp AC wiring (keep it
+simple)</a></li>
+<li><a href="#layout-constraints-owner" id="toc-layout-constraints-owner">Layout constraints (owner)</a></li>
+<li><a href="#rip-out-the-bed" id="toc-rip-out-the-bed">Rip out the
+bed?</a></li>
+<li><a href="#materials-comparison-sofa-bed-structure" id="toc-materials-comparison-sofa-bed-structure">Materials comparison
+(sofa / bed structure)</a></li>
+<li><a href="#frame-mechanisms-removable-middle-day-sofa" id="toc-frame-mechanisms-removable-middle-day-sofa">Frame mechanisms
+(removable middle → day sofa)</a>
+<ul>
+<li><a href="#what-tyrah-needs" id="toc-what-tyrah-needs">What Tyrah
+needs</a></li>
+<li><a href="#mechanisms-how-the-middle-attaches" id="toc-mechanisms-how-the-middle-attaches">Mechanisms (how the middle
+attaches)</a></li>
+<li><a href="#optimum-construction-for-this-van-recommendation" id="toc-optimum-construction-for-this-van-recommendation">Optimum
+construction for this van (recommendation)</a></li>
+<li><a href="#attach-to-van-floor-and-wall" id="toc-attach-to-van-floor-and-wall">Attach to van (floor and
+wall)</a></li>
+</ul></li>
+<li><a href="#plumbing-to-the-structure-sketch" id="toc-plumbing-to-the-structure-sketch">Plumbing to the structure
+(sketch)</a></li>
+<li><a href="#still-open-short" id="toc-still-open-short">Still open
+(short)</a></li>
+<li><a href="#scratch-notes" id="toc-scratch-notes">Scratch
+notes</a></li>
 </ul></li>
 <li><a href="#verified-requirements" id="toc-verified-requirements">Verified Requirements</a>
 <ul>
@@ -1772,7 +1808,8 @@ paths to outside air; neither enters the cabin. Kit limits are in <a href="#the-
 <figcaption aria-hidden="true">Combustion air and exhaust</figcaption>
 </figure>
 <h2 id="controls">Controls</h2>
-<p>The van has three electrical jobs. Keep the jobs separate.</p>
+<p>The van has three electrical jobs for the hydronic system. Keep the
+jobs separate.</p>
 <ol type="1">
 <li><strong>12 V diesel heat</strong> — the house battery feeds the
 heater and the EasyStart Timer.<br />
@@ -1784,7 +1821,90 @@ the Sure Marine cabin heater.<br />
 Paneltronics only, and stays dead until <a href="#hold-9">HOLD
 9</a>.</li>
 </ol>
-<p>Land every pin from the printed manuals (<a href="#src-009">SRC-009</a> / <a href="#src-003">SRC-003</a>). Wire
+<h3 id="house-electrical-context-for-hydronic">House electrical (context
+for hydronic)</h3>
+<p>This book does not rebuild the whole van electrical system. House
+charging and distribution were designed earlier and are only lightly
+documented. Align on layout and remaining electrical facts in <a href="#working-design-understanding">Working design understanding</a>,
+then promote locked facts here.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Source</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#src-040">SRC-040</a> — owner “Sprinter Van
+Electrical”</td>
+<td>This van’s intended house layout (solar / shore / alternator /
+inverter / panels)</td>
+</tr>
+<tr>
+<td><a href="#src-041">SRC-041</a> — FarOutRide electrical guide</td>
+<td>Same <em>class</em> of system: charge sources → house battery → 12 V
+loads; inverter and/or shore → 120 V AC</td>
+</tr>
+</tbody>
+</table>
+<p><strong>What is already visible on this van</strong></p>
+<ul>
+<li>Wood panel (with EasyStart): Xantrex <strong>LinkPRO</strong>
+battery monitor and Xantrex <strong>PROwatt SW</strong> inverter
+face.<br />
+</li>
+<li>Paneltronics AC face <strong>72313</strong> / sheet
+<strong>9972313B</strong>: <strong>MAIN 30 A</strong> · <strong>BATTERY
+CHARGER</strong> · <strong>WATER HEATER</strong> (empty, reserved for
+Isotemp) · <strong>OUTLETS</strong> (<a href="#dec-020">DEC-020</a>).</li>
+</ul>
+<p><strong>How heat uses that house system</strong></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Path</th>
+<th>Feeds</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>House battery → heater 20 A fuse</td>
+<td>Hydronic D5S brain + pump</td>
+<td>Always fused; not through the hydronic master switch</td>
+</tr>
+<tr>
+<td>House battery → master → EasyStart / fans / thermostat path</td>
+<td>Heat call and cabin air</td>
+<td>Master Off is the parked lockout for 12 V heat controls</td>
+</tr>
+<tr>
+<td>Shore and/or PROwatt SW → (GFCI/ELCI still OPEN) → Paneltronics MAIN
+→ <strong>WATER HEATER</strong></td>
+<td>Isotemp 750 W element</td>
+<td>~6.5 A; never on the 12 V panel; master Off does
+<strong>not</strong> cut this</td>
+</tr>
+</tbody>
+</table>
+<p>FarOutRide-style systems often keep a <strong>shore battery
+charger</strong> and an <strong>inverter</strong> as separate devices
+(<a href="#src-041">SRC-041</a>). That matches a Paneltronics face with
+both <strong>BATTERY CHARGER</strong> and AC load branches. Exact
+charger amps, battery Ah, solar watts, and whether shore and inverter
+share a transfer path remain <strong>ASSUMPTION</strong> until confirmed
+against <a href="#src-040">SRC-040</a> and the van (<a href="#q-025">Q-025</a>).</p>
+<p>Land every hydronic pin from the printed manuals (<a href="#src-009">SRC-009</a> / <a href="#src-003">SRC-003</a>). Wire
 sizes in this chapter are <strong>AWG</strong>; the manuals print mm²
 for the same conductors. Full pin tables live in <a href="#electrical-and-controls">Electrical and Controls</a>.</p>
 <figure>
@@ -1929,10 +2049,10 @@ heater from that switch, start heat only from the EasyStart Timer.</p>
 </figure>
 <p>The Isotemp element circuit is <strong>not</strong> on the 12 V
 panel.</p>
-<p>Power runs from shore or inverter through an upstream
-<strong>GFCI/ELCI</strong> (still OPEN — <a href="#q-009">Q-009</a>),
-then the Paneltronics main breaker, then the breaker labeled
-<strong>WATER HEATER</strong>, then the Isotemp 750 W element.</p>
+<p>Power runs from shore and/or the PROwatt SW inverter through an
+upstream <strong>GFCI/ELCI</strong> (still OPEN — <a href="#q-009">Q-009</a>), then the Paneltronics main breaker, then the
+breaker labeled <strong>WATER HEATER</strong>, then the Isotemp 750 W
+element. House-electrical intent: <a href="#src-040">SRC-040</a> / <a href="#src-041">SRC-041</a>.</p>
 <p>The element only warms the Isotemp <strong>static</strong> chamber.
 Circulating glycol still goes through the Isotemp <strong>coil</strong>
 whenever the diesel pump runs. Running the element alone will not give
@@ -2310,16 +2430,25 @@ pump.</p>
 <h2 id="ac-chamber-and-dishes">AC chamber and dishes</h2>
 <p>Use this after <a href="#hold-9">HOLD 9</a> (chamber full, GFCI/ELCI
 and Paneltronics path verified).</p>
+<p>The 750 W element is a <strong>house AC</strong> load. It rides the
+same Paneltronics face as <strong>BATTERY CHARGER</strong> and
+<strong>OUTLETS</strong>. Energy to that face comes from shore power
+and/or the PROwatt SW inverter fed by the house battery (and whatever
+solar / alternator charging fills that battery — <a href="#src-040">SRC-040</a> / <a href="#src-041">SRC-041</a>). Master
+<strong>Off</strong> does not cut Isotemp AC.</p>
 <h3 id="charge">Charge</h3>
 <ol type="1">
-<li>Shore or abundant solar ready; inverter on if you are not on
-shore.</li>
+<li>Shore power connected, <strong>or</strong> inverter on with enough
+house-battery / solar headroom for ~750 W plus inverter idle.<br />
+</li>
 <li>Turn Paneltronics <strong>WATER HEATER</strong>
-<strong>on</strong>.</li>
+<strong>on</strong>.<br />
+</li>
 <li>The 750 W element heats the <strong>static chamber</strong> only.
 The working thermostat cuts near <strong>75°C / 167°F</strong>, then
 tops off as the chamber cools. From a cool chamber, plan about
-<strong>40–60 minutes</strong> to reach that band.</li>
+<strong>40–60 minutes</strong> to reach that band.<br />
+</li>
 <li>Taps stay <strong>cold</strong> during the charge. No pump → no heat
 at the Duda.</li>
 </ol>
@@ -2350,9 +2479,8 @@ not finished</td>
 </tr>
 </tbody>
 </table>
-<p>Master <strong>Off</strong> does not cut Isotemp AC. Kill
-<strong>WATER HEATER</strong> (and the inverter if you are done)
-separately.</p>
+<p>Kill <strong>WATER HEATER</strong> (and the inverter if you are done)
+separately from the hydronic master.</p>
 <h3 id="dish-rinse-after-a-charge">Dish rinse after a charge</h3>
 <p>Turn the master <strong>On</strong> and make a short EasyStart start
 so the <strong>pump</strong> runs. Heat moves from the chamber through
@@ -2596,6 +2724,11 @@ fans taped</td>
 4</a></td>
 </tr>
 <tr>
+<td>Xantrex LinkPRO + PROwatt SW</td>
+<td>On wood panel with EasyStart</td>
+<td>House monitor + inverter for Paneltronics AC (<a href="#src-040">SRC-040</a> / <a href="#src-041">SRC-041</a>)</td>
+</tr>
+<tr>
 <td>Paneltronics AC panel</td>
 <td><strong>72313</strong> / <strong>9972313B</strong>: MAIN 30 A ·
 BATTERY CHARGER · <strong>WATER HEATER</strong> (empty, reserved) ·
@@ -2693,10 +2826,10 @@ before HOLD 9</li>
 <li><a href="#q-015">Q-015</a> — altitude kit install and wire (identity
 confirmed); required before high camps</li>
 </ul>
-<p><strong>Owner placement answers</strong></p>
+<p><strong>Owner placement / electrical answers</strong></p>
 <ul>
 <li><a href="#questions-for-you-in-order">Questions for You</a> — bay
-spots, relay, fans, GFCI, mountain timing</li>
+spots, relay, fans, GFCI, house electrical snapshot (<a href="#q-025">Q-025</a>), mountain timing</li>
 </ul>
 <p>→ <a href="#builders-guide">Builder’s Guide</a>.</p>
 <section id="builders-guide" class="install-guide">
@@ -3921,10 +4054,11 @@ shutdown</label></li>
 </ul>
 <hr />
 <h2 id="hold-9">9. First energize of Isotemp AC element (<a href="#hold-9">HOLD 9</a>)</h2>
-<p>Do this only after HOLD 7 (chamber full) and after you have closed <a href="#q-009">Q-009</a> / <a href="#q-016">Q-016</a> far enough to name
-the actual Paneltronics breaker, GFCI/grounding, cable size, and switch.
-A diesel-only first fire may precede <a href="#hold-9">HOLD 9</a>, but
-complete system acceptance requires <a href="#hold-9">HOLD 9</a>.</p>
+<p>Do this only after HOLD 7 (chamber full) and after you have closed <a href="#q-009">Q-009</a> far enough to name the actual Paneltronics
+breaker, GFCI/grounding, cable size, and how shore / PROwatt SW feed
+Paneltronics MAIN (<a href="#src-040">SRC-040</a> / <a href="#src-041">SRC-041</a> / <a href="#q-025">Q-025</a>). A diesel-only
+first fire may precede <a href="#hold-9">HOLD 9</a>, but complete system
+acceptance requires <a href="#hold-9">HOLD 9</a>.</p>
 <ol type="1">
 <li>Confirm the Isotemp chamber is full of the same propylene glycol
 mix; element never runs dry (<a href="#src-022">SRC-022</a>).</li>
@@ -4069,6 +4203,12 @@ part one</h2>
 <td><a href="#coolant-loop">Coolant Loop</a> · <a href="#dec-007">DEC-007</a></td>
 </tr>
 <tr>
+<td>House / sofa working draft</td>
+<td><a href="#working-design-understanding">Working design
+understanding</a></td>
+<td>Promote into <a href="#controls">Controls</a> · HOLD S · <a href="#q-009">Q-009</a></td>
+</tr>
+<tr>
 <td>Owner answers still open</td>
 <td><a href="#questions-for-you-in-order">Questions for You</a></td>
 <td>full <a href="#open-questions">Open Questions</a> table</td>
@@ -4094,6 +4234,10 @@ list—land it at HOLD 4 (<a href="#q-015">Q-015</a> / <a href="#dec-006">DEC-00
 <p>The <a href="#isotemp-value-study">Isotemp value study</a> is the
 keep-or-sell and cycling analysis for the Slim Square. Read it when you
 need the numbers behind the User’s Guide.</p>
+<p>Working drafts that are not yet locked live under
+<code>book/research/</code> (for example <a href="#working-design-understanding">Working design understanding</a>).
+Promote VERIFIED rows into part one and the controlled appendix; do not
+invent a second report.</p>
 <h1 id="spec-and-sources">Spec and sources</h1>
 <p>This section is part of the technical appendix. Use it for the build
 snapshot, architecture, sources, and hold points. It is not the order of
@@ -4136,6 +4280,11 @@ stay OPEN — do not invent pinouts or hose routes.</p>
 Duda → Isotemp coil → return. No engine. No second pump. Isotemp chamber
 = static glycol; factory mixer unused. Drinking water only through the
 Duda + AM100-1LF.</p>
+<p><strong>House electrical (context only).</strong> Hydronic 12 V from
+the house battery; Isotemp 750 W from Paneltronics <strong>WATER
+HEATER</strong>, fed by shore and/or PROwatt SW. Intent: owner
+electrical post (<a href="#src-040">SRC-040</a>); FarOutRide-class
+reference (<a href="#src-041">SRC-041</a>). Confirm snapshot (<a href="#q-025">Q-025</a>).</p>
 <p><strong>Two finish lines.</strong> Diesel cabin heat / diesel hot
 water can pass before HOLD 9. Complete system (Isotemp AC) needs HOLD 9.
 After a low-elevation diesel first fire, only Q-022 and Q-009 may still
@@ -6235,7 +6384,8 @@ temperature; note whether a 90° elbow is fitted</label></li>
 <h1 id="electrical-and-controls">Electrical and Controls</h1>
 <h2 id="scope-8">Scope</h2>
 <p>Pin tables and fuse sizes for this van’s Hydronic D5S + EasyStart
-Timer + master / fans / Paneltronics. Part one <a href="#controls">Controls</a> is the plain-English story. Manufacturer
+Timer + master / fans / Paneltronics. Part one <a href="#controls">Controls</a> is the plain-English story, including how
+hydronic loads sit on the existing house electrical. Manufacturer
 diagrams still win at the connector.</p>
 <p><strong>Wire size note:</strong> Eberspächer manuals list
 <strong>mm²</strong>. This book uses <strong>AWG</strong> for shop work.
@@ -6310,6 +6460,14 @@ Same conductors.</p>
 <tr>
 <td>SRC-019</td>
 <td>Thermostat = signal; fans need a relay</td>
+</tr>
+<tr>
+<td>SRC-040</td>
+<td>Owner house-electrical intent (this van)</td>
+</tr>
+<tr>
+<td>SRC-041</td>
+<td>FarOutRide reference architecture (class of system)</td>
 </tr>
 </tbody>
 </table>
@@ -6531,11 +6689,51 @@ EasyStart Timer calls only.</p>
 <p>Adapter on the control harness (SRC-002). Land at HOLD 4 while the
 EasyStart harness is open (Q-015 / DEC-006). Required before high camps;
 not on the post–first-fire wait list with Q-022 / Q-009.</p>
+<h2 id="house-electrical-context-src-040-src-041">House electrical
+context (SRC-040 / SRC-041)</h2>
+<p>Hydronic 12 V loads take power from the <strong>house
+battery</strong>. Hydronic AC (Isotemp 750 W) takes power from
+<strong>Paneltronics</strong>, which is fed by shore and/or the
+<strong>PROwatt SW</strong> inverter. This appendix does not size the
+house bank, solar, B2B, or shore charger.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Observed on van</th>
+<th>Role for hydronic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Xantrex LinkPRO (wood panel)</td>
+<td>Battery monitor — watch voltage before long inverter + <strong>WATER
+HEATER</strong> runs</td>
+</tr>
+<tr>
+<td>Xantrex PROwatt SW (wood panel)</td>
+<td>Inverter face — must be on for off-grid AC to Paneltronics</td>
+</tr>
+<tr>
+<td>Paneltronics 72313 / 9972313B</td>
+<td>AC distribution: MAIN · BATTERY CHARGER · <strong>WATER
+HEATER</strong> · OUTLETS</td>
+</tr>
+</tbody>
+</table>
+<p>Owner intent: <a href="#src-040">SRC-040</a>. Same <em>class</em> of
+architecture: <a href="#src-041">SRC-041</a>. Confirm amps / Ah / solar
+/ shore path on the van (<a href="#q-025">Q-025</a>). Do not copy
+FarOutRide parts lists into this BOM.</p>
 <h2 id="isotemp-element-dec-004-dec-020">Isotemp element (DEC-004 /
 DEC-020)</h2>
 <p>115 VAC / 750 W ≈ 6.5 A on Paneltronics <strong>WATER
 HEATER</strong>. Upstream GFCI/ELCI required (Q-009). Fill chamber
-before HOLD 9.</p>
+before HOLD 9. Path: shore and/or PROwatt SW → GFCI/ELCI → Paneltronics
+MAIN → <strong>WATER HEATER</strong> → element.</p>
 <h2 id="verification-8">Verification</h2>
 <ul class="task-list">
 <li><label><input type="checkbox"></input>Heater and EasyStart pins match the
@@ -7475,13 +7673,14 @@ properties, and the chamber’s actual usable temperature range. The
 working thermostat cuts the element near <strong>75°C /
 167°F</strong>.</p>
 <p>AC preheating is most useful when the van already has permitted AC
-power (shore or solar) and the user wants a short dish rinse or a
-shorter next diesel run. AC preheating is less compelling when the
-inverter must supply the element from the house battery. A 750 W load is
-substantial for an inverter and battery system; conversion losses
-increase the required battery energy. The exact battery penalty depends
-on inverter efficiency and battery voltage, which are not yet measured
-in this build.</p>
+power (shore or solar through the house electrical — <a href="#src-040">SRC-040</a> / <a href="#src-041">SRC-041</a>) and the
+user wants a short dish rinse or a shorter next diesel run. AC
+preheating is less compelling when the PROwatt SW inverter must supply
+the element from the house battery alone. A 750 W load is substantial
+for an inverter and battery system; conversion losses increase the
+required battery energy. The exact battery penalty depends on inverter
+efficiency and battery voltage, which are not yet measured in this build
+(<a href="#q-025">Q-025</a>).</p>
 <h3 id="dishes-after-an-ac-charge-what-to-expect">Dishes after an AC
 charge — what to expect</h3>
 <p>Charge the chamber first. That often takes about <strong>40–60
@@ -8259,8 +8458,10 @@ glycol point?</li>
 says “buy one”?</li>
 <li><strong>Cabin fans</strong> — Both Noctua NF-F12, or keep the mixed
 pair on the Sure Marine cabin heater?</li>
-<li><strong>Shore / inverter</strong> — GFCI or ELCI already upstream of
-Paneltronics?</li>
+<li><strong>Shore / inverter GFCI</strong> — GFCI or ELCI already
+upstream of Paneltronics? (<a href="#q-009">Q-009</a>)</li>
+<li><strong>House electrical snapshot</strong> — Does <a href="#src-040">SRC-040</a> still match the van (battery Ah, solar W,
+shore charger, how PROwatt and shore meet Paneltronics)? FarOutRide (<a href="#src-041">SRC-041</a>) is the class of system only.</li>
 <li><strong>Mountains</strong> — First high camp roughly when? (altitude
 kit timing only)</li>
 <li><strong>Hot water</strong> — Mostly sinks, or long showers? (mixer
@@ -8363,15 +8564,15 @@ the freshwater exchanger; Isotemp chamber is static glycol mass.</td>
 <td>Final Paneltronics breaker, GFCI/grounding, cable route, and element
 control?</td>
 <td>750 W ≈ 6.5 A at 115 V; never on empty chamber.</td>
-<td>Owner / SRC-038</td>
+<td>Owner / SRC-038 / SRC-040</td>
 <td>Yes (HOLD 9 only)</td>
-<td><strong>2026-09-19 face photo + owner confirmation:</strong>
-Paneltronics <strong>72313</strong> / <strong>9972313B</strong> — MAIN
-30 A + <strong>BATTERY CHARGER</strong> / <strong>WATER HEATER</strong>
-/ <strong>OUTLETS</strong>; reverse-polarity LED. The <strong>WATER
-HEATER</strong> branch is empty and reserved for the Isotemp element.
-Still open: upstream GFCI/ELCI, grounding, cable route, strain relief,
-and final test.</td>
+<td><strong>2026-09-19 face:</strong> Paneltronics
+<strong>72313</strong> / <strong>9972313B</strong> — MAIN · BATTERY
+CHARGER · <strong>WATER HEATER</strong> · OUTLETS. <strong>WATER
+HEATER</strong> empty for Isotemp. <strong>2026-09-20:</strong> PROwatt
+SW + LinkPRO on wood panel; PROwatt SW face has <strong>dual GFCI
+outlets</strong> (manufacturer). Paneltronics itself has no GFCI. HOLD 9
+still needs documented cable/grounding/first energize.</td>
 </tr>
 <tr>
 <td><span id="q-010">Q-010</span></td>
@@ -8522,8 +8723,415 @@ pump.</td>
 drip pan, or hose to a safe path. Free drip over living space
 forbidden.</td>
 </tr>
+<tr>
+<td><span id="q-025">Q-025</span></td>
+<td>Does the installed house electrical still match <a href="#src-040">SRC-040</a>?</td>
+<td>Isotemp AC load planning; inverter vs shore behavior.</td>
+<td>Owner / SRC-040 / SRC-041</td>
+<td>Partial (HOLD 9)</td>
+<td><strong>Raised 2026-09-20.</strong> Confirm battery Ah, solar W,
+shore charger, and how PROwatt SW and shore meet Paneltronics MAIN.
+FarOutRide (<a href="#src-041">SRC-041</a>) is reference class only—do
+not copy its BOM. On-van faces already show LinkPRO, PROwatt SW,
+Paneltronics 72313.</td>
+</tr>
 </tbody>
 </table>
+<h1 id="house-electrical-understanding">Working understanding</h1>
+<p>Scratchpad for Ben’s questions. Not the Builder’s Guide. Promote
+locked answers into part one / HOLD S when ready.</p>
+<h2 id="input-from-ben">Input from Ben</h2>
+<ul>
+<li>Doesn’t the Xantrex we own have GFCI on the outlets already? Doesn’t
+that help answer some outstanding questions?</li>
+<li>Comparison table of sofa materials / build options.</li>
+<li>Frame mechanisms; Tyrah wants a sofa bed whose middle can come out
+by day.</li>
+<li>Layout: stove/oven at passenger door; 30+ gal water tank over
+passenger rear wheel well.</li>
+<li>Walls are plywood panels (not pine slats); need access behind
+them.</li>
+<li>Do we need to rip out the bed?</li>
+<li>Wiring: Paneltronics → Isotemp is obvious—don’t complicate it. Don’t
+debate GFCI/inverter feed validity here.</li>
+</ul>
+<hr />
+<h2 id="prowatt-sw-gfci">PROwatt SW GFCI</h2>
+<p><strong>Yes.</strong> The Xantrex PROwatt SW family has <strong>dual
+GFCI-protected AC receptacles</strong> on the face (manufacturer
+manuals). Those outlets protect whatever is plugged into them.</p>
+<p><strong>What that closes:</strong> any load that actually uses those
+face outlets is already GFCI-protected at the inverter.</p>
+<p><strong>What that does not automatically close:</strong> the Isotemp
+path is <strong>Paneltronics WATER HEATER</strong> (~6.5 A hardwired
+branch). That path is separate from “plug into the PROwatt face.” Leave
+<a href="#q-009">Q-009</a> / HOLD 9 as: confirm how Paneltronics is fed
+and that the <strong>WATER HEATER</strong> branch has the protection you
+intend—without reopening inverter-architecture debates in this file.</p>
+<p><strong>Hydronic 12 V</strong> (heater, EasyStart, fans) never uses
+this GFCI. Master Off is the parked lockout for those circuits.</p>
+<hr />
+<h2 id="isotemp-ac-wiring-keep-it-simple">Isotemp AC wiring (keep it
+simple)</h2>
+<pre><code>Paneltronics breaker labeled WATER HEATER  →  Isotemp 750 W element</code></pre>
+<p>Chamber must be full before energize. Never land this on 12 V. Master
+Off does not cut this branch.</p>
+<p>Everything else about house AC stays out of this scratchpad unless
+you ask.</p>
+<hr />
+<h2 id="layout-constraints-owner">Layout constraints (owner)</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Fact</th>
+<th>Implication</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stove/oven at <strong>passenger door</strong></td>
+<td>Galley heat / clearance / hose paths stay clear of that door
+swing</td>
+</tr>
+<tr>
+<td>Freshwater tank <strong>30+ gal over passenger rear wheel
+well</strong></td>
+<td>Matches ~35 gal intent (<a href="#src-026">SRC-026</a>). Driver-side
+and center sofa bays are freer for Isotemp / hydronic hose</td>
+</tr>
+<tr>
+<td>WFT must be <strong>highest</strong> circulating glycol point</td>
+<td>Prefer rear-bench / high mount—not under the sofa with the
+Isotemp</td>
+</tr>
+<tr>
+<td>Isotemp under sofa/bed</td>
+<td>Prefer <strong>driver-side</strong> or center bay so it does not
+fight the freshwater tank over the passenger wheel well; confirm with
+tape measure</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="rip-out-the-bed">Rip out the bed?</h2>
+<p><strong>Yes, if the current bed cannot meet HOLD S.</strong> You
+need:</p>
+<ul>
+<li>Removable <strong>center</strong> for daytime sofa<br />
+</li>
+<li>A bay that carries the Isotemp (~35 lb empty + ~16 L glycol) with
+real restraint<br />
+</li>
+<li>~<strong>30 cm</strong> service space in front of the Isotemp
+element/thermostat side<br />
+</li>
+<li>Removable center that does <strong>not</strong> require draining
+glycol or disconnecting the Isotemp<br />
+</li>
+<li>Access for coil hoses + element cable toward Paneltronics<br />
+</li>
+<li>Wall/floor fasteners that still work with <strong>plywood wall
+panels</strong> (access hatches or removable panels where you must hit
+metal)</li>
+</ul>
+<p>If the current bed already has a removable center and can accept an
+Isotemp cradle underneath without trapping hoses, you may <strong>modify
+in place</strong> instead of a full rip. Default plan in the Builder’s
+Guide is still: treat the sofa/bed as part of the hydronic install and
+finish HOLD S before locking cushions.</p>
+<hr />
+<h2 id="materials-comparison-sofa-bed-structure">Materials comparison
+(sofa / bed structure)</h2>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr>
+<th>Material / system</th>
+<th>Strength</th>
+<th>Weight</th>
+<th>Noise</th>
+<th>Moisture / leaks</th>
+<th>Service access</th>
+<th>Cost / revise</th>
+<th>Fit here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Wood framing</strong> (ply / dimensional)</td>
+<td>High if triangulated and through-bolted</td>
+<td>Medium</td>
+<td>Quiet</td>
+<td>Can hide leaks; needs sealed/drain-aware design</td>
+<td>Poor unless you plan removable panels</td>
+<td>Low; easy to cut</td>
+<td>Best for <strong>furniture shell</strong>, seat backs, day
+cushions</td>
+</tr>
+<tr>
+<td><strong>Plywood skins</strong> (already on walls)</td>
+<td>Skin only—not structure</td>
+<td>Low</td>
+<td>Quiet</td>
+<td>OK if sealed edges</td>
+<td>Must keep <strong>removable panels</strong> or access doors at
+fastener / hose / wire points</td>
+<td>Already chosen for walls</td>
+<td>Keep; add hatches where hydronic needs metal behind</td>
+</tr>
+<tr>
+<td><strong>80/20 (T-slot aluminum)</strong></td>
+<td>High, predictable</td>
+<td>Medium-high</td>
+<td>Can rattle if unisolated</td>
+<td>Excellent (metal)</td>
+<td>Excellent—bolts move</td>
+<td>Higher parts cost; easy to revise</td>
+<td>Best for <strong>Isotemp cradle</strong>, removable center rails,
+floor ledger</td>
+</tr>
+<tr>
+<td><strong>EZTube / similar slot tube</strong></td>
+<td>High if rated hardware</td>
+<td>Medium</td>
+<td>Similar to 80/20</td>
+<td>Excellent</td>
+<td>Excellent</td>
+<td>Depends on kit on hand</td>
+<td>Same role as 80/20 if you already own it</td>
+</tr>
+<tr>
+<td><strong>Hybrid: wood shell + aluminum cradle</strong></td>
+<td>High where it matters</td>
+<td>Medium</td>
+<td>Quiet living surfaces</td>
+<td>Cradle isolates tank from wood</td>
+<td>Cradle serviceable; shell can hide access if you plan poorly</td>
+<td>Medium</td>
+<td><strong>Recommended</strong> for this van</td>
+</tr>
+<tr>
+<td><strong>All-aluminum furniture</strong></td>
+<td>High</td>
+<td>Higher</td>
+<td>More rattle risk</td>
+<td>Excellent</td>
+<td>Excellent</td>
+<td>Highest labor/cost</td>
+<td>Overkill unless you prefer metal aesthetic</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Isotemp alone:</strong> empty ~35 lb; full chamber adds ~16 L
+(~35 lb of fluid). Do not hang that mass on hose barbs or on furniture
+weight alone.</p>
+<hr />
+<h2 id="frame-mechanisms-removable-middle-day-sofa">Frame mechanisms
+(removable middle → day sofa)</h2>
+<h3 id="what-tyrah-needs">What Tyrah needs</h3>
+<ul>
+<li><strong>Night:</strong> continuous sleep surface across both side
+bays + center<br />
+</li>
+<li><strong>Day:</strong> center section <strong>out</strong> → two side
+seats / sofa feel with an aisle or open middle<br />
+</li>
+<li>Under/behind: Isotemp + hoses + cable stay put when the center comes
+out</li>
+</ul>
+<h3 id="mechanisms-how-the-middle-attaches">Mechanisms (how the middle
+attaches)</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>How it works</th>
+<th>Pros</th>
+<th>Cons</th>
+<th>Day-sofa fit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Lift-out panel on ledgers</strong></td>
+<td>Center deck sits on side rails; lifts straight up</td>
+<td>Simplest; no hinges</td>
+<td>Needs clear vertical lift; store the panel</td>
+<td>Good if panel is light and has handles</td>
+</tr>
+<tr>
+<td><strong>Front-pull drawer / platform</strong></td>
+<td>Center rolls or slides forward then lifts</td>
+<td>Can clear a low obstacle</td>
+<td>Track must stay clean; more hardware</td>
+<td>Good if height is tight</td>
+</tr>
+<tr>
+<td><strong>Hinged fold (trapdoor)</strong></td>
+<td>Center hinges to one side or up</td>
+<td>Always attached</td>
+<td>Needs swing clearance; hinge loads</td>
+<td>Awkward with tank under middle—usually avoid</td>
+</tr>
+<tr>
+<td><strong>Pin / clevis / quick pins</strong></td>
+<td>Side frames stay; center pins into sockets</td>
+<td>Positive location; removable</td>
+<td>Pins must not rattle; need captive pins</td>
+<td>Excellent with aluminum side rails</td>
+</tr>
+<tr>
+<td><strong>T-slot drop-in</strong></td>
+<td>Center extrusion drops into 80/20 channels</td>
+<td>Repeatable, strong</td>
+<td>Need accurate cut; isolation pads</td>
+<td>Excellent if cradle is 80/20</td>
+</tr>
+</tbody>
+</table>
+<h3 id="optimum-construction-for-this-van-recommendation">Optimum
+construction for this van (recommendation)</h3>
+<p><strong>Hybrid wood + aluminum, three bays:</strong></p>
+<ol type="1">
+<li><strong>Two fixed side boxes</strong> — wood (or wood-skinned) seat
+bases, bolted to <strong>floor</strong> (and to wall where plywood
+allows a hatch to metal). These stay day and night.<br />
+</li>
+<li><strong>Aluminum Isotemp cradle</strong> in one side bay (prefer
+<strong>not</strong> the passenger wheel-well bay that already holds the
+freshwater tank)—strapped/bolted tank, coil fittings facing service
+aisle, ~30 cm clear in front of element end.<br />
+</li>
+<li><strong>Removable center deck</strong> — light wood or ply panel on
+aluminum ledgers or pin sockets; lifts out for day sofa; stores on end
+or under a seat.<br />
+</li>
+<li><strong>Hydronic and freshwater hoses</strong> run in fixed bays or
+along the wall <strong>behind removable plywood hatches</strong>—never
+through the lift-out center.<br />
+</li>
+<li><strong>WFT</strong> stays highest (rear bench or high wall
+bracket)—not under the bed.<br />
+</li>
+<li><strong>AC element cable</strong> exits the Isotemp bay toward
+Paneltronics in a protected chase; leave slack for service.</li>
+</ol>
+<p><strong>Do not</strong> put the only Isotemp service path under a
+glued-down mattress platform.</p>
+<h3 id="attach-to-van-floor-and-wall">Attach to van (floor and
+wall)</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Attachment</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Floor</td>
+<td>Through-bolt or lag into reinforced floor / known Sprinter hard
+points; use large fender washers; isolate aluminum from paint where
+needed</td>
+</tr>
+<tr>
+<td>Wall</td>
+<td>Prefer bolts into <strong>metal</strong> behind plywood via access
+hatches or through-bolted cleats—not screws into plywood alone for crash
+loads</td>
+</tr>
+<tr>
+<td>Isotemp</td>
+<td>Cradle to floor structure; tank straps to cradle; hoses last</td>
+</tr>
+</tbody>
+</table>
+<p>Exact Sprinter floor/wall hard-point map: still
+<strong>OPEN</strong>—measure before drilling.</p>
+<hr />
+<h2 id="plumbing-to-the-structure-sketch">Plumbing to the structure
+(sketch)</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Fluid</th>
+<th>From / to</th>
+<th>Structure rule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Freshwater</td>
+<td>Tank (passenger wheel well) → pump → Duda → AM100-1LF → taps</td>
+<td>Keep runs short; don’t trap under lift-out center</td>
+</tr>
+<tr>
+<td>Glycol loop</td>
+<td>Heater → cabin heater → Duda → <strong>Isotemp coil</strong> →
+return; WFT high on return</td>
+<td>Coil hoses below WFT; service loops in fixed bay</td>
+</tr>
+<tr>
+<td>Isotemp chamber</td>
+<td>Static fill/vent on tank</td>
+<td>Same mix as loop; not drinking water</td>
+</tr>
+<tr>
+<td>Isotemp AC</td>
+<td>Cable to Paneltronics <strong>WATER HEATER</strong></td>
+<td>Chase in fixed structure; dead until HOLD 9</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="still-open-short">Still open (short)</h2>
+<ul class="task-list">
+<li><label><input type="checkbox"></input>Driver vs passenger vs center bay
+for Isotemp (tape-fit against freshwater tank)<br />
+</label></li>
+<li><label><input type="checkbox"></input>Exact floor/wall bolt points<br />
+</label></li>
+<li><label><input type="checkbox"></input>Center lift-out size and storage
+location by day<br />
+</label></li>
+<li><label><input type="checkbox"></input>Which plywood panels become access
+hatches<br />
+</label></li>
+<li><label><input type="checkbox"></input>Q-009: protection on the
+Paneltronics <strong>WATER HEATER</strong> path (PROwatt face GFCI is
+not the whole answer)</label></li>
+</ul>
+<h2 id="scratch-notes">Scratch notes</h2>
+<p>_</p>
 <h1 id="verified-requirements">Verified Requirements</h1>
 <p>Heater identity is locked (DEC-000): Hydronic D5S diesel heater,
 <strong>25 2526 05 00 00</strong>. Numeric heater specs from SRC-009
@@ -9444,6 +10052,40 @@ compatible with High Altitude Kit</td>
 <td>Heatso support explicitly states: “These units are compatible with
 HAK.” Supports heater/HAK compatibility only; does not prove physical
 H-Kit marking, kit presence, or completed wiring.</td>
+</tr>
+<tr>
+<td><span id="src-040">SRC-040</span></td>
+<td>mylifewithoutdoor / Ben Racine, “Sprinter Van Electrical”</td>
+<td>Owner design intent for this van’s house electrical (solar / shore /
+alternator / inverter / distribution)</td>
+<td>Owner blog (Medium)</td>
+<td>Owner blog</td>
+<td><a href="https://medium.com/@mylifewodoor/sprinter-van-electrical-27b51f6bbe8f" class="uri">https://medium.com/@mylifewodoor/sprinter-van-electrical-27b51f6bbe8f</a></td>
+<td><strong>Intent / context for hydronic AC only.</strong> Owner
+pointed to this post 2026-09-20 as the incomplete but governing write-up
+of the van electrical. Automated fetch blocked (Cloudflare). Do not
+invent Ah, solar watts, charger amps, or wire sizes from memory—confirm
+on van. On-van face evidence (Paneltronics <strong>72313</strong>,
+Xantrex <strong>PROwatt SW</strong>, <strong>LinkPRO</strong> on the
+wood panel) must still match this post. Not a substitute for SRC-038 /
+HOLD 9.</td>
+</tr>
+<tr>
+<td><span id="src-041">SRC-041</span></td>
+<td>FarOutRide, “Electrical System Guide for DIY Van Conversion”</td>
+<td>Reference architecture for off-grid van electrical: house battery,
+solar, alternator B2B, shore charger, inverter, 12 V fuse block, 120 V
+loads</td>
+<td>Updated 2026-08-22</td>
+<td>Installer / vanlife guide</td>
+<td><a href="https://faroutride.com/electrical-system/" class="uri">https://faroutride.com/electrical-system/</a></td>
+<td><strong>Reference pattern, not this van’s BOM.</strong> Owner
+2026-09-20: house electrical is “something like” this guide. Useful
+vocabulary: charge sources → house bank → 12 V loads; inverter and/or
+shore feed 120 V AC. FarOutRide “Standard” keeps shore charger and
+inverter as separate devices (no transfer switch). Use only to explain
+how Isotemp AC sits in a typical van; pinouts and amp ratings for
+<em>this</em> Sprinter still come from on-van labels + Q-009.</td>
 </tr>
 </tbody>
 </table>
