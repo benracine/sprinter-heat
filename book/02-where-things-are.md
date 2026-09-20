@@ -26,7 +26,7 @@ Ask once per part: if it is already on the van, inspect and finish the remaining
 | Block | Low | Typical | High | Notes |
 | --- | --- | --- | --- | --- |
 | Phase A — fuel + exhaust walk (HOLD 1–2) | 2 h | 3 h | 6 h | Mostly inspect/fix vs [SRC-009](#src-009) |
-| Sofa/bed rip + hybrid rebuild (HOLD S) | 40 h | **55 h** | 80 h | Largest block: frame, cradle, backrest Water Flow Tank, lift-out, hatches |
+| Sofa/bed rip + hybrid rebuild (HOLD S) | 40 h | **55 h** | 80 h | Largest block: frame, cradle, backrest Water Flow Tank, hinging/sliding panels, hatches |
 | Phase B — mounts + 12 V / altitude / cable (HOLD 3–4) | 10 h | 16 h | 24 h | Overlaps sofa if done in the same build days |
 | Phase C — glycol + freshwater hose (HOLD 5–6) | 10 h | 16 h | 28 h | Clamps, bleeders, labels; rework if a run fights furniture |
 | Phase D — fill, bleed, first fire (HOLD 7–8) | 6 h | 10 h | 16 h | Water-first then glycol; watchful first fire |
@@ -49,7 +49,7 @@ If two people share furniture and hose work, wall-clock time drops faster than m
 | Exhaust / combustion air | Owner thinks OK | Quick [HOLD 2](#hold-2-exhaust) look before fire |
 | Fuel pickup + pump | Tap OK; hose likely run; **pump check = future work** under van | [HOLD 1](#hold-1-fuel); prime at [HOLD 8](#hold-8-first-fire) |
 | Duda B3-12DW-20 + AM100-1LF mixer | Mixer on; one hose on; intended near jump seat / sink-fridge zone | Glycol port; mixed and cold to taps; set ~120°F; confirm fit with cabin heater |
-| Sure Marine cabin heater | REAL **16401**; **IN bottom / OUT top**; fans taped; intended near jump seat / sink-fridge | Level, bleeder, fan power — [HOLD 3](#hold-3-mounts) / 4 |
+| Sure Marine cabin heater | REAL **16401**; **IN bottom / OUT top**; fans taped; **under the fridge** | Level, bleeder, fan power — [HOLD 3](#hold-3-mounts) / 4 |
 | EasyStart Timer | On wood panel (with LinkPRO / PROwatt SW) | Land per [SRC-003](#src-003) / [SRC-009](#src-009) — [HOLD 4](#hold-4-electrical) |
 | Xantrex LinkPRO + PROwatt SW | On wood panel with EasyStart; PROwatt face has dual GFCI outlets | House monitor + inverter; Paneltronics **WATER HEATER** path still HOLD 9 |
 | Blue Sea 12 V distribution block | On van (owner) | Confirm fuse positions feeding master / EasyStart / fans at HOLD 4 |

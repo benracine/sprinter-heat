@@ -56,10 +56,10 @@ Meet each part once here. After this table, use only these official names—or t
 | Drinking water | Duda only; AM100-1LF on hot out; set ~120°F; taps from mixed outlet only ([DEC-003](#dec-003) / [DEC-008](#dec-008)) |
 | Isotemp | Coil circulating; chamber static same mix; **750 W** on Paneltronics **WATER HEATER** only. Factory mixer stays capped — never for taps ([DEC-008](#dec-008)) |
 | Heights | Water Flow Tank highest; everything else below it; cabin heater level, bottom-in/top-out, outlet bleeder; fill/drain at lowest point; unrestricted path from Water Flow Tank tee back to the pump |
-| Isotemp mount (owner) | **Driver side under bench/bed (low)**; Water Flow Tank in **sofa-bed backrest (high)**; full-length lift-out day sofa ([Working design understanding](#working-design-understanding)) |
+| Isotemp mount (owner) | **Driver side under bench/bed (low)**; Water Flow Tank in **sofa-bed backrest (high)**; **2–3 panels** flat night / hinge or slide day ([Working design understanding](#working-design-understanding)) |
 | Cabin air | Living-space air across the Sure Marine cabin heater (**under the fridge**, SN 16401); Duda **under the sink**; combustion stays outside |
 | Build priority (owner) | **Ease of access** and **ease of construction** rank high for sofa/Isotemp packaging |
-| Sofa/bed materials ([DEC-021](#dec-021)) | **Hybrid:** wood side boxes + aluminum Isotemp cradle + light plywood **full-length** lift-out — not all-extrusion furniture |
+| Sofa/bed materials ([DEC-021](#dec-021)) | **Hybrid:** wood side boxes + aluminum Isotemp cradle + light plywood **hinging/sliding** day panels — not all-extrusion furniture |
 | Hot water use (owner) | ~**80% sinks**; showers minority — mention showers, do not center the narrative on them |
 
 ::: {.media-pair}

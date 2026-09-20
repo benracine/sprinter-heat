@@ -108,7 +108,7 @@ The current bed is **coming out**. Rebuild as a sofa/bed with a **multi-panel** 
 - Support the Isotemp empty and full. Empty mass is about 35 lb; a full chamber adds about 16 L of static glycol.
 - Leave about 30 cm of service space in front of the Isotemp element/thermostat side.
 - Keep the Isotemp coil fittings and hoses below the Water Flow Tank, or provide a bleeder at the hose high point.
-- Make the center section removable without draining the loop or disconnecting the Isotemp.
+- Make the day panels move without draining the loop or disconnecting the Isotemp.
 - Protect the Isotemp, hoses, element cable, and Paneltronics route from luggage, screws, sharp edges, and movement.
 - Leave access to the Isotemp fill/vent ports, safety valve, coil fittings, and electrical connection.
 - Provide positive mechanical restraint. The Isotemp must not rely on hose connections or furniture weight alone.
@@ -124,28 +124,27 @@ Weights: easy to work with / revise **35%**, strength **25%**, light **20%**, co
 | All wood (2× + plywood) | 5 | 4 | 2 | 5 | 4.15 | Shell only — weak on tank restraint + revise |
 | All T-slot aluminum | 3 | 5 | 4 | 1 | 3.30 | Overkill cost; rattle risk; slow first build |
 | Steel tube | 2 | 5 | 1 | 3 | 2.75 | Heavy; hard to revise |
-| **Hybrid: wood shell + Al cradle + light lift-out** | 5 | 5 | 4 | 4 | **4.55** | **Chosen ([DEC-021](#dec-021))** |
+| **Hybrid: wood shell + Al cradle + hinging/sliding panels** | 5 | 5 | 4 | 4 | **4.55** | **Chosen ([DEC-021](#dec-021))** |
 
-**Bill of materials intent:** construction plywood + dimensional lumber for side boxes; short T-slot (or bolted aluminum) for Isotemp cradle and center ledgers; ⅜–½ in plywood lift-out with handles; foam tape where wood meets metal (rattle).
+**Bill of materials intent:** construction plywood + dimensional lumber for side boxes; short T-slot (or bolted aluminum) for Isotemp cradle and panel ledgers; ⅜–½ in plywood for **2–3** day/night panels; hinges and/or drawer slides; foam tape where wood meets metal (rattle).
 
 ### Decision procedure
 
-1. Measure the sofa/bed opening, driver-side bay, removable center, and the Isotemp envelope.
+1. Measure the sofa/bed opening, driver-side bay, day-panel swing/slide clearance, and the Isotemp envelope.
 2. Mark the Isotemp envelope on the **driver-side** floor with tape.
 3. Confirm shortest practical coil-hose route to the jump-seat / sink-fridge zone (Duda + Sure Marine), keep the coil below the Water Flow Tank, leave element/thermostat service access, and protect the Paneltronics cable route.
-4. Build the Isotemp restraint first. Do not finalize cushions, drawer fronts, or the removable center until the Isotemp can be serviced without disturbing plumbing.
-5. Record fastening details (floor bolts, cradle straps, center pins/ledgers) before cutting. Method is already locked: hybrid.
+4. Build the Isotemp restraint first. Do not finalize cushions, drawer fronts, or day-panel hardware until the Isotemp can be serviced without disturbing plumbing.
+5. Record fastening details (floor bolts, cradle straps, hinges/tracks) before cutting. Method is already locked: hybrid.
 
 **HOLD S — sofa/bed platform**
 
 - [ ] Current bed removed; new structure plan recorded
 - [ ] Driver-side bay selected for Isotemp; tape-fit done
 - [ ] Isotemp full-load weight and restraint method documented (aluminum cradle + straps)
-- [ ] Removable center clears the Isotemp, hoses, element cable, and service access (full-length vs rear-bench trade noted if still OPEN)
+- [ ] Day panels (2–3) clear the Isotemp, hoses, element cable, and service access; hinge vs slide named
 - [ ] Water Flow Tank location remains the highest circulating point (exact mount named)
 - [ ] Hybrid construction per DEC-021; fastening details recorded
 - [ ] Plywood access hatches planned where wall bolts need metal
-
 ---
 
 ## Position the parts {#hold-a-positions}
@@ -269,7 +268,7 @@ Work inside the van. Re-check the positioning table before you drill.
 
 ### WFT 5 L expansion/header tank — Water Flow Tank brand
 
-Not mounted yet. Must be the **highest** circulating glycol point (owner). Exact mount OPEN (rear bench / high wall / other)—choose for height first, then ease of fill/bleed access. Not “under bed” unless that bay actually wins on height.
+Not mounted yet. Must be the **highest** circulating glycol point. **Owner:** mount in the **sofa-bed backrest (high)** with the Isotemp under the bench (low). Confirm the WFT top still wins after framing; raise the backrest cradle or fall back to a higher wall mount only if it loses the height check.
 
 1. Mount so the **top** of the Water Flow Tank is the highest propylene glycol point in the whole loop. Plan was about 20–30 inches above the floor. Verify nothing else will sit higher once hose is run.
 2. Later you bleed air here. You fill from the lowest drain until this tank takes fluid.
@@ -310,7 +309,7 @@ AM100-1LF thermostatic mixing valve already on the hot-water outlet (top). Cold 
 
 ### Sure Marine cabin heater (already on the van)
 
-REAL unit, SN **16401**. Label: **IN — bottom fitting · OUT — top fitting**. Fan power leads are taped, not finished. Final cosmetic spot may still move — plumbing rules below do not.
+REAL unit, SN **16401**. Label: **IN — bottom fitting · OUT — top fitting**. Fan power leads are taped, not finished. Location: **under the fridge** (owner/Tyrah: fits).
 
 1. Confirm it sits **level**. An angled mount traps air away from the bleeder.
 2. Glycol **bottom in, top out** (matches the Duda orientation). Keep that orientation if you reverse the cabin heater for fit ([SRC-032](#src-032)).
@@ -318,7 +317,7 @@ REAL unit, SN **16401**. Label: **IN — bottom fitting · OUT — top fitting**
 4. Keep the Sure Marine cabin heater below the WFT once the WFT is mounted.
 5. Cabin air only across the Sure Marine cabin heater — not from a fume-laden bay. Not ignition-protected for gasoline engine bays (ABYC note on the nameplate) — fine in this living-space install.
 6. Finish **two** fans on the outlets ([DEC-015](#dec-015)). Target: both Noctua NF-F12 PWM (a mixed pair is on the unit today — replace or confirm intent). Wire fans **in parallel** to **one** inline **12 V** Low/Med/High dial on the shared positive ([DEC-018](#dec-018)). Power leads only; PWM/tach unused. No NA-FC1.
-7. Dial is Low/Med/High **without** hard Off. Heat on/off is master + EasyStart (SC1600 only after [Q-022](#q-022)).
+7. Dial is Low/Med/High **without** hard Off. Heat on/off is master + EasyStart (SC1600 only after [Q-022](#q-022)). Book pick for the dial: Sure Marine [**W002-912**](https://www.suremarineservice.com/Heat/System-Switches/W002-912.html).
 
 ![Cabin air](diagrams/cabin-air.svg)
 

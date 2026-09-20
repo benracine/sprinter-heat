@@ -72,7 +72,7 @@ The heater itself holds only ~0.18 L. The Isotemp mass damps cycling.
 | Fuel pickup (factory aux) | Inspect at HOLD 1 |
 | Exhaust / combustion air | On van; re-check at HOLD 2 |
 | Duda B3-12DW-20 + AM100-1LF | On van; taps + one glycol barb still open |
-| Sure Marine cabin heater | On van; SN 16401; fans unfinished |
+| Sure Marine cabin heater | On van **under the fridge**; SN 16401; fans unfinished |
 | EasyStart Timer | Mounted; landing unfinished |
 | Paneltronics AC (72313 / 9972313B) | Face known; **WATER HEATER** empty for Isotemp |
 

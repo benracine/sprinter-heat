@@ -6,7 +6,7 @@ Scratchpad for Ben’s questions. Not the Builder’s Guide. Promote locked answ
 
 - Doesn’t the Xantrex we own have GFCI on the outlets already? Doesn’t that help answer some outstanding questions?
 - Comparison table of sofa materials / build options.
-- Frame mechanisms; Tyrah wants a sofa bed whose middle can come out by day.
+- Frame mechanisms; Tyrah wants a sofa bed whose middle opens by day (hinge/slide panels).
 - Layout: stove/oven at passenger door; 30+ gal water tank over passenger rear wheel well.
 - Walls are plywood panels (not pine slats); need access behind them.
 - Do we need to rip out the bed?
@@ -79,7 +79,7 @@ Everything else about house AC stays out of this scratchpad unless you ask.
 
 ## Rip out the bed?
 
-**Owner decision:** the current bed is **coming out entirely.** Rebuild to meet HOLD S: removable center for daytime sofa, Isotemp cradle with restraint, ~30 cm service space at the element end, hose/cable access without draining to remove the center, wall/floor bolts into metal (via plywood hatches as needed).
+**Owner decision:** the current bed is **coming out entirely.** Rebuild to meet HOLD S: **2–3 light panels** flat at night / hinge or slide by day, Isotemp cradle with restraint, ~30 cm service space at the element end, hose/cable access without draining when panels move, wall/floor bolts into metal (via plywood hatches as needed).
 
 ---
 
@@ -87,13 +87,13 @@ Everything else about house AC stays out of this scratchpad unless you ask.
 
 ### What matters here (weights)
 
-Owner priority is **ease of access** and **ease of construction**. Isotemp empty ~35 lb; full chamber adds ~16 L (~35 lb fluid). Removable center must stay light enough to lift daily.
+Owner priority is **ease of access** and **ease of construction**. Isotemp empty ~35 lb; full chamber adds ~16 L (~35 lb fluid). Day panels must stay light enough to hinge or slide daily.
 
 | Criterion | Weight | Why |
 | --- | --- | --- |
 | Easy to work with / revise | **35%** | Owner priority; first build; day-sofa will iterate |
 | Strength / restraint | **25%** | Sleep load + Isotemp crash restraint into floor metal |
-| Light (esp. removable center) | **20%** | Daily lift-out; payload |
+| Light (esp. day panels) | **20%** | Daily hinge/slide; payload |
 | Cost | **20%** | Whole-bed all-extrusion is expensive for little gain |
 
 Scores 1–5 (higher = better for this van). Weighted = sum(score × weight).
@@ -103,7 +103,7 @@ Scores 1–5 (higher = better for this van). Weighted = sum(score × weight).
 | **A. All wood** (2× framing + plywood deck) | 5 | 4 | 2 | 5 | **4.15** |
 | **B. Baltic birch furniture ply everywhere** | 4 | 4 | 3 | 3 | **3.60** |
 | **C. All T-slot aluminum (80/20 / similar)** | 3 | 5 | 4 | 1 | **3.30** |
-| **D. Hybrid: wood shell + Al Isotemp cradle + light lift-out** | 5 | 5 | 4 | 4 | **4.55** |
+| **D. Hybrid: wood shell + Al Isotemp cradle + light day panels** | 5 | 5 | 4 | 4 | **4.55** |
 | **E. Steel tube frame** | 2 | 5 | 1 | 3 | **2.75** |
 
 Field check (FarOutRide bed-frame only): aluminum frame ~45 lb / ~$585 vs wood ~52 lb / ~$200 — ~7 lb saved for ~3× frame cost. Plywood deck dominates weight either way. All-extrusion furniture is the wrong spend for this van.
@@ -114,12 +114,12 @@ Field check (FarOutRide bed-frame only): aluminum frame ~45 lb / ~$585 vs wood ~
 
 1. **Fixed side boxes / seat bases** — construction plywood + dimensional lumber (or Baltic birch where faces show). Quiet, cheap, familiar tools, easy to cut hatches.
 2. **Isotemp cradle** — short T-slot aluminum rails or a small bolted aluminum frame, strapped to floor structure. Metal holds the tank; wood does not.
-3. **Removable center** — light plywood panel (½ in Baltic birch or ⅜–½ in construction ply with ledgers) on pins or aluminum ledgers. Handles; store on end or under a seat.
+3. **Sleep / day deck** — **2–3 light plywood panels** (⅜–½ in) that lay flat at night; ~two hinge up or slide by day. Stay attached; no carry-out as primary.
 4. **Walls** — keep existing plywood skins; add **access hatches** where bolts must hit metal.
 
 **Do not** build the whole sofa in 80/20. **Do not** hang the Isotemp on hose barbs or on furniture weight alone. **Do not** glue the only service path under a fixed mattress platform.
 
-If T-slot stock is already on the shelf, use it for the cradle and center ledgers only—same hybrid, lower buy cost.
+If T-slot stock is already on the shelf, use it for the cradle and panel ledgers only—same hybrid, lower buy cost.
 
 ---
 
@@ -135,11 +135,11 @@ If T-slot stock is already on the shelf, use it for the cradle and center ledger
 
 | Mechanism | How it works | Pros | Cons | Day-sofa fit |
 | --- | --- | --- | --- | --- |
-| **Lift-out panel on ledgers** | Center deck sits on side rails; lifts straight up | Simplest; no hinges | Needs clear vertical lift; store the panel | Good if panel is light and has handles |
-| **Front-pull drawer / platform** | Center rolls or slides forward then lifts | Can clear a low obstacle | Track must stay clean; more hardware | Good if height is tight |
-| **Hinged fold (trapdoor)** | Center hinges to one side or up | Always attached | Needs swing clearance; hinge loads | Awkward with tank under middle—usually avoid |
-| **Pin / clevis / quick pins** | Side frames stay; center pins into sockets | Positive location; removable | Pins must not rattle; need captive pins | Excellent with aluminum side rails |
-| **T-slot drop-in** | Center extrusion drops into 80/20 channels | Repeatable, strong | Need accurate cut; isolation pads | Excellent if cradle is 80/20 |
+| **Hinge-up (preferred candidate)** | Panel swings up against a side box or backrest | Always attached; one motion | Needs swing clearance; latch when up | Matches owner “hinge up by day” |
+| **Slide (preferred candidate)** | Panel slides under a side seat or along ledgers | Stays low; no tall latch | Track must stay clean; more hardware | Matches owner “slide by day” |
+| **Lift-out on ledgers** | Center deck sits on side rails; lifts straight up | Simplest hardware | Needs stash space; carry daily | Fallback only if hinge/slide fail measure |
+| **Front-pull drawer / platform** | Center rolls or slides forward then lifts | Can clear a low obstacle | Track must stay clean; more hardware | Possible hybrid with slide |
+| **Pin / clevis / quick pins** | Side frames stay; panel pins into sockets | Positive location | Pins must not rattle | Useful with either hinge or slide |
 
 ### Optimum construction for this van ([DEC-021](#dec-021) locked)
 
@@ -148,7 +148,7 @@ If T-slot stock is already on the shelf, use it for the cradle and center ledger
 1. **Two fixed side boxes** — wood (or wood-skinned) seat bases, bolted to **floor** (and to wall where plywood allows a hatch to metal). These stay day and night.  
 2. **Aluminum Isotemp cradle** in one side bay (prefer **not** the passenger wheel-well bay that already holds the freshwater tank)—strapped/bolted tank, coil fittings facing service aisle, ~30 cm clear in front of element end.  
 3. **Sleep / day deck** — **2–3 light panels** on the center span: **flat at night**, **hinge up or slide by day** (owner). Prefer stay-attached; no carry-out as primary. Hinges/tracks land on the fixed side boxes; hoses never through moving panels.  
-4. **Hydronic and freshwater hoses** run in fixed bays or along the wall **behind removable plywood hatches**—never through the lift-out center.  
+4. **Hydronic and freshwater hoses** run in fixed bays or along the wall **behind removable plywood hatches**—never through the moving day panels.  
 5. **Water Flow Tank (WFT) 5 L expansion/header** — **in the sofa-bed backrest (high)**; Isotemp stays **under the bench/bed (low)**. Same driver-side furniture stack preferred. Fill/bleed via hinged or removable backrest. Confirm WFT top is highest circulating glycol point after framing.  
 6. **AC element cable** exits the Isotemp bay toward Paneltronics in a protected chase; leave slack for service.
 
@@ -170,7 +170,7 @@ Exact Sprinter floor/wall hard-point map: still **OPEN**—measure before drilli
 
 | Fluid | From / to | Structure rule |
 | --- | --- | --- |
-| Freshwater | Tank (passenger wheel well) → pump → Duda → AM100-1LF → taps | Keep runs short; don’t trap under lift-out center |
+| Freshwater | Tank (passenger wheel well) → pump → Duda → AM100-1LF → taps | Keep runs short; don’t trap under moving day panels |
 | Glycol loop | Heater → cabin heater → Duda → **Isotemp coil** → return; Water Flow Tank high on return | Coil hoses below Water Flow Tank; service loops in fixed bay |
 | Isotemp chamber | Static fill/vent on tank | Same mix as loop; not drinking water |
 | Isotemp AC | Cable to Paneltronics **WATER HEATER** | Chase in fixed structure; dead until HOLD 9 |
@@ -247,8 +247,8 @@ Master **Off** kills the EasyStart Timer, so the heater gets no wake signal and 
 
 Shelf check: look for **W002-911** / **W002-912** / **W002-914** on the bag, or count positions (2 vs 3 + Off).
 
-- [x] Day: **full-length remove** → side seats + aisle (no fixed rear forward bench)  
-
+- [x] Day: **2–3 panels** flat at night; ~**two hinge up or slide** by day → side seats + aisle (stay attached)  
+- [ ] Exact hinge vs slide + panel count (measure before cutting)  
 - [x] WFT in **backrest (high)**; Isotemp **under bench (low)** — same stack; verify WFT top is highest glycol point after framing  
 - [ ] Exact floor/wall bolt points  
 - [ ] Which plywood panels become access hatches  
@@ -259,6 +259,7 @@ Shelf check: look for **W002-911** / **W002-912** / **W002-914** on the bag, or 
 - [x] Mean Well via **Blue Sea 9009** (J1772 ↔ 120 V shore) — **not** Paneltronics BATTERY CHARGER  
 - [x] Inverter: **Xantrex PROwatt SW 2000** (806-1220 / B002LGEMOQ) — diagram SW2000 = PROwatt SW  
 - [x] Master Off ≠ Isotemp AC — owner OK they are separate controls  
+- [x] Isotemp factory mixer — **unused forever** (cap only; AM100-1LF for taps)  
 - [ ] **Future work:** under-van check of **fuel pump** (confidence) + fuel hose clamps + prime before first fire  
 - [ ] Q-009: ground-fault on Isotemp — inverter maybe; shore unknown; Paneltronics has **no** GFCI (owner agrees / DEC-020)  
 
