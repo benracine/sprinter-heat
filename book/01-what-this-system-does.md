@@ -168,11 +168,11 @@ Route the element cable at HOLD 4. Leave **WATER HEATER** **off** until [HOLD 9]
 
 **Second 9009 (not heat).** A separate rotary selects SmartPlug shore vs **DUOSIDA** J1772 into the **Mean Well RPB-1600-12** charger. That path charges the house battery. It does not feed **WATER HEATER**. Do not confuse the two rotaries.
 
-### House boxes you will see (context only)
+### Existing house electrical
 
-This book does not rebuild the whole van electrical system. Full inventory and photo extracts: [Working design understanding](#working-design-understanding) · [Electrical and Controls](#electrical-and-controls).
+This book does not rebuild the whole van electrical system. The hydronic loads use gear already on the van. Full inventory and photo extracts: [Working design understanding](#working-design-understanding) · [Electrical and Controls](#electrical-and-controls).
 
-| Box | Role for hydronic |
+| Already on the van | Role for hydronic |
 |---|---|
 | House battery **200 Ah** | Feeds all 12 V hydronic loads |
 | Blue Sea ST Blade (+ ML-RBS) | Where master / EasyStart / fan fuses land (or a second breakout) |
