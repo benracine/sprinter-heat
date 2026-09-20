@@ -30,8 +30,8 @@ Jump: [System Design](#system-design) · [User’s Guide](#users-guide) · [Isot
 | AM100-1LF thermostatic mixing valve | 70–145°F range; set ~120°F, lock handwheel, label ([DEC-008](#dec-008); [SRC-036](#src-036)) |
 | Isotemp factory mixer | **Unused forever** — capped; not for taps ([DEC-008](#dec-008)) |
 | Isotemp element | 750 W ≈ **6.5 A** @ 115 V on Paneltronics **WATER HEATER** only |
-| Paneltronics AC feed | **Blue Sea 9009** hand-select shore ↔ PROwatt SW 2000 (label face) |
-| Mean Well charge feed | Second **9009**: shore ↔ J1772 (SmartPlug / DUOSIDA paths) |
+| Paneltronics AC feed | One **9009**: shore ↔ PROwatt SW → **WATER HEATER** (Isotemp heat) |
+| Mean Well charge feed | Other **9009**: shore ↔ J1772 (battery charge only — not heat) |
 | Diesel start lockout | Miss may retry ~70 s; lock after two further fails; ≤2 off/on into a fault |
 
 The Isotemp chamber holds about 4.2 gal of static glycol. The coil is charged by the heater pump. The 750 W element on Paneltronics **WATER HEATER** (face **72313** / sheet **9972313B**) heats the chamber only ([DEC-004](#dec-004) / [DEC-007](#dec-007) / [DEC-020](#dec-020)).

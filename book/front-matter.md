@@ -17,7 +17,7 @@ Hand this file with the PDFs in `sources/hydronic-install/` and `sources/coolant
 
 **One loop.** Hydronic D5S → Sure Marine cabin heater → Duda → Isotemp coil → return. No engine. No second pump. Isotemp chamber = static glycol; factory mixer unused forever (AM100-1LF is the only tap mixer). Drinking water only through the Duda + AM100-1LF.
 
-**House electrical (context only).** Hydronic 12 V from the **200 Ah** house battery (**650 W** solar; Sterling 60 A B2B; Mean Well RPB-1600-12). Isotemp 750 W from Paneltronics **WATER HEATER**, fed by shore or **PROwatt SW 2000** via a **Blue Sea 9009** rotary ([`photos/ac-electrical.jpg`](../photos/ac-electrical.jpg)). Mean Well charge path is a second **9009** (SmartPlug 120 V / DUOSIDA J1772). Existing Blue Sea blade block may need a **second breakout** for hydronic fuses. Ground-fault on Isotemp still OPEN ([Q-009](#q-009)). Photo extracts: [electrical](#photo-extract-electrical).
+**House electrical (context only).** Two worlds: **12 V** diesel heat from the **200 Ah** house battery (master Off is the parked lockout); **120 V** Isotemp 750 W on Paneltronics **WATER HEATER** via one **Blue Sea 9009** (shore ↔ **PROwatt SW 2000**). A second **9009** charges only (SmartPlug / DUOSIDA J1772 → Mean Well)—not heat. Blade block may need a **second breakout** for hydronic fuses. GFCI on Isotemp still OPEN ([Q-009](#q-009)). Story: [Controls](#controls). Photos: [electrical](#photo-extract-electrical).
 
 **Two finish lines.** Diesel cabin heat / diesel hot water can pass before HOLD 9. Complete system (Isotemp AC) needs HOLD 9. After a low-elevation diesel first fire, only Q-022 and Q-009 may still wait; land the altitude kit at HOLD 4.
 

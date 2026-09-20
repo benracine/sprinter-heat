@@ -2,7 +2,7 @@
 
 ## Scope
 
-Pin tables and fuse sizes for this van’s Hydronic D5S + EasyStart Timer + master / fans / Paneltronics. Part one [Controls](#controls) is the plain-English story, including how hydronic loads sit on the existing house electrical. Manufacturer diagrams still win at the connector.
+Pin tables and fuse sizes for this van’s Hydronic D5S + EasyStart Timer + master / fans / Paneltronics. Part one [Controls](#controls) is the plain-English story: **12 V diesel heat** (master lockout) and **120 V Isotemp chamber** (Paneltronics **WATER HEATER**) are separate worlds. Manufacturer diagrams still win at the connector.
 
 **Wire size note:** Eberspächer manuals list **mm²**. This book uses **AWG** for shop work. Same conductors.
 
@@ -92,7 +92,7 @@ Adapter on the control harness (SRC-002). Land at HOLD 4 while the EasyStart har
 
 ## House electrical context (SRC-040 / SRC-041 / photo extract)
 
-Hydronic 12 V loads take power from the **house battery**. Hydronic AC (Isotemp 750 W) takes power from **Paneltronics**, fed by shore or the **PROwatt SW** via a **Blue Sea 9009** rotary (as-built; not automatic). Mean Well shore/J1772 charge uses a **second 9009**. This appendix does not size the house bank, solar, B2B, or shore charger.
+**Two hydronic worlds.** (1) 12 V from the **house battery** → heater + EasyStart + fans. (2) 120 V from shore or **PROwatt SW** via one **Blue Sea 9009** → Paneltronics → **WATER HEATER** → Isotemp 750 W. A **second 9009** feeds only the Mean Well charger (shore/J1772)—not heat. Both 9009s are hand rotaries, not automatic. This appendix does not size the house bank, solar, B2B, or shore charger.
 
 | Observed on van / build photos | Role for hydronic |
 |---|---|

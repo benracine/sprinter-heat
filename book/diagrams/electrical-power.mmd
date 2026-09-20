@@ -1,13 +1,13 @@
-%%{init: {'theme':'base','themeVariables': {'background':'#fafaf9','primaryColor':'#f5f5f4','primaryTextColor':'#1c1917','primaryBorderColor':'#57534e','lineColor':'#44403c','secondaryColor':'#e7e5e4','tertiaryColor':'#eeeeec','fontFamily':'Avenir Next, Avenir, Helvetica Neue, sans-serif','fontSize':'26px','textColor':'#1c1917','mainBkg':'#f5f5f4','clusterBkg':'#eeeeec','clusterBorder':'#78716c','edgeLabelBackground':'#fafaf9'}}}%%
+%%{init: {'theme':'base','themeVariables': {'background':'#fafaf9','primaryColor':'#f5f5f4','primaryTextColor':'#1c1917','primaryBorderColor':'#57534e','lineColor':'#44403c','secondaryColor':'#e7e5e4','tertiaryColor':'#eeeeec','fontFamily':'Avenir Next, Avenir, Helvetica Neue, sans-serif','fontSize':'24px','textColor':'#1c1917','mainBkg':'#f5f5f4','clusterBkg':'#eeeeec','clusterBorder':'#78716c','edgeLabelBackground':'#fafaf9'}}}%%
 flowchart TB
   BAT["House battery"]
-  BAT -->|"not through master"| F20["20 A fuse"]
+  BAT -->|"Layer 1 · not through master"| F20["20 A fuse"]
   F20 --> S12["Heater pins 1–2"]
   BAT --> BS["Blue Sea ST Blade<br/>or second breakout"]
-  BS --> SW["Master Off / On"]
+  BS --> SW["Master · Layer 2"]
   SW --> A["A · 5 A → EasyStart"]
-  SW --> B["B · thermostat / relay later"]
-  SW --> C["C · fan dial → Noctuas"]
+  SW --> B["B · thermostat later"]
+  SW --> C["C · fan dial"]
 
   classDef solid fill:#f5f5f4,stroke:#57534e,stroke-width:1px,color:#1c1917;
   classDef open fill:#eeeeec,stroke:#78716c,stroke-width:2px,stroke-dasharray:4 3,color:#1c1917;

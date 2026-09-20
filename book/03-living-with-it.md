@@ -68,7 +68,7 @@ Stored energy in the chamber is **tens of minutes** of holdover at Low output, n
 
 Use this after [HOLD 9](#hold-9) (chamber full, GFCI/ELCI and Paneltronics path verified).
 
-The 750 W element is a **house AC** load. It rides the same Paneltronics face as **BATTERY CHARGER** and **OUTLETS**. Energy to that face comes from shore power or the PROwatt SW inverter, selected by hand on a **Blue Sea 9009** rotary ([`photos/ac-electrical.jpg`](../photos/ac-electrical.jpg)). That rotary is **poorly labelled** today — before relying on it, mark the face **SHORE** / **INVERTER** (and the Mean Well 9009 **SHORE** / **J1772**). Master **Off** does not cut Isotemp AC.
+The 750 W element is **120 V only**—a different world from the hydronic master. It rides Paneltronics with **BATTERY CHARGER** and **OUTLETS**. Energy arrives from shore or the PROwatt SW, selected by hand on the **Paneltronics-path Blue Sea 9009** ([`photos/ac-electrical.jpg`](../photos/ac-electrical.jpg)). Mark that face **SHORE** / **INVERTER** (and the other 9009 **SHORE** / **J1772** for Mean Well charge only). Master **Off** does not cut Isotemp AC.
 
 ### Charge
 

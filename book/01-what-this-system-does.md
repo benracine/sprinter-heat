@@ -80,128 +80,94 @@ Meet each part once here. After this table, use only these official names—or t
 
 ## Controls
 
-The van has three electrical jobs for the hydronic system. Keep the jobs separate.
+Hydronic wiring is two separate worlds. They never share a fuse panel.
 
-1. **12 V diesel heat** — the house battery feeds the heater and the EasyStart Timer.  
-2. **Cabin fans** — a dial sets how hard air blows across the Sure Marine cabin heater.  
-3. **120 V Isotemp element** — that load lives on Paneltronics only, and stays dead until [HOLD 9](#hold-9).
+| World | Power | What it does | Parked lockout |
+|---|---|---|---|
+| **12 V** | House battery | Diesel heat call, heater pump, cabin fans | **Master Off** |
+| **120 V** | Shore or PROwatt SW → Paneltronics | Isotemp chamber element only | **WATER HEATER** breaker Off |
 
-### House electrical (context for hydronic)
-
-This book does not rebuild the whole van electrical system. House charging and distribution were designed earlier and are only lightly documented. Align on layout and remaining electrical facts in [Working design understanding](#working-design-understanding), then promote locked facts here.
-
-| Source | Role |
-|---|---|
-| [SRC-040](#src-040) — owner “Sprinter Van Electrical” | This van’s intended house layout (solar / shore / alternator / inverter / panels) |
-| [SRC-041](#src-041) — FarOutRide electrical guide | Same *class* of system: charge sources → house battery → 12 V loads; inverter and/or shore → 120 V AC |
-
-**What is already visible on this van**
-
-- Wood panel (with EasyStart): Xantrex **LinkPRO** battery monitor and Xantrex **PROwatt SW 2000** inverter (P/N **806-1220**; dual GFCI outlets on the face only).  
-- **Blue Sea** house DC: **ML-RBS** remote battery switch (build photos), ~**12-circuit ST Blade** fuse block, busbars / high-amp fuses. Hydronic master / EasyStart / fans may need a **second blade breakout** if the main block is full ([photo-extract-electrical](#photo-extract-electrical)).  
-- Paneltronics AC face **72313** / sheet **9972313B**: **MAIN 30 A** · **BATTERY CHARGER** · **WATER HEATER** (empty, reserved for Isotemp) · **OUTLETS** ([DEC-020](#dec-020)).  
-- Shore / charge inlets (build photos): exterior **SmartPlug** (120 V) and underbody **DUOSIDA** J1772 (**32 A / 240 V**).  
-- House bank (owner): **200 Ah** battery; **650 W** rated solar (**Victron SmartSolar MPPT 100\|50** in build photos); **Sterling 60 A** B2B; **Mean Well RPB-1600-12** for shore / J1772 (early photos show **IOTA DLS-55** — confirm removed).
-
-**How heat uses that house system**
-
-| Path | Feeds | Notes |
-|---|---|---|
-| House battery → heater 20 A fuse | Hydronic D5S brain + pump | Always fused; **not** through the hydronic master switch |
-| House battery → Blue Sea (typical) → **master** → EasyStart / fans / thermostat path | Heat call and cabin air | Master is **upstream of the EasyStart Timer**; Master Off is the parked lockout for 12 V heat controls |
-| Blue Sea **9009** rotary → Paneltronics MAIN → **WATER HEATER** | Isotemp 750 W element | Hand-select **120 V RV shore** or **PROwatt SW 2000** ([`photos/ac-electrical.jpg`](../photos/ac-electrical.jpg)); ~6.5 A; master Off does **not** cut this |
-| Blue Sea **9009** rotary → Mean Well RPB-1600-12 | House battery charge from shore or J1772 | **Not** through Paneltronics **BATTERY CHARGER** |
-
-**AC topology (as-built).** Two independent **Blue Sea 9009** rotary transfers (owner: both 9009s): (1) shore ↔ PROwatt SW 2000 → Paneltronics (Isotemp **WATER HEATER** + outlets); (2) shore ↔ J1772 → Mean Well only. Diagram draft showed an automatic switch on path (1); van uses rotary. Isotemp is AC only — never the 12 V panel. See [Working design understanding](#working-design-understanding). Ground-fault on the hardwired Isotemp branch still OPEN for HOLD 9.
-
-Land every hydronic pin from the printed manuals ([SRC-009](#src-009) / [SRC-003](#src-003)). Wire sizes in this chapter are **AWG**; the manuals print mm² for the same conductors. Full pin tables live in [Electrical and Controls](#electrical-and-controls).
+Master Off stops diesel heat and fans. Master Off does **not** cut Isotemp AC. Isotemp AC never lands on the 12 V panel.
 
 ![Day-one electrical](diagrams/electrical.svg)
 
-**Enough for diesel first fire.** Turn the master On, start heat on the EasyStart Timer, and set the fan dial. Living with the Isotemp chamber and AC dish rinses is in the [User’s Guide](#users-guide). The numbers behind keep-or-sell are in the [Isotemp value study](#isotemp-value-study).
+**Day-one diesel heat** (enough for first fire): Master **On** → EasyStart start → fan dial. Living with the chamber and AC dish rinses is in the [User’s Guide](#users-guide). Pin tables and fuse sizes: [Electrical and Controls](#electrical-and-controls).
 
-**Still being completed.** SC1600 auto ([Q-022](#q-022)) and the Isotemp AC circuit with upstream GFCI ([Q-009](#q-009)). Land the altitude kit at HOLD 4 while the harness is open ([Q-015](#q-015)).
+**Still open.** Thermostat auto ([Q-022](#q-022)). Isotemp GFCI path ([Q-009](#q-009)). Land the altitude kit at HOLD 4 ([Q-015](#q-015)).
 
-### The heater’s own power (always fused)
+### 12 V — how diesel heat is wired
+
+Think of three layers. Only the middle layer goes through the master switch.
 
 ![Power](diagrams/electrical-power.svg)
 
-Run a heavy pair from the house battery to the heater: **12 AWG** if the round trip (plus and minus) is **20 ft / 6 m** or less, through a **20 A** fuse on the positive, into heater connector pins **1** (red +) and **2** (brown −).
+**Layer 1 — heater always powered.** A heavy pair from the house battery: **12 AWG** if the round trip is **20 ft / 6 m** or less, through a **20 A** fuse, into heater pins **1** (red +) and **2** (brown −). This feed does **not** go through the master. The heater brain stays awake so it can finish an after-run and remember faults.
 
-This feed does **not** go through the master switch. The heater brain stays powered so the heater can finish an after-run and remember faults. Master Off still stops heat, because Master Off kills the EasyStart Timer—and without the timer there is no wake signal.
+**Layer 2 — master unlocks the cabin controls.** Mount one Off/On switch next to the EasyStart. The master switches **positive only** to three small branches (land them on the Blue Sea ST Blade, or a **second breakout** if that block is full):
 
-### The master switch (cabin lockout)
+| Branch | Fuse | Feeds |
+|---|---|---|
+| A | **5 A** (insert **last**) | EasyStart Timer |
+| B | size still OPEN | Later: thermostat → relay |
+| C | size still OPEN | Fan dial → both Noctua fans |
 
-Mount one Off/On switch next to the EasyStart. The master switch switches **positive only** to three small circuits:
+Master On does **not** start the heater. Master On only unlocks those branches so EasyStart (and later the thermostat) can call for heat. When you park or leave, turn the master **Off**.
 
-| When master is On | What gets power |
-|---|---|
-| Branch A · **5 A** fuse (put this fuse in **last**) | EasyStart Timer |
-| Branch B · small fuse (size still OPEN) | Later: thermostat → relay path |
-| Branch C · fan fuse (size still OPEN) | Fan speed dial → both cabin fans |
+Emergency stop: EasyStart off → master Off → pull the 20 A if you must → battery last. Do not cycle off and on more than twice into a fault ([SRC-009](#src-009)).
 
-Master On does **not** start the heater. Master On only unlocks those circuits so the EasyStart (and later the thermostat) can call for heat.
-
-When the van is parked or you are leaving the van, turn the master **Off**.
-
-For an emergency stop, turn EasyStart off, then master Off, then pull the 20 A if you must, and disconnect the battery last. Do not cycle off and on more than twice into a fault ([SRC-009](#src-009)).
-
-### How the EasyStart starts the heater
+**Layer 3 — EasyStart wakes the heater.**
 
 ![Wake](diagrams/electrical-wake.svg)
 
-The EasyStart Timer does two jobs:
+1. Branch A powers EasyStart pin **1** (+) and pin **3** (−).  
+2. On start (or a schedule), EasyStart puts positive on pin **6** (yellow). That yellow wire becomes heater pin **7** (S+ — “switch on”).
 
-1. **Feed the timer.** Branch A powers EasyStart pin **1** (red +) and pin **3** (brown −).
-2. **Wake the heater.** When you press start (or a schedule hits), the timer puts positive on pin **6** (yellow). That yellow wire runs through the control harness into the heater at pin **7**. Eberspächer calls that signal **S+**—“switch on.”
+No extra relay sits in a normal timer start. Once the heater sees S+, it decides whether to pump, glow, and fire.
 
-No extra relay sits in that path for a normal timer start. Once the heater sees S+, the heater decides whether to pump, glow, and fire.
-
-**Altitude kit** (still in the garage). Required for overnight camps above roughly 5,000 ft. The kit plugs into the control harness as a whole adapter; do not snip only the yellow wire. Land the kit at HOLD 4 while the EasyStart harness is open ([Q-015](#q-015) / [DEC-006](#dec-006)).
-
-### What the heater does after the heater wakes
+**Altitude kit** (garage). Required above roughly 5,000 ft. It plugs into the control harness as a whole adapter—do not snip only the yellow wire. Land it at HOLD 4 while the EasyStart harness is open ([Q-015](#q-015) / [DEC-006](#dec-006)).
 
 ![Heater](diagrams/electrical-heater.svg)
 
-With battery on pins 1–2 and the yellow wake on pin 7, the heater runs:
+With battery on pins 1–2 and yellow wake on pin 7, the heater runs its own water pump (pins **8–9**), the fuel metering pump (pins **4** and **10**), and glow / flame sensing. Do **not** add a second glycol pump. Tape off kit vehicle-blower wiring (pin **3**, blower relay, 25 A blower fuse)—that path is for a car heater matrix, not the Sure Marine cabin heater.
 
-- the heater water pump (pins **8** and **9**), which moves glycol around the van  
-- the fuel metering pump (pins **4** and **10**)  
-- glow plug and flame sensing inside  
-
-Do **not** add a second glycol pump.
-
-Ignore the kit’s vehicle-blower wiring (pin **3**, blower relay leads, and the 25 A blower fuse). That wiring is for a car heater matrix, not this Sure Marine cabin heater. Tape those leads off and plug unused chambers.
-
-### Cabin fans
+**Cabin fans** ride Branch C only.
 
 ![Fans](diagrams/electrical-fans.svg)
 
-Branch C feeds one shared fan dial. Book pick: Sure Marine [**W002-912**](https://www.suremarineservice.com/Heat/System-Switches/W002-912.html) Hi/Low **without** Off, 12 V / 0.52 A option ([DEC-018](#dec-018)). **Do not** use a Noctua NA-FC1. After the dial, both Noctua fans share that power on their red and black leads only. Leave the PWM and tach wires unused.
+Book pick: Sure Marine [**W002-912**](https://www.suremarineservice.com/Heat/System-Switches/W002-912.html) Hi/Low **without** Off ([DEC-018](#dec-018)). **Do not** use a Noctua NA-FC1. Both Noctua fans share red/black after the dial; leave PWM and tach unused. The dial sets **speed only**—it never starts the diesel. Until thermostat auto closes ([Q-022](#q-022)), fans run whenever master is On and the dial is up.
 
-The dial only sets **how hard** the fans blow. The dial never starts the diesel heater.
+**Thermostat auto — not ready.** The SC1600B’s **R** / **W** terminals are a dry contact (≤1 A). They need a **relay** for fan current ([SRC-019](#src-019)). **Do not** land them on EasyStart pins **9–10** (those are for Eberspächer’s optional temperature *sensor*). Until [Q-022](#q-022) names an approved wake path, start heat only from the EasyStart Timer. Fan-path relay reference: TE Connectivity **V23134-A3052-X540** (or any ISO mini 12 V coil / ≥10 A contacts).
 
-Until the thermostat auto path is finished ([Q-022](#q-022)), with master On the fans run whenever the dial is up—even if the heater is idle. Turn the dial down or flip the master Off to stop them.
-
-### Thermostat auto — not ready yet
-
-The SC1600B uses **AA batteries** of its own. The **R** and **W** terminals are a small switch that closes when the cabin is cold. That switch cannot power the fans by itself; Sure Marine expects a **relay** for fan current ([SRC-019](#src-019) / [SRC-033](#src-033)).
-
-**Do not** land that switch on EasyStart pins **9–10**. Those pins are for Eberspächer’s optional temperature *sensor*, not a dry-contact thermostat ([SRC-003](#src-003)).
-
-Until [Q-022](#q-022) names an approved way to wake the heater from that switch, start heat only from the EasyStart Timer. Book reference relay for the fan path: TE Connectivity **V23134-A3052-X540** (or any ISO mini 12 V coil / ≥10 A contacts) — [DigiKey](https://www.digikey.com/en/products/detail/te-connectivity-potter-brumfield-relays/V23134-A3052-X540/6234681).
-
-### Isotemp element on AC
+### 120 V — Isotemp chamber only
 
 ![AC](diagrams/electrical-ac.svg)
 
-The Isotemp element circuit is **not** on the 12 V panel.
+The 750 W element is a **Paneltronics** load. Path:
 
-Power runs from **120 V RV shore** or the **PROwatt SW 2000** through a **Blue Sea 9009** rotary transfer into Paneltronics MAIN, then the breaker labeled **WATER HEATER**, then the Isotemp 750 W element ([`photos/ac-electrical.jpg`](../photos/ac-electrical.jpg)). That path is AC only — not the 12 V panel. Ground-fault protection on that hardwired branch is still OPEN ([Q-009](#q-009)): inverter *might*; shore unknown; Paneltronics has none. Face GFCI outlets on the inverter protect only loads plugged into them.
+**SmartPlug shore** *or* **PROwatt SW 2000** → one **Blue Sea 9009** hand rotary (**SHORE** / **INVERTER**) → Paneltronics MAIN → breaker **WATER HEATER** → element.
 
-The element only warms the Isotemp **static** chamber. Circulating glycol still goes through the Isotemp **coil** whenever the diesel pump runs. Running the element alone will not give you a hot shower.
+Master Off does **not** cut this path. Label that 9009 face—it is poorly labelled today ([`photos/ac-electrical.jpg`](../photos/ac-electrical.jpg)). Upstream hardwire GFCI/ELCI is still OPEN ([Q-009](#q-009)). Inverter face GFCI outlets protect only loads plugged into them.
 
-Route the element cable at HOLD 4. Leave the **WATER HEATER** breaker **off** until [HOLD 9](#hold-9).
+The element warms the Isotemp **static** chamber only. Circulating glycol still needs the diesel pump through the **coil**. Element alone does not make a hot shower.
+
+Route the element cable at HOLD 4. Leave **WATER HEATER** **off** until [HOLD 9](#hold-9).
+
+**Second 9009 (not heat).** A separate rotary selects SmartPlug shore vs **DUOSIDA** J1772 into the **Mean Well RPB-1600-12** charger. That path charges the house battery. It does not feed **WATER HEATER**. Do not confuse the two rotaries.
+
+### House boxes you will see (context only)
+
+This book does not rebuild the whole van electrical system. Full inventory and photo extracts: [Working design understanding](#working-design-understanding) · [Electrical and Controls](#electrical-and-controls).
+
+| Box | Role for hydronic |
+|---|---|
+| House battery **200 Ah** | Feeds all 12 V hydronic loads |
+| Blue Sea ST Blade (+ ML-RBS) | Where master / EasyStart / fan fuses land (or a second breakout) |
+| Wood panel: LinkPRO + **PROwatt SW 2000** + EasyStart | Monitor, inverter, heat call |
+| Paneltronics face **72313** | **WATER HEATER** reserved for Isotemp; MAIN · BATTERY CHARGER · OUTLETS also on that face |
+| Two **Blue Sea 9009** rotaries | (1) Paneltronics shore/inverter · (2) Mean Well shore/J1772 |
+| SmartPlug + DUOSIDA J1772 | 120 V shore and 32 A / 240 V Level-2 inlets |
+
+Wire sizes in this chapter are **AWG**; manuals print mm² for the same conductors ([SRC-009](#src-009) / [SRC-003](#src-003)).
 
 ## Fluids
 
