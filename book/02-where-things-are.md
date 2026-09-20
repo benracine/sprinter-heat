@@ -19,6 +19,28 @@ Jump: [Project Phases](#project-phases) · [Builder’s Guide](#builders-guide) 
 
 Ask once per part: if it is already on the van, inspect and finish the remaining work; if it is still in the garage, bring it in for Phase B after Phase A passes. After diesel Acceptance, live from the [User’s Guide](#users-guide). Keep-or-sell numbers for the Isotemp are in the [Isotemp value study](#isotemp-value-study).
 
+## Effort estimate (remaining) {#effort-estimate}
+
+**ASSUMPTION** — one person, DIY pace, parts already on hand. Not a quote. Heater underbody mount, fuel tap, exhaust rough-in, Duda/Sure Marine placement, EasyStart mount, and house AC/DC backbone are treated as **already spent** and are not in these totals.
+
+| Block | Low | Typical | High | Notes |
+| --- | --- | --- | --- | --- |
+| Phase A — fuel + exhaust walk (HOLD 1–2) | 2 h | 3 h | 6 h | Mostly inspect/fix vs [SRC-009](#src-009) |
+| Sofa/bed rip + hybrid rebuild (HOLD S) | 40 h | **55 h** | 80 h | Largest block: frame, cradle, backrest Water Flow Tank, lift-out, hatches |
+| Phase B — mounts + 12 V / altitude / cable (HOLD 3–4) | 10 h | 16 h | 24 h | Overlaps sofa if done in the same build days |
+| Phase C — glycol + freshwater hose (HOLD 5–6) | 10 h | 16 h | 28 h | Clamps, bleeders, labels; rework if a run fights furniture |
+| Phase D — fill, bleed, first fire (HOLD 7–8) | 6 h | 10 h | 16 h | Water-first then glycol; watchful first fire |
+| HOLD 9 — Isotemp AC first energize | 2 h | 3 h | 6 h | After chamber full; ground-fault story still open |
+| Q-022 later — thermostat relay + wake | 2 h | 4 h | 8 h | After diesel heat works |
+| Contingency / fetch / rework (~20%) | 14 h | 20 h | 30 h | |
+
+| Finish line | Typical remaining | Calendar (weekends / evenings) |
+| --- | --- | --- |
+| **Diesel cabin heat + diesel hot water** (through HOLD 8) | **~110–120 h** | ~4–8 weeks part-time |
+| **Complete system** (+ HOLD 9 + light Q-022) | **~120–130 h** | add a few sessions |
+
+If two people share furniture and hose work, wall-clock time drops faster than man-hours (often ~0.7× calendar for the sofa and hose phases).
+
 ## Already on the van
 
 | Item | Now | Finish at |
