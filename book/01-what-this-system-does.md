@@ -8,7 +8,7 @@ Jump: [Safety](#safety) · [The Numbers](#the-numbers-that-matter) · [User’s 
 
 One diesel hydronic loop under the van does two jobs: warm cabin air, and heat tap water. Both jobs share one closed propylene glycol loop. That loop never mixes with drinking water, never connects to the engine ([DEC-009](#dec-009)), and has no second pump ([DEC-013](#dec-013)).
 
-Leftover loop heat can sit in a static chamber for later. An optional 750 W / 115 VAC element can warm that chamber from the Paneltronics AC panel—it does not pump the loop, and it alone does not put hot water at the taps.
+Leftover loop heat can sit in a static chamber for later. The planned 750 W / 115 VAC element warms that chamber from the Paneltronics AC panel—it does not pump the loop, and it alone does not put hot water at the taps.
 
 **Stop and reject** any proposal that would splice into the engine, tee glycol into drinking water, bypass cabin heat, add a second glycol pump, or land the 750 W element on the 12 V panel.
 
@@ -22,7 +22,7 @@ Meet each part once here. After this table, use only these official names—or t
 | **Sure Marine cabin heater**<br>*Short: cabin heater* | ![Sure Marine cabin heater](assets/parts/sure-marine-cabin.jpg){.part-photo} | Glycol → cabin air; two fans + one Low/Med/High dial ([DEC-015](#dec-015)); target both Noctua NF-F12 | Pull combustion air into the cabin |
 | **Duda B3-12DW-20 plate heat exchanger**<br>*Short: Duda; Duda plate* | ![Duda plate heat exchanger](assets/parts/duda-plate.jpg){.part-photo} | Glycol → freshwater across a double wall | Mix the two fluids |
 | **AM100-1LF thermostatic mixing valve**<br>*Short: AM100-1LF; the mixer* | ![AM100-1LF mixing valve on Duda](assets/parts/am100-1lf.jpg){.part-photo} | Limits shower/sink temperature (~120°F) | Connect to a glycol fitting |
-| **Isotemp Slim Square 4.2 gal heat battery**<br>*Short: Isotemp; Isotemp coil; Isotemp chamber* | ![Isotemp heat battery](assets/parts/isotemp-slim-square.jpg){.part-photo} | Softens cycling via coil ↔ static chamber; optional AC on **WATER HEATER** | Hold drinking water; replace the Duda; circulate glycol with the element |
+| **Isotemp Slim Square 4.2 gal heat battery**<br>*Short: Isotemp; Isotemp coil; Isotemp chamber* | ![Isotemp heat battery](assets/parts/isotemp-slim-square.jpg){.part-photo} | Softens cycling via coil ↔ static chamber; planned AC on **WATER HEATER** | Hold drinking water; replace the Duda; circulate glycol with the element |
 | **WFT 5 L expansion/header tank**<br>*Short: WFT* | ![WFT expansion tank](assets/parts/wft-tank.jpg){.part-photo} | Expansion + air bleed at the high point (~1.2 bar cap) | Use the Isotemp potable PRV as a glycol setting |
 | **EasyStart Timer**<br>*Short: EasyStart* | ![EasyStart Timer on wood panel](../photos/van-stuff/20260919_165557.jpg){.part-photo} | Schedule / target / start-stop ([SRC-003](#src-003)); bottom unit on the wood panel (under LinkPRO / PROwatt) | Replace the master lockout |
 | **Master switch**<br>*Representative Sure Marine W005-378K* | ![Sure Marine System Heat Switch W005-378K](assets/parts/sure-marine-master-switch.jpg){.part-photo} | Off cuts 12 V to EasyStart, SC1600B, and cabin fans ([DEC-012](#dec-012)); garage unit not photographed yet | Control Isotemp AC |
@@ -74,7 +74,7 @@ Land every pin from the printed manuals ([SRC-009](#src-009) / [SRC-003](#src-00
 
 **Enough for first fire.** Turn the master On, start heat on the EasyStart Timer, and set the fan dial.
 
-**Can wait.** SC1600 auto ([Q-022](#q-022)), and Isotemp AC with upstream GFCI ([Q-009](#q-009)). Land the altitude kit at HOLD 4 while the harness is open ([Q-015](#q-015)).
+**Still being completed.** SC1600 auto ([Q-022](#q-022)) and the Isotemp AC circuit with upstream GFCI ([Q-009](#q-009)). Land the altitude kit at HOLD 4 while the harness is open ([Q-015](#q-015)).
 
 ### The heater’s own power (always fused)
 

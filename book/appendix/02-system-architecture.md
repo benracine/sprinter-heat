@@ -2,7 +2,7 @@
 
 ## Scope
 
-Identify candidate hydronic architectures and which sources apply to each. Heater is Hydronic D5S diesel heater (DEC-000). Isotemp Slim Square 4.2 gal heat battery is the buffer (DEC-007). Duda B3-12DW-20 plate heat exchanger is the freshwater heat exchanger (DEC-003). See the [Isotemp value study](12-isotemp-value-study.md) for the keep-or-sell analysis, energy limits, and commissioning measurements.
+Identify candidate hydronic architectures and which sources apply to each. Heater is Hydronic D5S diesel heater (DEC-000). Isotemp Slim Square 4.2 gal heat battery is the buffer (DEC-007). Duda B3-12DW-20 plate heat exchanger is the freshwater heat exchanger (DEC-003). See the [Isotemp value study](#isotemp-value-study) for the keep-or-sell analysis, energy limits, and commissioning measurements.
 
 ## Inputs and sources
 

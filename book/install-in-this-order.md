@@ -16,7 +16,7 @@ Use reinforced heater hose, stainless clamps, and brass, copper, or stainless ba
 
 ## What “done” means
 
-Cabin heat and diesel hot water pass [Acceptance](#acceptance). [HOLD 9](#hold-9) for Isotemp AC can wait.
+Cabin heat and diesel hot water can pass the diesel-only checks before [HOLD 9](#hold-9). Complete system acceptance requires the Isotemp AC circuit and first energization at [HOLD 9](#hold-9).
 
 ## Four Project Phases {#project-phases}
 
@@ -55,7 +55,7 @@ The altitude kit does not block a low-camp first fire. It is still not on the wa
 | 6. Freshwater | Tank → pump → Duda → mixer → taps | Trust hot temp yet | [HOLD 6](#hold-6-freshwater) |
 | 7. Fill / bleed | Water-first → drain → ≤50% PG → bleed → static Isotemp fill | Fire; AC | [HOLD 7](#hold-7-fill) |
 | 8. First fire | Prime; watch; hot inspect; shutdown; cool check | Call done with open required HOLD | [Acceptance](#acceptance) |
-| 9. AC later | Upstream GFCI/ELCI; **WATER HEATER** on | Skip if diesel heat is enough | [HOLD 9](#hold-9) |
+| 9. AC commissioning | Upstream GFCI/ELCI; **WATER HEATER** on | Energize before complete system acceptance | [HOLD 9](#hold-9) |
 
 ## Before you start
 
@@ -587,9 +587,9 @@ Do not run the Hydronic D5S diesel heater in a closed garage. Exhaust is carbon 
 
 ---
 
-## 9. Optional — first energize of Isotemp AC element ([HOLD 9](#hold-9)) {#hold-9}
+## 9. First energize of Isotemp AC element ([HOLD 9](#hold-9)) {#hold-9}
 
-Do this only after HOLD 7 (chamber full) and after you have closed [Q-009](#q-009) / [Q-016](#q-016) far enough to name the actual Paneltronics breaker, GFCI/grounding, cable size, and switch. Diesel Acceptance does **not** require [HOLD 9](#hold-9).
+Do this only after HOLD 7 (chamber full) and after you have closed [Q-009](#q-009) / [Q-016](#q-016) far enough to name the actual Paneltronics breaker, GFCI/grounding, cable size, and switch. A diesel-only first fire may precede [HOLD 9](#hold-9), but complete system acceptance requires [HOLD 9](#hold-9).
 
 1. Confirm the Isotemp chamber is full of the same propylene glycol mix; element never runs dry ([SRC-022](#src-022)).
 2. Confirm the element cable lands only on the Paneltronics AC panel — never the 12 V panel.
@@ -630,7 +630,7 @@ Do not energize the 750 W / 115 VAC element on an empty chamber. Do not land it 
 **May stay open after a successful low-elevation first fire**
 
 - [Q-022](#q-022) — SC1600B auto call (start heat from EasyStart Timer until closed)
-- [HOLD 9](#hold-9) / Isotemp AC first energize — required before using the element; not for diesel cabin heat or diesel hot water at the Duda
+- [HOLD 9](#hold-9) / Isotemp AC first energize — required for complete system acceptance and before using the element; a diesel-only first fire may precede HOLD 9
 - Sure Marine cabin heater final cosmetic mount — must still be plumbed, level, and bled before relying on cabin air
 
 **Altitude kit 22 1000 33 22 00** — does not block a low-elevation first fire, but land at HOLD 4 while the EasyStart harness is open; required before high camps ([Q-015](#q-015) / [DEC-006](#dec-006)).

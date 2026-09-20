@@ -72,5 +72,5 @@ Tolerances ±10% at rated voltage / Esslingen reference altitude. Staging ~65 / 
 - [ ] **OPEN:** Q-010 fuel-line routing inspection before first fire
 - [ ] **OPEN:** Q-013 EasyStart Timer wiring finish
 - [ ] **OPEN:** Q-015 Altitude kit 22 1000 33 22 00 find / wire (high camps)
-- [ ] **OPEN:** Q-009 / Q-016 element AC path (optional for diesel-only first fire)
+- [ ] **OPEN:** Q-009 / Q-016 element AC path (required for complete build; diesel-only first fire may precede final energization)
 - [ ] **OPEN:** Q-019 / Q-021 brand pick and Sure Marine cabin heater switch model

@@ -12,7 +12,7 @@ Jump: [System Design](#system-design) · [The Numbers](#the-numbers-that-matter)
 | Cabin heat | Master **On** → EasyStart Timer start → fan dial Low/Med/High → wait a few minutes |
 | Hot water | Master **On** → short EasyStart start → draw the tap through the AM100-1LF only |
 | Pre-heat later | Master **On** → set an EasyStart schedule |
-| Optional AC chamber charge | After [HOLD 9](#hold-9) → turn **WATER HEATER** on → use EasyStart later if you want that stored heat at the taps |
+| AC chamber charge | After [HOLD 9](#hold-9) → turn **WATER HEATER** on → use EasyStart later to move stored heat toward the taps |
 | Mountains overnight | Install the altitude kit first ([DEC-006](#dec-006)) |
 | Emergency stop | EasyStart off → master Off → Isotemp AC off → fuse or battery if needed. No more than two off/on cycles into a fault |
 
@@ -39,7 +39,7 @@ A heat call wakes the heater and starts its pump. The burner fires only if coola
 | SC1600B | Low-current heat **signal** only ([SRC-033](#src-033)); needs a relay for fans | Fan power; trusted auto until [Q-022](#q-022) |
 | Fan dial | Low/Med/High — no hard Off ([DEC-018](#dec-018)) | Call for heat |
 | AM100-1LF | Safe tap temperature | Act as a glycol valve or the Isotemp factory mixer |
-| Paneltronics **WATER HEATER** | Optional chamber charge after [HOLD 9](#hold-9) | Circulate glycol by itself |
+| Paneltronics **WATER HEATER** | Planned chamber charge after [HOLD 9](#hold-9) | Circulate glycol by itself |
 
 ## If something is wrong
 
