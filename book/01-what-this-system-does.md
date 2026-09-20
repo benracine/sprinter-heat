@@ -37,7 +37,7 @@ Meet each part once here. After this table, use only these official names—or t
 ::: {.media-pair}
 ![Cabin air](diagrams/cabin-air.svg)
 
-![Sure Marine cabin heater on van](assets/parts/sure-marine-on-van.jpg)
+![Sure Marine cabin heater](assets/parts/sure-marine-cabin.jpg)
 :::
 
 ::: {.media-pair}
