@@ -937,6 +937,16 @@ yet</a></li>
 <li><a href="#quick-start-after-acceptance" id="toc-quick-start-after-acceptance">Quick start (after
 Acceptance)</a></li>
 <li><a href="#hard-rules" id="toc-hard-rules">Hard rules</a></li>
+<li><a href="#what-the-isotemp-does-for-you-day-to-day" id="toc-what-the-isotemp-does-for-you-day-to-day">What the Isotemp does
+for you day to day</a></li>
+<li><a href="#ac-chamber-and-dishes" id="toc-ac-chamber-and-dishes">AC
+chamber and dishes</a>
+<ul>
+<li><a href="#charge" id="toc-charge">Charge</a></li>
+<li><a href="#leave-water-heater-on-or-not" id="toc-leave-water-heater-on-or-not">Leave WATER HEATER on or
+not?</a></li>
+<li><a href="#dish-rinse-after-a-charge" id="toc-dish-rinse-after-a-charge">Dish rinse after a charge</a></li>
+</ul></li>
 <li><a href="#controls-at-a-glance" id="toc-controls-at-a-glance">Controls at a glance</a></li>
 <li><a href="#if-something-is-wrong" id="toc-if-something-is-wrong">If
 something is wrong</a></li>
@@ -2025,7 +2035,7 @@ charged by the heater pump. The 750 W element on Paneltronics
 <p><strong>Stage 2 — Use.</strong> Read this after <a href="#system-design">System Design</a> and <a href="#the-numbers-that-matter">The Numbers</a>, and before <a href="#current-status-report">Current Status</a> and the <a href="#builders-guide">Builder’s Guide</a>. After <a href="#acceptance">Acceptance</a>, use this chapter as the day-to-day
 manual. Until Acceptance, treat the tables below as the operating
 target—not as permission to light the heater.</p>
-<p>Jump: <a href="#system-design">System Design</a> · <a href="#the-numbers-that-matter">The Numbers</a> · <a href="#current-status-report">Current Status</a> · <a href="#builders-guide">Builder’s Guide</a></p>
+<p>Jump: <a href="#system-design">System Design</a> · <a href="#the-numbers-that-matter">The Numbers</a> · <a href="#current-status-report">Current Status</a> · <a href="#builders-guide">Builder’s Guide</a> · <a href="#isotemp-value-study">Isotemp value study</a></p>
 <h2 id="quick-start-after-acceptance">Quick start (after
 Acceptance)</h2>
 <table>
@@ -2041,9 +2051,10 @@ Acceptance)</h2>
 </thead>
 <tbody>
 <tr>
-<td>Parked</td>
-<td>Turn the master <strong>Off</strong>, and leave Isotemp AC
-(<strong>WATER HEATER</strong>) off</td>
+<td>Parked / unattended</td>
+<td>Master <strong>Off</strong>. Leave Isotemp AC (<strong>WATER
+HEATER</strong>) <strong>off</strong> unless you deliberately want a
+chamber top-off on shore or abundant solar (see <a href="#ac-chamber-and-dishes">AC chamber</a>)</td>
 </tr>
 <tr>
 <td>Cabin heat</td>
@@ -2051,19 +2062,23 @@ Acceptance)</h2>
 Low/Med/High → wait a few minutes</td>
 </tr>
 <tr>
-<td>Hot water</td>
-<td>Master <strong>On</strong> → short EasyStart start → draw the tap
-through the AM100-1LF only</td>
+<td>Shower / lots of hot water</td>
+<td>Master <strong>On</strong> → EasyStart start → draw only through the
+AM100-1LF. Expect the diesel to run</td>
+</tr>
+<tr>
+<td>Dish rinse with chamber already hot</td>
+<td>Master <strong>On</strong> → short EasyStart → wait per <a href="#ac-chamber-and-dishes">timing table</a> → tap through
+AM100-1LF</td>
+</tr>
+<tr>
+<td>Charge chamber from shore/solar</td>
+<td>After <a href="#hold-9">HOLD 9</a> → <strong>WATER HEATER</strong>
+on (chamber must be full). Taps stay cold until you run EasyStart</td>
 </tr>
 <tr>
 <td>Pre-heat later</td>
 <td>Master <strong>On</strong> → set an EasyStart schedule</td>
-</tr>
-<tr>
-<td>AC chamber charge</td>
-<td>After <a href="#hold-9">HOLD 9</a> → turn <strong>WATER
-HEATER</strong> on → use EasyStart later to move stored heat toward the
-taps</td>
 </tr>
 <tr>
 <td>Mountains overnight</td>
@@ -2078,9 +2093,10 @@ needed. No more than two off/on cycles into a fault</td>
 </table>
 <p>Until <a href="#q-022">Q-022</a> closes, always start heat from the
 EasyStart Timer, not from the SC1600B.</p>
-<p>A heat call wakes the heater and starts its pump. The burner fires
-only if coolant is cool enough. Cool cabin air for the first minute or
-two is normal.</p>
+<p>A heat call wakes the Hydronic D5S and starts its
+<strong>pump</strong>. The <strong>burner</strong> fires only if coolant
+is cool enough. Cool cabin air for the first minute or two is
+normal.</p>
 <h2 id="hard-rules">Hard rules</h2>
 <ol type="1">
 <li>Turn the master Off when the van is parked or unattended.</li>
@@ -2093,13 +2109,160 @@ the handwheel screw, lift, turn, lock, and check at the faucet (<a href="#src-03
 (<a href="#src-009">SRC-009</a>). Clear locks with diagnostics, not by
 power cycling.</li>
 <li>Check the WFT level only when the system is cool.</li>
-<li>Hot water at the taps needs circulating glycol from the diesel pump
-through the Duda. Isotemp AC only heats the static chamber; the coil
-still sees loop flow when the pump runs. Running the element alone will
-not give you a shower.</li>
+<li>Hot water at the taps needs circulating glycol from the diesel
+<strong>pump</strong> through the Duda. Isotemp AC only heats the static
+chamber. Running the element alone will not give you a shower or dish
+water.</li>
 <li>The Isotemp 750 W element lands on Paneltronics <strong>WATER
-HEATER</strong> only—never on 12 V (<a href="#dec-004">DEC-004</a> / <a href="#dec-020">DEC-020</a>).</li>
+HEATER</strong> only—never on 12 V (<a href="#dec-004">DEC-004</a> / <a href="#dec-020">DEC-020</a>). Never energize an empty chamber.</li>
 </ol>
+<h2 id="what-the-isotemp-does-for-you-day-to-day">What the Isotemp does
+for you day to day</h2>
+<p>The Isotemp Slim Square is a <strong>buffer</strong>, not a faucet
+tank. Planning numbers and keep/sell analysis live in the <a href="#isotemp-value-study">Isotemp value study</a>.</p>
+<p><strong>Cabin heat.</strong> The D5S Low stage is about <strong>2.1
+kW</strong>. On mild or moderate nights a well-insulated van often needs
+less than that, so Low has surplus heat. The static chamber can soak up
+some of that surplus through the coil and give it back while the burner
+pauses. Expect <strong>fewer short cycles</strong> in shoulder
+weather—not a promise of zero starts, and little help when it is so cold
+that the van already wants more than 2.1 kW.</p>
+<p><strong>Rough scale (planning only):</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Outside air (cabin ~70°F)</th>
+<th>What to expect from the buffer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Around <strong>40°F</strong>, decent insulation</td>
+<td>Clearest cycling benefit; Low often oversized</td>
+</tr>
+<tr>
+<td>Around <strong>20°F</strong></td>
+<td>Some benefit; diesel does more of the work</td>
+</tr>
+<tr>
+<td>Around <strong>0°F</strong> and colder</td>
+<td>Little cycling help; treat the diesel as the heat source</td>
+</tr>
+</tbody>
+</table>
+<p>Stored energy in the chamber is <strong>tens of minutes</strong> of
+buffer at Low output, not hours.</p>
+<p><strong>Hot water.</strong> Heat at the sink or shower always means:
+EasyStart → pump → Duda → AM100-1LF. The chamber can shorten a diesel
+run or feed a short dish rinse after an AC charge. It cannot replace the
+pump.</p>
+<h2 id="ac-chamber-and-dishes">AC chamber and dishes</h2>
+<p>Use this after <a href="#hold-9">HOLD 9</a> (chamber full, GFCI/ELCI
+and Paneltronics path verified).</p>
+<h3 id="charge">Charge</h3>
+<ol type="1">
+<li>Shore or abundant solar ready; inverter on if you are not on
+shore.</li>
+<li>Turn Paneltronics <strong>WATER HEATER</strong>
+<strong>on</strong>.</li>
+<li>The 750 W element heats the <strong>static chamber</strong> only.
+The working thermostat cuts near <strong>75°C / 167°F</strong>, then
+tops off as the chamber cools. From a cool chamber, plan about
+<strong>40–60 minutes</strong> to reach that band.</li>
+<li>Taps stay <strong>cold</strong> during the charge. No pump → no heat
+at the Duda.</li>
+</ol>
+<h3 id="leave-water-heater-on-or-not">Leave WATER HEATER on or not?</h3>
+<p>The thermostat will top off by itself. That does <strong>not</strong>
+mean leave inverter + <strong>WATER HEATER</strong> on forever.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Leave <strong>WATER HEATER</strong> on when…</th>
+<th>Leave it <strong>off</strong> when…</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shore power, or solar clearly covering ~750 W plus inverter
+idle</td>
+<td>Saving the house battery; long unattended park; HOLD 9 / GFCI path
+not finished</td>
+</tr>
+<tr>
+<td>You want the chamber ready for a later dish rinse</td>
+<td>You only need cabin heat from diesel</td>
+</tr>
+</tbody>
+</table>
+<p>Master <strong>Off</strong> does not cut Isotemp AC. Kill
+<strong>WATER HEATER</strong> (and the inverter if you are done)
+separately.</p>
+<h3 id="dish-rinse-after-a-charge">Dish rinse after a charge</h3>
+<ol type="1">
+<li>Master <strong>On</strong> → short EasyStart start →
+<strong>pump</strong> runs.</li>
+<li>Heat moves: chamber → coil → Duda → AM100-1LF → sink.</li>
+<li><strong>Pump and burner are different.</strong> EasyStart always
+starts the pump. The burner lights only if glycol at the D5S is cool
+enough.</li>
+</ol>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Starting glycol loop</th>
+<th>Flame</th>
+<th>Wait for hot sink after EasyStart</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Still warm from recent heat</td>
+<td>Often <strong>off</strong></td>
+<td>About <strong>30–60 seconds</strong>, then open the tap</td>
+</tr>
+<tr>
+<td>Cold</td>
+<td><strong>On</strong></td>
+<td>About <strong>2–5 minutes</strong> to useful dish heat. The chamber
+shortens the run; it does <strong>not</strong> skip the flame</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Flame-off dishes?</th>
+<th>How long</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Only if the loop was already warm enough not to light</td>
+<td>About <strong>2–5 minutes</strong> of rinse water (roughly
+<strong>3–6 L</strong> warmed ~20°C), then flame or lukewarm water</td>
+</tr>
+</tbody>
+</table>
+<p>That is a <strong>dish rinse</strong>, not a shower. For a shower,
+run EasyStart and expect the diesel to work.</p>
 <h2 id="controls-at-a-glance">Controls at a glance</h2>
 <table>
 <colgroup>
@@ -2122,7 +2285,8 @@ HEATER</strong> only—never on 12 V (<a href="#dec-004">DEC-004</a> / <a href="
 </tr>
 <tr>
 <td>EasyStart Timer</td>
-<td>Start, stop, schedule, and target (<a href="#src-003">SRC-003</a>)</td>
+<td>Start, stop, schedule, and target (<a href="#src-003">SRC-003</a>);
+starts the D5S pump on a heat call</td>
 <td>Replace master Off</td>
 </tr>
 <tr>
@@ -2142,8 +2306,9 @@ HEATER</strong> only—never on 12 V (<a href="#dec-004">DEC-004</a> / <a href="
 </tr>
 <tr>
 <td>Paneltronics <strong>WATER HEATER</strong></td>
-<td>Planned chamber charge after <a href="#hold-9">HOLD 9</a></td>
-<td>Circulate glycol by itself</td>
+<td>Chamber charge after <a href="#hold-9">HOLD 9</a>; tops off near
+75°C</td>
+<td>Circulate glycol; heat the taps alone</td>
 </tr>
 </tbody>
 </table>
@@ -2204,7 +2369,8 @@ GFCI/ELCI</td>
 </table>
 <h2 id="use-check">Use check</h2>
 <ul class="task-list">
-<li><label><input type="checkbox"></input>Parked means master Off<br />
+<li><label><input type="checkbox"></input>Parked means master Off; Isotemp AC
+off unless you chose a deliberate shore/solar top-off<br />
 </label></li>
 <li><label><input type="checkbox"></input>Heat and hot water come from
 EasyStart until the thermostat is verified<br />
@@ -2212,7 +2378,11 @@ EasyStart until the thermostat is verified<br />
 <li><label><input type="checkbox"></input>Showers only through AM100-1LF at
 about 120°F<br />
 </label></li>
-<li><label><input type="checkbox"></input>Isotemp AC is not a shower<br />
+<li><label><input type="checkbox"></input>Isotemp AC charges the chamber only;
+taps still need the pump<br />
+</label></li>
+<li><label><input type="checkbox"></input>Dish rinse timing (warm loop vs cold
+loop) is clear<br />
 </label></li>
 <li><label><input type="checkbox"></input>Emergency stop and the two off/on
 rule are clear</label></li>
