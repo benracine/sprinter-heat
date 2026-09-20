@@ -1,6 +1,6 @@
 # The Numbers {#the-numbers-that-matter}
 
-Skim after [System Design](#system-design), then the [User’s Guide](#users-guide). From [SRC-009](#src-009) unless noted. Swap the heater → rewrite this page. Chamber sizing / keep-or-sell: [Isotemp value study](#isotemp-value-study).
+Skim this card after [System Design](#system-design), then continue to the [User’s Guide](#users-guide). Figures come from the Hydronic D5S diesel heater manual ([SRC-009](#src-009)) unless noted. If you swap the heater, rewrite this page from that heater’s manual first. Chamber sizing and keep-or-sell numbers live in the [Isotemp value study](#isotemp-value-study).
 
 Jump: [System Design](#system-design) · [User’s Guide](#users-guide) · [Isotemp value study](#isotemp-value-study) · [Builder’s Guide](#builders-guide)
 
