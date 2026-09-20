@@ -49,7 +49,17 @@ Living-space air crosses the Sure Marine cabin heater under the fridge. Two Noct
 
 ### Tap water
 
-Freshwater runs from the tank through the pump, into the Duda (cold in bottom, hot out top), through the AM100-1LF (~120°F), and out to the taps ([DEC-003](#dec-003) / [DEC-008](#dec-008)). Heat crosses the double wall only. The Isotemp chamber is not on this path. The factory Isotemp mixer stays capped forever.
+Freshwater runs in this order only ([DEC-003](#dec-003) / [DEC-008](#dec-008)):
+
+1. Freshwater tank (passenger rear wheel well)  
+2. Strainer  
+3. Van water pump  
+4. Check valves  
+5. Duda (freshwater side — cold in bottom, hot out top)  
+6. AM100-1LF (~120°F) — cold feed joins here  
+7. Sink / shower  
+
+Heat crosses the Duda double wall only. The Isotemp chamber is not on this path. The factory Isotemp mixer stays capped forever.
 
 ::: {.media-pair}
 ![Fresh water system](diagrams/freshwater.svg)
