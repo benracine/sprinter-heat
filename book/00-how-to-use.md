@@ -22,7 +22,7 @@ For numbers and citations: [The Numbers](#the-numbers-that-matter) · [Sources](
 
 Part two is reference, not the work order. A code such as [SRC-009](#src-009) jumps to the source register. DANGER, CAUTION, and MUST boxes override whatever sits around them.
 
-Part names appear once in [The Parts](#the-parts). What is already on the van versus still in the garage is in [Current Status](#current-status-report).
+Part names appear once in [The Parts](#the-parts)—that table is the glossary of record. What is already on the van versus still in the garage is in [Current Status](#current-status-report).
 
 ## When sources disagree
 

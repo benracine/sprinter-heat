@@ -31,5 +31,3 @@ Jump: [System Design](#system-design) · [User’s Guide](#users-guide) · [Buil
 ::: {.must}
 Keep glycol and drinking water apart; heat crosses only at the Duda double wall ([DEC-003](#dec-003)). Cap unused ports. Mix at most 50% propylene glycol, one brand only. Keep heater supply voltage about 10.5–16 V. Do not run overnight heat above about 5,000 ft without Altitude kit 22 1000 33 22 00 ([DEC-006](#dec-006)). → [HAZ-007](#haz-007) · [HAZ-011](#haz-011)
 :::
-
-→ [System Design](#system-design).

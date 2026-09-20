@@ -35,7 +35,43 @@ That is the only report. Both formats are intentional. Do not create parallel gu
 
 # Voice (part one)
 
-Native English. Calm, precise, and accessible—think a clear briefing for a smart general audience (TED Talk, not a status memo). Short sentences. No fairy-tale sequencing (“First comes… Next comes…”). No corporate filler. Stop rules when harm is real. No open-question tables or leftover heater-family comparisons in part one.
+Calm, precise, accessible briefing for a smart general audience. No fairy-tale sequencing (“First comes…”). No corporate filler. No open-question tables or leftover heater-family comparisons in part one.
+
+# Technical writing standards (part one)
+
+Adapted from [USU Engineering Writing Center — Technical Writing Standards](https://engineering.usu.edu/students/engineering-writing-center/writing-resources/technical-writing-standards) (Aug 2025), plus controlled vocabulary for this van.
+
+## Clarity and voice
+
+1. **Active voice** when someone must act. Passive is fine when the action matters more than the actor, or the actor is unknown.
+2. **Second person / imperative** for instructions and HOLDs (“Land the cable,” “Finish HOLD 1”). Prefer open forms in procedures and warnings (**do not**, **cannot**). Light contractions are fine only in short briefing prose.
+3. **Opinion-free and emotion-free.** Do not write feel, think, believe, like, love. State facts, measurements, and decisions.
+4. **Bias-free and gender-neutral.** No stereotypes; no default “he.”
+5. **Familiar words.** Prefer plain words over jargon. Define every technical term the reader must use.
+6. **Consistent tense.** Do not mix past and present for the same action sequence.
+
+## Readability
+
+7. **Short sentences.** Aim for about 10–20 words when safety or sequence matters.
+8. **Short paragraphs.** Roughly four to six lines; one main idea per paragraph; topic sentence first.
+9. **Concrete, not vague.** Prefer a number with a unit over “a bit,” “some,” “many,” “really,” “quite.” Avoid starting sentences with bare **It** or **This** when the referent is unclear.
+10. **No filler or redundancy.** Cut that/very/just when unused; avoid “true fact,” “summarize briefly,” “fuse together.”
+11. **No clichés or slang.** Examples and analogies are fine when they clarify.
+
+## Names, abbreviations, and numbers
+
+12. **Controlled names.** [The Parts](#the-parts) is the glossary of record. Meet each part once there (full official name + what it does / does not). Everywhere else, use only those official names or the short forms listed there. Do not invent aliases (buffer, Bosch, Espar, “the tank,” “the core,” “the plate”).
+13. **Abbreviations.** Full term first, then short form: Altitude kit 22 1000 33 22 00 (altitude kit). Well-known acronyms (GPS, AC, DC, AWG) need no expansion.
+14. **Same words for the same thing.** Loop order, propylene glycol vs drinking water, and Paneltronics **WATER HEATER** stay identical across chapters.
+15. **Numbers with units.** Every figure carries a unit. Prefer the governing manual’s unit; add a familiar conversion only when it helps.
+
+## Procedures and authority
+
+16. **Warnings before the step.** DANGER / CAUTION / MUST appear immediately before the action they govern.
+17. **Authority, not folklore.** Manufacturer manuals and locked DECs win. OPEN items stay OPEN—do not invent pinouts, hose routes, or fuse sizes.
+18. **Reader path before digression.** Part one stays serial: design → numbers → use → status → build. Put citations and depth in part two.
+
+Format (margins, fonts) follows `book/style.css`, not USU’s print template.
 
 # Context cost
 

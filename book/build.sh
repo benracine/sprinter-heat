@@ -41,6 +41,7 @@ FILES=(
   "$BOOK/appendix/09-electrical-and-controls.md"
   "$BOOK/appendix/10-installation-procedure.md"
   "$BOOK/appendix/11-commissioning-procedure.md"
+  "$BOOK/appendix/12-isotemp-value-study.md"
   "$BOOK/appendix/decisions.md"
   "$BOOK/appendix/open-questions.md"
   "$BOOK/research/verified-requirements.md"
