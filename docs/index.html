@@ -3998,10 +3998,11 @@ bottom-in/top-out, outlet bleeder fitted or planned</label></li>
 </ul>
 <hr />
 <h2 id="hold-4-electrical">4. Wiring and controls</h2>
-<p>Story and diagrams: <a href="#controls">Controls</a>. Pin colours and
-AWG sizes: <a href="#electrical-and-controls">Electrical and
-Controls</a>. Land every connector from <a href="#src-009">SRC-009</a> /
-<a href="#src-003">SRC-003</a> on the bench — kit pins need the
+<p><strong>Two worlds.</strong> HOLD 4 lands <strong>12 V</strong>
+diesel heat (heater feed, master, EasyStart, fans, altitude kit) and
+routes the Isotemp <strong>element cable</strong> dead to Paneltronics.
+<strong>120 V</strong> energize is HOLD 9 only. Story and diagrams: <a href="#controls">Controls</a>. Pin colours and AWG: <a href="#electrical-and-controls">Electrical and Controls</a>. Land every
+connector from <a href="#src-009">SRC-009</a> / <a href="#src-003">SRC-003</a> on the bench — kit pins need the
 Eberspächer-style crimper.</p>
 <h3 id="hold-4-power">Heater battery feed and master</h3>
 <ol type="1">
@@ -9376,6 +9377,12 @@ Extract: <a href="#photo-extract-electrical">photo-extract-electrical</a>.</td>
 <h1 id="working-design-understanding">Working design understanding</h1>
 <p>Scratchpad for Ben’s questions. Not the Builder’s Guide. Promote
 locked answers into part one / HOLD S when ready.</p>
+<p><strong>Hydronic mental model (promoted to <a href="#controls">Controls</a>).</strong> Two worlds that never share a
+fuse panel: <strong>12 V</strong> diesel heat + fans (master Off
+lockout) vs <strong>120 V</strong> Isotemp chamber on Paneltronics
+<strong>WATER HEATER</strong>. Two <strong>Blue Sea 9009</strong>
+rotaries: one is Isotemp heat (shore/inverter → Paneltronics); the other
+is battery charge only (shore/J1772 → Mean Well).</p>
 <h2 id="input-from-ben">Input from Ben</h2>
 <ul>
 <li>Doesn’t the Xantrex we own have GFCI on the outlets already? Doesn’t
