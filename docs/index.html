@@ -983,6 +983,7 @@ sources disagree</a></li>
 <li><a href="#safety" id="toc-safety">Safety</a></li>
 <li><a href="#the-sofa" id="toc-the-sofa">The sofa</a>
 <ul>
+<li><a href="#cargo-floor" id="toc-cargo-floor">Cargo floor</a></li>
 <li><a href="#what-the-bay-holds" id="toc-what-the-bay-holds">What the
 bay holds</a></li>
 <li><a href="#frame-first" id="toc-frame-first">Frame first</a></li>
@@ -1246,11 +1247,6 @@ Slim Square 4.2 gal heat battery
 </ul></li>
 <li><a href="#verification-4" id="toc-verification-4">Verification</a></li>
 <li><a href="#open-items-3" id="toc-open-items-3">Open items</a></li>
-</ul></li>
-<li><a href="#cargo-floor" id="toc-cargo-floor">Cargo floor</a>
-<ul>
-<li><a href="#inches" id="toc-inches">Inches</a></li>
-<li><a href="#seat-base" id="toc-seat-base">Seat base</a></li>
 </ul></li>
 <li><a href="#coolant-loop" id="toc-coolant-loop">Coolant Loop</a>
 <ul>
@@ -1733,48 +1729,131 @@ about 10.5–16 V. Do not run overnight heat above about 5,000 ft without
 Altitude kit 22 1000 33 22 00 (<a href="#dec-006">DEC-006</a>). → <a href="#haz-007">HAZ-007</a> · <a href="#haz-011">HAZ-011</a></p>
 </div>
 <h1 id="the-sofa">The sofa</h1>
-<p>The current bed comes out first. The freshwater tank, the freshwater
-strainer, the Isotemp Slim Square 4.2 gal heat battery, and the
-expansion header all secure into this bay. Underbody fuel and exhaust
-can proceed at the same time. Do not bolt those four parts down until
-the seat-base frame gives them a place.</p>
-<p>The body is the regular 170, not the 170 EXT. The bed spans the rear
-wheel wells. Inches, the generated plan, and photos of the bed that is
-coming out are in <a href="#cargo-floor">Cargo floor</a>.</p>
+<p>The sofa is the cargo floor over the rear wheel wells. The current
+bed comes out first. That bay blocks the cabin mounts: do not bolt the
+freshwater tank, the freshwater strainer, the Isotemp Slim Square 4.2
+gal heat battery, or the 5 L expansion header until the seat-base frame
+gives them a place. Fuel and exhaust under the van can proceed at the
+same time.</p>
+<h2 id="cargo-floor">Cargo floor</h2>
+<p>The body is the regular 170, not the 170 EXT. Both use the 170-inch
+wheelbase and the same wheel-well envelope. The EXT cargo floor is
+longer by about 15.7 inches, and that extra length is behind the rear
+axle (<a href="#src-043">SRC-043</a>). A bed drawn on an EXT plan will
+run long on this van.</p>
+<p>Change inches in <code>book/layout/cargo-floor.yaml</code>, then run
+<code>./book/build.sh</code>. The script rewrites the drawing. Do not
+edit the SVG by hand.</p>
 <figure>
-<img role="img" aria-label="Regular 170 bed bay" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2ODcgOTI0IiB3aWR0aD0iNjg3IiBoZWlnaHQ9IjkyNCI+CjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmN2Y0ZWUiLz4KPHRleHQgeD0iMjguMCIgeT0iMjIuMCIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsIHNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMWMxYzFjIiB0ZXh0LWFuY2hvcj0ic3RhcnQiPlJlZ3VsYXIgMTcwIGJlZCBiYXk8L3RleHQ+Cjx0ZXh0IHg9IjI4LjAiIHk9IjQwLjAiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9IjQwMCIgZmlsbD0iIzVjNTY0ZSIgdGV4dC1hbmNob3I9InN0YXJ0Ij5Ub3Agdmlldy4gRm9yd2FyZCBpcyB1cC4gSW5jaGVzIGNvbWUgZnJvbSBsYXlvdXQvY2FyZ28tZmxvb3IueWFtbC48L3RleHQ+CjxyZWN0IHg9IjI4LjAiIHk9IjkyLjAiIHdpZHRoPSI0OTAuNyIgaGVpZ2h0PSI0NDguMCIgZmlsbD0iI2ZmZmRmOCIgc3Ryb2tlPSIjMmMyYzJjIiBzdHJva2Utd2lkdGg9IjEuNCIgLz4KPHJlY3QgeD0iMjguMCIgeT0iMTkwLjAiIHdpZHRoPSI2My4wIiBoZWlnaHQ9IjI1Mi4wIiBmaWxsPSIjZDlkM2M3IiBzdHJva2U9IiM2ZTY3NWQiIHN0cm9rZS13aWR0aD0iMS40IiAvPgo8cmVjdCB4PSI0NTUuNyIgeT0iMTkwLjAiIHdpZHRoPSI2My4wIiBoZWlnaHQ9IjI1Mi4wIiBmaWxsPSIjZDlkM2M3IiBzdHJva2U9IiM2ZTY3NWQiIHN0cm9rZS13aWR0aD0iMS40IiAvPgo8cmVjdCB4PSI0MDYuNyIgeT0iMTQ4LjAiIHdpZHRoPSIxMTIuMCIgaGVpZ2h0PSIzMzYuMCIgZmlsbD0iI2Q1ZTZmMCIgc3Ryb2tlPSIjMmY2NDg0IiBzdHJva2Utd2lkdGg9IjEuNCIgLz4KPGxpbmUgeDE9IjQwNi43IiB5MT0iMTQ4LjAiIHgyPSI0MDYuNyIgeTI9IjQ4NC4wIiBzdHJva2U9IiM4YTVhMTIiIHN0cm9rZS13aWR0aD0iMyIgLz4KPGxpbmUgeDE9IjQwNi43IiB5MT0iMTQ4LjAiIHgyPSI1MTguNyIgeTI9IjE0OC4wIiBzdHJva2U9IiM4YTVhMTIiIHN0cm9rZS13aWR0aD0iMi4yIiAvPgo8bGluZSB4MT0iNDA2LjciIHkxPSI0ODQuMCIgeDI9IjUxOC43IiB5Mj0iNDg0LjAiIHN0cm9rZT0iIzhhNWExMiIgc3Ryb2tlLXdpZHRoPSIyLjIiIC8+Cjx0ZXh0IHg9IjU5LjUiIHk9IjMxNi4wIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSI0MDAiIGZpbGw9IiMzZjNhMzQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPndlbGw8L3RleHQ+Cjx0ZXh0IHg9IjQ4Ny4yIiB5PSIzMzAuMCIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsIHNlcmlmIiBmb250LXNpemU9IjExIiBmb250LXdlaWdodD0iNDAwIiBmaWxsPSIjM2YzYTM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj53ZWxsPC90ZXh0Pgo8dGV4dCB4PSI0NjIuNyIgeT0iMzE2LjAiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzFkNGU2ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+dGFuazwvdGV4dD4KPHRleHQgeD0iMjczLjMiIHk9IjMxNi4wIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSI0MDAiIGZpbGw9IiM1YzU2NGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPmFpc2xlIC8gc2xlZXAgZGVjazwvdGV4dD4KPHRleHQgeD0iMjczLjMiIHk9IjEzNC4wIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSI0MDAiIGZpbGw9IiM1YzU2NGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjUzLjEgaW4gYmV0d2VlbiB3ZWxsczwvdGV4dD4KPHRleHQgeD0iMTYuMCIgeT0iMjE4LjAiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9IjQwMCIgZmlsbD0iIzVjNTY0ZSIgdGV4dC1hbmNob3I9InN0YXJ0Ij5kcml2ZXI8L3RleHQ+Cjx0ZXh0IHg9IjE2LjAiIHk9IjMxNi4wIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSI0MDAiIGZpbGw9IiM1YzU2NGUiIHRleHQtYW5jaG9yPSJzdGFydCI+b3BlbiBiYXk8L3RleHQ+Cjx0ZXh0IHg9IjE2LjAiIHk9IjQwMC4wIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSI0MDAiIGZpbGw9IiM1YzU2NGUiIHRleHQtYW5jaG9yPSJzdGFydCI+SXNvdGVtcDwvdGV4dD4KPHRleHQgeD0iNTI2LjciIHk9IjIwNC4wIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSI0MDAiIGZpbGw9IiMxZDRlNmUiIHRleHQtYW5jaG9yPSJzdGFydCI+cGFzc2VuZ2VyPC90ZXh0Pgo8dGV4dCB4PSI0MDAuNyIgeT0iNTAwLjAiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9IjQwMCIgZmlsbD0iIzhhNWExMiIgdGV4dC1hbmNob3I9ImVuZCI+ZnJvbnQgZmFjZTwvdGV4dD4KPGxpbmUgeDE9IjI4LjAiIHkxPSI1NTguMCIgeDI9IjUxOC43IiB5Mj0iNTU4LjAiIHN0cm9rZT0iIzFjMWMxYyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgo8dGV4dCB4PSIyNzMuMyIgeT0iNTc0LjAiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9IjQwMCIgZmlsbD0iIzFjMWMxYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NzAuMSBpbiBpbnNpZGUgd2lkdGg8L3RleHQ+Cjx0ZXh0IHg9IjI4LjAiIHk9IjYzNi4wIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiMxYzFjMWMiIHRleHQtYW5jaG9yPSJzdGFydCI+U2VjdGlvbiwgbG9va2luZyBmb3J3YXJkPC90ZXh0Pgo8dGV4dCB4PSIyOC4wIiB5PSI2NTQuMCIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsIHNlcmlmIiBmb250LXNpemU9IjExIiBmb250LXdlaWdodD0iNDAwIiBmaWxsPSIjNWM1NjRlIiB0ZXh0LWFuY2hvcj0ic3RhcnQiPlBhc3NlbmdlciBzZWF0IGlzIGEgdG9wIGFuZCBhIGZyb250IGZhY2UuIFRoZSB3YWxsIGlzIHRoZSBiYWNrLiBUaGUgZmxvb3IgaXMgdGhlIGJvdHRvbS48L3RleHQ+CjxsaW5lIHgxPSIyOC4wIiB5MT0iODI4LjAiIHgyPSI1MTguNyIgeTI9IjgyOC4wIiBzdHJva2U9IiMyYzJjMmMiIHN0cm9rZS13aWR0aD0iMiIgLz4KPGxpbmUgeDE9IjI4LjAiIHkxPSI4MjguMCIgeDI9IjI4LjAiIHkyPSI2NzQuMCIgc3Ryb2tlPSIjMmMyYzJjIiBzdHJva2Utd2lkdGg9IjIiIC8+CjxsaW5lIHgxPSI1MTguNyIgeTE9IjgyOC4wIiB4Mj0iNTE4LjciIHkyPSI2NzQuMCIgc3Ryb2tlPSIjMmMyYzJjIiBzdHJva2Utd2lkdGg9IjIiIC8+Cjxwb2x5Z29uIHBvaW50cz0iMjguMCw4MjguMCA5MS4wLDgyOC4wIDkxLjAsNzQ0LjAgMjguMCw3NDQuMCIgZmlsbD0iI2Q5ZDNjNyIgc3Ryb2tlPSIjNmU2NzVkIiBzdHJva2Utd2lkdGg9IjEuNCIvPgo8cG9seWdvbiBwb2ludHM9IjQ1NS43LDgyOC4wIDUxOC43LDgyOC4wIDUxOC43LDc0NC4wIDQ1NS43LDc0NC4wIiBmaWxsPSIjZDlkM2M3IiBzdHJva2U9IiM2ZTY3NWQiIHN0cm9rZS13aWR0aD0iMS40Ii8+CjxyZWN0IHg9IjQwNi43IiB5PSI3MTYuMCIgd2lkdGg9IjExMi4wIiBoZWlnaHQ9IjExMi4wIiBmaWxsPSIjZDVlNmYwIiBzdHJva2U9IiMyZjY0ODQiIHN0cm9rZS13aWR0aD0iMS40IiAvPgo8bGluZSB4MT0iNDA2LjciIHkxPSI3MTYuMCIgeDI9IjUxOC43IiB5Mj0iNzE2LjAiIHN0cm9rZT0iIzhhNWExMiIgc3Ryb2tlLXdpZHRoPSIzIiAvPgo8bGluZSB4MT0iNDA2LjciIHkxPSI4MjguMCIgeDI9IjQwNi43IiB5Mj0iNzE2LjAiIHN0cm9rZT0iIzhhNWExMiIgc3Ryb2tlLXdpZHRoPSIzIiAvPgo8dGV4dCB4PSI0NjIuNyIgeT0iNzA4LjAiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzhhNWExMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+dG9wPC90ZXh0Pgo8dGV4dCB4PSIzOTguNyIgeT0iNzcyLjAiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzhhNWExMiIgdGV4dC1hbmNob3I9ImVuZCI+ZnJvbnQ8L3RleHQ+Cjx0ZXh0IHg9IjUyNi43IiB5PSI3NTEuMCIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsIHNlcmlmIiBmb250LXNpemU9IjExIiBmb250LXdlaWdodD0iNDAwIiBmaWxsPSIjNWM1NjRlIiB0ZXh0LWFuY2hvcj0ic3RhcnQiPndhbGw8L3RleHQ+Cjx0ZXh0IHg9IjU5LjUiIHk9Ijc5MC4wIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSI0MDAiIGZpbGw9IiMzZjNhMzQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjEyIGluPC90ZXh0Pgo8dGV4dCB4PSIyMTcuMyIgeT0iODEyLjAiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9IjQwMCIgZmlsbD0iIzVjNTY0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+bm8gZmxvb3IgcGFuZWwg4oCUIHRoZSB2YW4gZmxvb3IgaXMgdGhlIGJvdHRvbTwvdGV4dD4KPHRleHQgeD0iMjguMCIgeT0iOTEwLjAiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9IjQwMCIgZmlsbD0iIzVjNTY0ZSIgdGV4dC1hbmNob3I9InN0YXJ0Ij5XZWxsIDM2IMOXIDEyIMOXIDkgaW4uIFRhbmsgMTAtMzAwOCA0OCDDlyAxNiDDlyAxNiBpbiBvbiB0aGUgcGFzc2VuZ2VyIHdlbGwuIFJlZ3VsYXIgZmxvb3IgMTc4LjIgaW47IEVYVCBpcyAxOTMuOSBpbi48L3RleHQ+Cjwvc3ZnPgo=" alt="Regular 170 bed bay" />
-<figcaption aria-hidden="true">Regular 170 bed bay</figcaption>
+<img role="img" aria-label="Seat base on the cargo floor" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2ODcgOTI0IiB3aWR0aD0iNjg3IiBoZWlnaHQ9IjkyNCI+CjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmN2Y0ZWUiLz4KPHRleHQgeD0iMjguMCIgeT0iMjIuMCIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsIHNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMWMxYzFjIiB0ZXh0LWFuY2hvcj0ic3RhcnQiPlJlZ3VsYXIgMTcwIGJlZCBiYXk8L3RleHQ+Cjx0ZXh0IHg9IjI4LjAiIHk9IjQwLjAiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9IjQwMCIgZmlsbD0iIzVjNTY0ZSIgdGV4dC1hbmNob3I9InN0YXJ0Ij5Ub3Agdmlldy4gRm9yd2FyZCBpcyB1cC4gSW5jaGVzIGNvbWUgZnJvbSBsYXlvdXQvY2FyZ28tZmxvb3IueWFtbC48L3RleHQ+CjxyZWN0IHg9IjI4LjAiIHk9IjkyLjAiIHdpZHRoPSI0OTAuNyIgaGVpZ2h0PSI0NDguMCIgZmlsbD0iI2ZmZmRmOCIgc3Ryb2tlPSIjMmMyYzJjIiBzdHJva2Utd2lkdGg9IjEuNCIgLz4KPHJlY3QgeD0iMjguMCIgeT0iMTkwLjAiIHdpZHRoPSI2My4wIiBoZWlnaHQ9IjI1Mi4wIiBmaWxsPSIjZDlkM2M3IiBzdHJva2U9IiM2ZTY3NWQiIHN0cm9rZS13aWR0aD0iMS40IiAvPgo8cmVjdCB4PSI0NTUuNyIgeT0iMTkwLjAiIHdpZHRoPSI2My4wIiBoZWlnaHQ9IjI1Mi4wIiBmaWxsPSIjZDlkM2M3IiBzdHJva2U9IiM2ZTY3NWQiIHN0cm9rZS13aWR0aD0iMS40IiAvPgo8cmVjdCB4PSI0MDYuNyIgeT0iMTQ4LjAiIHdpZHRoPSIxMTIuMCIgaGVpZ2h0PSIzMzYuMCIgZmlsbD0iI2Q1ZTZmMCIgc3Ryb2tlPSIjMmY2NDg0IiBzdHJva2Utd2lkdGg9IjEuNCIgLz4KPGxpbmUgeDE9IjQwNi43IiB5MT0iMTQ4LjAiIHgyPSI0MDYuNyIgeTI9IjQ4NC4wIiBzdHJva2U9IiM4YTVhMTIiIHN0cm9rZS13aWR0aD0iMyIgLz4KPGxpbmUgeDE9IjQwNi43IiB5MT0iMTQ4LjAiIHgyPSI1MTguNyIgeTI9IjE0OC4wIiBzdHJva2U9IiM4YTVhMTIiIHN0cm9rZS13aWR0aD0iMi4yIiAvPgo8bGluZSB4MT0iNDA2LjciIHkxPSI0ODQuMCIgeDI9IjUxOC43IiB5Mj0iNDg0LjAiIHN0cm9rZT0iIzhhNWExMiIgc3Ryb2tlLXdpZHRoPSIyLjIiIC8+Cjx0ZXh0IHg9IjU5LjUiIHk9IjMxNi4wIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSI0MDAiIGZpbGw9IiMzZjNhMzQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPndlbGw8L3RleHQ+Cjx0ZXh0IHg9IjQ4Ny4yIiB5PSIzMzAuMCIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsIHNlcmlmIiBmb250LXNpemU9IjExIiBmb250LXdlaWdodD0iNDAwIiBmaWxsPSIjM2YzYTM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj53ZWxsPC90ZXh0Pgo8dGV4dCB4PSI0NjIuNyIgeT0iMzE2LjAiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzFkNGU2ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+dGFuazwvdGV4dD4KPHRleHQgeD0iMjczLjMiIHk9IjMxNi4wIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSI0MDAiIGZpbGw9IiM1YzU2NGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPmFpc2xlIC8gc2xlZXAgZGVjazwvdGV4dD4KPHRleHQgeD0iMjczLjMiIHk9IjEzNC4wIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSI0MDAiIGZpbGw9IiM1YzU2NGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjUzLjEgaW4gYmV0d2VlbiB3ZWxsczwvdGV4dD4KPHRleHQgeD0iMTYuMCIgeT0iMjE4LjAiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9IjQwMCIgZmlsbD0iIzVjNTY0ZSIgdGV4dC1hbmNob3I9InN0YXJ0Ij5kcml2ZXI8L3RleHQ+Cjx0ZXh0IHg9IjE2LjAiIHk9IjMxNi4wIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSI0MDAiIGZpbGw9IiM1YzU2NGUiIHRleHQtYW5jaG9yPSJzdGFydCI+b3BlbiBiYXk8L3RleHQ+Cjx0ZXh0IHg9IjE2LjAiIHk9IjQwMC4wIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSI0MDAiIGZpbGw9IiM1YzU2NGUiIHRleHQtYW5jaG9yPSJzdGFydCI+SXNvdGVtcDwvdGV4dD4KPHRleHQgeD0iNTI2LjciIHk9IjIwNC4wIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSI0MDAiIGZpbGw9IiMxZDRlNmUiIHRleHQtYW5jaG9yPSJzdGFydCI+cGFzc2VuZ2VyPC90ZXh0Pgo8dGV4dCB4PSI0MDAuNyIgeT0iNTAwLjAiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9IjQwMCIgZmlsbD0iIzhhNWExMiIgdGV4dC1hbmNob3I9ImVuZCI+ZnJvbnQgZmFjZTwvdGV4dD4KPGxpbmUgeDE9IjI4LjAiIHkxPSI1NTguMCIgeDI9IjUxOC43IiB5Mj0iNTU4LjAiIHN0cm9rZT0iIzFjMWMxYyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgo8dGV4dCB4PSIyNzMuMyIgeT0iNTc0LjAiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9IjQwMCIgZmlsbD0iIzFjMWMxYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NzAuMSBpbiBpbnNpZGUgd2lkdGg8L3RleHQ+Cjx0ZXh0IHg9IjI4LjAiIHk9IjYzNi4wIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiMxYzFjMWMiIHRleHQtYW5jaG9yPSJzdGFydCI+U2VjdGlvbiwgbG9va2luZyBmb3J3YXJkPC90ZXh0Pgo8dGV4dCB4PSIyOC4wIiB5PSI2NTQuMCIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsIHNlcmlmIiBmb250LXNpemU9IjExIiBmb250LXdlaWdodD0iNDAwIiBmaWxsPSIjNWM1NjRlIiB0ZXh0LWFuY2hvcj0ic3RhcnQiPlBhc3NlbmdlciBzZWF0IGlzIGEgdG9wIGFuZCBhIGZyb250IGZhY2UuIFRoZSB3YWxsIGlzIHRoZSBiYWNrLiBUaGUgZmxvb3IgaXMgdGhlIGJvdHRvbS48L3RleHQ+CjxsaW5lIHgxPSIyOC4wIiB5MT0iODI4LjAiIHgyPSI1MTguNyIgeTI9IjgyOC4wIiBzdHJva2U9IiMyYzJjMmMiIHN0cm9rZS13aWR0aD0iMiIgLz4KPGxpbmUgeDE9IjI4LjAiIHkxPSI4MjguMCIgeDI9IjI4LjAiIHkyPSI2NzQuMCIgc3Ryb2tlPSIjMmMyYzJjIiBzdHJva2Utd2lkdGg9IjIiIC8+CjxsaW5lIHgxPSI1MTguNyIgeTE9IjgyOC4wIiB4Mj0iNTE4LjciIHkyPSI2NzQuMCIgc3Ryb2tlPSIjMmMyYzJjIiBzdHJva2Utd2lkdGg9IjIiIC8+Cjxwb2x5Z29uIHBvaW50cz0iMjguMCw4MjguMCA5MS4wLDgyOC4wIDkxLjAsNzQ0LjAgMjguMCw3NDQuMCIgZmlsbD0iI2Q5ZDNjNyIgc3Ryb2tlPSIjNmU2NzVkIiBzdHJva2Utd2lkdGg9IjEuNCIvPgo8cG9seWdvbiBwb2ludHM9IjQ1NS43LDgyOC4wIDUxOC43LDgyOC4wIDUxOC43LDc0NC4wIDQ1NS43LDc0NC4wIiBmaWxsPSIjZDlkM2M3IiBzdHJva2U9IiM2ZTY3NWQiIHN0cm9rZS13aWR0aD0iMS40Ii8+CjxyZWN0IHg9IjQwNi43IiB5PSI3MTYuMCIgd2lkdGg9IjExMi4wIiBoZWlnaHQ9IjExMi4wIiBmaWxsPSIjZDVlNmYwIiBzdHJva2U9IiMyZjY0ODQiIHN0cm9rZS13aWR0aD0iMS40IiAvPgo8bGluZSB4MT0iNDA2LjciIHkxPSI3MTYuMCIgeDI9IjUxOC43IiB5Mj0iNzE2LjAiIHN0cm9rZT0iIzhhNWExMiIgc3Ryb2tlLXdpZHRoPSIzIiAvPgo8bGluZSB4MT0iNDA2LjciIHkxPSI4MjguMCIgeDI9IjQwNi43IiB5Mj0iNzE2LjAiIHN0cm9rZT0iIzhhNWExMiIgc3Ryb2tlLXdpZHRoPSIzIiAvPgo8dGV4dCB4PSI0NjIuNyIgeT0iNzA4LjAiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzhhNWExMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+dG9wPC90ZXh0Pgo8dGV4dCB4PSIzOTguNyIgeT0iNzcyLjAiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzhhNWExMiIgdGV4dC1hbmNob3I9ImVuZCI+ZnJvbnQ8L3RleHQ+Cjx0ZXh0IHg9IjUyNi43IiB5PSI3NTEuMCIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsIHNlcmlmIiBmb250LXNpemU9IjExIiBmb250LXdlaWdodD0iNDAwIiBmaWxsPSIjNWM1NjRlIiB0ZXh0LWFuY2hvcj0ic3RhcnQiPndhbGw8L3RleHQ+Cjx0ZXh0IHg9IjU5LjUiIHk9Ijc5MC4wIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSI0MDAiIGZpbGw9IiMzZjNhMzQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjEyIGluPC90ZXh0Pgo8dGV4dCB4PSIyMTcuMyIgeT0iODEyLjAiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9IjQwMCIgZmlsbD0iIzVjNTY0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+bm8gZmxvb3IgcGFuZWwg4oCUIHRoZSB2YW4gZmxvb3IgaXMgdGhlIGJvdHRvbTwvdGV4dD4KPHRleHQgeD0iMjguMCIgeT0iOTEwLjAiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9IjQwMCIgZmlsbD0iIzVjNTY0ZSIgdGV4dC1hbmNob3I9InN0YXJ0Ij5XZWxsIDM2IMOXIDEyIMOXIDkgaW4uIFRhbmsgMTAtMzAwOCA0OCDDlyAxNiDDlyAxNiBpbiBvbiB0aGUgcGFzc2VuZ2VyIHdlbGwuIFJlZ3VsYXIgZmxvb3IgMTc4LjIgaW47IEVYVCBpcyAxOTMuOSBpbi48L3RleHQ+Cjwvc3ZnPgo=" alt="Seat base on the cargo floor" />
+<figcaption aria-hidden="true">Seat base on the cargo floor</figcaption>
 </figure>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr>
+<td>Inside width at the floor</td>
+<td>70.1 in</td>
+</tr>
+<tr>
+<td>Width between wheel wells</td>
+<td>53.1 in</td>
+</tr>
+<tr>
+<td>Wheel well, regular 170, including 2017</td>
+<td>36 in along the wall × 12 in high × 9 in into the cabin (<a href="#src-042">SRC-042</a>)</td>
+</tr>
+<tr>
+<td>Cargo floor, regular 170</td>
+<td>178.2 in</td>
+</tr>
+<tr>
+<td>Cargo floor, 170 EXT</td>
+<td>193.9 in</td>
+</tr>
+<tr>
+<td>Freshwater tank, ordered</td>
+<td>S&amp;B <strong>10-3008</strong>, passenger well, 48 × 16 × 16 in,
+±0.5 in, about 35 gal (<a href="#src-044">SRC-044</a>)</td>
+</tr>
+</tbody>
+</table>
+<p>The 36 × 12 × 9 envelope is the published upfit box for a
+single-rear-wheel van. Rattle Trap, the cork floor, and the curved
+shoulders of the hump change the cavity you can actually use. Measure
+the hump on this van before you cut tube. The distance from the rear
+doors to the hump is not in these sheets. Measure that too. The drawing
+does not place the bay along the van.</p>
 <h2 id="what-the-bay-holds">What the bay holds</h2>
-<p>The passenger well holds the S&amp;B Filters 35 gal tank (catalog
-<strong>48 in × 16 in × 16 in</strong>, ±0.5 in). The freshwater
-strainer sits on that tank’s outlet. The driver bay holds the Isotemp,
-on its own aluminum cradle bolted to the floor. The expansion header
-goes in the backrest, high enough that its top stays the highest
-circulating glycol point. Confirm that height after the frame
-exists.</p>
+<p>The passenger well holds the S&amp;B tank. The freshwater strainer
+sits on that tank’s outlet. The driver bay holds the Isotemp, on its own
+aluminum cradle bolted to the floor. The expansion header goes in the
+backrest, high enough that its top stays the highest circulating glycol
+point. Confirm that height after the frame exists.</p>
 <p>Day geometry, once the deck exists: outboard panels become seat
 backs, and inboard panels become seat butts, with an aisle between them.
 Panel count and hinge or slide hardware stay open until the frame is
 measured.</p>
 <h2 id="frame-first">Frame first</h2>
 <p>Build the seat-base frame before the deck, the backrest, the
-cushions, or the sleeper hardware. The frame is EZTube 1 in square
-aluminum tube (0.050 in wall, 6063-T5) with Rostek 3-way corners at the
-outer corners. Crossmembers need their own T fittings. The frame bridges
-each wheel well and lands on the floor. Do not put seat load on the
-wheel-well sheet metal or on the freshwater tank.</p>
+cushions, or the sleeper hardware. The frame is <a href="https://www.eztube.com/product/100/">EZTube 1 in square tube</a>
+(0.050 in wall, 6063-T5) with <a href="https://rostek.us/products/tube-connectors-for-1-square-tubing-3-way-corner-each">Rostek
+3-way corners</a> (<a href="https://cdn.shopify.com/s/files/1/0712/9825/2845/files/RTK-3Crn-1Sq_3-Way-Corner.pdf">drawing</a>)
+at the outer corners. Crossmembers need their own T fittings. The frame
+bridges each wheel well and lands on the floor. Feet go at the ends of
+the well and along the aisle side, once those pads are confirmed. Do not
+put seat load on the wheel-well sheet metal or on the freshwater
+tank.</p>
 <p>Buy one Rostek fitting and try it on the actual tube before you buy a
 set. Do not overtighten a set screw into the 0.050 in wall. The
-connector drawing does not give a load rating for this seat. EZTube, the
-Rostek corners, and the sapele sheet below are the accepted options (<a href="#dec-021">DEC-021</a>).</p>
+connector drawing does not give a load rating for this seat. The corner
+stands above the 1 in tube. Pocket the underside of the sapele so the
+sheet bears on the tube. Measure that stand-off on the trial fitting
+before you rout the sheet. EZTube, the Rostek corners, and the sapele
+are the accepted options (<a href="#dec-021">DEC-021</a>).</p>
 <p>The deck and the day panels are <a href="https://clcboats.com/products/premium-sapele-marine-plywood">Chesapeake
 Light Craft premium sapele marine plywood</a>. Cut that sheet only after
 the frame footprint is measured.</p>
-<p>Provisional length along the wall is about <strong>75 in</strong>. A
-recalled <strong>21 in</strong> height is not yet tied to the bare
-frame, the hump, or the finished seat. Seat depth is not set. Do not cut
-tube from those recalls.</p>
+<table>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 40%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">Provisional</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Length along the wall</td>
+<td style="text-align: right;">about 75 in</td>
+<td>Recalled. Confirm.</td>
+</tr>
+<tr>
+<td>Height</td>
+<td style="text-align: right;">about 21 in</td>
+<td>Recalled. Not yet tied to the bare frame, the hump, or the finished
+seat.</td>
+</tr>
+<tr>
+<td>Depth, wall to aisle</td>
+<td style="text-align: right;">—</td>
+<td>Not set.</td>
+</tr>
+<tr>
+<td>Crossmember count and spacing</td>
+<td style="text-align: right;">—</td>
+<td>After the footprint is measured.</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Bill of materials intent:</strong> EZTube and Rostek corners
 for the frame; T fittings for crossmembers; short T-slot or bolted
 aluminum for the Isotemp cradle; Chesapeake Light Craft premium sapele
@@ -1813,7 +1892,7 @@ strainer has a place on the tank outlet</label></li>
 Isotemp; tape-fit done</label></li>
 <li><label><input type="checkbox"></input>Isotemp full-load weight and
 restraint method documented (aluminum cradle and straps)</label></li>
-<li><label><input type="checkbox"></input>expansion header location remains
+<li><label><input type="checkbox"></input>Expansion header location remains
 the highest circulating point (exact mount named)</label></li>
 <li><label><input type="checkbox"></input>Hybrid construction per DEC-021;
 floor-foot locations recorded</label></li>
@@ -2897,7 +2976,7 @@ EasyStart); does <strong>not</strong> cut Isotemp AC</td>
 out</strong>. Rebuild hybrid per <a href="#dec-021">DEC-021</a>: EZTube
 seat-base frame first (it bridges the wheel well and lands on the
 floor), aluminum Isotemp cradle, day panels with <strong>outboard → seat
-back</strong> / <strong>inboard → seat butt</strong>. Plan: <a href="#cargo-floor">Cargo floor</a>. expansion header in
+back</strong> / <strong>inboard → seat butt</strong>. Plan: <a href="#the-sofa">The sofa</a>. expansion header in
 <strong>backrest</strong>; Isotemp under bench. Sure Marine under
 fridge; Duda under sink. House DC: Blue Sea blade block may need a
 <strong>second breakout</strong> for hydronic fuses. Envelope: Rattle
@@ -4280,15 +4359,9 @@ part one</h2>
 S hatches</td>
 </tr>
 <tr>
-<td>The bay the tanks bolt into</td>
+<td>The sofa bay, cargo-floor inches, and the drawing</td>
 <td><a href="#the-sofa">The sofa</a></td>
 <td><a href="#cargo-floor">Cargo floor</a> · <a href="#hold-s-sofabed-platform">HOLD S</a> · <a href="#dec-021">DEC-021</a></td>
-</tr>
-<tr>
-<td>Bed bay inches and the generated plan</td>
-<td><a href="#cargo-floor">Cargo floor</a></td>
-<td><code>book/layout/cargo-floor.yaml</code> · <a href="#the-sofa">The
-sofa</a></td>
 </tr>
 <tr>
 <td>House / sofa working draft</td>
@@ -5975,114 +6048,6 @@ height vs coolant level; Isotemp Slim Square 4.2 gal heat battery mount
 and ~30 cm service clearance; confirm heater tilt within SRC-009
 diagram</label></li>
 </ul>
-<h1 id="cargo-floor">Cargo floor</h1>
-<p>This page is the inches for <a href="#the-sofa">The sofa</a>. It is
-not a second work order. Change inches in
-<code>book/layout/cargo-floor.yaml</code>, then run
-<code>./book/build.sh</code>. The script rewrites the drawing. Do not
-edit the SVG by hand.</p>
-<figure>
-<img role="img" aria-label="Regular 170 bed bay" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2ODcgOTI0IiB3aWR0aD0iNjg3IiBoZWlnaHQ9IjkyNCI+CjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmN2Y0ZWUiLz4KPHRleHQgeD0iMjguMCIgeT0iMjIuMCIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsIHNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMWMxYzFjIiB0ZXh0LWFuY2hvcj0ic3RhcnQiPlJlZ3VsYXIgMTcwIGJlZCBiYXk8L3RleHQ+Cjx0ZXh0IHg9IjI4LjAiIHk9IjQwLjAiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9IjQwMCIgZmlsbD0iIzVjNTY0ZSIgdGV4dC1hbmNob3I9InN0YXJ0Ij5Ub3Agdmlldy4gRm9yd2FyZCBpcyB1cC4gSW5jaGVzIGNvbWUgZnJvbSBsYXlvdXQvY2FyZ28tZmxvb3IueWFtbC48L3RleHQ+CjxyZWN0IHg9IjI4LjAiIHk9IjkyLjAiIHdpZHRoPSI0OTAuNyIgaGVpZ2h0PSI0NDguMCIgZmlsbD0iI2ZmZmRmOCIgc3Ryb2tlPSIjMmMyYzJjIiBzdHJva2Utd2lkdGg9IjEuNCIgLz4KPHJlY3QgeD0iMjguMCIgeT0iMTkwLjAiIHdpZHRoPSI2My4wIiBoZWlnaHQ9IjI1Mi4wIiBmaWxsPSIjZDlkM2M3IiBzdHJva2U9IiM2ZTY3NWQiIHN0cm9rZS13aWR0aD0iMS40IiAvPgo8cmVjdCB4PSI0NTUuNyIgeT0iMTkwLjAiIHdpZHRoPSI2My4wIiBoZWlnaHQ9IjI1Mi4wIiBmaWxsPSIjZDlkM2M3IiBzdHJva2U9IiM2ZTY3NWQiIHN0cm9rZS13aWR0aD0iMS40IiAvPgo8cmVjdCB4PSI0MDYuNyIgeT0iMTQ4LjAiIHdpZHRoPSIxMTIuMCIgaGVpZ2h0PSIzMzYuMCIgZmlsbD0iI2Q1ZTZmMCIgc3Ryb2tlPSIjMmY2NDg0IiBzdHJva2Utd2lkdGg9IjEuNCIgLz4KPGxpbmUgeDE9IjQwNi43IiB5MT0iMTQ4LjAiIHgyPSI0MDYuNyIgeTI9IjQ4NC4wIiBzdHJva2U9IiM4YTVhMTIiIHN0cm9rZS13aWR0aD0iMyIgLz4KPGxpbmUgeDE9IjQwNi43IiB5MT0iMTQ4LjAiIHgyPSI1MTguNyIgeTI9IjE0OC4wIiBzdHJva2U9IiM4YTVhMTIiIHN0cm9rZS13aWR0aD0iMi4yIiAvPgo8bGluZSB4MT0iNDA2LjciIHkxPSI0ODQuMCIgeDI9IjUxOC43IiB5Mj0iNDg0LjAiIHN0cm9rZT0iIzhhNWExMiIgc3Ryb2tlLXdpZHRoPSIyLjIiIC8+Cjx0ZXh0IHg9IjU5LjUiIHk9IjMxNi4wIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSI0MDAiIGZpbGw9IiMzZjNhMzQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPndlbGw8L3RleHQ+Cjx0ZXh0IHg9IjQ4Ny4yIiB5PSIzMzAuMCIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsIHNlcmlmIiBmb250LXNpemU9IjExIiBmb250LXdlaWdodD0iNDAwIiBmaWxsPSIjM2YzYTM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj53ZWxsPC90ZXh0Pgo8dGV4dCB4PSI0NjIuNyIgeT0iMzE2LjAiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzFkNGU2ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+dGFuazwvdGV4dD4KPHRleHQgeD0iMjczLjMiIHk9IjMxNi4wIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSI0MDAiIGZpbGw9IiM1YzU2NGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPmFpc2xlIC8gc2xlZXAgZGVjazwvdGV4dD4KPHRleHQgeD0iMjczLjMiIHk9IjEzNC4wIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSI0MDAiIGZpbGw9IiM1YzU2NGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjUzLjEgaW4gYmV0d2VlbiB3ZWxsczwvdGV4dD4KPHRleHQgeD0iMTYuMCIgeT0iMjE4LjAiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9IjQwMCIgZmlsbD0iIzVjNTY0ZSIgdGV4dC1hbmNob3I9InN0YXJ0Ij5kcml2ZXI8L3RleHQ+Cjx0ZXh0IHg9IjE2LjAiIHk9IjMxNi4wIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSI0MDAiIGZpbGw9IiM1YzU2NGUiIHRleHQtYW5jaG9yPSJzdGFydCI+b3BlbiBiYXk8L3RleHQ+Cjx0ZXh0IHg9IjE2LjAiIHk9IjQwMC4wIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSI0MDAiIGZpbGw9IiM1YzU2NGUiIHRleHQtYW5jaG9yPSJzdGFydCI+SXNvdGVtcDwvdGV4dD4KPHRleHQgeD0iNTI2LjciIHk9IjIwNC4wIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSI0MDAiIGZpbGw9IiMxZDRlNmUiIHRleHQtYW5jaG9yPSJzdGFydCI+cGFzc2VuZ2VyPC90ZXh0Pgo8dGV4dCB4PSI0MDAuNyIgeT0iNTAwLjAiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9IjQwMCIgZmlsbD0iIzhhNWExMiIgdGV4dC1hbmNob3I9ImVuZCI+ZnJvbnQgZmFjZTwvdGV4dD4KPGxpbmUgeDE9IjI4LjAiIHkxPSI1NTguMCIgeDI9IjUxOC43IiB5Mj0iNTU4LjAiIHN0cm9rZT0iIzFjMWMxYyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgo8dGV4dCB4PSIyNzMuMyIgeT0iNTc0LjAiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9IjQwMCIgZmlsbD0iIzFjMWMxYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NzAuMSBpbiBpbnNpZGUgd2lkdGg8L3RleHQ+Cjx0ZXh0IHg9IjI4LjAiIHk9IjYzNi4wIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiMxYzFjMWMiIHRleHQtYW5jaG9yPSJzdGFydCI+U2VjdGlvbiwgbG9va2luZyBmb3J3YXJkPC90ZXh0Pgo8dGV4dCB4PSIyOC4wIiB5PSI2NTQuMCIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsIHNlcmlmIiBmb250LXNpemU9IjExIiBmb250LXdlaWdodD0iNDAwIiBmaWxsPSIjNWM1NjRlIiB0ZXh0LWFuY2hvcj0ic3RhcnQiPlBhc3NlbmdlciBzZWF0IGlzIGEgdG9wIGFuZCBhIGZyb250IGZhY2UuIFRoZSB3YWxsIGlzIHRoZSBiYWNrLiBUaGUgZmxvb3IgaXMgdGhlIGJvdHRvbS48L3RleHQ+CjxsaW5lIHgxPSIyOC4wIiB5MT0iODI4LjAiIHgyPSI1MTguNyIgeTI9IjgyOC4wIiBzdHJva2U9IiMyYzJjMmMiIHN0cm9rZS13aWR0aD0iMiIgLz4KPGxpbmUgeDE9IjI4LjAiIHkxPSI4MjguMCIgeDI9IjI4LjAiIHkyPSI2NzQuMCIgc3Ryb2tlPSIjMmMyYzJjIiBzdHJva2Utd2lkdGg9IjIiIC8+CjxsaW5lIHgxPSI1MTguNyIgeTE9IjgyOC4wIiB4Mj0iNTE4LjciIHkyPSI2NzQuMCIgc3Ryb2tlPSIjMmMyYzJjIiBzdHJva2Utd2lkdGg9IjIiIC8+Cjxwb2x5Z29uIHBvaW50cz0iMjguMCw4MjguMCA5MS4wLDgyOC4wIDkxLjAsNzQ0LjAgMjguMCw3NDQuMCIgZmlsbD0iI2Q5ZDNjNyIgc3Ryb2tlPSIjNmU2NzVkIiBzdHJva2Utd2lkdGg9IjEuNCIvPgo8cG9seWdvbiBwb2ludHM9IjQ1NS43LDgyOC4wIDUxOC43LDgyOC4wIDUxOC43LDc0NC4wIDQ1NS43LDc0NC4wIiBmaWxsPSIjZDlkM2M3IiBzdHJva2U9IiM2ZTY3NWQiIHN0cm9rZS13aWR0aD0iMS40Ii8+CjxyZWN0IHg9IjQwNi43IiB5PSI3MTYuMCIgd2lkdGg9IjExMi4wIiBoZWlnaHQ9IjExMi4wIiBmaWxsPSIjZDVlNmYwIiBzdHJva2U9IiMyZjY0ODQiIHN0cm9rZS13aWR0aD0iMS40IiAvPgo8bGluZSB4MT0iNDA2LjciIHkxPSI3MTYuMCIgeDI9IjUxOC43IiB5Mj0iNzE2LjAiIHN0cm9rZT0iIzhhNWExMiIgc3Ryb2tlLXdpZHRoPSIzIiAvPgo8bGluZSB4MT0iNDA2LjciIHkxPSI4MjguMCIgeDI9IjQwNi43IiB5Mj0iNzE2LjAiIHN0cm9rZT0iIzhhNWExMiIgc3Ryb2tlLXdpZHRoPSIzIiAvPgo8dGV4dCB4PSI0NjIuNyIgeT0iNzA4LjAiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzhhNWExMiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+dG9wPC90ZXh0Pgo8dGV4dCB4PSIzOTguNyIgeT0iNzcyLjAiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzhhNWExMiIgdGV4dC1hbmNob3I9ImVuZCI+ZnJvbnQ8L3RleHQ+Cjx0ZXh0IHg9IjUyNi43IiB5PSI3NTEuMCIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsIHNlcmlmIiBmb250LXNpemU9IjExIiBmb250LXdlaWdodD0iNDAwIiBmaWxsPSIjNWM1NjRlIiB0ZXh0LWFuY2hvcj0ic3RhcnQiPndhbGw8L3RleHQ+Cjx0ZXh0IHg9IjU5LjUiIHk9Ijc5MC4wIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSI0MDAiIGZpbGw9IiMzZjNhMzQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjEyIGluPC90ZXh0Pgo8dGV4dCB4PSIyMTcuMyIgeT0iODEyLjAiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9IjQwMCIgZmlsbD0iIzVjNTY0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+bm8gZmxvb3IgcGFuZWwg4oCUIHRoZSB2YW4gZmxvb3IgaXMgdGhlIGJvdHRvbTwvdGV4dD4KPHRleHQgeD0iMjguMCIgeT0iOTEwLjAiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9IjQwMCIgZmlsbD0iIzVjNTY0ZSIgdGV4dC1hbmNob3I9InN0YXJ0Ij5XZWxsIDM2IMOXIDEyIMOXIDkgaW4uIFRhbmsgMTAtMzAwOCA0OCDDlyAxNiDDlyAxNiBpbiBvbiB0aGUgcGFzc2VuZ2VyIHdlbGwuIFJlZ3VsYXIgZmxvb3IgMTc4LjIgaW47IEVYVCBpcyAxOTMuOSBpbi48L3RleHQ+Cjwvc3ZnPgo=" alt="Regular 170 bed bay" />
-<figcaption aria-hidden="true">Regular 170 bed bay</figcaption>
-</figure>
-<p>The van is the <strong>regular 170</strong> body. The 170 EXT uses
-the same 170-inch wheelbase and the same wheel-well envelope. Its cargo
-floor is longer by about 15.7 inches, and that extra length is behind
-the rear axle (<a href="#src-043">SRC-043</a>). A bed drawn on an EXT
-plan will run long on this van.</p>
-<h2 id="inches">Inches</h2>
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr>
-<td>Inside width at the floor</td>
-<td>70.1 in</td>
-</tr>
-<tr>
-<td>Width between wheel wells</td>
-<td>53.1 in</td>
-</tr>
-<tr>
-<td>Wheel well, regular 170, including 2017</td>
-<td>36 in along the wall × 12 in high × 9 in into the cabin (<a href="#src-042">SRC-042</a>)</td>
-</tr>
-<tr>
-<td>Cargo floor, regular 170</td>
-<td>178.2 in</td>
-</tr>
-<tr>
-<td>Cargo floor, 170 EXT</td>
-<td>193.9 in</td>
-</tr>
-<tr>
-<td>Freshwater tank, ordered</td>
-<td>S&amp;B <strong>10-3008</strong>, passenger well, 48 × 16 × 16 in,
-±0.5 in, about 35 gal (<a href="#src-044">SRC-044</a>)</td>
-</tr>
-</tbody>
-</table>
-<p>The 36 × 12 × 9 envelope is the published upfit box for a
-single-rear-wheel van. Rattle Trap, the cork floor, and the curved
-shoulders of the hump change the cavity you can actually use. Measure
-the hump on this van before you cut tube. The distance from the rear
-doors to the hump is not in these sheets. Measure that too. The drawing
-does not place the bay along the van.</p>
-<h2 id="seat-base">Seat base</h2>
-<p>The work order is <a href="#the-sofa">The sofa</a>. The frame bridges
-the wheel well and lands on the floor. Feet go at the ends of the well
-and along the aisle side, once those pads are confirmed. The hump does
-not carry the seat. The freshwater tank does not carry the seat.</p>
-<table>
-<colgroup>
-<col style="width: 30%" />
-<col style="width: 40%" />
-<col style="width: 30%" />
-</colgroup>
-<thead>
-<tr>
-<th></th>
-<th style="text-align: right;">Provisional</th>
-<th>Status</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Length along the wall</td>
-<td style="text-align: right;">about 75 in</td>
-<td>Recalled. Confirm.</td>
-</tr>
-<tr>
-<td>Height</td>
-<td style="text-align: right;">about 21 in</td>
-<td>Recalled. Not yet tied to the bare frame, the hump, or the finished
-seat.</td>
-</tr>
-<tr>
-<td>Depth, wall to aisle</td>
-<td style="text-align: right;">—</td>
-<td>Not set.</td>
-</tr>
-<tr>
-<td>Crossmember count and spacing</td>
-<td style="text-align: right;">—</td>
-<td>After the footprint is measured.</td>
-</tr>
-</tbody>
-</table>
-<p>Product pages: <a href="https://www.eztube.com/product/100/">EZTube 1
-in square tube</a> (0.050 in wall, 6063-T5), <a href="https://rostek.us/products/tube-connectors-for-1-square-tubing-3-way-corner-each">Rostek
-3-way corners</a> (<a href="https://cdn.shopify.com/s/files/1/0712/9825/2845/files/RTK-3Crn-1Sq_3-Way-Corner.pdf">drawing</a>),
-and <a href="https://clcboats.com/products/premium-sapele-marine-plywood">Chesapeake
-Light Craft premium sapele marine plywood</a> for the deck and day
-panels. The Rostek drawing lists cast A380 and M6 set screws. Corners do
-not make a crossmember. No load rating is published for this seat.
-EZTube, Rostek, and that sapele sheet are the accepted options. The
-Rostek corner stands above the 1 in tube. Pocket the underside of the
-sapele so the sheet bears on the tube. Measure that stand-off on one
-trial fitting before you rout the sheet.</p>
 <h1 id="coolant-loop">Coolant Loop</h1>
 <h2 id="scope-5">Scope</h2>
 <p>Coolant chemistry, flow, pressure, and plumbing. Fresh water is
